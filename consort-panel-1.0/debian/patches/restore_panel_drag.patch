@@ -1,0 +1,48 @@
+Description: Restore panel dragging
+ In Gnome 2 the user could drag a panel to any edge of the screen.
+ In Gnome 3's panel the user must use a modifier (i.e. alt) in
+ combination with the mouse button (LMB) to drag the panel.
+ This patch reverts the behaviour allowing dragging by use of the
+ mouse alone
+ .
+ consort-panel (3.4.1-3solusos1) two; urgency=low
+ .
+   * New patch for panel dragging
+Author: Ikey Doherty <ikey@solusos.com>
+
+---
+Reviewed-By: Ikey Doherty <ikey@solusos.com>
+Last-Update: <2012-05-27>
+
+--- consort-panel-3.4.1.orig/consort-panel/panel-toplevel.c
++++ consort-panel-3.4.1/consort-panel/panel-toplevel.c
+@@ -2940,7 +2940,6 @@ panel_toplevel_button_press_event (GtkWi
+ 				   GdkEventButton *event)
+ {
+ 	PanelToplevel *toplevel;
+-	guint          modifiers;
+ 	GtkWidget     *event_widget;
+ 
+ 	g_return_val_if_fail (PANEL_IS_TOPLEVEL (widget), FALSE);
+@@ -2953,13 +2952,14 @@ panel_toplevel_button_press_event (GtkWi
+ 	if (toplevel->priv->animating)
+ 		return FALSE;
+ 
+-	modifiers = event->state & gtk_accelerator_get_default_mod_mask ();
+-
+-	/* Get the mouse-button modifier from metacity so that only intentional
+-	 * moves are considered. We don't this for non-expanded panels since we
+-	 * only have the handles that the user can grab. */
+-	if (toplevel->priv->expand &&
+-	    modifiers != panel_bindings_get_mouse_button_modifier_keymask ())
++	/**
++	 * Check if the toplevel (panel) is expanded or not. If it's not, we should bail.
++	 * Otherwise we end up dragging a panel up and down the screen and breaks all kinds
++	 * of stuff.
++	 * HACKED: I took out the modifier stuff so that you don't need to use a key combo
++	 * to drag the toplevel (panel)
++	 */
++	if (toplevel->priv->expand != TRUE)
+ 		return FALSE;
+ 
+ 	gdk_window_get_user_data (event->window, (gpointer)&event_widget);

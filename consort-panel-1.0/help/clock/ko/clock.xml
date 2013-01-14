@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ko">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>시계 설명서</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>그놈 문서 프로젝트</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>본 설명서는 프리 소프트웨어 재단(FSF)에서 발행한 GNU 자유 문서 라이센스(GFDL) 버전 1.1 이상의 조항에 따라 변경 불가 부분, 앞 표지 텍스트 및 뒷 표지 텍스트를 제외하고 복사, 수정 및/또는 배포할 수 있습니다. GFDL의 사본은 <ulink type="help" url="ghelp:fdl">링크</ulink> 또는 본 설명서와 함께 배포된 COPYING-DOCS 파일에서 찾을 수 있습니다.</para>
+<para>본 설명서는 GFDL에 따라 배포된 그놈 설명서 컬렉션의 일부입니다. 본 설명서를 컬렉션과 별도로 배포하려는 경우에는 라이센스 조항 6에 따라 라이센스 사본을 설명서에 추가하면 됩니다.</para>
+<para>기업의 제품과 서비스를 식별하기 위해 사용된 많은 이름은 상표로 간주됩니다. 그놈 문서에 사용된 이름과 그놈 문서 프로젝트의 구성원은 해당 상표로, 모두 대문자로 표시되거나 첫 글자가 대문자로 표시되어 있습니다.</para>
+<para>문서 및 수정판은 다음 GNU 자유 문서 라이센스의 조항에 따라 제공됩니다. <orderedlist><listitem>
+<para>문서는 "있는 그대로"로 제공되며 상품성, 특정 목적에의 적합성 또는 준수에 대한 보증을 비롯한 일체의 명시적 또는 암시적인 보증을 제한 없이 부인합니다. 문서 및 수정판의 품질, 정확성 및 성능에 대한 책임은 전적으로 사용자에게 있습니다. 문서 또는 수정판에 대한 오류를 입증하려면 사용자(원저작자, 저작자 또는 배포자 아님)는 필요한 서비스, 수리 및 수정 비용을 부담해야 합니다. 본 보증 부인은 라이센스의 필수 부분에 해당합니다. 본 보증 부인을 따르지 않는 모든 문서나 수정판은 사용할 수 없습니다.</para>
+</listitem>
+<listitem>
+<para>또한 불법 행위(부주의 포함), 계약 또는 직접, 간접, 특별, 부수적 및 파생적인 모든 손해(영업권 손실, 작업 중지, 컴퓨터 오류 및 고장 또는 본 문서나 수정판의 사용으로 인해 발생하거나 관련된 기타 모든 손실 및 이러한 손실 가능성에 대해 미리 공지한 경우에도 제한되지 않음)에 대해서는 어떠한 상황이나 법률적인 이론 하에서도 본 문서 또는 수정판의 저작자, 원저자, 모든 배포자 또는 공급자는 책임을 지지 않습니다.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul </firstname> 
+		  <surname> Cutler</surname> 
+		  <affiliation> 
+			 <orgname>그놈 문서 프로젝트</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>그놈 문서 프로젝트</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>그놈 문서 프로젝트</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.7</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.6</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>시계 애플릿 설명서 V2.2</revnumber> 
+		  <date>2004년 2월</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>시계 애플릿 설명서 V2.4</revnumber> 
+		  <date>2003년 9월</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>시계 애플릿 설명서 V2.3</revnumber> 
+		  <date>2003년 1월</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>시계 애플릿 설명서 V2.2</revnumber> 
+		  <date>2002년 8월</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>시계 애플릿 설명서 V2.1</revnumber> 
+		  <date>2002년 6월</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>시계 애플릿 설명서 V2.0</revnumber> 
+		  <date>2002년 3월</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>시계 애플릿 설명서</revnumber> 
+		  <date>2000년 4월</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">그놈 문서 프로젝트</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>이 설명서에서는 시계 애플릿 버전 2.0.2에 대해 설명합니다.</releaseinfo> 
+	 <legalnotice> 
+		<title>피드백</title> 
+		<para>Clock 애플릿 또는 이 설명서에 대한 버그를 보고하거나 의견을 제시하려면 <ulink url="ghelp:gnome-feedback" type="help">그놈 피드백 페이지</ulink>에 있는 지시 사항을 따르십시오.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>시계</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>소개</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>시계 애플릿</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>시계 애플릿을 표시합니다.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>
+The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.
+</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>패널에 시계를 붙이려면</title>
+  <para>다음 순서대로 하십시오:</para>
+         <orderedlist>
+           <listitem>
+             <para>패널에 오른쪽 단추를 누르십시오.</para>
+           </listitem>
+           <listitem>
+             <para><guimenuitem>패널에 더하기</guimenuitem>를 선택하십시오.</para>
+           </listitem>
+           <listitem>
+             <para><guilabel>패널에 더하기 </guilabel></para>
+           </listitem>
+           <listitem>
+             <para><guibutton>더하기</guibutton>를 누르십시오.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>사용법</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>달력을 보려면</title>	
+	<para>애플릿을 누르면 작은 달력에 이번 달을 표시합니다. 달력을 닫으려면 애플릿에서 패널에 들어 있는 부분을 다시 누르십시오.</para>
+	
+	<para>달력에 표시할 달을 바꾸려면, 연도와 달이 쓰여져 있는 좌우에 화살표를 누릅니다.</para>	
+	
+	<para>달력에서 한 날짜를 두 번 누르면 <application>에볼루션</application> 그룹웨어 프로그램을 실행합니다.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>날짜나 시간을 프로그램에 입력하려면</title>	
+<para><application>시계</application> 애플릿은 시스템 시계에서 시간을 가져 옵니다.</para>
+<para><application>시계</application> 애플릿의 날짜 또는 시간을 다른 프로그램에 입력하려면, 다음 순서대로 하십시오:</para>
+	<orderedlist>
+		<listitem>
+			<para><application>시계</application> 애플릿을 마우스 오른쪽 버튼으로 누르십시오.</para>
+		</listitem>
+		<listitem>
+			<para>애플릿 팝업 메뉴에서 다음 메뉴 항목 중 하나를 선택하십시오:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>시각 복사</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>날짜 복사</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>다른 프로그램에서 날짜 및 시간 항목을 입력할 위치로 포인터를 이동합니다.</para>
+		</listitem>
+		<listitem>
+			<para><menuchoice><guimenu>편집</guimenu><guimenuitem>붙여 넣기</guimenuitem></menuchoice>를 선택하거나 마우스 가운데 버튼을 클릭하여 날짜 및 시간 항목을 입력합니다.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>시스템의 날짜나 시각을 조정하려면</title>
+	<para><application>시계</application> 애플릿이 표시하는 시스템의 날짜나 시간을 조정하려면, 다음 순서대로 하십시오:</para>
+	<orderedlist>
+	<listitem>
+			<para>애플릿을 마우스 오른쪽 단추로 누른 다음, <guimenuitem>날짜 및 시간 조정</guimenuitem>을 선택하십시오.</para>
+	</listitem>
+	<listitem>
+			<para><literal>root</literal> 열쇠글을 입력하고, <guibutton>확인</guibutton>을 누르십시오.</para>
+	</listitem>
+	<listitem>
+			<para><application>시계</application> 애플릿에서 시스템의 날짜와 시간을 설정하는 시스템 관리 도구를 실행합니다. 이 도구를 사용해 날짜와 시간을 조정하십시오.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Clock Preferences</title> 
+	<para>
+	To configure the <application>Clock</application>, right-click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. You will be presented with three tabs to change preferences for <guimenuitem>General</guimenuitem>,  <guimenuitem>Locations</guimenuitem> or <guimenuitem>Weather</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>General Preferences</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Clock Format</guilabel></term> 
+			 <listitem> 
+			 <para>다음 옵션 중 하나를 선택합니다:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12시간</guilabel></para>
+			 <para>시간을 오전/오후 형식으로 표시합니다.</para>
+			 <note><para>세션이 사용하고 있는 언어에서 12시간 시계 형식을 사용하지 않는 경우 이 옵션은 표시하지 않습니다.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24시간</guilabel></para>
+			 <para>시간을 00.00에서 24.00 형식으로 표시합니다.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the date</guilabel></term>
+			 <listitem> 
+			 <para>애플릿에 날짜를 표시하려면 이 옵션을 선택합니다.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>초 보기</guilabel></term>
+			 <listitem> 
+			 <para>애플릿에 초를 표시하려면 이 옵션을 선택합니다.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the weather</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the the current weather forecast at your location.
+			The weather will be displayed as an icon for sunny, cloudy, rain or more.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show temperature</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the temperature at your location.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Location Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Locations</guilabel></term> 
+			 <listitem> 
+			 <para>You can add one or more locations and their local time to be displayed in the Clock.  
+			To add a location:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Press <guilabel>Add</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Type the city, region or country name and as you type a list of options will appear
+			in a drop down box.  Select a match from the pop-up and the <guilabel>Timezone</guilabel>,
+			 <guilabel>Latitude</guilabel>, and <guilabel>Longitude</guilabel> entries will be 
+			automatically filled in.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Weather Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Weather</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Temperature unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Wind speed unit</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Speed unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufort scale</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knots</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (miles per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilometers per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (meters per second)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

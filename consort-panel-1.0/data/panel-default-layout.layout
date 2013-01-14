@@ -1,0 +1,33 @@
+[Toplevel bottom-panel]
+expand=true
+orientation=bottom
+size=24
+y-bottom=0
+
+[Object cardapio-menu]
+object-iid=cardapiognome3Factory::cardapiognome3
+toplevel-id=bottom-panel
+pack-type=start
+pack-index=0
+
+[Object window-list]
+object-iid=WnckletFactory::WindowListApplet
+toplevel-id=bottom-panel
+pack-type=start
+pack-index=1
+
+
+[Object notification-area]
+object-iid=NotificationAreaAppletFactory::NotificationArea
+toplevel-id=bottom-panel
+pack-type=end
+pack-index=1
+
+[Object clock]
+object-iid=ClockAppletFactory::ClockApplet
+toplevel-id=bottom-panel
+pack-type=end
+pack-index=0
+
+
+

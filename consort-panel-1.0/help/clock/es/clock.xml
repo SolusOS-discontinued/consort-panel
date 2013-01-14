@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Manual del Reloj</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2008-2010</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>Proyecto de documentación de Gnome</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Se concede autorización para copiar, distribuir o modificar este documento según los términos de la GFDL (GNU Free Documentation Licence), Versión 1.1, o cualquier otra versión posterior publicada por Free Software Fundation sin secciones invariables, textos de portada ni textos de contraportada. Podrá encontrar una copia de la GFDL en este <ulink type="help" url="ghelp:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+<para>Este manual forma parte de una colección de manuales de GNOME distribuidos con la GFDL. Si desea distribuir este manual independientemente de la colección, puede hacerlo añadiendo al manual una copia de la licencia, como se describe en el apartado 6 de la licencia.</para>
+<para>Muchos de los nombres utilizados por las empresas para diferenciar sus productos y servicios son marcas comerciales. Cuando estos nombres aparecen en cualquier documentación de GNOME y dichas marcas comerciales se ponen en conocimiento de los miembros del Proyecto de documentación de GNOME, entonces los nombres aparecen en mayúsculas o con la inicial en mayúsculas.</para>
+<para>El DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN CON SUJECIÓN A LOS TÉRMINOS DE LA GFDL, QUEDANDO BIEN ENTENDIDO, ADEMÁS, QUE: <orderedlist><listitem>
+<para>EL DOCUMENTO SE PROPORCIONA "TAL CUAL", SIN GARANTÍAS DE NINGÚN TIPO, NI EXPRESAS NI IMPLÍCITAS, INCLUYENDO, SIN LIMITACIÓN, CUALQUIER GARANTÍA DE QUE EL DOCUMENTO O UNA VERSIÓN MODIFICADA DEL MISMO CAREZCAN DE DEFECTOS, SEA COMERCIALIZABLE, ADECUADO PARA UNA FINALIDAD DETERMINADA O QUE NO CONSTITUYA NINGUNA INFRACCIÓN. TODO EL RIESGO EN CUANTO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O DE CUALQUIER VERSIÓN MODIFICADA DEL MISMO LE CORRESPONDE A USTED. EN CASO DE QUE CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA RESULTARA DEFECTUOSO EN CUALQUIER SENTIDO, SERÁ USTED (Y NO EL REDACTOR INICIAL, NI EL AUTOR NI CUALQUIER PERSONA QUE HAYA CONTRIBUIDO) QUIEN ASUMIRÁ EL COSTE DE CUALQUIER SERVICIO TÉCNICO, REPARACIÓN O CORRECCIÓN NECESARIOS. ESTA LIMITACIÓN DE LAS GARANTÍAS CONSTITUYE UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA NINGÚN USO DE CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA DEL MISMO SI NO ES CON SUJECIÓN A ESTA LIMITACIÓN DE LAS GARANTÍAS; Y</para>
+</listitem>
+<listitem>
+<para>EN NINGUNA CIRCUNSTANCIA NI SEGÚN NINGÚN ARGUMENTO LEGAL, SEA POR MOTIVOS CULPOSOS (INCLUIDA LA NEGLIGENCIA), CONTRACTUALES O DE OTRO TIPO, NI EL AUTOR, NI EL REDACTOR INICIAL, NI CUALQUIER COLABORADOR, NI CUALQUIER DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL MISMO, NI CUALQUIER PROVEEDOR DE CUALQUIERA DE DICHAS PARTES, SERÁN RESPONSABLES, ANTE NINGÚN TERCERO, DE NINGÚN DAÑO O PERJUICIO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O CONSIGUIENTE DE NINGÚN TIPO, INCLUIDOS, SIN LIMITACIÓN, LOS DAÑOS POR PÉRDIDA DE FONDO DE COMERCIO, INTERRUPCIÓN DEL TRABAJO, FALLO O MAL FUNCIONAMIENTO INFORMÁTICO, NI CUALQUIER OTRO DAÑO O PÉRDIDA DERIVADOS DEL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO, O RELACIONADO CON ELLO, INCLUSO SI SE HABÍA COMUNICADO A AQUELLA PARTE LA POSIBILIDAD DE TALES DAÑOS.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Proyecto de documentación de Gnome</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>Proyecto de documentación de Gnome</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>Proyecto de documentación de Gnome</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.7</revnumber> 
+		  <date>Enero de 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.6</revnumber> 
+		  <date>Enero de 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.5</revnumber> 
+		  <date>Febrero de 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.4</revnumber> 
+		  <date>Septiembre de 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.3</revnumber> 
+		  <date>Enero de 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.2</revnumber> 
+		  <date>Agosto de 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.1</revnumber> 
+		  <date>Junio de 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj V2.0</revnumber> 
+		  <date>Marzo de 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual de la miniaplicación Reloj</revnumber> 
+		  <date>Abril de 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Este manual describe la versión 2.5.3.1 de la miniaplicación Reloj.</releaseinfo> 
+	 <legalnotice> 
+		<title>Comentarios</title> 
+		<para>Para informar de un fallo o hacer una sugerencia sobre la miniaplicación Reloj o el presente manual, siga las indicaciones que aparecen en la <ulink url="ghelp:gnome-feedback" type="help">Página de contacto de Gnome</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>La miniaplicación <application>Reloj</application> muestra la fecha y hora, y al pulsar sobre ella muestra un calendario. El <application>Reloj</application> se puede personalizar para mostrar segundos, o un reloj de 12 ó 24 horas.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Reloj</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Introducción</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Miniaplicación Reloj</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Muestra la miniaplicación Reloj.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>La miniaplicación <application>Reloj</application> muestra la fecha y hora, y al pulsar sobre ella muestra un calendario. El <application>Reloj</application> se puede personalizar para mostrar segundos, o un reloj de 12 ó 24 horas.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Para añadir el Reloj al panel</title>
+  <para>Realice los pasos siguientes:</para>
+         <orderedlist>
+           <listitem>
+             <para>Pulse con el botón derecho en el panel.</para>
+           </listitem>
+           <listitem>
+             <para>Elija <guimenuitem>Añadir al panel</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Desplace la lista de elementos hacia abajo en el diálogo <guilabel>Añadir al panel</guilabel>, después seleccione <guilabel>Reloj</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Pulse <guibutton>Añadir</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Uso</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Para mostrar el calendario</title>	
+	<para>Pulse en la miniaplicación para abrir un pequeño calendario mostrando el mes actual. Para cerrar el calendario, pulse otra vez en la parte de la miniaplicación que está en el panel.</para>
+	
+	<para>Puede cambiar el mes mostrado en el calendario pulsando en las flechas en cada lado del texto del mes y año.</para>	
+	
+	<para>Pulse dos veces en un día en el calendario para lanzar la aplicación de trabajo en grupo <application>Evolution</application>.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Insertar la fecha o la hora en una aplicación</title>	
+<para>La miniaplicación <application>Reloj</application> obtiene la hora del reloj del sistema.</para>
+<para>Para insertar la fecha o la hora de la miniaplicación <application>Reloj</application> en una aplicación, lleve a cabo los pasos siguientes:</para>
+	<orderedlist>
+		<listitem>
+			<para>Pulse con el botón derecho del ratón en la miniaplicación <application>Reloj</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Elija uno de los siguientes elementos del menú emergente de la miniaplicación:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Copiar hora</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Copiar fecha</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Señale en qué lugar de la aplicación desea insertar el elemento.</para>
+		</listitem>
+		<listitem>
+			<para>Seleccione <menuchoice><guimenu>Editar</guimenu><guimenuitem>Pegar</guimenuitem></menuchoice> o pulse con el botón central del ratón para insertar el elemento.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Para ajustar la hora o fecha del sistema</title>
+	<para>Para ajustar la hora o fecha del sistema que muestra la miniaplicación <application>Reloj</application>, lleve a cabo los siguientes pasos:</para>
+	<orderedlist>
+	<listitem>
+			<para>Pulse con el botón derecho sobre la miniaplicación y elija <guimenuitem>Ajustar fecha y hora</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Teclee la contraseña de <literal>root</literal>, y después pulse <guibutton>Aceptar</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>La miniaplicación <application>Reloj</application> iniciará la herramienta del sistema que establece la fecha y hora del sistema. Use la herramienta para ajustar la fecha y la hora.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Preferencias del reloj</title> 
+	<para>Para configurar el <application>Reloj</application> pulse con el botón derecho del ratón en la miniaplicación, después elija <guimenuitem>PreferenciasI</guimenuitem>. Se presentarán tres pestañas para cambiar las preferencias, <guimenuitem>General</guimenuitem>, <guimenuitem>Ubicaciones</guimenuitem> o <guimenuitem>Meteorología</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>Preferencias generales</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Formato del reloj</guilabel></term> 
+			 <listitem> 
+			 <para>Seleccione una de las opciones siguientes:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12 horas</guilabel></para>
+			 <para>Muestra la hora en formato a.m./p.m.</para>
+			 <note><para>Esta opción o se muestra si el idioma de su sesión no usa el reloj de 12 horas.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24 horas</guilabel></para>
+			 <para>Muestra la hora en formato de 00.00 a 24.00.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Mostrar la fecha</guilabel></term>
+			 <listitem> 
+			 <para>Seleccione esta opción para que se muestre la fecha en la miniaplicación.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Mostrar segundos</guilabel></term>
+			 <listitem> 
+			 <para>Seleccione esta opción para que se muestren los segundos en la miniaplicación.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Mostrar la meteorología</guilabel></term>
+			 <listitem> 
+			 <para>Seleccione esta opción para mostrar la predicción meteorológica actual en su ubicación. Se mostrará la meteorología como un icono para soleado, nublado, lluvioso, etc.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Mostrar la temperatura</guilabel></term>
+			 <listitem> 
+			 <para>Seleccione esta opción para mostrar la temperatura en su ubicación.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Preferencias de zona</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Ubicaciones</guilabel></term> 
+			 <listitem> 
+			 <para>Puede añadir una o más ubicaciones y su hora local para que se muestren en el Reloj. Para añadir una ubicación:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Pulse <guilabel>Añadir</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Escriba el nombre de la ciudad, región o país y mientras escribe aparecerá una lista de opciones en la caja desplegable. Seleccione una coincidencia de la ventana emergente y las entradas <guilabel>Zona horaria</guilabel>, <guilabel>Latitud</guilabel> y <guilabel>Longitud</guilabel> se rellenarán automáticamente.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Preferencias de meteorología</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Meteorología</guilabel></term> 
+			 <listitem> 
+			 <para>Puede mostrar la unidad de temperatura en una de las siguientes opciones de la caja desplegable:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Predeterminado</guilabel>. Lo predeterminado para su región.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Unidad de velocidad del viento</guilabel></term> 
+			 <listitem> 
+			 <para>Puede mostrar la unidad de velocidad en una de las siguientes opciones de la caja desplegable:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Escala Beaufort</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Nudos</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (millas por hora)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilómetros por hora)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (metros por segundo)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Predeterminado</guilabel>. Lo predeterminado para su región.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

@@ -1,0 +1,75 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+[encoding: UTF-8]
+applets/clock/calendar-client.c
+applets/clock/calendar-window.c
+applets/clock/clock.c
+[type: gettext/glade]applets/clock/clock.ui
+applets/clock/clock.schemas.in
+applets/clock/clock-location.c
+applets/clock/clock-location-tile.c
+applets/clock/clock-utils.c
+[type: gettext/ini]applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in
+applets/fish/fish.c
+[type: gettext/glade]applets/fish/fish.ui
+[type: gettext/ini]applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in
+applets/notification_area/main.c
+applets/notification_area/na-tray-manager.c
+[type: gettext/ini]applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in
+[type: gettext/ini]applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in
+applets/wncklet/showdesktop.c
+applets/wncklet/window-list.c
+[type: gettext/glade]applets/wncklet/window-list.ui
+applets/wncklet/window-menu.c
+applets/wncklet/wncklet.c
+applets/wncklet/workspace-switcher.c
+[type: gettext/glade]applets/wncklet/workspace-switcher.ui
+data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in
+data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in
+data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in
+data/org.gnome.consort-panel.gschema.xml.in.in
+data/org.gnome.consort-panel.launcher.gschema.xml.in.in
+data/org.gnome.consort-panel.menu-button.gschema.xml.in.in
+data/org.gnome.consort-panel.object.gschema.xml.in.in
+data/org.gnome.consort-panel.toplevel.gschema.xml.in.in
+consort-panel/libegg/eggdesktopfile.c
+consort-panel/libegg/eggsmclient.c
+consort-panel/libpanel-util/panel-error.c
+consort-panel/libpanel-util/panel-icon-chooser.c
+consort-panel/libpanel-util/panel-launch.c
+consort-panel/libpanel-util/panel-show.c
+consort-panel/applet.c
+consort-panel/button-widget.c
+consort-panel/gnome-desktop-item-edit.c
+consort-panel/consort-panel.desktop.in.in
+consort-panel/launcher.c
+consort-panel/main.c
+consort-panel/menu.c
+consort-panel/panel-action-button.c
+consort-panel/panel-addto.c
+consort-panel/panel-applet-frame.c
+consort-panel/panel-bindings.c
+consort-panel/panel-compatibility.c
+consort-panel/panel-context-menu.c
+consort-panel/panel-ditem-editor.c
+consort-panel/panel-force-quit.c
+consort-panel/panel-frame.c
+consort-panel/panel-layout.c
+consort-panel/panel-menu-bar.c
+consort-panel/panel-menu-button.c
+consort-panel/panel-menu-items.c
+consort-panel/panel-properties-dialog.c
+[type: gettext/glade]consort-panel/panel-properties-dialog.ui
+consort-panel/panel-recent.c
+consort-panel/panel-run-dialog.c
+[type: gettext/glade]consort-panel/panel-run-dialog.ui
+consort-panel/panel-separator.c
+consort-panel/panel-shell.c
+consort-panel/panel-stock-icons.c
+consort-panel/panel-test-applets.c
+[type: gettext/glade]consort-panel/panel-test-applets.ui
+consort-panel/panel-toplevel.c
+consort-panel/panel-util.c
+consort-panel/panel.c
+libpanel-applet/panel-applet.c
+[type: gettext/ini]libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in

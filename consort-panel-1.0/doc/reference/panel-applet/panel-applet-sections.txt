@@ -1,0 +1,64 @@
+<INCLUDE>panel-applet.h</INCLUDE>
+
+<SECTION>
+<FILE>applet</FILE>
+<TITLE>Panel Applet</TITLE>
+PanelApplet
+PanelAppletOrient
+PanelAppletFlags
+panel_applet_get_orient
+panel_applet_get_size
+panel_applet_set_size_hints
+panel_applet_get_background
+panel_applet_set_background_widget
+panel_applet_get_flags
+panel_applet_set_flags
+panel_applet_get_locked_down
+panel_applet_settings_new
+panel_applet_add_preferences
+panel_applet_get_preferences_key
+panel_applet_request_focus
+panel_applet_setup_menu
+panel_applet_setup_menu_from_file
+<SUBSECTION Standard>
+PANEL_APPLET
+PANEL_IS_APPLET
+PANEL_TYPE_APPLET
+panel_applet_get_type
+PANEL_APPLET_CLASS
+PANEL_IS_APPLET_CLASS
+PANEL_APPLET_GET_CLASS
+<SUBSECTION Private>
+PanelAppletClass
+PanelAppletPrivate
+panel_applet_factory_setup_in_process
+</SECTION>
+
+<SECTION>
+<FILE>applet-factory</FILE>
+<TITLE>Panel Applet Factory</TITLE>
+PanelAppletFactoryCallback
+PANEL_APPLET_OUT_PROCESS_FACTORY
+PANEL_APPLET_IN_PROCESS_FACTORY
+panel_applet_factory_main
+</SECTION>
+
+<INCLUDE>panel-applet-gconf.h</INCLUDE>
+
+<SECTION>
+<FILE>gconf</FILE>
+<TITLE>GConf Utilities</TITLE>
+panel_applet_gconf_get_full_key
+panel_applet_gconf_get_bool
+panel_applet_gconf_get_int
+panel_applet_gconf_get_string
+panel_applet_gconf_get_float
+panel_applet_gconf_get_list
+panel_applet_gconf_get_value
+panel_applet_gconf_set_bool
+panel_applet_gconf_set_int
+panel_applet_gconf_set_string
+panel_applet_gconf_set_float
+panel_applet_gconf_set_list
+panel_applet_gconf_set_value
+</SECTION>

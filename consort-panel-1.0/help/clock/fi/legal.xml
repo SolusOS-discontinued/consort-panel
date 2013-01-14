@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<legalnotice id="legalnotice">
+<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+<para>Tämä käyttöohje on osa Gnomen käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+<para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Gnomen dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+<para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <orderedlist><listitem>
+<para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+</listitem>
+<listitem>
+<para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Making the Applet Visible to the Panel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="getting-started.html" title="Part II. Getting Started with the Panel Applet library">
+<link rel="prev" href="getting-started.settings.html" title="Settings">
+<link rel="next" href="getting-started.integration.html" title="Proper Integration with the Panel">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
+<td><a accesskey="p" href="getting-started.settings.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="getting-started.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td><a accesskey="n" href="getting-started.integration.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="getting-started.install"></a>Making the Applet Visible to the Panel</h2></div></div></div>
+<p>
+     Simply installing the applet binary will obviously not be enough to make this applet working in the panel. Two files should be installed for this:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+       a <code class="filename">.panel-applet</code> file so that the panel knows that the applet.
+      </p></li>
+<li class="listitem"><p>
+       a D-Bus service file to autostart the binary when the panel wants to create an applet.
+      </p></li>
+</ul></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.install.panel-applet"></a>Panel Applet File</h3></div></div></div>
+<p>
+      The <code class="filename">.panel-applet</code> file is a key file about the applet binary, describing the <a class="link" href="getting-started.concepts.html#getting-started.concepts.applet-factory" title="Applet Factory">applet factory</a> from the binary and the <a class="link" href="getting-started.concepts.html#getting-started.concepts.applet-types" title="Applet Types">applet types</a> this factory can create.
+     </p>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2593253"></a>Example</h4></div></div></div>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td>
+        <td class="listing_code"><pre class="programlisting">[Applet Factory]
+Id=HelloWorldFactory
+Name=Hello World Applet Factory
+Description=Factory <span class="keyword">for</span> the window navigation related applets
+
+[HelloWorldApplet]
+Name=Hello World
+Description=Factory <span class="keyword">for</span> the Hello World applet example
+Icon=hello-world-icon</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2593273"></a>Format</h4></div></div></div>
+<p>
+       The file must contain a <code class="constant">Applet Factory</code> group with the following keys:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+         <code class="constant">Id</code> (string): the identifier of the applet factory. This must be the same name that will be used as the first parameter to <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()"><code class="function">PANEL_APPLET_OUT_PROCESS_FACTORY()</code></a> or <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_IN_PROCESS_FACTORY()"><code class="function">PANEL_APPLET_IN_PROCESS_FACTORY()</code></a>.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">InProcess</code> (boolean, optional): whether the applet should be <a class="link" href="getting-started.in-out-process.html" title="Out-of-Process vs In-Process">in-process or out-of-process</a>. By default, the applet is out-of-process.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">Location</code> (string): the path to the applet binary. Only mandatory if <code class="constant">InProcess</code> is <code class="constant">true</code>.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">Name</code> (localized string, optional): the name of the applet factory. For example: <code class="constant">Hello World Factory</code>.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">Description</code> (localized string, optional): the description of the applet factory. For example: <code class="constant">Factory for the Hello World applet example</code>.
+        </p></li>
+</ul></div>
+<p>
+       For each applet type, it must also contain a group named with the applet type identifier. Such a group must have the following keys:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+         <code class="constant">Name</code> (localized string): the name of the applet type. For example: <code class="constant">Hello World</code>.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">Description</code> (localized string, optional): the description of the applet type. For example: <code class="constant">Hello World applet example</code>.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">Icon</code> (string, optional): the icon name of the applet type. For example: <code class="constant">hello-world-icon</code>. It can also be the path to an icon, but this not recommended.
+        </p></li>
+<li class="listitem"><p>
+         <code class="constant">BonoboId</code> (list of strings, optional): a list of bonobo id. This will tell the panel that this applet type can be used instead of a bonobo applet if the bonobo applet id is in this list.
+        </p></li>
+</ul></div>
+</div>
+<div class="sect3">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2593459"></a>Installation</h4></div></div></div>
+<p>
+       The <code class="filename">.panel-applet</code> file must be installed in a specific directory to be discoverable by the panel. You can fetch this directory during <code class="constant">configure</code> withe following code:
+      </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2</pre></td>
+        <td class="listing_code"><pre class="programlisting">LIBPANEL_APPLET_DIR=`$PKG_CONFIG --variable=libpanel_applet_dir libpanelapplet-<span class="number">4.0</span>`
+AC_SUBST(LIBPANEL_APPLET_DIR)</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.install.dbus-service"></a>D-Bus Service File</h3></div></div></div>
+<p>
+      The communication between the panel and the applet factory is done over D-Bus. When creating an applet, the panel will send a message to the D-Bus service of the applet factory. If the D-Bus service is not running yet, it must be started automatically. We use D-Bus activation for this, which requires install a standard D-Bus service file. Please refer to the <a class="ulink" href="http://dbus.freedesktop.org/doc/dbus-specification.html#message-bus-starting-services" target="_top">D-Bus documentation</a> for more information about D-Bus service files.
+     </p>
+<p>
+      This is only needed for <a class="link" href="getting-started.in-out-process.html" title="Out-of-Process vs In-Process">out-of-process applets</a>, because in-process applets do no need to have their binary autostarted for obvious reasons.
+     </p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

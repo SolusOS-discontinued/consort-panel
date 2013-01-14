@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<legalnotice id="legalnotice">
+<para>الأذونات معطاة لنسخ وتوزيع و/أو تعديل هذا المستند تحت شروط رخصة جنو للوثائق الحرة (جي إف دي إل)، الإصدار 1.1 أو أي إصدار قادم مُوزع بواسطة مؤسسة البرمجيات الحرة بدون أقسام ثابتة، ونصوص الغلاف الأمامي، ونصوص الغلاف الخلفي. تستطيع إيجاد نسخة من رخصة جنو للوثائق الحرة في هذه <ulink url="ghelp:fdl" type="help">الوصلة</ulink> أو في ملف COPYING-DOCS المُوزع مع هذا الدليل.</para>
+<para>هذا الدليل جزء من مجموعة وثائق جنوم المُوزعة تحت رخصة جنو للوثائق الحرة. إذا أردت توزيع هذا الدليل منفصلا من المجموعة، تستطيع فعل ذلك بإضافة نسخة من الرخصة إلى المستند، كالمُوضح في القسم 6 من الترخيص.</para>
+<para>الكثير من الأسماء المستخدمة بواسطة شركات لتمييز منتجاتهم وخدماتهم تطالب كعلامة مسجلة. حيث تلك الأسماء تظهر في أي مستند جنوم، وأعضاء مشروع توثيق جنوم يدركون تلك العلامات المسجلة، وبالتالي الأسماء بأحرف كبيرة أو ببادئة حرف كبير.</para>
+<para>المستند والنسخ المعدلة من المستند مقدمة تحت بنود رخصة جنو للوثائق الحرة مع فهم أقصى ل: <orderedlist><listitem>
+<para>
+DOCUMENT IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER 
+EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE 
+DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE,
+FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE 
+QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE 
+DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,                     YOU (NOT THE INITIAL
+WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF
+ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS    
+LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED              
+VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER                    
+EXCEPT UNDER THIS DISCLAIMER; AND
+</para>
+</listitem>
+<listitem>
+<para>UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER
+IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE,
+SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR,
+OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+ OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH   
+PARTIES, BE LIABLE TO ANY PERSON FOR ANY             
+DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR         
+CONSEQUENTIAL DAMAGES OF ANY CHARACTER                     
+  INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF
+GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION,
+OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT
+OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED
+VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL
+HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES.
+</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>

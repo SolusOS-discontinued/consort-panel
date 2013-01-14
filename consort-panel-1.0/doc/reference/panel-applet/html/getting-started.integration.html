@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Proper Integration with the Panel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="getting-started.html" title="Part II. Getting Started with the Panel Applet library">
+<link rel="prev" href="getting-started.install.html" title="Making the Applet Visible to the Panel">
+<link rel="next" href="getting-started.in-out-process.html" title="Out-of-Process vs In-Process">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
+<td><a accesskey="p" href="getting-started.install.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="getting-started.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td><a accesskey="n" href="getting-started.in-out-process.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="getting-started.integration"></a>Proper Integration with the Panel</h2></div></div></div>
+<p>
+     Since the applets appear as part of the panel to users, it is important that they behave in a consistent way. A few steps can be completed to achieve proper integration.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.integration.background"></a>Panel Background</h3></div></div></div>
+<p>
+     The panel can have different types of background, depending on how the user configures the panel. By default, applets do not respect the background that is configured and can therefore look out of place.
+     </p>
+<p>
+      The <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-background-widget" title="panel_applet_set_background_widget ()"><code class="function">panel_applet_set_background_widget()</code></a> function can be used to automatically have the right background drawn for a specific widget. Just using this function on the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> object itself, or its child is usually enough to have proper background integration.
+     </p>
+<p>
+      In some rare cases, though, <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-background-widget" title="panel_applet_set_background_widget ()"><code class="function">panel_applet_set_background_widget()</code></a> will not be enough. The solution is then to connect to the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet-change-background" title='The "change-background" signal'><code class="function">"change-background"</code></a> signal of the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> object: it will be emitted when the background has changed, and it will provide the <span class="type">cairo_pattern_t</span> pattern to use as a basis to draw the background.
+     </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.integration.lockdown"></a>Panel Lockdown</h3></div></div></div>
+<p>
+      The panel has proper support for lockdown, and when it is locked down, it is expected that all applets behave consistently in a lockdown mode too. This generally means that the preferences of the applet should not be accessible, but it could also imply a restriction on the behavior of the applet.
+     </p>
+<p>
+      The <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-locked-down" title="panel_applet_get_locked_down ()"><code class="function">panel_applet_get_locked_down()</code></a> function can be used to query the state of the panel lockdown. It is also possible to react to changes by monitoring the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--locked-down" title='The "locked-down" property'><code class="function">"locked-down"</code></a> property of the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> object. You can achieve this by connecting to the <code class="function">"notify::locked-down"</code> event.
+     </p>
+<p>
+       In most cases, the <span class="type">GBinding</span> API is enough to respect the panel lockdown: <code class="function">g_object_bind_property()</code> can be used to automatically update the visiblity of a menu item in the context menu of the applet. In the following example, the <code class="function">"HelloWorldPrefs"</code> action (which is an action from the context menu) will only be displayed if the panel is not locked down.
+
+      </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4</pre></td>
+        <td class="listing_code"><pre class="programlisting">action = gtk_action_group_get_action (action_group, <span class="number">&quot;HelloWorldPrefs&quot;</span>);
+g_object_bind_property (applet, <span class="number">&quot;locked-down&quot;</span>,
+                        action, <span class="number">&quot;visible&quot;</span>,
+                        G_BINDING_DEFAULT|G_BINDING_INVERT_BOOLEAN|G_BINDING_SYNC_CREATE);</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+
+      </p>
+<p>
+       It is obviously possible to use <code class="function">g_object_bind_property()</code> to change the visibility of widgets that appear outside of the context menu, like a button in a window.
+      </p>
+<p>
+
+     </p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

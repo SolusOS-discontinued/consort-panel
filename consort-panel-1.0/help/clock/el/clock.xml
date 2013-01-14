@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Εγχειρίδιο ρολογιού</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Σας παρέχεται άδεια να αντιγράψετε, διανείμετε ή/και να τροποποιήσετε το υπάρχον κείμενο υπό τους όρους της άδειας GNU Free Documentation License (GFDL), έκδοση 1.1, ή οποιαδήποτε μεταγενέστερη έκδοση που να έχει εκδοθεί από το Free Software Foundation υπό τις προϋποθέσεις no Invariant Sections, no Front-Cover Texts, και no Back-Cover Texts. Μπορείτε να βρείτε αντίγραφο του GFDL σε αυτό το <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS όπως διανέμεται με αυτή την τεκμηρίωση.</para>
+<para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist><listitem>
+<para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+</listitem>
+<listitem>
+<para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.7</revnumber> 
+		  <date>Ιανουάριος 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.6</revnumber> 
+		  <date>Ιανουάριος 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.5</revnumber> 
+		  <date>Φεβρουάριος 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.4</revnumber> 
+		  <date>Σεπτέμβριος 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.3</revnumber> 
+		  <date>Ιανουάριος 2005</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.2</revnumber> 
+		  <date>Αύγουστος 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.1</revnumber> 
+		  <date>Ιούνιος 2005</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.0</revnumber> 
+		  <date>Μάρτιος 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού</revnumber> 
+		  <date>Απρίλιος 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.5.3.1 της μικροεφαρμογής Ρολόι.</releaseinfo> 
+	 <legalnotice> 
+		<title>Ανάδραση</title> 
+		<para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το εγχειρίδιο ρολογιού αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:gnome-feedback" type="help">σελίδα ανάδρασης GNOME </ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>Η μικροεφαρμογή <application>Ρολόι</application>εμφανίζει την ημερομηνία και την ώρα, και όταν γίνει κλικ πάνω της, εμφανίζει ένα ημερολόγιο. Το <application>Ρολόι</application> μπορεί να προσαρμοστεί ώστε να εμφανίζει δευτερόλεπτα ή ένα ρολόι 12 ή 24 ωρών.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Ρολόι</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Εισαγωγή</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Μικροεφαρμογή Ρολόι</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Εμφανίζει την μικροεφαρμογή Ρολόι.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Η μικροεφαρμογή <application>Ρολόι</application>εμφανίζει την ημερομηνία και την ώρα, και όταν γίνει κλικ πάνω της, εμφανίζει ένα ημερολόγιο. Το <application>Ρολόι</application> μπορεί να προσαρμοστεί ώστε να εμφανίζει δευτερόλεπτα ή ένα ρολόι 12 ή 24 ωρών.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Για προσθήκη ρολογιού στον πίνακα εφαρμογών</title>
+  <para>Εκτελέστε τα παρακάτω βήματα:</para>
+         <orderedlist>
+           <listitem>
+             <para>Κάντε δεξί κλικ στον πίνακα εφαρμογών.</para>
+           </listitem>
+           <listitem>
+             <para>Επιλέξτε <guimenuitem>Προσθήκη στον πίνακα εφαρμογών</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Κυλίστε κάτω τη λίστα αντικειμένων στο διάλογο <guilabel>Προσθήκη στον πίνακα εφαρμογών</guilabel>, και επιλέξτε <guilabel>Ρολόι</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Κάντε κλικ στο κουμπί <guibutton>Προσθήκη</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Χρήση</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Για την εμφάνιση του ημερολογίου</title>	
+	<para>Κάντε κλικ στη μικροεφαρμογή για να ανοίξετε ένα μικρό ημερολόγιο που εμφανίζει τον τρέχοντα μήνα. Για να κλείσετε το ημερολόγιο, κάντε κλικ εκ νέου στο τμήμα της μικροεφαρμογής που βρίσκεται πάνω στον πίνακα εφαρμογών.</para>
+	
+	<para>Μπορείτε να μεταβάλετε την προβολή μήνα στο ημερολόγιο κάνοντας κλικ στα βέλη εκατέρωθεν του κειμένου για το μήνα και το χρόνο.</para>	
+	
+	<para>Κάντε διπλό κλικ σε μία ημέρα πάνω στο ημερολόγιο για να εκκινήσετε την εφαρμογή ομάδας <application>Evolution</application>.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Για εισαγωγή ημερομηνίας ή ώρας σε εφαρμογή</title>	
+<para>Η μικροεφαρμογή <application>Ρολόι</application> μεταδίδει την ώρα από το σύστημα ρολογιού.</para>
+<para>Για εισαγωγή της ημερομηνίας ή ώρας από τη μικροεφαρμογή <application>Ρολόι</application> σε μία εφαρμογή, εκτελέστε τα παρακάτω βήματα:</para>
+	<orderedlist>
+		<listitem>
+			<para>Κάντε δεξί κλικ στη μικροεφαρμογή <application>Ρολόι</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Επιλέξτε ένα από τα ακόλουθα αντικείμενα μενού από το αναδυόμενο μενού μικροεφαρμογών:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Αντιγραφή ώρας</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Αντιγραφή ημερομηνίας</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Δείξτε τη συγκεκριμένη θέση στην εφαρμογή όπου επιθυμείτε να εισάγετε το αντικείμενο.</para>
+		</listitem>
+		<listitem>
+			<para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Επικόλληση</guimenuitem></menuchoice> ή μεσαίο κλικ για να εισάγετε το αντικείμενο.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Προσαρμογή ώρας/ημερομηνίας</title>
+	<para>Για να ρυθμίσετε την ημερομηνία ή ώρα του συστήματος που εμφανίζει η μικροεφαρμογή <application>Ρολόι</application>, εκτελέστε τα παρακάτω βήματα:</para>
+	<orderedlist>
+	<listitem>
+			<para>Κάντε δεξί κλικ στη μικροεφαρμογή, και κατόπιν επιλέξτε <guimenuitem>Προσαρμογή ώρας/ημερομηνίας</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Πληκτρολογείστε τον κωδικό πρόσβασης <literal>υπερχρήστη</literal>, και κατόπιν επιλέξτε <guibutton>Εντάξει</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>Η μικροεφαρμογή <application>Ρολόι</application> εκκινεί το εργαλείο συστήματος που καθορίζει την ημερομηνία και ώρα για το σύστημα. Χρησιμοποιείστε το εργαλείο για να ρυθμίσετε την ημερομηνία και την ώρα.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Προτιμήσεις ρολογιού</title> 
+	<para>Για να ρυθμίσετε το <application>Ρολόι</application>, κάντε δεξί κλικ στην μικροεφαρμογή, και μετά επιλέξτε <guimenuitem>Προτιμήσεις </guimenuitem>. Θα σας παρουσιαστούν τρεις ετικέτες για να αλλάξετε τις ρυθμίσεις για τις ενότητες <guimenuitem>Γενικές</guimenuitem>, <guimenuitem>Τοποθεσίες</guimenuitem> ή για την ενότητα <guimenuitem>Καιρός</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>Γενικές προτιμήσεις</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Είδος ρολογιού</guilabel></term> 
+			 <listitem> 
+			 <para>Παρακαλώ επιλέξτε μία από τις παρακάτω επιλογές:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12ωρο</guilabel></para>
+			 <para>Εμφάνιση ώρας στη μορφή π.μ./μ.μ.</para>
+			 <note><para>Αυτή η επιλογή δεν παρουσιάζεται αν η επιλεγμένη γλώσσα για τη συνεδρία σας δε χρησιμοποιεί το ρολόι 12 ωρών.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24ωρο</guilabel></para>
+			 <para>Εμφανίζει την ώρα στη μορφή από 00.00 ως 24.00.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Προβολή της ημερομηνίας</guilabel></term>
+			 <listitem> 
+			 <para>Επιλέξτε αυτή την επιλογή για να προβάλετε την ημερομηνία στη μικροεφαρμογή.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Προβολή δευτερολέπτων</guilabel></term>
+			 <listitem> 
+			 <para>Επιλέξτε αυτή την επιλογή για να προβάλετε τα δευτερόλεπτα στη μικροεφαρμογή.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Προβολή του καιρού</guilabel></term>
+			 <listitem> 
+			 <para>Διαλέξτε αυτήν την επιλογή για να εμφανίσετε την τρέχουσα καιρική πρόβλεψη για την περιοχή σας. Ο καιρός θα εμφανιστεί ως εικονίδιο για τον ηλιόλουστο, νεφελώδη, βροχερό ή άλλο καιρό.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Προβολή της θερμοκρασίας</guilabel></term>
+			 <listitem> 
+			 <para>Διαλέξτε αυτή την επιλογή για να προβάλετε την ημερομηνία στη περιοχή σας.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Προτιμήσεις τοποθεσίας</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Τοποθεσίες</guilabel></term> 
+			 <listitem> 
+			 <para>Μπορείτε να προσθέσετε μια ή περισσότερες περιοχές και την τοπική ώρα τους για να εμφανίζονται στο ρολόι. Για να προσθέσετε μια περιοχή:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Πατήστε <guilabel>προσθήκη</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Πληκτρολογήστε το όνομα της πόλης, της περιοχής ή της χώρας και καθώς πληκτρολογείται, μία πτυσσόμενη λίστα με επιλογές θα εμφανιστεί. Επιλέξτε την αντίστοιχη από την αναδυόμενη λίστα μαζι με την <guilabel>Ζώνη ώρας</guilabel>, το <guilabel>Γεωγραφικό πλάτος</guilabel>, και το <guilabel>Γεωγραφικό μήκος</guilabel> οι καταχωρήσεις θα συμπληρωθούν αυτόματα.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Προτιμήσεις καιρού</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Ο καιρός</guilabel></term> 
+			 <listitem> 
+			 <para>Μπορείτε να εμφανίσετε τη μονάδα Θερμοκρασίας ως μια από τις ακόλουθες επιλογές από το πτυσσόμενο μενού:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Φαρενάιτ)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Κελσίου)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Κέλβιν)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Προεπιλογή</guilabel> Η προεπιλεγμένη προβολή για την περιοχή σας.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Μονάδα μέτρησης ταχύτητας ανέμου</guilabel></term> 
+			 <listitem> 
+			 <para>Μπορείτε να εμφανίσετε τη μονάδα Ταχύτητας ως μια από τις ακόλουθες επιλογές από το πτυσσόμενο μενου:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Κλίμακα μποφόρ</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Κόμβοι</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (Μίλια ανά ώρα)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (Χιλιόμετρα ανά ώρα)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (μέτρα ανά δευτερόλεπτο)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Προεπιλογή</guilabel> Η προεπιλεγμένη προβολή για την περιοχή σας.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

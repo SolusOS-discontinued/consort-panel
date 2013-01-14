@@ -1,0 +1,453 @@
+Description: Combine user + edit context menu into one context menu
+ In Gnome 2 the context menu for applets contained the applets context menu
+ as well as the "Edit" items, i.e. Remove/Move.
+ This was removed and forced into a new menu accessible only on ALT+Rightclick.
+ This patch puts the menus back into one context menu accessible with the
+ right mouse button, restoring traditional gnome behaviour
+ .
+ consort-panel (3.4.2.1-3solusos1) two; urgency=low
+ .
+   * Combined context menu + better panel layout
+Author: Ikey Doherty <ikey@solusos.com>
+
+---
+Reviewed-By: Ikey Doherty <ikey@solusos.com>
+Last-Update: <2012-06-03>
+
+--- consort-panel-3.4.2.1.orig/consort-panel/panel-applet-frame.h
++++ consort-panel-3.4.2.1/consort-panel/panel-applet-frame.h
+@@ -57,10 +57,6 @@ struct _PanelAppletFrameClass {
+ 					   guint                button,
+ 					   guint32              timestamp);
+ 
+-	void     (*popup_edit_menu)       (PanelAppletFrame    *frame,
+-					   guint                button,
+-					   guint32              timestamp);
+-
+ 	void     (*change_orientation)    (PanelAppletFrame    *frame,
+ 					   PanelOrientation     orientation);
+ 
+--- consort-panel-3.4.2.1.orig/consort-panel/panel-applet-frame.c
++++ consort-panel-3.4.2.1/consort-panel/panel-applet-frame.c
+@@ -410,14 +410,11 @@ panel_applet_frame_button_changed (GtkWi
+ 			pointer = gdk_device_manager_get_client_pointer (device_manager);
+ 			gdk_device_ungrab (pointer, GDK_CURRENT_TIME);
+ 
+-			if (modifiers == panel_bindings_get_mouse_button_modifier_keymask ())
+-				PANEL_APPLET_FRAME_GET_CLASS (frame)->popup_edit_menu (frame,
+-										       event->button,
+-										       event->time);
+-			else
+-				PANEL_APPLET_FRAME_GET_CLASS (frame)->popup_menu (frame,
+-										  event->button,
+-										  event->time);
++
++			// Just use one menu now not two
++			PANEL_APPLET_FRAME_GET_CLASS (frame)->popup_menu (frame,
++									event->button,
++									event->time);
+ 
+ 			handled = TRUE;
+ 		} else if (event->type == GDK_BUTTON_RELEASE)
+--- consort-panel-3.4.2.1.orig/consort-panel/applet.c
++++ consort-panel-3.4.2.1/consort-panel/applet.c
+@@ -417,11 +417,30 @@ panel_applet_get_menu (AppletInfo *info)
+ 	GList       *l;
+ 	gboolean     added_anything = FALSE;
+ 
++	/**
++	 * Variables for the edit menu
++	 */
++	GtkWidget   *menuitem;
++	GtkWidget   *image;
++	gboolean     movable;
++	gboolean     removable;
++
+ 	if (info->menu)
+ 		return info->menu;
+ 
+ 	menu = panel_applet_create_bare_menu (info);
+ 
++	/**
++	 * Moved the panel_applet_get_edit_menu code to here
++	 * to recombine the menu as seen in the traditional
++	 * Gnome 2 setup
++	 */
++	movable = panel_applet_can_freely_move (info);
++	removable = panel_layout_is_writable ();
++
++	// Hack. We always added something now :P
++	added_anything = TRUE;
++
+ 	for (l = info->user_menu; l; l = l->next) {
+ 		AppletUserMenu *user_menu = l->data;
+ 
+@@ -434,67 +453,6 @@ panel_applet_get_menu (AppletInfo *info)
+ 		added_anything = TRUE;
+ 	}
+ 
+-	if ( ! added_anything) {
+-                g_signal_handlers_disconnect_by_func (menu,
+-						      G_CALLBACK (applet_menu_show), info);
+-                g_signal_handlers_disconnect_by_func (menu,
+-						      G_CALLBACK (applet_menu_deactivate), info);
+-
+-		g_object_unref (menu);
+-		return NULL;
+-	}
+-
+-	info->menu = menu;
+-
+-	panel_lockdown_on_notify (panel_lockdown_get (),
+-				  NULL,
+-				  G_OBJECT (info->menu),
+-				  panel_applet_menu_lockdown_changed,
+-				  info);
+-
+-	return info->menu;
+-}
+-
+-static void
+-panel_applet_edit_menu_lockdown_changed (PanelLockdown *lockdown,
+-					 gpointer       user_data)
+-{
+-	AppletInfo *info = user_data;
+-
+-	if (!panel_lockdown_get_panels_locked_down (lockdown))
+-		return;
+-
+-	if (info->edit_menu) {
+-		if (gtk_widget_get_visible (info->edit_menu))
+-			gtk_menu_shell_deactivate (GTK_MENU_SHELL (info->edit_menu));
+-
+-                g_signal_handlers_disconnect_by_func (info->edit_menu,
+-						      G_CALLBACK (applet_menu_deactivate), info);
+-		gtk_widget_destroy (info->edit_menu);
+-		info->edit_menu = NULL;
+-	}
+-}
+-
+-static GtkWidget *
+-panel_applet_get_edit_menu (AppletInfo *info)
+-{
+-	GtkWidget   *menu;
+-	GtkWidget   *menuitem;
+-	GtkWidget   *image;
+-	gboolean     movable;
+-	gboolean     removable;
+-
+-	if (info->edit_menu)
+-		return info->edit_menu;
+-
+-	if (panel_lockdown_get_panels_locked_down_s ())
+-		return NULL;
+-
+-	menu = panel_applet_create_bare_menu (info);
+-
+-	movable = panel_applet_can_freely_move (info);
+-	removable = panel_layout_is_writable ();
+-
+ 	menuitem = gtk_menu_item_new_with_mnemonic (_("_Move"));
+ 	g_signal_connect (menuitem, "activate",
+ 			  G_CALLBACK (move_applet_callback), info);
+@@ -513,15 +471,25 @@ panel_applet_get_edit_menu (AppletInfo *
+ 	gtk_menu_shell_append (GTK_MENU_SHELL (menu), menuitem);
+ 	gtk_widget_set_sensitive (menuitem, removable);
+ 
+-	info->edit_menu = menu;
++	if ( ! added_anything) {
++                g_signal_handlers_disconnect_by_func (menu,
++						      G_CALLBACK (applet_menu_show), info);
++                g_signal_handlers_disconnect_by_func (menu,
++						      G_CALLBACK (applet_menu_deactivate), info);
++
++		g_object_unref (menu);
++		return NULL;
++	}
++
++	info->menu = menu;
+ 
+ 	panel_lockdown_on_notify (panel_lockdown_get (),
+-				  "panels-locked-down",
+-				  G_OBJECT (info->edit_menu),
+-				  panel_applet_edit_menu_lockdown_changed,
++				  NULL,
++				  G_OBJECT (info->menu),
++				  panel_applet_menu_lockdown_changed,
+ 				  info);
+ 
+-	return info->edit_menu;
++	return info->menu;
+ }
+ 
+ 
+@@ -671,7 +639,6 @@ applet_button_press (GtkWidget      *wid
+ 		     GdkEventButton *event,
+ 		     AppletInfo     *info)
+ {
+-	guint modifiers;
+ 
+ 	if (event->button != 3)
+ 		return FALSE;
+@@ -679,12 +646,8 @@ applet_button_press (GtkWidget      *wid
+ 	if (applet_must_skip_menu (info))
+ 		return FALSE;
+ 
+-	modifiers = event->state & gtk_accelerator_get_default_mod_mask ();
+-
+-	if (modifiers == panel_bindings_get_mouse_button_modifier_keymask ())
+-		applet_show_menu (info, panel_applet_get_edit_menu (info), FALSE, event);
+-	else
+-		applet_show_menu (info, panel_applet_get_menu (info), TRUE, event);
++	// Show combined menu
++	applet_show_menu (info, panel_applet_get_menu (info), TRUE, event);
+ 
+ 	return TRUE;
+ }
+@@ -704,17 +667,11 @@ applet_key_press (GtkWidget   *widget,
+ 	eventbutton.button = 3;
+ 	eventbutton.time = event->time;
+ 
+-	/* We're not connecting to the popup-menu signal since we want to be
+-	 * able to deal with two cases:
+-	 *  - exact keybinding of popup-menu => we open the context menu
+-	 *  - keybinding of popup-menu + modifier from metacity => we open menu
+-	 *    to "edit"
+-	 */
++
+ 	panel_util_key_event_is_popup (event, &is_popup, &is_edit_popup);
+ 
+-	if (is_edit_popup)
+-		applet_show_menu (info, panel_applet_get_edit_menu (info), FALSE, &eventbutton);
+-	else if (is_popup)
++	// Hacked out the old code and show the popup always
++	if (is_edit_popup || is_popup )
+ 		applet_show_menu (info, panel_applet_get_menu (info), TRUE, &eventbutton);
+ 
+ 	return (is_popup || is_edit_popup);
+@@ -747,17 +704,6 @@ panel_applet_destroy (GtkWidget  *widget
+         }
+ 	info->menu = NULL;
+ 
+-	if (info->edit_menu) {
+-		if (gtk_widget_get_visible (info->edit_menu))
+-			gtk_menu_shell_deactivate (GTK_MENU_SHELL (info->edit_menu));
+-
+-                g_signal_handlers_disconnect_by_func (info->edit_menu,
+-						      G_CALLBACK (applet_menu_show), info);
+-                g_signal_handlers_disconnect_by_func (info->edit_menu,
+-						      G_CALLBACK (applet_menu_deactivate), info);
+-		g_object_unref (info->edit_menu);
+-        }
+-	info->edit_menu = NULL;
+ 
+ 	if (info->data_destroy)
+ 		info->data_destroy (info->data);
+@@ -956,7 +902,6 @@ panel_applet_register (GtkWidget       *
+ 	info->widget       = applet;
+ 	info->settings     = g_object_ref (settings);
+ 	info->menu         = NULL;
+-	info->edit_menu    = NULL;
+ 	info->data         = data;
+ 	info->data_destroy = data_destroy;
+ 	info->user_menu    = NULL;
+--- consort-panel-3.4.2.1.orig/consort-panel/applet.h
++++ consort-panel-3.4.2.1/consort-panel/applet.h
+@@ -20,7 +20,6 @@ typedef struct {
+ 	GSettings       *settings;
+ 
+ 	GtkWidget       *menu;
+-	GtkWidget       *edit_menu;
+ 	GList           *user_menu;
+ 
+ 	gpointer         data;
+--- consort-panel-3.4.2.1.orig/consort-panel/libpanel-applet-private/panel-applet-frame-dbus.c
++++ consort-panel-3.4.2.1/consort-panel/libpanel-applet-private/panel-applet-frame-dbus.c
+@@ -180,18 +180,6 @@ panel_applet_frame_dbus_popup_menu (Pane
+ }
+ 
+ static void
+-panel_applet_frame_dbus_popup_edit_menu (PanelAppletFrame *frame,
+-					 guint             button,
+-					 guint32           timestamp)
+-{
+-	PanelAppletFrameDBus *dbus_frame = PANEL_APPLET_FRAME_DBUS (frame);
+-
+-	panel_applet_container_child_popup_edit_menu (dbus_frame->priv->container,
+-						      button, timestamp,
+-						      NULL, NULL, NULL);
+-}
+-
+-static void
+ change_orientation_cb (PanelAppletContainer *container,
+ 		       GAsyncResult         *res,
+ 		       PanelAppletFrame     *frame)
+@@ -376,7 +364,6 @@ panel_applet_frame_dbus_class_init (Pane
+ 	frame_class->init_properties = panel_applet_frame_dbus_init_properties;
+ 	frame_class->sync_menu_state = panel_applet_frame_dbus_sync_menu_state;
+ 	frame_class->popup_menu = panel_applet_frame_dbus_popup_menu;
+-	frame_class->popup_edit_menu = panel_applet_frame_dbus_popup_edit_menu;
+ 	frame_class->change_orientation = panel_applet_frame_dbus_change_orientation;
+ 	frame_class->change_size = panel_applet_frame_dbus_change_size;
+ 	frame_class->change_background = panel_applet_frame_dbus_change_background;
+--- consort-panel-3.4.2.1.orig/consort-panel/libpanel-applet-private/panel-applet-container.c
++++ consort-panel-3.4.2.1/consort-panel/libpanel-applet-private/panel-applet-container.c
+@@ -789,46 +789,3 @@ panel_applet_container_child_popup_menu_
+ 	return !g_simple_async_result_propagate_error (simple, error);
+ }
+ 
+-void
+-panel_applet_container_child_popup_edit_menu (PanelAppletContainer *container,
+-					      guint                 button,
+-					      guint32               timestamp,
+-					      GCancellable         *cancellable,
+-					      GAsyncReadyCallback   callback,
+-					      gpointer              user_data)
+-{
+-	GSimpleAsyncResult *result;
+-	GDBusProxy         *proxy = container->priv->applet_proxy;
+-
+-	if (!proxy)
+-		return;
+-
+-	result = g_simple_async_result_new (G_OBJECT (container),
+-					    callback,
+-					    user_data,
+-					    panel_applet_container_child_popup_edit_menu);
+-
+-	g_dbus_connection_call (g_dbus_proxy_get_connection (proxy),
+-				g_dbus_proxy_get_name (proxy),
+-				g_dbus_proxy_get_object_path (proxy),
+-				PANEL_APPLET_INTERFACE,
+-				"PopupEditMenu",
+-				g_variant_new ("(uu)", button, timestamp),
+-				NULL,
+-				G_DBUS_CALL_FLAGS_NO_AUTO_START,
+-				-1, cancellable,
+-				child_popup_menu_cb,
+-				result);
+-}
+-
+-gboolean
+-panel_applet_container_child_popup_edit_menu_finish (PanelAppletContainer *container,
+-						     GAsyncResult         *result,
+-						     GError              **error)
+-{
+-	GSimpleAsyncResult *simple = G_SIMPLE_ASYNC_RESULT (result);
+-
+-	g_warn_if_fail (g_simple_async_result_get_source_tag (simple) == panel_applet_container_child_popup_edit_menu);
+-
+-	return !g_simple_async_result_propagate_error (simple, error);
+-}
+--- consort-panel-3.4.2.1.orig/consort-panel/libpanel-applet-private/panel-applet-container.h
++++ consort-panel-3.4.2.1/consort-panel/libpanel-applet-private/panel-applet-container.h
+@@ -89,15 +89,6 @@ void       panel_applet_container_child_
+ gboolean   panel_applet_container_child_popup_menu_finish (PanelAppletContainer *container,
+ 							   GAsyncResult         *result,
+ 							   GError              **error);
+-void       panel_applet_container_child_popup_edit_menu   (PanelAppletContainer *container,
+-							   guint                 button,
+-							   guint32               timestamp,
+-							   GCancellable         *cancellable,
+-							   GAsyncReadyCallback   callback,
+-							   gpointer              user_data);
+-gboolean   panel_applet_container_child_popup_edit_menu_finish (PanelAppletContainer *container,
+-								GAsyncResult         *result,
+-								GError              **error);
+ 
+ void       panel_applet_container_child_set               (PanelAppletContainer *container,
+ 							   const gchar          *property_name,
+--- consort-panel-3.4.2.1.orig/libpanel-applet/panel-applet.c
++++ consort-panel-3.4.2.1/libpanel-applet/panel-applet.c
+@@ -152,8 +152,6 @@ static const gchar panel_menu_ui[] =
+ 	"<ui>\n"
+ 	"  <popup name=\"PanelAppletPopup\" action=\"PopupAction\">\n"
+ 	"    <placeholder name=\"AppletItems\"/>\n"
+-	"  </popup>\n"
+-	"  <popup name=\"PanelAppletEditPopup\" action=\"PopupEditAction\">\n"
+ 	"    <menuitem name=\"MoveItem\" action=\"Move\"/>\n"
+ 	"    <menuitem name=\"RemoveItem\" action=\"Remove\"/>\n"
+ 	"  </popup>\n"
+@@ -1221,25 +1219,6 @@ panel_applet_menu_popup (PanelApplet *ap
+ 			button, time);
+ }
+ 
+-static void
+-panel_applet_edit_menu_popup (PanelApplet *applet,
+-			      guint        button,
+-			      guint32      time)
+-{
+-	GtkWidget *menu;
+-
+-	if (applet->priv->locked_down)
+-		return;
+-
+-	menu = gtk_ui_manager_get_widget (applet->priv->ui_manager,
+-					  "/PanelAppletEditPopup");
+-	gtk_menu_popup (GTK_MENU (menu),
+-			NULL, NULL,
+-			NULL,
+-			applet,
+-			button, time);
+-}
+-
+ static gboolean
+ panel_applet_can_focus (GtkWidget *widget)
+ {
+@@ -1325,14 +1304,8 @@ panel_applet_button_press (GtkWidget
+ 	}
+ 
+ 	if (event->button == 3) {
+-		guint modifiers;
+-
+-		modifiers = event->state & gtk_accelerator_get_default_mod_mask ();
+-
+-		if (modifiers == panel_applet_bindings_get_mouse_button_modifier_keymask ())
+-			panel_applet_edit_menu_popup (applet, event->button, event->time);
+-		else
+-			panel_applet_menu_popup (applet, event->button, event->time);
++		// Show one menu not two
++		panel_applet_menu_popup (applet, event->button, event->time);
+ 
+ 		return TRUE;
+ 	}
+@@ -1358,9 +1331,8 @@ panel_applet_key_press_event (GtkWidget
+ 
+ 	panel_applet_bindings_key_event_is_popup (event, &is_popup, &is_edit_popup);
+ 
+-	if (is_edit_popup)
+-		panel_applet_edit_menu_popup (PANEL_APPLET (widget), 3, event->time);
+-	else if (is_popup)
++	// One combined edit menu
++	if (is_edit_popup || is_popup)
+ 		panel_applet_menu_popup (PANEL_APPLET (widget), 3, event->time);
+ 
+ 	return (is_popup || is_edit_popup);
+@@ -2378,15 +2350,8 @@ method_call_cb (GDBusConnection       *c
+ 		panel_applet_menu_popup (applet, button, time);
+ 
+ 		g_dbus_method_invocation_return_value (invocation, NULL);
+-	} else if (g_strcmp0 (method_name, "PopupEditMenu") == 0) {
+-		guint button;
+-		guint time;
+-
+-		g_variant_get (parameters, "(uu)", &button, &time);
+-		panel_applet_edit_menu_popup (applet, button, time);
+-
+-		g_dbus_method_invocation_return_value (invocation, NULL);
+ 	}
++	// Removed old code for the edit menu
+ }
+ 
+ static GVariant *
+@@ -2477,10 +2442,6 @@ static const gchar introspection_xml[] =
+ 	      "<arg name='button' type='u' direction='in'/>"
+ 	      "<arg name='time' type='u' direction='in'/>"
+ 	    "</method>"
+-	    "<method name='PopupEditMenu'>"
+-	      "<arg name='button' type='u' direction='in'/>"
+-	      "<arg name='time' type='u' direction='in'/>"
+-	    "</method>"
+ 	    "<property name='SettingsPath' type='s' access='readwrite'/>"
+ 	    "<property name='PrefsKey' type='s' access='readwrite'/>"
+ 	    "<property name='Orient' type='u' access='readwrite' />"

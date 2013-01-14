@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Uhr-Applet-Handbuch</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2008, 2009, 2010.</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>GNOME-Dokumentationsprojekt</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+<para>Das vorliegende Handbuch ist Teil einer Reihe von GNOME-Handbüchern, die unter der GFDL verteilt werden. Wenn Sie dieses Handbuch separat verteilen möchten, können Sie dies tun, indem Sie dem Handbuch eine Kopie der Lizenz, wie in Abschnitt 6 der Lizenz beschrieben, hinzufügen.</para>
+<para>Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und Dienstleistungen verwendeten Namen handelt es sich um Marken. An den Stellen, an denen derartige Namen in einer GNOME-Dokumentation vorkommen und wenn die Mitglieder des GNOME Documentation Project über diese Marken informiert wurden, sind die Namen in Grossbuchstaben oder mit großen Anfangsbuchstaben geschrieben.</para>
+<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist><listitem>
+<para>DAS DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE JEGLICHE GEWÄHRLEISTUNG, WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, GEWÄHRLEISTUNGEN, DASS DAS DOKUMENT ODER EINE MODIFIZIERTE VERSION DES DOKUMENTS FREI VON HANDELSÜBLICHEN FEHLERN UND FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST UND KEINE RECHTE DRITTER VERLETZT. JEGLICHES RISIKO IN BEZUG AUF DIE QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS TRAGEN SIE. SOLLTE SICH EIN DOKUMENT ODER EINE MODIFIZIERTE VERSION DAVON IN IRGENDEINER WEISE ALS FEHLERHAFT ERWEISEN, TRAGEN SIE (NICHT DER URSPRÜNGLICHE VERFASSER, AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR JEGLICHE ERFORDERLICHE SERVICE-, REPARATUR- UND KORREKTURMASSNAHMEN: DIESE BESCHRÄNKUNG DER GEWÄHRLEISTUNG IST WESENTLICHER BESTANDTEIL DIESER LIZENZ. JEDE VERWENDUNG EINES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS UNTERLIEGT DIESER BESCHRÄNKUNG; UND UNTER KEINEN UMSTÄNDEN UND GEMÄSS KEINER RECHTSLEHRE, WEDER AUFGRUND VON UNERLAUBTEN HANDLUNGEN (EINSCHLIESSLICH FAHRLÄSSIGKEIT), VERTRÄGEN ODER SONSTIGEM, KANN DER AUTOR, DER URSPRÜNGLICHE VERFASSER, EIN MITWIRKENDER ODER EIN VERTEILER DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ODER EIN LIEFERANT EINER DIESER PARTEIEN VON EINER PERSON FÜR DIREKTE, INDIREKTE, BESONDERE, ZUFÄLLIGE ODER ALS FOLGE AUFGETRETENE SCHÄDEN IRGENDEINER ART, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, SCHÄDEN DURCH GESCHÄFTSWERTVERLUSTE, ARBEITSAUSFÄLLE, COMPUTERAUSFÄLLE ODER -FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE, DIE DURCH ODER IM ZUSAMMENHANG MIT DER VERWENDUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ENTSTANDEN SIND, SELBST WENN DIESE PARTEI ÜBER MÖGLICHE SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE, HAFTBAR GEMACHT WERDEN.</para>
+</listitem>
+<listitem>
+<para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-Dokumentationsprojekt</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-Dokumentationsprojekt</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-Dokumentationsprojekt</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.7</revnumber> 
+		  <date>Januar 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.6</revnumber> 
+		  <date>Januar 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.5</revnumber> 
+		  <date>Februar 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.4</revnumber> 
+		  <date>September 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.3</revnumber> 
+		  <date>Januar 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet-Handbuch V2.2</revnumber> 
+		  <date>August 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.1</revnumber> 
+		  <date>Juni 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch V2.0</revnumber> 
+		  <date>März 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Uhr-Applet-Handbuch</revnumber> 
+		  <date>April 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>In diesem Handbuch wird Version 2.5.3.1 des Uhr-Applets beschrieben.</releaseinfo> 
+	 <legalnotice> 
+		<title>Rückmeldungen</title> 
+		<para>Um einen Fehler zu melden oder einen Vorschlag zum Uhr-Applet oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:gnome-feedback" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>Das <application>Uhr</application>-Applet zeigt Datum und Zeit an. Beim Anklicken wird ein Kalender geöffnet. Das <application>Uhr</application>-Applet kann derart angepasst werden, dass zusätzlich die Sekunden oder die Zeit im 12-Stunden- oder 24-Stunden-Format angezeigt werden.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Uhr</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Einführung</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Uhr-Applet</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Zeigt das Uhr-Applet.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Das <application>Uhr</application>-Applet zeigt Datum und Zeit an. Beim Anklicken wird ein Kalender geöffnet. Das <application>Uhr</application>-Applet kann derart angepasst werden, dass zusätzlich die Sekunden oder die Zeit im 12-Stunden- oder 24-Stunden-Format angezeigt werden.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>So fügen Sie eine Uhr zu einem Panel hinzu</title>
+  <para>Führen Sie die folgenden Schritte aus:</para>
+         <orderedlist>
+           <listitem>
+             <para>Klicken Sie mit der rechten Maustaste auf das Panel.</para>
+           </listitem>
+           <listitem>
+             <para>Wählen Sie <guimenuitem>Zum Panel hinzufügen</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Rollen Sie in der Liste der Einträge im Dialog <guilabel>Zum Panel hinzufügen</guilabel> nach unten, dann wählen Sie <guilabel>Uhr</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Klicken Sie auf <guibutton>Hinzufügen</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Verwendung</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>So zeigen Sie den Kalender an</title>	
+	<para>Klicken Sie auf das Applet, um einen kleinen Kalender anzuzeigen, der den aktuellen Monat zeigt. Um den Kalender zu schließen, klicken Sie wieder auf den Teil des Applets, der sich im Panel befindet.</para>
+	
+	<para>Sie können den im Kalender angezeigten Monat ändern, indem Sie auf die Pfeile an den Seiten der angezeigten Texte für Monat und Jahr klicken.</para>	
+	
+	<para>Doppelklicken Sie auf einen Tag im Kalender, um die Groupware-Suite <application>Evolution</application> zu starten.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>So fügen Sie Datum und Zeit in eine Anwendung ein</title>	
+<para>Das Applet <application>Uhr</application> übernimmt die Uhrzeit von der Systemuhr.</para>
+<para>Um die Uhrzeit oder das Datum des Applets <application>Uhr</application> in eine Anwendung einzufügen, gehen Sie wie folgt vor:</para>
+	<orderedlist>
+		<listitem>
+			<para>Klicken Sie mit der rechten Maustaste auf das Applet <application>Uhr</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Wählen Sie einen der folgenden Einträge aus dem Kontextmenü des Applets:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Zeit kopieren</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Datum kopieren</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Setzen Sie den Mauszeiger an die Stelle in der Anwendung, an der Sie das Objekt einsetzen möchten.</para>
+		</listitem>
+		<listitem>
+			<para>Wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Einfügen</guimenuitem></menuchoice> oder klicken Sie mit der mittleren Maustaste, um die Uhrzeit bzw. das Datum einzufügen.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>So stellen Sie Datum und Zeit des Systems ein</title>
+	<para>Um das Datum oder die Uhrzeit des Systems anzupassen, das vom Applet <application>Uhr</application> angezeigt wird, führen Sie die folgenden Schritte aus:</para>
+	<orderedlist>
+	<listitem>
+			<para>Klicken Sie mit der rechten Maustaste auf das Applet, und wählen Sie <guimenuitem>Datum und Uhrzeit anpassen</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Geben Sie das <literal>root</literal>-Passwort ein, und klicken Sie anschließend auf <guibutton>OK</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>Das Applet <application>Uhr</application> startet das Systemwerkzeug, welches das Datum und die Zeit des Systems einstellt. Verwenden Sie dieses Werkzeug, um Datum und Zeit anzupassen.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Uhr-Einstellungen</title> 
+	<para>Um das <application>Uhr-Applet</application> zu konfigurieren, klicken Sie mit der rechten Maustaste auf das Applet und wählen Sie <guimenuitem>Einstellungen</guimenuitem>. Die möglichen Einstellungen  werden in den drei Reitern <guimenuitem>Allgemein</guimenuitem>, <guimenuitem>Orte</guimenuitem> oder <guimenuitem>Wetter</guimenuitem> angezeigt.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>Allgemeine Einstellungen</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Uhr-Format</guilabel></term> 
+			 <listitem> 
+			 <para>Wählen Sie eine der folgenden Optionen:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12-Stundenformat</guilabel></para>
+			 <para>Zeigt die Uhrzeit im 12-Stundenformat (00:00 bis 12:00 Uhr) an.</para>
+			 <note><para>Diese Option wird nicht angezeigt, falls die Sprache Ihrer Sitzung nicht das 12-Stunden-System verwendet.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24-Stundenformat</guilabel></para>
+			 <para>Zeigt die Uhrzeit im 24-Stundenformat (00:00 bis 24:00 Uhr) an.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Datum anzeigen</guilabel></term>
+			 <listitem> 
+			 <para>Wählen Sie diese Option, um im Applet das Datum anzuzeigen.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Sekunden anzeigen</guilabel></term>
+			 <listitem> 
+			 <para>Wählen Sie diese Option, um im Applet Sekunden anzuzeigen.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Wetter anzeigen</guilabel></term>
+			 <listitem> 
+			 <para>Wählen Sie diese Option, um die aktuelle Wettervorhersage für Ihren Ort anzuzeigen. Das Wetter wird in einem Symbol dargestellt, als sonnig, wolkig, regnerisch oder mehr.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Temperatur anzeigen</guilabel></term>
+			 <listitem> 
+			 <para>Wählen Sie diese Option, um die Temperatur an Ihrem Ort anzuzeigen.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Einstellungen für Orte</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Orte</guilabel></term> 
+			 <listitem> 
+			 <para>Sie können für die Anzeige innerhalb des Uhr-Applets weitere Orte und deren lokale Zeit hinzufügen. So fügen Sie einen Ort hinzu:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Klicken Sie auf <guilabel>Hinzufügen</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Geben Sie die Stadt, die Region oder den Landesnamen ein. Während der Eingabe erscheint eine Liste von Optionen in einer Auswahlliste. Wählen Sie das Gewünschte aus, und die Einträge für <guilabel>Zeitzone</guilabel>, <guilabel>Längengrad</guilabel> und <guilabel>Breitengrad</guilabel> werden automatisch hinzugefügt.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Wetter-Einstellungen</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Wetter</guilabel></term> 
+			 <listitem> 
+			 <para>Sie können die Temperatur in einer der folgenden Einheiten in der Auswahlliste festlegen:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Vorgabe</guilabel> Die vorgegebene Anzeigeeinheit für Ihre Region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Windgeschwindigkeitseinheit</guilabel></term> 
+			 <listitem> 
+			 <para>Sie können die Windgeschwindigkeit in einer der folgenden Einheiten in der Auswahlliste festlegen:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufort-Skala</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knoten</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (Meilen pro Stunde)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (Kilometer pro Stunde)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>m/s</guilabel> (Meter pro Sekunde)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Vorgabe</guilabel> Die vorgegebene Anzeigeeinheit für Ihre Region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

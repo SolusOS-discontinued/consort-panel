@@ -1,0 +1,2210 @@
+# GNOME paneeli eesti keele tõlge.
+# Estonian translation of GNOME panel.
+#
+# Copyright (C) 1999, 2001-2006 Free Software Foundation, Inc.
+# Copyright (C) 2007–2011, The GNOME Project.
+# This file is distributed under the same license as the consort-panel package.
+#
+# Lauris Kaplinski, 1999.
+# Ilmar Kerm <ikerm@hot.ee>, 2001, 2002.
+# Tõivo Leedjärv <toivo@linux.ee>, 2002, 2003.
+# Priit Laes <plaes@plaes.org>, 2004-2006, 2008, 2009
+# Ivar Smolin <okul@linux.ee>, 2005–2011.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consort-panel MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"panel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-29 18:57+0000\n"
+"PO-Revision-Date: 2012-03-02 13:25+0200\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#.
+msgid "%l:%M %p"
+msgstr "%H:%M"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#.
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the start date of an appointment, in
+#. * the most abbreviated way possible.
+msgid "%b %d"
+msgstr "%e. %b"
+
+msgid "Tasks"
+msgstr "Ülesanded"
+
+msgid "Edit"
+msgstr "Muuda"
+
+msgid "All Day"
+msgstr "Kogu päev"
+
+msgid "Appointments"
+msgstr "Sündmused"
+
+msgid "Birthdays and Anniversaries"
+msgstr "Sünnipäevad ja aastapäevad"
+
+msgid "Weather Information"
+msgstr "Ilmaandmed"
+
+msgid "Locations"
+msgstr "Asukoht"
+
+msgid "Calendar"
+msgstr "Kalender"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+msgid "%l:%M:%S %p"
+msgstr "%H:%M:%S"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the date. Replace %e with %d if, when
+#. * the day of the month as a decimal number is a single digit,
+#. * it should begin with a 0 in your locale (e.g. "May 01"
+#. * instead of "May  1").
+msgid "%a %b %e"
+msgstr "%A, %e. %b"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#, c-format
+msgid ""
+"%1$s\n"
+"%2$s"
+msgstr ""
+"%2$s\n"
+"%1$s"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#, c-format
+msgid "%1$s, %2$s"
+msgstr "%2$s, %1$s"
+
+#. Show date in tooltip.
+#. Translators: This is a strftime format string.
+#. * It is used to display a date. Please leave "%%s" as it is:
+#. * it will be used to insert the timezone name later.
+msgid "%A %B %d (%%s)"
+msgstr "%A, %e. %B %Y (%%s)"
+
+msgid "Click to hide your appointments and tasks"
+msgstr "Oma sündmuste ja ülesannete peitmiseks klõpsa siia"
+
+msgid "Click to view your appointments and tasks"
+msgstr "Oma sündmuste ja ülesannete vaatamiseks klõpsa siia"
+
+msgid "Click to hide month calendar"
+msgstr "Kalendri kuuvaate peitmiseks klõpsa siia"
+
+msgid "Click to view month calendar"
+msgstr "Kalendri kuuvaate vaatamiseks klõpsa siia"
+
+msgid "Computer Clock"
+msgstr "Arvuti kell"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+msgid "%I:%M:%S %p"
+msgstr "%H:%M:%S"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+msgid "%I:%M %p"
+msgstr "%H:%M"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display a date in the full format (so that people can
+#. * copy and paste it elsewhere).
+msgid "%A, %B %d %Y"
+msgstr "%A, %d. %B %Y"
+
+msgid "Failed to open the time settings"
+msgstr "Tõrge ajasätete avamisel"
+
+msgid "_Preferences"
+msgstr "_Eelistused"
+
+msgid "Copy _Time"
+msgstr "Kopeeri k_ellaaeg"
+
+msgid "Copy _Date"
+msgstr "Kopeeri _kuupäev"
+
+msgid "Ad_just Date & Time"
+msgstr "_Säti kuupäeva ja aega"
+
+msgid "Custom format"
+msgstr "Kohandatud vorming"
+
+msgid "Choose Location"
+msgstr "Asukoha valimine"
+
+msgid "Edit Location"
+msgstr "Asukoha muutmine"
+
+msgid "City Name"
+msgstr "Linna nimi"
+
+msgid "City Time Zone"
+msgstr "Linna ajavöönd"
+
+msgid "24 hour"
+msgstr "24 tunnine"
+
+msgid "UNIX time"
+msgstr "UNIXi aeg"
+
+msgid "Internet time"
+msgstr "Interneti aeg"
+
+msgid "Custom _format:"
+msgstr "Kohandatud _vorming:"
+
+#. Languages that have a single word that translates as either "state" or "province" should use that instead of "region".
+msgid ""
+"<small><i>Type a city, region, or country name and then select a match from "
+"the pop-up.</i></small>"
+msgstr ""
+"<small><i>Sisesta linna, maakonna või riigi nimi ning vali vaste "
+"hüpikmenüüst.</i></small>"
+
+msgid "_Timezone:"
+msgstr "_Ajavöönd:"
+
+msgid "_Location Name:"
+msgstr "_Asukoha nimetus:"
+
+msgid "<i>(optional)</i>"
+msgstr "<i>(valikuline)</i>"
+
+msgid "L_ongitude:"
+msgstr "P_ikkuskraad:"
+
+msgid "L_atitude:"
+msgstr "L_aiuskraad:"
+
+msgid "East"
+msgstr "Idapikkust"
+
+msgid "West"
+msgstr "Läänelaiust"
+
+msgid "North"
+msgstr "Põhjalaiust"
+
+msgid "South"
+msgstr "Lõunalaiust"
+
+msgid "Clock Preferences"
+msgstr "Kella eelistused"
+
+msgid "Clock Format"
+msgstr "Kellaaja vorming"
+
+msgid "_12 hour format"
+msgstr "_12-tunnine vorming"
+
+msgid "_24 hour format"
+msgstr "_24-tunnine vorming"
+
+msgid "Panel Display"
+msgstr "Paneelikuva"
+
+msgid "Show the _date"
+msgstr "_Kuupäev on nähtaval"
+
+msgid "Show seco_nds"
+msgstr "Sekun_did on nähtaval"
+
+msgid "Show _weather"
+msgstr "_Ilmaandmed on nähtaval"
+
+msgid "Show _temperature"
+msgstr "_Temperatuuriandmed on nähtaval"
+
+msgid "General"
+msgstr "Üldine"
+
+msgid "Display"
+msgstr "Kuva"
+
+msgid "_Visibility unit:"
+msgstr "_Nähtavusühik:"
+
+msgid "_Pressure unit:"
+msgstr "_Rõhuühik:"
+
+msgid "_Wind speed unit:"
+msgstr "Tuule _kiiruse ühik:"
+
+msgid "_Temperature unit:"
+msgstr "_Temperatuuriühik:"
+
+msgid "Weather"
+msgstr "Ilm"
+
+msgid "Time _Settings"
+msgstr "Aja _sätted"
+
+#. Translators:
+#. This controls whether the GNOME panel clock should display time in 24 hour mode
+#. or 12 hour mode by default. The only valid values for this are "24-hour" and
+#. "12-hour". If your locale uses 24 hour time notation, translate this to "24-hour".
+#. If your locale uses 12 hour time notation with am/pm, translate this to "12-hour".
+#.
+#. Do NOT translate this into anything else than "24-hour" or "12-hour". For example,
+#. if you translate this to "24 sata" or anything else that isn't "24-hour" or
+#. "12-hour", things will not work.
+#.
+msgid "24-hour"
+msgstr "24-hour"
+
+msgid "Hour format"
+msgstr "Tunnivorming"
+
+msgid ""
+"This key specifies the hour format used by the clock applet. Possible values "
+"are \"12-hour\", \"24-hour\", \"internet\", \"unix\" and \"custom\". If set "
+"to \"internet\", the clock will display Internet time. The Internet time "
+"system divides the day into 1000 \".beats\". There are no time zones in this "
+"system, so time is the same all over the world. If set to \"unix\", the "
+"clock will display time in seconds since Epoch, i.e. 1970-01-01. If set to "
+"\"custom\", the clock will display time according to the format specified in "
+"the custom_format key."
+msgstr ""
+"Selle võtmega määratakse kellarakendi tunnivorming. Võimalikud väärtused on "
+"\"12-hour\" (12-tunnine), \"24-hour\" (24-tunnine), \"internet\", \"unix\" "
+"ja \"custom\". Kui väärtuseks on \"internet\", siis kuvab kell Interneti "
+"aega. Interneti ajasüsteem jagab päeva tuhandeks \"löögiks\". Selles "
+"süsteemis pole ajavööndeid ja aeg on üle kogu maailma ühtne. Väärtuse \"unix"
+"\" korral kuvab kell sekundeid alates epohhi (1970-01-01) algusest. Väärtuse "
+"\"custom\" korral kuvatakse kohandatud aega custom_format võtmega määratud "
+"vormingus."
+
+msgid "Custom format of the clock"
+msgstr "Kohandatud kellavorming"
+
+msgid ""
+"This key specifies the format used by the clock applet when the format key "
+"is set to \"custom\". You can use conversion specifiers understood by "
+"strftime() to obtain a specific format. See the strftime() manual for more "
+"information."
+msgstr ""
+"Selle võtmega määratakse kellarakendi poolt kasutatav vorming juhul, kui "
+"vorminguvõtme väärtuseks on määratud \"custom\". See vorming on sarnane "
+"strftime() funktsiooni vormingule. Lähemat teavet saab vaadata käsiraamatu "
+"strftime() lehelt."
+
+msgid "Show time with seconds"
+msgstr "Aja näitamine koos sekunditega"
+
+msgid "If true, display seconds in time."
+msgstr "Kui märgitud, siis näitatakse kellaaja juures sekundeid."
+
+msgid "Show date in clock"
+msgstr "Kellarakendis kuupäeva näitamine"
+
+msgid "If true, display date in the clock, in addition to time."
+msgstr "Kui märgitud, siis lisaks kellaajale näidatakse ka kuupäeva."
+
+msgid "Show date in tooltip"
+msgstr "Vihjel kuupäeva näitamine"
+
+msgid "If true, show date in a tooltip when the pointer is over the clock."
+msgstr ""
+"Kui märgitud, siis näitatakse kuupäeva vihjel, kui hiir on kellarakendi "
+"kohal."
+
+msgid "Show weather in clock"
+msgstr "Kellarakendis näidatakse ilmaandmeid"
+
+msgid "If true, display a weather icon."
+msgstr "Kui märgitud, siis näitatakse ilmaikooni."
+
+msgid "Show temperature in clock"
+msgstr "Kellarakendis näidatakse temperatuuri"
+
+msgid "If true, show the temperature next to the weather icon."
+msgstr "Kui märgitud, siis näidatakse ilmaikooni kõrval temperatuuri."
+
+msgid "Use UTC"
+msgstr "UTC aeg"
+
+msgid ""
+"The use of this key was deprecated in GNOME 2.28 in favour of the use of "
+"timezones. The schema is retained for compatibility with older versions."
+msgstr ""
+"Selle võtme kasutamine on tänu ajavööndite kasutamisele alates GNOME "
+"versioonist 2.28 aegunud. See skeem on alles jäetud vanemate versioonidega "
+"ühildumise eesmärgil."
+
+msgid "Time configuration tool"
+msgstr "Aja seadistusprogramm"
+
+msgid ""
+"The use of this key was deprecated in GNOME 2.22 with the use of an internal "
+"time configuration tool. The schema is retained for compatibility with older "
+"versions."
+msgstr ""
+"Selle võtme kasutamine on tänu sisemise ajasätete vahendile alates GNOME "
+"versioonist 2.22 aegunud. See skeem on alles jäetud vanemate versioonidega "
+"ühildumise eesmärgil."
+
+msgid "Show week numbers in calendar"
+msgstr "Nädalanumbrite näitamine kalendris"
+
+msgid "If true, show week numbers in the calendar."
+msgstr "Kui märgitud, siis kuvatakse kalendris nädalate numbreid."
+
+msgid "Expand list of appointments"
+msgstr "Sündmuste nimekirja laiendamine"
+
+msgid "If true, expand the list of appointments in the calendar window."
+msgstr "Märkimise korral on kalendri aknas olev sündmuste nimekiri laiendatud."
+
+msgid "Expand list of birthdays"
+msgstr "Sünnipäevade nimekirja laiendamine"
+
+msgid "If true, expand the list of birthdays in the calendar window."
+msgstr ""
+"Märkimise korral on kalendri aknas olev sünnipäevade nimekiri laiendatud."
+
+msgid "Expand list of tasks"
+msgstr "Ülesannete nimekirja laiendamine"
+
+msgid "If true, expand the list of tasks in the calendar window."
+msgstr ""
+"Märkimise korral on kalendri aknas olev ülesannete nimekiri laiendatud."
+
+msgid "Expand list of weather information"
+msgstr "Ilmateate nimekirja laiendamine"
+
+msgid "If true, expand the list of weather information in the calendar window."
+msgstr "Märkimise korral on kalendri aknas olev ilmateate nimekiri laiendatud."
+
+msgid "Expand list of locations"
+msgstr "Asukohtade nimekirja laiendamine"
+
+msgid "If true, expand the list of locations in the calendar window."
+msgstr ""
+"Kui märgitud, siis kalendri aknas on olev ülesannete nimekiri laiendatud "
+"kujul."
+
+msgid ""
+"The use of this key was deprecated in GNOME 2.6 in favour of the 'format' "
+"key. The schema is retained for compatibility with older versions."
+msgstr ""
+"Selle võtme kasutamine on tänu 'format' võtmele alates GNOME versioonist 2.6 "
+"aegunud. See skeem on alles jäetud vanemate versioonidega ühildumise "
+"eesmärgil."
+
+msgid "Use UNIX time"
+msgstr "UNIXi aeg"
+
+msgid "Use Internet time"
+msgstr "Internetiaja kasutamine"
+
+msgid "List of locations"
+msgstr "Asukohtade loetelu"
+
+msgid "A list of locations to display in the calendar window."
+msgstr "Kalendriaknas kuvatavate asukohtade nimekiri."
+
+msgid "Temperature unit"
+msgstr "Temperatuuriühik"
+
+msgid "The unit to use when showing temperatures."
+msgstr "Temperatuuride näitamiseks kasutatav ühik."
+
+msgid "Speed unit"
+msgstr "Kiirusühik"
+
+msgid "The unit to use when showing wind speed."
+msgstr "Tuule kiiruse näitamiseks kasutatav ühik."
+
+msgid "Failed to set the system timezone"
+msgstr "Tõrge süsteemse ajavööndi seadmisel"
+
+msgid "<small>Set...</small>"
+msgstr "<small>Muuda...</small>"
+
+msgid "<small>Set</small>"
+msgstr "<small>Muuda</small>"
+
+msgid "Set location as current location and use its timezone for this computer"
+msgstr ""
+"Asukoha ja selle juurde kuuluva ajavööndi määramine selle arvuti vaikimisi "
+"asukohaks ja ajavööndiks"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday). The %p expands to
+#. * am/pm.
+msgid "%l:%M <small>%p (%A)</small>"
+msgstr "%l:%M <small>%p (%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday).
+msgid "%H:%M <small>(%A)</small>"
+msgstr "%H:%M <small>(%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+msgid "%l:%M <small>%p</small>"
+msgstr "%l:%M <small>%p</small>"
+
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#. FMQ: it's broken to read from another module's translations; add some API to libgweather.
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#. Translators: The two strings are temperatures.
+#, c-format
+msgid "%s, feels like %s"
+msgstr "%s, tundub kui %s"
+
+#, c-format
+msgid "Sunrise: %s / Sunset: %s"
+msgstr "Päikesetõus: %s / Loojang: %s"
+
+#, c-format
+msgid "Could not display help document '%s'"
+msgstr "Abidokumenti '%s' pole võimalik kuvada"
+
+msgid "Error displaying help document"
+msgstr "Viga abidokumendi kuvamisel"
+
+msgid "Clock Applet Factory"
+msgstr "Kella rakendi factory"
+
+msgid "Factory for clock applet"
+msgstr "Kella rakendi factory"
+
+msgid "Clock"
+msgstr "Kell"
+
+msgid "Get the current time and date"
+msgstr "Kuupäeva ja kellaaja näitamine"
+
+#, c-format
+msgid ""
+"Warning:  The command appears to be something actually useful.\n"
+"Since this is a useless applet, you may not want to do this.\n"
+"We strongly advise you against using %s for anything\n"
+"which would make the applet \"practical\" or useful."
+msgstr ""
+"Hoiatus: käsk näib olevat isegi kasulik.\n"
+"Kuna see on aga kasutu rakend, siis sa arvatavasti ei soovi seda teha.\n"
+"Me soovitame sul hoiduda tegevusest %s, mis võiks teha\n"
+"selle rakendi kuidagimoodi \"praktiliseks\" või kasulikuks."
+
+#, no-c-format
+msgid "%s the Fish"
+msgstr "Kala nimega %s"
+
+#, c-format
+msgid "%s the Fish, a contemporary oracle"
+msgstr "Kala nimega %s, kaasaegne oraakel"
+
+msgid "Unable to locate the command to execute"
+msgstr "Ei leia käivitatavat käsku"
+
+#, no-c-format
+msgid "%s the Fish Says:"
+msgstr "Kala nimega %s ütleb:"
+
+#, c-format
+msgid ""
+"Unable to read output from command\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Käsu väljundit pole võimalik lugeda\n"
+"\n"
+"Detailid: %s"
+
+msgid "_Speak again"
+msgstr "_Räägi uuesti"
+
+#, c-format
+msgid "The configured command is not working and has been replaced by: %s"
+msgstr "See seadistuskäsk ei toimi ja on asendatud käsuga %s"
+
+#, c-format
+msgid ""
+"Unable to execute '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Käsku '%s' pole võimalik käivitada\n"
+"\n"
+"Üksikasjad: %s"
+
+#, c-format
+msgid ""
+"Unable to read from '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Vormi '%s' pole võimalik lugeda\n"
+"\n"
+"Detailid: %s"
+
+msgid "The water needs changing"
+msgstr "Vesi tuleb ära vahetada"
+
+msgid "Look at today's date!"
+msgstr "Vaata, mis kuupäev täna on!"
+
+#, c-format
+msgid "%s the Fish, the fortune teller"
+msgstr "Kala %s, ennustaja"
+
+msgid "Fish Preferences"
+msgstr "Kala eelistused"
+
+msgid "_Name of fish:"
+msgstr "Kala _nimi:"
+
+msgid "Co_mmand to run when clicked:"
+msgstr "_Klõpsamisel käivitatav käsk:"
+
+msgid "Animation"
+msgstr "Animatsioon"
+
+msgid "    "
+msgstr "    "
+
+msgid "_Pause per frame:"
+msgstr "_Paus kaadrite vahel:"
+
+msgid "seconds"
+msgstr "sekundi järel"
+
+msgid "_Rotate on vertical panels"
+msgstr "Vertikaalsel paneelil on rakend _pööratud"
+
+msgid "Wanda Factory"
+msgstr "Wanda factory"
+
+msgid "From Whence That Stupid Fish Came"
+msgstr "Kustkohast see lollakas kala tuli"
+
+msgid "Fish"
+msgstr "Kala"
+
+msgid "Display a swimming fish or another animated creature"
+msgstr "Ujuva kala või mõne muu animeeritud eluka näitamine"
+
+msgid "Panel Notification Area"
+msgstr "Paneeli teateala"
+
+msgid "Notification Area Factory"
+msgstr "Teateala factory"
+
+msgid "Factory for notification area"
+msgstr "Teateala factory"
+
+msgid "Notification Area"
+msgstr "Teateala"
+
+msgid "Area where notification icons appear"
+msgstr "Ala, kuhu teateikoonid ilmuvad"
+
+msgid "Window Navigation Applet Factory"
+msgstr "Aknavalija rakendi factory"
+
+msgid "Factory for the window navigation related applets"
+msgstr "Aknavalijaga seotud rakendite factory"
+
+msgid "Window Selector"
+msgstr "Aknavalija"
+
+msgid "Switch between open windows using a menu"
+msgstr "Menüü abil lülitumine avatud akende vahel"
+
+msgid "Workspace Switcher"
+msgstr "Tööalahaldur"
+
+msgid "Switch between workspaces"
+msgstr "Tööalade vahel lülitumine"
+
+msgid "Window List"
+msgstr "Akende nimekiri"
+
+msgid "Switch between open windows using buttons"
+msgstr "Nuppude abil lülitumine avatud akende vahel"
+
+msgid "Show Desktop"
+msgstr "Töölaua näitamine"
+
+msgid "Hide application windows and show the desktop"
+msgstr "Rakenduste akende peitmine ja töölaua näitamine"
+
+#, c-format
+msgid "Failed to load %s: %s\n"
+msgstr "Tõrge %s laadimisel: %s\n"
+
+msgid "Icon not found"
+msgstr "Ikooni ei leitud"
+
+msgid "Click here to restore hidden windows."
+msgstr "Klõpsa siia, et taastada peidetud aknad."
+
+msgid "Click here to hide all windows and show the desktop."
+msgstr "Klõpsa siia, et peita kõik aknad ja näidata töölauda."
+
+msgid "Show Desktop Button"
+msgstr "Töölaua näitamise nupp"
+
+msgid ""
+"Your window manager does not support the show desktop button, or you are not "
+"running a window manager."
+msgstr ""
+"Sinu aknahaldur ei toeta töölaua näitamise nuppu või pole sul aknahaldur "
+"üldse käivitatud."
+
+msgid "Window List Preferences"
+msgstr "Akende loendi eelistused"
+
+msgid "Window List Content"
+msgstr "Akende nimekirja sisu"
+
+msgid "Sh_ow windows from current workspace"
+msgstr "_Näidatakse aktiivse tööala aknaid"
+
+msgid "Show windows from a_ll workspaces"
+msgstr "Näidatakse _kõikide tööalade aknaid"
+
+msgid "Window Grouping"
+msgstr "Akende grupeerimine"
+
+msgid "_Never group windows"
+msgstr "Aknaid ei _grupeerita kunagi"
+
+msgid "Group windows when _space is limited"
+msgstr "Aknaid grupeeritakse, kui _ruumi on vähe"
+
+msgid "_Always group windows"
+msgstr "Akna_d grupeeritakse alati"
+
+msgid "Restoring Minimized Windows"
+msgstr "Minimeeritud akende taastamine"
+
+msgid "Restore to current _workspace"
+msgstr "Taastamine aktiivsesse _tööalasse"
+
+msgid "Restore to na_tive workspace"
+msgstr "Taastamine a_lgsesse tööalasse"
+
+msgid "rows"
+msgstr "rida"
+
+msgid "columns"
+msgstr "veergu"
+
+msgid "Workspace Switcher Preferences"
+msgstr "Tööalahalduri eelistused"
+
+msgid "Show _only the current workspace"
+msgstr "Näidatakse ainult _aktiivset tööala"
+
+msgid "Show _all workspaces in:"
+msgstr "Näidatakse _kõiki tööalasid:"
+
+msgid "Switcher"
+msgstr "Haldur"
+
+msgid "Number of _workspaces:"
+msgstr "_Tööalade arv:"
+
+msgid "Workspace na_mes:"
+msgstr "Tööalade ni_med:"
+
+msgid "Workspace Names"
+msgstr "Tööalade nimed"
+
+msgid "Show workspace _names in switcher"
+msgstr "Halduris näidatakse tööalade _nimesid"
+
+msgid "Workspaces"
+msgstr "Tööalad"
+
+msgid "The fish's name"
+msgstr "Kala nimi"
+
+msgid ""
+"A fish without a name is a pretty dull fish. Bring your fish to life by "
+"naming him."
+msgstr ""
+"Ilma nimeta kala on üsna igav kala. Puhu oma kalale eluvaim sisse ja pane "
+"talle nimi!"
+
+msgid "The fish's animation pixmap"
+msgstr "Kala animatsiooni pilt"
+
+msgid ""
+"This key specifies the filename of the pixmap which will be used for the "
+"animation displayed in the fish applet relative to the pixmap directory."
+msgstr ""
+"See võti määrab kalarakendi animatsiooni jaoks kasutatava pildifaili nime "
+"suhtelisena pixmap kataloogi suhtes."
+
+msgid "Command to execute on click"
+msgstr "Klõpsamisel käivitatav käsk"
+
+msgid ""
+"This key specifies the command that will be tried to execute when the fish "
+"is clicked."
+msgstr ""
+"Selle võtmega määratakse käsk, mida proovitakse kala peal klõpsamise korral "
+"käivitada."
+
+msgid "Pause per frame"
+msgstr "Paus kaadrite vahel"
+
+msgid "This key specifies the number of seconds each frame will be displayed."
+msgstr ""
+"Selle võtmega määratakse iga kaadri kuvamiseks kulutatav sekundite arv."
+
+msgid "Rotate on vertical panels"
+msgstr "Pööra vertikaalsel paneelil"
+
+msgid ""
+"If true, the fish's animation will be displayed rotated on vertical panels."
+msgstr ""
+"Kui märgitud, siis kalaanimatsiooni kuvatakse pööratuna vertikaalpaneeli "
+"jaoks."
+
+msgid "Show windows from all workspaces"
+msgstr "Näita kõikide tööalade aknaid"
+
+msgid ""
+"If true, the window list will show windows from all workspaces. Otherwise it "
+"will only display windows from the current workspace."
+msgstr ""
+"Kui märgitud, siis aknaloendis näidatakse kõikide tööalade aknaid, vastasel "
+"juhul näidatakse ainult aktiivse tööala aknaid."
+
+msgid "When to group windows"
+msgstr "Millal aknaid grupeerida"
+
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are \"never\", \"auto\" and \"always\"."
+msgstr ""
+"Määrab, millal grupeerida sama rakenduse aknad aknaloendis. Võimalikud "
+"väärtused on mitte kunagi \"never\", automaatselt \"auto\" ja alati \"always"
+"\"."
+
+msgid "Move windows to current workspace when unminimized"
+msgstr "Tõsta aknad minimeeritud olekust taastamisel aktiivsesse tööalasse"
+
+msgid ""
+"If true, then when unminimizing a window, move it to the current workspace. "
+"Otherwise, switch to the workspace of the window."
+msgstr ""
+"Kui märgitud, siis tõstetakse aken minimeeritud olekust taastamisel "
+"aktiivsesse tööalasse. Vastasel korral vahetatakse tööala taastatava akna "
+"tööala vastu."
+
+msgid "Display workspace names"
+msgstr "Tööalade nimede näitamine"
+
+msgid ""
+"If true, the workspaces in the workspace switcher will display the names of "
+"the workspaces. Otherwise they will display the windows on the workspace. "
+"This setting only works when the window manager is Metacity."
+msgstr ""
+"Kui märgitud, siis näidatakse tööalahalduris tööalade nimesid. Vastasel "
+"juhul näidatakse tööalades asuvaid aknaid. See säte töötab ainult Metacity "
+"aknahalduri korral."
+
+msgid "Display all workspaces"
+msgstr "Kõikide tööalade näitamine"
+
+msgid ""
+"If true, the workspace switcher will show all workspaces. Otherwise it will "
+"only show the current workspace."
+msgstr ""
+"Kui märgitud, siis näidatakse tööalahalduris kõiki tööalasid. Vastasel juhul "
+"näidatakse ainult aktiivset tööala."
+
+msgid "Rows in workspace switcher"
+msgstr "Töölauahalduri ridade arv"
+
+msgid ""
+"This key specifies how many rows (for horizontal layout) or columns (for "
+"vertical layout) the workspace switcher shows the workspaces in. This key is "
+"only relevant if the display_all_workspaces key is true."
+msgstr ""
+"Selle võtmega määratakse, mitmes reas (rõhtasendi puhul) või veerus "
+"(püstasendi puhul) tööalade lüliti tööalasid näitab. See võti kehtib ainult "
+"juhul, kui võti display_all_workspaces on märgitud."
+
+msgid "Enable tooltips"
+msgstr "Luba kohtspikrid"
+
+msgid ""
+"If true, tooltips are shown for objects in panels. Tooltips can be disabled "
+"for the whole desktop with the gtk-enable-tooltips property in GTK+."
+msgstr ""
+"Kui märgitud, kuvatakse paneeli objektidel vihjeid. Kõik töölaua vihjed saab "
+"välja lülitada GTK+ sättega gtk-enable-tooltips."
+
+msgid "Confirm panel removal"
+msgstr "Paneeli eemaldamise kinnitus"
+
+msgid ""
+"If true, a dialog is shown asking for confirmation if the user wants to "
+"remove a panel."
+msgstr ""
+"Kui märgitud, siis kuvatakse paneeli eemaldamise korral kinnitusdialoogi."
+
+msgid "Panel ID list"
+msgstr "Paneeli ID-de nimekiri"
+
+msgid ""
+"A list of panel IDs. Each ID identifies an individual toplevel panel. The "
+"settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
+msgstr ""
+"Paneelide ID-de loend. Iga ID identifitseerib ühte ülataseme paneeli. Iga "
+"paneeli sätted on salvestatud rajale /apps/panel/toplevels/$(id)."
+
+msgid "Panel object ID list"
+msgstr "Paneeli objektide ID-de nimekiri"
+
+msgid ""
+"A list of panel object IDs. Each ID identifies an individual panel object (e."
+"g. an applet, launcher, action button or menu button/bar). The settings for "
+"each of these objects are stored in /apps/panel/objects/$(id)."
+msgstr ""
+"Paneeli objektide ID-de loend. Iga ID identifitseerib ühte paneeliobjekti "
+"(näiteks rakend, käivitaja, tegevusnupp, menüüriba või -nupp). Iga objekti "
+"sätted on salvestatud failis /apps/panel/objects/$(id)."
+
+msgid "Complete panel lockdown"
+msgstr "Paneeli täielik lukustamine"
+
+msgid ""
+"If true, the panel will not allow any changes to the configuration of the "
+"panel. Individual applets may need to be locked down separately however. The "
+"panel must be restarted for this to take effect."
+msgstr ""
+"Kui märgitud, siis paneel ei luba teha ühtegi muudatust oma seadistustes. "
+"Üksikuid rakendeid saab samuti eraldi lukustada. Selle valiku rakendamiseks "
+"tuleb paneel taaskäivitada."
+
+msgid "Applet IIDs to disable from loading"
+msgstr "Rakendite, mille laadimine on keelatud, IID'd"
+
+msgid ""
+"A list of applet IIDs that the panel will ignore. This way you can disable "
+"certain applets from loading or showing up in the menu. For example to "
+"disable the mini-commander applet add 'OAFIID:GNOME_MiniCommanderApplet' to "
+"this list. The panel must be restarted for this to take effect."
+msgstr ""
+"Paneeli poolt eiratavate rakendite IID'de loend. Selle abil on võimalik "
+"keelata rakendite laadimist või näitamist menüüs. Näiteks Pisi-käsurea "
+"rakendi keelamiseld tuleb sellesse loendisse lisada 'OAFIID:"
+"GNOME_MiniCommanderApplet'. Muudatuse rakendamiseks tuleb paneel "
+"taaskäivitada."
+
+msgid "Disable Force Quit"
+msgstr "Jõuga sulgemine keelatud"
+
+msgid ""
+"If true, the panel will not allow a user to force an application to quit by "
+"removing access to the force quit button."
+msgstr ""
+"Kui märgitud, siis paneel eemaldab ligipääsu rakenduse jõuga sulgemise "
+"nupule ja seega ei luba kasutajal rakendusi jõuga sulgeda."
+
+msgid "History of \"Run Application\" dialog"
+msgstr "\"Rakenduse käivitamise\" dialoogi ajalugu"
+
+msgid ""
+"The list of commands used in the past in the \"Run Application\" dialog."
+msgstr "\"Rakenduse käivitamise\" dialoogis varem kasutatud käskude loend."
+
+msgid "Enable program list in \"Run Application\" dialog"
+msgstr "Programmide loendi lubamine \"Rakenduse käivitamise\" dialoogis"
+
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is made available. Whether or not the listing is expanded when the "
+"dialog is shown is controlled by the show_program_list key."
+msgstr ""
+"Kui märgitud, siis on \"Rakenduse käivitamise\" all olev \"Teadaolevate "
+"rakenduste\" loend saadaval. See võti on relevantne ainult juhul, kui "
+"show_program_list võti on märgitud."
+
+msgid "Expand program list in \"Run Application\" dialog"
+msgstr "Programmide loendi laiendamine \"Rakenduse käivitamise\" dialoogis"
+
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is expanded when the dialog is opened. This key is only relevant if "
+"the enable_program_list key is true."
+msgstr ""
+"Kui märgitud, siis \"Rakenduse käivitamise\" all olev \"Teadaolevate "
+"rakenduste\" loend on dialoogi avamise ajal laiendatud. See võti on "
+"relevantne ainult juhul, kui enable_program_list võti on märgitud."
+
+msgid "Enable autocompletion in \"Run Application\" dialog"
+msgstr "Automaatse lõpetamise lubamine \"Rakenduse käivitamise\" dialoogis"
+
+msgid ""
+"If true, autocompletion in the \"Run Application\" dialog is made available."
+msgstr ""
+"Kui märgitud, siis \"Rakenduse käivitamise\" dialoogis on automaatlõpetamine "
+"lubatud."
+
+msgid "Launcher location"
+msgstr "Käivitaja asukoht"
+
+msgid ""
+"The location of the .desktop file describing the launcher. This key is only "
+"relevant if the object_type key is \"launcher-object\"."
+msgstr ""
+"Käivitajat kirjeldava .desktop faili asukoht. See võti on relevantne ainult "
+"juhul, kui object_type võtme väärtuseks on \"launcher-object\"."
+
+msgid "Tooltip displayed for menu"
+msgstr "Menüüle kuvatav vihje"
+
+msgid "The text to display in a tooltip for this menu."
+msgstr "Selle menüü vihjes kuvatav tekst."
+
+msgid "Icon used for button"
+msgstr "Nupu poolt kasutatav ikoon"
+
+msgid ""
+"The location of the image file used as the icon for the object's button. If "
+"empty, the default icon for the menu will be used."
+msgstr ""
+"Objektinupu ikooni jaoks kasutatava pildi asukoht. Kui määramata, "
+"kasutatakse menüü vaikimisi ikooni."
+
+msgid "Menu content path"
+msgstr "Menüüsisu rada"
+
+msgid ""
+"The path from which the menu contents is contructed. If empty, the menu will "
+"be the default applications menu."
+msgstr ""
+"Rada, millelt menüü sisu kokku pannakse. Kui määramata, kasutatakse "
+"vaikimisi rakenduse menüüd."
+
+msgid "Object IID"
+msgstr "Objekti IID"
+
+msgid ""
+"The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
+"\"."
+msgstr "Objekti kooste-ID - nt \"ClockAppletFactory::ClockApplet\"."
+
+msgid "Toplevel panel containing object"
+msgstr "Objekti sisaldav ülataseme paneel"
+
+msgid "The identifier of the toplevel panel which contains this object."
+msgstr "Seda objekti sisaldava ülemise taseme paneeli identifikaator."
+
+msgid "Interpret position relative to bottom/right edge"
+msgstr "Interpreteeritav asukoht on suhteline alumise/parempoolse serva suhtes"
+
+msgid ""
+"If set to 'end', the position of the object is interpreted relative to the "
+"right (or bottom if vertical) edge of the panel."
+msgstr ""
+"Kui väärtus on 'end', siis objekti asukohta tõlgendatakse suhtelisena "
+"paneeli parempoolse (püstpaneelide puhul alumise) serva suhtes."
+
+msgid "Object's position on the panel"
+msgstr "Objekti asukoht paneelil"
+
+msgid ""
+"The position of this panel object. The position is specified by the number "
+"of pixels from the left (or top if vertical) panel edge."
+msgstr ""
+"Selle paneeliobjekti asukoht, mis määratakse pikslites kaugusena paneeli "
+"vasakust (püstpaneelipuhul ülemisest) servast."
+
+msgid "Name to identify panel"
+msgstr "Paneeli nimi"
+
+msgid ""
+"This is a human readable name which you can use to identify a panel. Its "
+"main purpose is to serve as the panel's window title which is useful when "
+"navigating between panels."
+msgstr ""
+"Paneeli identifitseerimiseks mõeldud inimloetav nimi. Selle peamine eesmärk "
+"on paneelide vahel navigeerimisel toimida paneeliakna tiitlina."
+
+msgid "X screen where the panel is displayed"
+msgstr "X'i ekraan, kus paneeli kuvatakse"
+
+msgid ""
+"With a multi-screen setup, you may have panels on each individual screen. "
+"This key identifies the current screen the panel is displayed on."
+msgstr ""
+"Mitme ekraaniga seadistuse puhul võivad igal ekraanil olla omad paneelid. "
+"Selle võtmega määratakse ekraan, kus paneeli kuvatakse."
+
+msgid "Xinerama monitor where the panel is displayed"
+msgstr "Xinerama monitor, kus paneeli kuvatakse"
+
+msgid ""
+"In a Xinerama setup, you may have panels on each individual monitor. This "
+"key identifies the current monitor the panel is displayed on."
+msgstr ""
+"Xinerama seadistustega võivad igal monitoril olla oma paneelid. Selle "
+"võtmega määratakse monitor, kus paneeli kuvatakse."
+
+msgid "Expand to occupy entire screen width"
+msgstr "Laiendamine kogu ekraanilaiuse ulatuses"
+
+msgid ""
+"If true, the panel will occupy the entire screen width (height if this is a "
+"vertical panel). In this mode the panel can only be placed at a screen edge. "
+"If false, the panel will only be large enough to accommodate the applets, "
+"launchers and buttons on the panel."
+msgstr ""
+"Kui märgitud, siis võtab paneel enda alla kogu ekraani laiuse (püstpaneeli "
+"puhul kõrguse). Selles režiimis on paneeli võimalik paigutada ainult ekraani "
+"serva. Kui märkimata, siis on paneel täpselt nii lai kui on vajalik paneelil "
+"olevate rakendite, käivitajate ja nuppude hoidmiseks."
+
+msgid "Panel orientation"
+msgstr "Paneeli asukoht"
+
+msgid ""
+"The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
+"\", \"right\". In expanded mode the key specifies which screen edge the "
+"panel is on. In un-expanded mode the difference between \"top\" and \"bottom"
+"\" is less important - both indicate that this is a horizontal panel - but "
+"still give a useful hint as to how some panel objects should behave. For "
+"example, on a \"top\" panel a menu button will pop up its menu below the "
+"panel, whereas on a \"bottom\" panel the menu will be popped up above the "
+"panel."
+msgstr ""
+"Paneeli asukoht. Võimalikud väärtused on \"top\" (üleval), \"bottom\" (all), "
+"\"left\" (vasakul) ja \"right\" (paremal). Laiendatud režiimis määrab see "
+"ekraani serva, kus paneel asub. Laiendamata režiimis on väärtuste \"top\" ja "
+"\"bottom\" vahe vähetähtis - mõlemad määravad, et tegemist on rõhtsa "
+"paneeliga. Siiski annavad mõlemad väärtused paneeli objektidele kasulikke "
+"käitumisvihjeid. Näiteks \"top\" väärtuse puhul avaneb menüünupust avatud "
+"hüpikmenüü paneelist allapoole, seevastu \"bottom\" väärtusega paneeli puhul "
+"aga ülespoole."
+
+msgid "Panel size"
+msgstr "Paneeli suurus"
+
+msgid ""
+"The height (width for a vertical panel) of the panel. The panel will "
+"determine at runtime a minimum size based on the font size and other "
+"indicators. The maximum size is fixed at one quarter of the screen height "
+"(or width)."
+msgstr ""
+"Paneeli kõrgus (püstpaneeli puhul laius). Paneel tuvastab töötamise ajal "
+"vähima võimaliku suuruse, mis põhineb kirjatüübi suurusel ja teistel "
+"näitajatel. Suurimaks suuruseks on määratud veerand ekraani kõrgust (või "
+"laiust)."
+
+msgid "X co-ordinate of panel"
+msgstr "Paneeli X-koordinaat"
+
+msgid ""
+"The location of the panel along the x-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"Paneeli asukoht x-teljel. See võti on relevantne ainult laiendamata "
+"režiimis. Laiendatud režiimi korral seda võtit eiratakse ja paneel "
+"asetatakse võtmega orientation määratud ekraani serva."
+
+msgid "Y co-ordinate of panel"
+msgstr "Paneeli Y-koordinaat"
+
+msgid ""
+"The location of the panel along the y-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"Paneeli asukoht y-teljel. See võti on relevantne ainult laiendamata "
+"režiimis. Laiendatud režiimi korral seda võtit eiratakse ja paneel "
+"asetatakse võtmega orientation määratud ekraani serva."
+
+msgid "X co-ordinate of panel, starting from the right of the screen"
+msgstr "Paneeli X-koordinaat kaugusena ekraani paremast servast"
+
+msgid ""
+"The location of the panel along the x-axis, starting from the right of the "
+"screen. If set to -1, the value is ignored and the value of the x key is "
+"used. If the value is greater than 0, then the value of the x key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"Paneeli asukoht x-teljel, kaugus ekraani paremast servast. Väärtust -1 "
+"eiratakse ja selle asemel kasutatakse võtme x väärtust. Nullist suurema "
+"väärtuse korral võtme x väärtust eiratakse. See võti on relevantne ainult "
+"laiendamata režiimis. Laiendatud režiimi korral seda võtit eiratakse ja "
+"paneel asetatakse võtmega orientation määratud ekraani serva."
+
+msgid "Y co-ordinate of panel, starting from the bottom of the screen"
+msgstr "Paneeli Y-koordinaat kaugusena ekraani alumisest servast"
+
+msgid ""
+"The location of the panel along the y-axis, starting from the bottom of the "
+"screen. If set to -1, the value is ignored and the value of the y key is "
+"used. If the value is greater than 0, then the value of the y key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"Paneeli asukoht y-teljel, kaugus ekraani alumisest servast. Väärtust -1 "
+"eiratakse ja selle asemel kasutatakse võtme y väärtust. Nullist suurema "
+"väärtuse korral võtme y väärtust eiratakse. See võti on relevantne ainult "
+"laiendamata režiimis. Laiendatud režiimi korral seda võtit eiratakse ja "
+"paneel asetatakse võtmega orientation määratud ekraani serva."
+
+msgid "Center panel on x-axis"
+msgstr "Paneeli tsentreerimine x-teljel"
+
+msgid ""
+"If true, the x and x_right keys are ignored and the panel is placed at the "
+"center of the x-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the x "
+"and x_right keys specify the location of the panel."
+msgstr ""
+"Kui märgitud, siis võtmeid x ja x_right eiratakse ning paneel asetatakse "
+"ekraani x-telje keskele. Paneeli suuruse muutumisel jääb siis paneeli "
+"asukoht samaks ja kasvamine/kahanemine toimub mõlema ääre peal võrdselt. Kui "
+"märkimata, siis võtmed x ja x_right määravad paneeli asukoha."
+
+msgid "Center panel on y-axis"
+msgstr "Paneeli tsentreerimine y-teljel"
+
+msgid ""
+"If true, the y and y_bottom keys are ignored and the panel is placed at the "
+"center of the y-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the y "
+"and y_bottom keys specify the location of the panel."
+msgstr ""
+"Kui märgitud, siis võtmeid y ja y_bottom eiratakse ning paneel asetatakse "
+"ekraani y-telje keskele. Paneeli suuruse muutumisel jääb siis paneeli "
+"asukoht samaks ja kasvamine/kahanemine toimub mõlema ääre peal võrdselt. Kui "
+"märkimata, siis võtmed y ja y_right määravad paneeli asukoha."
+
+msgid "Automatically hide panel into corner"
+msgstr "Paneeli automaatne nurkapeitmine"
+
+msgid ""
+"If true, the panel is automatically hidden into a corner of the screen when "
+"the pointer leaves the panel area. Moving the pointer to that corner again "
+"will cause the panel to re-appear."
+msgstr ""
+"Kui märgitud, siis kursori paneelipiirkonnast lahkumisel peidetakse paneel "
+"ekraaninurka. Kui kursor sellesse nurka tagasi tuuakse, siis ilmub paneel "
+"taas nähtavale."
+
+msgid "Enable hide buttons"
+msgstr "Peitmisnuppude peitmine lubatud"
+
+msgid ""
+"If true, buttons will be placed on each side of the panel which may be used "
+"to move the panel to edge of the screen, leaving only a button showing."
+msgstr ""
+"Kui märgitud, siis joonistatakse paneeli servadele nupud, millega on "
+"võimalik paneeli ekraani servale kokku kerida nii, et ainult lahtikerimise "
+"nupp jääb nähtavale."
+
+msgid "Enable arrows on hide buttons"
+msgstr "Peitmisnuppudel on noolekesed lubatud"
+
+msgid ""
+"If true, arrows will be placed on the hide buttons. This key is only "
+"relevant if the enable_buttons key is true."
+msgstr ""
+"Kui märgitud, siis joonistatakse peitmisnuppude peale nooled. See võti on "
+"relevantne ainult juhul, kui enable_buttons võti on märgitud."
+
+msgid "Panel autohide delay"
+msgstr "Paneeli automaatpeitmise viivitus"
+
+msgid ""
+"Specifies the number of milliseconds delay after the pointer leaves the "
+"panel area before the panel is automatically hidden. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Viivitus, mis jääb kursori paneelilt lahkumise ja paneeli automaatse "
+"peitmise vahele (millisekundites). See võti on relevantne ainult juhul, kui "
+"võti auto_hide on märgitud."
+
+msgid "Panel autounhide delay"
+msgstr "Paneeli automaatse peidust väljatoomise viivitus"
+
+msgid ""
+"Specifies the number of milliseconds delay after the pointer enters the "
+"panel area before the panel is automatically re-shown. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Viivitus, mis jääb kursori liikumise peidetud paneelile ja paneeli "
+"automaatse näitamise vahele (millisekundites). See võti on relevantne ainult "
+"juhul, kui võti auto_hide on märgitud."
+
+msgid "Visible pixels when hidden"
+msgstr "Nähavate pikslite arv peidetuna"
+
+msgid ""
+"Specifies the number of pixels visible when the panel is automatically "
+"hidden into a corner. This key is only relevant if the auto_hide key is true."
+msgstr ""
+"Pikslite arv, mis jääb automaatselt peidetud paneelil nurgas nähtavale. See "
+"võti on relevantne ainult juhul, kui võti auto_hide on märgitud."
+
+msgid "Animation speed"
+msgstr "Animatsiooni kiirus"
+
+msgid ""
+"The speed in which panel animations should occur. Possible values are \"slow"
+"\", \"medium\" and \"fast\". This key is only relevant if the "
+"enable_animations key is true."
+msgstr ""
+"Paneeli animatsioonide kiirus. Võimalikud väärtused on  \"slow\" (aeglane), "
+"\"medium\" (keskmine kiirus) and \"fast\" (kiire). See võti on relevantne "
+"ainult juhul, kui enable_animations võti on märgitud."
+
+msgid "Background type"
+msgstr "Tausta tüüp"
+
+msgid ""
+"Which type of background should be used for this panel. Possible values are "
+"\"none\" - the default GTK+ widget background will be used, \"color\" - the "
+"color key will be used as background color or \"image\" - the image "
+"specified by the image key will be used as background."
+msgstr ""
+"Millist tausta selle paneeli puhul kasutatakse. Võimalikud väärtused on "
+"\"none\" - GTK+ vidina vaikimisi tausta jaoks, \"color\" - võtmega color "
+"määratud taustavärvuse jaoks ja \"image\" - võtmega image määratud "
+"taustapildi jaoks."
+
+msgid "Background color"
+msgstr "Taustavärv"
+
+msgid "Specifies the background color for the panel in #RGB format."
+msgstr "Paneeli taustavärvus #RGB vormingus."
+
+msgid "Background image"
+msgstr "Taustapilt"
+
+msgid ""
+"Specifies the file to be used for the background image. If the image "
+"contains an alpha channel it will be composited onto the desktop background "
+"image."
+msgstr ""
+"Selle võtmega määratakse taustapildina kasutatav fail. Kui pilt sisaldab "
+"alfakanalit, siis see kombineeritakse töölaua taustapildiga."
+
+msgid "Rotate image on vertical panels"
+msgstr "Pildi pööramine vertikaalpaneelidel"
+
+msgid ""
+"If true, the background image will be rotated when the panel is oriented "
+"vertically."
+msgstr "Kui märgitud, siis taustapilti pööratakse vastavalt paneeli suunale."
+
+msgid "Image options"
+msgstr "Pildi valikud"
+
+msgid ""
+"Determines how the image set by image-uri is rendered. Possible values are "
+"\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
+"to the panel dimensions and the aspect ratio of the image will not be "
+"maintained. With \"fit\", the image will be scaled (retaining the aspect "
+"ratio of the image) to the panel height (if horizontal)."
+msgstr ""
+"Määrab, kuidas image-uri'ga määratud pilti kuvatakse. Võimalikud väärtused "
+"on \"none\" (ei kuvata), \"stretch\" ja \"fit\". \"stretch\" korral "
+"venitatakse pilt üle kogu paneeli ning pildi külgede suhtest ei hoolita. "
+"\"fit\" korral pilti suurendatakse (pildi külgede suhet säilitades) kuni "
+"paneeli kõrguseni (horisontaalse paneeli korral)."
+
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Fail pole korrektne .desktop-fail"
+
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Töölauafaili tundmatu versioon '%s'"
+
+#, c-format
+msgid "Starting %s"
+msgstr "Käivitamine: %s"
+
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Rakendus ei nõustu käsurealt määratud dokumentidega"
+
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Tundmatu käivitusvalik: %d"
+
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Dokumendi URI-sid pole võimalik 'Liik=Viit' tüüpi töölauakirjetele edastada"
+
+#, c-format
+msgid "Not a launchable item"
+msgstr "Pole käivitatav kirje"
+
+msgid "Disable connection to session manager"
+msgstr "Seansihalduriga ühendumise keelamine"
+
+msgid "Specify file containing saved configuration"
+msgstr "Salvestatud sätteid sisaldava faili määramine"
+
+msgid "FILE"
+msgstr "FAIL"
+
+msgid "Specify session management ID"
+msgstr "Seansihalduse ID määramine"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Session management options:"
+msgstr "Seansihalduse valikud:"
+
+msgid "Show session management options"
+msgstr "Seansihalduse valikute näitamine"
+
+#. FIXME: We need a title in this case, but we don't know what
+#. * the format should be. Let's put something simple until
+#. * the following bug gets fixed:
+#. * http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#. FIXME: http://bugzilla.gnome.org/show_bug.cgi?id=165132
+msgid "Error"
+msgstr "Viga"
+
+msgid "Choose an icon"
+msgstr "Ikooni valimine"
+
+#, c-format
+msgid "Could not launch '%s'"
+msgstr "Käsku '%s' pole võimalik käivitada"
+
+msgid "Could not launch application"
+msgstr "Rakendust pole võimalik käivitada"
+
+#, c-format
+msgid "Could not open location '%s'"
+msgstr "Asukohta '%s' pole võimalik avada"
+
+msgid "No application to handle search folders is installed."
+msgstr "Kataloogidest otsimise rakendust pole paigaldatud."
+
+msgid "???"
+msgstr "???"
+
+msgid "_Move"
+msgstr "Lii_guta"
+
+msgid "_Remove From Panel"
+msgstr "_Eemalda paneelilt"
+
+msgid "Create new file in the given directory"
+msgstr "Loo antud kataloogi uus fail"
+
+msgid "[FILE...]"
+msgstr "[FAIL...]"
+
+msgid "- Edit .desktop files"
+msgstr "- .desktop-failide redigeerimine"
+
+msgid "Create Launcher"
+msgstr "Loo käivitaja"
+
+msgid "Directory Properties"
+msgstr "Kataloogi omadused"
+
+msgid "Launcher Properties"
+msgstr "Käivitaja eelistused"
+
+msgid "Panel"
+msgstr "Paneel"
+
+msgid ""
+"Launch other applications and provide various utilities to manage windows, "
+"show the time, etc."
+msgstr ""
+"Teiste rakenduste käivitamine, lisaks veel mitmed tarvikud akende "
+"haldamiseks, kellaaja näitamiseks jms."
+
+msgid "Could not show this URL"
+msgstr "Seda URL-i pole võimalik näidata"
+
+msgid "No URL was specified."
+msgstr "URL on määramata."
+
+msgid "Could not use dropped item"
+msgstr "Minemavisatud kirjet pole võimalik kasutada"
+
+#, c-format
+msgid "No URI provided for panel launcher desktop file\n"
+msgstr "Paneeli käivitaja töölaua (desktop) failile pole URIt määratud\n"
+
+#, c-format
+msgid "Unable to open desktop file %s for panel launcher%s%s\n"
+msgstr "Töölauafaili %s pole paneeli käivitajale %s%s võimalik avada\n"
+
+msgid "_Launch"
+msgstr "_Käivita"
+
+msgid "_Properties"
+msgstr "_Omadused"
+
+#, c-format
+msgid "Launcher location is not set, cannot load launcher\n"
+msgstr "Käivitaja asukoht pole määratud, käivitajat pole võimalik laadida\n"
+
+msgid "Could not save launcher"
+msgstr "Käivitajat pole võimalik salvestada"
+
+msgid "Replace a currently running panel"
+msgstr "Hetkel töötava paneeli asendamine"
+
+msgid "_Lock Screen"
+msgstr "_Lukusta ekraan"
+
+msgid "_Activate Screensaver"
+msgstr "_Käivita ekraanisäästja"
+
+msgid "Connect to server"
+msgstr "Serveriga ühendumine"
+
+msgid "Could not connect to server"
+msgstr "Serveriga pole võimalik ühenduda"
+
+msgid "Lock Screen"
+msgstr "Ekraani lukustamine"
+
+msgid "Protect your computer from unauthorized use"
+msgstr "Sinu arvuti kaitsmine volitamata kasutamise eest"
+
+#. when changing one of those two strings, don't forget to
+#. * update the ones in panel-menu-items.c (look for
+#. * "1" (msgctxt: "panel:showusername"))
+msgid "Log Out..."
+msgstr "Väljalogimine..."
+
+msgid "Log out of this session to log in as a different user"
+msgstr ""
+"Sellest seansist väljalogimine, et oleks võimalik teise kasutaja alt sisse "
+"logida"
+
+msgid "Run Application..."
+msgstr "Rakenduse käivitamine..."
+
+msgid "Run an application by typing a command or choosing from a list"
+msgstr "Rakenduse käivitamine käsu sisestamise või loetelust valimise peale"
+
+msgid "Search for Files..."
+msgstr "Failide otsimine..."
+
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Selle arvuti dokumentide ja kaustade otsimine nime ja sisu põhjal"
+
+msgid "Force Quit"
+msgstr "Jõuga sulgemine"
+
+msgid "Force a misbehaving application to quit"
+msgstr "Jõu rakendamine valesti käituva rakenduse sulgemiseks"
+
+#. FIXME icon
+msgid "Connect to Server..."
+msgstr "Serveriga ühendumine..."
+
+msgid "Connect to a remote computer or shared disk"
+msgstr "Ühendumine võrguarvutiga või jagatud kettaga"
+
+msgid "Shut Down..."
+msgstr "Väljalülitamine..."
+
+msgid "Shut down the computer"
+msgstr "Arvuti töö lõpetamine"
+
+msgid "Main Menu"
+msgstr "Peamenüü"
+
+msgid "The main GNOME menu"
+msgstr "GNOME peamenüü"
+
+msgid "Menu Bar"
+msgstr "Menüüriba"
+
+msgid "A custom menu bar"
+msgstr "Kohandatud menüüriba"
+
+msgid "Separator"
+msgstr "Eraldaja"
+
+msgid "A separator to organize the panel items"
+msgstr "Paneelikirjete korraldamiseks mõeldud eraldaja"
+
+msgid "User menu"
+msgstr "Kasutajamenüü"
+
+msgid "Menu to change your settings and your online status"
+msgstr "Sinu sätete ja veebioleku muutmise menüü"
+
+msgid "(empty)"
+msgstr "(tühi)"
+
+msgid "Custom Application Launcher"
+msgstr "Kohandatud rakenduse käivitaja"
+
+msgid "Create a new launcher"
+msgstr "Uue käivitaja loomine"
+
+msgid "Application Launcher..."
+msgstr "Rakenduste käivitaja..."
+
+msgid "Copy a launcher from the applications menu"
+msgstr "Käivitaja kopeerimine rakenduste menüüst"
+
+#, c-format
+msgid "Find an _item to add to \"%s\":"
+msgstr "Vali \"%s\" alla lisatav _kirje:"
+
+msgid "Find an _item to add to the panel:"
+msgstr "Vali paneelile lisatav _kirje:"
+
+msgid "Add to Panel"
+msgstr "Paneelile lisamine"
+
+#, c-format
+msgid "\"%s\" has quit unexpectedly"
+msgstr "\"%s\" lõpetas ootamatult"
+
+msgid "Panel object has quit unexpectedly"
+msgstr "Paneeli objekt lõpetas ootamatult"
+
+msgid ""
+"If you reload a panel object, it will automatically be added back to the "
+"panel."
+msgstr ""
+"Paneeliobjekti ümberlaadimisel lisatakse see automaatselt tagasi paneelile."
+
+msgid "_Don't Reload"
+msgstr "Ä_ra laadi uuesti"
+
+msgid "_Reload"
+msgstr "_Laadi uuesti"
+
+#, c-format
+msgid "The panel encountered a problem while loading \"%s\"."
+msgstr "Paneel tuvastas \"%s\" laadimisel probleemi."
+
+msgid "Do you want to delete the applet from your configuration?"
+msgstr "Kas sa soovid rakendi oma sätetest kustutada?"
+
+msgid "Cannot delete this panel"
+msgstr "Seda paneeli pole võimalik kustutada"
+
+msgid "You must always have at least one panel."
+msgstr "Sul peab alati olema vähemalt üks paneel."
+
+msgid "_Add to Panel..."
+msgstr "_Lisa paneelile..."
+
+msgid "_Delete This Panel"
+msgstr "_Kustuta see paneel"
+
+msgid "_New Panel"
+msgstr "_Uus paneel"
+
+msgid "Application"
+msgstr "Rakendus"
+
+msgid "Application in Terminal"
+msgstr "Rakendus terminalis"
+
+msgid "Location"
+msgstr "Asukoht"
+
+#. Type
+msgid "_Type:"
+msgstr "_Laad:"
+
+#. Name
+msgid "_Name:"
+msgstr "_Nimi:"
+
+msgid "_Browse..."
+msgstr "_Sirvi..."
+
+#. Comment
+msgid "Co_mment:"
+msgstr "_Kommentaar:"
+
+msgid "Choose an application..."
+msgstr "Vali rakendus..."
+
+msgid "Choose a file..."
+msgstr "Vali fail..."
+
+msgid "Comm_and:"
+msgstr "Kä_sk:"
+
+msgid "_Location:"
+msgstr "_Asukoht:"
+
+msgid "The name of the launcher is not set."
+msgstr "Käivitaja nimi on määramata."
+
+msgid "Could not save directory properties"
+msgstr "Kataloogi omadusi pole võimalik salvestada"
+
+msgid "The name of the directory is not set."
+msgstr "Kataloogi nimi on määramata."
+
+msgid "The command of the launcher is not set."
+msgstr "Käivitaja käsk on määramata."
+
+msgid "The location of the launcher is not set."
+msgstr "Käivitaja asukoht on määramata."
+
+msgid ""
+"Click on a window to force the application to quit. To cancel press <ESC>."
+msgstr ""
+"Klõpsa aknal, mida soovid jõuga sulgeda. Toimingu tühistamiseks vajuta <ESC>."
+
+msgid "Force this application to exit?"
+msgstr "Kas selle rakenduse sulgemiseks tuleb rakendada jõudu?"
+
+msgid ""
+"If you choose to force an application to exit, unsaved changes in any open "
+"documents in it might get lost."
+msgstr ""
+"Kui sa otsustad selle rakenduse jõuga sulgeda, siis võivad kõik avatud "
+"dokumentidesse tehtud muudatused kaotsi minna."
+
+#, c-format
+msgid "Cannot create initial panel layout.\n"
+msgstr "Esialgset paneeli paigutust pole võimalik luua.\n"
+
+msgid "Browse and run installed applications"
+msgstr "Paigaldatud rakenduste sirvimine ja käivitamine"
+
+msgid "Access documents, folders and network places"
+msgstr "Ligipääs dokumentidele, kataloogidele ja võrgukohtadele"
+
+msgid "Applications"
+msgstr "Rakendused"
+
+msgid "_Edit Menus"
+msgstr "_Redigeeri menüüsid"
+
+msgid "Switch User"
+msgstr "Kasutaja vahetamine"
+
+msgid "Bookmarks"
+msgstr "Järjehoidjad"
+
+#. Translators: %s is a URI
+#, c-format
+msgid "Open '%s'"
+msgstr "Ava '%s'"
+
+#, c-format
+msgid "Unable to scan %s for media changes"
+msgstr "%s meediumivahetuse skannimine pole võimalik"
+
+#, c-format
+msgid "Rescan %s"
+msgstr "Skanni %s uuesti"
+
+#, c-format
+msgid "Unable to mount %s"
+msgstr "%s ühendamine pole võimalik"
+
+#, c-format
+msgid "Mount %s"
+msgstr "Ühenda %s"
+
+msgid "Removable Media"
+msgstr "Eemaldatav meedium"
+
+msgid "Network Places"
+msgstr "Võrgukohad"
+
+#. is_exec?
+#. exec
+#. name
+msgid "Open your personal folder"
+msgstr "Sinu isikliku kataloogi avamine"
+
+#. Translators: Desktop is used here as in
+#. * "Desktop Folder" (this is not the Desktop
+#. * environment).
+msgctxt "Desktop Folder"
+msgid "Desktop"
+msgstr "Töölaud"
+
+msgid "Open the contents of your desktop in a folder"
+msgstr "Töölaua avamine kaustana"
+
+#. is_exec?
+#. exec
+msgid "Computer"
+msgstr "Arvuti"
+
+#. name
+msgid ""
+"Browse all local and remote disks and folders accessible from this computer"
+msgstr ""
+"Kõigi selle arvuti jaoks kättesaadavate kohalike ja võrgus asuvate ketaste "
+"ning kataloogide sirvimine"
+
+#. is_exec?
+#. exec
+msgid "Network"
+msgstr "Võrk"
+
+#. name
+msgid "Browse bookmarked and local network locations"
+msgstr "Kohalike ja järjehoidjates olevate võrgukohtade sirvimine"
+
+msgid "Available"
+msgstr "Saadaval"
+
+msgid "Busy"
+msgstr "Hõivatud"
+
+msgid "Places"
+msgstr "Asukohad"
+
+msgctxt "Orientation"
+msgid "Top"
+msgstr "Üleval"
+
+msgctxt "Orientation"
+msgid "Bottom"
+msgstr "All"
+
+msgctxt "Orientation"
+msgid "Left"
+msgstr "Vasakul"
+
+msgctxt "Orientation"
+msgid "Right"
+msgstr "Paremal"
+
+msgid "Panel Properties"
+msgstr "Paneeli sätted"
+
+msgid "Some of these properties are locked down"
+msgstr "Mõned nendest omadustest on lukus"
+
+msgid "pixels"
+msgstr "pikslit"
+
+msgid "_Size:"
+msgstr "S_uurus:"
+
+msgid "_Orientation:"
+msgstr "Suu_nd:"
+
+msgid "E_xpand"
+msgstr "_Laiendatud"
+
+msgid "_Autohide"
+msgstr "_Peidetakse automaatselt"
+
+msgid "Show hide _buttons"
+msgstr "_Peitmisnupud on nähtaval"
+
+msgid "Arro_ws on hide buttons"
+msgstr "Peitmisnuppudel on _noolekesed"
+
+msgid "_None (use system theme)"
+msgstr "P_uudub (kasutatakse süsteemi teemat)"
+
+msgid "Solid c_olor"
+msgstr "Ühtlaselt _värvitud"
+
+msgid "Pick a color"
+msgstr "Vali värv"
+
+msgid "S_tyle:"
+msgstr "_Laad:"
+
+msgid "Co_lor:"
+msgstr "_Värvus:"
+
+msgid "<small>Transparent</small>"
+msgstr "<small>Läbipaistev</small>"
+
+msgid "<small>Opaque</small>"
+msgstr "<small>Läbipaistmatu</small>"
+
+msgid "Background _image:"
+msgstr "Tausta_pilt:"
+
+msgid "Select background"
+msgstr "Tausta valimine"
+
+msgid "Background"
+msgstr "Taust"
+
+msgid "Image Background Details"
+msgstr "Pilditausta üksikasjad"
+
+msgid "_Tile"
+msgstr "_Paanidena"
+
+msgid "_Scale"
+msgstr "_Suurenda"
+
+msgid "St_retch"
+msgstr "_Venita"
+
+msgid "Rotate image when panel is _vertical"
+msgstr "Pööra pilt _vertikaalsel paneelil"
+
+#, c-format
+msgid "Could not open recently used document \"%s\""
+msgstr "Hiljuti kasutatud dokumenti \"%s\" pole võimalik avada"
+
+#, c-format
+msgid "An unknown error occurred while trying to open \"%s\"."
+msgstr "\"%s\" avamisel tekkis tundmatu viga."
+
+msgid "Clear the Recent Documents list?"
+msgstr "Kas tühjendada viimati kasutatud dokumentide nimekiri?"
+
+msgid ""
+"If you clear the Recent Documents list, you clear the following:\n"
+"• All items from the Places → Recent Documents menu item.\n"
+"• All items from the recent documents list in all applications."
+msgstr ""
+"Kui sa tühjendad viimati kasutatud dokumentide loendi, siis kustub järgnev:\n"
+"• Kõik kirjed menüüst Asukohad → Viimati kasutatud dokumendid.\n"
+"• Kõik kirjed rakenduste viimaste dokumentide loenditest."
+
+msgid "Clear Recent Documents"
+msgstr "Tühjenda viimati kasutatud dokumendite nimekiri"
+
+msgid "Recent Documents"
+msgstr "Viimati kasutatud dokumendid"
+
+msgid "Clear Recent Documents..."
+msgstr "Tühjenda viimati kasutatud dokumendite nimekiri..."
+
+msgid "Clear all items from the recent documents list"
+msgstr "Eemaldab kõik kirjed viimati kasutatud dokumendite nimekirjast"
+
+#, c-format
+msgid "Could not run command '%s'"
+msgstr "Käsku '%s' pole võimalik käivitada"
+
+#, c-format
+msgid "Could not convert '%s' from UTF-8"
+msgstr "Stringi '%s' pole võimalik UTF-8 kooditabelist teisendada"
+
+msgid "Choose a file to append to the command..."
+msgstr "Käsule lisatava faili valimine..."
+
+msgid "Select an application to view its description."
+msgstr "Vali rakendus, et näha selle kirjeldust."
+
+#, c-format
+msgid "Will run command: '%s'"
+msgstr "Käivitatav käsk: '%s'"
+
+#, c-format
+msgid "URI list dropped on run dialog had wrong format (%d) or length (%d)\n"
+msgstr ""
+"Käivitamisdialoogile antud URI-loend oli vales vormingus (%d) või vale "
+"suurusega (%d)\n"
+
+msgid "Run Application"
+msgstr "Rakenduse käivitamine"
+
+msgid "Command icon"
+msgstr "Käsu ikoon"
+
+msgid "The icon of the command to be run."
+msgstr "Käivitatava käsu ikoon"
+
+msgid "Run in _terminal"
+msgstr "Käivitada _terminalis"
+
+msgid "Select this box to run the command in a terminal window."
+msgstr "Märgi see ruut kui soovid käsku käivitada terminaliaknas."
+
+msgid "Run with _file..."
+msgstr "Käivita _failiga..."
+
+msgid ""
+"Click this button to browse for a file whose name to append to the command "
+"string."
+msgstr ""
+"Klõpsa sellel nupul, et sirvida käsustringile argumendiks lisatavaid faile."
+
+msgid "List of known applications"
+msgstr "Teadaolevate rakenduste loend"
+
+msgid "Show list of known _applications"
+msgstr "Kuva teadaolevate _rakenduste nimekiri"
+
+msgid "_Run"
+msgstr "_Käivita"
+
+msgid ""
+"Click this button to run the selected application or the command in the "
+"command entry field."
+msgstr ""
+"Klõpsa sellel nupul, et valitud rakendus või käsurealt määratud käsk "
+"käivitada."
+
+msgid "_Force quit"
+msgstr "Sulge _jõuga"
+
+msgid "C_lear"
+msgstr "_Puhasta"
+
+msgid "D_on't Delete"
+msgstr "Ä_ra kustuta"
+
+msgid "Specify an applet IID to load"
+msgstr "Määra laaditava rakendi IID"
+
+msgid ""
+"Specify a gconf location in which the applet preferences should be stored"
+msgstr "Määra gconf'i asukoht, kuhu rakendi eelistused salvestatakse"
+
+msgid "Specify the initial size of the applet (xx-small, medium, large etc.)"
+msgstr "Määra rakendi lähtesuurus (väike, keskmine, suur vms.)"
+
+msgid ""
+"Specify the initial orientation of the applet (top, bottom, left or right)"
+msgstr "Määra rakendi lähtesuund (üleval, all, vasakul või paremal)"
+
+msgctxt "Size"
+msgid "XX Small"
+msgstr "Tilluke"
+
+msgctxt "Size"
+msgid "X Small"
+msgstr "Pisike"
+
+msgctxt "Size"
+msgid "Small"
+msgstr "Väike"
+
+msgctxt "Size"
+msgid "Medium"
+msgstr "Keskmine"
+
+msgctxt "Size"
+msgid "Large"
+msgstr "Suur"
+
+msgctxt "Size"
+msgid "X Large"
+msgstr "Väga suur"
+
+msgctxt "Size"
+msgid "XX Large"
+msgstr "Ülisuur"
+
+#, c-format
+msgid "Failed to load applet %s"
+msgstr "Tõrge rakendi %s laadimisel"
+
+#. This is an utility to easily test various applets
+msgid "Test applet utility"
+msgstr "Testimisrakend"
+
+msgid "_Applet:"
+msgstr "_Rakend:"
+
+msgid "_Prefs Dir:"
+msgstr "_Eelistuste kataloog:"
+
+msgid "Hide Panel"
+msgstr "Peida paneel"
+
+#. translators: these string will be shown in MetaCity's switch window
+#. * popup when you pass the focus to a panel
+msgid "Top Expanded Edge Panel"
+msgstr "Ülemine laiendatud äärepaneel"
+
+msgid "Top Centered Panel"
+msgstr "Üleval keskel asuv paneel"
+
+msgid "Top Floating Panel"
+msgstr "Ülemine hõljukpaneel"
+
+msgid "Top Edge Panel"
+msgstr "Ülemine äärepaneel"
+
+msgid "Bottom Expanded Edge Panel"
+msgstr "Alumine laiendatud äärepaneel"
+
+msgid "Bottom Centered Panel"
+msgstr "All keskel asuv paneel"
+
+msgid "Bottom Floating Panel"
+msgstr "Allääres asuv hõljukpaneel"
+
+msgid "Bottom Edge Panel"
+msgstr "Alumine äärepaneel"
+
+msgid "Left Expanded Edge Panel"
+msgstr "Vasakpoolne laiendatud äärepaneel"
+
+msgid "Left Centered Panel"
+msgstr "Vasakul keskel asuv paneel"
+
+msgid "Left Floating Panel"
+msgstr "Vasakul asuv hõljukpaneel"
+
+msgid "Left Edge Panel"
+msgstr "Paremal asuv äärepaneel"
+
+msgid "Right Expanded Edge Panel"
+msgstr "Parempoolne laiendatud äärepaneel"
+
+msgid "Right Centered Panel"
+msgstr "Paremal keskel asuv paneel"
+
+msgid "Right Floating Panel"
+msgstr "Paremal asuv hõljukpaneel"
+
+msgid "Right Edge Panel"
+msgstr "Paremal asuv äärepaneel"
+
+#, c-format
+msgid "Icon '%s' not found"
+msgstr "Ikooni '%s' ei leitud"
+
+msgid "file"
+msgstr "fail"
+
+msgid "Home Folder"
+msgstr "Kodukataloog"
+
+#. Translators: this is the same string as the one found in
+#. * nautilus
+msgid "File System"
+msgstr "Failisüsteem"
+
+msgid "Search"
+msgstr "Otsing"
+
+#. Translators: the first string is the name of a gvfs
+#. * method, and the second string is a path. For
+#. * example, "Trash: some-directory". It means that the
+#. * directory called "some-directory" is in the trash.
+#.
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#, c-format
+msgid "Open URL: %s"
+msgstr "Ava URL: %s"
+
+msgid "Delete this panel?"
+msgstr "Kas kustutada see paneel?"
+
+msgid ""
+"When a panel is deleted, the panel and its\n"
+"settings are lost."
+msgstr ""
+"Kui paneel eemaldada, läheb see kaduma koos\n"
+"sätetega."
+
+msgid "Test DBus Applet Factory"
+msgstr "DBus'i testrakendi factory"
+
+msgid "Factory for Test DBus Applet"
+msgstr "DBus'i testrakendi factory"
+
+msgid "Test DBus Applet"
+msgstr "DBus'i testrakend"
+
+msgid "A simple applet for testing the GNOME panel"
+msgstr "Lihtne rakend GNOME paneeli testimiseks"

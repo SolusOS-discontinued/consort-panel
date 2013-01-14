@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Kalan ohjekirja</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Paul Cutler</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright><copyright><year>2008.</year><holder>Timo Jyrinki (timo.jyrinki@iki.fi)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Gnomen dokumentaatioprojekti</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+          <para>Tämä käyttöohje on osa Gnomen käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+ 
+         <para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Gnomen dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+ 
+         <para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <orderedlist>
+                 <listitem>
+                   <para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+                 </listitem>
+                 <listitem>
+                   <para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Gnomen dokumentaatioprojekti</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Gnomen dokumentaatiotiimi</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Gnomen dokumentaatioprojekti</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Fish Applet Manual V2.5</revnumber> 
+		  <date>June 2009</date> 
+		  <revdescription> 
+			 <para role="author">Sunin Gnomen dokumentaatiotiimi</para> 
+			 <para role="publisher">Gnomen dokumentaatioprojekti</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Fish Applet Manual V2.4</revnumber> 
+		  <date>June 2009</date> 
+		  <revdescription> 
+			 <para role="author">Sunin Gnomen dokumentaatiotiimi</para> 
+			 <para role="publisher">Gnomen dokumentaatioprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kala-sovelman ohjekirja v2.2</revnumber> 
+		  <date>Tammikuu 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sunin Gnomen dokumentaatiotiimi</para> 
+			 <para role="publisher">Gnomen dokumentaatioprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kala-sovelman ohjekirja v2.1</revnumber> 
+		  <date>Elokuu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sunin Gnomen dokumentaatiotiimi</para> 
+			 <para role="publisher">Gnomen dokumentaatioprojekti</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Kala-sovelman ohjekirja v2.0</revnumber> 
+		  <date>Toukokuu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sunin Gnomen dokumentaatiotiimi</para> 
+			 <para role="publisher">Gnomen dokumentaatioprojekti</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Kala-sovelman ohjekirja</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">Gnomen dokumentaatioprojekti</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Tämä ohjekirja kertoo Kalan versiosta 3.4.7.4ac19.</releaseinfo> 
+	 <legalnotice> 
+		<title>Palaute</title> 
+		<para>Ilmoittaaksesi viasta tai tehdäksesi ehdotuksen Kala-sovelmaan tai tähän käyttöohjeeseen liittyen, seuraa ohjeita <ulink url="ghelp:gnome-feedback" type="help">Gnomen palautesivulla</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>The Fish applet displays an animated image in the panel and gives you
+                  your fortune when clicked.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Kala</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Johdanto</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Kala-sovelma</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Näyttää Kala-sovelman.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>The <application>Fish</application> applet displays an animated fish in the panel.  You can customize the fish's name and the program that is run when the fish is clicked in the panel.  By default, the program that is run when the fish is clicked is <application>Fortune</application>, which displays a usually comical random message from a database of quotations.</para>
+
+
+
+
+<para>Näytettävää kuvaa on mahdollisuus mukauttaa, samoin kuin napsautettaessa suoritettavaa komentoa.</para>
+<sect2 id="fish-introduction-add">
+<title>Lisätäksesi Kalan paneeliin</title>
+  <para>Tee seuraavasti:</para>
+         <orderedlist>
+           <listitem>
+             <para>Napsauta paneelia hiiren oikealla painikkeella.</para>
+           </listitem>
+           <listitem>
+             <para>Valitse <guimenuitem>Lisää paneeliin</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Vieritä kohdeluetteloa alaspäin <guilabel>Lisää paneeliin</guilabel> -valintaikkunassa, ja valitse sitten <guilabel>Kala</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Napsauta <guibutton>Lisää</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Käyttö</title>
+<para>Napsauta sovelmaa näyttääksesi <guilabel>Wanda-kala</guilabel>-valintaikkunan. Ikkuna näyttää tavallisesti onnenkeksin sisällön. Sovelmaa voidaan mukauttaa suorittamaan tietty komento napsautettaessa sovelmaa. Katso lisätietoja kohdasta <xref linkend="fish-settings"/>.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Asetukset</title>
+<para>Muuttaaksesi <application>Kalan</application> asetuksia, napsauta <application>Kala</application>-sovelmaa hiiren oikealla painikkeella ja valitse sitten <guimenu>Asetukset</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Kalan nimi</guilabel> </term>
+<listitem>
+<para>Tähän tekstikenttään voidaan kirjoittaa kalan nimi.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Napsauttamalla käynnistyvä komento</guilabel> </term>
+<listitem>
+<para>Oletuksena <application>Kala</application> suorittaa <literal>fortune</literal>-komennon, kun sovelmaa napsautetaan. Tähän tekstikenttään voidaan kirjoittaa vaihtoehtoinen suoritettava komento.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Tiedosto</guilabel> </term>
+<listitem>
+<para>Tähän kenttään voidaan valita sovelmassa näytettävä kuva. Valittavissa on sovelman mukana tullut kuva tai käyttäjän valitsema kuva.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Ruutuja animaatiossa yhteensä</guilabel> </term>
+<listitem>
+<para>Tällä valinnalla määritellään animaatiossa olevien ruutujen lukumäärä.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Tauko ruutua kohden</guilabel> </term>
+<listitem>
+<para>Tällä valinnalla määritellään ruutujen välillä pidettävä tauko sekunneissa.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Kierrä pystypaneeleissa</guilabel> </term>
+<listitem>
+<para>Valitse tämä kiertääksesi sovelman kuvaa, kun sovelma lisätään pystysuuntaiseen paneeliin.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

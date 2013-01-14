@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Handbok för Klocka</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2006</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>Dokumentationsprojekt för GNOME</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+<para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist><listitem>
+<para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+</listitem>
+<listitem>
+<para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul </firstname> 
+		  <surname> Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentationsprojekt för GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentationsprojekt för GNOME</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentationsprojekt för GNOME</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.7</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.6</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka, version 2.5</revnumber> 
+		  <date>Februari 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka, version 2.4</revnumber> 
+		  <date>September 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka, version 2.3</revnumber> 
+		  <date>Januari 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka, version 2.2</revnumber> 
+		  <date>Augusti 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka, version 2.1</revnumber> 
+		  <date>Juni 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka, version 2.0</revnumber> 
+		  <date>Mars 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Klocka</revnumber> 
+		  <date>April 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Denna handbok beskriver version 2.5.3.1 av panelprogrammet Klocka.</releaseinfo> 
+	 <legalnotice> 
+		<title>Återkoppling</title> 
+		<para>Om du vill rapportera ett fel eller ge förslag beträffande panelprogrammet Klocka eller den här handboken följer du instruktionerna på <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Klocka</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Introduktion</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Panelprogrammet Klocka</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Visar panelprogrammet Klocka.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>
+The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.
+</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Lägg till klocka till en panel</title>
+  <para>Genomför följande steg:</para>
+         <orderedlist>
+           <listitem>
+             <para>Höger-klicka på panelen.</para>
+           </listitem>
+           <listitem>
+             <para>Välj <guimenuitem>Lägg till i panelen</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Rulla ner i listan av poster i dialogen <guilabel>Lägg till i panelen</guilabel>, välj sedan <guilabel>Klocka</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Klicka <guibutton>Lägg till</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Användning</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Visa kalendern</title>	
+	<para>Klicka på panelprogrammet för att öppna en liten kalender som visar aktuell månad. För att stänga kalendern, klicka igen på den del av panelprogrammet som är i panelen.</para>
+	
+	<para>Du kan ändra visad månad i kalendern genom att klicka på pilarna på varje sida av texten för månad och år.</para>	
+	
+	<para>Dubbelklicka på en dag i kalendern för att starta grupprogramsviten <application>Evolution</application>.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>För att infoga datumet eller tiden i ett program</title>	
+<para>Panelprogrammet <application>Klocka</application> hämtar tidsinformation från systemklockan.</para>
+<para>För att infoga aktuell tid eller datum från panelprogrammet <application>Klocka</application> in i ett program, följer du stegen nedan:</para>
+	<orderedlist>
+		<listitem>
+			<para>Högerklicka på panelprogrammet <application>Klocka</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Välj någon av följande menyposter från panelprogrammets popuppmeny:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Kopiera tid</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Kopiera datum</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Peka på den plats i ditt program där du vill infoga posten.</para>
+		</listitem>
+		<listitem>
+			<para>Välj <menuchoice><guimenu>Redigera</guimenu><guimenuitem>Klistra in</guimenuitem></menuchoice> eller klicka med mittenmusknappen för att infoga posten.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Justera systemdatumet eller tiden</title>
+	<para>För att justera systemdatum eller tid som panelprogrammet <application>Klocka</application> visar, följer du stegen nedan:</para>
+	<orderedlist>
+	<listitem>
+			<para>Höger-klicka på panelprogrammet, välj sedan <guimenuitem>Justera datum och tid</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Skriv in lösenordet för <literal>root</literal>, klicka sedan på <guibutton>OK</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>Panelprogrammet <application>Klocka</application> startar systemverktyget som ställer in systemdatum och tid. Använd verktyget för att justera datumet och tiden.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Clock Preferences</title> 
+	<para>
+	To configure the <application>Clock</application>, right-click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. You will be presented with three tabs to change preferences for <guimenuitem>General</guimenuitem>,  <guimenuitem>Locations</guimenuitem> or <guimenuitem>Weather</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>General Preferences</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Clock Format</guilabel></term> 
+			 <listitem> 
+			 <para>Välj något av följande alternativ:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12 timmar</guilabel></para>
+			 <para>Visa tid i AM/PM-format. Förmiddag/eftermiddag.</para>
+			 <note><para>Detta alternativ visas inte om ditt sessionsspråk inte använder 12-timmars klockan.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24 timmar</guilabel></para>
+			 <para>Visa tid i formatet 00.00 till 24.00.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the date</guilabel></term>
+			 <listitem> 
+			 <para>Välj det här alternativet om du vill visa aktuellt datum i panelprogrammet.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Visa sekunder</guilabel></term>
+			 <listitem> 
+			 <para>Välj det här alternativet om du vill visa sekunder i panelprogrammet.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the weather</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the the current weather forecast at your location.
+			The weather will be displayed as an icon for sunny, cloudy, rain or more.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show temperature</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the temperature at your location.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Location Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Locations</guilabel></term> 
+			 <listitem> 
+			 <para>You can add one or more locations and their local time to be displayed in the Clock.  
+			To add a location:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Press <guilabel>Add</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Type the city, region or country name and as you type a list of options will appear
+			in a drop down box.  Select a match from the pop-up and the <guilabel>Timezone</guilabel>,
+			 <guilabel>Latitude</guilabel>, and <guilabel>Longitude</guilabel> entries will be 
+			automatically filled in.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Weather Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Weather</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Temperature unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Wind speed unit</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Speed unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufort scale</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knots</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (miles per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilometers per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (meters per second)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

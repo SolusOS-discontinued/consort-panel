@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Fisch-Handbuch</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Paul Cutler</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright><copyright><year>2008</year><holder>Florian Ackermann (flori.ackermann@web.de)</holder></copyright><copyright><year>2008, 2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>GNOME-Dokumentationsprojekt</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+          <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+ 
+         <para>Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und Dienstleistungen verwendeten Namen handelt es sich um Marken. An den Stellen, an denen derartige Namen in einer GNOME-Dokumentation vorkommen und wenn die Mitglieder des GNOME-Dokumentationsprojekts über diese Marken informiert wurden, sind die Namen in Grossbuchstaben oder mit großen Anfangsbuchstaben geschrieben.</para>
+ 
+         <para>DAS DOKUMENT UND MODIFIZIERTE VERSIONEN DES DOKUMENTS WERDEN GEMÄSS DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE MIT DER FOLGENDEN VEREINBARUNG BEREITGESTELLT: <orderedlist>
+                 <listitem>
+                   <para>DAS DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE JEGLICHE GEWÄHRLEISTUNG, WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, GEWÄHRLEISTUNGEN, DASS DAS DOKUMENT ODER EINE MODIFIZIERTE VERSION DES DOKUMENTS FREI VON HANDELSÜBLICHEN FEHLERN UND FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST UND KEINE RECHTE DRITTER VERLETZT. JEGLICHES RISIKO IN BEZUG AUF DIE QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS TRAGEN SIE. SOLLTE SICH EIN DOKUMENT ODER EINE MODIFIZIERTE VERSION DAVON IN IRGENDEINER WEISE ALS FEHLERHAFT ERWEISEN, TRAGEN SIE (NICHT DER URSPRÜNGLICHE VERFASSER, AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR JEGLICHE ERFORDERLICHE SERVICE-, REPARATUR- UND KORREKTURMASSNAHMEN: DIESE BESCHRÄNKUNG DER GEWÄHRLEISTUNG IST WESENTLICHER BESTANDTEIL DIESER LIZENZ. JEDE VERWENDUNG EINES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS UNTERLIEGT DIESER BESCHRÄNKUNG; UND</para>
+                 </listitem>
+                 <listitem>
+                   <para>UNTER KEINEN UMSTÄNDEN UND GEMÄSS KEINER RECHTSLEHRE, WEDER AUFGRUND VON UNERLAUBTEN HANDLUNGEN (EINSCHLIESSLICH FAHRLÄSSIGKEIT), VERTRÄGEN ODER SONSTIGEM, KANN DER AUTOR, DER URSPRÜNGLICHE VERFASSER, EIN MITWIRKENDER ODER EIN VERTEILER DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ODER EIN LIEFERANT EINER DIESER PARTEIEN VON EINER PERSON FÜR DIREKTE, INDIREKTE, BESONDERE, ZUFÄLLIGE ODER ALS FOLGE AUFGETRETENE SCHÄDEN IRGENDEINER ART, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, SCHÄDEN DURCH GESCHÄFTSWERTVERLUSTE, ARBEITSAUSFÄLLE, COMPUTERAUSFÄLLE ODER -FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE, DIE DURCH ODER IM ZUSAMMENHANG MIT DER VERWENDUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS ENTSTANDEN SIND, SELBST WENN DIESE PARTEI ÜBER MÖGLICHE SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE, HAFTBAR GEMACHT WERDEN.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-Dokumentationsprojekt</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>GNOME-Dokumentationsteam</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-Dokumentationsprojekt</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Fisch-Applet-Handbuch V2.5</revnumber> 
+		  <date>Juni 2009</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Dokumentations-Team</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Fisch-Applet-Handbuch V2.4</revnumber> 
+		  <date>Juni 2009</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Dokumentations-Team</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Fisch-Applet-Handbuch V2.2</revnumber> 
+		  <date>Januar 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Dokumentations-Team</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Fisch-Applet-Handbuch V2.1</revnumber> 
+		  <date>August 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Dokumentations-Team</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Fisch-Applet-Handbuch V2.0</revnumber> 
+		  <date>Mai 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun GNOME Dokumentations-Team</para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Fisch-Applet-Handbuch</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Dieses Handbuch beschreibt das Fisch-Applet in Version 3.4.7.4ac19.</releaseinfo> 
+	 <legalnotice> 
+		<title>Rückmeldungen</title> 
+		<para>Wenn Sie Fehler finden oder Vorschläge zum Fisch-Applet oder diesem Handbuch haben, folgen Sie den Anweisungen auf der <ulink url="ghelp:gnome-feedback" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>Das Fisch-Applet zeigt ein animiertes Bild im Panel und offenbart Ihr Schicksal, wenn Sie darauf klicken.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Fisch</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Einführung</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Fisch-Applet</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Zeigt das Fisch-Applet.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Das <application>Fisch-Applet</application> zeigt einen animierten Fisch im Panel. sie können den Namen des Fisches und das Programm anpassen, welches beim anklicken des Fisches im Panel gestartet wird. Per Vorgabe wird das Programm <application>Fortune</application> gestartet, welches eine meist lustige zufällige Meldung aus einer Zitat-Datenbank anzeigt.</para>
+
+
+
+
+<para>Sie können das angezeigte Bild sowie den beim Anklicken auszuführenden Befehl ändern.</para>
+<sect2 id="fish-introduction-add">
+<title>So integrieren Sie das Fisch-Applet im Panel</title>
+  <para>Führen Sie folgende Schritte aus:</para>
+         <orderedlist>
+           <listitem>
+             <para>Klicken Sie mit der rechten Maustaste auf das Panel.</para>
+           </listitem>
+           <listitem>
+             <para>Wählen Sie <guimenuitem>Zum Panel hinzufügen ...</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Rollen Sie im Dialog <guilabel>Zum Panel hinzufügen</guilabel> nach unten bis zum Eintrag <guilabel>Fisch</guilabel>, und markieren Sie diesen Eintrag.</para>
+           </listitem>
+           <listitem>
+             <para>Klicken Sie nun auf <guibutton>Hinzufügen</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Verwendung</title>
+<para>Klicken Sie auf das Applet, um das <guilabel>Wanda, der Fisch</guilabel>-Dialogfenster zu öffnen. Es zeigt einen Glückskeks-Spruch. Sie können den beim Anklicken auszuführenden Befehl ändern. Weitere Informationen finden Sie in <xref linkend="fish-settings"/>.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Einstellungen</title>
+<para>Zur Konfiguration von <application>Fisch</application> klicken Sie mit der rechten Maustaste auf das Applet und wählen Sie <guimenu>Einstellungen</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Name des Fisches</guilabel> </term>
+<listitem>
+<para>In diesem Textfeld können Sie den Namen des Fisches bestimmen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Beim Anklicken auszuführender Befehl</guilabel> </term>
+<listitem>
+<para>Standardmäßig wird der <literal>fortune</literal>-Befehl beim Anklicken des Applets ausgeführt. Bestimmen Sie in diesem Textfeld einen alternativen Befehl.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Datei</guilabel> </term>
+<listitem>
+<para>Wählen Sie hier zwischen verschiedenen bereits mitgelieferten Animationen. Sie können auch ein eigenes Bild einfügen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Einzelbildanzahl in Animation</guilabel> </term>
+<listitem>
+<para>Bestimmen Sie in diesem Textfeld die Anzahl der Einzelbilder in der Animation.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Pause pro Einzelbild</guilabel> </term>
+<listitem>
+<para>Bestimmen Sie in diesem Textfeld die Länge der Pause in Sekunden zwischen den Einzelbildern.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Auf vertikalen Panels drehen</guilabel> </term>
+<listitem>
+<para>Aktivieren Sie diese Option, um das Applet zu drehen, falls Sie es zu einem vertikalen Panel hinzufügen.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

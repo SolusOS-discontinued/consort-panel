@@ -1,0 +1,4 @@
+usr/bin
+usr/lib/consort-panel/*/*.so
+usr/share/man
+usr/share/applications

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_TW">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>時鐘 手冊</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2008.</year><holder>Chao-Hsiung Liao (j_h_liau@yahoo.com.tw)</holder></copyright><copyright><year>2010.</year><holder>Kevin_Wei_2 (kevin_wei3@yahoo.com.tw)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>GNOME 文件專案</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>根據自由軟體基金會 (Free Software Foundation) 所發佈 的 GNU 自由文件授權 (GNU Free Documentation License, GFDL) 1.1 (含) 以後版本， 使用者可以複製、散佈，或修改本文件，但不得增刪章節，不得加上封面文字， 亦不得加上封底文字。 如要取得 GFDL 的副本，請參閱 此<ulink type="help" url="ghelp:fdl">連結</ulink>，或是參閱與本手冊一同隨附的 COPYING-DOCS 檔案。</para>
+<para>本手冊是屬於依 GFDL 授權所發佈之 GNOME 手冊集中的一部份。 如果您只要單獨散佈本手冊，依據授權聲明第六節之敘述， 您必須另外將授權聲明加入本手冊中。</para>
+<para>許多公司為了突顯其產品與服務，會使用特別名稱，並亦已聲明這些 名稱為其商標。當這些名稱出現在 GNOME 文件中，同時 GNOME 文件 專案小組成員亦明白這些名稱為商標時， 這些名稱會以大寫字母或是首字母大寫表示。</para>
+<para>本文件及其修正版本的提供，是基於 GNU 自由文件授權聲明 的條款，同時亦有下列共識： <orderedlist><listitem>
+<para>文件提供是以其「原樣」呈現，不管明示或暗示，皆不具任何 保證，包括 (但不限於) 文件或修正版毫無錯誤、可販售、 具特殊用途，或不侵權。 關於本文件與修正版文件之品質、正確性及功用， 其風險您必須自行承擔。 若本文件或修正版有任何缺陷，任何必須之保養，修理及更正， 應由您自行承擔，原始作者、作者或任何散佈者無須負責。 本免責聲明是本授權聲明極重要與必要的一部份，因此任何文件或 修正版的授權，皆須在同意本免責聲明的情況下進行；同時</para>
+</listitem>
+<listitem>
+<para>在任何情況或法律理論下，亦即不管是在侵權 (包括疏忽)、契約或 其他情形，或是已預先告知會有下列損害之可能時，本文件 或修正版的任何作者、原始作者、投稿人以及散佈者，或是 任何提供單位，對於因使用本文件及修正版，或與本文件及 修正版使用相關所造成的任何直接、間接、特殊、偶然或必 然之損害，包括 (但不限於) 信譽受損、工作停止、電腦當 機或不正常運作，或任何所有其他損害，上述人等皆不需負 任何責任。</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>GNOME 文件專案</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>GNOME 文件專案</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>GNOME 文件專案</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+		  <date>2010年1月</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+		  <date>2010年1月</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+		  <date>2004年2月</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+		  <date>2003年9月</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+		  <date>2003年1月</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet 手冊 V2.2</revnumber> 
+		  <date>2002年8月</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet 手冊 V2.1</revnumber> 
+		  <date>2002 年 6 月</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet 手冊 V2.0</revnumber> 
+		  <date>2002 年 3 月</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Clock Applet 手冊</revnumber> 
+		  <date>2000 年 4 月</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">GNOME 文件專案</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>本手冊的內容是說明 2.5.3.1 版的 時鐘 程式。</releaseinfo> 
+	 <legalnotice> 
+		<title>回饋</title> 
+		<para>關於 Clock applet 或本手冊，如果要報告錯誤或是提出建議，請遵照 <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink> 的指示。</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para><application>時鐘</application>程式能顯示日期和時間，當它被點擊時則會顯示行事曆。<application>時鐘</application>能被定製成顯示秒數或是更改顯示為24小時制或是12小時制。</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>時鐘</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>介紹</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Clock Applet</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>顯示 Clock Applet。</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para><application>時鐘</application>程式能顯示日期和時間，當它被點擊時則會顯示行事曆。<application>時鐘</application>能被定製成顯示秒數或是更改顯示為24小時制或是12小時制。</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>要在面板上新增時鐘</title>
+  <para>進行下列任一項選項：</para>
+         <orderedlist>
+           <listitem>
+             <para>在面板上按右鍵</para>
+           </listitem>
+           <listitem>
+             <para>
+               Choose <guimenuitem>Add to Panel</guimenuitem>.
+             </para>
+           </listitem>
+           <listitem>
+             <para>
+               Scroll down the list of items in the <guilabel>Add to Panel</guilabel> dialog, then select <guilabel>Clock</guilabel>.
+             </para>
+           </listitem>
+           <listitem>
+             <para>
+               Click <guibutton>Add</guibutton>.
+             </para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>使用</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>要顯示行事曆</title>	
+	<para>Click on the applet to open a small calendar showing the current month. To close the calendar, click again on the part of the applet that is in the panel.</para>
+	
+	<para>You can change the month shown in the calendar by clicking the arrows to each side of the month and year text.</para>	
+	
+	<para>Double-click a day in the calendar to launch the <application>Evolution</application> groupware application.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>To Insert the Date or Time Into an Application</title>	
+<para><application>Clock</application> Applet 是從系統時鐘中擷取時間。</para>
+<para>
+	To insert the date or time from the <application>Clock</application> applet into an application, perform the following steps:</para>
+	<orderedlist>
+		<listitem>
+			<para>在 <application>Clock</application> Applet 上按滑鼠右鍵。</para>
+		</listitem>
+		<listitem>
+			<para>在 Applet 即現式功能表中，選擇任一個功能表項目：</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>複製時間</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>複製日期</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>在應用程式中，將滑鼠指向項目要插入的位置。</para>
+		</listitem>
+		<listitem>
+			<para>選擇 <menuchoice><guimenu>編輯</guimenu><guimenuitem>貼上</guimenuitem></menuchoice>，或按滑鼠中鍵插入項目。</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>要調整系統的日期或時間</title>
+	<para>To adjust the system date or time that the <application>Clock</application> applet displays, perform the following steps:	</para>
+	<orderedlist>
+	<listitem>
+			<para>Right-click on the applet, then choose <guimenuitem>Adjust Date &amp; Time</guimenuitem>.
+			</para>
+	</listitem>
+	<listitem>
+			<para>Type the <literal>root</literal> password, then click <guibutton>OK</guibutton>.
+			</para>
+	</listitem>
+	<listitem>
+			<para>The <application>Clock</application> applet starts the system tool that sets the system date and time. Use the tool to adjust the date and time.
+			</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>時鐘 偏好設定</title> 
+	<para>
+	To configure the <application>Clock</application>, right-click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. You will be presented with three tabs to change preferences for <guimenuitem>General</guimenuitem>,  <guimenuitem>Locations</guimenuitem> or <guimenuitem>Weather</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>全部的偏好設定</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>時鐘格式</guilabel></term> 
+			 <listitem> 
+			 <para>選取下列任一項選項：</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12 小時</guilabel></para>
+			 <para>以 a.m./p.m 格式顯示時間。</para>
+			 <note><para>This option is not shown if your session language does not use the 12 hour clock.
+			</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24 小時</guilabel></para>
+			 <para>以 00.00 到 24.00 格式顯示時間。</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>顯示日期</guilabel></term>
+			 <listitem> 
+			 <para>選取這個選項，Applet 中便會顯示日期。</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>顯示秒數</guilabel></term>
+			 <listitem> 
+			 <para>選取這個選項，applet 中便會顯示秒數。</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>顯示天氣</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the the current weather forecast at your location.
+			The weather will be displayed as an icon for sunny, cloudy, rain or more.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>顯示溫度</guilabel></term>
+			 <listitem> 
+			 <para>選取這個選項來顯示在您位置中的溫度。</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>位置偏好設定</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>位置</guilabel></term> 
+			 <listitem> 
+			 <para>You can add one or more locations and their local time to be displayed in the Clock.  
+			To add a location:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Press <guilabel>Add</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Type the city, region or country name and as you type a list of options will appear
+			in a drop down box.  Select a match from the pop-up and the <guilabel>Timezone</guilabel>,
+			 <guilabel>Latitude</guilabel>, and <guilabel>Longitude</guilabel> entries will be 
+			automatically filled in.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>天氣偏好設定</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>天氣</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Temperature unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (攝氏)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (華氏)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Wind speed unit</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Speed unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufort scale</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knots</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (miles per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilometers per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (meters per second)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

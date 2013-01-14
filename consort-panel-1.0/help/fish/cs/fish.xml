@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Příručka appletu Ryba</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Paul Cutler</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright><copyright><year>2009.</year><holder>Lucas Lommer (llommer@svn.gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Dokumentační projekt GNOME</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+          <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+ 
+         <para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+ 
+         <para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+                 <listitem>
+                   <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ "JAK JE" BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+                 </listitem>
+                 <listitem>
+                   <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentační projekt GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Dokumentační tým GNOME</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentační projekt GNOME</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Příručka V2.5 k appletu Ryba</revnumber> 
+		  <date>Červen 2009</date> 
+		  <revdescription> 
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para> 
+			 <para role="publisher">Dokumentační projekt GNOME</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Příručka V2.4 k appletu Ryba</revnumber> 
+		  <date>Červen 2009</date> 
+		  <revdescription> 
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para> 
+			 <para role="publisher">Dokumentační projekt GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Příručka V2.2 k appletu Ryba</revnumber> 
+		  <date>Leden 2003</date> 
+		  <revdescription> 
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para> 
+			 <para role="publisher">Dokumentační projekt GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Příručka V2.1 k appletu Ryba</revnumber> 
+		  <date>Srpen 2002</date> 
+		  <revdescription> 
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para> 
+			 <para role="publisher">Dokumentační projekt GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Příručka V2.0 k appletu Ryba</revnumber> 
+		  <date>Květen 2002</date> 
+		  <revdescription> 
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para> 
+			 <para role="publisher">Dokumentační projekt GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Příručka appletu Ryba</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">Dokumentační projekt GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Tato příručka popisuje applet Ryba verze 3.4.7.4ac19</releaseinfo> 
+	 <legalnotice> 
+		<title>Ohlasy</title> 
+		<para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k appletu Ryba nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>Applet Ryba zobrazuje na panelu animovaný obrázek a když na něj kliknete, prozradí vám, co vás čeká.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Ryba</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Úvod</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Applet Ryba</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Zobrazuje applet Ryba.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Applet <application>Ryba</application> zobrazuje na panelu animovanou rybku. Můžete si přizpůsobit jméno rybky a nastavit si, který program se má spustit, když na ni kliknete. Jako výchozí program, který se kliknutím spouští, je nastavený <application>Fortune</application>, který zobrazuje náhodné bonmoty z databáze citátů.</para>
+
+
+
+
+<para>Můžete si nastavit vlastní obrázek místo ryby a vlastní příkaz, který se má po kliknutí provést. </para>
+<sect2 id="fish-introduction-add">
+<title>Přidání appletu Ryba na panel</title>
+  <para>Proveďte následující kroky:</para>
+         <orderedlist>
+           <listitem>
+             <para>Klikněte pravým tlačítkem na panel.</para>
+           </listitem>
+           <listitem>
+             <para>Zvolte <guimenuitem>Přidat na panel</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Projděte si seznam appletů v dialogu <guilabel>Přidat na panel</guilabel> a vyberte <guilabel>Ryba</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Klikněte na <guibutton>Přidat</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Použití</title>
+<para>Kliknutím na applet se zobrazí okno <guilabel>Ryba Wanda</guilabel>. Dialog obvykle obsahuje věštby. Applet si můžete nastavit tak, aby po kliknutí spouštěl vámi určený příkaz. Více informací popisuje <xref linkend="fish-settings"/>.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Předvolby</title>
+<para>Pokud chcete nastavit applet <application>Ryba</application>, klikněte na něm pravým tlačítkem a vyberte <guimenu>Předvolby</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Jméno ryby</guilabel> </term>
+<listitem>
+<para>Do tohoto textového pole zadejte jméno ryby.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Příkaz, který spustit po kliknutí</guilabel> </term>
+<listitem>
+<para>Ve výchozím nastavení spustí applet <application>Ryba</application> po kliknutí příkaz <literal>fortune</literal>. V tomto textovém poli si můžete určit ke spuštění jiný příkaz.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Soubor</guilabel> </term>
+<listitem>
+<para>Toto pole můžete použít pro výběr obrázku, který se má v appletu zobrazovat. Můžete si zvolit některý z obrázků dodávaných spolu s appletem, nebo vybrat svůj vlastní.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Celkem políček v animaci</guilabel> </term>
+<listitem>
+<para>Do číselného pole zadejte počet políček se snímky v animaci.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Prodleva mezi políčky</guilabel> </term>
+<listitem>
+<para>Použijte číselné pole k určení prodlevy v sekundách mezi jednotlivými snímky animace.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Na svislém panelu otočit</guilabel> </term>
+<listitem>
+<para>Vyberte tuto volbu, pokud chcete, aby se obrázek otočil v případě, že applet přidáte na svislý panel.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

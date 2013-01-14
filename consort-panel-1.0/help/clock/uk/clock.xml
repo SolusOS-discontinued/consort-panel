@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="uk">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Посібник з аплету Годинник</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2003,2007</year><holder>Максим Дзюманенко (dziumanenko@gmail.com)</holder></copyright><copyright><year>2010.</year><holder>Сергій Гаврилов (sergiovana@bigmir.net)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>Проект документування GNOME</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Дозволяється копіювати, розповсюджувати та/або змінювати цей документ на умовах ліцензії GNU Free Documentation License (GFDL), версії 1.1 або будь-якої старшої версії, що опублікована Free Software Foundation без інваріантних розділів, тексту титульної сторінки, та тексту фінальної сторінки. Копію GFDL можна знайти <ulink type="help" url="ghelp:fdl">за адресою</ulink> або у файлі COPYING-DOCS, що постачається з цією довідкою.</para>
+<para>Ця довідка є частиною збірки документації GNOME, що постачається на умовах ліцензії GFDL. Якщо ви бажаєте розповсюджувати її окремо від збірки, ви можете це робити, якщо додасте копію ліцензії до документу, як описано у розділі 6 цієї ліцензії.</para>
+<para>Більшість назв, що використовуються компаніями для розповсюдження їх продуктів та послуг є торговими марками. Якщо такі назви зустрічаються у документації з GNOME та учасникам проекту документування GNOME відомо, що вони є торговими марками, тоді ці назви пишуться великими літерами або починаються з великої літери.</para>
+<para>ДОКУМЕНТ ТА ЗМІНЕНІ ВЕРСІЇ ЦЬОГО ДОКУМЕНТУ ПОСТАЧАЮТЬСЯ НА УМОВАХ ВІЛЬНОЇ ЛІЦЕНЗІЇ ДЛЯ ДОКУМЕНТАЦІЇ GNU З ПОДАЛЬШИМ РОЗУМІННЯМ ЩО: <orderedlist><listitem>
+<para>ДОКУМЕНТ НАДАЄТЬСЯ "ЯК Є", БЕЗ БУДЬ-ЯКИХ ГАРАНТІЇ, ЯВНИХ ЧИ НЕЯВНИХ, ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ГАРАНТІЙ ЩО ЦЕЙ ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНИХ ВЕРСІЙ ЛЕЖИТЬ НА ВАС.  ЯКЩО БУДЬ-ЯКИЙ ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ БУДУТЬ ВИЗНАНІ ДЕФЕКТНИМИ У БУДЬ-ЯКОМУ ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ ВИПРАВЛЕННЯ. ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. НЕ ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ ПРИЙНЯТТЯ ЦІЄЇ ВІДМОВИ; ТА</para>
+</listitem>
+<listitem>
+<para>НІ ЗА ЯКИХ ОБСТАВИН ТА ЗА БУДЬ-ЯКОГО ЗАКОНОДАВСТВА, ЧИ ТО ГРОМАДЯНСЬКОЇ ВІДПОВІДАЛЬНОСТІ (ВКЛЮЧАЮЧИ ХАЛАТНІСТЬ), ДОГОВОРУ, ЧИ ЧОГОСЬ ІНШОГО, АВТОР, ПОЧАТКОВИЙ УКЛАДАЧ, БУДЬ-ЯКИЙ СПІВАВТОР, АБО ДИСТРИБ'ЮТОР ДОКУМЕНТУ ЧИ ЗМІНЕНОЇ ВЕРСІЇ ДОКУМЕНТУ, АБО БУДЬ-ЯКИЙ ПОСТАЧАЛЬНИК БУДЬ-ЯКОЇ З ЦИХ СТОРІН, НЕ НЕСЕ ВІДПОВІДАЛЬНІСТЬ ПЕРЕД БУДЬ-ЯКОЮ ОСОБОЮ ЗА БУДЬ-ЯКІ ПРЯМІ, НЕПРЯМІ, ОСОБЛИВІ, ВИПАДКОВІ, АБО ІСТОТНІ ЗБИТКИ БУДЬ-ЯКОГО ХАРАКТЕРУ ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ, ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО ВИНИКЛИ БЕЗВІДНОСНО АБО ВНАСЛІДОК ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ ТА ЗМІНЕНИХ ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Проект документування GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>Проект документування GNOME</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>Проект документування GNOME</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.7</revnumber> 
+		  <date>Січень 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.6</revnumber> 
+		  <date>Січень 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.5</revnumber> 
+		  <date>Лютий 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.4</revnumber> 
+		  <date>Вересень 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.3</revnumber> 
+		  <date>Січень 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.2</revnumber> 
+		  <date>Серпень 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.1</revnumber> 
+		  <date>Червень 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник версії 2.0</revnumber> 
+		  <date>Березень 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Посібник з аплету Годинник</revnumber> 
+		  <date>Квітень 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">Проект документування GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>У цьому посібнику описується аплет Годинник версії 2.5.3.1.</releaseinfo> 
+	 <legalnotice> 
+		<title>Зворотний зв'язок</title> 
+		<para>Щоб сповістити про помилку або внести пропозицію відносно аплету Годинник або цієї довідки, дотримуйтесь інструкцій на сторінці <ulink url="ghelp:gnome-feedback" type="help">Зворотний зв'язок GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>Аплет <application>Годинник</application> показує дату та час, а під час натискання на нього вказівником миші, ще й календар. <application>Годинник</application> можна налаштувати до показу секунд або часу у 12 чи 24 годинному форматі.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Годинник</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Вступ</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Аплет Годинник</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Показує аплет Годинник.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Аплет <application>Годинник</application> показує дату та час, а під час натискання на нього вказівником миші, ще й календар. <application>Годинник</application> можна налаштувати до показу секунд або часу у 12 чи 24 годинному форматі.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Додавання аплету Годинник до панелі</title>
+  <para>Виконайте наступні дії:</para>
+         <orderedlist>
+           <listitem>
+             <para>Клацніть правою кнопкою на панелі.</para>
+           </listitem>
+           <listitem>
+             <para>Виберіть <guimenuitem>Додати до панелі</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Прокрутіть вниз список пунктів у діалоговому вікні <guilabel>Додати до панелі</guilabel>, потім виберіть <guilabel>Clock</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Натисніть на <guibutton>Додати</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Використання</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Щоб вивести календар</title>	
+	<para>Натисніть на аплеті, щоб відкрити невеликий календар, який показує поточний місяць. Щоб закрити календар, натисніть знову на аплет на панелі.</para>
+	
+	<para>Ви можете змінити місяць, що відображається у календарі, якщо натиснете на стрілки, що знаходяться з боків місяця та року.</para>	
+	
+	<para>Двічі клацніть на дні календаря, щоб з програму для групової роботи <application>Evolution</application>.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Вставляння дати або часу у програму</title>	
+<para>Аплет <application>Годинник</application> отримує час з системного годинника.</para>
+<para>Щоб вставити дату або час з аплету <application>Годинник</application> у програму, виконайте наступні дії:</para>
+	<orderedlist>
+		<listitem>
+			<para>Клацніть правою кнопкою миші на аплеті <application>Годинник</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Виберіть один з наступних пунктів контекстного меню аплету:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Копіювати час</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Копіювати дату</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Вкажіть місце у програмі, де ви бажаєте вставити час.</para>
+		</listitem>
+		<listitem>
+			<para>Виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставити</guimenuitem></menuchoice> або клацніть середньою кнопкою миші.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Встановлення системної дати або часу</title>
+	<para>Щоб змінити системну дату або час, які відображає аплет <application>Годинник</application>, виконайте наступні дії:</para>
+	<orderedlist>
+	<listitem>
+			<para>Клацніть правою кнопкою миші по аплету, потім оберіть <guimenuitem>Встановити дату й час</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Введіть пароль користувача <literal>root</literal>, потім натисніть <guibutton>Гаразд</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>Запуститься системна утиліта встановлення дати та часу. Користуючись утилітою встановіть дату та час.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Параметри Годинника</title> 
+	<para>Щоб налаштувати аплет <application>Годинник</application>, натисніть праву кнопку миші з вказівником на ньому і виберіть <guimenuitem>Параметри</guimenuitem>. З’явиться діалог з трьома вкладками для редагування параметрів: <guimenuitem>Загальне</guimenuitem>, <guimenuitem>Адреси</guimenuitem> та <guimenuitem>Погода</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>Загальні параметри</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Формат годинника</guilabel></term> 
+			 <listitem> 
+			 <para>Виберіть один з таких параметрів:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12-и годинний</guilabel></para>
+			 <para>Показує час у 12-годинному форматі.</para>
+			 <note><para>Цей параметр не виводиться, якщо для вашої мови не використовується 12-годинний формат.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24-ох годинний</guilabel></para>
+			 <para>Показує час у форматі від 00.00 до 24.00.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Показувати дату</guilabel></term>
+			 <listitem> 
+			 <para>Виберіть цей параметр, щоб аплет показував дату.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Показувати секунди</guilabel></term>
+			 <listitem> 
+			 <para>Виберіть цей параметр, щоб аплет показував час з секундами.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Показувати погоду</guilabel></term>
+			 <listitem> 
+			 <para>Виберіть цей параметр, щоб відобразити поточний прогноз погоди у вашому регіоні. Прогноз буде показаний як піктограма для сонячної погоди, хмарної, дощу тощо.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Показувати температуру</guilabel></term>
+			 <listitem> 
+			 <para>Позначте цей параметр, щоб аплет показував температуру у вашому регіоні.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Параметри адреси</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Адреси</guilabel></term> 
+			 <listitem> 
+			 <para>Ви можете додати одну або більше адрес та їх місцевий час, який буде відображений в Годиннику. Щоб додати адресу:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Натисніть кнопку <guilabel>Додати</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Введіть назву міста, регіону або країни. Під час введення з’явиться спадний список з варіантами завершення. Виберіть з нього потрібне і поля введення: <guilabel>Часовий пояс</guilabel>, <guilabel>Широта</guilabel> та <guilabel>Довгота</guilabel> — заповняться автоматично.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Параметри погоди</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Погода</guilabel></term> 
+			 <listitem> 
+			 <para>Ви можете вибрати зі спадного списку один з таких варіантів показу одиниць температури:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Шкала Фаренгейта)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Шкала Цельсія)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Шкала Кельвіна)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Типово</guilabel> Типове значення для вашого регіону.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Одиниці швидкості вітру</guilabel></term> 
+			 <listitem> 
+			 <para>Ви можете вибрати зі спадного списку один з таких варіантів показу одиниць швидкості вітру:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Шкала Бофорта</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>вузли</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>миль/год</guilabel> (миль на годину)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>км/год</guilabel> (кілометрів на годину)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>м/с</guilabel> (метрів в секунду)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Типово</guilabel> Типове значення для вашого регіону.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

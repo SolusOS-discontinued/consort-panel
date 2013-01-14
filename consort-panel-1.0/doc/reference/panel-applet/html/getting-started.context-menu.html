@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Using a Context Menu</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="getting-started.html" title="Part II. Getting Started with the Panel Applet library">
+<link rel="prev" href="getting-started.example.html" title="Hello World Example">
+<link rel="next" href="getting-started.settings.html" title="Settings">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
+<td><a accesskey="p" href="getting-started.example.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="getting-started.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td><a accesskey="n" href="getting-started.settings.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="getting-started.context-menu"></a>Using a Context Menu</h2></div></div></div>
+<p>
+     The Panel Applet library uses <span class="type">GtkAction</span> to define menu items appearing in the context menu of the applet.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.context-menu.content"></a>Guidelines for Context Menu</h3></div></div></div>
+<p>
+      To help guarantee consistency in the interaction with applets, there are some guidelines that are recommended to follow:
+     </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+        Do not make the context menu too long: if you have more than five or six menu items, then it might be worth investing efforts on rethinking what is important in the menu.
+       </p></li>
+<li class="listitem"><p>
+        For the menu item that will enable the user to configure the applet, use "Preferences" for the label, and try to avoid "Configure", "Configuration", "Settings", etc.
+       </p></li>
+<li class="listitem"><p>
+        Avoid putting a "Help" menu item. The user will usually explicitly add the applet, so it is expected that he knows what the applet is about. Putting a "Help" menu item in the context menu is therefore too prominent. It might make sense to add a "Help" button in the Preferences dialog, though.
+       </p></li>
+<li class="listitem"><p>
+        If you agree, avoid putting a "About" menu item. To the user, applets are not different applications but elements of one global application, the panel. Of course, this means that credits for working on the applet are not visible to the user.
+       </p></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.context-menu.setup"></a>Setting Up the Menu</h3></div></div></div>
+<p>
+      The only part of dealing with a context menu that is specific to applets is how to setup the context menu. Once it is setup, this is really just a matter of using <span class="type">GtkAction</span>.
+     </p>
+<p>
+      To setup the context menu of the applet, the <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-setup-menu-from-file" title="panel_applet_setup_menu_from_file ()"><code class="function">panel_applet_setup_menu_from_file()</code></a> function should be used, with a path to a <a class="link" href="getting-started.context-menu.html#getting-started.context-menu.xml-file" title="Menu XML File">menu XML file</a> and a <span class="type">GtkActionGroup</span> object containing all actions that are used in the menu XML file. The example below shows how to achieve this:
+     </p>
+<div class="example">
+<a name="id2539475"></a><p class="title"><b>Example 3. Hello World applet, with a context menu</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="preproc">#include </span><span class="number">&lt;glib/gi18n.h&gt;</span>
+<span class="preproc">#include </span><span class="number">&lt;gtk/gtk.h&gt;</span>
+<span class="preproc">#include </span><span class="number">&lt;panel-applet.h&gt;</span>
+
+<span class="comment">/*</span><span class="comment"> This would usually be defined in config.h </span><span class="comment">*/</span>
+<span class="preproc">#define GETTEXT_PACKAGE </span><span class="number">&quot;hello-world&quot;</span>
+<span class="comment">/*</span><span class="comment"> This would usually be defined in Makefile.am </span><span class="comment">*/</span>
+<span class="preproc">#define HELLO_WORLD_UI_DIR </span><span class="number">&quot;/usr/share/hello-world&quot;</span>
+
+<span class="type">static</span> <span class="type">void</span> hello_world_applet_prefs (GtkAction   *action,
+                                      PanelApplet *applet);
+<span class="type">static</span> <span class="type">void</span> hello_world_applet_say   (GtkAction   *action,
+                                      PanelApplet *applet);
+
+<span class="type">static</span> <span class="type">const</span> GtkActionEntry hello_world_menu_actions [] = {
+        { <span class="number">&quot;HelloWorldPrefs&quot;</span>, GTK_STOCK_HELP, N_(<span class="number">&quot;_Preferences&quot;</span>),
+          <span class="number">NULL</span>, <span class="number">NULL</span>,
+          G_CALLBACK (hello_world_applet_prefs) },
+        { <span class="number">&quot;HelloWorldSay&quot;</span>, GTK_STOCK_ABOUT, N_(<span class="number">&quot;_Say Hello&quot;</span>),
+          <span class="number">NULL</span>, <span class="number">NULL</span>,
+          G_CALLBACK (hello_world_applet_say) }
+};
+
+<span class="type">static</span> <span class="type">void</span>
+hello_world_applet_prefs (GtkAction   *action,
+                          PanelApplet *applet)
+{
+    GtkWidget *dialog;
+    dialog = gtk_message_dialog_new (<span class="number">NULL</span>, <span class="number">0</span>,
+                                    GTK_MESSAGE_INFO, GTK_BUTTONS_CLOSE,
+                                    <span class="number">&quot;Preferences&quot;</span>);
+    g_signal_connect (dialog, <span class="number">&quot;response&quot;</span>,
+                      G_CALLBACK (gtk_widget_destroy), <span class="number">NULL</span>);
+    gtk_widget_show (dialog);
+}
+
+<span class="type">static</span> <span class="type">void</span>
+hello_world_applet_say (GtkAction   *action,
+                        PanelApplet *applet)
+{
+    GtkWidget *dialog;
+    dialog = gtk_message_dialog_new (<span class="number">NULL</span>, <span class="number">0</span>,
+                                    GTK_MESSAGE_INFO, GTK_BUTTONS_CLOSE,
+                                    <span class="number">&quot;Hello World!&quot;</span>);
+    g_signal_connect (dialog, <span class="number">&quot;response&quot;</span>,
+                      G_CALLBACK (gtk_widget_destroy), <span class="number">NULL</span>);
+    gtk_widget_show (dialog);
+}
+
+<span class="type">static</span> gboolean
+hello_world_applet_start (PanelApplet *applet)
+{
+    GtkWidget *label;
+    GtkActionGroup *action_group;
+    gchar *ui_path;
+
+    label = gtk_label_new (<span class="number">&quot;Hello World&quot;</span>);
+    gtk_container_add (GTK_CONTAINER (applet), label);
+
+    action_group = gtk_action_group_new (<span class="number">&quot;Hello World Applet Actions&quot;</span>);
+    gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+    gtk_action_group_add_actions (action_group,
+                                  hello_world_menu_actions,
+                                  G_N_ELEMENTS (hello_world_menu_actions),
+                                  applet);
+
+    ui_path = g_build_filename (HELLO_WORLD_UI_DIR, <span class="number">&quot;hello-world-menu.xml&quot;</span>, <span class="number">NULL</span>);
+    panel_applet_setup_menu_from_file (applet, ui_path, action_group);
+
+    g_free (ui_path);
+    g_object_unref (action_group);
+
+    gtk_widget_show_all (GTK_WIDGET (applet));
+
+    <span class="keyword">return</span> TRUE;
+}
+
+<span class="type">static</span> gboolean
+hello_world_factory_callback (PanelApplet  *applet,
+                              <span class="type">const</span> gchar  *iid,
+                              gpointer      data)
+{
+    gboolean retval = FALSE;
+
+    <span class="keyword">if</span> (g_strcmp0 (iid, <span class="number">&quot;HelloWorldApplet&quot;</span>) == <span class="number">0</span>)
+        retval = hello_world_applet_start (applet);
+
+    <span class="keyword">return</span> retval;
+}
+
+PANEL_APPLET_OUT_PROCESS_FACTORY (<span class="number">&quot;HelloWorldFactory&quot;</span>,
+                                  PANEL_TYPE_APPLET,
+                                  hello_world_factory_callback,
+                                  <span class="number">NULL</span>)</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break"><p>
+      Here are the changes compared to the <a class="link" href="getting-started.example.html#getting-started.example.simple" title="Example 1. Hello World applet">simple example</a> with no context menu:
+     </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+       We define a list of <span class="type">GtkActionEntry</span> entries: <code class="constant">hello_world_menu_actions</code>. This will be used later on to build <span class="type">GtkAction</span> objects, with their label and callback. We obviously implement the callbacks.
+      </p></li>
+<li class="listitem"><p>
+       We change <code class="function">hello_world_applet_start()</code> to define a <span class="type">GtkActionGroup</span> object, to which we add, with <code class="function">gtk_action_group_add_actions()</code>, <span class="type">GtkAction</span> objects based on the <span class="type">GtkActionEntry</span> entries. Note that the the last argument to <code class="function">gtk_action_group_add_actions()</code> will be passed as user data to the callbacks.
+      </p></li>
+<li class="listitem"><p>
+       We also change <code class="function">hello_world_applet_start()</code> to add this <span class="type">GtkActionGroup</span> object to the context menu of the applet, by calling <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-setup-menu-from-file" title="panel_applet_setup_menu_from_file ()"><code class="function">panel_applet_setup_menu_from_file()</code></a>. This function takes as argument a path to the <a class="link" href="getting-started.context-menu.html#getting-started.context-menu.xml-file" title="Menu XML File">menu XML file</a> that will define how to display the <span class="type">GtkAction</span> objects in the context menu.
+      </p></li>
+</ul></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.context-menu.xml-file"></a>Menu XML File</h3></div></div></div>
+<p>
+      The file that is used to setup menu with the <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-setup-menu-from-file" title="panel_applet_setup_menu_from_file ()"><code class="function">panel_applet_setup_menu_from_file()</code></a> function is a <span class="type">GtkUIManager</span> UI definition file, without the top-level <code class="constant">&lt;ui&gt;</code> tag. It must only contain menuitem entries and separators. For example:
+     </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3</pre></td>
+        <td class="listing_code"><pre class="programlisting">&lt;menuitem name=<span class="number">&quot;Hello World Prefs&quot;</span> action=<span class="number">&quot;HelloWorldPrefs&quot;</span> /&gt;
+&lt;separator/&gt;
+&lt;menuitem name=<span class="number">&quot;Hello World Say&quot;</span>   action=<span class="number">&quot;HelloWorldSay&quot;</span> /&gt;</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+     Alternatively, the <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-setup-menu" title="panel_applet_setup_menu ()"><code class="function">panel_applet_setup_menu()</code></a> function can be used with a string containing directly the XML.
+    </p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

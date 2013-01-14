@@ -1,0 +1,72 @@
+Description: Made SolusOS panel layout default
+ Made the panel layout the same as found in SolusOS
+ One bottom panel, MenuBar, WnckList, NaTray, Clock
+ .
+ consort-panel (3.4.1-3solusos2) two; urgency=low
+ .
+   * Set the default layout to a more traditional one
+Author: Ikey Doherty <ikey@solusos.com>
+
+---
+Reviewed-By: Ikey Doherty <ikey@solusos.com>
+Last-Update: <2012-05-27>
+
+--- consort-panel-3.4.1.orig/data/panel-default-layout.layout
++++ consort-panel-3.4.1/data/panel-default-layout.layout
+@@ -1,8 +1,3 @@
+-[Toplevel top-panel]
+-expand=true
+-orientation=top
+-size=24
+-
+ [Toplevel bottom-panel]
+ expand=true
+ orientation=bottom
+@@ -11,34 +6,28 @@ y-bottom=0
+ 
+ [Object menu-bar]
+ object-iid=PanelInternalFactory::MenuBar
+-toplevel-id=top-panel
++toplevel-id=bottom-panel
++pack-type=start
+ pack-index=0
+ 
+-[Object clock]
+-object-iid=ClockAppletFactory::ClockApplet
+-toplevel-id=top-panel
+-pack-type=center
+-pack-index=0
++[Object window-list]
++object-iid=WnckletFactory::WindowListApplet
++toplevel-id=bottom-panel
++pack-type=start
++pack-index=1
++
+ 
+ [Object notification-area]
+ object-iid=NotificationAreaAppletFactory::NotificationArea
+-toplevel-id=top-panel
++toplevel-id=bottom-panel
+ pack-type=end
+ pack-index=1
+ 
+-[Object user-menu]
+-object-iid=PanelInternalFactory::UserMenu
+-toplevel-id=top-panel
++[Object clock]
++object-iid=ClockAppletFactory::ClockApplet
++toplevel-id=bottom-panel
+ pack-type=end
+ pack-index=0
+ 
+-[Object window-list]
+-object-iid=WnckletFactory::WindowListApplet
+-toplevel-id=bottom-panel
+-pack-index=0
+ 
+-[Object workspace-switcher]
+-object-iid=WnckletFactory::WorkspaceSwitcherApplet
+-toplevel-id=bottom-panel
+-pack-type=end
+-pack-index=0
++

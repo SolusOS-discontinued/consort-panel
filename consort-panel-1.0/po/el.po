@@ -1,0 +1,3453 @@
+# Greek translation of GNOME Panel
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+# simos: 874 messages, 18Feb2001, (sgpbea).
+# simos: 897 messages, 01Mar2001, (regmtsgpbea).
+# simos: 959 messages, 04Jun2001, (micumple).
+# simos: 959 messages, 06Jun2001, (fixed minor typo).
+# simos: 897 messages, 28Nov2001, (feeling good to translate HEAD).
+# simos: 272 messages, 20Apr2002, 118 messages remaining.
+# kostas: 513 messages, 19Oct2002, completed translation.
+# kostas: 531 messages, 07Jan2003, updated translation for Gnome 2.1x.
+# kostas:update for Gnome 2.4, 49 strings remain 02Jun2003.
+# kostas:03Aug2003, 599 messages, updated translation.
+# Spiros Papadimitriou <sapadim+@cs.cmu.edu>, 1999.
+# Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
+# Sarantis Paskalis <paskalis@di.uoa.gr>, 2000.
+# Kostas Papadimas <pkst@gnome.org>, 2002,2003, 2004, 2005, 2006, 2007, 2008.
+# Nikos Charonitakis <frolix68@yahoo.gr>, 2003, 2004.
+# Nikos Charonitakis <charosn@her.forthnet.gr>, 2005.
+# Fotis Tsamis <ftsamis@gmail.com>, 2009.
+# Comment: Most of the work done by Spiros (around 600 messages).
+# Comment: Simos/Sarantis did 12%.
+# Comment: Simos/Sarantis did review.
+# Comment: Simos did 10 new/unfuzzy 30.
+# Comment: Simos did 3 new/unfuzzy 1.
+# Comment: Simos did 2 new/unfuzzy 8.
+# Comment: Simos did 6 new/unfuzzy 8.
+# Comment: Simos did 2 new/unfuzzy 5.
+# Rename of module to consort-panel.
+# Comment: Kostas unfuzzy 1
+# Nikos:29Aug2003, review tranlation
+# kostas: 30Oct2003, update translation for Gnome 2.6
+# kostas: 12Nov2003, fixes
+# kostas:27Jan2004, update
+# Michael Kotsarinis <mk73628@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: consort-panel.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-04-27 23:10+0300\n"
+"PO-Revision-Date: 2011-04-05 14:38+0300\n"
+"Last-Translator: Michael Kotsarinis <mk73628@gmail.com>\n"
+"Language-Team: team@gnome.gr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#.
+#: ../applets/clock/calendar-window.c:329 ../applets/clock/clock.c:443
+#: ../applets/clock/clock-location-tile.c:507
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#.
+#: ../applets/clock/calendar-window.c:334 ../applets/clock/clock.c:448
+#: ../applets/clock/clock.c:1591 ../applets/clock/clock-location-tile.c:467
+#: ../applets/clock/clock-location-tile.c:514
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the start date of an appointment, in
+#. * the most abbreviated way possible.
+#: ../applets/clock/calendar-window.c:340
+msgid "%b %d"
+msgstr "%b %d"
+
+#: ../applets/clock/calendar-window.c:840
+msgid "Tasks"
+msgstr "Εργασίες"
+
+#: ../applets/clock/calendar-window.c:840
+#: ../applets/clock/calendar-window.c:1023
+#: ../applets/clock/calendar-window.c:1629
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: ../applets/clock/calendar-window.c:963
+msgid "All Day"
+msgstr "Ολοήμερο"
+
+#: ../applets/clock/calendar-window.c:1107
+msgid "Appointments"
+msgstr "Ραντεβού"
+
+#: ../applets/clock/calendar-window.c:1132
+msgid "Birthdays and Anniversaries"
+msgstr "Γενέθλια και επέτειοι"
+
+#: ../applets/clock/calendar-window.c:1157
+msgid "Weather Information"
+msgstr "Πληροφορίες καιρού"
+
+#: ../applets/clock/calendar-window.c:1629 ../applets/clock/clock.ui.h:11
+msgid "Locations"
+msgstr "Τοποθεσίες"
+
+#: ../applets/clock/calendar-window.c:1927
+msgid "Calendar"
+msgstr "Ημερολόγιο"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#: ../applets/clock/clock.c:443
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#: ../applets/clock/clock.c:448 ../applets/clock/clock.c:1585
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the date. Replace %e with %d if, when
+#. * the day of the month as a decimal number is a single digit,
+#. * it should begin with a 0 in your locale (e.g. "May 01"
+#. * instead of "May  1").
+#: ../applets/clock/clock.c:459
+msgid "%a %b %e"
+msgstr "%a %e %b"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#: ../applets/clock/clock.c:466
+#, c-format
+msgid ""
+"%1$s\n"
+"%2$s"
+msgstr ""
+"%1$s\n"
+"%2$s"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#: ../applets/clock/clock.c:474
+#, c-format
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. Show date in tooltip.
+#. Translators: This is a strftime format string.
+#. * It is used to display a date. Please leave "%%s" as it is:
+#. * it will be used to insert the timezone name later.
+#: ../applets/clock/clock.c:640
+msgid "%A %B %d (%%s)"
+msgstr "%A %B %d (%%s)"
+
+#: ../applets/clock/clock.c:670
+msgid "Click to hide your appointments and tasks"
+msgstr "Πατήστε για να αποκρύψετε τα ραντεβού και τις συναντήσεις σας"
+
+#: ../applets/clock/clock.c:673
+msgid "Click to view your appointments and tasks"
+msgstr "Πατήστε για να δείτε τα ραντεβού και τις συναντήσεις σας"
+
+#: ../applets/clock/clock.c:677
+msgid "Click to hide month calendar"
+msgstr "Πατήστε για να αποκρύψετε το μηνιαίο ημερολόγιο"
+
+#: ../applets/clock/clock.c:680
+msgid "Click to view month calendar"
+msgstr "Πατήστε για να δείτε το μηνιαίο ημερολόγιο"
+
+#: ../applets/clock/clock.c:1423
+msgid "Computer Clock"
+msgstr "Ρολόι υπολογιστή"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1570
+msgid "%I:%M:%S %p"
+msgstr "%I:%M:%S %p"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1578
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display a date in the full format (so that people can
+#. * copy and paste it elsewhere).
+#: ../applets/clock/clock.c:1624
+msgid "%A, %B %d %Y"
+msgstr "%A, %B %d %Y"
+
+#: ../applets/clock/clock.c:1693
+msgid "Failed to open the time settings"
+msgstr "Αποτυχία έναρξης της ρύθμισης ώρας συστήματος"
+
+#: ../applets/clock/clock.c:1713 ../applets/fish/fish.c:1317
+#: ../applets/wncklet/window-list.c:159
+#: ../applets/wncklet/workspace-switcher.c:218
+msgid "_Preferences"
+msgstr "_Προτιμήσεις"
+
+#: ../applets/clock/clock.c:1716
+msgid "Copy _Time"
+msgstr "Αντιγραφή ώρ_ας"
+
+#: ../applets/clock/clock.c:1719
+msgid "Copy _Date"
+msgstr "Αντιγραφή _ημερομηνίας"
+
+#: ../applets/clock/clock.c:1722
+msgid "Ad_just Date & Time"
+msgstr "Προσα_ρμογή ώρας/ημερομηνίας"
+
+#: ../applets/clock/clock.c:2559
+msgid "Custom format"
+msgstr "Προσαρμοσμένη μορφή"
+
+#: ../applets/clock/clock.c:3046
+msgid "Choose Location"
+msgstr "Επιλογή τοποθεσίας"
+
+#: ../applets/clock/clock.c:3125
+msgid "Edit Location"
+msgstr "Επεξεργασία τοποθεσίας"
+
+#: ../applets/clock/clock.c:3272
+msgid "City Name"
+msgstr "Όνομα πόλης"
+
+#: ../applets/clock/clock.c:3276
+msgid "City Time Zone"
+msgstr "Ζώνη αλλαγής ώρας πόλης"
+
+#: ../applets/clock/clock.c:3463
+msgid "24 hour"
+msgstr "24ωρο"
+
+#: ../applets/clock/clock.c:3464
+msgid "UNIX time"
+msgstr "Ώρα UNIX"
+
+#: ../applets/clock/clock.c:3465
+msgid "Internet time"
+msgstr "Ώρα διαδικτύου"
+
+#: ../applets/clock/clock.c:3473
+msgid "Custom _format:"
+msgstr "Προσαρμοσμένη μορ_φή:"
+
+#: ../applets/clock/clock.ui.h:1
+msgid "<i>(optional)</i>"
+msgstr "<i>(προαιρετικό)</i>"
+
+#. Languages that have a single word that translates as either "state" or "province" should use that instead of "region".
+#: ../applets/clock/clock.ui.h:3
+msgid ""
+"<small><i>Type a city, region, or country name and then select a match from "
+"the pop-up.</i></small>"
+msgstr ""
+"<small><i>Πληκτρολογήστε ένα όνομα πόλης, περιοχής, ή χώρας και μετά "
+"επιλέξτε μια αντιστοιχία από το αναδυόμενο παράθυρο.</i></small>"
+
+#: ../applets/clock/clock.ui.h:4
+msgid "Clock Format"
+msgstr "Μορφή ρολογιού"
+
+#: ../applets/clock/clock.ui.h:5
+msgid "Clock Preferences"
+msgstr "Προτιμήσεις ρολογιού"
+
+#: ../applets/clock/clock.ui.h:6
+msgid "Display"
+msgstr "Εμφάνιση"
+
+#: ../applets/clock/clock.ui.h:7
+msgid "East"
+msgstr "Ανατολή"
+
+#: ../applets/clock/clock.ui.h:8 ../applets/fish/fish.ui.h:5
+#: ../consort-panel/panel-properties-dialog.ui.h:9
+msgid "General"
+msgstr "Γενικά"
+
+#: ../applets/clock/clock.ui.h:9
+msgid "L_atitude:"
+msgstr "Γεωγραφικό π_λάτος:"
+
+#: ../applets/clock/clock.ui.h:10
+msgid "L_ongitude:"
+msgstr "Γεωγραφικό _μήκος:"
+
+#: ../applets/clock/clock.ui.h:12
+msgid "North"
+msgstr "Βορράς"
+
+#: ../applets/clock/clock.ui.h:13
+msgid "Panel Display"
+msgstr "Εμφάνιση πίνακα εφαρμογών"
+
+#: ../applets/clock/clock.ui.h:14
+msgid "Show _temperature"
+msgstr "Προβολή _θερμοκρασίας"
+
+#: ../applets/clock/clock.ui.h:15
+msgid "Show _weather"
+msgstr "Προβολή _καιρού"
+
+#: ../applets/clock/clock.ui.h:16
+msgid "Show seco_nds"
+msgstr "Προβολή _δευτερολέπτων"
+
+#: ../applets/clock/clock.ui.h:17
+msgid "Show the _date"
+msgstr "Προβολή της _ημερομηνίας"
+
+#: ../applets/clock/clock.ui.h:18
+msgid "South"
+msgstr "Νότος"
+
+#: ../applets/clock/clock.ui.h:19
+msgid "Time _Settings"
+msgstr "_Ρυθμίσεις ώρας"
+
+#: ../applets/clock/clock.ui.h:20
+msgid "Weather"
+msgstr "Καιρός"
+
+#: ../applets/clock/clock.ui.h:21
+msgid "West"
+msgstr "Δύση"
+
+#: ../applets/clock/clock.ui.h:22
+msgid "_12 hour format"
+msgstr "12 _ωρη μορφή"
+
+#: ../applets/clock/clock.ui.h:23
+msgid "_24 hour format"
+msgstr "24 ω_ρη μορφή"
+
+#: ../applets/clock/clock.ui.h:24
+msgid "_Location Name:"
+msgstr "Όνομα το_ποθεσίας:"
+
+#: ../applets/clock/clock.ui.h:25
+msgid "_Pressure unit:"
+msgstr "Μονάδα βαρομετρικής _πίεσης:"
+
+#: ../applets/clock/clock.ui.h:26
+msgid "_Temperature unit:"
+msgstr "Μονάδα _θερμοκρασίας:"
+
+#: ../applets/clock/clock.ui.h:27
+msgid "_Timezone:"
+msgstr "_Ζώνη ώρας:"
+
+#: ../applets/clock/clock.ui.h:28
+msgid "_Visibility unit:"
+msgstr "Μονάδα ορα_τότητας:"
+
+#: ../applets/clock/clock.ui.h:29
+msgid "_Wind speed unit:"
+msgstr "Μονάδα ταχύτητας α_νέμου:"
+
+#. Translators:
+#. This controls whether the GNOME panel clock should display time in 24 hour mode
+#. or 12 hour mode by default. The only valid values for this are "24-hour" and
+#. "12-hour". If your locale uses 24 hour time notation, translate this to "24-hour".
+#. If your locale uses 12 hour time notation with am/pm, translate this to "12-hour".
+#.
+#. Do NOT translate this into anything else than "24-hour" or "12-hour". For example,
+#. if you translate this to "24 sata" or anything else that isn't "24-hour" or
+#. "12-hour", things will not work.
+#.
+#: ../applets/clock/clock.schemas.in.h:11
+msgid "24-hour"
+msgstr "24-hour"
+
+#: ../applets/clock/clock.schemas.in.h:12
+msgid "A list of locations to display in the calendar window."
+msgstr "Μια λίστα από τοποθεσίες για εμφάνιση στο παράθυρο του ημερολογίου."
+
+#: ../applets/clock/clock.schemas.in.h:13
+msgid "Custom format of the clock"
+msgstr "Προσαρμοσμένη μορφή του ρολογιού"
+
+#: ../applets/clock/clock.schemas.in.h:14
+msgid "Expand list of appointments"
+msgstr "Ανάπτυξη της λίστας των ραντεβού"
+
+#: ../applets/clock/clock.schemas.in.h:15
+msgid "Expand list of birthdays"
+msgstr "Ανάπτυξη της λίστας των γενεθλίων"
+
+#: ../applets/clock/clock.schemas.in.h:16
+msgid "Expand list of locations"
+msgstr "Ανάπτυξη της λίστας τοποθεσιών"
+
+#: ../applets/clock/clock.schemas.in.h:17
+msgid "Expand list of tasks"
+msgstr "Ανάπτυξη της λίστας των εργασιών"
+
+#: ../applets/clock/clock.schemas.in.h:18
+msgid "Expand list of weather information"
+msgstr "Ανάπτυξη της λίστας των πληροφοριών καιρού"
+
+#: ../applets/clock/clock.schemas.in.h:19
+msgid "Hour format"
+msgstr "Τύπος ώρας"
+
+#: ../applets/clock/clock.schemas.in.h:20
+msgid "If true, display a weather icon."
+msgstr "Αν αληθές, εμφάνιση του εικονιδίου καιρού."
+
+#: ../applets/clock/clock.schemas.in.h:21
+msgid "If true, display date in the clock, in addition to time."
+msgstr "Αν αληθές, εμφανίζει εκτός από την ώρα και την ημερομηνία στο ρολόι."
+
+#: ../applets/clock/clock.schemas.in.h:22
+msgid "If true, display seconds in time."
+msgstr "Αν αληθές, εμφάνιση δευτερολέπτων στην ώρα."
+
+#: ../applets/clock/clock.schemas.in.h:23
+msgid "If true, expand the list of appointments in the calendar window."
+msgstr ""
+"Αν αληθές, ανάπτυξη της λίστας των ραντεβού στο παράθυρο του ημερολογίου."
+
+#: ../applets/clock/clock.schemas.in.h:24
+msgid "If true, expand the list of birthdays in the calendar window."
+msgstr ""
+"Αν αληθές, ανάπτυξη της λίστας των γενεθλίων στο παράθυρο του ημερολογίου."
+
+#: ../applets/clock/clock.schemas.in.h:25
+msgid "If true, expand the list of locations in the calendar window."
+msgstr ""
+"Αν αληθές, ανάπτυξη της λίστας των τοποθεσιών στο παράθυρο του ημερολογίου."
+
+#: ../applets/clock/clock.schemas.in.h:26
+msgid "If true, expand the list of tasks in the calendar window."
+msgstr ""
+"Αν αληθές, ανάπτυξη της λίστας των εργασιών στο παράθυρο του ημερολογίου."
+
+#: ../applets/clock/clock.schemas.in.h:27
+msgid "If true, expand the list of weather information in the calendar window."
+msgstr ""
+"Αν αληθές, ανάπτυξη της λίστας των πληροφοριών καιρού στο παράθυρο του "
+"ημερολογίου."
+
+#: ../applets/clock/clock.schemas.in.h:28
+msgid "If true, show date in a tooltip when the pointer is over the clock."
+msgstr ""
+"Αν αληθές, προβάλλει την ώρα σαν συμβουλή όταν περνάει το ποντίκι πάνω από "
+"το ρολόι."
+
+#: ../applets/clock/clock.schemas.in.h:29
+msgid "If true, show the temperature next to the weather icon."
+msgstr ""
+"Αν αληθές, εμφάνιση της θερμοκρασίας δίπλα από το εικονίδιο του καιρού."
+
+#: ../applets/clock/clock.schemas.in.h:30
+msgid "If true, show week numbers in the calendar."
+msgstr "Αν αληθές, εμφάνιση αριθμών εβδομάδας στο ημερολόγιο."
+
+#: ../applets/clock/clock.schemas.in.h:31
+msgid "List of locations"
+msgstr "Λίστα τοποθεσιών"
+
+#: ../applets/clock/clock.schemas.in.h:32
+msgid "Show date in clock"
+msgstr "Εμφάνιση ημερομηνίας στο ρολόι"
+
+#: ../applets/clock/clock.schemas.in.h:33
+msgid "Show date in tooltip"
+msgstr "Εμφάνιση ημερομηνίας στη συμβουλή οθόνης"
+
+#: ../applets/clock/clock.schemas.in.h:34
+msgid "Show temperature in clock"
+msgstr "Εμφάνιση θερμοκρασίας στο ρολόι"
+
+#: ../applets/clock/clock.schemas.in.h:35
+msgid "Show time with seconds"
+msgstr "Εμφάνιση ώρας με δευτερόλεπτα"
+
+#: ../applets/clock/clock.schemas.in.h:36
+msgid "Show weather in clock"
+msgstr "Εμφάνιση καιρού στο ρολόι"
+
+#: ../applets/clock/clock.schemas.in.h:37
+msgid "Show week numbers in calendar"
+msgstr "Εμφάνιση αριθμού εβδομάδων στο ημερολόγιο"
+
+#: ../applets/clock/clock.schemas.in.h:38
+msgid "Speed unit"
+msgstr "Μονάδα ταχύτητας"
+
+#: ../applets/clock/clock.schemas.in.h:39
+msgid "Temperature unit"
+msgstr "Μονάδα θερμοκρασίας"
+
+#: ../applets/clock/clock.schemas.in.h:40
+msgid "The unit to use when showing temperatures."
+msgstr "Η μονάδα μέτρησης στην προβολή των θερμοκρασιών."
+
+#: ../applets/clock/clock.schemas.in.h:41
+msgid "The unit to use when showing wind speed."
+msgstr "Η μονάδα μέτρησης στην προβολή ταχύτητας ανέμου."
+
+#: ../applets/clock/clock.schemas.in.h:42
+msgid ""
+"The use of this key was deprecated in GNOME 2.22 with the use of an internal "
+"time configuration tool. The schema is retained for compatibility with older "
+"versions."
+msgstr ""
+"The use of this key was deprecated in GNOME 2.22 with the use of an internal "
+"time configuration tool. The schema is retained for compatibility with older "
+"versions."
+
+#: ../applets/clock/clock.schemas.in.h:43
+msgid ""
+"The use of this key was deprecated in GNOME 2.28 in favour of the use of "
+"timezones. The schema is retained for compatibility with older versions."
+msgstr ""
+"Η χρήση αυτού του κλειδιού αφαιρέθηκε στο GNOME 2.28 υπέρ της χρήσης των "
+"ζωνών ώρας. Το σχήμα απεικόνισης διατηρείται για τη συμβατότητα με τις "
+"παλαιότερες εκδόσεις."
+
+#: ../applets/clock/clock.schemas.in.h:44
+msgid ""
+"The use of this key was deprecated in GNOME 2.6 in favour of the 'format' "
+"key. The schema is retained for compatibility with older versions."
+msgstr ""
+"The use of this key was deprecated in GNOME 2.6 in favour of the 'format' "
+"key. The schema is retained for compatibility with older versions."
+
+#: ../applets/clock/clock.schemas.in.h:45
+msgid ""
+"This key specifies the format used by the clock applet when the format key "
+"is set to \"custom\". You can use conversion specifiers understood by "
+"strftime() to obtain a specific format. See the strftime() manual for more "
+"information."
+msgstr ""
+"Αυτό το κλειδί καθορίζει τη μορφή που θα χρησιμοποιείται από τη "
+"μικροεφαρμογή ρολογιού όταν το κλειδί μορφής έχει ορισθεί σε \"custom\". "
+"Μπορείτε να χρησιμοποιήσετε conversion specifiers που είναι κατανοητοί από "
+"το strftime() για να λάβετε μια συγκεκριμένη μορφή. Δείτε το εγχειρίδιο του "
+"strftime() για περισσότερες πληροφορίες."
+
+#: ../applets/clock/clock.schemas.in.h:46
+msgid ""
+"This key specifies the hour format used by the clock applet. Possible values "
+"are \"12-hour\", \"24-hour\", \"internet\", \"unix\" and \"custom\". If set "
+"to \"internet\", the clock will display Internet time. The Internet time "
+"system divides the day into 1000 \".beats\". There are no time zones in this "
+"system, so time is the same all over the world. If set to \"unix\", the "
+"clock will display time in seconds since Epoch, i.e. 1970-01-01. If set to "
+"\"custom\", the clock will display time according to the format specified in "
+"the custom_format key."
+msgstr ""
+"Αυτό το κλειδί καθορίζει τη μορφή ώρας που θα χρησιμοποιείται από τη "
+"μικροεφαρμογή ρολογιού . Πιθανές τιμές είναι \"12-hour\", \"24-hour\", "
+"\"internet\", \"unix\" και \"custom\". Αν ορισθεί σε \"internet\", το ρολόι "
+"θα  εμφανίζει την ώρα διαδικτύου. Η ώρα διαδικτύου χωρίζει την ημέρα σε 1000 "
+"\".beats\". Δεν υπάρχουν ζώνες ώρας σε αυτό το σύστημα και έτσι η ώρα σε όλο "
+"τον κόσμο είναι η ίδια. Αν ορισθεί σε \"unix\", το ρολόι θα εμφανίζει την "
+"ώρα σε δευτερόλεπτα από την Epoch, π.χ. 1970-01-01. Αν ορισθεί σε \"custom"
+"\", το ρολόι θα εμφανίζει την ώρα σύμφωνα με την μορφή που έχει καθοριστεί "
+"στο κλειδί custom_format."
+
+#: ../applets/clock/clock.schemas.in.h:47
+msgid "Time configuration tool"
+msgstr "Εργαλείο ρύθμισης ώρας"
+
+#: ../applets/clock/clock.schemas.in.h:48
+msgid "Use Internet time"
+msgstr "Χρήση ώρας διαδικτύου"
+
+#: ../applets/clock/clock.schemas.in.h:49
+msgid "Use UNIX time"
+msgstr "Χρήση ώρας UNIX"
+
+#: ../applets/clock/clock.schemas.in.h:50
+msgid "Use UTC"
+msgstr "Χρήση UTC"
+
+#: ../applets/clock/clock-location-tile.c:183
+msgid "Failed to set the system timezone"
+msgstr "Αποτυχία ρύθμισης της ζώνης αλλαγής ώρας"
+
+#: ../applets/clock/clock-location-tile.c:231
+msgid "<small>Set...</small>"
+msgstr "<small>Ρύθμιση...</small>"
+
+#: ../applets/clock/clock-location-tile.c:232
+msgid "<small>Set</small>"
+msgstr "<small>Ρύθμιση</small>"
+
+#: ../applets/clock/clock-location-tile.c:308
+msgid "Set location as current location and use its timezone for this computer"
+msgstr ""
+"Καθορισμός τοποθεσίας ως τρέχουσα τοποθεσία και χρήση της ζώνης ώρας της για "
+"αυτό τον υπολογιστή"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:444
+msgid "%l:%M <small>%p (%A)</small>"
+msgstr "%l:%M <small>%p (%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday).
+#: ../applets/clock/clock-location-tile.c:452
+msgid "%H:%M <small>(%A)</small>"
+msgstr "%H:%M <small>(%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:461
+msgid "%l:%M <small>%p</small>"
+msgstr "%l:%M <small>%p</small>"
+
+#: ../applets/clock/clock-location-tile.c:600
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#. FMQ: it's broken to read from another module's translations; add some API to libgweather.
+#: ../applets/clock/clock-location-tile.c:612
+#: ../applets/clock/clock-location-tile.c:621
+msgid "Unknown"
+msgstr "Άγνωστο"
+
+#. Translators: The two strings are temperatures.
+#: ../applets/clock/clock-location-tile.c:614
+#, c-format
+msgid "%s, feels like %s"
+msgstr "%s, μοιάζει με %s"
+
+#: ../applets/clock/clock-location-tile.c:637
+#, c-format
+msgid "Sunrise: %s / Sunset: %s"
+msgstr "Ανατολή ηλίου: %s / Δύση ηλίου: %s"
+
+#: ../applets/clock/clock-utils.c:93 ../applets/fish/fish.c:163
+#: ../applets/wncklet/wncklet.c:74
+#: ../consort-panel/libpanel-util/panel-show.c:235
+#, c-format
+msgid "Could not display help document '%s'"
+msgstr "Δεν είναι δυνατή η προβολή του αρχείου βοήθειας '%s'"
+
+#: ../applets/clock/clock-utils.c:122 ../applets/fish/fish.c:189
+#: ../applets/wncklet/wncklet.c:103
+msgid "Error displaying help document"
+msgstr "Σφάλμα στην προβολή του αρχείου βοήθειας"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+msgid "Clock"
+msgstr "Ρολόι"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+msgid "Clock Applet Factory"
+msgstr "Εργοστάσιο μικροεφαρμογής ρολογιού"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+msgid "Factory for clock applet"
+msgstr "Εργοστάσιο για τη μικροεφαρμογή ρολογιού"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+msgid "Get the current time and date"
+msgstr "Λήψη της τρέχουσας ημερομηνίας και ώρας"
+
+#: ../applets/fish/fish.c:217
+#, c-format
+msgid ""
+"Warning:  The command appears to be something actually useful.\n"
+"Since this is a useless applet, you may not want to do this.\n"
+"We strongly advise you against using %s for anything\n"
+"which would make the applet \"practical\" or useful."
+msgstr ""
+"Προειδοποίηση: Η εντολή φαίνεται να είναι κάτι πραγματικά χρήσιμο.\n"
+"Ωστόσο, μιας και αυτή είναι μια άχρηστη μικροεφαρμογή, ίσως να μη\n"
+"θέλετε να το κάνετε. Είμαστε σθεναρά αντίθετοι στη χρήση του\n"
+"%s για οτιδήποτε θα μπορούσε να κάνει τη μικροεφαρμογή \"πρακτική\" ή "
+"χρήσιμη."
+
+#: ../applets/fish/fish.c:365 ../applets/fish/fish.c:481
+#, no-c-format
+msgid "%s the Fish"
+msgstr "%s το Ψάρι"
+
+#: ../applets/fish/fish.c:366
+#, c-format
+msgid "%s the Fish, a contemporary oracle"
+msgstr "%s το Ψάρι, ένα σύγχρονο μαντείο"
+
+#: ../applets/fish/fish.c:437
+msgid "Unable to locate the command to execute"
+msgstr "Αδυναμία εντοπισμού εντολής για εκτέλεση"
+
+#: ../applets/fish/fish.c:486
+#, no-c-format
+msgid "%s the Fish Says:"
+msgstr "%s το Ψάρι λέει:"
+
+#: ../applets/fish/fish.c:555
+#, c-format
+msgid ""
+"Unable to read output from command\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Αδύνατη ανάγνωσης αποτελέσματος εντολής\n"
+"\n"
+"Λεπτομέρειες: %s"
+
+#: ../applets/fish/fish.c:632
+msgid "_Speak again"
+msgstr "_Μίλα ξανά"
+
+#: ../applets/fish/fish.c:714
+#, c-format
+msgid "The configured command is not working and has been replaced by: %s"
+msgstr "Η καθορισμένη εντολή δεν λειτουργεί και αντικαταστάθηκε με: %s"
+
+#: ../applets/fish/fish.c:748
+#, c-format
+msgid ""
+"Unable to execute '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Αδύνατη εκτέλεση '%s'\n"
+"\n"
+"Λεπτομέρειες: %s"
+
+#: ../applets/fish/fish.c:764
+#, c-format
+msgid ""
+"Unable to read from '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Αδυναμία ανάγνωσης από '%s'\n"
+"\n"
+"Λεπτομέρειες: %s"
+
+#: ../applets/fish/fish.c:1167
+msgid "The water needs changing"
+msgstr "Το νερό θέλει αλλαγή"
+
+#: ../applets/fish/fish.c:1169
+msgid "Look at today's date!"
+msgstr "Δείτε την σημερινή ημερομηνία!"
+
+#: ../applets/fish/fish.c:1262
+#, c-format
+msgid "%s the Fish, the fortune teller"
+msgstr "%s το ψάρι, το μέντιουμ της τύχης"
+
+#: ../applets/fish/fish.ui.h:1 ../consort-panel/panel-properties-dialog.ui.h:1
+msgid "    "
+msgstr "    "
+
+#: ../applets/fish/fish.ui.h:2
+msgid "Animation"
+msgstr "Κινούμενες εικόνες"
+
+#: ../applets/fish/fish.ui.h:3
+msgid "Co_mmand to run when clicked:"
+msgstr "Εν_τολή προς εκτέλεση στα κλικ:"
+
+#: ../applets/fish/fish.ui.h:4
+msgid "Fish Preferences"
+msgstr "Προτιμήσεις του Ψαριού"
+
+#: ../applets/fish/fish.ui.h:6
+msgid "_Name of fish:"
+msgstr "Ό_νομα του ψαριού:"
+
+#: ../applets/fish/fish.ui.h:7
+msgid "_Pause per frame:"
+msgstr "_Παύση ανά καρέ:"
+
+#: ../applets/fish/fish.ui.h:8
+msgid "_Rotate on vertical panels"
+msgstr "_Περιστροφή στους κατακόρυφους πίνακες εφαρμογών"
+
+#: ../applets/fish/fish.ui.h:9
+msgid "seconds"
+msgstr "δευτερόλεπτα"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+msgid "Display a swimming fish or another animated creature"
+msgstr "Εμφανίζει ένα ψάρι που κολυμπάει ή κάποιο άλλο κινούμενο πλάσμα"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+msgid "Fish"
+msgstr "Ψάρι"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+msgid "From Whence That Stupid Fish Came"
+msgstr "Από που κρατά η σκούφια αυτού του ηλίθιου ψαριού"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+msgid "Wanda Factory"
+msgstr "Εργοστάσιο Wanda"
+
+#: ../applets/notification_area/main.c:242
+msgid "Panel Notification Area"
+msgstr "Περιοχή Ειδοποίησης πίνακα εφαρμογών"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Περιοχή όπου θα εμφανίζονται εικονίδια ειδοποίησης"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+msgid "Factory for notification area"
+msgstr "Εργοστάσιο για την περιοχή ειδοποίησης"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+msgid "Notification Area"
+msgstr "Περιοχή ειδοποίησης"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+msgid "Notification Area Factory"
+msgstr "Εργοστάσιο περιοχής ειδοποίησης"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+msgid "Factory for the window navigation related applets"
+msgstr ""
+"Εργοστάσιο για τη δημιουργία μικροεφαρμογών σχετικά με την πλοήγηση παραθύρων"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+msgid "Hide application windows and show the desktop"
+msgstr "Απόκρυψη των παραθύρων και εμφάνιση της επιφάνειας εργασίας"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+msgid "Show Desktop"
+msgstr "Εμφάνιση Επιφάνειας Εργασίας"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+msgid "Switch between open windows using a menu"
+msgstr "Εναλλαγή μεταξύ ανοικτών παραθύρων με τη χρήση μενού"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+msgid "Switch between open windows using buttons"
+msgstr "Εναλλαγή μεταξύ ανοικτών παραθύρων με τη χρήση κουμπιών"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+msgid "Switch between workspaces"
+msgstr "Εναλλαγή μεταξύ χώρων εργασίας"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+msgid "Window List"
+msgstr "Λίστα παραθύρων"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+msgid "Window Navigation Applet Factory"
+msgstr "Εργοστάσιο μικροεφαρμογής περιήγησης παραθύρου"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/window-menu.c:204
+msgid "Window Selector"
+msgstr "Επιλογέας παραθύρων"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+msgid "Workspace Switcher"
+msgstr "Εφαρμογή εναλλαγής χώρων εργασίας"
+
+#: ../applets/wncklet/showdesktop.c:177
+#, c-format
+msgid "Failed to load %s: %s\n"
+msgstr "Αποτυχία φόρτωσης %s: %s\n"
+
+#: ../applets/wncklet/showdesktop.c:178
+msgid "Icon not found"
+msgstr "Το εικονίδιο δε βρέθηκε"
+
+#: ../applets/wncklet/showdesktop.c:231
+msgid "Click here to restore hidden windows."
+msgstr "Πατήστε εδώ για επαναφορά των κρυμμένων παραθύρων."
+
+#: ../applets/wncklet/showdesktop.c:233
+msgid "Click here to hide all windows and show the desktop."
+msgstr ""
+"Πατήστε εδώ για απόκρυψη των παραθύρων και εμφάνιση της επιφάνειας εργασίας."
+
+#: ../applets/wncklet/showdesktop.c:441
+msgid "Show Desktop Button"
+msgstr "Κουμπί εμφάνισης επιφάνειας εργασίας"
+
+#: ../applets/wncklet/showdesktop.c:509
+msgid ""
+"Your window manager does not support the show desktop button, or you are not "
+"running a window manager."
+msgstr ""
+"Ο διαχειριστής παραθύρων δεν υποστηρίζει τη λειτουργία κουμπιού εμφάνισης "
+"επιφάνειας εργασίας ή δεν τρέχετε ένα διαχειριστή παραθύρων."
+
+#: ../applets/wncklet/window-list.ui.h:1
+msgid "Group windows when _space is limited"
+msgstr "Ομαδοποίηση παραθύρων όταν ο _χώρος είναι περιορισμένος"
+
+#: ../applets/wncklet/window-list.ui.h:2
+msgid "Restore to current _workspace"
+msgstr "Επαναφορά στον τρέχοντα _χώρο εργασίας"
+
+#: ../applets/wncklet/window-list.ui.h:3
+msgid "Restore to na_tive workspace"
+msgstr "Επαναφορά στο αρχι_κό χώρο εργασίας"
+
+#: ../applets/wncklet/window-list.ui.h:4
+msgid "Restoring Minimized Windows"
+msgstr "Επαναφορά ελαχιστοποιημένων παραθύρων"
+
+#: ../applets/wncklet/window-list.ui.h:5
+msgid "Sh_ow windows from current workspace"
+msgstr "Προ_βολή παραθύρων από τον τρέχοντα χώρο εργασίας"
+
+#: ../applets/wncklet/window-list.ui.h:6
+msgid "Show windows from a_ll workspaces"
+msgstr "Προβολή παραθύρων από ό_λους τους χώρους εργασίας"
+
+#: ../applets/wncklet/window-list.ui.h:7
+msgid "Window Grouping"
+msgstr "Ομαδοποίηση παραθύρων"
+
+#: ../applets/wncklet/window-list.ui.h:8
+msgid "Window List Content"
+msgstr "Περιεχόμενα λίστας παραθύρων"
+
+#: ../applets/wncklet/window-list.ui.h:9
+msgid "Window List Preferences"
+msgstr "Προτιμήσεις λίστας παραθύρων"
+
+#: ../applets/wncklet/window-list.ui.h:10
+msgid "_Always group windows"
+msgstr "_Να γίνεται πάντα ομαδοποίηση παραθύρων"
+
+#: ../applets/wncklet/window-list.ui.h:11
+msgid "_Never group windows"
+msgstr "_Να μη γίνεται ποτέ ομαδοποίηση παραθύρων"
+
+#: ../applets/wncklet/workspace-switcher.c:194
+#: ../applets/wncklet/workspace-switcher.c:723
+#: ../applets/wncklet/workspace-switcher.ui.h:10
+msgid "rows"
+msgstr "γραμμές"
+
+#: ../applets/wncklet/workspace-switcher.c:194
+#: ../applets/wncklet/workspace-switcher.c:723
+msgid "columns"
+msgstr "στήλες"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:1
+msgid "Number of _workspaces:"
+msgstr "Αριθμός χώρων _εργασίας:"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:2
+msgid "Show _all workspaces in:"
+msgstr "Προβολή ό_λων των χώρων εργασίας σε:"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:3
+msgid "Show _only the current workspace"
+msgstr "Προβολή _μόνο του τρέχοντος χώρου εργασίας"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:4
+msgid "Show workspace _names in switcher"
+msgstr "Προβολή ο_νομάτων χώρων εργασίας στον εναλλάκτη"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:5
+msgid "Switcher"
+msgstr "Εναλλάκτης"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:6
+msgid "Workspace Names"
+msgstr "Ονόματα χώρων εργασίας"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:7
+msgid "Workspace Switcher Preferences"
+msgstr "Προτιμήσεις αλλαγής χώρων εργασίας"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:8
+msgid "Workspace na_mes:"
+msgstr "Ο_νόματα χώρων εργασίας:"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:9
+msgid "Workspaces"
+msgstr "Χώροι εργασίας"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+msgid ""
+"A fish without a name is a pretty dull fish. Bring your fish to life by "
+"naming him."
+msgstr ""
+"Ένα ψάρι χωρίς όνομα είναι ένα χαζό ψάρι. Δώστε ζωή στο ψάρι σας βαπτίζοντας "
+"το."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+msgid "Command to execute on click"
+msgstr "Εντολή προς εκτέλεση στο κλικ"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+msgid ""
+"If true, the fish's animation will be displayed rotated on vertical panels."
+msgstr ""
+"Αν αληθές, η εικόνα παρασκηνίου θα περιστρέφεται αν ο πίνακας εφαρμογών "
+"προσανατολίζεται κάθετα."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+msgid "Pause per frame"
+msgstr "Παύση ανά καρέ"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+msgid "Rotate on vertical panels"
+msgstr "Περιστροφή στους κάθετους πίνακες εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+msgid "The fish's animation pixmap"
+msgstr "Η κινούμενη εικόνα pixmap του ψαριού"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+msgid "The fish's name"
+msgstr "Το όνομα του ψαριού"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+msgid ""
+"This key specifies the command that will be tried to execute when the fish "
+"is clicked."
+msgstr ""
+"Αυτό το κλειδί καθορίζει την εντολή προς εκτέλεση όταν το ψάρι πατηθεί."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+msgid ""
+"This key specifies the filename of the pixmap which will be used for the "
+"animation displayed in the fish applet relative to the pixmap directory."
+msgstr ""
+"Αυτό το κλειδί καθορίζει το όνομα αρχείου της εικόνας που θα χρησιμοποιηθεί "
+"για το κινούμενο σχέδιο της μικροεφαρμογής του ψαριού."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+msgid "This key specifies the number of seconds each frame will be displayed."
+msgstr ""
+"Αυτό το κλειδί καθορίζει τον αριθμό των δευτερολέπτων που θα προβάλλεται το "
+"κάθε καρέ."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are \"never\", \"auto\" and \"always\"."
+msgstr ""
+"Αποφασίζει αν θα ομαδοποιούνται παράθυρα από την ίδια εφαρμογή στη λίστα "
+"παραθύρων. Έγκυρες τιμές είναι \"never\", \"auto\" και \"always\"."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+msgid ""
+"If true, the window list will show windows from all workspaces. Otherwise it "
+"will only display windows from the current workspace."
+msgstr ""
+"Αν αληθές, η λίστα εργασιών θα προβάλλει τα παράθυρα από όλους τους χώρους "
+"εργασίας, αλλιώς θα εμφανίζει μόνο τα παράθυρα του τρέχοντος χώρου εργασίας."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+msgid ""
+"If true, then when unminimizing a window, move it to the current workspace. "
+"Otherwise, switch to the workspace of the window."
+msgstr ""
+"Αν αληθές, κατά την επαναφορά παραθύρου, θα το εμφανίζει στον τρέχοντα χώρο "
+"εργασίας. Αλλιώς, αλλαγή στο χώρο εργασίας του παραθύρου."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+msgid "Move windows to current workspace when unminimized"
+msgstr ""
+"Μετακίνηση παραθύρων στην τρέχουσα περιοχή εργασίας κατά την επαναφορά τους"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+msgid "Show windows from all workspaces"
+msgstr "Προβάλλει τα παράθυρα από όλους τους χώρους εργασίας"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+msgid "When to group windows"
+msgstr "Πότε θα ομαδοποιούνται τα παράθυρα"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+msgid "Display all workspaces"
+msgstr "Προβολή όλων των χώρων εργασίας"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+msgid "Display workspace names"
+msgstr "Εμφάνιση ονομάτων χώρων εργασίας"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+msgid ""
+"If true, the workspace switcher will show all workspaces. Otherwise it will "
+"only show the current workspace."
+msgstr ""
+"Αν αληθές, η εφαρμογή εναλλαγής χώρων εργασίας θα εμφανίζει όλους τους "
+"χώρους εργασίας, αλλιώς θα εμφανίζει μόνο τον τρέχοντα χώρο."
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+msgid ""
+"If true, the workspaces in the workspace switcher will display the names of "
+"the workspaces. Otherwise they will display the windows on the workspace. "
+"This setting only works when the window manager is Metacity."
+msgstr ""
+"Αν αληθές, οι χώροι εργασίας στην εφαρμογή εναλλαγής χώρων εργασίας θα "
+"εμφανίζουν τα ονόματά τους, αλλιώς θα εμφανίζουν τα περιεχόμενα του χώρου."
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+msgid "Rows in workspace switcher"
+msgstr "Γραμμές στην εφαρμογή εναλλαγής χώρων εργασίας"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+msgid ""
+"This key specifies how many rows (for horizontal layout) or columns (for "
+"vertical layout) the workspace switcher shows the workspaces in. This key is "
+"only relevant if the display_all_workspaces key is true."
+msgstr ""
+"Κατά την προβολή όλων των χώρων εργασίας αυτό καθορίζει σε πόσες γραμμές "
+"(για οριζόντια διάταξη) ή στήλες (για κάθετη διάταξη) θα εμφανίζει η "
+"εφαρμογή εναλλαγής χώρων εργασίας τους χώρους. Το κλειδί έχει χρησιμότητα "
+"μόνο αν το κλειδί display_all_workspaces είναι αληθές."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+msgid ""
+"A list of applet IIDs that the panel will ignore. This way you can disable "
+"certain applets from loading or showing up in the menu. For example to "
+"disable the mini-commander applet add 'OAFIID:GNOME_MiniCommanderApplet' to "
+"this list. The panel must be restarted for this to take effect."
+msgstr ""
+"Μια λίστα από IIDs μικροεφαρμογών που ο πίνακας εφαρμογών θα αγνοήσει. Με "
+"αυτό τον τρόπο θα απενεργοποιήσετε κάποιες μικροεφαρμογές από το να "
+"φορτώνονται και να φαίνονται στο μενού. Για παράδειγμα για να "
+"απενεργοποιήσετε τη μικροεφαρμογή mini-commander προσθέστε στη λίστα 'OAFIID:"
+"GNOME_MiniCommanderApplet'. Ο πίνακας εφαρμογών θα πρέπει να επανεκκινήσει "
+"για να εφαρμοστούν οι αλλαγές."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+msgid ""
+"A list of panel IDs. Each ID identifies an individual toplevel panel. The "
+"settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
+msgstr ""
+"Μια λίστα από IDs πίνακα εφαρμογών. Κάθε ID πιστοποιεί ένα ανεξάρτητο πίνακα "
+"εφαρμογών. Οι ρυθμίσεις για κάθε έναν από αυτούς τους πίνακες εφαρμογών "
+"αποθηκεύονται στο /apps/panel/toplevels/$(id)."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+msgid ""
+"A list of panel object IDs. Each ID identifies an individual panel object (e."
+"g. an applet, launcher, action button or menu button/bar). The settings for "
+"each of these objects are stored in /apps/panel/objects/$(id)."
+msgstr ""
+"Μια λίστα ID αντικειμένων πίνακα εφαρμογών. Κάθε ID πιστοποιεί ένα "
+"ανεξάρτητο αντικείμενο του πίνακα εφαρμογών (π.χ. έναν εκκινητή, κουμπί "
+"ενέργειας ή κουμπί/γραμμή μενού). Οι ρυθμίσεις για καθένα από αυτά τα "
+"αντικείμενα αποθηκεύονται στο /apps/panel/objects/$(id)."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+msgid "Applet IIDs to disable from loading"
+msgstr "IIDs μικροεφαρμογών για απενεργοποίηση από τη φόρτωση"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+msgid "Complete panel lockdown"
+msgstr "Ολοκληρωτικό κλείδωμα πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+msgid "Confirm panel removal"
+msgstr "Επιβεβαίωση αφαίρεσης πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+msgid "Disable Force Quit"
+msgstr "Απενεργοποίηση Εξαναγκασμού εξόδου"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+msgid "Enable autocompletion in \"Run Application\" dialog"
+msgstr ""
+"Ενεργοποίηση της λίστας προγραμμάτων στο διάλογο \"Εκτέλεση εφαρμογής\""
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+msgid "Enable program list in \"Run Application\" dialog"
+msgstr ""
+"Ενεργοποίηση της λίστας προγραμμάτων στο διάλογο \"Εκτέλεση εφαρμογής\""
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+msgid "Enable tooltips"
+msgstr "Ενεργοποίηση συμβουλών οθόνης"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+msgid "Expand program list in \"Run Application\" dialog"
+msgstr "Ανάπτυξη της λίστας προγραμμάτων στο διάλογο \"Εκτέλεση εφαρμογής\""
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+msgid "History of \"Run Application\" dialog"
+msgstr "Ιστορικό του διαλόγου \"Εκτέλεση εφαρμογής\""
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+msgid ""
+"If true, a dialog is shown asking for confirmation if the user wants to "
+"remove a panel."
+msgstr ""
+"Αν αληθές, εμφανίζεται ένας διάλογος που ζητά την επιβεβαίωση αν ο χρήστης "
+"θέλει να αφαιρέσει τον πίνακα εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+msgid ""
+"If true, autocompletion in the \"Run Application\" dialog is made available."
+msgstr ""
+"Αν αληθές, θα είναι διαθέσιμη η αυτόματη συμπλήρωση στο διάλογο \"Εκτέλεση "
+"εφαρμογής\"."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is expanded when the dialog is opened. This key is only relevant if "
+"the enable_program_list key is true."
+msgstr ""
+"Αν αληθές, αναπτύσσεται η λίστα \"Γνωστές Εφαρμογές\" στο διάλογο \"Εκτέλεση "
+"προγράμματος\" όταν αυτός ανοίγει. Αυτή η ρύθμιση έχει νόημα μόνο αν το "
+"κλειδί enable_program_list είναι αληθές."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is made available. Whether or not the listing is expanded when the "
+"dialog is shown is controlled by the show_program_list key."
+msgstr ""
+"Αν αληθές, γίνεται διαθέσιμη η λίστα \"Γνωστές Εφαρμογές\" στο διάλογο "
+"\"Εκτέλεση προγράμματος\". Το αν θα αναπτύσσεται ή όχι η λίστα όταν "
+"εμφανίζεται ο διάλογος, εξαρτάται από τη ρύθμιση show_program_list."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+msgid ""
+"If true, the panel will not allow a user to force an application to quit by "
+"removing access to the force quit button."
+msgstr ""
+"Αν αληθές, ο πίνακας εφαρμογών δεν θα επιτρέπει σε ένα χρήστη να εξαναγκάσει "
+"μια εφαρμογή σε έξοδο, με το να αρνείται την πρόσβαση στο κουμπί "
+"εξαναγκασμού εξόδου."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+msgid ""
+"If true, the panel will not allow any changes to the configuration of the "
+"panel. Individual applets may need to be locked down separately however. The "
+"panel must be restarted for this to take effect."
+msgstr ""
+"Αν αληθές, ο πίνακας εφαρμογών δεν θα επιτρέπει αλλαγές στη ρύθμιση του. Οι "
+"ξεχωριστές μικροεφαρμογές θα πρέπει να κλειδωθούν ξεχωριστά. Ο πίνακας "
+"εφαρμογών θα πρέπει να επανεκκινήσει για να εφαρμοστούν οι αλλαγές."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+msgid ""
+"If true, tooltips are shown for objects in panels. Tooltips can be disabled "
+"for the whole desktop with the gtk-enable-tooltips property in GTK+."
+msgstr ""
+"Αν ορισθεί σε αληθές (true) προβάλλονται υποδείξεις για τα αντικείμενα του "
+"πίνακα. Οι υποδείξει μπορούν να απενεργοποιηθούν για ολόκληρη την επιφάνεια "
+"εργασίας με την ιδιότητα gtk-enable-tooltips στην GTK+."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+msgid "Panel ID list"
+msgstr "Λίστα ταυτότητας πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+msgid "Panel object ID list"
+msgstr "Μια λίστα IDs αντικειμένων πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+msgid ""
+"The list of commands used in the past in the \"Run Application\" dialog."
+msgstr ""
+"Η λίστα εντολών που χρησιμοποιήθηκαν στο παρελθόν στο διάλογο \"Εκτέλεση "
+"εφαρμογής\"."
+
+#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+msgid "Launcher location"
+msgstr "Τοποθεσία εκκινητή"
+
+#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+msgid ""
+"The location of the .desktop file describing the launcher. This key is only "
+"relevant if the object_type key is \"launcher-object\"."
+msgstr ""
+"Η τοποθεσία του αρχείου .desktop που περιγράφει τον εκκινητή. Αυτό το κλειδί "
+"έχει χρησιμότητα μόνο αν το κλειδί object_type είναι \"launcher-object\"."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+msgid "Icon used for button"
+msgstr "Το εικονίδιο που χρησιμοποιείται για το κουμπί"
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+msgid "Menu content path"
+msgstr "Διαδρομή περιεχομένου μενού"
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+msgid ""
+"The location of the image file used as the icon for the object's button. If "
+"empty, the default icon for the menu will be used."
+msgstr ""
+"Η τοποθεσία του αρχείου εικόνας που χρησιμοποιείται ως εικονίδιο για το "
+"κουμπί αντικειμένου. Αν είναι κενό, θα χρησιμοποιηθεί το προεπιλεγμένο "
+"εικονίδιο για το μενού."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+msgid ""
+"The path from which the menu contents is contructed. If empty, the menu will "
+"be the default applications menu."
+msgstr ""
+"Η διαδρομή από την οποία δομούνται τα περιεχόμενα του μενού. Αν είναι κενό, "
+"το μενού θα είναι το προεπιλεγμένο μενού εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+msgid "The text to display in a tooltip for this menu."
+msgstr "Το κέιμενο που θα εμφανίζεται σε υπόδειξη για αυτό το μενού."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+msgid "Tooltip displayed for menu"
+msgstr "Η υπόδειξη που εμφανίζεται για το μενού"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+msgid ""
+"If set to 'end', the position of the object is interpreted relative to the "
+"right (or bottom if vertical) edge of the panel."
+msgstr ""
+"Αν ορισθεί σε 'end', η θέση του αντικειμένου μεταφράζεται σε σχέση με τη "
+"δεξιά (ή την κάτω αν είναι κάθετο) γωνία του πίνακα εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+msgid "Interpret position relative to bottom/right edge"
+msgstr "Μετάφραση θέσης σε σχέση με την κάτω/δεξιά γωνία"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+msgid "Object IID"
+msgstr "IID αντικειμένου"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+msgid "Object's position on the panel"
+msgstr "Η θέση του αντικειμένου στον πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+msgid "The identifier of the toplevel panel which contains this object."
+msgstr ""
+"Το αναγνωριστικό του πίνακα εφαρμογών άνω επιπέδου που περιέχει το "
+"αντικείμενο."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+msgid ""
+"The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
+"\"."
+msgstr ""
+"Το ID υλοποίησης του αντικειμένου - π.χ. \"ClockAppletFactory::ClockApplet\"."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+msgid ""
+"The position of this panel object. The position is specified by the number "
+"of pixels from the left (or top if vertical) panel edge."
+msgstr ""
+"Η τοποθεσία του αντικειμένου πίνακα εφαρμογών. Η θέση καθορίζεται από τον "
+"αριθμό των εικονοστοιχείων από την αριστερή γωνία πίνακα εφαρμογών (ή την "
+"επάνω αν είναι κάθετο)."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+msgid "Toplevel panel containing object"
+msgstr "Πίνακας εφαρμογών υψηλού επιπέδου που περιέχει το αντικείμενο"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+msgid "Animation speed"
+msgstr "Ταχύτητα κινούμενων εικόνων"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+msgid "Automatically hide panel into corner"
+msgstr "Αυτόματη απόκρυψη του πίνακα εφαρμογών στη γωνία"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+msgid "Background color"
+msgstr "Χρώμα παρασκηνίου"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+msgid "Background image"
+msgstr "Εικόνα παρασκηνίου"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+msgid "Background type"
+msgstr "Τύπος παρασκηνίου"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+msgid "Center panel on x-axis"
+msgstr "Κεντράρισμα του πίνακα εφαρμογών στον άξονα x"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+msgid "Center panel on y-axis"
+msgstr "Κεντράρισμα του πίνακα εφαρμογών στον άξονα y"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+msgid ""
+"Determines how the image set by image-uri is rendered. Possible values are "
+"\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
+"to the panel dimensions and the aspect ratio of the image will not be "
+"maintained. With \"fit\", the image will be scaled (retaining the aspect "
+"ratio of the image) to the panel height (if horizontal)."
+msgstr ""
+"Καθορίζει πως θα αποδοθεί η εικόνα που ορίζεται από το image-uri. Δυνατές "
+"τιμές είναι «none» (καμία), «stretch» (τέντωμα), «fit» (ταίριασμα). Με τo "
+"«stretch» (τέντωμα) η εικόνα θα κλιμακωθεί στις διαστάσεις του πίνακα και ο "
+"λόγος πλευρών της εικόνας θα αλλοιωθεί. Με το «fit» (ταίριασμα), η εικόνα θα "
+"κλιμακωθεί (με διατήρηση του λόγου πλευρών της εικόνας) στο ύψος του πίνακα "
+"(αν είναι οριζόντια)."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+msgid "Enable arrows on hide buttons"
+msgstr "Ενεργοποίηση βελών στα κουμπιά απόκρυψης"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+msgid "Enable hide buttons"
+msgstr "Ενεργοποίηση κουμπιών απόκρυψης"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+msgid "Expand to occupy entire screen width"
+msgstr "Ανάπτυξη ώστε να καταληφθεί όλο το πλάτος της οθόνης"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+msgid ""
+"If true, arrows will be placed on the hide buttons. This key is only "
+"relevant if the enable_buttons key is true."
+msgstr ""
+"Αν αληθές, θα τοποθετηθούν βέλη στα κουμπιά απόκρυψης. Αυτή η προτίμηση έχει "
+"νόημα αν το κλειδί enable_buttons είναι αληθές."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+msgid ""
+"If true, buttons will be placed on each side of the panel which may be used "
+"to move the panel to edge of the screen, leaving only a button showing."
+msgstr ""
+"Αν αληθές, θα τοποθετηθούν κουμπιά σε κάθε πλευρά του πίνακα εφαρμογών που "
+"μπορεί να χρησιμοποιηθούν για τη μετακίνηση του πίνακα εφαρμογών στην άκρη "
+"της οθόνης, αφήνοντας μόνο ένα κουμπί ορατό."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+msgid ""
+"If true, the background image will be rotated when the panel is oriented "
+"vertically."
+msgstr ""
+"Αν αληθές, η εικόνα παρασκηνίου θα περιστρέφεται αν ο πίνακας εφαρμογών "
+"προσανατολίζεται κάθετα."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+msgid ""
+"If true, the panel is automatically hidden into a corner of the screen when "
+"the pointer leaves the panel area. Moving the pointer to that corner again "
+"will cause the panel to re-appear."
+msgstr ""
+"Αν αληθές , ο πίνακας εφαρμογών θα αποκρύβεται αυτόματα στη γωνία της οθόνης "
+"όταν ο δρομέας φεύγει από την περιοχή του πίνακα εφαρμογών. Η μετακίνηση του "
+"δρομέα σε αυτή τη γωνία ξανά θα προκαλέσει την επανεμφάνιση του πίνακα "
+"εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+msgid ""
+"If true, the panel will occupy the entire screen width (height if this is a "
+"vertical panel). In this mode the panel can only be placed at a screen edge. "
+"If false, the panel will only be large enough to accommodate the applets, "
+"launchers and buttons on the panel."
+msgstr ""
+"Αν αληθές, ο πίνακας εφαρμογών θα καταλαμβάνει ολόκληρο το πλάτος της οθόνης "
+"(ή ο ύψος αν είναι κάθετος πίνακας εφαρμογών). Σε αυτή τη λειτουργία ο "
+"πίνακας εφαρμογών μπορεί να τοποθετηθεί μόνο στην άκρη της οθόνης. Αν "
+"ψευδές, ο πίνακας εφαρμογών θα είναι τόσο μεγάλο όσο χρειάζεται για να "
+"φιλοξενήσει τους εκκινητές και κουμπιά του πίνακα εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+msgid ""
+"If true, the x and x_right keys are ignored and the panel is placed at the "
+"center of the x-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the x "
+"and x_right keys specify the location of the panel."
+msgstr ""
+"Αν αληθές, τα κλειδιά x και x_right θα αγνοηθούν και ο πίνακας εφαρμογών θα "
+"τοποθετηθεί στο κέντρο του άξονα x της οθόνης. Αν ο πίνακας εφαρμογών "
+"αλλάξει μέγεθος, θα παραμείνει σε αυτή τη θέση - π.χ ο πίνακας εφαρμογών θα "
+"μεγαλώσει και από τις δυο πλευρές. Αν ψευδές, τα κλειδιά x και x_right "
+"καθορίζουν την τοποθεσία του πίνακα εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+msgid ""
+"If true, the y and y_bottom keys are ignored and the panel is placed at the "
+"center of the y-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the y "
+"and y_bottom keys specify the location of the panel."
+msgstr ""
+"Αν αληθές, τα κλειδιά y και y_bottom θα αγνοηθούν και ο πίνακας εφαρμογών θα "
+"τοποθετηθεί στο κέντρο του άξονα y της οθόνης. Αν ο πίνακας εφαρμογών "
+"αλλάξει μέγεθος, θα παραμείνει σε αυτή τη θέση - π.χ ο πίνακας εφαρμογών θα "
+"μεγαλώσει και από τις δυο πλευρές. Αν ψευδές, τα κλειδιά y και y_bottom "
+"καθορίζουν την τοποθεσία του πίνακα εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+msgid "Image options"
+msgstr "Επιλογές εικόνων"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+msgid ""
+"In a Xinerama setup, you may have panels on each individual monitor. This "
+"key identifies the current monitor the panel is displayed on."
+msgstr ""
+"Σε μια ρύθμιση Xinerama, μπορείτε να έχετε ένα πίνακα εφαρμογών σε κάθε "
+"ξεχωριστή οθόνη. Αυτό το κλειδί καθορίζει την τρέχουσα οθόνη στην οποία "
+"εμφανίζεται ο πίνακας εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+msgid "Name to identify panel"
+msgstr "Ένα όνομα με το οποίο θα αναγνωρίζεται αυτός ο πίνακας εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+msgid "Panel autohide delay"
+msgstr "Καθυστέρηση αυτόματης απόκρυψης πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+msgid "Panel autounhide delay"
+msgstr "Καθυστέρηση επανεμφάνισης πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+msgid "Panel orientation"
+msgstr "Προσανατολισμός πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+msgid "Panel size"
+msgstr "Μέγεθος πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+msgid "Rotate image on vertical panels"
+msgstr "Περιστροφή της εικόνας στους κάθετους πίνακες εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+msgid "Specifies the background color for the panel in #RGB format."
+msgstr "Καθορίζει το χρώμα παρασκηνίου του πίνακα εφαρμογών σε μορφή #RGB."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+msgid ""
+"Specifies the file to be used for the background image. If the image "
+"contains an alpha channel it will be composited onto the desktop background "
+"image."
+msgstr ""
+"Καθορίζει το αρχείο που θα χρησιμοποιηθεί για την εικόνα παρασκηνίου. Αν η "
+"εικόνα περιέχει ένα κανάλι άλφα, θα γίνει σύνθεση στην εικόνα παρασκηνίου."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+msgid ""
+"Specifies the number of milliseconds delay after the pointer enters the "
+"panel area before the panel is automatically re-shown. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Καθορίζει την καθυστέρηση της επανεμφάνισης του πίνακα εφαρμογών σε χιλ. "
+"δευτερολέπτου μετά την είσοδο του δρομέα στην περιοχή του πίνακα εφαρμογών. "
+"Το κλειδί έχει χρησιμότητα μόνο αν είναι αληθές το κλειδί auto_hide."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+msgid ""
+"Specifies the number of milliseconds delay after the pointer leaves the "
+"panel area before the panel is automatically hidden. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Καθορίζει την καθυστέρηση της απόκρυψης του πίνακα εφαρμογών σε χιλ. "
+"δευτερολέπτου μετά την αποχώρηση του δρομέα από την περιοχή του πίνακα "
+"εφαρμογών. Το κλειδί έχει χρησιμότητα μόνο αν είναι αληθές το κλειδί "
+"auto_hide."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+msgid ""
+"Specifies the number of pixels visible when the panel is automatically "
+"hidden into a corner. This key is only relevant if the auto_hide key is true."
+msgstr ""
+"Καθορίζει τον αριθμό των εικονοστοιχείων που θα είναι ορατά όταν ο πίνακας "
+"εφαρμογών έχει αποκρυφθεί αυτόματα στη γωνία. Το κλειδί έχει χρησιμότητα "
+"μόνο αν είναι αληθές το κλειδί auto_hide."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+msgid ""
+"The height (width for a vertical panel) of the panel. The panel will "
+"determine at runtime a minimum size based on the font size and other "
+"indicators. The maximum size is fixed at one quarter of the screen height "
+"(or width)."
+msgstr ""
+"Το ύψος (πλάτος για έναν κάθετο πίνακα εφαρμογών) του πίνακα εφαρμογών. Ο "
+"πίνακας εφαρμογών θα καθορίζει ένα ελάχιστο μέγεθος βασισμένο στο μέγεθος "
+"γραμματοσειράς και άλλα χαρακτηριστικά. Το μέγιστο μέγεθος είναι καθορισμένο "
+"στο ένα τέταρτο του ύψους της οθόνης (ή του πλάτους)."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+msgid ""
+"The location of the panel along the x-axis, starting from the right of the "
+"screen. If set to -1, the value is ignored and the value of the x key is "
+"used. If the value is greater than 0, then the value of the x key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"Η τοποθεσία του πίνακα εφαρμογών σε σχέση με τον άξονα x, ξεκινώντας από το "
+"δεξί μέρος της οθόνης. Αν ορισθεί σε -1, η τιμή αγνοείται και "
+"χρησιμοποιείται η τιμή του κλειδιού x. Αν η τιμή είναι μεγαλύτερη από 0, "
+"τότε η τιμή του κλειδιού x αγνοείται. Το κλειδί έχει χρησιμότητα σε "
+"λειτουργία μη-ανάπτυξης. Σε λειτουργία ανάπτυξης το κλειδί αγνοείται και ο "
+"πίνακας εφαρμογών τοποθετείται στη γωνία της οθόνης που καθορίζεται από το "
+"κλειδί προσανατολισμού."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+msgid ""
+"The location of the panel along the x-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"Η τοποθεσία του πίνακα εφαρμογών σε σχέση με τον άξονα x. Το κλειδί έχει "
+"χρησιμότητα σε λειτουργία μη-ανάπτυξης. Σε λειτουργία ανάπτυξης το κλειδί "
+"αγνοείται και ο πίνακας εφαρμογών τοποθετείται στη γωνία της οθόνης που "
+"καθορίζεται από το κλειδί προσανατολισμού."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+msgid ""
+"The location of the panel along the y-axis, starting from the bottom of the "
+"screen. If set to -1, the value is ignored and the value of the y key is "
+"used. If the value is greater than 0, then the value of the y key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"Η τοποθεσία του πίνακα εφαρμογών σε σχέση με τον άξονα y, ξεκινώντας από το "
+"κάτω μέρος της οθόνης. Αν ορισθεί σε -1, η τιμή αγνοείται και "
+"χρησιμοποιείται η τιμή του κλειδιού y. Αν η τιμή είναι μεγαλύτερη από 0, "
+"τότε η τιμή του κλειδιού y αγνοείται. Το κλειδί έχει χρησιμότητα σε "
+"λειτουργία μη-ανάπτυξης. Σε λειτουργία ανάπτυξης το κλειδί αγνοείται και ο "
+"πίνακας εφαρμογών τοποθετείται στη γωνία της οθόνης που καθορίζεται από το "
+"κλειδί προσανατολισμού."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+msgid ""
+"The location of the panel along the y-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"Η τοποθεσία του πίνακα εφαρμογών σε σχέση με τον άξονα y. Το κλειδί έχει "
+"χρησιμότητα σε λειτουργία μη-ανάπτυξης. Σε λειτουργία ανάπτυξης το κλειδί "
+"αγνοείται και ο πίνακας εφαρμογών τοποθετείται στη γωνία της οθόνης που "
+"καθορίζεται από το κλειδί προσανατολισμού."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+msgid ""
+"The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
+"\", \"right\". In expanded mode the key specifies which screen edge the "
+"panel is on. In un-expanded mode the difference between \"top\" and \"bottom"
+"\" is less important - both indicate that this is a horizontal panel - but "
+"still give a useful hint as to how some panel objects should behave. For "
+"example, on a \"top\" panel a menu button will pop up its menu below the "
+"panel, whereas on a \"bottom\" panel the menu will be popped up above the "
+"panel."
+msgstr ""
+"Ο προσανατολισμός του πίνακα εφαρμογών. Οι πιθανές τιμές είναι \"top\", "
+"\"bottom\", \"left\", \"right\". Σε λειτουργία ανάπτυξης το κλειδί καθορίζει "
+"σε ποιά γωνία της οθόνης βρίσκεται ο πίνακας εφαρμογών. Σε λειτουργία μη "
+"ανάπτυξης η διαφορά μεταξύ \"top\" και \"bottom\" δεν έχει μεγάλη σημασία "
+"μιας και τα δύο αναφέρουν ότι πρόκειται για οριζόντιο πίνακα εφαρμογών - "
+"αλλά δίνουν μια χρήσιμη συμβουλή για τον τρόπο συμπεριφοράς μερικών "
+"αντικειμένων. Για παράδειγμα σε ένα \"top\" πίνακα εφαρμογών ένα κουμπί "
+"μενού θα αναδύει το μενού του προς τα κάτω, ενώ σε ένα \"bottom\" πίνακα "
+"εφαρμογών το μενού θα αναδύεται προς τα πάνω."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+msgid ""
+"The speed in which panel animations should occur. Possible values are \"slow"
+"\", \"medium\" and \"fast\". This key is only relevant if the "
+"enable_animations key is true."
+msgstr ""
+"Η ταχύτητα με την οποία οι κινήσεις του πίνακα εφαρμογών θα "
+"πραγματοποιούνται. Οι πιθανές τιμές είναι \"slow\", \"medium\" και \"fast\". "
+"Αυτό το κλειδί έχει σημασία μόνο αν είναι αληθές το κλειδί enable_animations."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+msgid ""
+"This is a human readable name which you can use to identify a panel. Its "
+"main purpose is to serve as the panel's window title which is useful when "
+"navigating between panels."
+msgstr ""
+"Αυτό είναι ένα ανθρωπίνως αναγνώσιμο όνομα το οποίο θα χρησιμοποιείται για "
+"την αναγνώριση του πίνακα εφαρμογών. Ο κύριος σκοπός του είναι να δείχνει "
+"τον τίτλο του παραθύρου ο οποίος είναι χρήσιμος για την περιήγηση μεταξύ "
+"πινάκων εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+msgid "Visible pixels when hidden"
+msgstr "Αριθμός ορατών εικονοστοιχείων σε έναν κρυφό πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+msgid ""
+"Which type of background should be used for this panel. Possible values are "
+"\"none\" - the default GTK+ widget background will be used, \"color\" - the "
+"color key will be used as background color or \"image\" - the image "
+"specified by the image key will be used as background."
+msgstr ""
+"Ποιός τύπος παρασκηνίου θα χρησιμοποιείται για αυτό τον πίνακα εφαρμογών. Οι "
+"δυνατές τιμές είναι «none» (κανένα) - χρησιμοποιείται το προεπιλεγμένο GTK+ "
+"γραφικό συστατικό παρασκηνίου, «color» (χρώμα) - χρησιμοποιείται ένα κλειδί "
+"χρώματος ως χρώμα παρασκηνίου ή «image» (εικόνα) - η εικόνα που καθορίζεται "
+"από το κλειδί εικόνας θα χρησιμοποιείται ως παρασκήνιο."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+msgid ""
+"With a multi-screen setup, you may have panels on each individual screen. "
+"This key identifies the current screen the panel is displayed on."
+msgstr ""
+"Με μια εγκατάσταση πολλαπλών οθονών μπορεί να έχετε πίνακα εφαρμογών σε κάθε "
+"ξεχωριστή οθόνη. Αυτό το κλειδί αναπαριστά την τρέχουσα οθόνη στην οποία "
+"προβάλλεται ο πίνακας εφαρμογών."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+msgid "X co-ordinate of panel"
+msgstr "Συντεταγμένη X του πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+msgid "X co-ordinate of panel, starting from the right of the screen"
+msgstr ""
+"Συντεταγμένη X του πίνακα εφαρμογών, ξεκινώντας από τα δεξιά της οθόνης"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+msgid "X screen where the panel is displayed"
+msgstr "Οθόνη X στην οποία εμφανίζεται ο πίνακας εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+msgid "Xinerama monitor where the panel is displayed"
+msgstr "Η οθόνη Xinerama στην οποία εμφανίζεται ο πίνακας εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+msgid "Y co-ordinate of panel"
+msgstr "Συντεταγμένη Y του πίνακα εφαρμογών"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+msgid "Y co-ordinate of panel, starting from the bottom of the screen"
+msgstr ""
+"Συντεταγμένη Υ του πίνακα εφαρμογών, ξεκινώντας από το κάτω μέρος της οθόνης"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Το αρχείο δεν είναι ένα έγκυρο αρχείο .desktop"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Μη αναγνωρίσιμη έκδοση αρχείου desktop '%s'"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Εκκινείται %s"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Η εφαρμογή δεν δέχεται έγγραφα από την γραμμή εντολών"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Μη αναγνωρίσιμη επιλογή εκκίνησης: %d"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Αδυναμία ορισμού URI εγγράφου σε 'Type=Link' εγγραφή επιφάνειας εργασίας"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "Μη εκκινήσιμο αντικείμενο"
+
+#: ../consort-panel/libegg/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "Απενεργοποίηση σύνδεσης με το διαχειριστή συνεδρίας"
+
+#: ../consort-panel/libegg/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "Ορισμός αρχείου που περιέχει αποθηκευμένες ρυθμίσεις"
+
+#: ../consort-panel/libegg/eggsmclient.c:229
+msgid "FILE"
+msgstr "ΑΡΧΕΙΟ"
+
+#: ../consort-panel/libegg/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "Ορισμός ID διαχείρισης συνεδρίας"
+
+#: ../consort-panel/libegg/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../consort-panel/libegg/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "Επιλογές διαχείρισης συνεδρίας:"
+
+#: ../consort-panel/libegg/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "Προβολή επιλογών διαχείρισης συνεδρίας"
+
+#. FIXME: We need a title in this case, but we don't know what
+#. * the format should be. Let's put something simple until
+#. * the following bug gets fixed:
+#. * http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#. FIXME: http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#: ../consort-panel/libpanel-util/panel-error.c:76
+#: ../consort-panel/panel-applet-frame.c:769
+#: ../consort-panel/panel-applet-frame.c:941
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: ../consort-panel/libpanel-util/panel-icon-chooser.c:381
+msgid "Choose an icon"
+msgstr "Επιλογή εικονιδίου"
+
+#: ../consort-panel/libpanel-util/panel-launch.c:45
+#, c-format
+msgid "Could not launch '%s'"
+msgstr "Αδύνατη η εκκίνηση του '%s'"
+
+#: ../consort-panel/libpanel-util/panel-launch.c:48
+#: ../consort-panel/launcher.c:175
+msgid "Could not launch application"
+msgstr "Αδύνατη η εκκίνηση της εφαρμογής"
+
+#: ../consort-panel/libpanel-util/panel-show.c:44
+#, c-format
+msgid "Could not open location '%s'"
+msgstr "Αδυναμία ανοίγματος τοποθεσίας '%s'"
+
+#: ../consort-panel/libpanel-util/panel-show.c:162
+msgid "No application to handle search folders is installed."
+msgstr "Δεν έχει εγκατασταθεί εφαρμογή για χρήση φακέλων αναζήτησης."
+
+#: ../consort-panel/applet.c:363
+msgid "???"
+msgstr ";;;"
+
+#: ../consort-panel/applet.c:504 ../libpanel-applet/panel-applet.c:169
+msgid "_Move"
+msgstr "_Μετακίνηση"
+
+#: ../consort-panel/applet.c:511 ../libpanel-applet/panel-applet.c:166
+msgid "_Remove From Panel"
+msgstr "_Αφαίρεση από τον πίνακα εφαρμογών"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:29
+msgid "Create new file in the given directory"
+msgstr "Δημιουργία ενός νέου αρχείο στον καθορισμένο κατάλογο"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:30
+msgid "[FILE...]"
+msgstr "[ΑΡΧΕΙΟ...]"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:108
+msgid "- Edit .desktop files"
+msgstr "- Επεξεργασία αρχείων .desktop"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:146
+#: ../consort-panel/gnome-desktop-item-edit.c:200 ../consort-panel/launcher.c:886
+msgid "Create Launcher"
+msgstr "Δημιουργία εκκινητή"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:171
+#: ../consort-panel/gnome-desktop-item-edit.c:194
+msgid "Directory Properties"
+msgstr "Ιδιότητες καταλόγου"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:177 ../consort-panel/launcher.c:726
+msgid "Launcher Properties"
+msgstr "Ιδιότητες εκκινητή"
+
+#: ../consort-panel/consort-panel.desktop.in.in.h:1
+msgid ""
+"Launch other applications and provide various utilities to manage windows, "
+"show the time, etc."
+msgstr ""
+"Εκκινεί άλλες εφαρμογές και παρέχει διάφορα εργαλεία για την διαχείριση των "
+"παραθύρων, την προβολή της ώρας, κτλ."
+
+#: ../consort-panel/consort-panel.desktop.in.in.h:2 ../consort-panel/main.c:87
+msgid "Panel"
+msgstr "Πίνακας εφαρμογών"
+
+#: ../consort-panel/launcher.c:136
+msgid "Could not show this URL"
+msgstr "Αδυναμία εμφάνισης αυτού του URL"
+
+#: ../consort-panel/launcher.c:137
+msgid "No URL was specified."
+msgstr "Δεν έχει ορισθεί URL."
+
+#: ../consort-panel/launcher.c:219
+msgid "Could not use dropped item"
+msgstr "Αδυναμία χρήσης αντικειμένου"
+
+#: ../consort-panel/launcher.c:415
+#, c-format
+msgid "No URI provided for panel launcher desktop file\n"
+msgstr ""
+"Δεν έχει ορισθεί URI για το αρχείο επιφάνειας εργασίας του εκκινητή πίνακα "
+"εφαρμογών\n"
+
+#: ../consort-panel/launcher.c:456
+#, c-format
+msgid "Unable to open desktop file %s for panel launcher%s%s\n"
+msgstr ""
+"Αδυναμία ανοίγματος αρχείου επιφάνειας εργασίας %s για τον εκκινητή μενού %s%"
+"s\n"
+
+#: ../consort-panel/launcher.c:790
+msgid "_Launch"
+msgstr "Ε_κκίνηση"
+
+#: ../consort-panel/launcher.c:796 ../consort-panel/panel-action-button.c:139
+#: ../consort-panel/panel-context-menu.c:133
+msgid "_Properties"
+msgstr "_Ιδιότητες"
+
+#: ../consort-panel/launcher.c:827
+#, c-format
+msgid "Launcher location is not set, cannot load launcher\n"
+msgstr ""
+"Δεν έχει ορισθεί τοποθεσία του εκκινητή, αδυναμία φόρτωσης του εκκινητή\n"
+
+#: ../consort-panel/launcher.c:957 ../consort-panel/panel-ditem-editor.c:1357
+#: ../consort-panel/panel-ditem-editor.c:1391
+#: ../consort-panel/panel-ditem-editor.c:1422
+msgid "Could not save launcher"
+msgstr "Αδυναμία αποθήκευσης εκκινητή"
+
+#: ../consort-panel/main.c:41
+msgid "Replace a currently running panel"
+msgstr "Αντικατάσταση ενός πίνακα εφαρμογών που εκτελείται"
+
+#: ../consort-panel/panel-action-button.c:127
+msgid "_Lock Screen"
+msgstr "_Κλείδωμα οθόνης"
+
+#: ../consort-panel/panel-action-button.c:133
+msgid "_Activate Screensaver"
+msgstr "_Ενεργοποίηση προφύλαξης οθόνης"
+
+#: ../consort-panel/panel-action-button.c:239
+msgid "Connect to server"
+msgstr "Σύνδεση σε εξυπηρετητή"
+
+#: ../consort-panel/panel-action-button.c:263
+msgid "Could not connect to server"
+msgstr "Αδυναμία σύνδεσης στον εξυπηρετητή"
+
+#: ../consort-panel/panel-action-button.c:293
+msgid "Lock Screen"
+msgstr "Κλείδωμα οθόνης"
+
+#: ../consort-panel/panel-action-button.c:294
+msgid "Protect your computer from unauthorized use"
+msgstr "Προστασία του υπολογιστή από μη εξουσιοδοτημένη χρήση"
+
+#. when changing one of those two strings, don't forget to
+#. * update the ones in panel-menu-items.c (look for
+#. * "1" (msgctxt: "panel:showusername"))
+#: ../consort-panel/panel-action-button.c:307
+msgid "Log Out..."
+msgstr "Αποσύνδεση..."
+
+#: ../consort-panel/panel-action-button.c:308
+msgid "Log out of this session to log in as a different user"
+msgstr ""
+"Αποσυνδεθείτε από αυτή τη συνεδρία για να συνδεθείτε ως διαφορετικός χρήστης"
+
+#: ../consort-panel/panel-action-button.c:316
+msgid "Run Application..."
+msgstr "Εκτέλεση Εφαρμογής..."
+
+#: ../consort-panel/panel-action-button.c:317
+msgid "Run an application by typing a command or choosing from a list"
+msgstr ""
+"Εκτελεί ένα πρόγραμμα με την εισαγωγή εντολής ή μέσω της επιλογής του από "
+"λίστα"
+
+#: ../consort-panel/panel-action-button.c:325
+msgid "Search for Files..."
+msgstr "Αναζήτηση για αρχεία..."
+
+#: ../consort-panel/panel-action-button.c:326
+msgid "Locate documents and folders on this computer by name or content"
+msgstr ""
+"Εντοπισμός εγγράφων και φακέλων σε αυτό τον υπολογιστή κατά όνομα ή "
+"περιεχόμενο"
+
+#: ../consort-panel/panel-action-button.c:333
+#: ../consort-panel/panel-force-quit.c:239
+msgid "Force Quit"
+msgstr "Εξαναγκασμός εξόδου"
+
+#: ../consort-panel/panel-action-button.c:334
+msgid "Force a misbehaving application to quit"
+msgstr "Εξαναγκασμός σε έξοδο μιας εφαρμογής με κακή συμπεριφορά"
+
+#. FIXME icon
+#: ../consort-panel/panel-action-button.c:342
+msgid "Connect to Server..."
+msgstr "Σύνδεση στον εξυπηρετητή..."
+
+#: ../consort-panel/panel-action-button.c:343
+msgid "Connect to a remote computer or shared disk"
+msgstr "Σύνδεση σε ένα απομακρυσμένο υπολογιστή ή σε ένα κοινόχρηστο δίσκο"
+
+#: ../consort-panel/panel-action-button.c:350
+msgid "Shut Down..."
+msgstr "Κλείσιμο..."
+
+#: ../consort-panel/panel-action-button.c:351
+msgid "Shut down the computer"
+msgstr "Κλείσιμο του υπολογιστή"
+
+#: ../consort-panel/panel-addto.c:115
+msgid "Custom Application Launcher"
+msgstr "Εκκινητής προσαρμοσμένης εφαρμογής"
+
+#: ../consort-panel/panel-addto.c:116
+msgid "Create a new launcher"
+msgstr "Δημιουργία ενός νέου εκκινητή"
+
+#: ../consort-panel/panel-addto.c:126
+msgid "Application Launcher..."
+msgstr "Εκκινητής εφαρμογής..."
+
+#: ../consort-panel/panel-addto.c:127
+msgid "Copy a launcher from the applications menu"
+msgstr "Αντιγραφή ενός εκκινητή από το μενού των εφαρμογών"
+
+#: ../consort-panel/panel-addto.c:141 ../consort-panel/panel-menu-button.c:948
+msgid "Main Menu"
+msgstr "Κύριο μενού"
+
+#: ../consort-panel/panel-addto.c:142
+msgid "The main GNOME menu"
+msgstr "Το κυρίως μενού του GNOME"
+
+#: ../consort-panel/panel-addto.c:152
+msgid "Menu Bar"
+msgstr "Εργαλειοθήκη μενού"
+
+#: ../consort-panel/panel-addto.c:153
+msgid "A custom menu bar"
+msgstr "Μια προσαρμοσμένη μπάρα μενού"
+
+#: ../consort-panel/panel-addto.c:163
+msgid "Separator"
+msgstr "Διαχωριστικό"
+
+#: ../consort-panel/panel-addto.c:164
+msgid "A separator to organize the panel items"
+msgstr "Ένα διαχωριστικό, για την οργάνωση αντικειμένων του πίνακα εφαρμογών"
+
+#: ../consort-panel/panel-addto.c:174
+msgid "User Menu"
+msgstr "Μενού χρήστη"
+
+#: ../consort-panel/panel-addto.c:175
+msgid "Menu to change your settings and your online status"
+msgstr "Μενού για την αλλαγή των ρυθμίσεών σας και της κατάστασης σύνδεσής σας"
+
+#: ../consort-panel/panel-addto.c:257
+msgid "(empty)"
+msgstr "(κενό)"
+
+#: ../consort-panel/panel-addto.c:1055
+#, c-format
+msgid "Find an _item to add to \"%s\":"
+msgstr "Βρείτε ένα αντ_ικείμενο για προσθήκη στο \"%s\":"
+
+#: ../consort-panel/panel-addto.c:1059
+msgid "Find an _item to add to the panel:"
+msgstr "Βρείτε ένα αντ_ικείμενο για προσθήκη στον πίνακα εφαρμογών:"
+
+#: ../consort-panel/panel-addto.c:1062
+msgid "Add to Panel"
+msgstr "Προσθήκη στον πίνακα εφαρμογών"
+
+#: ../consort-panel/panel-applet-frame.c:738
+#, c-format
+msgid "\"%s\" has quit unexpectedly"
+msgstr "Το \"%s\" τερματίστηκε απρόσμενα"
+
+#: ../consort-panel/panel-applet-frame.c:740
+msgid "Panel object has quit unexpectedly"
+msgstr "Το αντικειμένου πίνακα εφαρμογών τερματίστηκε απρόσμενα"
+
+#: ../consort-panel/panel-applet-frame.c:747
+msgid ""
+"If you reload a panel object, it will automatically be added back to the "
+"panel."
+msgstr ""
+"Αν φορτώσετε ξανά ένα αντικείμενο πίνακα εφαρμογών, θα προστεθεί αυτόματα "
+"πίσω στο πίνακα εφαρμογών."
+
+#: ../consort-panel/panel-applet-frame.c:753
+msgid "_Don't Reload"
+msgstr "Να _μη γίνει επαναφόρτωση"
+
+#: ../consort-panel/panel-applet-frame.c:754
+msgid "_Reload"
+msgstr "Ε_παναφόρτωση"
+
+#: ../consort-panel/panel-applet-frame.c:904
+#, c-format
+msgid "The panel encountered a problem while loading \"%s\"."
+msgstr ""
+"Ο πίνακας εφαρμογών αντιμετώπισε ένα πρόβλημα κατά τη φόρτωση του \"%s\"."
+
+#: ../consort-panel/panel-applet-frame.c:920
+msgid "Do you want to delete the applet from your configuration?"
+msgstr "Θέλετε να αφαιρέσετε τη μικροεφαρμογή από τη ρύθμιση σας;"
+
+#: ../consort-panel/panel-context-menu.c:63
+msgid "Cannot delete this panel"
+msgstr "Αποτυχία διαγραφής αυτού του πίνακα εφαρμογών"
+
+#: ../consort-panel/panel-context-menu.c:64
+msgid "You must always have at least one panel."
+msgstr "Θα πρέπει να υπάρχει τουλάχιστον ένας πίνακας εφαρμογών."
+
+#: ../consort-panel/panel-context-menu.c:122
+msgid "_Add to Panel..."
+msgstr "_Προσθήκη στον πίνακα εφαρμογών..."
+
+#: ../consort-panel/panel-context-menu.c:143
+msgid "_Delete This Panel"
+msgstr "_Αφαίρεση αυτού του πίνακα εφαρμογών"
+
+#: ../consort-panel/panel-context-menu.c:158
+msgid "_New Panel"
+msgstr "_Νέος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-ditem-editor.c:114
+msgid "Application"
+msgstr "Εφαρμογή"
+
+#: ../consort-panel/panel-ditem-editor.c:116
+msgid "Application in Terminal"
+msgstr "Εφαρμογή σε τερματικό"
+
+#: ../consort-panel/panel-ditem-editor.c:118
+msgid "Location"
+msgstr "Τοποθεσία"
+
+#. Type
+#: ../consort-panel/panel-ditem-editor.c:618
+msgid "_Type:"
+msgstr "_Τύπος:"
+
+#. Name
+#: ../consort-panel/panel-ditem-editor.c:625
+msgid "_Name:"
+msgstr "Ό_νομα:"
+
+#: ../consort-panel/panel-ditem-editor.c:652
+msgid "_Browse..."
+msgstr "_Περιήγηση..."
+
+#. Comment
+#: ../consort-panel/panel-ditem-editor.c:659
+msgid "Co_mment:"
+msgstr "_Σχόλιο:"
+
+#: ../consort-panel/panel-ditem-editor.c:1008
+msgid "Choose an application..."
+msgstr "Επιλογή μιας εφαρμογής..."
+
+#: ../consort-panel/panel-ditem-editor.c:1012
+msgid "Choose a file..."
+msgstr "Επιλογή ενός αρχείου..."
+
+#: ../consort-panel/panel-ditem-editor.c:1177
+#: ../consort-panel/panel-ditem-editor.c:1186
+msgid "Comm_and:"
+msgstr "_Εντολή:"
+
+#: ../consort-panel/panel-ditem-editor.c:1195
+msgid "_Location:"
+msgstr "_Τοποθεσία:"
+
+#: ../consort-panel/panel-ditem-editor.c:1358
+msgid "The name of the launcher is not set."
+msgstr "Το όνομα του εκκινητή δεν έχει ορισθεί."
+
+#: ../consort-panel/panel-ditem-editor.c:1362
+msgid "Could not save directory properties"
+msgstr "Αδυναμία αποθήκευσης ιδιοτήτων καταλόγου"
+
+#: ../consort-panel/panel-ditem-editor.c:1363
+msgid "The name of the directory is not set."
+msgstr "Το όνομα του καταλόγου δεν έχει ορισθεί."
+
+#: ../consort-panel/panel-ditem-editor.c:1379
+msgid "The command of the launcher is not set."
+msgstr "Η εντολή του εκκινητή δεν έχει ορισθεί."
+
+#: ../consort-panel/panel-ditem-editor.c:1382
+msgid "The location of the launcher is not set."
+msgstr "Η τοποθεσία του εκκινητή δεν έχει ορισθεί."
+
+#: ../consort-panel/panel-ditem-editor.c:1459
+msgid "Could not display help document"
+msgstr "Δεν είναι δυνατή η προβολή του αρχείου βοήθειας"
+
+#: ../consort-panel/panel-force-quit.c:77
+msgid ""
+"Click on a window to force the application to quit. To cancel press <ESC>."
+msgstr ""
+"Κλικ σε ένα παράθυρο για να εξαναγκάσετε την εφαρμογή σε έξοδο. Για ακύρωση "
+"πατήστε <ESC>."
+
+#: ../consort-panel/panel-force-quit.c:222
+msgid "Force this application to exit?"
+msgstr "Εξαναγκασμός σε έξοδο αυτής της εφαρμογής;"
+
+#: ../consort-panel/panel-force-quit.c:225
+msgid ""
+"If you choose to force an application to exit, unsaved changes in any open "
+"documents in it might get lost."
+msgstr ""
+"Αν επιλέξετε τον εξαναγκασμό τερματισμού της εφαρμογής, οποιαδήποτε ανοικτά  "
+"έγγραφα πιθανόν θα χαθούν."
+
+#: ../consort-panel/panel-layout.c:1097 ../consort-panel/panel-layout.c:1111
+#, c-format
+msgid "Cannot create initial panel layout.\n"
+msgstr "Αδυναμία δημιουργίας διάταξης αρχικού πίνακα εφαρμογών.\n"
+
+#: ../consort-panel/panel-menu-bar.c:103
+msgid "Browse and run installed applications"
+msgstr "Εύρεση και εκτέλεση εγκατεστημένων εφαρμογών"
+
+#: ../consort-panel/panel-menu-bar.c:105
+msgid "Access documents, folders and network places"
+msgstr "Πρόσβαση σε έγγραφα, φακέλους και τοποθεσίες δικτύου"
+
+#: ../consort-panel/panel-menu-bar.c:136
+msgid "Applications"
+msgstr "Εφαρμογές"
+
+#: ../consort-panel/panel-menu-bar.c:243 ../consort-panel/panel-menu-button.c:562
+msgid "_Edit Menus"
+msgstr "Επε_ξεργασία μενού"
+
+#: ../consort-panel/panel-menu-bar.c:250
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: ../consort-panel/panel-menu-items.c:489
+msgid "Switch User"
+msgstr "Αλλαγή χρήστη"
+
+#: ../consort-panel/panel-menu-items.c:620
+msgid "Bookmarks"
+msgstr "Σελιδοδείκτες"
+
+#. Translators: %s is a URI
+#: ../consort-panel/panel-menu-items.c:644 ../consort-panel/panel.c:596
+#, c-format
+msgid "Open '%s'"
+msgstr "Άνοιγμα '%s'"
+
+#: ../consort-panel/panel-menu-items.c:715
+#, c-format
+msgid "Unable to scan %s for media changes"
+msgstr "Αδυναμία σάρωσης %s για αλλαγές μέσων"
+
+#: ../consort-panel/panel-menu-items.c:757
+#, c-format
+msgid "Rescan %s"
+msgstr "Σάρωση ξανά %s"
+
+#: ../consort-panel/panel-menu-items.c:794
+#, c-format
+msgid "Unable to mount %s"
+msgstr "Αδυναμία προσάρτησης %s"
+
+#: ../consort-panel/panel-menu-items.c:856
+#, c-format
+msgid "Mount %s"
+msgstr "Προσάρτηση %s"
+
+#: ../consort-panel/panel-menu-items.c:1064
+msgid "Removable Media"
+msgstr "Αφαιρούμενα μέσα"
+
+#: ../consort-panel/panel-menu-items.c:1155
+msgid "Network Places"
+msgstr "Τοποθεσίες δικτύου"
+
+#. is_exec?
+#. exec
+#. name
+#: ../consort-panel/panel-menu-items.c:1199 ../consort-panel/panel.c:646
+msgid "Open your personal folder"
+msgstr "Άνοιγμα του προσωπικού σας φακέλου"
+
+#. Translators: Desktop is used here as in
+#. * "Desktop Folder" (this is not the Desktop
+#. * environment).
+#: ../consort-panel/panel-menu-items.c:1219
+msgctxt "Desktop Folder"
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
+
+#: ../consort-panel/panel-menu-items.c:1220
+msgid "Open the contents of your desktop in a folder"
+msgstr "Άνοιγμα των περιεχομένων της επιφάνειας εργασίας σας σε ένα φάκελο"
+
+#. is_exec?
+#. exec
+#: ../consort-panel/panel-menu-items.c:1235 ../consort-panel/panel.c:655
+msgid "Computer"
+msgstr "Υπολογιστής"
+
+#. name
+#: ../consort-panel/panel-menu-items.c:1241 ../consort-panel/panel.c:656
+msgid ""
+"Browse all local and remote disks and folders accessible from this computer"
+msgstr ""
+"Πειρήγηση σε όλους τους τοπικούς και απομακρυσμένους δίσκους και φακέλους "
+"προσβάσιμους από αυτόν τον υπολογιστή"
+
+#. is_exec?
+#. exec
+#: ../consort-panel/panel-menu-items.c:1251 ../consort-panel/panel.c:663
+msgid "Network"
+msgstr "Δίκτυο"
+
+#. name
+#: ../consort-panel/panel-menu-items.c:1252 ../consort-panel/panel.c:664
+msgid "Browse bookmarked and local network locations"
+msgstr "Περιήγηση σε σελιδοδείκτες και τοποθεσίες τοπικού δικτύου"
+
+#: ../consort-panel/panel-menu-items.c:1357
+msgid "Available"
+msgstr "Διαθέσιμος"
+
+#: ../consort-panel/panel-menu-items.c:1367
+msgid "Busy"
+msgstr "Απασχολημένος"
+
+#: ../consort-panel/panel-menu-items.c:1380
+msgid "My Account"
+msgstr "Ο λογαριασμός μου"
+
+#: ../consort-panel/panel-menu-items.c:1633
+msgid "Places"
+msgstr "Τοποθεσίες"
+
+#: ../consort-panel/panel-properties-dialog.c:81
+#: ../consort-panel/panel-test-applets.c:55
+msgctxt "Orientation"
+msgid "Top"
+msgstr "Κορυφή"
+
+#: ../consort-panel/panel-properties-dialog.c:82
+#: ../consort-panel/panel-test-applets.c:56
+msgctxt "Orientation"
+msgid "Bottom"
+msgstr "Κάτω"
+
+#: ../consort-panel/panel-properties-dialog.c:83
+#: ../consort-panel/panel-test-applets.c:57
+msgctxt "Orientation"
+msgid "Left"
+msgstr "Αριστερά"
+
+#: ../consort-panel/panel-properties-dialog.c:84
+#: ../consort-panel/panel-test-applets.c:58
+msgctxt "Orientation"
+msgid "Right"
+msgstr "Δεξιά"
+
+#: ../consort-panel/panel-properties-dialog.c:821
+#: ../consort-panel/panel-run-dialog.c:2009
+#, c-format
+msgid "Unable to load file '%s': %s."
+msgstr "Αποτυχία φόρτωσης αρχείου '%s': %s."
+
+#: ../consort-panel/panel-properties-dialog.c:827
+msgid "Could not display properties dialog"
+msgstr "Αδυναμία εμφάνισης διαλόγου ιδιοτήτων"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:2
+msgid "<small>Opaque</small>"
+msgstr "<small>Ημιδιαφανές</small>"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:3
+msgid "<small>Transparent</small>"
+msgstr "<small>Διαφανές</small>"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:4
+msgid "Arro_ws on hide buttons"
+msgstr "Εμφάνιση βέ_λων στο κουμπί απόκρυψης"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:5
+msgid "Background"
+msgstr "Παρασκήνιο"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:6
+msgid "Background _image:"
+msgstr "Ει_κόνα παρασκηνίου:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:7
+msgid "Co_lor:"
+msgstr "Χ_ρώμα:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:8
+msgid "E_xpand"
+msgstr "Ανάπτυ_ξη"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:10
+msgid "Image Background Details"
+msgstr "Λεπτομέρειες εικόνας παρασκηνίου"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:11
+msgid "Panel Properties"
+msgstr "Ιδιότητες πίνακα εφαρμογών"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:12
+msgid "Pick a color"
+msgstr "Επιλογή ενός χρώματος"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:13
+msgid "Rotate image when panel is _vertical"
+msgstr "Περιστροφή εικόνας για _κάθετους πίνακες εφαρμογών"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:14
+msgid "S_tyle:"
+msgstr "Σ_τυλ:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:15
+msgid "Select background"
+msgstr "Επιλογή παρασκηνίου"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:16
+msgid "Show hide _buttons"
+msgstr "Εμφάνιση _κουμπιών απόκρυψης"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:17
+msgid "Solid c_olor"
+msgstr "Συμπαγές _χρώμα"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:18
+msgid "Some of these properties are locked down"
+msgstr "Μερικές από αυτές τις ιδιότητες είναι κλειδωμένες"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:19
+msgid "St_retch"
+msgstr "Τέ_ντωμα"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:20
+msgid "_Autohide"
+msgstr "_Αυτόματη απόκρυψη"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:21
+msgid "_None (use system theme)"
+msgstr "Κα_νένα (χρήση θέματος συστήματος)"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:22
+#: ../consort-panel/panel-test-applets.ui.h:4
+msgid "_Orientation:"
+msgstr "Προσανατο_λισμός:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:23
+msgid "_Scale"
+msgstr "Κλί_μακα"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:24
+#: ../consort-panel/panel-test-applets.ui.h:6
+msgid "_Size:"
+msgstr "Μέγε_θος:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:25
+msgid "_Tile"
+msgstr "Πλακίδ_ιο"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:26
+msgid "pixels"
+msgstr "εικονοστοιχεία"
+
+#: ../consort-panel/panel-recent.c:78 ../consort-panel/panel-recent.c:88
+#, c-format
+msgid "Could not open recently used document \"%s\""
+msgstr "Δεν είναι δυνατό το άνοιγμα του πρόσφατου αρχείου \"%s\""
+
+#: ../consort-panel/panel-recent.c:90
+#, c-format
+msgid "An unknown error occurred while trying to open \"%s\"."
+msgstr "Συνέβη ένα άγνωστο σφάλμα κατά την προσπάθεια ανοίγματος του \"%s\"."
+
+#: ../consort-panel/panel-recent.c:147
+msgid "Clear the Recent Documents list?"
+msgstr "Εκκαθάριση της λίστας πρόσφατων εγγράφων;"
+
+#: ../consort-panel/panel-recent.c:149
+msgid ""
+"If you clear the Recent Documents list, you clear the following:\n"
+"• All items from the Places → Recent Documents menu item.\n"
+"• All items from the recent documents list in all applications."
+msgstr ""
+"Αν εκκαθαρίσετε τη λίστα Πρόσφατων Εγγράφων, θα διαγράψετε τα ακόλουθα:\n"
+"• Όλα τα αντικείμενα από το μενού Τοποθεσίες → Πρόσφατα Έγγραφα.\n"
+"• Όλα τα αντικείμενα από τη λίστα πρόσφατων εγγράφων σε όλες τις εφαρμογές."
+
+#: ../consort-panel/panel-recent.c:161
+msgid "Clear Recent Documents"
+msgstr "Εκκαθάριση πρόσφατων εγγράφων"
+
+#: ../consort-panel/panel-recent.c:196
+msgid "Recent Documents"
+msgstr "Πρόσφατα έγγραφα"
+
+#: ../consort-panel/panel-recent.c:235
+msgid "Clear Recent Documents..."
+msgstr "Εκκαθάριση πρόσφατων εγγράφων..."
+
+#: ../consort-panel/panel-recent.c:237
+msgid "Clear all items from the recent documents list"
+msgstr "Εκκαθάριση όλων των αντικειμένων από τη λίστα προσφάτων εγγράφων"
+
+#: ../consort-panel/panel-run-dialog.c:400
+#, c-format
+msgid "Could not run command '%s'"
+msgstr "Αδύνατη η εκτέλεση της εντολής '%s'"
+
+#: ../consort-panel/panel-run-dialog.c:448
+#, c-format
+msgid "Could not convert '%s' from UTF-8"
+msgstr "Αδυναμία μετατροπής '%s' από UTF-8"
+
+#: ../consort-panel/panel-run-dialog.c:1235
+msgid "Choose a file to append to the command..."
+msgstr "Επιλέξτε ένα αρχείο για συσχέτιση με την εντολή..."
+
+#: ../consort-panel/panel-run-dialog.c:1618
+#: ../consort-panel/panel-run-dialog.ui.h:8
+msgid "Select an application to view its description."
+msgstr "Επιλογή μιας εφαρμογής για την προβολή της περιγραφής της."
+
+#: ../consort-panel/panel-run-dialog.c:1656
+#, c-format
+msgid "Will run command: '%s'"
+msgstr "Θα εκτελεστεί η εντολή: '%s'"
+
+#: ../consort-panel/panel-run-dialog.c:1689
+#, c-format
+msgid "URI list dropped on run dialog had wrong format (%d) or length (%d)\n"
+msgstr ""
+"Η λίστα URI στο διάλογο εκτέλεσης έχει εσφαλμένη μορφή (%d) ή μάκρος (%d)\n"
+
+#: ../consort-panel/panel-run-dialog.c:2014
+msgid "Could not display run dialog"
+msgstr "Αδυναμία εμφάνισης διαλόγου εκτέλεσης"
+
+#: ../consort-panel/panel-run-dialog.ui.h:1
+msgid ""
+"Click this button to browse for a file whose name to append to the command "
+"string."
+msgstr ""
+"Πατήστε αυτό το κουμπί για την αναζήτηση για το αρχείο του οποίου το όνομα "
+"θα συσχετισθεί στο αλφαριθμητικό της εντολής."
+
+#: ../consort-panel/panel-run-dialog.ui.h:2
+msgid ""
+"Click this button to run the selected application or the command in the "
+"command entry field."
+msgstr ""
+"Πατήστε αυτό το κουμπί για να εκτελέσετε την επιλεγμένη εφαρμογή ή την "
+"εντολή στο πεδίο καταχώρησης εντολής."
+
+#: ../consort-panel/panel-run-dialog.ui.h:3
+msgid "Command icon"
+msgstr "Εικονίδιο εντολής"
+
+#: ../consort-panel/panel-run-dialog.ui.h:4
+msgid "List of known applications"
+msgstr "Λίστα γνωστών εφαρμογών"
+
+#: ../consort-panel/panel-run-dialog.ui.h:5
+msgid "Run Application"
+msgstr "Εκτέλεση εφαρμογής"
+
+#: ../consort-panel/panel-run-dialog.ui.h:6
+msgid "Run in _terminal"
+msgstr "Εκτέλεση σε τερματι_κό"
+
+#: ../consort-panel/panel-run-dialog.ui.h:7
+msgid "Run with _file..."
+msgstr "Εκτέλεση με αρ_χείο..."
+
+#: ../consort-panel/panel-run-dialog.ui.h:9
+msgid "Select this box to run the command in a terminal window."
+msgstr ""
+"Επιλογή αυτού του κουτιού για εκτέλεση της εντολής σε ένα παράθυρο "
+"τερματικού."
+
+#: ../consort-panel/panel-run-dialog.ui.h:10
+msgid "Show list of known _applications"
+msgstr "Εμφάνιση λίστας γνωστών ε_φαρμογών"
+
+#: ../consort-panel/panel-run-dialog.ui.h:11
+msgid "The icon of the command to be run."
+msgstr "Το εικονίδιο της εντολής για εκτέλεση."
+
+#: ../consort-panel/panel-run-dialog.ui.h:12
+#: ../consort-panel/panel-stock-icons.c:83
+msgid "_Run"
+msgstr "_Εκτέλεση"
+
+#: ../consort-panel/panel-stock-icons.c:84
+msgid "_Force quit"
+msgstr "_Βίαιο κλείσιμο"
+
+#: ../consort-panel/panel-stock-icons.c:85
+msgid "C_lear"
+msgstr "Ε_κκαθάριση"
+
+#: ../consort-panel/panel-stock-icons.c:86
+msgid "D_on't Delete"
+msgstr "Να _μη γίνει διαγραφή"
+
+#: ../consort-panel/panel-test-applets.c:36
+msgid "Specify an applet IID to load"
+msgstr "Καθορίστε ένα applet IID προς φόρτωση"
+
+#: ../consort-panel/panel-test-applets.c:37
+msgid ""
+"Specify a gconf location in which the applet preferences should be stored"
+msgstr ""
+"Καθορίστε μια τοποθεσία gconf στην οποία θα αποθηκεύονται οι προτιμήσεις της "
+"μικροεφαρμογής"
+
+#: ../consort-panel/panel-test-applets.c:38
+msgid "Specify the initial size of the applet (xx-small, medium, large etc.)"
+msgstr ""
+"Καθορίστε το αρχικό μέγεθος της μικροεφαρμογής (xx-μικρό, μεσαίο, μεγάλο "
+"κτλ.)"
+
+#: ../consort-panel/panel-test-applets.c:39
+msgid ""
+"Specify the initial orientation of the applet (top, bottom, left or right)"
+msgstr ""
+"Καθορίστε τον αρχικό προσανατολισμό της μικροεφαρμογής (πάνω, κάτω, αριστερά "
+"ή δεξιά)"
+
+#: ../consort-panel/panel-test-applets.c:63
+msgctxt "Size"
+msgid "XX Small"
+msgstr "Πάρα πολύ μικρό"
+
+#: ../consort-panel/panel-test-applets.c:64
+msgctxt "Size"
+msgid "X Small"
+msgstr "Πολύ μικρό"
+
+#: ../consort-panel/panel-test-applets.c:65
+msgctxt "Size"
+msgid "Small"
+msgstr "Μικρό"
+
+#: ../consort-panel/panel-test-applets.c:66
+msgctxt "Size"
+msgid "Medium"
+msgstr "Μέτριο"
+
+#: ../consort-panel/panel-test-applets.c:67
+msgctxt "Size"
+msgid "Large"
+msgstr "Μεγάλο"
+
+#: ../consort-panel/panel-test-applets.c:68
+msgctxt "Size"
+msgid "X Large"
+msgstr "Πολύ μεγάλο"
+
+#: ../consort-panel/panel-test-applets.c:69
+msgctxt "Size"
+msgid "XX Large"
+msgstr "Πάρα πολύ μεγάλο"
+
+#: ../consort-panel/panel-test-applets.c:127
+#, c-format
+msgid "Failed to load applet %s"
+msgstr "Αποτυχία φόρτωσης μικροεφαρμογής %s"
+
+#. This is an utility to easily test various applets
+#: ../consort-panel/panel-test-applets.ui.h:2
+msgid "Test applet utility"
+msgstr "Δοκιμή μικροεφαρμογής"
+
+#: ../consort-panel/panel-test-applets.ui.h:3
+msgid "_Applet:"
+msgstr "Μικροε_φαρμογή:"
+
+#: ../consort-panel/panel-test-applets.ui.h:5
+msgid "_Prefs Dir:"
+msgstr "Κατάλογος π_ροτιμήσεων:"
+
+#: ../consort-panel/panel-toplevel.c:1272
+msgid "Hide Panel"
+msgstr "Απόκρυψη πίνακα εφαρμογών"
+
+#. translators: these string will be shown in MetaCity's switch window
+#. * popup when you pass the focus to a panel
+#: ../consort-panel/panel-toplevel.c:1657
+msgid "Top Expanded Edge Panel"
+msgstr "Γωνιακός πίνακας εφαρμογών αναπτυσσόμενος προς τα πάνω"
+
+#: ../consort-panel/panel-toplevel.c:1658
+msgid "Top Centered Panel"
+msgstr "Κεντραρισμένος προς τα πάνω πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1659
+msgid "Top Floating Panel"
+msgstr "Άνω πλωτός πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1660
+msgid "Top Edge Panel"
+msgstr "Άνω ακραίος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1664
+msgid "Bottom Expanded Edge Panel"
+msgstr "Γωνιακός πίνακας εφαρμογών αναπτυσσόμενος προς τα κάτω"
+
+#: ../consort-panel/panel-toplevel.c:1665
+msgid "Bottom Centered Panel"
+msgstr "Κάτω κεντραρισμένος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1666
+msgid "Bottom Floating Panel"
+msgstr "Κάτω πλωτός πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1667
+msgid "Bottom Edge Panel"
+msgstr "Κάτω ακραίος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1671
+msgid "Left Expanded Edge Panel"
+msgstr "Γωνιακός πίνακας εφαρμογών αναπτυσσόμενος προς τα αριστερά"
+
+#: ../consort-panel/panel-toplevel.c:1672
+msgid "Left Centered Panel"
+msgstr "Αριστερά κεντραρισμένος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1673
+msgid "Left Floating Panel"
+msgstr "Αριστερά πλωτός πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1674
+msgid "Left Edge Panel"
+msgstr "Αριστερός ακραίος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1678
+msgid "Right Expanded Edge Panel"
+msgstr "Γωνιακός πίνακας εφαρμογών αναπτυσσόμενος προς τα αριστερά"
+
+#: ../consort-panel/panel-toplevel.c:1679
+msgid "Right Centered Panel"
+msgstr "Δεξιός κεντραρισμένο πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1680
+msgid "Right Floating Panel"
+msgstr "Δεξιός πλωτός ο πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-toplevel.c:1681
+msgid "Right Edge Panel"
+msgstr "Δεξιός ακραίος πίνακας εφαρμογών"
+
+#: ../consort-panel/panel-util.c:314
+#, c-format
+msgid "Icon '%s' not found"
+msgstr "Δεν βρέθηκε το εικονίδιο '%s'"
+
+#: ../consort-panel/panel-util.c:551
+msgid "file"
+msgstr "αρχείο"
+
+#: ../consort-panel/panel-util.c:728
+msgid "Home Folder"
+msgstr "Προσωπικός φάκελος"
+
+#. Translators: this is the same string as the one found in
+#. * nautilus
+#: ../consort-panel/panel-util.c:740
+msgid "File System"
+msgstr "Σύστημα αρχείων"
+
+#: ../consort-panel/panel-util.c:913
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#. Translators: the first string is the name of a gvfs
+#. * method, and the second string is a path. For
+#. * example, "Trash: some-directory". It means that the
+#. * directory called "some-directory" is in the trash.
+#.
+#: ../consort-panel/panel-util.c:959
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: ../consort-panel/panel.c:527
+#, c-format
+msgid "Open URL: %s"
+msgstr "Άνοιγμα URL: %s"
+
+#: ../consort-panel/panel.c:1395
+msgid "Delete this panel?"
+msgstr "Αφαίρεση αυτού του πίνακα εφαρμογών;"
+
+#: ../consort-panel/panel.c:1399
+msgid ""
+"When a panel is deleted, the panel and its\n"
+"settings are lost."
+msgstr ""
+"Όταν ένας ο πίνακας εφαρμογών αφαιρείται, ο πίνακας εφαρμογών και οι\n"
+"ρυθμίσεις του χάνονται."
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+msgid "A simple applet for testing the GNOME panel"
+msgstr ""
+"Μια απλή μικροεφαρμογή για τη δοκιμή του πίνακα εφαρμογών του GNOME Panel"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+msgid "Factory for Test DBus Applet"
+msgstr "Εργοστάσιο για τη δοκιμαστική μικροεφαρμογή DBus"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+msgid "Test DBus Applet"
+msgstr "Δοκιμή μικροεφαρμογής DBus"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+msgid "Test DBus Applet Factory"
+msgstr "Δοκιμή εργοστασίου μικροεφαρμογών DBus"
+
+#~ msgid "Select an animation"
+#~ msgstr "Επιλογή μιας κινούμενης εικόνας"
+
+#~ msgid "_File:"
+#~ msgstr "Α_ρχείο:"
+
+#~ msgid "_Total frames in animation:"
+#~ msgstr "_Σύνολο καρέ στην κίνηση:"
+
+#~ msgid "frames"
+#~ msgstr "καρέ"
+
+#~ msgid "Frames in fish's animation"
+#~ msgstr "Ο αριθμός των καρέ στην κίνηση του ψαριού"
+
+#~ msgid ""
+#~ "This key specifies the number of frames that will be displayed in the "
+#~ "fish's animation."
+#~ msgstr ""
+#~ "Αυτό το κλειδί καθορίζει τον αριθμό των καρέ στην κίνηση του ψαριού."
+
+#~ msgid "Maximum window list size"
+#~ msgstr "Μέγιστο μέγεθος παραθύρου λίστας"
+
+#~ msgid "Minimum window list size"
+#~ msgstr "Ελάχιστο μέγεθος παραθύρου λίστας"
+
+#~ msgid ""
+#~ "The use of this key was deprecated in GNOME 2.20. The schema is retained "
+#~ "for compatibility with older versions."
+#~ msgstr ""
+#~ "Η χρήση αυτού του κλειδιού έγινε deprecated στο GNOME 2.20. Το schema "
+#~ "έχει διατηρηθεί για συμβατότητα με παλιότερες εκδόσεις."
+
+#~ msgid "Error loading num_rows value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Σφάλμα φόρτωσης τιμής num_rows για τη μικροεφαρμογή εναλλαγής χώρων "
+#~ "εργασίας : %s\n"
+
+#~ msgid ""
+#~ "Error loading display_workspace_names value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Σφάλμα φόρτωσης τιμής display_workspace_names για τη μικροεφαρμογή "
+#~ "εναλλαγής χώρων εργασίας : %s\n"
+
+#~ msgid ""
+#~ "Error loading display_all_workspaces value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Σφάλμα φόρτωσης τιμής display_all_workspaces για τη μικροεφαρμογή "
+#~ "εναλλαγής χώρων εργασίας : %s\n"
+
+#~ msgid "Loc_k To Panel"
+#~ msgstr "Κ_λείδωμα στον πίνακα εφαρμογών"
+
+#~ msgid "Cannot find an empty spot"
+#~ msgstr "Δε βρέθηκε ελεύθερη τοποθεσία"
+
+#~ msgid "Drawer"
+#~ msgstr "Συρτάρι"
+
+#~ msgid "_Add to Drawer..."
+#~ msgstr "_Προσθήκη στο συρτάρι..."
+
+#~ msgid "Add this launcher to _panel"
+#~ msgstr "Προσθήκη του εκκινητή στον _πίνακα εφαρμογών"
+
+#~ msgid "Add this launcher to _desktop"
+#~ msgstr "Προσθήκη του εκκινητή στην _επιφάνεια εργασίας"
+
+#~ msgid "_Entire menu"
+#~ msgstr "_Ολόκληρο το μενού"
+
+#~ msgid "Add this as _drawer to panel"
+#~ msgstr "Προσθήκη του παρόντος ως _συρτάρι στον πίνακα εφαρμογών"
+
+#~ msgid "Add this as _menu to panel"
+#~ msgstr "Προσθήκη του παρόντος ως _μενού στον πίνακα εφαρμογών"
+
+#~ msgid "A pop out drawer to store other items in"
+#~ msgstr "Ένα αναδυόμενο συρτάρι για να αποθηκεύονται αντικείμενα σε αυτό"
+
+#~ msgid "Add to Drawer"
+#~ msgstr "Προσθήκη στο συρτάρι"
+
+#~ msgid "Find an _item to add to the drawer:"
+#~ msgstr "Βρείτε ένα αντ_ικείμενο για προσθήκη στο συρτάρι:"
+
+#~ msgid ""
+#~ "A boolean flag to indicate whether the user's previous configuration in /"
+#~ "apps/panel/profiles/default has been copied to the new location in /apps/"
+#~ "panel."
+#~ msgstr ""
+#~ "Ένα boolean flag που υποδεικνύει αν οι προηγούμενες ρυθμίσεις του χρήστη "
+#~ "στο /apps/panel/profiles/default έχουν αντιγραφεί στην νέα τοποθεσία στο /"
+#~ "apps/panel."
+
+#~ msgid ""
+#~ "A list of panel applet IDs. Each ID identifies an individual panel "
+#~ "applet. The settings for each of these applets are stored in /apps/panel/"
+#~ "applets/$(id)."
+#~ msgstr ""
+#~ "Μια λίστα IDs μικροεφαρμογών του πίνακα εφαρμογών. Κάθε ID πιστοποιεί μια "
+#~ "ανεξάρτητη μικροεφαρμογή του πίνακα εφαρμογών. Οι ρυθμίσεις για κάθε μία "
+#~ "από αυτές τις μικροεφαρμογές αποθηκεύονται στο /apps/panel/applets/$(id)."
+
+#~ msgid "Old profiles configuration migrated"
+#~ msgstr "Οι ρυθμίσεις παλιών προφίλ εισήχθησαν"
+
+#~ msgid "Panel applet ID list"
+#~ msgstr "Μια λίστα IDs μικροεφαρμογών του πίνακα εφαρμογών"
+
+#~ msgid "Autoclose drawer"
+#~ msgstr "Αυτόματο κλείσιμο συρταριού"
+
+#~ msgid "Deprecated"
+#~ msgstr "Ξεπερασμένο"
+
+#~ msgid "Disable Logging Out"
+#~ msgstr "Απενεργοποίηση Αποσύνδεσης"
+
+#~ msgid "Enable animations"
+#~ msgstr "Ενεργοποίηση κινούμενων σχεδίων"
+
+#~ msgid "Highlight launchers on mouseover"
+#~ msgstr "Επισήμανση εκκινητών με το πέρασμα του ποντικιού"
+
+#~ msgid ""
+#~ "If true, a drawer will automatically be closed when the user clicks a "
+#~ "launcher in it."
+#~ msgstr ""
+#~ "Αν αληθές, το συρτάρι θα κλείνει αυτόματα όταν ο χρήστης κάνει κλικ σε "
+#~ "έναν εκκινητή που βρίσκεται στο συρτάρι."
+
+#~ msgid ""
+#~ "If true, a launcher is highlighted when the user moves the pointer over "
+#~ "it."
+#~ msgstr ""
+#~ "Αν αληθές, θα επισημαίνεται ο εκκινητής όταν ο χρήστης μετακινεί το "
+#~ "ποντίκι από πάνω του."
+
+#~ msgid ""
+#~ "If true, the panel will not allow a user to log out, by removing access "
+#~ "to the log out menu entries."
+#~ msgstr ""
+#~ "Αν αληθές, ο πίνακας εφαρμογών δεν θα επιτρέπει σε ένα χρήστη να "
+#~ "αποσυνδέεται, με το να αρνείται την πρόσβαση στο μενού αποσύνδεσης."
+
+#~ msgid "If true, tooltips are shown for objects in panels."
+#~ msgstr ""
+#~ "Αν αληθές, οι συμβουλές οθόνης εμφανίζονται για τα αντικείμενα στους "
+#~ "πίνακες εφαρμογών."
+
+#~ msgid ""
+#~ "This key is deprecated as it cannot be used to implement proper lockdown. "
+#~ "The /desktop/gnome/lockdown/disable_lock_screen key should be used "
+#~ "instead."
+#~ msgstr ""
+#~ "Αυτό το κλειδί είναι παρωχημένο και δεν μπορεί να χρησιμοποιηθεί για την "
+#~ "εφαρμογή ενός κανονικού κλειδώματος. Θα πρέπει να χρησιμοποιηθεί το "
+#~ "κλειδί /desktop/gnome/lockdown/disable_lock_screen"
+
+#~ msgid "Change desktop appearance and behavior, get help, or log out"
+#~ msgstr ""
+#~ "Αλλαγή της εμφάνισης και της συμπεριφοράς της επιφάνειας εργασίας, λήψη "
+#~ "βοήθειας, ή αποσύνδεση"
+
+#~ msgid "System"
+#~ msgstr "Σύστημα"
+
+#~ msgctxt "panel:showusername"
+#~ msgid "1"
+#~ msgstr "Αποσύνδεση %s"
+
+#~ msgid "Log Out %s..."
+#~ msgstr "Αποσύνδεση %s..."
+
+#~ msgid "Log out %s of this session to log in as a different user"
+#~ msgstr ""
+#~ "Αποσύνδεση %s από αυτή τη συνεδρία για σύνδεση ως διαφορετικός χρήστης"
+
+#~ msgid "Action button type"
+#~ msgstr "Τύπος ενέργειας κουμπιού"
+
+#~ msgid "Applet Bonobo IID"
+#~ msgstr "Bonobo IID μικροεφαρμογής"
+
+#~ msgid ""
+#~ "If true, the custom_icon key is used as a custom icon for the button. If "
+#~ "false, the custom_icon key is ignored. This key is only relevant if the "
+#~ "object_type key is \"menu-object\" or \"drawer-object\"."
+#~ msgstr ""
+#~ "Αν αληθές, το κλειδί custom_icon χρησιμοποιείται σαν προσαρμοσμένο "
+#~ "εικονίδιο για το κουμπί. Αν ψευδές, το κλειδί custom_icon αγνοείται. Το "
+#~ "κλειδί έχει χρησιμότητα μόνο αν το κλειδί object_type είναι \"menu-object"
+#~ "\" ή \"drawer-object\"."
+
+#~ msgid ""
+#~ "If true, the menu_path key is used as the path from which the menu "
+#~ "contents should be constructed. If false, the menu_path key is ignored. "
+#~ "This key is only relevant if the object_type key is \"menu-object\"."
+#~ msgstr ""
+#~ "Αν αληθές, το κλειδί menu_path χρησιμοποιείται σαν τη διαδρομή από την "
+#~ "οποία θα κατασκευαστούν τα περιεχόμενα του μενού. Αν ψευδές, το κλειδί "
+#~ "menu_path θα αγνοηθεί. Το κλειδί έχει χρησιμότητα μόνο όταν το κλειδί "
+#~ "object_type είναι \"menu-object\"."
+
+#~ msgid ""
+#~ "If true, the user may not move the applet without first unlocking the "
+#~ "object using the \"Unlock\" menuitem."
+#~ msgstr ""
+#~ "Αν αληθές, τότε ο χρήστης δε θα μπορεί να μετακινεί τη μικροεφαρμογή αν "
+#~ "δεν ξεκλειδώσει πρώτα τα αντικείμενο χρησιμοποιώντας το αντικείμενο μενού "
+#~ "\"Ξεκλείδωμα\"."
+
+#~ msgid "Lock the object to the panel"
+#~ msgstr "Κλείδωμα αντικειμένου στον πίνακα εφαρμογών"
+
+#~ msgid "Panel attached to drawer"
+#~ msgstr "Ο πίνακας εφαρμογών που έχει συνδεθεί σε αυτό το συρτάρι"
+
+#~ msgid "Panel object type"
+#~ msgstr "Τύπος αντικειμένου πίνακα εφαρμογών"
+
+#~ msgid ""
+#~ "The action type this button represents. Possible values are \"lock\", "
+#~ "\"logout\", \"run\", \"search\" and \"screenshot\". This key is only "
+#~ "relevant if the object_type key is \"action-applet\"."
+#~ msgstr ""
+#~ "Ο τύπος της ενέργειας που εκπροσωπεί το κουμπί. Οι πιθανές τιμές είναι οι "
+#~ "\"lock\", \"logout\", \"run\", \"search\" και \"screenshot\". Αυτό το "
+#~ "κλειδί έχει χρησιμότητα μόνο αν το κλειδί object_type είναι \"action-"
+#~ "applet\"."
+
+#~ msgid ""
+#~ "The identifier of the panel attached to this drawer. This key is only "
+#~ "relevant if the object_type key is \"drawer-object\"."
+#~ msgstr ""
+#~ "Το αναγνωριστικό του πίνακα εφαρμογών που συνδέεται με αυτό το συρτάρι. "
+#~ "Αυτό το κλειδί έχει χρησιμότητα μόνο αν το κλειδί object_type είναι "
+#~ "\"drawer-object\"."
+
+#~ msgid ""
+#~ "The implementation ID of the applet - e.g. \"ClockAppletFactory::"
+#~ "ClockApplet\". This key is only relevant if the object_type key is "
+#~ "\"external-applet\" (or the deprecated \"bonobo-applet\")."
+#~ msgstr ""
+#~ "Η ταυτότητα υλοποίησης της μικροεφαρμογής - π.χ. \"ClockAppletFactory::"
+#~ "ClockApplet\". Αυτό το κλειδί είναι σχετικό μόνο εάν το κλειδί "
+#~ "object_type είναι \"external-applet\" (ή το παρωχημένο \"bonobo-applet\")."
+
+#~ msgid ""
+#~ "The text to display in a tooltip for this drawer or this menu. This key "
+#~ "is only relevant if the object_type key is \"drawer-object\" or \"menu-"
+#~ "object\"."
+#~ msgstr ""
+#~ "Το κείμενο που θα εμφανίζεται σε μια συμβουλή οθόνης για αυτό το μενού. "
+#~ "Αυτό το κλειδί έχει σημασία μόνο αν το object_type key είναι \"drawer-"
+#~ "object\" ή \"menu-object\"."
+
+#~ msgid ""
+#~ "The type of this panel object. Possible values are \"drawer-object\", "
+#~ "\"menu-object\", \"launcher-object\", \"external-applet\", \"action-applet"
+#~ "\", \"menu-bar\" and \"separator\"."
+#~ msgstr ""
+#~ "Το είδος αυτού του αντικειμένου πίνακα εφαρμογών. Οι πιθανές τιμές είναι "
+#~ "\"drawer-object\", \"menu-object\", \"launcher-object\", \"external-applet"
+#~ "\", \"action-applet\", \"menu-bar\" και \"separator\"."
+
+#~ msgid ""
+#~ "This key is deprecated, following the migration to a new library for "
+#~ "applets. The Bonobo implementation ID of the applet - e.g. \"OAFIID:"
+#~ "GNOME_ClockApplet\". This key is only relevant if the object_type key is "
+#~ "\"bonobo-applet\"."
+#~ msgstr ""
+#~ "Αυτό το κλειδί είναι μη αποδεκτό, μετά από τη μεταφορά σε νέα βιβλιοθήκη "
+#~ "για τις μικροεφαρμογές. Η ταυτότητα υλοποίησης της μικροεφαρμογής του "
+#~ "Bonobo – π.χ. \"OAFIID:GNOME_ClockApplet\". Αυτό το κλειδί είναι σχετικό "
+#~ "μόνο εάν το κλειδί object_type είναι \"bonobo-applet\"."
+
+#~ msgid "Use custom icon for object's button"
+#~ msgstr "Χρήση προσαρμοσμένου εικονιδίου για το κουμπί αντικειμένου"
+
+#~ msgid "Use custom path for menu contents"
+#~ msgstr "Χρήση προσαρμοσμένης διαδρομής για τα περιεχόμενα του μενού"
+
+#~ msgid "Error reading GConf string value '%s': %s"
+#~ msgstr "Σφάλμα ανάγνωσης τιμής αλφαριθμητικού GConf '%s': %s"
+
+#~ msgid "Error reading GConf integer value '%s': %s"
+#~ msgstr "Σφάλμα ανάγνωσης τιμής ακεραίου GConf '%s': %s"
+
+#~ msgid ""
+#~ "Panel '%s' is set to be displayed on screen %d which is not currently "
+#~ "available. Not loading this panel."
+#~ msgstr ""
+#~ "Ο πίνακας εφαρμογών '%s' έχει ορισθεί να εμφανίζεται στην οθόνη %d που "
+#~ "αυτή τη στιγμή δεν είναι διαθέσιμη. Δε φορτώνεται αυτός ο πίνακας "
+#~ "εφαρμογών."
+
+#~ msgid "Error reading GConf boolean value '%s': %s"
+#~ msgstr "Σφάλμα ανάγνωσης τιμής boolean GConf '%s': %s"
+
+#~ msgid "Drawer Properties"
+#~ msgstr "Ιδιότητες συρταριού"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Εικονίδιο:"
+
+#~ msgid "Background color opacity"
+#~ msgstr "Διαφάνεια χρώματος παρασκηνίου"
+
+#~ msgid "Fit image to panel"
+#~ msgstr "Σμίκρυνση εικόνας να χωράει στον πίνακα εφαρμογών"
+
+#~ msgid ""
+#~ "If true, hiding and un-hiding of this panel will be animated rather than "
+#~ "happening instantly."
+#~ msgstr ""
+#~ "Αν αληθές, η απόκρυψη και η επανεμφάνιση αυτού του πίνακα εφαρμογών θα "
+#~ "κινείται σταδιακά αντί να φαίνεται ακαριαία."
+
+#~ msgid ""
+#~ "If true, the image will be scaled (retaining the aspect ratio of the "
+#~ "image) to the panel height (if horizontal)."
+#~ msgstr ""
+#~ "Αν αληθές, η εικόνα θα προσαρμόζεται (διατηρώντας το συντελεστή της "
+#~ "εικόνας) στο ύψος του πίνακα εφαρμογών (αν οριζόντια)."
+
+#~ msgid ""
+#~ "If true, the image will be scaled to the panel dimensions. The aspect "
+#~ "ratio of the image will not be maintained."
+#~ msgstr ""
+#~ "Αν αληθές, η εικόνα θα προσαρμοστεί στις διαστάσεις του πίνακα εφαρμογών. "
+#~ "Ο συντελεστής διαστάσεων της εικόνας θα αλλοιωθεί."
+
+#~ msgid ""
+#~ "Specifies the opacity of the background color format. If the color is not "
+#~ "completely opaque (a value of less than 65535), the color will be "
+#~ "composited onto the desktop background image."
+#~ msgstr ""
+#~ "Καθορίζει την αδιαφάνεια της μορφής χρώματος παρασκηνίου. Αν το χρώμα δεν "
+#~ "είναι εντελώς αδιαφανές (μια τιμή μικρότερη από 65535), τότε το χρώμα θα "
+#~ "είναι σύνθετο στην εικόνα παρασκηνίου."
+
+#~ msgid "Stretch image to panel"
+#~ msgstr "Τέντωμα εικόνας στον πίνακα εφαρμογών"
+
+#~ msgid "Could not execute '%s'"
+#~ msgstr "Αδύνατη η εκτέλεση του '%s'"
+
+#~ msgid "Delete this drawer?"
+#~ msgstr "Αφαίρεση αυτού του συρταριού;"
+
+#~ msgid ""
+#~ "When a drawer is deleted, the drawer and its\n"
+#~ "settings are lost."
+#~ msgstr ""
+#~ "Όταν ένα συρτάρι αφαιρείται, οι ρυθμίσεις του\n"
+#~ "και το συρτάρι χάνονται."
+
+#~ msgid "Set System Time..."
+#~ msgstr "Ρύθμιση ώρας συστήματος..."
+
+#~ msgid "Set System Time"
+#~ msgstr "Ρύθμιση ώρας συστήματος"
+
+#~ msgid "_About"
+#~ msgstr "_Περί"
+
+#~ msgid "The Clock displays the current time and date"
+#~ msgstr "Το ρολόι προβάλλει την τρέχουσα ημερομηνία και ώρα"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Ελληνική μεταφραστική ομάδα GNOME\n"
+#~ " Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>, 1999\n"
+#~ " Συμεών (σίμος) Ξενιτέλλης <simos@hellug.gr>, 2000, 2001, 2002\n"
+#~ " Σαράντης Πασχάλης <paskalis@di.uoa.gr>, 2000\n"
+#~ " Κώστας Παπαδήμας <pkst@gnome.org>, 2002-2009\n"
+#~ " Φώτης Τσάμης <ftsamis@gmail.com>, 2009\n"
+#~ " Θάνος Λευτέρης <alefteris@gmail.com>, 2009\n"
+#~ "\n"
+#~ "Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα http://www.gnome.gr/"
+
+#~ msgid "Current Time:"
+#~ msgstr "Τρέχουσα ώρα:"
+
+#~ msgid "Time & Date"
+#~ msgstr "Ώρα & Ημερομηνία"
+
+#~ msgid "_Set System Time"
+#~ msgstr "Ρύθμιση ώρας _συστήματος"
+
+#~ msgid "_Time:"
+#~ msgstr "Ώ_ρα:"
+
+#~ msgid ""
+#~ "%s has no use what-so-ever. It only takes up disk space and compilation "
+#~ "time, and if loaded it also takes up precious panel space and memory. "
+#~ "Anybody found using it should be promptly sent for a psychiatric "
+#~ "evaluation."
+#~ msgstr ""
+#~ "Το %s δεν έχει καμία απολύτως χρησιμότητα. Απλώς καταναλώνει χώρο στο "
+#~ "δίσκο και χρόνο μεταγλώττισης, και εάν εκτελεσθεί καταλαμβάνει επίσης "
+#~ "πολύτιμο χώρο στον πίνακα εφαρμογών και στη μνήμη. Όποιος βρεθεί να "
+#~ "χρησιμοποιεί αυτή τη μικροεφαρμογή, πρέπει να υποβληθεί εγκαίρως σε "
+#~ "ψυχολογική εξέταση."
+
+#~ msgid "(with minor help from George)"
+#~ msgstr "(με λίγη βοήθεια από το George)"
+
+#~ msgid "This button lets you hide all windows and show the desktop."
+#~ msgstr ""
+#~ "Αυτό το κουμπί επιτρέπει την απόκρυψη όλων των παραθύρων και εμφάνιση της "
+#~ "επιφάνειας εργασίας."
+
+#~ msgid ""
+#~ "The Window List shows a list of all windows in a set of buttons and lets "
+#~ "you browse them."
+#~ msgstr ""
+#~ "Η Λίστα παραθύρων εμφανίζει μια λίστα από τα παράθυρα και σας επιτρέπει "
+#~ "να τα ξεφυλλίσετε."
+
+#~ msgid ""
+#~ "The Window Selector shows a list of all windows in a menu and lets you "
+#~ "browse them."
+#~ msgstr ""
+#~ "Ο Επιλογέας Παραθύρου εμφανίζει μια λίστα από όλα τα παράθυρα σε ένα "
+#~ "μενού και σας επιτρέπει να τα ξεφυλλίσετε."
+
+#~ msgid ""
+#~ "The Workspace Switcher shows you a small version of your workspaces that "
+#~ "lets you manage your windows."
+#~ msgstr ""
+#~ "Ο Εναλλάκτης Χώρων Εργασίας σας δείχνει μια μικρογραφία των χώρων σας και "
+#~ "σας επιτρέπει να διαχειριστείτε τα παράθυρα σας."
+
+#~ msgid "query returned exception %s\n"
+#~ msgstr "η επερώτηση επέστρεψε την εξαίρεση %s\n"
+
+#~ msgid "<b>GAME OVER</b> at level %d!"
+#~ msgstr "<b>ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ</b> στο επίπεδο %d!"
+
+#~ msgid "%1$s   %2$s   %3$s"
+#~ msgstr "%1$s   %2$s   %3$s"
+
+#~ msgid "Press 'q' to quit"
+#~ msgstr "Πατήστε 'q' για έξοδο"
+
+#~ msgid "Paused"
+#~ msgstr "Σε παύση"
+
+#~ msgid "%1$s\t%2$s"
+#~ msgstr "%1$s\t%2$s"
+
+#~ msgid "Press 'p' to unpause"
+#~ msgstr "Πατήστε 'p' για άρση παύσης"
+
+#~ msgid "Level: %s,  Lives: %s"
+#~ msgstr "Επίπεδο: %s,  Ζωές: %s"
+
+#~ msgid "Left/Right to move, Space to fire, 'p' to pause, 'q' to quit"
+#~ msgstr ""
+#~ "Left/Right για μετακίνηση, Space για πυροβολισμό, 'p' για παύση, 'q' για "
+#~ "έξοδο"
+
+#~ msgid "Killer GEGLs from Outer Space"
+#~ msgstr "Φονικά GEGLs από το διάστημα"
+
+#~ msgid "And many, many others..."
+#~ msgstr "Και πολλοί, πολλοί άλλοι..."
+
+#~ msgid "The GNOME Panel"
+#~ msgstr "Ο πίνακας εφαρμογών του GNOME"
+
+#~ msgid ""
+#~ "This program is responsible for launching other applications and provides "
+#~ "useful utilities."
+#~ msgstr ""
+#~ "Το παρόν πρόγραμμα είναι υπεύθυνο για την εκκίνηση άλλων εφαρμογών και "
+#~ "παρέχει χρήσιμα εργαλεία."
+
+#~ msgid "About the GNOME Panel"
+#~ msgstr "Περί του πίνακα εφαρμογών του GNOME"
+
+#~ msgid "A_bout Panels"
+#~ msgstr "_Περί πίνακα εφαρμογών"
+
+#~ msgid "Change system time"
+#~ msgstr "Αλλαγή της ώρας συστήματος"
+
+#~ msgid "Change system time zone"
+#~ msgstr "Αλλαγή της ζώνης αλλαγής ώρας συστήματος"
+
+#~ msgid "Configure hardware clock"
+#~ msgstr "Ρύθμιση του εσωτερικού ρολογιού"
+
+#~ msgid "Privileges are required to change the system time zone."
+#~ msgstr "Απαιτούνται προνόμια για την αλλαγή της ζώνης ώρας συστήματος."
+
+#~ msgid "Privileges are required to change the system time."
+#~ msgstr "Απαιτούνται προνόμια για την αλλαγή της ώρας συστήματος."
+
+#~ msgid "Privileges are required to configure the hardware clock."
+#~ msgstr "Απαιτούνται προνόμια για την ρύθμιση του εσωτερικού ρολογιού."
+
+#~ msgid "Exception from popup_menu '%s'\n"
+#~ msgstr "Εξαίρεση από το αναδυόμενο _μενού '%s'\n"
+
+#~ msgid "Unable to obtain AppletShell interface from control\n"
+#~ msgstr "Αδυναμία λήψης γραφικού περιβάλλοντος AppletShell από έλεγχο\n"
+
+#~ msgid "If true, display time in Universal Coordinated Time zone."
+#~ msgstr "Αν αληθές, προβάλλει την ώρα σε ζώνη UTC."
+
+#~ msgid "Browse icons"
+#~ msgstr "Περιήγηση εικονιδίων"
+
+#~ msgid "Failed to launch time configuration tool: %s"
+#~ msgstr "Αποτυχία εκκίνησης του εργαλείου ρύθμισης ώρας: %s"
+
+#~ msgid ""
+#~ "Failed to locate a program for configuring the date and time. Perhaps "
+#~ "none is installed?"
+#~ msgstr ""
+#~ "Αποτυχία εντοπισμού ενός προγράμματος για τη ρύθμιση ώρας και "
+#~ "ημερομηνίας. Πιθανόν να μην έχει εγκατασταθεί;"
+
+#~ msgid "<b>Clock Options</b>"
+#~ msgstr "<b>Επιλογές ρολογιού</b>"
+
+#~ msgid ""
+#~ "This key specifies the program to run in order to configure the time."
+#~ msgstr "Πρόγραμμα που θα εκτελείται για τη ρύθμιση της ώρας."
+
+#~ msgid "<b>Animation</b>"
+#~ msgstr "<b>Κίνηση</b>"
+
+#~ msgid "<b>General</b>"
+#~ msgstr "<b>Γενικά</b>"
+
+#~ msgid "<b>Workspaces</b>"
+#~ msgstr "<b>Χώροι εργασίας</b>"
+
+#~ msgid "_Command:"
+#~ msgstr "_Εντολή:"
+
+#~ msgid "Disable Lock Screen"
+#~ msgstr "Απενεργοποίηση Κλειδώματος οθόνης"
+
+#~ msgid ""
+#~ "If true, the panel will not allow a user to lock their screen, by "
+#~ "removing access to the lock screen menu entries."
+#~ msgstr ""
+#~ "Αν αληθές, ο πίνακας εφαρμογών δεν θα επιτρέπει σε ένα χρήστη να "
+#~ "κλειδώνει, με το να αρνείται την πρόσβαση στο μενού κλειδώματος οθόνης."
+
+#~ msgid "Command entry"
+#~ msgstr "Καταχώρηση εντολής"
+
+#~ msgid "Enter a command string here to run it."
+#~ msgstr "Εισάγετε ένα αλφαριθμητικό εντολής για να την εκτελέσετε."
+
+#~ msgid "<b>Time Settings</b>"
+#~ msgstr "<b>Ρυθμίσεις ώρας</b>"
+
+#~ msgid "Time Settings"
+#~ msgstr "Ρυθμίσεις ώρας"

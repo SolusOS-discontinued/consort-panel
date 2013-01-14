@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Руководство по апплету Рыбка</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Пол Катлер (Paul Cutler)</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright><copyright><year>2008.</year><holder>Yuri Myasoedov (omerta13@yandex.ru)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Проект документирования GNOME</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Разрешается копировать, распространять и/или изменять этот документ на условиях лицензии GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней версии, опубликованной Фондом свободного программного обеспечения (Free Software Foundation), без неизменяемых частей и без текстов на обложках. Вы можете найти копию лицензии GFDL по  <ulink type="help" url="ghelp:fdl">этой ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+          <para>Это руководство — часть документации GNOME, которая распространяется на условиях лицензии GNU FDL. Если вы хотите распространять это руководство отдельно от остальной документации, вам следует приложить к руководству копию лицензии, как описано в разделе 6 лицензии.</para>
+ 
+         <para>Некоторые имена и марки используются компаниями для обозначения их продуктов и услуг и являются торговыми марками. Там, где эти имена присутствуют в документации и участники проекта документирования GNOME знают об этом, имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+ 
+         <para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДОСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ НА УСЛОВИЯХ ЛИЦЕНЗИИ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО: <orderedlist>
+                 <listitem>
+                   <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ «КАК ЕСТЬ», БЕЗ ВСЯКИХ ГАРАНТИЙ, ЯВНЫХ ИЛИ НЕЯВНЫХ, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИИ ТОГО, ЧТО ДОКУМЕНТ ИЛИ ИЗМЕНЁННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ПРИГОДНА К ПРОДАЖЕ, ПРИГОДНА К ИСПОЛЬЗОВАНИЮ В ОПРЕДЕЛЁННЫХ ЦЕЛЯХ ИЛИ НЕ НАРУШАЕТ ЗАКОНЫ. ВЕСЬ РИСК, КАСАЮЩИЙСЯ КАЧЕСТВА, ТОЧНОСТИ ИЛИ ПРАВИЛЬНОСТИ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ЛЕЖИТ НА ВАС. ЕСЛИ ДОКУМЕНТ ИЛИ ИЗМЕНЁННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) БЕРЁТЕ НА СЕБЯ СТОИМОСТЬ ЛЮБОЙ НЕОБХОДИМОЙ ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЯ. ЭТОТ ОТКАЗ ОТ ГАРАНТИЙ СОСТАВЛЯЕТ ВАЖНУЮ ЧАСТЬ ЛИЦЕНЗИИ. НИКАКОЕ ИСПОЛЬЗОВАНИЕ ДОКУМЕНТА ИЛИ ИЗМЕНЁННОЙ ВЕРСИИ ДОКУМЕНТА НЕ ДОПУСКАЕТСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+                 </listitem>
+                 <listitem>
+                   <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ, ПОМОЩНИКИ ИЛИ РАСПРОСТРАНИТЕЛИ ДОКУМЕНТА НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЙ, КОСВЕННЫЙ, СПЕЦИАЛЬНЫЙ, СЛУЧАЙНЫЙ ИЛИ ПРЕДНАМЕРЕННЫЙ УЩЕРБ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, ПОТЕРЮ РЕПУТАЦИИ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ ПОЛОМКИ, ИЛИ ЛЮБОЙ ДРУГОЙ УЩЕРБ ИЛИ ПОТЕРИ, ВОЗНИКАЮЩИЕ ВСЛЕДСТВИЕ ИЛИ СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА УВЕДОМЛЕНА О ВОЗМОЖНОСТИ ТАКОГО УЩЕРБА.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Пол</firstname> 
+		  <surname>Катлер</surname> 
+		  <affiliation> 
+			 <orgname>Проект документирования GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Команда документирования GNOME</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Проект документирования GNOME</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Руководство по апплету Рыбка версии 2.5</revnumber> 
+		  <date>Июнь 2009</date> 
+		  <revdescription> 
+			 <para role="author">Команда Sun документирования GNOME</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Руководство по апплету Рыбка версии 2.4</revnumber> 
+		  <date>Июнь 2009</date> 
+		  <revdescription> 
+			 <para role="author">Команда Sun документирования GNOME</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство по апплету Рыбка версии 2.2</revnumber> 
+		  <date>Январь 2003</date> 
+		  <revdescription> 
+			 <para role="author">Команда Sun документирования GNOME</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство по апплету Рыбка версии 2.1</revnumber> 
+		  <date>Август 2002</date> 
+		  <revdescription> 
+			 <para role="author">Команда Sun документирования GNOME</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Руководство по апплету Рыбка версии 2.0</revnumber> 
+		  <date>Май 2002</date> 
+		  <revdescription> 
+			 <para role="author">Команда Sun документирования GNOME</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Руководство по апплету Рыбка</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Это руководство описывает программу Рыбка версии 3.4.7.4ac19</releaseinfo> 
+	 <legalnotice> 
+		<title>Обратная связь</title> 
+		<para>Чтобы сообщить об ошибке или сделать предложение по апплету Рыбка или этому руководству, следуйте указаниям в документе <ulink url="ghelp:gnome-feedback" type="help">Обратная связь с GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>Апплет Рыбка показывает движущееся изображение на панели и предсказывает судьбу при нажатии.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Рыбка</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Введение</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Апплет Рыбка</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Показывает апплет Рыбка.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Апплет <application>Рыбка</application> показывает движущееся изображение рыбки на панели. Вы можете изменить имя рыбки и программу, которая запускается при щелчке по панели. По умолчанию, запускается программа <application>Fortune</application>, которая, обычно, показывает смешное произвольное сообщение из базы данных цитат.</para>
+
+
+
+
+<para>Изображение на панели и команда, которая выполняется при щелчке левой кнопкой мыши, могут настраиваться пользователем.</para>
+<sect2 id="fish-introduction-add">
+<title>Добавление Рыбки на панель</title>
+  <para>Выполните следующие шаги:</para>
+         <orderedlist>
+           <listitem>
+             <para>нажмите правую кнопку мыши на панели;</para>
+           </listitem>
+           <listitem>
+             <para>выберите <guimenuitem>Добавить на панель</guimenuitem>;</para>
+           </listitem>
+           <listitem>
+             <para>прокрутите вниз список элементов диалогового окна <guimenuitem>Добавить на панель</guimenuitem>, выберите <guilabel>Рыбка</guilabel>;</para>
+           </listitem>
+           <listitem>
+             <para>нажмите кнопку <guibutton>Добавить</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Использование</title>
+<para>Для появления диалогового окна <guilabel>Рыбка по имени Wanda</guilabel> нажмите левую кнопку мыши на апплете. Диалоговое окно отображает послание судьбы. Можно настроить поведение апплета, определив команду, которая выполняется по щелчку. Для получения более подробной информации смотрите <xref linkend="fish-settings"/>.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Параметры</title>
+<para>Чтобы настроить апплет <application>Рыбка</application>, нажмите правую кнопку мыши на апплете <application>Рыбка</application>, затем выберите <guimenu>Параметры</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Имя рыбки</guilabel> </term>
+<listitem>
+<para>В этом поле ввода можно задать имя рыбки.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Команда, выполняемая по щелчку</guilabel> </term>
+<listitem>
+<para>По умолчанию, апплет <application>Рыбка</application> выполняет команду <literal>fortune</literal> по щелчку на нём. В этом поле ввода можно задать другую команду.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Файл</guilabel> </term>
+<listitem>
+<para>Это поле используется для выбора изображения для апплета. Можно выбрать изображение, поставляемое с апплетом, или своё собственное изображение. </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Количество кадров в анимации</guilabel> </term>
+<listitem>
+<para>С помощью счётчика можно задать количество кадров в анимации.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Задержка кадра</guilabel> </term>
+<listitem>
+<para>С помощью счётчика можно установить задержку в секундах между кадрами в анимации.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Поворот на вертикальных панелях</guilabel> </term>
+<listitem>
+<para>Выберите этот параметр, чтобы повернуть изображение апплета, когда апплет добавляется на вертикальную панель.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

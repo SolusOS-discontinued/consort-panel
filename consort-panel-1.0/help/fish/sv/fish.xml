@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Handbok för Fisk</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Paul Cutler</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright><copyright><year>2006</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Dokumentationsprojekt för GNOME</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+          <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+ 
+         <para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+ 
+         <para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+                 <listitem>
+                   <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+                 </listitem>
+                 <listitem>
+                   <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentationsprojekt för GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Suns</firstname> 
+		  <surname>GNOME-dokumentationsteam</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Dokumentationsprojekt för GNOME</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Fish Applet Manual V2.5</revnumber> 
+		  <date>June 2009</date> 
+		  <revdescription> 
+			 <para role="author">Suns GNOME-dokumentationsteam</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Fish Applet Manual V2.4</revnumber> 
+		  <date>June 2009</date> 
+		  <revdescription> 
+			 <para role="author">Suns GNOME-dokumentationsteam</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Fisk v2.2</revnumber> 
+		  <date>Januari 2003</date> 
+		  <revdescription> 
+			 <para role="author">Suns GNOME-dokumentationsteam</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Fisk v2.1</revnumber> 
+		  <date>Augusti 2002</date> 
+		  <revdescription> 
+			 <para role="author">Suns GNOME-dokumentationsteam</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Fisk v2.0</revnumber> 
+		  <date>Maj 2002</date> 
+		  <revdescription> 
+			 <para role="author">Suns GNOME-dokumentationsteam</para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Handbok för panelprogrammet Fisk</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Denna handbok beskriver version 3.4.7.4ac19 av Fisk.</releaseinfo> 
+	 <legalnotice> 
+		<title>Återkoppling</title> 
+		<para>För att rapportera ett fel eller komma med ett förslag angående panelprogrammet Fisk eller denna handbok, följ instruktionerna på <ulink url="ghelp:gnome-feedback" type="help">GNOME:s återkopplingssida</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>The Fish applet displays an animated image in the panel and gives you
+                  your fortune when clicked.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Fisk</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Introduktion</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Panelprogrammet Fisk</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Visar panelprogrammet Fisk.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>The <application>Fish</application> applet displays an animated fish in the panel.  You can customize the fish's name and the program that is run when the fish is clicked in the panel.  By default, the program that is run when the fish is clicked is <application>Fortune</application>, which displays a usually comical random message from a database of quotations.</para>
+
+
+
+
+<para>Du kan anpassa bilden som visas och kommandot som körs när du klickar på den.</para>
+<sect2 id="fish-introduction-add">
+<title>Lägg till Fisk i en panel</title>
+  <para>Genomför följande steg:</para>
+         <orderedlist>
+           <listitem>
+             <para>Högerklicka på panelen.</para>
+           </listitem>
+           <listitem>
+             <para>Välj <guimenuitem>Lägg till i panel</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Rulla ner i listan av poster i dialogrutan <guilabel>Lägg till i panel</guilabel>, välj sedan <guilabel>Fisk</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Klicka på <guibutton>Lägg till</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Användning</title>
+<para>Klicka på panelprogrammet för att visa dialogrutan <guilabel>Fisken Wanda</guilabel>. Dialogrutan visar en lyckokaka. Du kan konfigurera panelprogrammet för att ange kommandot som körs när du klicka på panelprogrammet. Se <xref linkend="fish-settings"/> för mer information.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Inställningar</title>
+<para>För att konfigurera <application>Fisk</application>, högerklicka på panelprogrammet <application> Fisk</application>, välj sedan <guimenu>Inställningar</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Namn på fisken</guilabel> </term>
+<listitem>
+<para>Använd denna textruta för att ange namnet på fisken.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Kommando att köra vid klickning</guilabel> </term>
+<listitem>
+<para>Som standard kör <application>Fisk</application> kommandot <literal>fortune</literal> när du klickar på panelprogrammet. Använd denna textruta för att ange ett alternativt kommando att köra.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Fil</guilabel> </term>
+<listitem>
+<para>Använd detta fält för att välja bilden att visa i panelprogrammet. Du kan välja en bild som skickas med panelprogrammet eller en personlig bild.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Totalt antal bildrutor i animering</guilabel> </term>
+<listitem>
+<para>Använd denna väljare för att ange antalet bildrutor i animeringen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Paus per bildruta</guilabel> </term>
+<listitem>
+<para>Använd denna väljare för att ange pausen i sekunder mellan varje bildruta i animeringen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Rotera på vertikala paneler</guilabel> </term>
+<listitem>
+<para>Välj detta alternativ för att rotera bilden i panelprogrammet när du lägger till panelprogrammet till en vertikal panel.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

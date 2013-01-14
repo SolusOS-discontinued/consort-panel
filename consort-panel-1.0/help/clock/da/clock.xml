@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Urmanual</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2009, 2010.</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>GNOME-dokumentationsprojekt</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+<para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist><listitem>
+<para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+</listitem>
+<listitem>
+<para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-dokumentationsprojekt</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-dokumentationsprojekt</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>GNOME-dokumentationsprojekt</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.7</revnumber> 
+		  <date>Januar 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.6</revnumber> 
+		  <date>Januar 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.5</revnumber> 
+		  <date>Februar 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.4</revnumber> 
+		  <date>September 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.3</revnumber> 
+		  <date>Januar 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.2</revnumber> 
+		  <date>August 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.1</revnumber> 
+		  <date>Juni 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual til urpanelprogram version 2.0</revnumber> 
+		  <date>Marts 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual til urpanelprogram til urpanelprogrammet</revnumber> 
+		  <date>April 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Denne manual beskriver version 2.5.3.1 af urpanelprogrammet.</releaseinfo> 
+	 <legalnotice> 
+		<title>Tilbagemeldinger</title> 
+		<para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende urpanelprogrammet eller denne manual så følg vejledningen på siden <ulink url="ghelp:gnome-feedback" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>Panelprogrammet <application>Ur</application> viser datoen og tiden og, hvis der klikkes på panelprogrammet, en kalender. <application>Uret</application> kan tilpasses til at vise sekunder eller et 12 eller 24-timers ur.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Ur</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Indledning</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Urpanelprogram</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Viser urpanelprogram.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Panelprogrammet <application>Ur</application> viser datoen og tiden og, hvis der klikkes på panelprogrammet, en kalender. <application>Uret</application> kan tilpasses til at vise sekunder eller et 12 eller 24-timers ur.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Tilføjelse af uret til et panel</title>
+  <para>Udfør de følgende trin:</para>
+         <orderedlist>
+           <listitem>
+             <para>Højreklik på panelet.</para>
+           </listitem>
+           <listitem>
+             <para>Vælg <guimenuitem>Tilføj til panel</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Rul ned i listen af punkter i vinduet <guilabel>Tilføj til panel</guilabel>, og vælg <guilabel>Ur</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Klik <guibutton>Tilføj</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Brug</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Visning af kalenderen</title>	
+	<para>Klik på panelprogrammet for at åbne en lille kalender der viser den aktuelle måned. Klik igen på den del af panelprogrammet som er i panelet for at lukke kalenderen.</para>
+	
+	<para>Du kan ændre måneden vist i kalenderen ved at klikke på pilene på hver side af måneds- og årsteksten.</para>	
+	
+	<para>Dobbeltklik på en dag i kalenderen for at starte samarbejdsprogrammet <application>Evolution</application>.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Indsætttelse af dato eller tid i et program</title>	
+<para>Panelprogrammet <application>Ur</application> henter tiden fra systemuret.</para>
+<para>Indsættelse af datoen eller tiden fra panelprogrammet <application>Ur</application> i et program udføres på følgende måde:</para>
+	<orderedlist>
+		<listitem>
+			<para>Højreklik på panelprogrammet <application>Ur</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Vælg et af de følgende menupunkter fra panelprogrammets pop op-menu:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Kopier tidspunkt</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Kopier dato</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Peg på stedet i dit program hvor du ønsker at indsætte dato eller tid.</para>
+		</listitem>
+		<listitem>
+			<para>Vælg <menuchoice><guimenu>Rediger</guimenu><guimenuitem>Indsæt</guimenuitem></menuchoice> eller midterklik for at indsætte dato eller tidspunkt.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Justering af systemdato eller tid</title>
+	<para>Justering af systemets dato eller tid, som vises i panelprogrammet <application>Ur</application>, udføres på følgende måde:</para>
+	<orderedlist>
+	<listitem>
+			<para>Højreklik på panelprogrammet, vælg så <guimenuitem>Juster dato &amp; tid</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Indtast adgangskoden for <literal>root</literal> og klik på <guibutton>O.k.</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>Panelprogrammet <application>Ur</application> starter systemværktøjet som indstiller systemdatoen og tiden. Anvend værktøjet for at justere datoen og tiden.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Urindstillinger</title> 
+	<para>For at konfigurere <application>Uret</application>, højreklikkes på panelprogrammet, og der vælges <guimenuitem>Indstillinger</guimenuitem>. Du vil blive præsenteret for tre faneblade hvor du kan ændre indstillinger for <guimenuitem>Generelt</guimenuitem>, <guimenuitem>Lokationer</guimenuitem> eller <guimenuitem>Vejret</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>Generelle indstillinger</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Urformat</guilabel></term> 
+			 <listitem> 
+			 <para>Vælg en af de følgende indstillinger:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12-time</guilabel></para>
+			 <para>Vis tiden i formatet a.m./p.m.</para>
+			 <note><para>Denne indstilling vises ikke, hvis dit valgte sprog ikke bruger uropsætningen 12-timer.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24-time</guilabel></para>
+			 <para>Viser tiden i formatet 00.00 til 24.00.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Vis datoen</guilabel></term>
+			 <listitem> 
+			 <para>Vælg denne indstilling for at vise datoen i panelprogrammet.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Vis sekunder</guilabel></term>
+			 <listitem> 
+			 <para>Vælg denne indstilling for at vise sekunder i panelprogrammet.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Vis vejret</guilabel></term>
+			 <listitem> 
+			 <para>Vælg denne indstilling for at vise den aktuelle vejrudsigt hvor du befinder dig. Vejret vil blive vist som et ikon for solskin, overskyet, regn eller andet.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Vis temperatur</guilabel></term>
+			 <listitem> 
+			 <para>Vælg denne indstilling for at vise temperaturen hvor du befinder dig.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Lokationsindstillinger</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Lokationer</guilabel></term> 
+			 <listitem> 
+			 <para>Du kan tilføje en eller flere lokationer og deres lokale tid som vises i uret. For at tilføje en placering:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Tryk <guilabel>Tilføj</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Tast byen, regionen eller landenavnet og mens du taster vil en liste af muligheder vise sig i et rullegardin. Vælg et resultat og posterne <guilabel>Tidszone</guilabel>, <guilabel>Breddegrad</guilabel> og <guilabel>Længdegrad</guilabel> vil automatisk blive udfyldt.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Vejrindstillinger</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Vejret</guilabel></term> 
+			 <listitem> 
+			 <para>Du kan vise temperaturenheden på en af de tre følgende måder, der kan vælges fra rullegardinet:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Standard</guilabel> Standardvisningen for din region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Vindhastighedsenhed</guilabel></term> 
+			 <listitem> 
+			 <para>Du kan vise hastighedsenheden på en af de følgende måder, der kan vælges fra rullegardinet:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufortskalaen</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knob</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (mil per time)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilometer per time)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>m/s</guilabel> (meter per sekund)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Standard</guilabel> Standardvisningen for din region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

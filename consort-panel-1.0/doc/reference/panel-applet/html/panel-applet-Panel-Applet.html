@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Panel Applet</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="reference.html" title="Part IV. API Reference">
+<link rel="prev" href="reference.html" title="Part IV. API Reference">
+<link rel="next" href="panel-applet-Panel-Applet-Factory.html" title="Panel Applet Factory">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="reference.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="reference.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td><a accesskey="n" href="panel-applet-Panel-Applet-Factory.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#panel-applet-Panel-Applet.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#panel-applet-Panel-Applet.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#panel-applet-Panel-Applet.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#panel-applet-Panel-Applet.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#panel-applet-Panel-Applet.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#panel-applet-Panel-Applet.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="panel-applet-Panel-Applet"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="panel-applet-Panel-Applet.top_of_page"></a>Panel Applet</span></h2>
+<p>Panel Applet — a widget embedded in a panel.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.stability-level"></a><h2>Stability Level</h2>
+Unstable, unless otherwise indicated
+</div>
+<div class="refsynopsisdiv">
+<a name="panel-applet-Panel-Applet.synopsis"></a><h2>Synopsis</h2>
+<a name="PanelApplet"></a><pre class="synopsis">
+#include &lt;panel-applet.h&gt;
+
+struct              <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet-struct" title="struct PanelApplet">PanelApplet</a>;
+enum                <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient">PanelAppletOrient</a>;
+enum                <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags">PanelAppletFlags</a>;
+<a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="returnvalue">PanelAppletOrient</span></a>   <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-orient" title="panel_applet_get_orient ()">panel_applet_get_orient</a>             (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);
+<span class="returnvalue">guint</span>               <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-size" title="panel_applet_get_size ()">panel_applet_get_size</a>               (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-size-hints" title="panel_applet_set_size_hints ()">panel_applet_set_size_hints</a>         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">int</span> *size_hints</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n_elements</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> base_size</code></em>);
+<a href="/gnome/usr/share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html#cairo-pattern-t"><span class="returnvalue">cairo_pattern_t</span></a> *   <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-background" title="panel_applet_get_background ()">panel_applet_get_background</a>         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-background-widget" title="panel_applet_set_background_widget ()">panel_applet_set_background_widget</a>  (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);
+<a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="returnvalue">PanelAppletFlags</span></a>    <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-flags" title="panel_applet_get_flags ()">panel_applet_get_flags</a>              (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-flags" title="panel_applet_set_flags ()">panel_applet_set_flags</a>              (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> flags</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-locked-down" title="panel_applet_get_locked_down ()">panel_applet_get_locked_down</a>        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);
+<span class="returnvalue">GSettings</span> *         <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-settings-new" title="panel_applet_settings_new ()">panel_applet_settings_new</a>           (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *schema</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-add-preferences" title="panel_applet_add_preferences ()">panel_applet_add_preferences</a>        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *schema_dir</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-preferences-key" title="panel_applet_get_preferences_key ()">panel_applet_get_preferences_key</a>    (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-request-focus" title="panel_applet_request_focus ()">panel_applet_request_focus</a>          (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-setup-menu" title="panel_applet_setup_menu ()">panel_applet_setup_menu</a>             (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *xml</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-setup-menu-from-file" title="panel_applet_setup_menu_from_file ()">panel_applet_setup_menu_from_file</a>   (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GInitiallyUnowned
+         +----<a href="http://library.gnome.org/devel/gtk/GtkWidget.html">GtkWidget</a>
+               +----<a href="http://library.gnome.org/devel/gtk/GtkContainer.html">GtkContainer</a>
+                     +----<a href="http://library.gnome.org/devel/gtk/GtkBin.html">GtkBin</a>
+                           +----<a href="http://library.gnome.org/devel/gtk/GtkEventBox.html">GtkEventBox</a>
+                                 +----PanelApplet
+</pre>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+PanelApplet implements
+ AtkImplementorIface and  <a href="http://library.gnome.org/devel/gtk/GtkBuildable.html">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--background" title='The "background" property'>background</a>"               <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--closure" title='The "closure" property'>closure</a>"                  <span class="type">gpointer</span>              : Read / Write / Construct Only
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--connection" title='The "connection" property'>connection</a>"               <span class="type">GDBusConnection</span>*      : Read / Write / Construct Only
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--flags" title='The "flags" property'>flags</a>"                    <span class="type">guint</span>                 : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--id" title='The "id" property'>id</a>"                       <span class="type">gchar</span>*                : Read / Write / Construct Only
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--locked-down" title='The "locked-down" property'>locked-down</a>"              <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--orient" title='The "orient" property'>orient</a>"                   <span class="type">guint</span>                 : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--prefs-key" title='The "prefs-key" property'>prefs-key</a>"                <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--settings-path" title='The "settings-path" property'>settings-path</a>"            <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--size" title='The "size" property'>size</a>"                     <span class="type">guint</span>                 : Read / Write
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet--size-hints" title='The "size-hints" property'>size-hints</a>"               <span class="type">gpointer</span>              : Read / Write
+</pre>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet-change-background" title='The "change-background" signal'>change-background</a>"                              : <code class="literal">Run Last</code>
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet-change-orient" title='The "change-orient" signal'>change-orient</a>"                                  : <code class="literal">Run Last</code>
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet-change-size" title='The "change-size" signal'>change-size</a>"                                    : <code class="literal">Run Last</code>
+  "<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet-move-focus-out-of-applet" title='The "move-focus-out-of-applet" signal'>move-focus-out-of-applet</a>"                       : <code class="literal">Action</code>
+</pre>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.description"></a><h2>Description</h2>
+<p>
+Applets are small applications that are embedded in the GNOME panel. They
+can be used to give quick access to some features, or to display the state
+of something specific.
+</p>
+<p>
+The <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> API hides all of the embedding process as it handles all
+the communication with the GNOME panel. It is a subclass of <a href="http://library.gnome.org/devel/gtk/GtkBin.html"><span class="type">GtkBin</span></a>, so you
+can add any kind of widgets to it.
+</p>
+<p>
+See the <a class="link" href="getting-started.html" title="Part II. Getting Started with the Panel Applet library">Getting Started</a> section to
+learn how to properly use <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.
+</p>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="PanelApplet-struct"></a><h3>struct PanelApplet</h3>
+<pre class="programlisting">struct PanelApplet;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelAppletOrient"></a><h3>enum PanelAppletOrient</h3>
+<pre class="programlisting">typedef enum {
+	PANEL_APPLET_ORIENT_UP,
+	PANEL_APPLET_ORIENT_DOWN,
+	PANEL_APPLET_ORIENT_LEFT,
+	PANEL_APPLET_ORIENT_RIGHT
+} PanelAppletOrient;
+</pre>
+<p>
+Type defining the orientation of the applet. The values may seem backward
+(e.g. <a class="link" href="panel-applet-Panel-Applet.html#PANEL-APPLET-ORIENT-RIGHT:CAPS"><code class="literal">PANEL_APPLET_ORIENT_RIGHT</code></a> means the panel is on the left side), but
+this represents the direction the applet is oriented to.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><a name="PANEL-APPLET-ORIENT-UP:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_ORIENT_UP</code></span></p></td>
+<td>The <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> is on a horizontal panel, at the
+bottom of the screen. It is oriented towards the top of the screen.
+</td>
+</tr>
+<tr>
+<td><p><a name="PANEL-APPLET-ORIENT-DOWN:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_ORIENT_DOWN</code></span></p></td>
+<td>The <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> is on a horizontal panel, at the
+top of the screen. It is oriented towards the bottom of the screen.
+</td>
+</tr>
+<tr>
+<td><p><a name="PANEL-APPLET-ORIENT-LEFT:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_ORIENT_LEFT</code></span></p></td>
+<td>The <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> is on a vertical panel, at the
+right of the screen. It is oriented towards the left of the screen.
+</td>
+</tr>
+<tr>
+<td><p><a name="PANEL-APPLET-ORIENT-RIGHT:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_ORIENT_RIGHT</code></span></p></td>
+<td>The <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> is on a vertical panel, at the
+left of the screen. It is oriented towards the right of the screen.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelAppletFlags"></a><h3>enum PanelAppletFlags</h3>
+<pre class="programlisting">typedef enum {
+	PANEL_APPLET_FLAGS_NONE   = 0,
+	PANEL_APPLET_EXPAND_MAJOR = 1 &lt;&lt; 0,
+	PANEL_APPLET_EXPAND_MINOR = 1 &lt;&lt; 1,
+	PANEL_APPLET_HAS_HANDLE   = 1 &lt;&lt; 2
+} PanelAppletFlags;
+</pre>
+<p>
+Flags to be used with <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-get-flags" title="panel_applet_get_flags ()"><code class="function">panel_applet_get_flags()</code></a>/<a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-flags" title="panel_applet_set_flags ()"><code class="function">panel_applet_set_flags()</code></a>, to
+indicate to the panel a specific behavior requested by the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><a name="PANEL-APPLET-FLAGS-NONE:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_FLAGS_NONE</code></span></p></td>
+<td>No flags set.
+</td>
+</tr>
+<tr>
+<td><p><a name="PANEL-APPLET-EXPAND-MAJOR:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_EXPAND_MAJOR</code></span></p></td>
+<td>On horizontal panels, the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> will be
+allocated as much width as possible. On vertical panels, it will be
+allocated as much height as possible.
+</td>
+</tr>
+<tr>
+<td><p><a name="PANEL-APPLET-EXPAND-MINOR:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_EXPAND_MINOR</code></span></p></td>
+<td>On horizontal panels, the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> will be
+allocated the full height of the panel. On vertical panels, it will be
+allocated the full width. Most applets should set this flag in order to use
+the full panel size and allow the applet to be Fitt's Law compliant.
+</td>
+</tr>
+<tr>
+<td><p><a name="PANEL-APPLET-HAS-HANDLE:CAPS"></a><span class="term"><code class="literal">PANEL_APPLET_HAS_HANDLE</code></span></p></td>
+<td>The panel will draw a handle for the
+<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>. This handle will be usable to move the applet, and to open the
+context menu of the applet.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-get-orient"></a><h3>panel_applet_get_orient ()</h3>
+<pre class="programlisting"><a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="returnvalue">PanelAppletOrient</span></a>   panel_applet_get_orient             (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);</pre>
+<p>
+Gets the <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="type">PanelAppletOrient</span></a> of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="type">PanelAppletOrient</span></a> of <em class="parameter"><code>applet</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-get-size"></a><h3>panel_applet_get_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>               panel_applet_get_size               (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_get_size</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use the allocation of <em class="parameter"><code>applet</code></em> instead.</p>
+</div>
+<p>
+Gets the size of the panel <em class="parameter"><code>applet</code></em> is on. For a horizontal panel, the
+size if the height of the panel; for a vertical panel, the size is the width
+of the panel.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the size of the panel <em class="parameter"><code>applet</code></em> is on.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-set-size-hints"></a><h3>panel_applet_set_size_hints ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_set_size_hints         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">int</span> *size_hints</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> n_elements</code></em>,
+                                                         <em class="parameter"><code><span class="type">int</span> base_size</code></em>);</pre>
+<p>
+Give hints to the panel about sizes <em class="parameter"><code>applet</code></em> is comfortable with. This is
+generally useful for applets that can take a lot of space, in case the panel
+gets full and needs to restrict the size of some applets.
+</p>
+<p>
+<em class="parameter"><code>size_hints</code></em> should have an even number of sizes. It is an array of (max,
+min) pairs where min(i) &gt; max(i + 1).
+</p>
+<p>
+<em class="parameter"><code>base_size</code></em> will be added to all sizes in <em class="parameter"><code>size_hints</code></em>, and is therefore a way
+to guarantee a minimum size to <em class="parameter"><code>applet</code></em>.
+</p>
+<p>
+The panel will try to allocate a size that is acceptable to <em class="parameter"><code>applet</code></em>, i.e. in
+one of the (<em class="parameter"><code>base_size</code></em> + max, <em class="parameter"><code>base_size</code></em> + min) ranges.
+</p>
+<p>
+<a class="link" href="panel-applet-Panel-Applet.html#PANEL-APPLET-EXPAND-MAJOR:CAPS"><code class="literal">PANEL_APPLET_EXPAND_MAJOR</code></a> must be set for <em class="parameter"><code>applet</code></em> to use size hints.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size_hints</code></em> :</span></p></td>
+<td>array of sizes.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n_elements</code></em> :</span></p></td>
+<td>length of <em class="parameter"><code>size_hints</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>base_size</code></em> :</span></p></td>
+<td>base size of the applet.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-get-background"></a><h3>panel_applet_get_background ()</h3>
+<pre class="programlisting"><a href="/gnome/usr/share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html#cairo-pattern-t"><span class="returnvalue">cairo_pattern_t</span></a> *   panel_applet_get_background         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);</pre>
+<p>
+Gets the background pattern for <em class="parameter"><code>applet</code></em>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if there is none.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a new <a href="/gnome/usr/share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html#cairo-pattern-t"><span class="type">cairo_pattern_t</span></a> to use as background for
+<em class="parameter"><code>applet</code></em>. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-set-background-widget"></a><h3>panel_applet_set_background_widget ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_set_background_widget  (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>
+Configure <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> to automatically draw the background of the applet on
+<em class="parameter"><code>widget</code></em>. It is generally enough to call this function with <em class="parameter"><code>applet</code></em> as
+<em class="parameter"><code>widget</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>widget</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gtk/GtkWidget.html"><span class="type">GtkWidget</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-get-flags"></a><h3>panel_applet_get_flags ()</h3>
+<pre class="programlisting"><a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="returnvalue">PanelAppletFlags</span></a>    panel_applet_get_flags              (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);</pre>
+<p>
+Gets the <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> of <em class="parameter"><code>applet</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-set-flags"></a><h3>panel_applet_set_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_set_flags              (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> flags</code></em>);</pre>
+<p>
+Sets the <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> of <em class="parameter"><code>applet</code></em>. Most of the time, at least
+<a class="link" href="panel-applet-Panel-Applet.html#PANEL-APPLET-EXPAND-MINOR:CAPS"><code class="literal">PANEL_APPLET_EXPAND_MINOR</code></a> should be used.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
+<td>
+<a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> to use for <em class="parameter"><code>applet</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-get-locked-down"></a><h3>panel_applet_get_locked_down ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            panel_applet_get_locked_down        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);</pre>
+<p>
+Gets whether the panel <em class="parameter"><code>applet</code></em> is on is locked down or not. A locked down
+applet should not allow any change to its configuration.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if the panel <em class="parameter"><code>applet</code></em> is on is locked down, <code class="literal">FALSE</code> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-settings-new"></a><h3>panel_applet_settings_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GSettings</span> *         panel_applet_settings_new           (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *schema</code></em>);</pre>
+<p>
+Creates a new <span class="type">GSettings</span> object for the per-instance settings of <em class="parameter"><code>applet</code></em>,
+with a given schema.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>schema</code></em> :</span></p></td>
+<td>the name of the schema.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a new <span class="type">GSettings</span> object for the per-instance settings of <em class="parameter"><code>applet</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-add-preferences"></a><h3>panel_applet_add_preferences ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_add_preferences        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *schema_dir</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_add_preferences</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Associates the per-instance GConf directory of <em class="parameter"><code>applet</code></em> to the schemas
+defined in <em class="parameter"><code>schema_dir</code></em>. This must be called if the applet will save
+per-instance settings, to ensure that each key in the per-instance GConf
+directory has a defined type, sane default and documentation.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>schema_dir</code></em> :</span></p></td>
+<td>a GConf path of a schema directory.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-get-preferences-key"></a><h3>panel_applet_get_preferences_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             panel_applet_get_preferences_key    (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_get_preferences_key</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Gets the GConf path to the per-instance settings of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a copy of the GConf path to the per-instance settings of <em class="parameter"><code>applet</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-request-focus"></a><h3>panel_applet_request_focus ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_request_focus          (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+<p>
+Requests focus for <em class="parameter"><code>applet</code></em>. There is no guarantee that <em class="parameter"><code>applet</code></em> will
+successfully get focus after that call.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>timestamp</code></em> :</span></p></td>
+<td>the timestamp of the user interaction (typically a button or key
+press event) which triggered this call.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-setup-menu"></a><h3>panel_applet_setup_menu ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_setup_menu             (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *xml</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);</pre>
+<p>
+Sets up the context menu of <em class="parameter"><code>applet</code></em>. <em class="parameter"><code>xml</code></em> is a <a href="http://library.gnome.org/devel/gtk/GtkUIManager.html"><span class="type">GtkUIManager</span></a> UI definition,
+describing how to display the menu items. <em class="parameter"><code>action_group</code></em> contains the
+various <a href="http://library.gnome.org/devel/gtk/GtkAction.html"><span class="type">GtkAction</span></a> that are referenced in <em class="parameter"><code>xml</code></em>.
+</p>
+<p>
+See also the <a class="link" href="getting-started.context-menu.html" title="Using a Context Menu">Context
+Menu</a> section.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>xml</code></em> :</span></p></td>
+<td>a menu XML string.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>action_group</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gtk/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-setup-menu-from-file"></a><h3>panel_applet_setup_menu_from_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_setup_menu_from_file   (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);</pre>
+<p>
+Sets up the context menu of <em class="parameter"><code>applet</code></em>. <em class="parameter"><code>filename</code></em> is the path to a menu XML
+file, containing a <a href="http://library.gnome.org/devel/gtk/GtkUIManager.html"><span class="type">GtkUIManager</span></a> UI definition that describes how to display
+the menu items. <em class="parameter"><code>action_group</code></em> contains the various <a href="http://library.gnome.org/devel/gtk/GtkAction.html"><span class="type">GtkAction</span></a> that
+are referenced in <em class="parameter"><code>xml</code></em>.
+</p>
+<p>
+See also the <a class="link" href="getting-started.context-menu.html" title="Using a Context Menu">Context
+Menu</a> section.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>filename</code></em> :</span></p></td>
+<td>path to a menu XML file.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>action_group</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gtk/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PanelApplet--background"></a><h3>The <code class="literal">"background"</code> property</h3>
+<pre class="programlisting">  "background"               <span class="type">gchar</span>*                : Read / Write</pre>
+<p>
+Implementation detail.
+</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--closure"></a><h3>The <code class="literal">"closure"</code> property</h3>
+<pre class="programlisting">  "closure"                  <span class="type">gpointer</span>              : Read / Write / Construct Only</pre>
+<p>
+Implementation detail.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--connection"></a><h3>The <code class="literal">"connection"</code> property</h3>
+<pre class="programlisting">  "connection"               <span class="type">GDBusConnection</span>*      : Read / Write / Construct Only</pre>
+<p>
+Implementation detail.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--flags"></a><h3>The <code class="literal">"flags"</code> property</h3>
+<pre class="programlisting">  "flags"                    <span class="type">guint</span>                 : Read / Write</pre>
+<p>
+The <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletFlags" title="enum PanelAppletFlags"><span class="type">PanelAppletFlags</span></a> of the applet.
+</p>
+<p>Allowed values: &lt;= 7</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--id"></a><h3>The <code class="literal">"id"</code> property</h3>
+<pre class="programlisting">  "id"                       <span class="type">gchar</span>*                : Read / Write / Construct Only</pre>
+<p>
+Implementation detail.
+</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--locked-down"></a><h3>The <code class="literal">"locked-down"</code> property</h3>
+<pre class="programlisting">  "locked-down"              <span class="type">gboolean</span>              : Read / Write</pre>
+<p>
+Whether the panel the applet is on is locked down.
+</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--orient"></a><h3>The <code class="literal">"orient"</code> property</h3>
+<pre class="programlisting">  "orient"                   <span class="type">guint</span>                 : Read / Write</pre>
+<p>
+The <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="type">PanelAppletOrient</span></a> of the applet.
+</p>
+<p>
+This property gets set when the applet gets embedded, and can change
+when the panel position changes.
+</p>
+<p>Allowed values: &lt;= 3</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--prefs-key"></a><h3>The <code class="literal">"prefs-key"</code> property</h3>
+<pre class="programlisting">  "prefs-key"                <span class="type">gchar</span>*                : Read / Write</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">PanelApplet:prefs-key</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+The GConf path to the per-instance settings of the applet.
+</p>
+<p>
+This property gets set when the applet gets embedded.
+</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--settings-path"></a><h3>The <code class="literal">"settings-path"</code> property</h3>
+<pre class="programlisting">  "settings-path"            <span class="type">gchar</span>*                : Read / Write</pre>
+<p>
+The GSettings path to the per-instance settings of the applet.
+</p>
+<p>
+This property gets set when the applet gets embedded.
+</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--size"></a><h3>The <code class="literal">"size"</code> property</h3>
+<pre class="programlisting">  "size"                     <span class="type">guint</span>                 : Read / Write</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">PanelApplet:size</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use the allocation of <em class="parameter"><code>applet</code></em> instead.</p>
+</div>
+<p>
+The size of the panel the applet is on. For a horizontal panel, the
+size if the height of the panel; for a vertical panel, the size is
+the width of the panel.
+</p>
+<p>
+This property gets set when the applet gets embedded, and can change
+when the panel size changes.
+</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet--size-hints"></a><h3>The <code class="literal">"size-hints"</code> property</h3>
+<pre class="programlisting">  "size-hints"               <span class="type">gpointer</span>              : Read / Write</pre>
+<p>
+The size hints set for the applet. See <a class="link" href="panel-applet-Panel-Applet.html#panel-applet-set-size-hints" title="panel_applet_set_size_hints ()"><code class="function">panel_applet_set_size_hints()</code></a>.
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="PanelApplet-change-background"></a><h3>The <code class="literal">"change-background"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>  *applet,
+                                                        <span class="type">CairoPattern</span> *pattern,
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run Last</code></pre>
+<p>
+Emitted when the background of <em class="parameter"><code>applet</code></em> has changed.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> which emitted the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>pattern</code></em> :</span></p></td>
+<td>the new background pattern for <em class="parameter"><code>applet</code></em>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if there is none.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet-change-orient"></a><h3>The <code class="literal">"change-orient"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet,
+                                                        <span class="type">guint</span>        orient,
+                                                        <span class="type">gpointer</span>     user_data)      : <code class="literal">Run Last</code></pre>
+<p>
+Emitted when the <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="type">PanelAppletOrient</span></a> of <em class="parameter"><code>applet</code></em> has changed.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> which emitted the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>orient</code></em> :</span></p></td>
+<td>the new <a class="link" href="panel-applet-Panel-Applet.html#PanelAppletOrient" title="enum PanelAppletOrient"><span class="type">PanelAppletOrient</span></a> of <em class="parameter"><code>applet</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet-change-size"></a><h3>The <code class="literal">"change-size"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet,
+                                                        <span class="type">gint</span>         size,
+                                                        <span class="type">gpointer</span>     user_data)      : <code class="literal">Run Last</code></pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">PanelApplet::change-size</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use the <a href="http://library.gnome.org/devel/gtk/GtkWidget.html#GtkWidget-size-allocate"><span class="type">"size-allocate"</span></a> signal instead.</p>
+</div>
+<p>
+Emitted when the size of the panel <em class="parameter"><code>applet</code></em> is on has changed.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> which emitted the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td>the new size of the panel <em class="parameter"><code>applet</code></em> is on.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PanelApplet-move-focus-out-of-applet"></a><h3>The <code class="literal">"move-focus-out-of-applet"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>     *applet,
+                                                        <a href="http://library.gnome.org/devel/gtk/gtk3-Standard-Enumerations.html#GtkDirectionType"><span class="type">GtkDirectionType</span></a> direction,
+                                                        <span class="type">gpointer</span>         user_data)      : <code class="literal">Action</code></pre>
+<p>
+Emitted when the focus is moved out of <em class="parameter"><code>applet</code></em>. This is an
+implementation detail.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>the <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> which emitted the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>direction</code></em> :</span></p></td>
+<td>the move direction.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

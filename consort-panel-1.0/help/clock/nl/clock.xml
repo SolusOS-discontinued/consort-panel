@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="nl">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Clock Manual</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>GNOME Documentatie Project</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>
+Permission is granted to copy, distribute and/or modify this document under the 
+terms of the GNU Free DocumentationLicense (GFDL), Version 1.1 or any later 
+version published by the Free Software Foundation with no Invariant Sections, 	  no Front-Cover Texts, and
+no Back-Cover Texts. You can find a copy of the GFDL at this 
+
+		<ulink url="ghelp:fdl" type="help">link</ulink> 
+
+or in the file COPYING-DOCS distributed with this manual.</para>
+<para> 
+This manual is part of a collection of GNOME documents distributed under the 
+GFDL. If you want to distribute this manual separately from the collection, 
+you can do so by adding a copy of the license to the document, as described in 
+section 6 of the license. 	
+</para>
+<para>Veel van de namen die gebruikt worden door bedrijven om hun producten te onderscheiden zijn beschermd als trademark. Wanneer deze namen voorkomen in de GNOME documentatie, en de leden van het GNOME Documentatieproject zijn geïnformeerd over dit feit, zullen de namen in hoofdletters of met beginhoofdletter geschreven worden.</para>
+<para>DOCUMENT EN BEWERKTE VERSIE VAN HET DOCUMENT WORDEN GELEVERD ONDER DE BEPALINGEN VAN DE GNU PUBLIEKE DOCUMENTATIELICENTIE MET HET BEGRIP DAT: <orderedlist><listitem>
+<para>DOCUMENT "ZOALS GELEVERD" BIEDT GEEN ENKELE GARANTIE VOOR ZOVER MOGELIJK BINNEN DE GELDENDE WETGEVING, HETZIJ EXPLICIET, HETZIJ IMPLICIET, INCLUSIEF MAAR NIET BEPERKT TOT GARANTIES DAT HET DOCUMENT OF EEN BEWERKTE VERSIE VAN HET DOCUMENT VRIJ IS VAN DEFECTEN, GESCHIKT IS VOOR EEN BEPAALD DOEL OF GEEN INBREUK MAAKT. HET RISICO AANGAANDE DE KWALITEIT, CORRECTHEID EN BRUIKBAARHEID VAN HET DOCUMENT OF BEWERKTE VERSIE VAN HET DOCUMENT LIGT VOLLEDIG BIJ U. MOCHT HET DOCUMENT NIET VRIJ ZIJN VAN DEFECTEN, DAN DIENT U (NIET DE ORIGINELE AUTEUR, SCHRIJVER OF EEN VAN DE MENSEN DIE BIJDRAGEN HEBBEN GELEVERD) DE KOSTEN TE DRAGEN VAN ONDERHOUD, REPARATIE OF CORRECTIE. DIT DEEL IS EEN ESSENTIEEL DEEL VAN DE LICENTIE. GEBRUIK VAN HET DOCUMENT OF BEWERKTE VERSIE VAN HET DOCUMENT IS SLECHTS TOEGESTAAN VOLGENS DE TERMEN VAN DIT DEEL; EN</para>
+</listitem>
+<listitem>
+<para>ONDER GEEN ENKELE OMSTANDIGHEDEN EN ONDER GEEN ENKELE JURIDISCHE THEORIE, ZAL DE ORIGINELE AUTEUR, SCHRIJVER, EEN VAN DE MENSEN DIE BIJDRAGEN HEBBEN GELEVERD OF EEN VAN DE VERSPREIDERS VAN HET DOCUMENT OF BEWERKTE VERSIE VAN HET DOCUMENT, OF ENIGE LEVERANCIER VAN EERDERGENOEMDE PARTIJEN, AANSPRAKELIJK ZIJN TEGENOVER IEMAND VOOR DIRECTE OF INDIRECTE, SPECIALE, INCIDENTELE, OF CONCEQUENTIËLE SCHADE VAN ENIG TYPE INCLUSIEF, MAAR NIET BEPERKT TOT SCHADE GELEDEN AAN GOODWILL, VERLOREN WERKTIJD, SCHADE AAN COMPUTERS, OF EEN VAN DE ANDERE TYPEN SCHADE OF VERLIEZEN VOORTKOMEND UIT OF GERELATEERD AAN GEBRUIK VAN HET DOCUMENT OF EEN BEWERKTE VERSIE VAN HET DOCUMENT, OOK AL IS ZO'N PARTIJ GEÏNFORMEERD VAN ZULKE SCHADE.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul </firstname> 
+		  <surname> Cutler</surname> 
+		  <affiliation> 
+			 <orgname>GNOME Documentatie Project</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>GNOME Documentatie Project</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>GNOME Documentatie Project</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.7</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.6</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handleiding voor Klok V2.5</revnumber> 
+		  <date>Februari 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handleiding voor Klok V2.4</revnumber> 
+		  <date>September 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handleiding voor Klok V2.3</revnumber> 
+		  <date>Augustus 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handleiding voor Klok V2.2</revnumber> 
+		  <date>Augustus 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handleiding voor Klok V2.1</revnumber> 
+		  <date>© 2002 GNOME</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Handleiding voor Klok V2.0</revnumber> 
+		  <date>Maart 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Handleiding voor Klok</revnumber> 
+		  <date>April 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">GNOME Documentatie Project</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Deze handleiding beschrijft versie 2.5.3.1 van de Klok.</releaseinfo> 
+	 <legalnotice> 
+		<title>Feedback</title> 
+		<para>Om een bug te rapporteren of een suggestie te doen over de Klok of deze handleiding, volg de beschrijvingen in de <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Pagina</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Klok</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Inleiding</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Klok</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Klok weergeven</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>
+The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.
+</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Klok aan een paneel toevoegen</title>
+  <para>Perform the following steps:</para>
+         <orderedlist>
+           <listitem>
+             <para>
+               Right-click on the panel.
+             </para>
+           </listitem>
+           <listitem>
+             <para>
+               Choose <guimenuitem>Add to Panel</guimenuitem>.
+             </para>
+           </listitem>
+           <listitem>
+             <para>
+               Scroll down the list of items in the <guilabel>Add to Panel</guilabel> dialog, then select <guilabel>Clock</guilabel>.
+             </para>
+           </listitem>
+           <listitem>
+             <para>
+               Click <guibutton>Add</guibutton>.
+             </para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Gebruik</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>To Show the Calendar</title>	
+	<para>Click on the applet to open a small calendar showing the current month. To close the calendar, click again on the part of the applet that is in the panel.</para>
+	
+	<para>You can change the month shown in the calendar by clicking the arrows to each side of the month and year text.</para>	
+	
+	<para>Double-click a day in the calendar to launch the <application>Evolution</application> groupware application.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Datum of tijd in een toepassing invoegen</title>	
+<para>De <application>Klok</application> neemt de tijd van de systeemklok.</para>
+<para>Om de datum of tijd van de <application>Klok</application> in een toepassing in te voegen, voert u de volgende stappen uit:</para>
+	<orderedlist>
+		<listitem>
+			<para>Rechts-klik op de <application>Klok</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Kies een van de volgende menu items van het menu:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>_Tijd kopiëren</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>_Datum kopiëren</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Geef de locatie in uw toepassing aan, waar u wilt invoegen.</para>
+		</listitem>
+		<listitem>
+			<para>Kies <menuchoice><guimenu>Bewerken</guimenu><guimenuitem>Plakken</guimenuitem></menuchoice> of midden-klik om in te voegen.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Systeemdatum of tijd aanpassen</title>
+	<para>Om de systeemdatum of tijd, die de <application>Klok</application> aan geeft, aan te passen, voert u de volgende handelingen uit:</para>
+	<orderedlist>
+	<listitem>
+			<para>Rechts-klik op de toepassing, kies dan <guimenuitem>Datum &amp; Tijd wijzigen...</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Typ het <literal>root</literal> wachtwoord, klik dan op de <guibutton>OK</guibutton> knop.</para>
+	</listitem>
+	<listitem>
+			<para>De <application>Klok</application> start de toepassing om de systeemdatum en tijd in te stellen. Gebruik de toepassing om de datum en tijd aan te passen.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Clock Preferences</title> 
+	<para>
+	To configure the <application>Clock</application>, right-click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. You will be presented with three tabs to change preferences for <guimenuitem>General</guimenuitem>,  <guimenuitem>Locations</guimenuitem> or <guimenuitem>Weather</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>General Preferences</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Clock Format</guilabel></term> 
+			 <listitem> 
+			 <para>Maak uw keuze uit de volgende mogelijkheden:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12 uur</guilabel></para>
+			 <para>Geef de tijd in 12 uur formaat weer.</para>
+			 <note><para>This option is not shown if your session language does not use the 12 hour clock.
+			</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24 uur</guilabel></para>
+			 <para>Geef de tijd in de 00.00 tot 24.00 formaat.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the date</guilabel></term>
+			 <listitem> 
+			 <para>Selecteer deze optie om de datum in de toepassing weer te geven.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>_Seconden tonen</guilabel></term>
+			 <listitem> 
+			 <para>Selecteer deze optie om seconden in de toepassing weer te geven.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the weather</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the the current weather forecast at your location.
+			The weather will be displayed as an icon for sunny, cloudy, rain or more.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show temperature</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the temperature at your location.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Location Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Locations</guilabel></term> 
+			 <listitem> 
+			 <para>You can add one or more locations and their local time to be displayed in the Clock.  
+			To add a location:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Press <guilabel>Add</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Type the city, region or country name and as you type a list of options will appear
+			in a drop down box.  Select a match from the pop-up and the <guilabel>Timezone</guilabel>,
+			 <guilabel>Latitude</guilabel>, and <guilabel>Longitude</guilabel> entries will be 
+			automatically filled in.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Weather Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Weather</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Temperature unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Wind speed unit</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Speed unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufort scale</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knots</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (miles per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilometers per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (meters per second)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

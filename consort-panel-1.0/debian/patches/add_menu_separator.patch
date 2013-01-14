@@ -1,0 +1,69 @@
+Description: Adds a menu separator
+ Adds a separator between the Applet Items and the Edit Items of the
+ panel-applet context menus
+ .
+ consort-panel (3.4.2.1-3solusos3) two; urgency=low
+ .
+   * Add menu separator
+Author: Ikey Doherty <ikey@solusos.com>
+
+---
+Reviewed-By: Ikey Doherty <ikey@solusos.com>
+Last-Update: <2012-06-04>
+
+--- consort-panel-3.4.2.1.orig/consort-panel/applet.c
++++ consort-panel-3.4.2.1/consort-panel/applet.c
+@@ -417,9 +417,21 @@ panel_applet_get_menu (AppletInfo *info)
+ 	GList       *l;
+ 	gboolean     added_anything = FALSE;
+ 
++
++	/**
++	 *  Separator to split the menu
++	 *
++	 * APPLET ITEMS
++	 * -------------
++	 * Move
++	 * Remove From Panel
++	 */
++	GtkSeparatorMenuItem	*separator;
++
+ 	/**
+ 	 * Variables for the edit menu
+ 	 */
++
+ 	GtkWidget   *menuitem;
+ 	GtkWidget   *image;
+ 	gboolean     movable;
+@@ -453,6 +465,11 @@ panel_applet_get_menu (AppletInfo *info)
+ 		added_anything = TRUE;
+ 	}
+ 
++	// Add the separator before we add the move/remove items (less confusion)
++	separator =  gtk_separator_menu_item_new ();
++	gtk_widget_show (separator);
++	gtk_menu_shell_append (GTK_MENU_SHELL(menu), separator);
++
+ 	menuitem = gtk_menu_item_new_with_mnemonic (_("_Move"));
+ 	g_signal_connect (menuitem, "activate",
+ 			  G_CALLBACK (move_applet_callback), info);
+@@ -460,6 +477,8 @@ panel_applet_get_menu (AppletInfo *info)
+ 	gtk_menu_shell_append (GTK_MENU_SHELL (menu), menuitem);
+ 	gtk_widget_set_sensitive (menuitem, movable);
+ 
++	// TODO: Add a seperator
++
+ 	menuitem = gtk_image_menu_item_new_with_mnemonic (_("_Remove From Panel"));
+ 	image = gtk_image_new_from_stock (GTK_STOCK_REMOVE,
+ 					  GTK_ICON_SIZE_MENU);
+--- consort-panel-3.4.2.1.orig/libpanel-applet/panel-applet.c
++++ consort-panel-3.4.2.1/libpanel-applet/panel-applet.c
+@@ -152,6 +152,7 @@ static const gchar panel_menu_ui[] =
+ 	"<ui>\n"
+ 	"  <popup name=\"PanelAppletPopup\" action=\"PopupAction\">\n"
+ 	"    <placeholder name=\"AppletItems\"/>\n"
++	"    <separator></separator>\n"
+ 	"    <menuitem name=\"MoveItem\" action=\"Move\"/>\n"
+ 	"    <menuitem name=\"RemoveItem\" action=\"Remove\"/>\n"
+ 	"  </popup>\n"
+

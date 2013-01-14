@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Εγχειρίδιο Ψαριού</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Paul Cutler</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Σας παρέχεται άδεια να αντιγράψετε, διανείμετε ή/και να τροποποιήσετε το υπάρχον κείμενο υπό τους όρους της άδειας GNU Free Documentation License (GFDL), έκδοση 1.1, ή οποιαδήποτε μεταγενέστερη έκδοση που να έχει εκδοθεί από το Free Software Foundation υπό τις προϋποθέσεις no Invariant Sections, no Front-Cover Texts, και no Back-Cover Texts. Μπορείτε να βρείτε αντίγραφο του GFDL σε αυτό το <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS όπως διανέμεται με αυτή την τεκμηρίωση.</para>
+          <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+ 
+         <para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+ 
+         <para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+                 <listitem>
+                   <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+                 </listitem>
+                 <listitem>
+                   <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Ομάδα Τεκμηρίωσης GNOME</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ψαριού έκδοση 2.5</revnumber> 
+		  <date>Ιούνιος 2009</date> 
+		  <revdescription> 
+			 <para role="author">Ομάδα Τεκμηρίωσης GNOME Sun</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ψαριού έκδοση 2.4</revnumber> 
+		  <date>Ιούνιος 2009</date> 
+		  <revdescription> 
+			 <para role="author">Ομάδα Τεκμηρίωσης GNOME Sun</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ψαριού έκδοση 2.2</revnumber> 
+		  <date>Ιανουάριος 2003</date> 
+		  <revdescription> 
+			 <para role="author">Ομάδα Τεκμηρίωσης GNOME Sun</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ψαριού έκδοση 2.1</revnumber> 
+		  <date>Αύγουστος 2002</date> 
+		  <revdescription> 
+			 <para role="author">Ομάδα Τεκμηρίωσης GNOME Sun</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ψαριού έκδοση 2.0</revnumber> 
+		  <date>Μάιος 2002</date> 
+		  <revdescription> 
+			 <para role="author">Ομάδα Τεκμηρίωσης GNOME Sun</para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Εγχειρίδιο μικροεφαρμογής ψαριού</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 3.4.7.4ac19 του Ψαριού</releaseinfo> 
+	 <legalnotice> 
+		<title>Ανάδραση</title> 
+		<para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τη μικροεφαρμογή Ψαριού ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στη σελίδα <ulink url="ghelp:gnome-feedback" type="help">ανάδρασης GNOME </ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>Το πρόγραμμα ψαριού εμφανίζει μία κινούμενη εικόνα στον πίνακα εφαρμογών και προβλέπει την μοίρα σας όταν κάνετε κλικ σε αυτό.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Ψάρι</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Εισαγωγή</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Μικροεφαρμογή ψαριού</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Εμφάνιση μικροεφαρμογής ψαριού.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Η μικροεφαρμογή <application> Ψάρι</application> εμφανίζει ένα κινούμενο ψάρι στον πίνακα εφαρμογών. Μπορείτε να προσαρμόσετε το όνομα του ψαριού και το πρόγραμμα που εκτελείται όταν κάνετε κλικ το ψάρι στον πίνακα εφαρμογών. Από προεπιλογή, το πρόγραμμα που εκτελείται όταν κάνετε κλικ το ψάρι είναι <application> Fortune</application>, το οποίο εμφανίζει ένα συνήθως κωμικό τυχαίο μήνυμα από μια βάση δεδομένων με προκαθορισμένα αποσπάσματα.</para>
+
+
+
+
+<para>Μπορείτε να προσαρμόσετε την εμφανιζόμενη εικόνα και την εντολή που εκτελείται όταν κάνετε κλικ.</para>
+<sect2 id="fish-introduction-add">
+<title>Για προσθήκη ψαριού στον πίνακα εφαρμογών</title>
+  <para>Εκτελέστε τα παρακάτω βήματα:</para>
+         <orderedlist>
+           <listitem>
+             <para>Κάντε δεξί κλικ στον πίνακα εφαρμογών.</para>
+           </listitem>
+           <listitem>
+             <para>Επιλέξτε <guimenuitem>Προσθήκη στον πίνακα εφαρμογών</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Κυλίστε κάτω τη λίστα αντικειμένων στο διάλογο <guilabel>Προσθήκη στον πίνακα εφαρμογών</guilabel>, και επιλέξτε <guilabel>Ψάρι</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Κάντε κλικ στο κουμπί <guibutton>Προσθήκη</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Χρήση</title>
+<para>Κάντε κλικ στη μικροεφαρμογή για να εμφανίσετε το διάλογο <guilabel>Το ψάρι Wanda</guilabel>. Ο διάλογος κανονικά εμφανίζει ένα μήνυμα τύχης. Μπορείτε να διαμορφώσετε τη μικροεφαρμογή ώστε να καθορίσετε την εντολή εκτέλεσης όταν κάνετε κλικ στη μικροεφαρμογή. Δείτε <xref linkend="fish-settings"/> για περισσότερες πληροφορίες.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Προτιμήσεις</title>
+<para>Για τη διαμόρφωση της μικροεφαρμογής <application>Ψάρι</application>, κάντε δεξί κλικ στη μικροεφαρμογή <application>Ψάρι</application>, και κατόπιν επιλέξτε <guimenu>Προτιμήσεις</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Όνομα ψαριού</guilabel> </term>
+<listitem>
+<para>Χρησιμοποιήστε αυτό το πεδίο κειμένου για να καθορίσετε το όνομα του ψαριού.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Εντολή προς εκτέλεση στα κλικ</guilabel> </term>
+<listitem>
+<para>Ως προεπιλογή, η μικροεφαρμογή <application>Ψάρι</application> εκτελεί την εντολή <literal>τύχη</literal> όταν κάνετε κλικ στην εικόνα του ψαριού. Χρησιμοποιείστε το πεδίο κειμένου για να καθορίσετε κάποια εναλλακτική εντολή προς εκτέλεση.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Αρχείο</guilabel> </term>
+<listitem>
+<para>Χρησιμοποιείστε αυτό το πεδίο για να επιλέξετε την εικόνα που επιθυμείτε να προβάλετε στη μικροεφαρμογή. Μπορείτε να επιλέξετε κάποια εικόνα που παρέχεται με τη μικροεφαρμογή ή μία προσωπική σας εικόνα.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Σύνολο καρέ στην κίνηση σχεδίου</guilabel> </term>
+<listitem>
+<para>Χρησιμοποιήστε αυτό το κουτί περιστροφής για να καθορίσετε τον αριθμό καρέ στην κίνηση του σχεδίου του ψαριού.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Παύση ανά καρέ</guilabel> </term>
+<listitem>
+<para>Χρησιμοποιήστε αυτό το κουτί περιστροφής για να καθορίσετε το χρόνο παύσης σε δευτερόλεπτα μεταξύ των καρέ στην κίνηση του σχεδίου του ψαριού.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Περιστροφή στους κάθετους πίνακες εφαρμογών</guilabel> </term>
+<listitem>
+<para>Επιλέξτε αυτήν την επιλογή για να περιστρέψετε την εικόνα της μικροεφαρμογής όταν εισάγετε τη μικροεφαρμογή σε έναν κάθετο πίνακα εφαρμογών.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

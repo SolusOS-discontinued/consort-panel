@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Kellon ohjekirja</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Paul Cutler</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright><copyright><year>2008.</year><holder>Timo Jyrinki (timo.jyrinki@iki.fi)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>Gnomen dokumentointiprojekti</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+<para>Tämä käyttöohje on osa Gnomen käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+<para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Gnomen dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+<para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <orderedlist><listitem>
+<para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+</listitem>
+<listitem>
+<para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul </firstname> 
+		  <surname> Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Gnomen dokumentointiprojekti</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>Gnomen dokumentointiprojekti</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>Gnomen dokumentointiprojekti</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.7</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Clock Applet Manual V2.6</revnumber> 
+		  <date>January 2010</date> 
+		  <revdescription> 
+			 <para role="author">Paul Cutler</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja v2.5</revnumber> 
+		  <date>Helmikuu 2004</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja v2.4</revnumber> 
+		  <date>Syyskuu 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja v2.3</revnumber> 
+		  <date>Tammikuu 2003</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja v2.2</revnumber> 
+		  <date>Elokuu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja v2.1</revnumber> 
+		  <date>Kesäkuu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja v2.0</revnumber> 
+		  <date>Maaliskuu 2002</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Kellosovelman ohjekirja</revnumber> 
+		  <date>Huhtikuu 2000</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Tämä ohjekirja kuvaa kellosovelman version 2.5.3.1</releaseinfo> 
+	 <legalnotice> 
+		<title>Palaute</title> 
+		<para>Ilmoittaaksesi viasta tai tehdäksesi ehdotuksen Kello-sovelmaan tai tähän käyttöohjeeseen liittyen, seuraa ohjeita <ulink url="ghelp:gnome-feedback" type="help">Gnomen palautesivulla</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Kello</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Johdanto</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Kellosovelma</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Näyttää Kello-sovelman.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>
+The <application>Clock</application> applet displays the date and time, and when clicked, displays a calendar.  The <application>Clock</application> can be customized to show seconds or a 12 or 24 hour clock.
+</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Kellon lisääminen paneeliin</title>
+  <para>Tee seuraavasti:</para>
+         <orderedlist>
+           <listitem>
+             <para>Napsauta paneelia hiiren oikealla painikkeella.</para>
+           </listitem>
+           <listitem>
+             <para>Valitse <guimenuitem>Lisää paneeliin</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Vieritä kohdeluetteloa alaspäin <guilabel>Lisää paneeliin</guilabel> -valintaikkunassa, ja valitse sitten <guilabel>Kello</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Napsauta <guibutton>Lisää</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Käyttö</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Kalenterin näyttäminen</title>	
+	<para>Napsauta sovelmaa avataksesi pienen kalenterin, joka näyttää nykyisen kuukauden. Sulkeaksesi kalenterin, napsauta uudelleen sovelman paneelissa olevaa osaa.</para>
+	
+	<para>Kalenterissa olevaa kuukautta voidaan vaihtaa napsauttamalla kuukausi- ja vuosi-tekstien vieressä olevia nuolia.</para>	
+	
+	<para>Kaksoisnapsauta päivää kalenterissa käynnistääksesi <application>Evolution</application>-sähköposti ja -kalenteriohjelmiston.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Päiväyksen tai ajan lisääminensovellukseen</title>	
+<para><application>Kello</application>-sovelma hakee ajan järjestelmän kellolta.</para>
+<para>Lisätäksesi päiväyksen tai ajan sovellukseen <application>Kello</application>-sovelmasta, tee seuraavasti:</para>
+	<orderedlist>
+		<listitem>
+			<para>Napsauta <application>Kello</application>-sovelmaa hiiren oikealla painikkeella.</para>
+		</listitem>
+		<listitem>
+			<para>Valitse yksi seuraavista sovelman ponnahdusvalikon valikkokohdista:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Kopioi aika</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Kopioi päiväys</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Siirry sovellukseen, johon haluat lisätä valitun kohteen.</para>
+		</listitem>
+		<listitem>
+			<para>Valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Liitä</guimenuitem></menuchoice> tai napsauta hiiren keskimmäisellä painikkeella lisätäksesi kohteen.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Järjestelmän päiväyksen tai ajan asettaminen</title>
+	<para>Asettaaksesi <application>Kello</application>-sovelman näyttämän järjestelmän päiväyksen tai ajan, tee seuraavasti:</para>
+	<orderedlist>
+	<listitem>
+			<para>Napsauta sovelmaa hiiren oikealla painikkeella ja valitse <guimenuitem>Aseta päiväys ja aika</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Kirjoita <literal>root</literal>-käyttäjän (pääkäyttäjä) salasana ja napsauta sitten <guibutton>OK</guibutton></para>
+	</listitem>
+	<listitem>
+			<para><application>Kello</application>-sovelma käynnistää järjestelmätyökalun, jolla järjestelmän päiväystä tai aikaa voidaan muuttaa. Käytä työkalua päiväyksen ja ajan asettamiseen.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Clock Preferences</title> 
+	<para>
+	To configure the <application>Clock</application>, right-click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. You will be presented with three tabs to change preferences for <guimenuitem>General</guimenuitem>,  <guimenuitem>Locations</guimenuitem> or <guimenuitem>Weather</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>General Preferences</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Clock Format</guilabel></term> 
+			 <listitem> 
+			 <para>Valitse yksi seuraavista valinnoista:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12-tuntinen muoto</guilabel></para>
+			 <para>Näyttää ajan a.m./p.m.-muodossa.</para>
+			 <note><para>Tätä valintaa ei näytetä, jos istuntosi kieli ei käytä 12-tuntista kelloa.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24-tuntinen muoto</guilabel></para>
+			 <para>Näyttää ajan 00.00-24.00-muodossa.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the date</guilabel></term>
+			 <listitem> 
+			 <para>Valitse tämä näyttääksesi päiväyksen sovelmassa.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Näytä sekunnit</guilabel></term>
+			 <listitem> 
+			 <para>Valitse tämä näyttääksesi sekunnit sovelmassa.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show the weather</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the the current weather forecast at your location.
+			The weather will be displayed as an icon for sunny, cloudy, rain or more.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Show temperature</guilabel></term>
+			 <listitem> 
+			 <para>Select this option to display the temperature at your location.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Location Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Locations</guilabel></term> 
+			 <listitem> 
+			 <para>You can add one or more locations and their local time to be displayed in the Clock.  
+			To add a location:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Press <guilabel>Add</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Type the city, region or country name and as you type a list of options will appear
+			in a drop down box.  Select a match from the pop-up and the <guilabel>Timezone</guilabel>,
+			 <guilabel>Latitude</guilabel>, and <guilabel>Longitude</guilabel> entries will be 
+			automatically filled in.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Weather Preferences</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Weather</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Temperature unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (Fahrenheit)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (Celsius)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Kelvin)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Wind speed unit</guilabel></term> 
+			 <listitem> 
+			 <para>You can display the Speed unit in one of the following options from the drop down box:
+			</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Beaufort scale</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Knots</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (miles per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (kilometers per hour)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Dm/a</guilabel> (meters per second)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Default</guilabel> The default display for your region.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

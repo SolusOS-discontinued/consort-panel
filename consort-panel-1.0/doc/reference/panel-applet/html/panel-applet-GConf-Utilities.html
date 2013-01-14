@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GConf Utilities</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="reference.html" title="Part IV. API Reference">
+<link rel="prev" href="panel-applet-Panel-Applet-Factory.html" title="Panel Applet Factory">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="panel-applet-Panel-Applet-Factory.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="reference.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td> </td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#panel-applet-GConf-Utilities.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#panel-applet-GConf-Utilities.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="panel-applet-GConf-Utilities"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="panel-applet-GConf-Utilities.top_of_page"></a>GConf Utilities</span></h2>
+<p>GConf Utilities — utility API to use GConf with applets.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="panel-applet-GConf-Utilities.stability-level"></a><h2>Stability Level</h2>
+Unstable, unless otherwise indicated
+</div>
+<div class="refsynopsisdiv">
+<a name="panel-applet-GConf-Utilities.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;panel-applet-gconf.h&gt;
+
+<span class="returnvalue">gchar</span> *             <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-full-key" title="panel_applet_gconf_get_full_key ()">panel_applet_gconf_get_full_key</a>     (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-bool" title="panel_applet_gconf_get_bool ()">panel_applet_gconf_get_bool</a>         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-int" title="panel_applet_gconf_get_int ()">panel_applet_gconf_get_int</a>          (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-string" title="panel_applet_gconf_get_string ()">panel_applet_gconf_get_string</a>       (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gdouble</span>             <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-float" title="panel_applet_gconf_get_float ()">panel_applet_gconf_get_float</a>        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">GSList</span> *            <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-list" title="panel_applet_gconf_get_list ()">panel_applet_gconf_get_list</a>         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValueType"><span class="type">GConfValueType</span></a> list_type</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValue"><span class="returnvalue">GConfValue</span></a> *        <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-value" title="panel_applet_gconf_get_value ()">panel_applet_gconf_get_value</a>        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-bool" title="panel_applet_gconf_set_bool ()">panel_applet_gconf_set_bool</a>         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> the_bool</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-int" title="panel_applet_gconf_set_int ()">panel_applet_gconf_set_int</a>          (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> the_int</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-string" title="panel_applet_gconf_set_string ()">panel_applet_gconf_set_string</a>       (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *the_string</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-float" title="panel_applet_gconf_set_float ()">panel_applet_gconf_set_float</a>        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">gdouble</span> the_float</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-list" title="panel_applet_gconf_set_list ()">panel_applet_gconf_set_list</a>         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValueType"><span class="type">GConfValueType</span></a> list_type</code></em>,
+                                                         <em class="parameter"><code><span class="type">GSList</span> *list</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-value" title="panel_applet_gconf_set_value ()">panel_applet_gconf_set_value</a>        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValue"><span class="type">GConfValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="panel-applet-GConf-Utilities.description"></a><h2>Description</h2>
+<p>
+The <code class="function">panel_applet_gconf_*()</code> set of API provides
+convenience functions to access GConf keys that are specific to an
+applet instance.
+</p>
+<p>
+Keep in mind that it might be worth considering using <a class="link" href="getting-started.settings.html" title="Settings">global settings</a> for your applet,
+instead of settings specific to an instance.
+</p>
+</div>
+<div class="refsect1">
+<a name="panel-applet-GConf-Utilities.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-full-key"></a><h3>panel_applet_gconf_get_full_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             panel_applet_gconf_get_full_key     (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_full_key</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the full GConf path of <em class="parameter"><code>key</code></em>, in the per-instance GConf directory of
+<em class="parameter"><code>applet</code></em>. The string should be freed by the caller.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-bool"></a><h3>panel_applet_gconf_get_bool ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            panel_applet_gconf_get_bool         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_bool</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-get-bool"><code class="function">gconf_client_get_bool()</code></a> to get the value of <em class="parameter"><code>key</code></em>
+in the per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the value of <em class="parameter"><code>key</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-int"></a><h3>panel_applet_gconf_get_int ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                panel_applet_gconf_get_int          (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_int</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-get-int"><code class="function">gconf_client_get_int()</code></a> to get the value of <em class="parameter"><code>key</code></em>
+in the per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the value of <em class="parameter"><code>key</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-string"></a><h3>panel_applet_gconf_get_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             panel_applet_gconf_get_string       (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_string</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-get-string"><code class="function">gconf_client_get_string()</code></a> to get the value of <em class="parameter"><code>key</code></em>
+in the per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the value of <em class="parameter"><code>key</code></em>. The string should be freed by the caller.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-float"></a><h3>panel_applet_gconf_get_float ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>             panel_applet_gconf_get_float        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_float</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-get-float"><code class="function">gconf_client_get_float()</code></a> to get the value of <em class="parameter"><code>key</code></em>
+in the per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the value of <em class="parameter"><code>key</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-list"></a><h3>panel_applet_gconf_get_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">GSList</span> *            panel_applet_gconf_get_list         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValueType"><span class="type">GConfValueType</span></a> list_type</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_list</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-get-list"><code class="function">gconf_client_get_list()</code></a> to get the value of <em class="parameter"><code>key</code></em>
+in the per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the value of <em class="parameter"><code>key</code></em>. The list and its content should be freed by the
+caller.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-get-value"></a><h3>panel_applet_gconf_get_value ()</h3>
+<pre class="programlisting"><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValue"><span class="returnvalue">GConfValue</span></a> *        panel_applet_gconf_get_value        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_get_value</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <code class="function">gconf_client_get_value()</code> to get the value of <em class="parameter"><code>key</code></em>
+in the per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the value of <em class="parameter"><code>key</code></em>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-set-bool"></a><h3>panel_applet_gconf_set_bool ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_gconf_set_bool         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> the_bool</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_set_bool</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-set-bool"><code class="function">gconf_client_set_bool()</code></a> to update <em class="parameter"><code>key</code></em> in the
+per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>the_bool</code></em> :</span></p></td>
+<td>new value for <em class="parameter"><code>key</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-set-int"></a><h3>panel_applet_gconf_set_int ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_gconf_set_int          (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> the_int</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_set_int</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-set-int"><code class="function">gconf_client_set_int()</code></a> to update <em class="parameter"><code>key</code></em> in the
+per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>the_int</code></em> :</span></p></td>
+<td>new value for <em class="parameter"><code>key</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-set-string"></a><h3>panel_applet_gconf_set_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_gconf_set_string       (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *the_string</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_set_string</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-set-string"><code class="function">gconf_client_set_string()</code></a> to update <em class="parameter"><code>key</code></em> in the
+per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>the_string</code></em> :</span></p></td>
+<td>new value for <em class="parameter"><code>key</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-set-float"></a><h3>panel_applet_gconf_set_float ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_gconf_set_float        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><span class="type">gdouble</span> the_float</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_set_float</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-set-float"><code class="function">gconf_client_set_float()</code></a> to update <em class="parameter"><code>key</code></em> in the
+per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>the_float</code></em> :</span></p></td>
+<td>new value for <em class="parameter"><code>key</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-set-list"></a><h3>panel_applet_gconf_set_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_gconf_set_list         (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValueType"><span class="type">GConfValueType</span></a> list_type</code></em>,
+                                                         <em class="parameter"><code><span class="type">GSList</span> *list</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_set_list</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-client.html#gconf-client-set-list"><code class="function">gconf_client_set_list()</code></a> to update <em class="parameter"><code>key</code></em> in the
+per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>list_type</code></em> :</span></p></td>
+<td>type of items in <em class="parameter"><code>list</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>list</code></em> :</span></p></td>
+<td>new value for <em class="parameter"><code>key</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-gconf-set-value"></a><h3>panel_applet_gconf_set_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                panel_applet_gconf_set_value        (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *key</code></em>,
+                                                         <em class="parameter"><code><a href="/gnome/usr/share/gtk-doc/html/gconf/gconf-gconf-value.html#GConfValue"><span class="type">GConfValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_applet_gconf_set_value</code> has been deprecated since version 3.0 and should not be used in newly-written code. Use <span class="type">GSettings</span> to store per-instance settings.</p>
+</div>
+<p>
+Convenience wrapper around <code class="function">gconf_client_set_value()</code> to update <em class="parameter"><code>key</code></em> in the
+per-instance GConf directory of <em class="parameter"><code>applet</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
+<td>a GConf key name.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
+<td>new value for <em class="parameter"><code>key</code></em>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span>, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

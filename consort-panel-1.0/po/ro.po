@@ -1,0 +1,3049 @@
+# Romanian translation for consort-panel
+# Copyright (C) 2000 - 2004 Free Software Foundation, Inc.
+# Marius Andreiana <marius galuna.ro>, 2000, 2002, 2003.
+# Mișu Moldovan <dumol@gnome.ro>, 2003, 2004.
+# Dan Damian <dand@gnome.ro>, 2000-2001, 2005-2006.
+# Alexandru Szasz <alexxed@gmail.com>, 2007.
+# Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
+# TODO: "item" e tradus ca "item" și "element"
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010, 2011.
+# Daniel Șerbănescu <cyber19rider@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: consort-panel\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"panel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-11-14 21:27+0000\n"
+"PO-Revision-Date: 2011-11-22 04:11+0300\n"
+"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
+"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Launchpad-Export-Date: 2009-08-02 14:36+0000\n"
+"X-Project-Style: gnome\n"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#.
+#: ../applets/clock/calendar-window.c:324 ../applets/clock/clock.c:452
+#: ../applets/clock/clock-location-tile.c:507
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#.
+#: ../applets/clock/calendar-window.c:329 ../applets/clock/clock.c:457
+#: ../applets/clock/clock.c:1600 ../applets/clock/clock-location-tile.c:467
+#: ../applets/clock/clock-location-tile.c:514
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the start date of an appointment, in
+#. * the most abbreviated way possible.
+#: ../applets/clock/calendar-window.c:335
+msgid "%b %d"
+msgstr "%b %d"
+
+#: ../applets/clock/calendar-window.c:835
+msgid "Tasks"
+msgstr "Sarcini"
+
+#: ../applets/clock/calendar-window.c:835
+#: ../applets/clock/calendar-window.c:1018
+#: ../applets/clock/calendar-window.c:1624
+msgid "Edit"
+msgstr "Modifică"
+
+#: ../applets/clock/calendar-window.c:958
+msgid "All Day"
+msgstr "Toată ziua"
+
+#: ../applets/clock/calendar-window.c:1102
+msgid "Appointments"
+msgstr "Întâlniri"
+
+#: ../applets/clock/calendar-window.c:1127
+msgid "Birthdays and Anniversaries"
+msgstr "Aniversări"
+
+#: ../applets/clock/calendar-window.c:1152
+msgid "Weather Information"
+msgstr "Informații meteo"
+
+#: ../applets/clock/calendar-window.c:1624 ../applets/clock/clock.ui.h:11
+msgid "Locations"
+msgstr "Locuri"
+
+#: ../applets/clock/calendar-window.c:1922
+msgid "Calendar"
+msgstr "Calendar"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#: ../applets/clock/clock.c:452
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#: ../applets/clock/clock.c:457 ../applets/clock/clock.c:1594
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the date. Replace %e with %d if, when
+#. * the day of the month as a decimal number is a single digit,
+#. * it should begin with a 0 in your locale (e.g. "May 01"
+#. * instead of "May  1").
+#: ../applets/clock/clock.c:468
+msgid "%a %b %e"
+msgstr "%a %e %b"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#: ../applets/clock/clock.c:475
+#, c-format
+msgid ""
+"%1$s\n"
+"%2$s"
+msgstr ""
+"%2$s\n"
+"%1$s"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#: ../applets/clock/clock.c:483
+#, c-format
+msgid "%1$s, %2$s"
+msgstr "%2$s, %1$s"
+
+#. Show date in tooltip.
+#. Translators: This is a strftime format string.
+#. * It is used to display a date. Please leave "%%s" as it is:
+#. * it will be used to insert the timezone name later.
+#: ../applets/clock/clock.c:649
+msgid "%A %B %d (%%s)"
+msgstr "%A, %e %B (%%s)"
+
+#: ../applets/clock/clock.c:679
+msgid "Click to hide your appointments and tasks"
+msgstr "Clic pentru a ascunde întâlnirile și sarcinile dumneavoastră"
+
+#: ../applets/clock/clock.c:682
+msgid "Click to view your appointments and tasks"
+msgstr "Clic pentru a vizualiza întâlnirile și sarcinile"
+
+#: ../applets/clock/clock.c:686
+msgid "Click to hide month calendar"
+msgstr "Clic pentru a ascunde calendarul lunar"
+
+#: ../applets/clock/clock.c:689
+msgid "Click to view month calendar"
+msgstr "Clic pentru a vizualiza calendarul lunar"
+
+#: ../applets/clock/clock.c:1432
+msgid "Computer Clock"
+msgstr "Ceas calculator"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1579
+msgid "%I:%M:%S %p"
+msgstr "%I:%M:%S %p"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1587
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display a date in the full format (so that people can
+#. * copy and paste it elsewhere).
+#: ../applets/clock/clock.c:1633
+msgid "%A, %B %d %Y"
+msgstr "%A, %d %B %Y"
+
+#: ../applets/clock/clock.c:1702
+msgid "Failed to open the time settings"
+msgstr "Nu s-au putut deschide configurațiile orei"
+
+#: ../applets/clock/clock.c:1722 ../applets/fish/fish.c:1317
+#: ../applets/wncklet/window-list.c:159
+#: ../applets/wncklet/workspace-switcher.c:218
+msgid "_Preferences"
+msgstr "_Preferințe"
+
+#: ../applets/clock/clock.c:1725
+msgid "Copy _Time"
+msgstr "Copiază _ora"
+
+#: ../applets/clock/clock.c:1728
+msgid "Copy _Date"
+msgstr "Copiază _data"
+
+#: ../applets/clock/clock.c:1731
+msgid "Ad_just Date & Time"
+msgstr "_Schimbă data și ora"
+
+#: ../applets/clock/clock.c:2568
+msgid "Custom format"
+msgstr "Format personalizat"
+
+#: ../applets/clock/clock.c:3055
+msgid "Choose Location"
+msgstr "Alege locația"
+
+#: ../applets/clock/clock.c:3134
+msgid "Edit Location"
+msgstr "Editează locația"
+
+#: ../applets/clock/clock.c:3281
+msgid "City Name"
+msgstr "Nume oraș"
+
+#: ../applets/clock/clock.c:3285
+msgid "City Time Zone"
+msgstr "Fus orar oraș"
+
+#: ../applets/clock/clock.c:3472
+msgid "24 hour"
+msgstr "24 de ore"
+
+#: ../applets/clock/clock.c:3473
+msgid "UNIX time"
+msgstr "Timp UNIX"
+
+#: ../applets/clock/clock.c:3474
+msgid "Internet time"
+msgstr "Timp Internet"
+
+#: ../applets/clock/clock.c:3482
+msgid "Custom _format:"
+msgstr "_Format personalizat:"
+
+#: ../applets/clock/clock.ui.h:1
+msgid "<i>(optional)</i>"
+msgstr "<i>(opțional)</i>"
+
+#. Languages that have a single word that translates as either "state" or "province" should use that instead of "region".
+#: ../applets/clock/clock.ui.h:3
+msgid ""
+"<small><i>Type a city, region, or country name and then select a match from "
+"the pop-up.</i></small>"
+msgstr ""
+"<small><i>Tastați numele unui oraș, al unui județ sau al unei țări și apoi "
+"alegeți intrarea potrivită din meniul contextual.</i></small>"
+
+#: ../applets/clock/clock.ui.h:4
+msgid "Clock Format"
+msgstr "Format ceas"
+
+#: ../applets/clock/clock.ui.h:5
+msgid "Clock Preferences"
+msgstr "Preferințe ceas"
+
+#: ../applets/clock/clock.ui.h:6
+msgid "Display"
+msgstr "Afișare"
+
+#: ../applets/clock/clock.ui.h:7
+msgid "East"
+msgstr "Est"
+
+#: ../applets/clock/clock.ui.h:8 ../applets/fish/fish.ui.h:5
+#: ../consort-panel/panel-properties-dialog.ui.h:9
+msgid "General"
+msgstr "Generale"
+
+#: ../applets/clock/clock.ui.h:9
+msgid "L_atitude:"
+msgstr "L_atitudine:"
+
+#: ../applets/clock/clock.ui.h:10
+msgid "L_ongitude:"
+msgstr "L_ongitudine:"
+
+#: ../applets/clock/clock.ui.h:12
+msgid "North"
+msgstr "Nord"
+
+#: ../applets/clock/clock.ui.h:13
+msgid "Panel Display"
+msgstr "Afișare panou"
+
+#: ../applets/clock/clock.ui.h:14
+msgid "Show _temperature"
+msgstr "Afișează _temperatura"
+
+#: ../applets/clock/clock.ui.h:15
+msgid "Show _weather"
+msgstr "Afișează _vremea"
+
+#: ../applets/clock/clock.ui.h:16
+msgid "Show seco_nds"
+msgstr "Afișează secu_nde"
+
+#: ../applets/clock/clock.ui.h:17
+msgid "Show the _date"
+msgstr "Afișează _data"
+
+#: ../applets/clock/clock.ui.h:18
+msgid "South"
+msgstr "Sud"
+
+#: ../applets/clock/clock.ui.h:19
+msgid "Time _Settings"
+msgstr "_Configurări oră"
+
+#: ../applets/clock/clock.ui.h:20
+msgid "Weather"
+msgstr "Vreme"
+
+#: ../applets/clock/clock.ui.h:21
+msgid "West"
+msgstr "Vest"
+
+#: ../applets/clock/clock.ui.h:22
+msgid "_12 hour format"
+msgstr "Format cu _12 ore"
+
+#: ../applets/clock/clock.ui.h:23
+msgid "_24 hour format"
+msgstr "Format cu _24 de ore"
+
+#: ../applets/clock/clock.ui.h:24
+msgid "_Location Name:"
+msgstr "Nume _locație:"
+
+#: ../applets/clock/clock.ui.h:25
+msgid "_Pressure unit:"
+msgstr "Unitate _presiune:"
+
+#: ../applets/clock/clock.ui.h:26
+msgid "_Temperature unit:"
+msgstr "Unitate _temperatură:"
+
+#: ../applets/clock/clock.ui.h:27
+msgid "_Timezone:"
+msgstr "_Fus orar:"
+
+#: ../applets/clock/clock.ui.h:28
+msgid "_Visibility unit:"
+msgstr "Unitate _vizibilitate:"
+
+#: ../applets/clock/clock.ui.h:29
+msgid "_Wind speed unit:"
+msgstr "Unitate viteză _vânt:"
+
+#. Translators:
+#. This controls whether the GNOME panel clock should display time in 24 hour mode
+#. or 12 hour mode by default. The only valid values for this are "24-hour" and
+#. "12-hour". If your locale uses 24 hour time notation, translate this to "24-hour".
+#. If your locale uses 12 hour time notation with am/pm, translate this to "12-hour".
+#.
+#. Do NOT translate this into anything else than "24-hour" or "12-hour". For example,
+#. if you translate this to "24 sata" or anything else that isn't "24-hour" or
+#. "12-hour", things will not work.
+#.
+#: ../applets/clock/clock.schemas.in.h:11
+msgid "24-hour"
+msgstr "24-hour"
+
+#: ../applets/clock/clock.schemas.in.h:12
+msgid "A list of locations to display in the calendar window."
+msgstr "Lista locurilor de afișat în fereastra calendarului."
+
+#: ../applets/clock/clock.schemas.in.h:13
+msgid "Custom format of the clock"
+msgstr "Format personalizat pentru ceas"
+
+#: ../applets/clock/clock.schemas.in.h:14
+msgid "Expand list of appointments"
+msgstr "Extinde lista întâlnirilor"
+
+#: ../applets/clock/clock.schemas.in.h:15
+msgid "Expand list of birthdays"
+msgstr "Extinde lista aniversărilor"
+
+#: ../applets/clock/clock.schemas.in.h:16
+msgid "Expand list of locations"
+msgstr "Extinde lista locurilor"
+
+#: ../applets/clock/clock.schemas.in.h:17
+msgid "Expand list of tasks"
+msgstr "Extinde lista sarcinilor"
+
+#: ../applets/clock/clock.schemas.in.h:18
+msgid "Expand list of weather information"
+msgstr "Extinde lista cu informații meteo"
+
+#: ../applets/clock/clock.schemas.in.h:19
+msgid "Hour format"
+msgstr "Format oră"
+
+#: ../applets/clock/clock.schemas.in.h:20
+msgid "If true, display a weather icon."
+msgstr "La activare, afișează o iconiță cu vremea."
+
+#: ../applets/clock/clock.schemas.in.h:21
+msgid "If true, display date in the clock, in addition to time."
+msgstr "La activare, pe lângă oră se va afișa și data."
+
+#: ../applets/clock/clock.schemas.in.h:22
+msgid "If true, display seconds in time."
+msgstr "La activare, se vor afișa și secundele."
+
+#: ../applets/clock/clock.schemas.in.h:23
+msgid "If true, expand the list of appointments in the calendar window."
+msgstr "La activare, extinde lista cu întâlniri în fereastra calendarului."
+
+#: ../applets/clock/clock.schemas.in.h:24
+msgid "If true, expand the list of birthdays in the calendar window."
+msgstr "La activare, extinde lista cu aniversări în fereastra calendarului."
+
+#: ../applets/clock/clock.schemas.in.h:25
+msgid "If true, expand the list of locations in the calendar window."
+msgstr "La activare, extinde lista locurilor în fereastra calendarului."
+
+#: ../applets/clock/clock.schemas.in.h:26
+msgid "If true, expand the list of tasks in the calendar window."
+msgstr "La activare, extinde lista cu sarcini în fereastra calendarului."
+
+#: ../applets/clock/clock.schemas.in.h:27
+msgid "If true, expand the list of weather information in the calendar window."
+msgstr ""
+"La activare, extinde lista cu informații meteo în fereastra calendarului."
+
+#: ../applets/clock/clock.schemas.in.h:28
+msgid "If true, show date in a tooltip when the pointer is over the clock."
+msgstr ""
+"La activare, la trecerea mausului peste ceas se va afișa data într-un "
+"indiciu."
+
+#: ../applets/clock/clock.schemas.in.h:29
+msgid "If true, show the temperature next to the weather icon."
+msgstr "La activare, afișează temperatura alături de iconița cu vremea."
+
+#: ../applets/clock/clock.schemas.in.h:30
+msgid "If true, show week numbers in the calendar."
+msgstr "La activare, arată numărul săptămânilor în calendar"
+
+#: ../applets/clock/clock.schemas.in.h:31
+msgid "List of locations"
+msgstr "Listă de locuri"
+
+#: ../applets/clock/clock.schemas.in.h:32
+msgid "Show date in clock"
+msgstr "Arată data în ceas"
+
+#: ../applets/clock/clock.schemas.in.h:33
+msgid "Show date in tooltip"
+msgstr "Arată data ca indiciu"
+
+#: ../applets/clock/clock.schemas.in.h:34
+msgid "Show temperature in clock"
+msgstr "Afișează temperatura alături de ceas"
+
+#: ../applets/clock/clock.schemas.in.h:35
+msgid "Show time with seconds"
+msgstr "Arată secundele în ceas"
+
+#: ../applets/clock/clock.schemas.in.h:36
+msgid "Show weather in clock"
+msgstr "Afișează vremea alături de ceas"
+
+#: ../applets/clock/clock.schemas.in.h:37
+msgid "Show week numbers in calendar"
+msgstr "Arată numărul săptămânilor în calendar"
+
+#: ../applets/clock/clock.schemas.in.h:38
+msgid "Speed unit"
+msgstr "Unitate de viteză"
+
+#: ../applets/clock/clock.schemas.in.h:39
+msgid "Temperature unit"
+msgstr "Unitate de temperatură"
+
+#: ../applets/clock/clock.schemas.in.h:40
+msgid "The unit to use when showing temperatures."
+msgstr "Unitatea de măsură folosită pentru a afișa temperaturile."
+
+#: ../applets/clock/clock.schemas.in.h:41
+msgid "The unit to use when showing wind speed."
+msgstr "Unitatea de măsură folosită pentru a afișa viteza vântului."
+
+#: ../applets/clock/clock.schemas.in.h:42
+msgid ""
+"The use of this key was deprecated in GNOME 2.22 with the use of an internal "
+"time configuration tool. The schema is retained for compatibility with older "
+"versions."
+msgstr ""
+"Utilizarea acestei chei este considerată învechită începând cu GNOME 2.22 "
+"pentru utilizarea într-o unealtă internă de configurare a ceasului. Schema "
+"este păstrată doar pentru compatibilitate cu versiuni mai vechi."
+
+#: ../applets/clock/clock.schemas.in.h:43
+msgid ""
+"The use of this key was deprecated in GNOME 2.28 in favour of the use of "
+"timezones. The schema is retained for compatibility with older versions."
+msgstr ""
+"Utilizarea acestei chei în GNOME 2.28 este descurajată în favoarea "
+"utilizării fusurilor orare. Schema a fost păstrată însă din motive de "
+"compatibilitate."
+
+#: ../applets/clock/clock.schemas.in.h:44
+msgid ""
+"The use of this key was deprecated in GNOME 2.6 in favour of the 'format' "
+"key. The schema is retained for compatibility with older versions."
+msgstr ""
+"Utilizarea acestei chei în GNOME 2.6 este descurajată în favoarea cheii "
+"„format”. A fost păstrată însă din motive de compatibilitate."
+
+#: ../applets/clock/clock.schemas.in.h:45
+msgid ""
+"This key specifies the format used by the clock applet when the format key "
+"is set to \"custom\". You can use conversion specifiers understood by "
+"strftime() to obtain a specific format. See the strftime() manual for more "
+"information."
+msgstr ""
+"Această cheie specifică formatul folosit de mini-aplicația ceas când cheia "
+"de formatare este definită la „custom”. Pentru a obține un anumit format "
+"poți folosi simboluri de conversie înțelese de strftime(). Pentru mai multe "
+"informații citește manualul strftime()."
+
+#: ../applets/clock/clock.schemas.in.h:46
+msgid ""
+"This key specifies the hour format used by the clock applet. Possible values "
+"are \"12-hour\", \"24-hour\", \"internet\", \"unix\" and \"custom\". If set "
+"to \"internet\", the clock will display Internet time. The Internet time "
+"system divides the day into 1000 \".beats\". There are no time zones in this "
+"system, so time is the same all over the world. If set to \"unix\", the "
+"clock will display time in seconds since Epoch, i.e. 1970-01-01. If set to "
+"\"custom\", the clock will display time according to the format specified in "
+"the custom_format key."
+msgstr ""
+"Această cheie specifică formatul orei utilizat în panou. Valorile posibile "
+"sunt „12-hour”, „24-hour”, „internet”, „unix” sau „custom”. Pentru valoarea "
+"„internet”, se va afișa în panou timpul Internet. În acest sistem, ziua este "
+"împărțită în 1000 de „.beats”. Nu există fusuri orare în acest sistem, "
+"timpul este același peste tot în lume. Pentru valoarea „unix”, ceasul va "
+"afișa timpul în secunde de la momentul Epoch, adică 01.01.1970. Pentru "
+"valoarea „custom”, ceasul va arăta timpul în formatul specificat de cheia "
+"„custom_format”."
+
+#: ../applets/clock/clock.schemas.in.h:47
+msgid "Time configuration tool"
+msgstr "Unealtă de configurare a timpului"
+
+#: ../applets/clock/clock.schemas.in.h:48
+msgid "Use Internet time"
+msgstr "Utilizează timpul Internet"
+
+#: ../applets/clock/clock.schemas.in.h:49
+msgid "Use UNIX time"
+msgstr "Utilizează timpul Unix"
+
+#: ../applets/clock/clock.schemas.in.h:50
+msgid "Use UTC"
+msgstr "Utilizează UTC"
+
+#: ../applets/clock/clock-location-tile.c:183
+msgid "Failed to set the system timezone"
+msgstr "Nu s-a putut defini fusul orar al sistemului"
+
+#: ../applets/clock/clock-location-tile.c:231
+msgid "<small>Set...</small>"
+msgstr "<small>Setează...</small>"
+
+#: ../applets/clock/clock-location-tile.c:232
+msgid "<small>Set</small>"
+msgstr "<small>Setează</small>"
+
+#: ../applets/clock/clock-location-tile.c:308
+msgid "Set location as current location and use its timezone for this computer"
+msgstr ""
+"Setează locația drept locație curentă și folosește fusul orar al acesteia "
+"pentru acest calculator"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:444
+msgid "%l:%M <small>%p (%A)</small>"
+msgstr "%l:%M <small>%p (%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday).
+#: ../applets/clock/clock-location-tile.c:452
+msgid "%H:%M <small>(%A)</small>"
+msgstr "%H:%M <small>(%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:461
+msgid "%l:%M <small>%p</small>"
+msgstr "%l:%M <small>%p</small>"
+
+#: ../applets/clock/clock-location-tile.c:600
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#. FMQ: it's broken to read from another module's translations; add some API to libgweather.
+#: ../applets/clock/clock-location-tile.c:612
+#: ../applets/clock/clock-location-tile.c:621
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#. Translators: The two strings are temperatures.
+#: ../applets/clock/clock-location-tile.c:614
+#, c-format
+msgid "%s, feels like %s"
+msgstr "%s, se simte ca %s"
+
+#: ../applets/clock/clock-location-tile.c:637
+#, c-format
+msgid "Sunrise: %s / Sunset: %s"
+msgstr "Răsărit: %s / Apus: %s"
+
+#: ../applets/clock/clock-utils.c:93 ../applets/fish/fish.c:163
+#: ../applets/wncklet/wncklet.c:74
+#: ../consort-panel/libpanel-util/panel-show.c:239
+#, c-format
+msgid "Could not display help document '%s'"
+msgstr "Nu s-a putut afișa documentul ajutor „%s”"
+
+#: ../applets/clock/clock-utils.c:122 ../applets/fish/fish.c:189
+#: ../applets/wncklet/wncklet.c:103
+msgid "Error displaying help document"
+msgstr "Eroare la afișarea documentului ajutor"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+msgid "Clock"
+msgstr "Ceas"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+msgid "Clock Applet Factory"
+msgstr "Șablon mini-aplicații Ceas"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+msgid "Factory for clock applet"
+msgstr "Șablon pentru mini-aplicații Ceas"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+msgid "Get the current time and date"
+msgstr "Obține ora și data curentă"
+
+#: ../applets/fish/fish.c:217
+#, c-format
+msgid ""
+"Warning:  The command appears to be something actually useful.\n"
+"Since this is a useless applet, you may not want to do this.\n"
+"We strongly advise you against using %s for anything\n"
+"which would make the applet \"practical\" or useful."
+msgstr ""
+"Atenție: Comanda pare să fie ceva util.\n"
+"Din moment ce această mini-aplicație e inutilă, poate nu doriți asta.\n"
+"Sunteți sfătuit să nu încercați utilizarea %s pentru orice\n"
+"scop ce ar putea face această mini-aplicație practică sau utilă."
+
+#: ../applets/fish/fish.c:365 ../applets/fish/fish.c:481
+#, no-c-format
+msgid "%s the Fish"
+msgstr "Peștele %s"
+
+#: ../applets/fish/fish.c:366
+#, c-format
+msgid "%s the Fish, a contemporary oracle"
+msgstr "Peștele %s, un oracol contemporan"
+
+#: ../applets/fish/fish.c:437
+msgid "Unable to locate the command to execute"
+msgstr "Nu se poate localiza comanda de executat"
+
+#: ../applets/fish/fish.c:486
+#, no-c-format
+msgid "%s the Fish Says:"
+msgstr "Peștele %s spune:"
+
+#: ../applets/fish/fish.c:555
+#, c-format
+msgid ""
+"Unable to read output from command\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Nu se poate citi rezultatul comenzii\n"
+"\n"
+"Detalii: %s"
+
+#: ../applets/fish/fish.c:632
+msgid "_Speak again"
+msgstr "_Vorbește din nou"
+
+#: ../applets/fish/fish.c:714
+#, c-format
+msgid "The configured command is not working and has been replaced by: %s"
+msgstr "Comanda configurată nu funcționează și a fost înlocuită de: %s"
+
+#: ../applets/fish/fish.c:748
+#, c-format
+msgid ""
+"Unable to execute '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Nu se poate executa „%s”\n"
+"\n"
+"Detalii: %s"
+
+#: ../applets/fish/fish.c:764
+#, c-format
+msgid ""
+"Unable to read from '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Nu se poate citi din „%s”\n"
+"\n"
+"Detalii: %s"
+
+#: ../applets/fish/fish.c:1167
+msgid "The water needs changing"
+msgstr "Trebuie schimbată apa"
+
+#: ../applets/fish/fish.c:1169
+msgid "Look at today's date!"
+msgstr "Uitați-vă la data de azi!"
+
+#: ../applets/fish/fish.c:1262
+#, c-format
+msgid "%s the Fish, the fortune teller"
+msgstr "Peștele %s, povestitorul de zicători"
+
+#: ../applets/fish/fish.ui.h:1 ../consort-panel/panel-properties-dialog.ui.h:1
+msgid "    "
+msgstr "    "
+
+#: ../applets/fish/fish.ui.h:2
+msgid "Animation"
+msgstr "Animație"
+
+#: ../applets/fish/fish.ui.h:3
+msgid "Co_mmand to run when clicked:"
+msgstr "Co_manda de executat la un clic pe pește:"
+
+#: ../applets/fish/fish.ui.h:4
+msgid "Fish Preferences"
+msgstr "Preferințe pește"
+
+#: ../applets/fish/fish.ui.h:6
+msgid "_Name of fish:"
+msgstr "_Nume pește:"
+
+#: ../applets/fish/fish.ui.h:7
+msgid "_Pause per frame:"
+msgstr "_Pauză între cadre:"
+
+#: ../applets/fish/fish.ui.h:8
+msgid "_Rotate on vertical panels"
+msgstr "_Rotește în panourile verticale"
+
+#: ../applets/fish/fish.ui.h:9
+msgid "seconds"
+msgstr "secunde"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+msgid "Display a swimming fish or another animated creature"
+msgstr "Arată un pește ce înoată sau o altă creatură animată"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+msgid "Fish"
+msgstr "Pește"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+msgid "From Whence That Stupid Fish Came"
+msgstr "De unde a venit acest pește stupid"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+msgid "Wanda Factory"
+msgstr "Șablon Wanda"
+
+#: ../applets/notification_area/main.c:242
+msgid "Panel Notification Area"
+msgstr "Zonă de notificare în panou"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Zona unde apar iconițele de notificare"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+msgid "Factory for notification area"
+msgstr "Șablon pentru zona de notificare în panou"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+msgid "Notification Area"
+msgstr "Zonă de notificare"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+msgid "Notification Area Factory"
+msgstr "Șablon pentru zona de notificare"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+msgid "Factory for the window navigation related applets"
+msgstr "Șablon pentru miniaplicații de navigare a ferestrelor"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+msgid "Hide application windows and show the desktop"
+msgstr "Ascunde ferestrele aplicațiilor și afișează desktopul"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+msgid "Show Desktop"
+msgstr "Arată desktopul"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+msgid "Switch between open windows using a menu"
+msgstr "Comută între ferestrele deschise utilizând un meniu"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+msgid "Switch between open windows using buttons"
+msgstr "Comută între ferestrele deschise utilizând butoane"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+msgid "Switch between workspaces"
+msgstr "Comută între spațiile de lucru"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+msgid "Window List"
+msgstr "Listă de ferestre"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+msgid "Window Navigation Applet Factory"
+msgstr "Șablon miniaplicație de navigare ferestre"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/window-menu.c:204
+msgid "Window Selector"
+msgstr "Selector de ferestre"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+msgid "Workspace Switcher"
+msgstr "Comutare spații de lucru"
+
+#: ../applets/wncklet/showdesktop.c:177
+#, c-format
+msgid "Failed to load %s: %s\n"
+msgstr "Nu s-a putut încărca imaginea %s: %s\n"
+
+#: ../applets/wncklet/showdesktop.c:178
+msgid "Icon not found"
+msgstr "Iconița nu a fost găsită"
+
+#: ../applets/wncklet/showdesktop.c:231
+msgid "Click here to restore hidden windows."
+msgstr "Clic aici pentru a restaura ferestrele ascunse."
+
+#: ../applets/wncklet/showdesktop.c:233
+msgid "Click here to hide all windows and show the desktop."
+msgstr "Clic aici pentru a ascunde ferestrele și a arăta desktopul."
+
+#: ../applets/wncklet/showdesktop.c:441
+msgid "Show Desktop Button"
+msgstr "Butonul „Arată desktop”"
+
+#: ../applets/wncklet/showdesktop.c:509
+msgid ""
+"Your window manager does not support the show desktop button, or you are not "
+"running a window manager."
+msgstr ""
+"Administratorul de ferestre curent nu suportă butonul „Desktop” sau niciun "
+"administrator de ferestre nu e pornit."
+
+#: ../applets/wncklet/window-list.ui.h:1
+msgid "Group windows when _space is limited"
+msgstr "Grupează ferestrele când _spațiul este limitat"
+
+#: ../applets/wncklet/window-list.ui.h:2
+msgid "Restore to current _workspace"
+msgstr "Restaurează în spațiul de lucru curen_t"
+
+#: ../applets/wncklet/window-list.ui.h:3
+msgid "Restore to na_tive workspace"
+msgstr "Restaurează în spațiul de lucru na_tiv"
+
+#: ../applets/wncklet/window-list.ui.h:4
+msgid "Restoring Minimized Windows"
+msgstr "Restaurare ferestrele minimizate"
+
+#: ../applets/wncklet/window-list.ui.h:5
+msgid "Sh_ow windows from current workspace"
+msgstr "Arată d_oar ferestrele din spațiul de lucru curent"
+
+#: ../applets/wncklet/window-list.ui.h:6
+msgid "Show windows from a_ll workspaces"
+msgstr "Arată ferestre_le din toate spațiile de lucru"
+
+#: ../applets/wncklet/window-list.ui.h:7
+msgid "Window Grouping"
+msgstr "Grupare ferestre"
+
+#: ../applets/wncklet/window-list.ui.h:8
+msgid "Window List Content"
+msgstr "Conținut listă de ferestre"
+
+#: ../applets/wncklet/window-list.ui.h:9
+msgid "Window List Preferences"
+msgstr "Preferințe listă de ferestre"
+
+#: ../applets/wncklet/window-list.ui.h:10
+msgid "_Always group windows"
+msgstr "Grupează întotde_auna ferestrele"
+
+#: ../applets/wncklet/window-list.ui.h:11
+msgid "_Never group windows"
+msgstr "_Nu grupa ferestrele niciodată"
+
+#: ../applets/wncklet/workspace-switcher.c:194
+#: ../applets/wncklet/workspace-switcher.c:723
+#: ../applets/wncklet/workspace-switcher.ui.h:10
+msgid "rows"
+msgstr "rânduri"
+
+#: ../applets/wncklet/workspace-switcher.c:194
+#: ../applets/wncklet/workspace-switcher.c:723
+msgid "columns"
+msgstr "coloane"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:1
+msgid "Number of _workspaces:"
+msgstr "Număr _spații de lucru:"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:2
+msgid "Show _all workspaces in:"
+msgstr "Arată _toate spațiile în:"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:3
+msgid "Show _only the current workspace"
+msgstr "Arată d_oar spațiul de lucru curent"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:4
+msgid "Show workspace _names in switcher"
+msgstr "Arată _numele spațiilor de lucru în comutator"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:5
+msgid "Switcher"
+msgstr "Comutator"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:6
+msgid "Workspace Names"
+msgstr "Nume spații de lucru"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:7
+msgid "Workspace Switcher Preferences"
+msgstr "Preferințele comutatorului de spații de lucru"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:8
+msgid "Workspace na_mes:"
+msgstr "Nu_me spații de lucru:"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:9
+msgid "Workspaces"
+msgstr "Spații de lucru"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+msgid ""
+"A fish without a name is a pretty dull fish. Bring your fish to life by "
+"naming him."
+msgstr ""
+"Un pește fără nume este un pește destul de neinteresant. Adu peștele tău la "
+"viața dându-i un nume."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+msgid "Command to execute on click"
+msgstr "Comandă de executat la clic"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+msgid ""
+"If true, the fish's animation will be displayed rotated on vertical panels."
+msgstr ""
+"La activare animația peștelui va fi afișată rotit în panourile verticale."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+msgid "Pause per frame"
+msgstr "Pauză între cadre"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+msgid "Rotate on vertical panels"
+msgstr "Rotește în panouri verticale"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+msgid "The fish's animation pixmap"
+msgstr "Imaginea animată a peștelui"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+msgid "The fish's name"
+msgstr "Numele peștelui"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+msgid ""
+"This key specifies the command that will be tried to execute when the fish "
+"is clicked."
+msgstr "Această cheie specifică comanda de executat la un clic pe pește."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+msgid ""
+"This key specifies the filename of the pixmap which will be used for the "
+"animation displayed in the fish applet relative to the pixmap directory."
+msgstr ""
+"Această cheie specifică calea fișierului imagine ce va fi utilizat pentru "
+"animația afișată în mini-aplicație, cale relativă la directorul imaginii."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+msgid "This key specifies the number of seconds each frame will be displayed."
+msgstr "Această cheie specifică numărul de secunde între cadre"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are \"never\", \"auto\" and \"always\"."
+msgstr ""
+"Decide când să grupeze ferestrele din aceeași aplicație în lista "
+"ferestrelor. Valorile valide sunt „never”, „auto” și „always”."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+msgid ""
+"If true, the window list will show windows from all workspaces. Otherwise it "
+"will only display windows from the current workspace."
+msgstr ""
+"La activare lista ferestrelor va arăta ferestrele din toate spațiile de "
+"lucru, altfel va arăta doar ferestrele din spațiul curent."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+msgid ""
+"If true, then when unminimizing a window, move it to the current workspace. "
+"Otherwise, switch to the workspace of the window."
+msgstr ""
+"La activare ferestrele minimizate vor fi restaurate în spațiul de lucru "
+"curent. Altfel va schimba în spațiul de lucru inițial al ferestrei."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+msgid "Move windows to current workspace when unminimized"
+msgstr "Mută ferestrele minimizate în spațiul de lucru curent la restaurare"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+msgid "Show windows from all workspaces"
+msgstr "Arată ferestrele de pe toate spațiile de lucru"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+msgid "When to group windows"
+msgstr "Când sunt ferestrele grupate"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+msgid "Display all workspaces"
+msgstr "Arată toate spațiile de lucru"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+msgid "Display workspace names"
+msgstr "Arată numele spațiilor de lucru"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+msgid ""
+"If true, the workspace switcher will show all workspaces. Otherwise it will "
+"only show the current workspace."
+msgstr ""
+"La activare comutatorul spațiilor de lucru va arăta toate spațiile, altfel "
+"va arăta doar spațiul curent."
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+msgid ""
+"If true, the workspaces in the workspace switcher will display the names of "
+"the workspaces. Otherwise they will display the windows on the workspace. "
+"This setting only works when the window manager is Metacity."
+msgstr ""
+"Odată activată, în comutatorul de spații de lucru se va afișa numele "
+"acestora. Altfel, se vor afișa ferestrele de pe spațiile de lucru. Această "
+"setare funcționează doar când administratorul de ferestre este Metacity."
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+msgid "Rows in workspace switcher"
+msgstr "Rânduri în comutatorul spațiilor de lucru"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+msgid ""
+"This key specifies how many rows (for horizontal layout) or columns (for "
+"vertical layout) the workspace switcher shows the workspaces in. This key is "
+"only relevant if the display_all_workspaces key is true."
+msgstr ""
+"Această cheie specifică câte rânduri (la aranjarea orizontală) sau coloane "
+"(la aranjarea verticală) utilizează comutatorul spațiilor de lucru. Această "
+"valoare e relevantă doar dacă cheia „display_all_workspaces” este setată."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+msgid ""
+"A list of applet IIDs that the panel will ignore. This way you can disable "
+"certain applets from loading or showing up in the menu. For example to "
+"disable the mini-commander applet add 'OAFIID:GNOME_MiniCommanderApplet' to "
+"this list. The panel must be restarted for this to take effect."
+msgstr ""
+"O listă a IID-urilor miniaplicațiilor ce vor fi ignorate de panou. În acest "
+"fel puteți dezactiva anumite miniaplicații pentru a nu fi încărcate sau "
+"afișate într-un panou. De exemplu, pentru a dezactiva miniaplicația „mini-"
+"commander” adăugați „OAFIID:GNOME_MiniCommanderApplet” în această listă. "
+"Panoul trebuie repornit pentru ca configurarea să aibă efect."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+msgid ""
+"A list of panel IDs. Each ID identifies an individual toplevel panel. The "
+"settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
+msgstr ""
+"O listă de ID-uri panouri. Fiecare ID identifică un panou individual în "
+"nivelul cel mai de sus. Setările pentru fiecare dintre aceste panouri sunt "
+"păstrate în /apps/panel/toplevels/$(id)."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+msgid ""
+"A list of panel object IDs. Each ID identifies an individual panel object (e."
+"g. an applet, launcher, action button or menu button/bar). The settings for "
+"each of these objects are stored in /apps/panel/objects/$(id)."
+msgstr ""
+"O listă de ID-uri ale obiectelor din panouri. Fiecare ID reprezintă un "
+"obiect individual (un lansator, o acțiune etc.). Configurările pentru "
+"fiecare dintre aceste obiecte sunt stocate în /apps/panel/objects/$(id)."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+msgid "Applet IIDs to disable from loading"
+msgstr "IID-ul miniaplicației de dezactivat"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+msgid "Complete panel lockdown"
+msgstr "Blocare completă panou"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+msgid "Confirm panel removal"
+msgstr "Confirmare la eliminarea unui panou"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+msgid "Disable Force Quit"
+msgstr "Dezactivare închidere forțată"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+msgid "Enable autocompletion in \"Run Application\" dialog"
+msgstr "Activează completarea automată în fereastra „Pornire aplicații”"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+msgid "Enable program list in \"Run Application\" dialog"
+msgstr "Activează lista de programe în fereastra „Pornire aplicații”"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+msgid "Enable tooltips"
+msgstr "Activează sugestii"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+msgid "Expand program list in \"Run Application\" dialog"
+msgstr "Extinde lista de programe în fereastra „Pornire aplicații”"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+msgid "History of \"Run Application\" dialog"
+msgstr "Dialogul istoricului „Pornire aplicații”"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+msgid ""
+"If true, a dialog is shown asking for confirmation if the user wants to "
+"remove a panel."
+msgstr ""
+"La activare un dialog cere confirmarea la eliminarea unui panou de către "
+"utilizator."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+msgid ""
+"If true, autocompletion in the \"Run Application\" dialog is made available."
+msgstr ""
+"Dacă este bifată, completarea automată va fi disponibilă în fereastra "
+"„Pornire aplicații”."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is expanded when the dialog is opened. This key is only relevant if "
+"the enable_program_list key is true."
+msgstr ""
+"La activare, lista „Aplicații cunoscute” în fereastra „Pornire aplicații” "
+"este extinsă când dialogul este afișat. Această cheie este relevantă doar "
+"dacă cheia „enable_program_list” este setată."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is made available. Whether or not the listing is expanded when the "
+"dialog is shown is controlled by the show_program_list key."
+msgstr ""
+"La activare, lista „Aplicații cunoscute” în dialogul „Pornire aplicații” "
+"este disponibilă. Dacă lista este extinsă sau nu se poate seta prin cheia "
+"„show_program_list”."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+msgid ""
+"If true, the panel will not allow a user to force an application to quit by "
+"removing access to the force quit button."
+msgstr ""
+"La activare, panoul nu va permite unui utilizator închiderea forțată a unei "
+"aplicații, dezactivând accesul la butonul de închidere forțată."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+msgid ""
+"If true, the panel will not allow any changes to the configuration of the "
+"panel. Individual applets may need to be locked down separately however. The "
+"panel must be restarted for this to take effect."
+msgstr ""
+"La activare, panoul nu va permite schimbarea niciunei setări. Mini-"
+"aplicațiile s-ar putea să trebuiască să aibă setările blocate individual. "
+"Panoul trebuie restartat înainte ca această setare să aibă efect."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+msgid ""
+"If true, tooltips are shown for objects in panels. Tooltips can be disabled "
+"for the whole desktop with the gtk-enable-tooltips property in GTK+."
+msgstr ""
+"Dacă este adevărat, sugestiile sunt afișate pentru obiectele din panou. "
+"Sugestiile pot fi dezactivate pentru întreg desktopul cu proprietatea gtk-"
+"enable-tooltips din GTK+."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+msgid "Panel ID list"
+msgstr "Listă ID-uri panouri"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+msgid "Panel object ID list"
+msgstr "Listă ID-uri obiecte panel"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+msgid ""
+"The list of commands used in the past in the \"Run Application\" dialog."
+msgstr "Lista comenzilor folosite în trecut în dialogul „Pornire aplicații”."
+
+#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+msgid "Launcher location"
+msgstr "Locație lansator"
+
+#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+msgid ""
+"The location of the .desktop file describing the launcher. This key is only "
+"relevant if the object_type key is \"launcher-object\"."
+msgstr ""
+"Amplasarea fișierului .desktop ce descrie acest lansator. Această cheie este "
+"relevantă doar dacă cheia „object_type” este „launcher-object”."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+msgid "Icon used for button"
+msgstr "Iconiță utilizată pentru buton"
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+msgid "Menu content path"
+msgstr "Cale conținut meniu"
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+msgid ""
+"The location of the image file used as the icon for the object's button. If "
+"empty, the default icon for the menu will be used."
+msgstr ""
+"Locația fișierului imagine folosit ca iconiță pentru butonul obiectului. "
+"Dacă este gol, iconița implicită pentru meniu va fi folosită."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+msgid ""
+"The path from which the menu contents is contructed. If empty, the menu will "
+"be the default applications menu."
+msgstr ""
+"Calea din care se construiește conținutul meniului. Dacă este goală, meniul "
+"va fi meniul implicit cu aplicații."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+msgid "The text to display in a tooltip for this menu."
+msgstr "Textul de afișat într-o sugestie pentru acest meniu."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+msgid "Tooltip displayed for menu"
+msgstr "Sugestie afișată pentru meniu"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+msgid ""
+"If set to 'end', the position of the object is interpreted relative to the "
+"right (or bottom if vertical) edge of the panel."
+msgstr ""
+"Dacă este setată la „end”, poziția obiectului este interpretată relativ la "
+"marginea dreaptă a panoului (sau de jos dacă panoul este vertical)."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+msgid "Interpret position relative to bottom/right edge"
+msgstr "Interpretează poziția relativ la marginea din dreapta jos"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+msgid "Object IID"
+msgstr "IID-ul obiectului"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+msgid "Object's position on the panel"
+msgstr "Poziția obiectului în panou"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+msgid "The identifier of the toplevel panel which contains this object."
+msgstr ""
+"Identificatorul panoului de la nivelul cel mai de sus ce conține acest "
+"obiect."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+msgid ""
+"The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
+"\"."
+msgstr ""
+"ID-ul de implementare al obiectului - ex. „ClockAppletFactory::ClockApplet”."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+msgid ""
+"The position of this panel object. The position is specified by the number "
+"of pixels from the left (or top if vertical) panel edge."
+msgstr ""
+"Poziția acestui obiect din panou. Poziția specifică numărul de pixeli de la "
+"marginea stângă a panoului (sau de sus pentru un panou vertical)"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+msgid "Toplevel panel containing object"
+msgstr "Panoul de la nivelul cel mai de sus ce conține obiectul"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+msgid "Animation speed"
+msgstr "Viteză animație"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+msgid "Automatically hide panel into corner"
+msgstr "Ascunde automat panoul într-un colț"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+msgid "Background color"
+msgstr "Culoare de fundal"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+msgid "Background image"
+msgstr "Imagine de fundal"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+msgid "Background type"
+msgstr "Tip fundal"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+msgid "Center panel on x-axis"
+msgstr "Centrează panoul pe axa X"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+msgid "Center panel on y-axis"
+msgstr "Centrează panoul pe axa Y"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+msgid ""
+"Determines how the image set by image-uri is rendered. Possible values are "
+"\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
+"to the panel dimensions and the aspect ratio of the image will not be "
+"maintained. With \"fit\", the image will be scaled (retaining the aspect "
+"ratio of the image) to the panel height (if horizontal)."
+msgstr ""
+"Determină cum este randată imaginea setată prin URI. Valorile posibile "
+"sunt „none”, „stretch”, „fit”. Cu „stretch”, imaginea va fi scalată la "
+"dimensiunile panoului și raportul aspectului imaginii nu va mai fi menținut. "
+"Cu „fit”, imaginea va fi scalată (reținând raportul aspectului imaginii) la "
+"înălțimea panoului (dacă este orizontal)."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+msgid "Enable arrows on hide buttons"
+msgstr "Arată săgeți pe butoanele de ascundere"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+msgid "Enable hide buttons"
+msgstr "Arată butoanele de ascundere"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+msgid "Expand to occupy entire screen width"
+msgstr "Extinde pentru a ocupa întreaga lățime a ecranului"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+msgid ""
+"If true, arrows will be placed on the hide buttons. This key is only "
+"relevant if the enable_buttons key is true."
+msgstr ""
+"La activare, se vor plasa săgeți pe butoanele de ascundere. Această cheie "
+"este relevantă doar dacă cheia „enable_buttons” este definită."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+msgid ""
+"If true, buttons will be placed on each side of the panel which may be used "
+"to move the panel to edge of the screen, leaving only a button showing."
+msgstr ""
+"La activare, pe fiecare margine a panoului vor fi plasate butoane ce pot fi "
+"utilizate pentru a ascunde panoul la marginea ecranului, rămânând vizibile "
+"doar butoanele."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+msgid ""
+"If true, the background image will be rotated when the panel is oriented "
+"vertically."
+msgstr ""
+"La activare, fundalul imaginii va fi rotit când panoul este orientat "
+"vertical."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+msgid ""
+"If true, the panel is automatically hidden into a corner of the screen when "
+"the pointer leaves the panel area. Moving the pointer to that corner again "
+"will cause the panel to re-appear."
+msgstr ""
+"La activare, panoul va fi automat ascuns într-un colț al ecranului când "
+"indicatorul mausului părăsește aria panoului. Mutând indicatorul mausului "
+"înapoi în acel colț, se readuce panoul pe ecran."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+msgid ""
+"If true, the panel will occupy the entire screen width (height if this is a "
+"vertical panel). In this mode the panel can only be placed at a screen edge. "
+"If false, the panel will only be large enough to accommodate the applets, "
+"launchers and buttons on the panel."
+msgstr ""
+"La activare, panoul va ocupa întreaga lățime a ecranului (sau înălțime dacă "
+"e un panou vertical). În acest mod panoul poate fi plasat doar la o margine "
+"a ecranului. Dacă nu, panoul va fi doar îndeajuns de mare pentru a găzdui "
+"mini-aplicațiile, lansatoarele și butoanele configurate."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+msgid ""
+"If true, the x and x_right keys are ignored and the panel is placed at the "
+"center of the x-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the x "
+"and x_right keys specify the location of the panel."
+msgstr ""
+"La activare, cheile x și x_right sunt ignorate iar panoul va fi plasat la "
+"mijlocul axei X a ecranului. Dacă panoul este redimensionat, își va menține "
+"poziția, adică se va extinde pe ambele laturi. Dacă nu, cheia x și x_right "
+"specifică amplasarea panoului."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+msgid ""
+"If true, the y and y_bottom keys are ignored and the panel is placed at the "
+"center of the y-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the y "
+"and y_bottom keys specify the location of the panel."
+msgstr ""
+"La activare, cheile y și y_bottom sunt ignorate iar panoul va fi plasat la "
+"mijlocul axei Y a ecranului. Dacă panoul este redimensionat, își va menține "
+"poziția, adică se va extinde pe ambele laturi. Dacă nu, cheile y și y_bottom "
+"specifică amplasarea panoului."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+msgid "Image options"
+msgstr "Opțiuni imagine"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+msgid ""
+"In a Xinerama setup, you may have panels on each individual monitor. This "
+"key identifies the current monitor the panel is displayed on."
+msgstr ""
+"Într-o configurație Xinerama, puteți avea panouri pe fiecare monitor "
+"individual. Această cheie identifică monitorul curent în care panoul este "
+"afișat."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+msgid "Name to identify panel"
+msgstr "Nume de identificare al panoului"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+msgid "Panel autohide delay"
+msgstr "Întârziere de ascundere automată a panoului"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+msgid "Panel autounhide delay"
+msgstr "Întârziere de reapariție automată a panoului"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+msgid "Panel orientation"
+msgstr "Orientare panou"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+msgid "Panel size"
+msgstr "Mărime panou"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+msgid "Rotate image on vertical panels"
+msgstr "Rotește imaginea în panourile verticale"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+msgid "Specifies the background color for the panel in #RGB format."
+msgstr "Specifică culoarea fundalului panoului în format #RGB."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+msgid ""
+"Specifies the file to be used for the background image. If the image "
+"contains an alpha channel it will be composited onto the desktop background "
+"image."
+msgstr ""
+"Specifică fișierul de utilizat pentru imaginea fundalului. Dacă imaginea "
+"conține un canal Alfa atunci ea va fi amestecată cu imaginea de fundal."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+msgid ""
+"Specifies the number of milliseconds delay after the pointer enters the "
+"panel area before the panel is automatically re-shown. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Specifică întârzierea în milisecunde înainte de reapariția panoului după ce "
+"indicatorul mausului a intrat în zona panoului. Această cheie este relevantă "
+"doar dacă cheia „auto_hide” este definită la „true”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+msgid ""
+"Specifies the number of milliseconds delay after the pointer leaves the "
+"panel area before the panel is automatically hidden. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Specifică întârzierea în milisecunde înainte de ascunderea panoului după ce "
+"indicatorul mausului a părăsit zona panoului. Această cheie este relevantă "
+"doar dacă cheia „auto_hide” este definită la „true”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+msgid ""
+"Specifies the number of pixels visible when the panel is automatically "
+"hidden into a corner. This key is only relevant if the auto_hide key is true."
+msgstr ""
+"Specifică numărul de pixeli vizibili când un panou este automat ascuns într-"
+"un colț. Această cheie este relevantă doar dacă cheia „auto_hide” este "
+"definită la „true”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+msgid ""
+"The height (width for a vertical panel) of the panel. The panel will "
+"determine at runtime a minimum size based on the font size and other "
+"indicators. The maximum size is fixed at one quarter of the screen height "
+"(or width)."
+msgstr ""
+"Înălțimea unui panou (sau lățimea pentru un panou vertical). Panoul va "
+"determina la pornire mărimea minimă în funcție de mărimea fontului și alți "
+"indicatori. Dimensiunea maximă este fixată la un sfert din înălțimea (sau "
+"lățimea) ecranului."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+msgid ""
+"The location of the panel along the x-axis, starting from the right of the "
+"screen. If set to -1, the value is ignored and the value of the x key is "
+"used. If the value is greater than 0, then the value of the x key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"Amplasarea panoului pe axa X, începând din dreapta ecranului. Dacă este "
+"setată la -1, această valoare e ignorată și este folosită valoarea cheii x. "
+"Dacă valoarea este mai mare ca 0, atunci valoarea cheii x este ignorată. "
+"Această cheie este relevantă doar dacă panoul nu este extins. Dacă este "
+"extins, cheia este ignorată și panoul este amplasat la marginea ecranului "
+"specificată de cheia „orientation”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+msgid ""
+"The location of the panel along the x-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"Amplasarea panoului pe axa X. Această cheie este relevantă doar în mod "
+"normal. În mod extins această cheie este ignorată și panoul este plasat la "
+"marginea ecranului specificată în cheia „orientation”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+msgid ""
+"The location of the panel along the y-axis, starting from the bottom of the "
+"screen. If set to -1, the value is ignored and the value of the y key is "
+"used. If the value is greater than 0, then the value of the y key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"Amplasarea panoului pe axa y, începând din partea de jos a ecranului. Dacă "
+"este setată la -1, valoarea este ignorată și este·folosită valoarea cheii y. "
+"Dacă valoarea este mai mare ca 0, atunci valoarea cheii y este ignorată. "
+"Această cheie este relevantă doar dacă panoul nu este extins. Dacă este "
+"extins, această cheie este ignorată și panoul este amplasat la marginea "
+"ecranului specificată de cheia „orientation”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+msgid ""
+"The location of the panel along the y-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"Amplasarea panoului pe axa Y. Această cheie este relevantă doar în mod "
+"normal. În mod extins această cheie este ignorată și panoul este plasa la "
+"marginea ecranului specificată în cheia „orientation”."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+msgid ""
+"The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
+"\", \"right\". In expanded mode the key specifies which screen edge the "
+"panel is on. In un-expanded mode the difference between \"top\" and \"bottom"
+"\" is less important - both indicate that this is a horizontal panel - but "
+"still give a useful hint as to how some panel objects should behave. For "
+"example, on a \"top\" panel a menu button will pop up its menu below the "
+"panel, whereas on a \"bottom\" panel the menu will be popped up above the "
+"panel."
+msgstr ""
+"Orientarea panoului. Valorile posibile sunt „top”, „bottom”, „left” și "
+"„right”. În modul extins această cheie specifică în ce margine a ecranului "
+"este panoul. În mod normal diferența între „top” și „bottom” este mai puțin "
+"importantă, amândouă indică că este un panou orizontal. De exemplu, într-un "
+"panou „top” un buton din meniu va deschide un meniu sub panou, dar într-un "
+"panou „bottom” meniul va fi deschis deasupra panoului."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+msgid ""
+"The speed in which panel animations should occur. Possible values are \"slow"
+"\", \"medium\" and \"fast\". This key is only relevant if the "
+"enable_animations key is true."
+msgstr ""
+"Viteza animațiilor panoului. Valorile posibile sunt „slow”, „medium” și "
+"„fast”. Această cheie este relevantă doar dacă cheia „enable_animations” "
+"este setată."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+msgid ""
+"This is a human readable name which you can use to identify a panel. Its "
+"main purpose is to serve as the panel's window title which is useful when "
+"navigating between panels."
+msgstr ""
+"Acesta este un nume ușor de înțeles pentru a identifica un panou. "
+"Principalul său scop este de a servi ca titlu al ferestrei panoului, util "
+"atunci când se schimbă panoul activ."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+msgid "Visible pixels when hidden"
+msgstr "Pixeli vizibili la ascundere"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+msgid ""
+"Which type of background should be used for this panel. Possible values are "
+"\"none\" - the default GTK+ widget background will be used, \"color\" - the "
+"color key will be used as background color or \"image\" - the image "
+"specified by the image key will be used as background."
+msgstr ""
+"Ce tip de fundal ar trebui utilizat pentru acest panou. Valorile posibile "
+"sunt „none” - fundalul implicit al widgetului GTK+ va fi folosit, „color”  - "
+"cheia culorii va fi folosită ca culoare de fundal sau „image” - imaginea "
+"specificată de cheia imaginii va fi folosită ca fundal."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+msgid ""
+"With a multi-screen setup, you may have panels on each individual screen. "
+"This key identifies the current screen the panel is displayed on."
+msgstr ""
+"Într-o configurație cu mai multe ecrane puteți avea panouri pe fiecare ecran "
+"individual. Această cheie identifică ecranul curent în care e afișat panoul."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+msgid "X co-ordinate of panel"
+msgstr "Coordonata X a acestui panou"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+msgid "X co-ordinate of panel, starting from the right of the screen"
+msgstr "Coordonata X a panoului, începând din dreapta ecranului"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+msgid "X screen where the panel is displayed"
+msgstr "Ecran X în care este afișat panoul"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+msgid "Xinerama monitor where the panel is displayed"
+msgstr "Monitor Xinerama în care este afișat panoul"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+msgid "Y co-ordinate of panel"
+msgstr "Coordonata Y a acestui panou"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+msgid "Y co-ordinate of panel, starting from the bottom of the screen"
+msgstr "Coordonata Y a panoului, începând din partea de jos a ecranului"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Fișierul nu este un fișier .desktop valid"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Versiune fișier desktop necunoscută „%s”"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Se pornește %s"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Aplicația nu acceptă documente în linia de comandă"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Opțiune de lansare necunoscută: %d"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Nu se pot trimite URI-uri către documente unei intrări desktop de tip "
+"„Type=Link”"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "Nu este un element lansabil"
+
+#: ../consort-panel/libegg/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "Dezactivează conexiunea la administratorul sesiunii"
+
+#: ../consort-panel/libegg/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "Specifică fișierul ce conține configurația salvată"
+
+#: ../consort-panel/libegg/eggsmclient.c:229
+msgid "FILE"
+msgstr "FIȘIER"
+
+#: ../consort-panel/libegg/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "Specifică ID-ul managerului de sesiune"
+
+#: ../consort-panel/libegg/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../consort-panel/libegg/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "Opțiuni ale administrării de sesiune:"
+
+#: ../consort-panel/libegg/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "Afișează opțiunile administrării de sesiune"
+
+#. FIXME: We need a title in this case, but we don't know what
+#. * the format should be. Let's put something simple until
+#. * the following bug gets fixed:
+#. * http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#. FIXME: http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#: ../consort-panel/libpanel-util/panel-error.c:80
+#: ../consort-panel/panel-applet-frame.c:766
+#: ../consort-panel/panel-applet-frame.c:938
+msgid "Error"
+msgstr "Eroare"
+
+#: ../consort-panel/libpanel-util/panel-icon-chooser.c:385
+msgid "Choose an icon"
+msgstr "Alege o iconiță"
+
+#: ../consort-panel/libpanel-util/panel-launch.c:49
+#, c-format
+msgid "Could not launch '%s'"
+msgstr "Nu s-a putut lansa „%s”"
+
+#: ../consort-panel/libpanel-util/panel-launch.c:52
+#: ../consort-panel/launcher.c:175
+msgid "Could not launch application"
+msgstr "Nu s-a putut lansa aplicația"
+
+#: ../consort-panel/libpanel-util/panel-show.c:48
+#, c-format
+msgid "Could not open location '%s'"
+msgstr "Nu s-a putut deschide locația „%s”"
+
+#: ../consort-panel/libpanel-util/panel-show.c:166
+msgid "No application to handle search folders is installed."
+msgstr "Nu este instalată nicio aplicație care să opereze căutări de dosare."
+
+#: ../consort-panel/applet.c:359
+msgid "???"
+msgstr "???"
+
+#: ../consort-panel/applet.c:498 ../libpanel-applet/panel-applet.c:169
+msgid "_Move"
+msgstr "_Mută"
+
+#: ../consort-panel/applet.c:505 ../libpanel-applet/panel-applet.c:166
+msgid "_Remove From Panel"
+msgstr "_Elimină din panou"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:29
+msgid "Create new file in the given directory"
+msgstr "Creează un nou fișier în dosarul dat"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:30
+msgid "[FILE...]"
+msgstr "[FIȘIER...]"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:108
+msgid "- Edit .desktop files"
+msgstr "- Modificare fișierele .desktop"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:146
+#: ../consort-panel/gnome-desktop-item-edit.c:200 ../consort-panel/launcher.c:892
+msgid "Create Launcher"
+msgstr "Creează un lansator"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:171
+#: ../consort-panel/gnome-desktop-item-edit.c:194
+msgid "Directory Properties"
+msgstr "Proprietăți dosar"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:177 ../consort-panel/launcher.c:732
+msgid "Launcher Properties"
+msgstr "Proprietăți lansator"
+
+#: ../consort-panel/consort-panel.desktop.in.in.h:1
+msgid ""
+"Launch other applications and provide various utilities to manage windows, "
+"show the time, etc."
+msgstr ""
+"Lansează alte aplicații și furnizează diverse utilitare pentru administrarea "
+"ferestrelor, afișarea orei, etc."
+
+#: ../consort-panel/consort-panel.desktop.in.in.h:2 ../consort-panel/main.c:87
+msgid "Panel"
+msgstr "Panou"
+
+#: ../consort-panel/launcher.c:136
+msgid "Could not show this URL"
+msgstr "Nu se poate afișa acest URL"
+
+#: ../consort-panel/launcher.c:137
+msgid "No URL was specified."
+msgstr "Nu a fost specificat niciun URL"
+
+#: ../consort-panel/launcher.c:219
+msgid "Could not use dropped item"
+msgstr "Nu se poate utiliza elementul lăsat"
+
+#: ../consort-panel/launcher.c:417
+#, c-format
+msgid "No URI provided for panel launcher desktop file\n"
+msgstr "URI nespecificat pentru fișierul desktop al lansatorului din panou\n"
+
+#: ../consort-panel/launcher.c:462
+#, c-format
+msgid "Unable to open desktop file %s for panel launcher%s%s\n"
+msgstr ""
+"Nu se poate deschide fișierul desktop %s pentru lansatorul din panou%s%s\n"
+
+#: ../consort-panel/launcher.c:796
+msgid "_Launch"
+msgstr "_Lansează"
+
+#: ../consort-panel/launcher.c:802 ../consort-panel/panel-action-button.c:139
+#: ../consort-panel/panel-context-menu.c:133
+msgid "_Properties"
+msgstr "_Proprietăți"
+
+#: ../consort-panel/launcher.c:833
+#, c-format
+msgid "Launcher location is not set, cannot load launcher\n"
+msgstr ""
+"Locația lansatorului nu a fost setată, nu se poate încărca lansatorul\n"
+
+#: ../consort-panel/launcher.c:963 ../consort-panel/panel-ditem-editor.c:1357
+#: ../consort-panel/panel-ditem-editor.c:1391
+#: ../consort-panel/panel-ditem-editor.c:1422
+msgid "Could not save launcher"
+msgstr "Nu s-a putut salva lansatorul"
+
+#: ../consort-panel/main.c:41
+msgid "Replace a currently running panel"
+msgstr "Înlocuiește un panou ce rulează curent"
+
+#: ../consort-panel/panel-action-button.c:127
+msgid "_Lock Screen"
+msgstr "B_lochează ecranul"
+
+#: ../consort-panel/panel-action-button.c:133
+msgid "_Activate Screensaver"
+msgstr "_Activează economizorul de ecran"
+
+#: ../consort-panel/panel-action-button.c:239
+msgid "Connect to server"
+msgstr "Conectare la server"
+
+#: ../consort-panel/panel-action-button.c:263
+msgid "Could not connect to server"
+msgstr "Nu s-a putut realiza conexiunea către server"
+
+#: ../consort-panel/panel-action-button.c:293
+msgid "Lock Screen"
+msgstr "Blocare ecran"
+
+#: ../consort-panel/panel-action-button.c:294
+msgid "Protect your computer from unauthorized use"
+msgstr "Protejați-vă calculatorul de utilizatori neautorizați"
+
+#. when changing one of those two strings, don't forget to
+#. * update the ones in panel-menu-items.c (look for
+#. * "1" (msgctxt: "panel:showusername"))
+#: ../consort-panel/panel-action-button.c:307
+msgid "Log Out..."
+msgstr "Ieșire..."
+
+#: ../consort-panel/panel-action-button.c:308
+msgid "Log out of this session to log in as a different user"
+msgstr ""
+"Ieșiți din această sesiune pentru a vă autentifica ca un utilizator diferit"
+
+#: ../consort-panel/panel-action-button.c:316
+msgid "Run Application..."
+msgstr "Pornire aplicații..."
+
+#: ../consort-panel/panel-action-button.c:317
+msgid "Run an application by typing a command or choosing from a list"
+msgstr ""
+"Rulează o aplicație prin scrierea unei comenzi sau alegerea dintr-o listă"
+
+#: ../consort-panel/panel-action-button.c:325
+msgid "Search for Files..."
+msgstr "Căutare fișiere..."
+
+#: ../consort-panel/panel-action-button.c:326
+msgid "Locate documents and folders on this computer by name or content"
+msgstr ""
+"Localizează documente și dosare din acest calculator după nume sau conținut"
+
+#: ../consort-panel/panel-action-button.c:333
+#: ../consort-panel/panel-force-quit.c:239
+msgid "Force Quit"
+msgstr "Închide forțat"
+
+#: ../consort-panel/panel-action-button.c:334
+msgid "Force a misbehaving application to quit"
+msgstr "Forțează închiderea unei aplicații ce nu mai răspunde"
+
+#. FIXME icon
+#: ../consort-panel/panel-action-button.c:342
+msgid "Connect to Server..."
+msgstr "Conectare la server..."
+
+#: ../consort-panel/panel-action-button.c:343
+msgid "Connect to a remote computer or shared disk"
+msgstr "Conectează-te la un calculator de la distanță sau un disc partajat"
+
+#: ../consort-panel/panel-action-button.c:350
+msgid "Shut Down..."
+msgstr "Oprire..."
+
+#: ../consort-panel/panel-action-button.c:351
+msgid "Shut down the computer"
+msgstr "Oprire calculator"
+
+#: ../consort-panel/panel-addto.c:145 ../consort-panel/panel-menu-button.c:966
+msgid "Main Menu"
+msgstr "Meniu principal"
+
+#: ../consort-panel/panel-addto.c:146
+msgid "The main GNOME menu"
+msgstr "Meniul principal GNOME"
+
+#: ../consort-panel/panel-addto.c:155
+msgid "Menu Bar"
+msgstr "Bară de meniu"
+
+#: ../consort-panel/panel-addto.c:156
+msgid "A custom menu bar"
+msgstr "O bară de meniu personalizată"
+
+#: ../consort-panel/panel-addto.c:165
+msgid "Separator"
+msgstr "Separator"
+
+#: ../consort-panel/panel-addto.c:166
+msgid "A separator to organize the panel items"
+msgstr "Un separator pentru organizarea elementelor din panou"
+
+#: ../consort-panel/panel-addto.c:175
+msgid "User menu"
+msgstr "Meniul utilizatorului"
+
+#: ../consort-panel/panel-addto.c:176
+msgid "Menu to change your settings and your online status"
+msgstr "Meniu pentru a modifica configurările și starea dumneavoastră online"
+
+#: ../consort-panel/panel-addto.c:222
+msgid "(empty)"
+msgstr "(gol)"
+
+#: ../consort-panel/panel-addto.c:422
+msgid "Custom Application Launcher"
+msgstr "Lansator de aplicații personalizat"
+
+#: ../consort-panel/panel-addto.c:423
+msgid "Create a new launcher"
+msgstr "Creează un nou lansator"
+
+#: ../consort-panel/panel-addto.c:433
+msgid "Application Launcher..."
+msgstr "Lansator de aplicații..."
+
+#: ../consort-panel/panel-addto.c:434
+msgid "Copy a launcher from the applications menu"
+msgstr "Copiază un lansator din meniul de aplicații"
+
+#: ../consort-panel/panel-addto.c:1019
+#, c-format
+msgid "Find an _item to add to \"%s\":"
+msgstr "Căută un _element de adăugat în „%s”:"
+
+#: ../consort-panel/panel-addto.c:1023
+msgid "Find an _item to add to the panel:"
+msgstr "Căută un _element de adăugat în panou:"
+
+#: ../consort-panel/panel-addto.c:1026
+msgid "Add to Panel"
+msgstr "Adaugă la panou"
+
+#: ../consort-panel/panel-applet-frame.c:735
+#, c-format
+msgid "\"%s\" has quit unexpectedly"
+msgstr "„%s” a ieșit în mod neașteptat"
+
+#: ../consort-panel/panel-applet-frame.c:737
+msgid "Panel object has quit unexpectedly"
+msgstr "Obiectul panou a ieșit în mod neașteptat"
+
+#: ../consort-panel/panel-applet-frame.c:744
+msgid ""
+"If you reload a panel object, it will automatically be added back to the "
+"panel."
+msgstr ""
+"Dacă reîncărcați un obiect din panou, acesta va fi automat adăugat înapoi în "
+"panou."
+
+#: ../consort-panel/panel-applet-frame.c:750
+msgid "_Don't Reload"
+msgstr "_Nu reîncărca"
+
+#: ../consort-panel/panel-applet-frame.c:751
+msgid "_Reload"
+msgstr "_Reîncarcă"
+
+#: ../consort-panel/panel-applet-frame.c:901
+#, c-format
+msgid "The panel encountered a problem while loading \"%s\"."
+msgstr "Panoul a întâlnit o problemă la încărcarea „%s”."
+
+#: ../consort-panel/panel-applet-frame.c:917
+msgid "Do you want to delete the applet from your configuration?"
+msgstr "Doriți să eliminați miniaplicația din configurația proprie?"
+
+#: ../consort-panel/panel-context-menu.c:63
+msgid "Cannot delete this panel"
+msgstr "Nu se poate șterge acest panou"
+
+#: ../consort-panel/panel-context-menu.c:64
+msgid "You must always have at least one panel."
+msgstr "Trebuie să aveți cel puțin un panou."
+
+#: ../consort-panel/panel-context-menu.c:122
+msgid "_Add to Panel..."
+msgstr "_Adaugă la panou..."
+
+#: ../consort-panel/panel-context-menu.c:143
+msgid "_Delete This Panel"
+msgstr "Șt_erge acest panou"
+
+#: ../consort-panel/panel-context-menu.c:158
+msgid "_New Panel"
+msgstr "Panou _nou"
+
+#: ../consort-panel/panel-ditem-editor.c:114
+msgid "Application"
+msgstr "Aplicație"
+
+#: ../consort-panel/panel-ditem-editor.c:116
+msgid "Application in Terminal"
+msgstr "Aplicație în terminal"
+
+#: ../consort-panel/panel-ditem-editor.c:118
+msgid "Location"
+msgstr "Locație"
+
+#. Type
+#: ../consort-panel/panel-ditem-editor.c:618
+msgid "_Type:"
+msgstr "_Tip:"
+
+#. Name
+#: ../consort-panel/panel-ditem-editor.c:625
+msgid "_Name:"
+msgstr "_Nume:"
+
+#: ../consort-panel/panel-ditem-editor.c:652
+msgid "_Browse..."
+msgstr "_Răsfoiește..."
+
+#. Comment
+#: ../consort-panel/panel-ditem-editor.c:659
+msgid "Co_mment:"
+msgstr "Co_mentariu:"
+
+#: ../consort-panel/panel-ditem-editor.c:1008
+msgid "Choose an application..."
+msgstr "Alege o aplicație..."
+
+#: ../consort-panel/panel-ditem-editor.c:1012
+msgid "Choose a file..."
+msgstr "Alege un fișier..."
+
+#: ../consort-panel/panel-ditem-editor.c:1177
+#: ../consort-panel/panel-ditem-editor.c:1186
+msgid "Comm_and:"
+msgstr "Com_andă:"
+
+#: ../consort-panel/panel-ditem-editor.c:1195
+msgid "_Location:"
+msgstr "_Locație:"
+
+#: ../consort-panel/panel-ditem-editor.c:1358
+msgid "The name of the launcher is not set."
+msgstr "Numele lansatorului nu este setat."
+
+#: ../consort-panel/panel-ditem-editor.c:1362
+msgid "Could not save directory properties"
+msgstr "Nu s-au putut salva proprietățile dosarului"
+
+#: ../consort-panel/panel-ditem-editor.c:1363
+msgid "The name of the directory is not set."
+msgstr "Numele dosarului nu este setat."
+
+#: ../consort-panel/panel-ditem-editor.c:1379
+msgid "The command of the launcher is not set."
+msgstr "Comanda lansatorului nu este setată."
+
+#: ../consort-panel/panel-ditem-editor.c:1382
+msgid "The location of the launcher is not set."
+msgstr "Locația lansatorului nu este setată."
+
+#: ../consort-panel/panel-ditem-editor.c:1459
+msgid "Could not display help document"
+msgstr "Nu se poate afișa documentul de ajutor"
+
+#: ../consort-panel/panel-force-quit.c:77
+msgid ""
+"Click on a window to force the application to quit. To cancel press <ESC>."
+msgstr ""
+"Clic pe o fereastră pentru a forța închiderea aplicației. Pentru anulare "
+"apăsați <ESC>."
+
+#: ../consort-panel/panel-force-quit.c:222
+msgid "Force this application to exit?"
+msgstr "Forțați închiderea acestei aplicații?"
+
+#: ../consort-panel/panel-force-quit.c:225
+msgid ""
+"If you choose to force an application to exit, unsaved changes in any open "
+"documents in it might get lost."
+msgstr ""
+"Dacă alegeți să forțați închiderea unei aplicații, orice documente deschise "
+"în ea pot fi pierdute."
+
+#: ../consort-panel/panel-layout.c:1197 ../consort-panel/panel-layout.c:1211
+#, c-format
+msgid "Cannot create initial panel layout.\n"
+msgstr "Nu se poate crea aranjamentul inițial al panoului.\n"
+
+#: ../consort-panel/panel-menu-bar.c:91
+msgid "Browse and run installed applications"
+msgstr "Descoperiți și porniți aplicațiile instalate"
+
+#: ../consort-panel/panel-menu-bar.c:93
+msgid "Access documents, folders and network places"
+msgstr "Accesați documente, dosare și locuri din rețea"
+
+#: ../consort-panel/panel-menu-bar.c:124
+msgid "Applications"
+msgstr "Aplicații"
+
+#: ../consort-panel/panel-menu-bar.c:226 ../consort-panel/panel-menu-button.c:562
+msgid "_Edit Menus"
+msgstr "_Editare meniuri"
+
+#: ../consort-panel/panel-menu-bar.c:233
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: ../consort-panel/panel-menu-items.c:491
+msgid "Switch User"
+msgstr "Comută utilizatorul"
+
+#: ../consort-panel/panel-menu-items.c:622
+msgid "Bookmarks"
+msgstr "Favorite"
+
+#. Translators: %s is a URI
+#: ../consort-panel/panel-menu-items.c:646 ../consort-panel/panel.c:596
+#, c-format
+msgid "Open '%s'"
+msgstr "Deschide „%s”"
+
+#: ../consort-panel/panel-menu-items.c:717
+#, c-format
+msgid "Unable to scan %s for media changes"
+msgstr "Nu s-a putut scana %s pentru schimbări"
+
+#: ../consort-panel/panel-menu-items.c:759
+#, c-format
+msgid "Rescan %s"
+msgstr "Rescanează %s"
+
+#: ../consort-panel/panel-menu-items.c:796
+#, c-format
+msgid "Unable to mount %s"
+msgstr "Nu s-a putut monta %s"
+
+#: ../consort-panel/panel-menu-items.c:858
+#, c-format
+msgid "Mount %s"
+msgstr "Montează %s"
+
+#: ../consort-panel/panel-menu-items.c:1066
+msgid "Removable Media"
+msgstr "Medii detașabile"
+
+#: ../consort-panel/panel-menu-items.c:1157
+msgid "Network Places"
+msgstr "Locuri din rețea"
+
+#. is_exec?
+#. exec
+#. name
+#: ../consort-panel/panel-menu-items.c:1201 ../consort-panel/panel.c:644
+msgid "Open your personal folder"
+msgstr "Deschide dosarul personal"
+
+#. Translators: Desktop is used here as in
+#. * "Desktop Folder" (this is not the Desktop
+#. * environment).
+#: ../consort-panel/panel-menu-items.c:1221
+msgctxt "Desktop Folder"
+msgid "Desktop"
+msgstr "Desktop"
+
+#: ../consort-panel/panel-menu-items.c:1222
+msgid "Open the contents of your desktop in a folder"
+msgstr "Deschide conținutul desktopului într-un dosar"
+
+#. is_exec?
+#. exec
+#: ../consort-panel/panel-menu-items.c:1237 ../consort-panel/panel.c:653
+msgid "Computer"
+msgstr "Calculator"
+
+#. name
+#: ../consort-panel/panel-menu-items.c:1243 ../consort-panel/panel.c:654
+msgid ""
+"Browse all local and remote disks and folders accessible from this computer"
+msgstr ""
+"Accesați toate discurile locale și de la distanță și toate dosare accesibile "
+"de pe acest calculator"
+
+#. is_exec?
+#. exec
+#: ../consort-panel/panel-menu-items.c:1253 ../consort-panel/panel.c:661
+msgid "Network"
+msgstr "Rețea"
+
+#. name
+#: ../consort-panel/panel-menu-items.c:1254 ../consort-panel/panel.c:662
+msgid "Browse bookmarked and local network locations"
+msgstr "Accesați locațiile salvate sau din rețeaua locală"
+
+#: ../consort-panel/panel-menu-items.c:1359
+msgid "Available"
+msgstr "Disponibil"
+
+#: ../consort-panel/panel-menu-items.c:1369
+msgid "Busy"
+msgstr "Ocupat"
+
+#: ../consort-panel/panel-menu-items.c:1628
+msgid "Places"
+msgstr "Locuri"
+
+#: ../consort-panel/panel-properties-dialog.c:81
+#: ../consort-panel/panel-test-applets.c:55
+msgctxt "Orientation"
+msgid "Top"
+msgstr "Sus"
+
+#: ../consort-panel/panel-properties-dialog.c:82
+#: ../consort-panel/panel-test-applets.c:56
+msgctxt "Orientation"
+msgid "Bottom"
+msgstr "Jos"
+
+#: ../consort-panel/panel-properties-dialog.c:83
+#: ../consort-panel/panel-test-applets.c:57
+msgctxt "Orientation"
+msgid "Left"
+msgstr "Stânga"
+
+#: ../consort-panel/panel-properties-dialog.c:84
+#: ../consort-panel/panel-test-applets.c:58
+msgctxt "Orientation"
+msgid "Right"
+msgstr "Dreapta"
+
+#: ../consort-panel/panel-properties-dialog.c:821
+#: ../consort-panel/panel-run-dialog.c:1896
+#, c-format
+msgid "Unable to load file '%s': %s."
+msgstr "Nu s-a putut încărca fișierul „%s”: %s."
+
+#: ../consort-panel/panel-properties-dialog.c:827
+msgid "Could not display properties dialog"
+msgstr "Nu s-a putut afișa dialogul de proprietăți"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:2
+msgid "<small>Opaque</small>"
+msgstr "<small>Opac</small>"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:3
+msgid "<small>Transparent</small>"
+msgstr "<small>Transparent</small>"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:4
+msgid "Arro_ws on hide buttons"
+msgstr "Arată _săgeți pe butoanele de ascundere"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:5
+msgid "Background"
+msgstr "Fundal"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:6
+msgid "Background _image:"
+msgstr "_Imagine fundal:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:7
+msgid "Co_lor:"
+msgstr "Cu_loare:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:8
+msgid "E_xpand"
+msgstr "E_xtinde"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:10
+msgid "Image Background Details"
+msgstr "Detalii imagine fundal"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:11
+msgid "Panel Properties"
+msgstr "Proprietăți panou"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:12
+msgid "Pick a color"
+msgstr "Alegeți o culoare"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:13
+msgid "Rotate image when panel is _vertical"
+msgstr "Rotește imaginea când panoul este _vertical"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:14
+msgid "S_tyle:"
+msgstr "S_til:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:15
+msgid "Select background"
+msgstr "Alegere fundal"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:16
+msgid "Show hide _buttons"
+msgstr "Arată _butoanele de ascundere"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:17
+msgid "Solid c_olor"
+msgstr "Cul_oare solidă"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:18
+msgid "Some of these properties are locked down"
+msgstr "O parte din aceste proprietăți sunt blocate"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:19
+msgid "St_retch"
+msgstr "Î_ntindere"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:20
+msgid "_Autohide"
+msgstr "Ascun_de automat"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:21
+msgid "_None (use system theme)"
+msgstr "_Niciunul (utilizează tema sistemului)"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:22
+#: ../consort-panel/panel-test-applets.ui.h:4
+msgid "_Orientation:"
+msgstr "_Orientare:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:23
+msgid "_Scale"
+msgstr "_Scalare"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:24
+#: ../consort-panel/panel-test-applets.ui.h:6
+msgid "_Size:"
+msgstr "_Dimensiune:"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:25
+msgid "_Tile"
+msgstr "Mo_zaic"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:26
+msgid "pixels"
+msgstr "pixeli"
+
+#: ../consort-panel/panel-recent.c:78 ../consort-panel/panel-recent.c:88
+#, c-format
+msgid "Could not open recently used document \"%s\""
+msgstr "Nu s-a putut deschide documentul recent utilizat „%s”"
+
+#: ../consort-panel/panel-recent.c:90
+#, c-format
+msgid "An unknown error occurred while trying to open \"%s\"."
+msgstr "O eroare necunoscută a apărut în timp ce se încerca deschiderea „%s”."
+
+#: ../consort-panel/panel-recent.c:147
+msgid "Clear the Recent Documents list?"
+msgstr "Doriți să goliți lista documentelor recente?"
+
+#: ../consort-panel/panel-recent.c:149
+msgid ""
+"If you clear the Recent Documents list, you clear the following:\n"
+"• All items from the Places → Recent Documents menu item.\n"
+"• All items from the recent documents list in all applications."
+msgstr ""
+"Dacă goliți lista „Documente recente”, veți șterge următoarele:\n"
+"\n"
+"• Totul din lista „Locuri” → „Documente recente”.\n"
+"• Totul din listele cu documente recente ale tuturor aplicațiilor."
+
+#: ../consort-panel/panel-recent.c:161
+msgid "Clear Recent Documents"
+msgstr "Golește lista documentelor recente"
+
+#: ../consort-panel/panel-recent.c:196
+msgid "Recent Documents"
+msgstr "Documente recente"
+
+#: ../consort-panel/panel-recent.c:235
+msgid "Clear Recent Documents..."
+msgstr "Golește lista documentelor recente..."
+
+#: ../consort-panel/panel-recent.c:237
+msgid "Clear all items from the recent documents list"
+msgstr "Șterge toate elementele din lista documentelor recente"
+
+#: ../consort-panel/panel-run-dialog.c:361
+#, c-format
+msgid "Could not run command '%s'"
+msgstr "Nu se poate executa comanda „%s”"
+
+#: ../consort-panel/panel-run-dialog.c:409
+#, c-format
+msgid "Could not convert '%s' from UTF-8"
+msgstr "Nu s-a putut converti „%s” din UTF-8"
+
+#: ../consort-panel/panel-run-dialog.c:1160
+msgid "Choose a file to append to the command..."
+msgstr "Alegeți un fișier de adăugat la linia de comandă..."
+
+#: ../consort-panel/panel-run-dialog.c:1543
+#: ../consort-panel/panel-run-dialog.ui.h:8
+msgid "Select an application to view its description."
+msgstr "Alegeți o aplicație pentru a-i vedea descrierea."
+
+#: ../consort-panel/panel-run-dialog.c:1581
+#, c-format
+msgid "Will run command: '%s'"
+msgstr "Va executa comanda: „%s”"
+
+#: ../consort-panel/panel-run-dialog.c:1614
+#, c-format
+msgid "URI list dropped on run dialog had wrong format (%d) or length (%d)\n"
+msgstr ""
+"Lista URI plasată pe dialogul de pornire are formatul (%d) sau lungimea (%d) "
+"greșită\n"
+
+#: ../consort-panel/panel-run-dialog.c:1901
+msgid "Could not display run dialog"
+msgstr "Nu se poate afișa dialogul de pornire"
+
+#: ../consort-panel/panel-run-dialog.ui.h:1
+msgid ""
+"Click this button to browse for a file whose name to append to the command "
+"string."
+msgstr ""
+"Apăsați acest buton pentru a selecta un fișier de adăugat în linia de "
+"comandă."
+
+#: ../consort-panel/panel-run-dialog.ui.h:2
+msgid ""
+"Click this button to run the selected application or the command in the "
+"command entry field."
+msgstr ""
+"Apăsați acest buton pentru a porni aplicația selectată ori comanda din "
+"câmpul intrării de comenzi."
+
+#: ../consort-panel/panel-run-dialog.ui.h:3
+msgid "Command icon"
+msgstr "Iconița comenzii"
+
+#: ../consort-panel/panel-run-dialog.ui.h:4
+msgid "List of known applications"
+msgstr "Lista aplicațiilor cunoscute"
+
+#: ../consort-panel/panel-run-dialog.ui.h:5
+msgid "Run Application"
+msgstr "Pornire aplicații"
+
+#: ../consort-panel/panel-run-dialog.ui.h:6
+msgid "Run in _terminal"
+msgstr "Pornește în _terminal"
+
+#: ../consort-panel/panel-run-dialog.ui.h:7
+msgid "Run with _file..."
+msgstr "Rulează cu _fișier..."
+
+#: ../consort-panel/panel-run-dialog.ui.h:9
+msgid "Select this box to run the command in a terminal window."
+msgstr "Bifați această opțiune pentru a executa comanda într-un terminal."
+
+#: ../consort-panel/panel-run-dialog.ui.h:10
+msgid "Show list of known _applications"
+msgstr "_Arată lista aplicațiilor cunoscute"
+
+#: ../consort-panel/panel-run-dialog.ui.h:11
+msgid "The icon of the command to be run."
+msgstr "Iconița comenzii de executat."
+
+#: ../consort-panel/panel-run-dialog.ui.h:12
+#: ../consort-panel/panel-stock-icons.c:83
+msgid "_Run"
+msgstr "_Pornește"
+
+#: ../consort-panel/panel-stock-icons.c:84
+msgid "_Force quit"
+msgstr "Închide _forțat"
+
+#: ../consort-panel/panel-stock-icons.c:85
+msgid "C_lear"
+msgstr "C_urăță"
+
+#: ../consort-panel/panel-stock-icons.c:86
+msgid "D_on't Delete"
+msgstr "_Nu șterge"
+
+#: ../consort-panel/panel-test-applets.c:36
+msgid "Specify an applet IID to load"
+msgstr "Alegeți IID-ul miniaplicației de încărcat"
+
+#: ../consort-panel/panel-test-applets.c:37
+msgid ""
+"Specify a gconf location in which the applet preferences should be stored"
+msgstr ""
+"Specifică o locație GConf în care să fie stocate preferințele miniaplicației"
+
+#: ../consort-panel/panel-test-applets.c:38
+msgid "Specify the initial size of the applet (xx-small, medium, large etc.)"
+msgstr ""
+"Specifică mărimea inițială a miniaplicației (minusculă, medie, mare etc.)"
+
+#: ../consort-panel/panel-test-applets.c:39
+msgid ""
+"Specify the initial orientation of the applet (top, bottom, left or right)"
+msgstr ""
+"Specifică orientarea inițială a miniaplicație (sus, jos, dreapta sau stânga)"
+
+#: ../consort-panel/panel-test-applets.c:63
+msgctxt "Size"
+msgid "XX Small"
+msgstr "Extrem de mic"
+
+#: ../consort-panel/panel-test-applets.c:64
+msgctxt "Size"
+msgid "X Small"
+msgstr "Foarte mic"
+
+#: ../consort-panel/panel-test-applets.c:65
+msgctxt "Size"
+msgid "Small"
+msgstr "Mic"
+
+#: ../consort-panel/panel-test-applets.c:66
+msgctxt "Size"
+msgid "Medium"
+msgstr "Mediu"
+
+#: ../consort-panel/panel-test-applets.c:67
+msgctxt "Size"
+msgid "Large"
+msgstr "Mare"
+
+#: ../consort-panel/panel-test-applets.c:68
+msgctxt "Size"
+msgid "X Large"
+msgstr "Foarte mare"
+
+#: ../consort-panel/panel-test-applets.c:69
+msgctxt "Size"
+msgid "XX Large"
+msgstr "Extrem de mare"
+
+#: ../consort-panel/panel-test-applets.c:127
+#, c-format
+msgid "Failed to load applet %s"
+msgstr "Nu s-a putut încărca miniaplicația %s"
+
+#. This is an utility to easily test various applets
+#: ../consort-panel/panel-test-applets.ui.h:2
+msgid "Test applet utility"
+msgstr "Utilitar test miniaplicație"
+
+#: ../consort-panel/panel-test-applets.ui.h:3
+msgid "_Applet:"
+msgstr "Mini_aplicație:"
+
+#: ../consort-panel/panel-test-applets.ui.h:5
+msgid "_Prefs Dir:"
+msgstr "Dosar _preferințe:"
+
+#: ../consort-panel/panel-toplevel.c:1272
+msgid "Hide Panel"
+msgstr "Ascunde panou"
+
+#. translators: these string will be shown in MetaCity's switch window
+#. * popup when you pass the focus to a panel
+#: ../consort-panel/panel-toplevel.c:1657
+msgid "Top Expanded Edge Panel"
+msgstr "Panou extins sus"
+
+#: ../consort-panel/panel-toplevel.c:1658
+msgid "Top Centered Panel"
+msgstr "Panou centrat sus"
+
+#: ../consort-panel/panel-toplevel.c:1659
+msgid "Top Floating Panel"
+msgstr "Panou flotant sus"
+
+#: ../consort-panel/panel-toplevel.c:1660
+msgid "Top Edge Panel"
+msgstr "Panou margine sus"
+
+#: ../consort-panel/panel-toplevel.c:1664
+msgid "Bottom Expanded Edge Panel"
+msgstr "Panou extins jos"
+
+#: ../consort-panel/panel-toplevel.c:1665
+msgid "Bottom Centered Panel"
+msgstr "Panou centrat jos"
+
+#: ../consort-panel/panel-toplevel.c:1666
+msgid "Bottom Floating Panel"
+msgstr "Panou flotant jos"
+
+#: ../consort-panel/panel-toplevel.c:1667
+msgid "Bottom Edge Panel"
+msgstr "Panou margine jos"
+
+#: ../consort-panel/panel-toplevel.c:1671
+msgid "Left Expanded Edge Panel"
+msgstr "Panou extins stânga"
+
+#: ../consort-panel/panel-toplevel.c:1672
+msgid "Left Centered Panel"
+msgstr "Panou centrat stânga"
+
+#: ../consort-panel/panel-toplevel.c:1673
+msgid "Left Floating Panel"
+msgstr "Panou flotant stânga"
+
+#: ../consort-panel/panel-toplevel.c:1674
+msgid "Left Edge Panel"
+msgstr "Panou margine stânga"
+
+#: ../consort-panel/panel-toplevel.c:1678
+msgid "Right Expanded Edge Panel"
+msgstr "Panou extins dreapta"
+
+#: ../consort-panel/panel-toplevel.c:1679
+msgid "Right Centered Panel"
+msgstr "Panou centrat dreapta"
+
+#: ../consort-panel/panel-toplevel.c:1680
+msgid "Right Floating Panel"
+msgstr "Panou flotant dreapta"
+
+#: ../consort-panel/panel-toplevel.c:1681
+msgid "Right Edge Panel"
+msgstr "Panou margine dreapta"
+
+#: ../consort-panel/panel-util.c:314
+#, c-format
+msgid "Icon '%s' not found"
+msgstr "Iconița „%s” nu a fost găsită"
+
+#: ../consort-panel/panel-util.c:557
+msgid "file"
+msgstr "fișier"
+
+#: ../consort-panel/panel-util.c:734
+msgid "Home Folder"
+msgstr "Dosar Acasă"
+
+#. Translators: this is the same string as the one found in
+#. * nautilus
+#: ../consort-panel/panel-util.c:746
+msgid "File System"
+msgstr "Sistem de fișiere"
+
+#: ../consort-panel/panel-util.c:919
+msgid "Search"
+msgstr "Căută"
+
+#. Translators: the first string is the name of a gvfs
+#. * method, and the second string is a path. For
+#. * example, "Trash: some-directory". It means that the
+#. * directory called "some-directory" is in the trash.
+#.
+#: ../consort-panel/panel-util.c:965
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: ../consort-panel/panel.c:527
+#, c-format
+msgid "Open URL: %s"
+msgstr "Deschide URL-ul: %s"
+
+#: ../consort-panel/panel.c:1393
+msgid "Delete this panel?"
+msgstr "Doriți să eliminați acest panou?"
+
+#: ../consort-panel/panel.c:1397
+msgid ""
+"When a panel is deleted, the panel and its\n"
+"settings are lost."
+msgstr ""
+"Când un panou este eliminat, panoul și configurările\n"
+"sale sunt pierdute."
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+msgid "A simple applet for testing the GNOME panel"
+msgstr "O miniaplicație simplă pentru testarea panoului GNOME"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+msgid "Factory for Test DBus Applet"
+msgstr "Șablon pentru miniaplicația de test DBus"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+msgid "Test DBus Applet"
+msgstr "Miniaplicație de test DBus"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+msgid "Test DBus Applet Factory"
+msgstr "Utilitar test miniaplicație DBus"
+
+#~ msgid "My Account"
+#~ msgstr "Contul meu"
+
+#~ msgid "Select an animation"
+#~ msgstr "Alegeți o animație"
+
+#~ msgid "_File:"
+#~ msgstr "_Fișier:"
+
+#~ msgid "_Total frames in animation:"
+#~ msgstr "Număr _total de cadre în animație:"
+
+#~ msgid "frames"
+#~ msgstr "cadre"
+
+#~ msgid "Frames in fish's animation"
+#~ msgstr "Numărul de cadre în animația peștelui"
+
+#~ msgid ""
+#~ "This key specifies the number of frames that will be displayed in the "
+#~ "fish's animation."
+#~ msgstr ""
+#~ "Această cheie specifică numărul de cadre ce vor fi afișate în animația "
+#~ "peștelui."
+
+#~ msgid "Maximum window list size"
+#~ msgstr "Mărime maximă listă ferestre"
+
+#~ msgid "Minimum window list size"
+#~ msgstr "Mărime minimă listă ferestre"
+
+#~ msgid ""
+#~ "The use of this key was deprecated in GNOME 2.20. The schema is retained "
+#~ "for compatibility with older versions."
+#~ msgstr ""
+#~ "Utilizarea acestei chei este descurajată în GNOME 2.20. Schema este "
+#~ "reținută doar pentru compatibilitate cu versiunile mai vechi."
+
+#~ msgid "Error loading num_rows value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Eroare la încărcarea valorii „num_rows” pentru comutatorul spațiilor de "
+#~ "lucru: %s\n"
+
+#~ msgid ""
+#~ "Error loading display_workspace_names value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Eroare la încărcarea valorii „display_workspace_names” pentru comutatorul "
+#~ "spațiilor de lucru: %s\n"
+
+#~ msgid ""
+#~ "Error loading display_all_workspaces value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Eroare la încărcarea valorii „display_all_workspace” pentru comutatorul "
+#~ "spațiilor de lucru: %s\n"
+
+#~ msgid "Loc_k To Panel"
+#~ msgstr "_Fixează în panou"
+
+#~ msgid "Cannot find an empty spot"
+#~ msgstr "Nu se poate găsi un loc liber"
+
+#~ msgid "Drawer"
+#~ msgstr "Sertar"
+
+#~ msgid "_Add to Drawer..."
+#~ msgstr "_Adaugă la sertar..."
+
+#~ msgid "Add this launcher to _panel"
+#~ msgstr "Adaugă acest lansator la _panou"
+
+#~ msgid "Add this launcher to _desktop"
+#~ msgstr "Adaugă acest lansator pe _desktop"
+
+#~ msgid "_Entire menu"
+#~ msgstr "Într_eg meniul"
+
+#~ msgid "Add this as _drawer to panel"
+#~ msgstr "Adaugă ca _sertar la panou"
+
+#~ msgid "Add this as _menu to panel"
+#~ msgstr "Adaugă ca _meniu la panou"
+
+#~ msgid "A pop out drawer to store other items in"
+#~ msgstr "Un sertar pentru stocarea altor elemente"
+
+#~ msgid "Add to Drawer"
+#~ msgstr "Adaugă la sertar"
+
+#~ msgid "Find an _item to add to the drawer:"
+#~ msgstr "Căută un _element de adăugat în sertar:"
+
+#~ msgid ""
+#~ "A boolean flag to indicate whether the user's previous configuration in /"
+#~ "apps/panel/profiles/default has been copied to the new location in /apps/"
+#~ "panel."
+#~ msgstr ""
+#~ "Un indicator logic care marchează dacă configurația precedentă a "
+#~ "utilizatorului din /apps/panel/profiles/default a fost copiată în noua "
+#~ "locație din /apps/panel."
+
+#~ msgid ""
+#~ "A list of panel applet IDs. Each ID identifies an individual panel "
+#~ "applet. The settings for each of these applets are stored in /apps/panel/"
+#~ "applets/$(id)."
+#~ msgstr ""
+#~ "O listă de ID-uri ale mini-aplicațiilor din panouri. Fiecare ID "
+#~ "identifică o mini-aplicația individuală. Setările pentru fiecare dintre "
+#~ "aceste mini-aplicații sunt păstrate în /apps/panel/applets/$(id)."
+
+#~ msgid "Old profiles configuration migrated"
+#~ msgstr "Configurația profilelor vechi a fost migrată"
+
+#~ msgid "Panel applet ID list"
+#~ msgstr "Listă ID-uri mini-aplicații"
+
+#~ msgid "Autoclose drawer"
+#~ msgstr "Închidere automată sertare"
+
+#~ msgid "Deprecated"
+#~ msgstr "Depășit"
+
+#~ msgid "Disable Logging Out"
+#~ msgstr "Dezactivare ieșire din GNOME"
+
+#~ msgid "Enable animations"
+#~ msgstr "Activează animații"
+
+#~ msgid "Highlight launchers on mouseover"
+#~ msgstr "Evidențiază lansatoarele sub maus"
+
+#~ msgid ""
+#~ "If true, a drawer will automatically be closed when the user clicks a "
+#~ "launcher in it."
+#~ msgstr ""
+#~ "La activare, un sertar va fi automat închis când un utilizator pornește "
+#~ "un lansator din el."
+
+#~ msgid ""
+#~ "If true, a launcher is highlighted when the user moves the pointer over "
+#~ "it."
+#~ msgstr ""
+#~ "La activare, un lansator va fi evidențiat când un utilizator mută mausul "
+#~ "deasupra sa."
+
+#~ msgid ""
+#~ "If true, the panel will not allow a user to log out, by removing access "
+#~ "to the log out menu entries."
+#~ msgstr ""
+#~ "La activare, panoul nu va permite unui utilizator să iasă din GNOME, "
+#~ "dezactivând accesul la opțiunea „Ieșire” din meniu."
+
+#~ msgid "If true, tooltips are shown for objects in panels."
+#~ msgstr "La activare, se arată sugestii pentru obiectele din panouri."
+
+#~ msgid ""
+#~ "This key is deprecated as it cannot be used to implement proper lockdown. "
+#~ "The /desktop/gnome/lockdown/disable_lock_screen key should be used "
+#~ "instead."
+#~ msgstr ""
+#~ "Această cheie este învechită și nu poate fi utilizată pentru a implementa "
+#~ "o interdicție corectă. Trebuie utilizată cheia /desktop/gnome/lockdown/"
+#~ "disable_lock_screen."
+
+#~ msgid "Change desktop appearance and behavior, get help, or log out"
+#~ msgstr ""
+#~ "Modificați aspectul și comportamentul desktopului, obțineți ajutor sau "
+#~ "ieșiți din sistem"
+
+#~ msgid "System"
+#~ msgstr "Sistem"
+
+#~ msgctxt "panel:showusername"
+#~ msgid "1"
+#~ msgstr "0"
+
+#~ msgid "Log Out %s..."
+#~ msgstr "Ieșire din cont %s..."
+
+#~ msgid "Log out %s of this session to log in as a different user"
+#~ msgstr ""
+#~ "Ieșiți din sesiunea contului %s pentru a vă autentifica ca un utilizator "
+#~ "diferit"
+
+#~ msgid "Action button type"
+#~ msgstr "Tip buton acțiune"
+
+#~ msgid "Applet Bonobo IID"
+#~ msgstr "IID Bonobo miniaplicație"
+
+#~ msgid ""
+#~ "If true, the custom_icon key is used as a custom icon for the button. If "
+#~ "false, the custom_icon key is ignored. This key is only relevant if the "
+#~ "object_type key is \"menu-object\" or \"drawer-object\"."
+#~ msgstr ""
+#~ "La activare, cheia „custom_icon” este utilizată ca o iconiță "
+#~ "personalizată pentru buton. Dacă nu, cheia „custom_icon” este ignorată. "
+#~ "Această cheie este relevantă doar dacă cheia „object-type” este „menu-"
+#~ "object” sau „drawer-object”."
+
+#~ msgid ""
+#~ "If true, the menu_path key is used as the path from which the menu "
+#~ "contents should be constructed. If false, the menu_path key is ignored. "
+#~ "This key is only relevant if the object_type key is \"menu-object\"."
+#~ msgstr ""
+#~ "La activare, cheia „menu-path” este utilizată ca o cale din care se "
+#~ "construiește conținutul meniului. Dacă nu, cheia „menu_path” este "
+#~ "ignorată. Această cheie este relevantă doar dacă cheia „object-type” este "
+#~ "„menu-object”."
+
+#~ msgid ""
+#~ "If true, the user may not move the applet without first unlocking the "
+#~ "object using the \"Unlock\" menuitem."
+#~ msgstr ""
+#~ "La activare utilizatorul nu poate muta mini-aplicația fără să deblocheze "
+#~ "întâi obiectul utilizând elementul „Deblochează” din meniu."
+
+#~ msgid "Lock the object to the panel"
+#~ msgstr "Fixează obiectul în panou"
+
+#~ msgid "Panel attached to drawer"
+#~ msgstr "Panou atașat unui sertar"
+
+#~ msgid "Panel object type"
+#~ msgstr "Tip obiect panou"
+
+#~ msgid ""
+#~ "The action type this button represents. Possible values are \"lock\", "
+#~ "\"logout\", \"run\", \"search\" and \"screenshot\". This key is only "
+#~ "relevant if the object_type key is \"action-applet\"."
+#~ msgstr ""
+#~ "Tipul de acțiune reprezentat de acest buton. Valorile posibile sunt: "
+#~ "„lock”, „logout”, „run”, „search” și „screenshot”. Această cheie este "
+#~ "relevantă doar dacă cheia „object_type” este „action-applets”."
+
+#~ msgid ""
+#~ "The identifier of the panel attached to this drawer. This key is only "
+#~ "relevant if the object_type key is \"drawer-object\"."
+#~ msgstr ""
+#~ "Identificatorul panoului atașat acestui sertar. Această cheie este "
+#~ "relevantă doar dacă cheia „object_type” este „drawer-object”."

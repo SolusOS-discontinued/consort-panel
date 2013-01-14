@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "2.5.3.1">
+<!ENTITY manrevision "2.7">
+<!ENTITY date "January 2010">
+<!ENTITY applet "Clock">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Руководство по апплету Часы</title> 
+	 <copyright> 
+		<year>2009</year> 
+		<year>2010</year>
+		<holder>Пол Катлер (Paul Cutler)</holder> 
+	 </copyright>
+	 <copyright> 
+		<year>2002</year>
+		<year>2003</year>  
+		<year>2004</year>  
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Dan Mueth</holder> 
+	 </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+	 <publisher role="maintainer"> 
+		<publishername>Проект документирования GNOME</publishername> 
+	 </publisher> 
+
+
+<legalnotice id="legalnotice">
+<para>Разрешается копировать, распространять и/или изменять этот документ на условиях лицензии GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней версии, опубликованной Фондом свободного программного обеспечения (Free Software Foundation), без неизменяемых частей и без текстов на обложках. Вы можете найти копию лицензии GFDL по <ulink url="ghelp:fdl" type="help">этой ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+<para>Этот документ является частью документации GNOME, распространяемой под лицензией GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+<para>Многие имена и марки используются компаниями для различения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в любой части документации GNOME, и члены проекта документирования GNOME знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+<para>ДОКУМЕНТ И МОДИФИЦИРОВАННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДОСТАВЛЕНЫ НА ОСНОВАНИИ БЕСПЛАТНОЙ ЛИЦЕНЗИИ GNU ДЛЯ ДОКУМЕНТАЦИЙ С ДАЛЬНЕЙШИМ ПОНИМАНИЕМ, ЧТО: <orderedlist><listitem>
+<para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ "КАК ЕСТЬ", БЕЗ ВСЯКИХ ГАРАНТИЙ, ПРИДУМАННЫХ ИЛИ УНАСЛЕДОВАННЫХ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИЙ ТОГО ЧТО ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ТОЛЬКО ДЛЯ СПЕЦИАЛЬНОГО ИСПОЛЬЗОВАНИЯ НЕ ЗАКЛЮЧАЮЩЕГО В СЕБЕ РИСКИ КАЧЕСТВА, АККУРАТНОСТИ ИЛИ СООТВЕТСТВИЯ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА ВАШИМ ТРЕБОВАНИЯМ. ЕСЛИ ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) ДОЛЖНЫ САМИ ПРИЛОЖИТЬ УСИЛИЯ К ЕГО ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЮ. ЭТО ПРЕДУПРЕЖДЕНИЕ СОСТАВЛЯЕТ СУЩЕСТВЕННУЮ ЧАСТЬ ЛИЦЕНЗИИ. ДОКУМЕНТ НЕ ДОЛЖЕН ИСПОЛЬЗОВАТЬСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+</listitem>
+<listitem>
+<para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ, ПОМОЩНИКИ ИЛИ РАСПРОСТРАНИТЕЛИ ДОКУМЕНТА НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЙ, КОСВЕННЫЙ, СПЕЦИАЛЬНЫЙ, СЛУЧАЙНЫЙ ИЛИ ПРЕДНАМЕРЕННЫЙ УЩЕРБ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, ПОТЕРЮ РЕПУТАЦИИ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ ПОЛОМКИ, ИЛИ ЛЮБОЙ ДРУГОЙ УЩЕРБ ИЛИ ПОТЕРИ, ВОЗНИКАЮЩИЕ ВСЛЕДСТВИЕ ИЛИ СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА УВЕДОМЛЕНА О ВОЗМОЖНОСТИ ТАКОГО УЩЕРБА.</para>
+</listitem>
+</orderedlist></para>
+</legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Пол (Paul)</firstname> 
+		  <surname>Катлер (Cutler)</surname> 
+		  <affiliation> 
+			 <orgname>Проект документирования GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Microsystems</surname> 
+		  <affiliation> 
+			 <orgname>Проект документирования GNOME</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Dan</firstname> 
+		  <surname>Mueth</surname> 
+		  <affiliation> 
+			 <orgname>Проект документирования GNOME</orgname> 
+			 <address> <email>d-mueth@uchicago.edu</email> </address> 
+		  </affiliation> 
+		</author> 
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	 <releaseinfo revision="2.28" role="review">
+	 </releaseinfo>
+  
+	 <revhistory>
+	 
+		<revision> 
+		  <revnumber>Руководство версии 2.7 по апплету Часы</revnumber> 
+		  <date>Январь 2010 г.</date> 
+		  <revdescription> 
+			 <para role="author">Пол Катлер (Paul Cutler)</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.6 по апплету Часы</revnumber> 
+		  <date>Январь 2010 г.</date> 
+		  <revdescription> 
+			 <para role="author">Пол Катлер (Paul Cutler)</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.5 по апплету Часы</revnumber> 
+		  <date>Февраль 2004 г.</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.4 по апплету Часы</revnumber> 
+		  <date>Сентябрь 2003 г.</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.3 по апплету Часы</revnumber> 
+		  <date>Январь 2003 г.</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.2 по апплету Часы</revnumber> 
+		  <date>Август 2002 г.</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.1 по апплету Часы</revnumber> 
+		  <date>Июнь 2002 г.</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Руководство версии 2.0 по апплету Часы</revnumber> 
+		  <date>Март 2002 г.</date> 
+		  <revdescription> 
+			 <para role="author">Sun Microsystems</para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Руководство по апплету Часы</revnumber> 
+		  <date>Апрель 2000 г.</date> 
+		  <revdescription> 
+			 <para role="author">Dan Mueth <email>d-mueth@uchicago.edu</email></para> 
+			 <para role="publisher">Проект документирования GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Данное руководство описывает апплет Часы версии 2.5.3.1.</releaseinfo> 
+	 <legalnotice> 
+		<title>Обратная связь</title> 
+		<para>Чтобы сообщить об ошибке или внести предложение по усовершенствованию апплета часов или данного руководства, посмотрите <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+	 	<para>Апплет <application>Часы</application> показывает дату и время, а по щелчку показывает и календарь. Апплет <application>Часы</application> можно настроить для отображения времени в 12- или 24-часовом формате.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Часы</primary> 
+  </indexterm>  
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction"> 
+	 <title>Введение</title> 
+	 
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig"> 
+		<title>Апплет Часы</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Отображение апплета Часы.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>Апплет <application>Часы</application> показывает дату и время, а по щелчку показывает и календарь. Апплет <application>Часы</application> можно настроить для отображения времени в 12- или 24-часовом формате.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Добавление апплета Часы на панель</title>
+  <para>Выполните следующие шаги:</para>
+         <orderedlist>
+           <listitem>
+             <para>Щёлкните правой кнопкой мыши на панели.</para>
+           </listitem>
+           <listitem>
+             <para>Выберите <guimenuitem>Добавить на панель</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Прокрутите список элементов диалога <guilabel>Добавить на панель</guilabel> и выберите <guilabel>Часы</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Нажмите <guibutton>Добавить</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage"> 
+	 <title>Использование</title> 
+
+	<sect2 id="clock-usage-calendar">
+	<title>Отображение календаря</title>	
+	<para>Щёлкните на апплете для открытия маленького календарика на текущий месяц. Для закрытия календарика, щёлкните еще раз на той части апплета, что на панели.</para>
+	
+	<para>Можно изменить месяц, показываемый в календаре, нажимая на стрелки с двух сторон от названия месяца и числа года.</para>	
+	
+	<para>Двойной щелчок на дне запускает <application>Evolution</application>.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Вставка даты и времени в приложение</title>	
+<para>Апплет <application>Часы</application> выдает время, установленное в системе.</para>
+<para>Для вставки даты или времени из апплета <application>Часы</application> в приложение выполните следующее:</para>
+	<orderedlist>
+		<listitem>
+			<para>Щелкните правой кнопкой мыши на апплете <application>Часы</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Выберите один из пунктов меню:</para>
+			<itemizedlist>
+				<listitem>
+					<para>
+					<guimenuitem>Скопировать время</guimenuitem>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+					<guimenuitem>Скопировать дату</guimenuitem>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Отметьте курсором место в приложении, куда вы хотите вставить элемент.</para>
+		</listitem>
+		<listitem>
+			<para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставить</guimenuitem></menuchoice> или нажмите среднюю кнопку мыши.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+	<sect2 id="clock-usage-adjust">
+	<title>Установка системных даты и времени</title>
+	<para>Для установки даты и времени, отображаемых апплетом <application>Часы</application> проделайте следующее:</para>
+	<orderedlist>
+	<listitem>
+			<para>Щелкните на апплете правой кнопкой мыши, выберите <guimenuitem>Установить дату и время</guimenuitem>.</para>
+	</listitem>
+	<listitem>
+			<para>Введите пароль <literal>root</literal> и нажмите кнопку <guibutton>OK</guibutton>.</para>
+	</listitem>
+	<listitem>
+			<para>Апплет <application>Часы</application> запустит системную утилиту для настройки даты и времени. Воспользуйтесь ей.</para>
+	</listitem>
+	</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings"> 
+<title>Настройки часов</title> 
+	<para>Чтобы настроить <application>апплет Часы</application>, щёлкните правой кнопкой мыши по апплету и выберите <guimenuitem>Параметры</guimenuitem>. Вы увидите три вкладки для изменения настроек: <guimenuitem>Общие</guimenuitem>, <guimenuitem>Места</guimenuitem> и <guimenuitem>Погода</guimenuitem>.</para>
+	
+
+<sect2 id="generalprefs">
+	<title>Общие параметры</title>	
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Формат часов</guilabel></term> 
+			 <listitem> 
+			 <para>Выберите один из параметров:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12-часовые</guilabel></para>
+			 <para>Время отображается в 12-часовом формате.</para>
+			 <note><para>Параметр может быть скрыт, если локаль текущего сеанса не использует 12-часовой формат времени.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24-часовые</guilabel></para>
+			 <para>Время отображается в 24-часовом формате.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Показывать дату</guilabel></term>
+			 <listitem> 
+			 <para>Выбором этого параметра включается отображение даты.</para> 
+			 </listitem> 
+		  </varlistentry> 
+		  <varlistentry> 
+			 <term><guilabel>Показывать секунды</guilabel></term>
+			 <listitem> 
+			 <para>Выбор этого параметра включает отображение секунд.</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Показывать погоду</guilabel></term>
+			 <listitem> 
+			 <para>Выберите этот параметр, чтобы для вашего местоположения отображалась информация о погоде. Сведения о погоде будут показаны в виде значка (солнечно, облачно, дождь и т. д.).</para> 
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Показывать температуру</guilabel></term>
+			 <listitem> 
+			 <para>Выберите этот параметр, чтобы включить отображение температуры для вашего местоположения.</para> 
+			 </listitem> 
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>		
+
+<sect2 id="locationprefs">
+	<title>Параметры местонахождения</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Местонахождения</guilabel></term> 
+			 <listitem> 
+			 <para>В апплет можно добавить одно или несколько местоположений. Чтобы добавить местоположение:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para>Нажмите <guilabel>Добавить</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Введите город, регион или страну. Список доступных вариантов будет появляться в списке по мере набора названия. Выберите нужный вариант, сведения о <guilabel>часовом поясе</guilabel>, <guilabel>широте</guilabel> и <guilabel>долготе</guilabel> будут заполнены автоматически.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+</sect2>  
+	
+
+<sect2 id="weatherprefs">
+	<title>Параметры погоды</title>
+
+	<variablelist> 
+		  <varlistentry> 
+			 <term><guilabel>Погода</guilabel></term> 
+			 <listitem> 
+			 <para>Вы можете выбрать единицы измерения температуры из выпадающего списка:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (по шкале Фаренгейта)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (по шкале Цельсия)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (по шкале Кельвина)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>По умолчанию</guilabel> (вывод по умолчанию для вашего региона).</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+		  <varlistentry> 
+			 <term><guilabel>Единицы измерения скорости ветра</guilabel></term> 
+			 <listitem> 
+			 <para>Вы можете выбрать единицы измерения скорости ветра из выпадающего списка:</para> 
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>Шкала Ботфорта</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>Узлы</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>м/ч</guilabel> (миль в час)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>км/ч</guilabel> (километров в час)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>м/с</guilabel> (метров в секунду)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>По умолчанию</guilabel> (вывод по умолчанию для вашего региона).</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem> 
+		  </varlistentry>
+	</variablelist>
+
+
+</sect2>  
+</sect1> 
+
+</article>

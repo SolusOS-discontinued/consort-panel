@@ -1,0 +1,2874 @@
+# French translation of consort-panel.
+# Copyright (C) 1998-2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the consort-panel package.
+#
+# Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+# Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+# Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+# Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+# Baptiste Mille-Mathias <bmm80@free.fr>, 2004-2005.
+# Benoît Dejean <benoit@placenet.org>, 2006.
+# Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+# Damien Durand <splinux@fedoraproject.org>, 2006.
+# Myriam Malga <mmalga@redhat.com>, 2007.
+# Claude Paroz <claude@2xlibre.net>, 2007-2011.
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+# Bruno Brouard <annoa.b@gmail.com>, 2009-2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: consort-panel.HEAD.fr\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"panel&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-08-28 16:27+0000\n"
+"PO-Revision-Date: 2011-04-21 16:22+0200\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#.
+#: ../applets/clock/calendar-window.c:329 ../applets/clock/clock.c:452
+#: ../applets/clock/clock-location-tile.c:507
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#.
+#: ../applets/clock/calendar-window.c:334 ../applets/clock/clock.c:457
+#: ../applets/clock/clock.c:1600 ../applets/clock/clock-location-tile.c:467
+#: ../applets/clock/clock-location-tile.c:514
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the start date of an appointment, in
+#. * the most abbreviated way possible.
+#: ../applets/clock/calendar-window.c:340
+msgid "%b %d"
+msgstr "%e %b"
+
+#: ../applets/clock/calendar-window.c:840
+msgid "Tasks"
+msgstr "Tâches"
+
+#: ../applets/clock/calendar-window.c:840
+#: ../applets/clock/calendar-window.c:1023
+#: ../applets/clock/calendar-window.c:1629
+msgid "Edit"
+msgstr "Modifier"
+
+#: ../applets/clock/calendar-window.c:963
+msgid "All Day"
+msgstr "Toute la journée"
+
+#: ../applets/clock/calendar-window.c:1107
+msgid "Appointments"
+msgstr "Rendez-vous"
+
+#: ../applets/clock/calendar-window.c:1132
+msgid "Birthdays and Anniversaries"
+msgstr "Anniversaires et commémorations"
+
+#: ../applets/clock/calendar-window.c:1157
+msgid "Weather Information"
+msgstr "Informations météorologiques"
+
+#: ../applets/clock/calendar-window.c:1629 ../applets/clock/clock.ui.h:11
+msgid "Locations"
+msgstr "Emplacements"
+
+#: ../applets/clock/calendar-window.c:1927
+msgid "Calendar"
+msgstr "Calendrier"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#: ../applets/clock/clock.c:452
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#: ../applets/clock/clock.c:457 ../applets/clock/clock.c:1594
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the date. Replace %e with %d if, when
+#. * the day of the month as a decimal number is a single digit,
+#. * it should begin with a 0 in your locale (e.g. "May 01"
+#. * instead of "May  1").
+#: ../applets/clock/clock.c:468
+msgid "%a %b %e"
+msgstr "%a %e %b"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#: ../applets/clock/clock.c:475
+#, c-format
+msgid ""
+"%1$s\n"
+"%2$s"
+msgstr ""
+"%1$s\n"
+"%2$s"
+
+#. translators: reverse the order of these arguments
+#. *              if the time should come before the
+#. *              date on a clock in your locale.
+#.
+#: ../applets/clock/clock.c:483
+#, c-format
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. Show date in tooltip.
+#. Translators: This is a strftime format string.
+#. * It is used to display a date. Please leave "%%s" as it is:
+#. * it will be used to insert the timezone name later.
+#: ../applets/clock/clock.c:649
+msgid "%A %B %d (%%s)"
+msgstr "%A %d %B (%%s)"
+
+#: ../applets/clock/clock.c:679
+msgid "Click to hide your appointments and tasks"
+msgstr "Cliquez pour masquer vos rendez-vous et vos tâches"
+
+#: ../applets/clock/clock.c:682
+msgid "Click to view your appointments and tasks"
+msgstr "Cliquez pour afficher vos rendez-vous et vos tâches"
+
+#: ../applets/clock/clock.c:686
+msgid "Click to hide month calendar"
+msgstr "Cliquez pour masquer le calendrier mensuel"
+
+#: ../applets/clock/clock.c:689
+msgid "Click to view month calendar"
+msgstr "Cliquez pour afficher le calendrier mensuel"
+
+#: ../applets/clock/clock.c:1432
+msgid "Computer Clock"
+msgstr "Horloge"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1579
+msgid "%I:%M:%S %p"
+msgstr "%I:%M:%S %p"
+
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1587
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display a date in the full format (so that people can
+#. * copy and paste it elsewhere).
+#: ../applets/clock/clock.c:1633
+msgid "%A, %B %d %Y"
+msgstr "%A %d %B %Y"
+
+#: ../applets/clock/clock.c:1702
+msgid "Failed to open the time settings"
+msgstr "L'ouverture des réglages de l'heure a échoué"
+
+#: ../applets/clock/clock.c:1722 ../applets/fish/fish.c:1317
+#: ../applets/wncklet/window-list.c:159
+#: ../applets/wncklet/workspace-switcher.c:218
+msgid "_Preferences"
+msgstr "_Préférences"
+
+#: ../applets/clock/clock.c:1725
+msgid "Copy _Time"
+msgstr "Copier l'_heure"
+
+#: ../applets/clock/clock.c:1728
+msgid "Copy _Date"
+msgstr "Copier la _date"
+
+#: ../applets/clock/clock.c:1731
+msgid "Ad_just Date & Time"
+msgstr "_Régler la date et l'heure"
+
+#: ../applets/clock/clock.c:2568
+msgid "Custom format"
+msgstr "Format personnalisé"
+
+# Window title
+#: ../applets/clock/clock.c:3055
+msgid "Choose Location"
+msgstr "Choix de l'emplacement"
+
+# Window title
+#: ../applets/clock/clock.c:3134
+msgid "Edit Location"
+msgstr "Modification de l'emplacement"
+
+#: ../applets/clock/clock.c:3281
+msgid "City Name"
+msgstr "Nom de la ville"
+
+#: ../applets/clock/clock.c:3285
+msgid "City Time Zone"
+msgstr "Fuseau horaire de la ville"
+
+#: ../applets/clock/clock.c:3472
+msgid "24 hour"
+msgstr "24 heures"
+
+#: ../applets/clock/clock.c:3473
+msgid "UNIX time"
+msgstr "Heure UNIX"
+
+#: ../applets/clock/clock.c:3474
+msgid "Internet time"
+msgstr "Heure Internet"
+
+#: ../applets/clock/clock.c:3482
+msgid "Custom _format:"
+msgstr "_Format personnalisé :"
+
+#: ../applets/clock/clock.ui.h:1
+msgid "<i>(optional)</i>"
+msgstr "<i>(facultatif)</i>"
+
+#. Languages that have a single word that translates as either "state" or "province" should use that instead of "region".
+#: ../applets/clock/clock.ui.h:3
+msgid ""
+"<small><i>Type a city, region, or country name and then select a match from "
+"the pop-up.</i></small>"
+msgstr ""
+"<small><i>Saisissez un nom de ville, de région ou de pays, puis choisissez "
+"une correspondance dans la liste qui apparaît.</i></small>"
+
+#: ../applets/clock/clock.ui.h:4
+msgid "Clock Format"
+msgstr "Format d'horloge"
+
+#: ../applets/clock/clock.ui.h:5
+msgid "Clock Preferences"
+msgstr "Préférences de l'horloge"
+
+#: ../applets/clock/clock.ui.h:6
+msgid "Display"
+msgstr "Affichage"
+
+#: ../applets/clock/clock.ui.h:7
+msgid "East"
+msgstr "Est"
+
+#: ../applets/clock/clock.ui.h:8 ../applets/fish/fish.ui.h:5
+#: ../consort-panel/panel-properties-dialog.ui.h:9
+msgid "General"
+msgstr "Général"
+
+#: ../applets/clock/clock.ui.h:9
+msgid "L_atitude:"
+msgstr "L_atitude :"
+
+#: ../applets/clock/clock.ui.h:10
+msgid "L_ongitude:"
+msgstr "L_ongitude :"
+
+#: ../applets/clock/clock.ui.h:12
+msgid "North"
+msgstr "Nord"
+
+#: ../applets/clock/clock.ui.h:13
+msgid "Panel Display"
+msgstr "Affichage du tableau de bord"
+
+#: ../applets/clock/clock.ui.h:14
+msgid "Show _temperature"
+msgstr "Afficher la _température"
+
+#: ../applets/clock/clock.ui.h:15
+msgid "Show _weather"
+msgstr "Afficher la _météo"
+
+#: ../applets/clock/clock.ui.h:16
+msgid "Show seco_nds"
+msgstr "Afficher les _secondes"
+
+#: ../applets/clock/clock.ui.h:17
+msgid "Show the _date"
+msgstr "Afficher la _date"
+
+#: ../applets/clock/clock.ui.h:18
+msgid "South"
+msgstr "Sud"
+
+#: ../applets/clock/clock.ui.h:19
+msgid "Time _Settings"
+msgstr "_Réglage de l'heure"
+
+#: ../applets/clock/clock.ui.h:20
+msgid "Weather"
+msgstr "Météo"
+
+#: ../applets/clock/clock.ui.h:21
+msgid "West"
+msgstr "Ouest"
+
+# L'accès aux chiffres requiert la touche Maj sur un clavier Azerty
+#: ../applets/clock/clock.ui.h:22
+msgid "_12 hour format"
+msgstr "Format 12 _heures"
+
+#: ../applets/clock/clock.ui.h:23
+msgid "_24 hour format"
+msgstr "Format 24 he_ures"
+
+#: ../applets/clock/clock.ui.h:24
+msgid "_Location Name:"
+msgstr "Nom du _lieu :"
+
+#: ../applets/clock/clock.ui.h:25
+msgid "_Pressure unit:"
+msgstr "Unité de _pression :"
+
+#: ../applets/clock/clock.ui.h:26
+msgid "_Temperature unit:"
+msgstr "Unité de _température :"
+
+#: ../applets/clock/clock.ui.h:27
+msgid "_Timezone:"
+msgstr "_Fuseau horaire :"
+
+#: ../applets/clock/clock.ui.h:28
+msgid "_Visibility unit:"
+msgstr "Unité de _visibilité :"
+
+#: ../applets/clock/clock.ui.h:29
+msgid "_Wind speed unit:"
+msgstr "Unité de v_itesse du vent :"
+
+#. Translators:
+#. This controls whether the GNOME panel clock should display time in 24 hour mode
+#. or 12 hour mode by default. The only valid values for this are "24-hour" and
+#. "12-hour". If your locale uses 24 hour time notation, translate this to "24-hour".
+#. If your locale uses 12 hour time notation with am/pm, translate this to "12-hour".
+#.
+#. Do NOT translate this into anything else than "24-hour" or "12-hour". For example,
+#. if you translate this to "24 sata" or anything else that isn't "24-hour" or
+#. "12-hour", things will not work.
+#.
+#: ../applets/clock/clock.schemas.in.h:11
+msgid "24-hour"
+msgstr "24-hour"
+
+#: ../applets/clock/clock.schemas.in.h:12
+msgid "A list of locations to display in the calendar window."
+msgstr "Une liste des lieux à afficher dans la fenêtre du calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:13
+msgid "Custom format of the clock"
+msgstr "Format personnalisé de l'horloge"
+
+#: ../applets/clock/clock.schemas.in.h:14
+msgid "Expand list of appointments"
+msgstr "Étendre la liste des rendez-vous"
+
+#: ../applets/clock/clock.schemas.in.h:15
+msgid "Expand list of birthdays"
+msgstr "Étendre la liste des anniversaires"
+
+#: ../applets/clock/clock.schemas.in.h:16
+msgid "Expand list of locations"
+msgstr "Étendre la liste des lieux"
+
+#: ../applets/clock/clock.schemas.in.h:17
+msgid "Expand list of tasks"
+msgstr "Étendre la liste des tâches"
+
+#: ../applets/clock/clock.schemas.in.h:18
+msgid "Expand list of weather information"
+msgstr "Étendre la liste des informations météorologiques"
+
+#: ../applets/clock/clock.schemas.in.h:19
+msgid "Hour format"
+msgstr "Format de l'heure"
+
+#: ../applets/clock/clock.schemas.in.h:20
+msgid "If true, display a weather icon."
+msgstr "Si vrai, affiche une icône d'informations météorologiques."
+
+#: ../applets/clock/clock.schemas.in.h:21
+msgid "If true, display date in the clock, in addition to time."
+msgstr "Si vrai, affiche la date dans l'horloge, en plus de l'heure."
+
+#: ../applets/clock/clock.schemas.in.h:22
+msgid "If true, display seconds in time."
+msgstr "Si vrai, affiche les secondes dans l'heure."
+
+#: ../applets/clock/clock.schemas.in.h:23
+msgid "If true, expand the list of appointments in the calendar window."
+msgstr "Si vrai, étend la liste des rendez-vous dans la fenêtre du calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:24
+msgid "If true, expand the list of birthdays in the calendar window."
+msgstr ""
+"Si vrai, étend la liste des anniversaires dans la fenêtre du calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:25
+msgid "If true, expand the list of locations in the calendar window."
+msgstr "Si vrai, étend la liste des lieux dans la fenêtre du calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:26
+msgid "If true, expand the list of tasks in the calendar window."
+msgstr "Si vrai, étend la liste des tâches dans la fenêtre du calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:27
+msgid "If true, expand the list of weather information in the calendar window."
+msgstr ""
+"Si vrai, étend la liste des informations météorologiques dans la fenêtre du "
+"calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:28
+msgid "If true, show date in a tooltip when the pointer is over the clock."
+msgstr ""
+"Si vrai, affiche la date dans une infobulle lorsque la souris est sur "
+"l'horloge."
+
+#: ../applets/clock/clock.schemas.in.h:29
+msgid "If true, show the temperature next to the weather icon."
+msgstr ""
+"Si vrai, affiche la température à côté de l'icône d'informations "
+"météorologiques."
+
+#: ../applets/clock/clock.schemas.in.h:30
+msgid "If true, show week numbers in the calendar."
+msgstr "Si vrai, affiche le numéro des semaines dans le calendrier."
+
+#: ../applets/clock/clock.schemas.in.h:31
+msgid "List of locations"
+msgstr "Liste des lieux"
+
+#: ../applets/clock/clock.schemas.in.h:32
+msgid "Show date in clock"
+msgstr "Afficher la date dans l'horloge"
+
+#: ../applets/clock/clock.schemas.in.h:33
+msgid "Show date in tooltip"
+msgstr "Afficher la date dans une infobulle"
+
+#: ../applets/clock/clock.schemas.in.h:34
+msgid "Show temperature in clock"
+msgstr "Afficher la température dans l'horloge"
+
+#: ../applets/clock/clock.schemas.in.h:35
+msgid "Show time with seconds"
+msgstr "Afficher l'heure avec les secondes"
+
+#: ../applets/clock/clock.schemas.in.h:36
+msgid "Show weather in clock"
+msgstr "Afficher la météo dans l'horloge"
+
+#: ../applets/clock/clock.schemas.in.h:37
+msgid "Show week numbers in calendar"
+msgstr "Afficher le numéro des semaines dans le calendrier"
+
+#: ../applets/clock/clock.schemas.in.h:38
+msgid "Speed unit"
+msgstr "Unité de vitesse"
+
+#: ../applets/clock/clock.schemas.in.h:39
+msgid "Temperature unit"
+msgstr "Unité de température"
+
+#: ../applets/clock/clock.schemas.in.h:40
+msgid "The unit to use when showing temperatures."
+msgstr "L'unité utilisée pour afficher la température."
+
+#: ../applets/clock/clock.schemas.in.h:41
+msgid "The unit to use when showing wind speed."
+msgstr "L'unité utilisée pour afficher la vitesse du vent."
+
+#: ../applets/clock/clock.schemas.in.h:42
+msgid ""
+"The use of this key was deprecated in GNOME 2.22 with the use of an internal "
+"time configuration tool. The schema is retained for compatibility with older "
+"versions."
+msgstr ""
+"L'utilisation de cette clé est déconseillée dans GNOME 2.22 avec "
+"l'utilisation d'un outil interne de configuration de l'heure. Le schéma est "
+"conservé par compatibilité avec les anciennes versions."
+
+#: ../applets/clock/clock.schemas.in.h:43
+msgid ""
+"The use of this key was deprecated in GNOME 2.28 in favour of the use of "
+"timezones. The schema is retained for compatibility with older versions."
+msgstr ""
+"L'utilisation de cette clé est déconseillée dans GNOME 2.28 en faveur de "
+"l'utilisation des fuseaux horaires. Le schéma est conservé par compatibilité "
+"avec les anciennes versions."
+
+#: ../applets/clock/clock.schemas.in.h:44
+msgid ""
+"The use of this key was deprecated in GNOME 2.6 in favour of the 'format' "
+"key. The schema is retained for compatibility with older versions."
+msgstr ""
+"L'utilisation de cette clé est déconseillée dans GNOME 2.6 en faveur de la "
+"clé « format ». Le schéma est conservé par compatibilité avec les anciennes "
+"versions."
+
+#: ../applets/clock/clock.schemas.in.h:45
+msgid ""
+"This key specifies the format used by the clock applet when the format key "
+"is set to \"custom\". You can use conversion specifiers understood by "
+"strftime() to obtain a specific format. See the strftime() manual for more "
+"information."
+msgstr ""
+"Cette clé indique le format utilisé par l'applet horloge lorsque la clé "
+"format est définie à « custom ». Vous pouvez utiliser des spécificateurs de "
+"conversion compris par strftime() pour obtenir un format spécifique. "
+"Consultez le manuel de strftime() pour de plus amples informations."
+
+#: ../applets/clock/clock.schemas.in.h:46
+msgid ""
+"This key specifies the hour format used by the clock applet. Possible values "
+"are \"12-hour\", \"24-hour\", \"internet\", \"unix\" and \"custom\". If set "
+"to \"internet\", the clock will display Internet time. The Internet time "
+"system divides the day into 1000 \".beats\". There are no time zones in this "
+"system, so time is the same all over the world. If set to \"unix\", the "
+"clock will display time in seconds since Epoch, i.e. 1970-01-01. If set to "
+"\"custom\", the clock will display time according to the format specified in "
+"the custom_format key."
+msgstr ""
+"Cette clé indique le format d'heure utilisé par l'applet horloge. Les "
+"valeurs possibles sont « 12-hour » (12 heures), « 24-hour » (24 heures), "
+"« internet » (Internet), « unix » (Unix) et « custom » (personnalisé). Si elle "
+"est définie à « internet », l'horloge affiche le temps Internet. Le système "
+"de temps Internet divise le jour en 1 000 segments. Il n'y a pas de fuseaux "
+"horaires dans ce système, donc le temps est le même partout dans le monde. "
+"Si elle est définie à « unix », l'horloge affiche le temps en secondes depuis "
+"Epoch, c'est-à-dire le 1er janvier 1970. Si elle est définie à "
+"« custom » (personnalisé), l'horloge affiche l'heure en fonction du format "
+"indiqué dans la clé custom_format."
+
+#: ../applets/clock/clock.schemas.in.h:47
+msgid "Time configuration tool"
+msgstr "Outil de configuration de l'heure"
+
+#: ../applets/clock/clock.schemas.in.h:48
+msgid "Use Internet time"
+msgstr "Utiliser l'heure Internet"
+
+#: ../applets/clock/clock.schemas.in.h:49
+msgid "Use UNIX time"
+msgstr "Utiliser l'heure UNIX"
+
+#: ../applets/clock/clock.schemas.in.h:50
+msgid "Use UTC"
+msgstr "Utiliser UTC"
+
+#: ../applets/clock/clock-location-tile.c:183
+msgid "Failed to set the system timezone"
+msgstr "Le réglage du fuseau horaire du système a échoué."
+
+#: ../applets/clock/clock-location-tile.c:231
+msgid "<small>Set...</small>"
+msgstr "<small>Associer...</small>"
+
+#: ../applets/clock/clock-location-tile.c:232
+msgid "<small>Set</small>"
+msgstr "<small>Associer</small>"
+
+#: ../applets/clock/clock-location-tile.c:308
+msgid "Set location as current location and use its timezone for this computer"
+msgstr ""
+"Définir cet emplacement comme celui actuel et utiliser son fuseau horaire "
+"pour cet ordinateur"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:444
+msgid "%l:%M <small>%p (%A)</small>"
+msgstr "%l:%M <small>%p (%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday).
+#: ../applets/clock/clock-location-tile.c:452
+msgid "%H:%M <small>(%A)</small>"
+msgstr "%H:%M <small>(%A)</small>"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:461
+msgid "%l:%M <small>%p</small>"
+msgstr "%l:%M <small>%p</small>"
+
+#: ../applets/clock/clock-location-tile.c:600
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#. FMQ: it's broken to read from another module's translations; add some API to libgweather.
+#: ../applets/clock/clock-location-tile.c:612
+#: ../applets/clock/clock-location-tile.c:621
+msgid "Unknown"
+msgstr "Inconnu"
+
+#. Translators: The two strings are temperatures.
+#: ../applets/clock/clock-location-tile.c:614
+#, c-format
+msgid "%s, feels like %s"
+msgstr "%s, sensation %s"
+
+#: ../applets/clock/clock-location-tile.c:637
+#, c-format
+msgid "Sunrise: %s / Sunset: %s"
+msgstr "Lever du soleil : %s / Coucher : %s"
+
+#: ../applets/clock/clock-utils.c:93 ../applets/fish/fish.c:163
+#: ../applets/wncklet/wncklet.c:74
+#: ../consort-panel/libpanel-util/panel-show.c:239
+#, c-format
+msgid "Could not display help document '%s'"
+msgstr "Impossible d'afficher le document d'aide « %s »"
+
+#: ../applets/clock/clock-utils.c:122 ../applets/fish/fish.c:189
+#: ../applets/wncklet/wncklet.c:103
+msgid "Error displaying help document"
+msgstr "Erreur lors de l'affichage du document d'aide"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+msgid "Clock"
+msgstr "Horloge"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+msgid "Clock Applet Factory"
+msgstr "Fabrique pour l'applet Horloge"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+msgid "Factory for clock applet"
+msgstr "Fabrique pour l'applet Horloge"
+
+#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+msgid "Get the current time and date"
+msgstr "Donne l'heure et la date actuelle"
+
+#: ../applets/fish/fish.c:217
+#, c-format
+msgid ""
+"Warning:  The command appears to be something actually useful.\n"
+"Since this is a useless applet, you may not want to do this.\n"
+"We strongly advise you against using %s for anything\n"
+"which would make the applet \"practical\" or useful."
+msgstr ""
+"Avertissement : La commande semble être réellement utile.\n"
+"Comme il s'agit d'une applet inutile, vous ne devriez pas faire cela.\n"
+"Nous vous déconseillons l'usage de %s pour n'importe\n"
+"quoi qui puisse paraître « pratique » ou utile."
+
+#: ../applets/fish/fish.c:365 ../applets/fish/fish.c:481
+#, no-c-format
+msgid "%s the Fish"
+msgstr "%s le poisson"
+
+#: ../applets/fish/fish.c:366
+#, c-format
+msgid "%s the Fish, a contemporary oracle"
+msgstr "%s le poisson, un oracle des temps modernes"
+
+#: ../applets/fish/fish.c:437
+msgid "Unable to locate the command to execute"
+msgstr "Impossible de localiser la commande à exécuter"
+
+#: ../applets/fish/fish.c:486
+#, no-c-format
+msgid "%s the Fish Says:"
+msgstr "%s le poisson dit :"
+
+#: ../applets/fish/fish.c:555
+#, c-format
+msgid ""
+"Unable to read output from command\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Impossible de lire la sortie de la commande\n"
+"\n"
+"Détails : %s"
+
+#: ../applets/fish/fish.c:632
+msgid "_Speak again"
+msgstr "_Répéter"
+
+#: ../applets/fish/fish.c:714
+#, c-format
+msgid "The configured command is not working and has been replaced by: %s"
+msgstr "La commande configurée ne fonctionne pas et a été remplacée par : %s"
+
+#: ../applets/fish/fish.c:748
+#, c-format
+msgid ""
+"Unable to execute '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Impossible d'exécuter « %s »\n"
+"\n"
+"Détails : %s"
+
+#: ../applets/fish/fish.c:764
+#, c-format
+msgid ""
+"Unable to read from '%s'\n"
+"\n"
+"Details: %s"
+msgstr ""
+"Impossible de lire depuis « %s »\n"
+"\n"
+"Détails : %s"
+
+#: ../applets/fish/fish.c:1167
+msgid "The water needs changing"
+msgstr "L'eau a besoin d'être changée"
+
+#: ../applets/fish/fish.c:1169
+msgid "Look at today's date!"
+msgstr "Regardez la date d'aujourd'hui !"
+
+#: ../applets/fish/fish.c:1262
+#, c-format
+msgid "%s the Fish, the fortune teller"
+msgstr "%s le poisson, le diseur de bonne aventure"
+
+#: ../applets/fish/fish.ui.h:1 ../consort-panel/panel-properties-dialog.ui.h:1
+msgid "    "
+msgstr "    "
+
+#: ../applets/fish/fish.ui.h:2
+msgid "Animation"
+msgstr "Animation"
+
+#: ../applets/fish/fish.ui.h:3
+msgid "Co_mmand to run when clicked:"
+msgstr "_Commande à lancer lors d'un clic :"
+
+#: ../applets/fish/fish.ui.h:4
+msgid "Fish Preferences"
+msgstr "Préférences du poisson"
+
+#: ../applets/fish/fish.ui.h:6
+msgid "_Name of fish:"
+msgstr "_Nom du poisson :"
+
+#: ../applets/fish/fish.ui.h:7
+msgid "_Pause per frame:"
+msgstr "_Pause par image :"
+
+#: ../applets/fish/fish.ui.h:8
+msgid "_Rotate on vertical panels"
+msgstr "_Pivoter dans les tableaux de bord verticaux"
+
+#: ../applets/fish/fish.ui.h:9
+msgid "seconds"
+msgstr "secondes"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+msgid "Display a swimming fish or another animated creature"
+msgstr "Affiche un poisson qui nage ou une autre créature animée"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+msgid "Fish"
+msgstr "Poisson"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+msgid "From Whence That Stupid Fish Came"
+msgstr "Voilà d'où provient ce stupide poisson"
+
+#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+msgid "Wanda Factory"
+msgstr "Fabrique de Wanda"
+
+#: ../applets/notification_area/main.c:242
+msgid "Panel Notification Area"
+msgstr "Zone de notification du tableau de bord"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Zone où les icônes de notification apparaissent"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+msgid "Factory for notification area"
+msgstr "Fabrique pour la zone de notification"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+msgid "Notification Area"
+msgstr "Zone de notification"
+
+#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+msgid "Notification Area Factory"
+msgstr "Fabrique de zone de notification"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+msgid "Factory for the window navigation related applets"
+msgstr "Fabrique pour les applets liées à la navigation dans les fenêtres"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+msgid "Hide application windows and show the desktop"
+msgstr "Masquer les fenêtres d'applications et afficher le bureau"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+msgid "Show Desktop"
+msgstr "Afficher le bureau"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+msgid "Switch between open windows using a menu"
+msgstr "Bascule entre les fenêtres ouvertes en utilisant un menu"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+msgid "Switch between open windows using buttons"
+msgstr "Bascule entre les fenêtres ouvertes en utilisant des boutons"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+msgid "Switch between workspaces"
+msgstr "Bascule entre les espaces de travail"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+msgid "Window List"
+msgstr "Liste des fenêtres"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+msgid "Window Navigation Applet Factory"
+msgstr "Fabrique pour l'applet de navigation de fenêtres"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/window-menu.c:204
+msgid "Window Selector"
+msgstr "Sélecteur de fenêtres"
+
+#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+msgid "Workspace Switcher"
+msgstr "Sélecteur d'espaces de travail"
+
+#: ../applets/wncklet/showdesktop.c:177
+#, c-format
+msgid "Failed to load %s: %s\n"
+msgstr "Le chargement de %s a échoué : %s\n"
+
+#: ../applets/wncklet/showdesktop.c:178
+msgid "Icon not found"
+msgstr "Icône non trouvée"
+
+#: ../applets/wncklet/showdesktop.c:231
+msgid "Click here to restore hidden windows."
+msgstr "Cliquez ici pour restaurer les fenêtres cachées."
+
+#: ../applets/wncklet/showdesktop.c:233
+msgid "Click here to hide all windows and show the desktop."
+msgstr "Cliquez ici pour masquer toutes les fenêtres et afficher le bureau."
+
+#: ../applets/wncklet/showdesktop.c:441
+msgid "Show Desktop Button"
+msgstr "Bouton d'affichage du bureau"
+
+#: ../applets/wncklet/showdesktop.c:509
+msgid ""
+"Your window manager does not support the show desktop button, or you are not "
+"running a window manager."
+msgstr ""
+"Votre gestionnaire de fenêtres ne prend pas en charge le bouton d'affichage "
+"du bureau, ou vous n'avez pas de gestionnaire de fenêtres en cours de "
+"fonctionnement."
+
+#: ../applets/wncklet/window-list.ui.h:1
+msgid "Group windows when _space is limited"
+msgstr "_Grouper les fenêtres lorsque la place est limitée"
+
+#: ../applets/wncklet/window-list.ui.h:2
+msgid "Restore to current _workspace"
+msgstr "Restaurer dans l'espace de travail a_ctuel"
+
+#: ../applets/wncklet/window-list.ui.h:3
+msgid "Restore to na_tive workspace"
+msgstr "Restaurer dans l'espace de travail d'_origine"
+
+#: ../applets/wncklet/window-list.ui.h:4
+msgid "Restoring Minimized Windows"
+msgstr "Restauration des fenêtres minimisées"
+
+#: ../applets/wncklet/window-list.ui.h:5
+msgid "Sh_ow windows from current workspace"
+msgstr "Afficher les fenêtres de l'_espace de travail actuel"
+
+#: ../applets/wncklet/window-list.ui.h:6
+msgid "Show windows from a_ll workspaces"
+msgstr "Afficher les fenêtres de _tous les espaces de travail"
+
+#: ../applets/wncklet/window-list.ui.h:7
+msgid "Window Grouping"
+msgstr "Groupement des fenêtres"
+
+#: ../applets/wncklet/window-list.ui.h:8
+msgid "Window List Content"
+msgstr "Contenu de la liste des fenêtres"
+
+#: ../applets/wncklet/window-list.ui.h:9
+msgid "Window List Preferences"
+msgstr "Préférences de la liste des fenêtres"
+
+#: ../applets/wncklet/window-list.ui.h:10
+msgid "_Always group windows"
+msgstr "Tou_jours grouper les fenêtres"
+
+#: ../applets/wncklet/window-list.ui.h:11
+msgid "_Never group windows"
+msgstr "_Ne jamais grouper les fenêtres"
+
+#: ../applets/wncklet/workspace-switcher.c:194
+#: ../applets/wncklet/workspace-switcher.c:723
+#: ../applets/wncklet/workspace-switcher.ui.h:10
+msgid "rows"
+msgstr "lignes"
+
+#: ../applets/wncklet/workspace-switcher.c:194
+#: ../applets/wncklet/workspace-switcher.c:723
+msgid "columns"
+msgstr "colonnes"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:1
+msgid "Number of _workspaces:"
+msgstr "Nombre d'_espaces de travail :"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:2
+msgid "Show _all workspaces in:"
+msgstr "Afficher _tous les espaces de travail sur :"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:3
+msgid "Show _only the current workspace"
+msgstr "Afficher _uniquement l'espace de travail actuel"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:4
+msgid "Show workspace _names in switcher"
+msgstr "Afficher le no_m des espaces de travail dans le sélecteur"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:5
+msgid "Switcher"
+msgstr "Sélecteur"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:6
+msgid "Workspace Names"
+msgstr "Noms des espaces de travail"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:7
+msgid "Workspace Switcher Preferences"
+msgstr "Préférences du sélecteur d'espaces de travail"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:8
+msgid "Workspace na_mes:"
+msgstr "_Noms des espaces de travail :"
+
+#: ../applets/wncklet/workspace-switcher.ui.h:9
+msgid "Workspaces"
+msgstr "Espaces de travail"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+msgid ""
+"A fish without a name is a pretty dull fish. Bring your fish to life by "
+"naming him."
+msgstr ""
+"Un poisson sans un nom est un pauvre poisson. Donnez une vie à votre poisson "
+"en le nommant."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+msgid "Command to execute on click"
+msgstr "Commande à exécuter lors d'un clic"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+msgid ""
+"If true, the fish's animation will be displayed rotated on vertical panels."
+msgstr ""
+"Si vrai, l'animation du poisson est pivotée quand le tableau de bord est "
+"orienté verticalement."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+msgid "Pause per frame"
+msgstr "Pause par image"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+msgid "Rotate on vertical panels"
+msgstr "Pivoter dans les tableaux de bord verticaux"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+msgid "The fish's animation pixmap"
+msgstr "L'image d'animation du poisson"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+msgid "The fish's name"
+msgstr "Le nom du poisson"
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+msgid ""
+"This key specifies the command that will be tried to execute when the fish "
+"is clicked."
+msgstr ""
+"Cette clé indique la commande à exécuter lorsqu'on clique sur le poisson."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+msgid ""
+"This key specifies the filename of the pixmap which will be used for the "
+"animation displayed in the fish applet relative to the pixmap directory."
+msgstr ""
+"Cette clé indique le nom du fichier image utilisé pour l'animation du "
+"poisson affichée dans l'applet, relativement au répertoire de pixmaps."
+
+#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+msgid "This key specifies the number of seconds each frame will be displayed."
+msgstr ""
+"Cette clé indique le nombre de secondes séparant l'affichage de chaque trame."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+msgid ""
+"Decides when to group windows from the same application on the window list. "
+"Possible values are \"never\", \"auto\" and \"always\"."
+msgstr ""
+"Décide de la manière de grouper les fenêtres d'une même application dans la "
+"liste des fenêtres. Les valeurs valides sont « never » (jamais), "
+"« auto » (automatique) et « always » (toujours)."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+msgid ""
+"If true, the window list will show windows from all workspaces. Otherwise it "
+"will only display windows from the current workspace."
+msgstr ""
+"Si vrai, la liste des fenêtres affiche les fenêtres de tous les espaces de "
+"travail, sinon elle n'affiche que les fenêtres de l'espace de travail actuel."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+msgid ""
+"If true, then when unminimizing a window, move it to the current workspace. "
+"Otherwise, switch to the workspace of the window."
+msgstr ""
+"Si vrai, quand une fenêtre est déminimisée, elle est affichée dans l'espace "
+"de travail actuel, sinon l'affichage bascule vers l'espace de travail de la "
+"fenêtre."
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+msgid "Move windows to current workspace when unminimized"
+msgstr ""
+"Déplacer les fenêtres dans l'espace de travail actuel lorsqu'elles sont "
+"déminimisées"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+msgid "Show windows from all workspaces"
+msgstr "Afficher les fenêtres de tous les espaces de travail"
+
+#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+msgid "When to group windows"
+msgstr "Quand grouper les fenêtres"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+msgid "Display all workspaces"
+msgstr "Afficher tous les espaces de travail"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+msgid "Display workspace names"
+msgstr "Afficher le nom des espaces de travail"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+msgid ""
+"If true, the workspace switcher will show all workspaces. Otherwise it will "
+"only show the current workspace."
+msgstr ""
+"Si vrai, le sélecteur d'espaces de travail affiche tous les espaces de "
+"travail, sinon il n'affiche que l'espace de travail actuel."
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+msgid ""
+"If true, the workspaces in the workspace switcher will display the names of "
+"the workspaces. Otherwise they will display the windows on the workspace. "
+"This setting only works when the window manager is Metacity."
+msgstr ""
+"Si vrai, les espaces de travail dans le sélecteur d'espaces de travail "
+"affichent le nom des espaces de travail. Sinon, ils affichent les fenêtres "
+"de l'espace de travail. Ce paramètre n'est valable que si le gestionnaire de "
+"fenêtres est Metacity."
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+msgid "Rows in workspace switcher"
+msgstr "Rangées dans le sélecteur d'espaces de travail"
+
+#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+msgid ""
+"This key specifies how many rows (for horizontal layout) or columns (for "
+"vertical layout) the workspace switcher shows the workspaces in. This key is "
+"only relevant if the display_all_workspaces key is true."
+msgstr ""
+"Cette clé indique le nombre de rangées (pour les agencements horizontaux) ou "
+"de colonnes (pour les agencements verticaux) que le sélecteur d'espaces de "
+"travail utilise pour afficher les espaces de travail. Cette clé n'est "
+"valable que si la clé display_all_workspaces est à vrai."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+msgid ""
+"A list of applet IIDs that the panel will ignore. This way you can disable "
+"certain applets from loading or showing up in the menu. For example to "
+"disable the mini-commander applet add 'OAFIID:GNOME_MiniCommanderApplet' to "
+"this list. The panel must be restarted for this to take effect."
+msgstr ""
+"Une liste d'IIDs d'applets que le tableau de bord ignorera. De cette façon "
+"vous pouvez éviter certaines applets d'être chargées ou affichées dans le "
+"menu. Par exemple pour désactiver l'applet mini-commander, ajoutez à cette "
+"liste « OAFIID:GNOME_MiniCommanderApplet ». Le tableau de bord doit être "
+"redémarré pour que cela prenne effet."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+msgid ""
+"A list of panel IDs. Each ID identifies an individual toplevel panel. The "
+"settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
+msgstr ""
+"Une liste d'ID de tableaux de bord. Chaque ID identifie individuellement un "
+"tableau de bord de haut niveau. Les réglages de chacun de ces tableaux de "
+"bord sont stockés dans /apps/panel/toplevels/$(id)."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+msgid ""
+"A list of panel object IDs. Each ID identifies an individual panel object (e."
+"g. an applet, launcher, action button or menu button/bar). The settings for "
+"each of these objects are stored in /apps/panel/objects/$(id)."
+msgstr ""
+"Une liste d'ID d'éléments de tableaux de bord. Chaque ID identifie "
+"individuellement un élément de tableau de bord (c'est-à-dire une applet, un "
+"lanceur, un bouton d'actions ou un bouton/barre de menu). Les réglages de "
+"chacun de ces éléments sont stockés dans /apps/panel/objects/$(id)."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+msgid "Applet IIDs to disable from loading"
+msgstr "IIDs d'applets à ne pas charger"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+msgid "Complete panel lockdown"
+msgstr "Verrouillage complet du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+msgid "Confirm panel removal"
+msgstr "Confirmer la suppression du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+msgid "Disable Force Quit"
+msgstr "Désactiver Forcer à quitter"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+msgid "Enable autocompletion in \"Run Application\" dialog"
+msgstr ""
+"Active l'auto-complétion dans la boîte de dialogue « Lancer une application »"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+msgid "Enable program list in \"Run Application\" dialog"
+msgstr ""
+"Active la liste des programmes dans la boîte de dialogue « Lancer une "
+"application »"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+msgid "Enable tooltips"
+msgstr "Activer les infobulles"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+msgid "Expand program list in \"Run Application\" dialog"
+msgstr ""
+"Déroule la liste des programmes dans la boîte de dialogue « Lancer une "
+"application »"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+msgid "History of \"Run Application\" dialog"
+msgstr "Historique de la boîte de dialogue « Lancer une application »"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+msgid ""
+"If true, a dialog is shown asking for confirmation if the user wants to "
+"remove a panel."
+msgstr ""
+"Si vrai, une boîte de dialogue est affichée pour demander à l'utilisateur de "
+"confirmer la suppression du tableau de bord."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+msgid ""
+"If true, autocompletion in the \"Run Application\" dialog is made available."
+msgstr ""
+"Si vrai, l'auto-complétion dans la boîte de dialogue « Lancer une "
+"application » est disponible."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is expanded when the dialog is opened. This key is only relevant if "
+"the enable_program_list key is true."
+msgstr ""
+"Si vrai, la liste des « Applications connues » dans la boîte de dialogue "
+"« Lancer une application » est ouverte. Ce réglage n'est valable que si la "
+"clé enable_program_list est à vrai."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+msgid ""
+"If true, the \"Known Applications\" listing in the \"Run Application\" "
+"dialog is made available. Whether or not the listing is expanded when the "
+"dialog is shown is controlled by the show_program_list key."
+msgstr ""
+"Si vrai, la liste des « Applications connues » dans la boîte de dialogue "
+"« Lancer une application » est rendue disponible. La clé show_program_list "
+"contrôle l'ouverture de la liste lorsque la boîte de dialogue est affichée."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+msgid ""
+"If true, the panel will not allow a user to force an application to quit by "
+"removing access to the force quit button."
+msgstr ""
+"Si vrai, le tableau de bord interdit aux utilisateurs de forcer une "
+"application à quitter en supprimant l'accès au bouton forcer à quitter."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+msgid ""
+"If true, the panel will not allow any changes to the configuration of the "
+"panel. Individual applets may need to be locked down separately however. The "
+"panel must be restarted for this to take effect."
+msgstr ""
+"Si vrai, le tableau de bord interdit toute modification de la configuration "
+"du tableau de bord. Cependant les applets individuelles pourraient "
+"nécessiter d'être verrouillées séparément. Le tableau de bord doit être "
+"redémarré pour que cela prenne effet."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+msgid ""
+"If true, tooltips are shown for objects in panels. Tooltips can be disabled "
+"for the whole desktop with the gtk-enable-tooltips property in GTK+."
+msgstr ""
+"Si vrai, les infobulles sont affichées pour les objets dans les panneaux. "
+"Les infobulles peuvent être désactivées pour le bureau complet avec la "
+"propriété gtk-enable-tooltips de GTK+."
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+msgid "Panel ID list"
+msgstr "Liste des ID de tableaux de bord"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+msgid "Panel object ID list"
+msgstr "Liste des ID d'éléments de tableaux de bord"
+
+#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+msgid ""
+"The list of commands used in the past in the \"Run Application\" dialog."
+msgstr ""
+"La liste des commandes précédemment utilisées dans la boîte de dialogue "
+"« Lancer une application »."
+
+#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+msgid "Launcher location"
+msgstr "Emplacement du lanceur"
+
+#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+msgid ""
+"The location of the .desktop file describing the launcher. This key is only "
+"relevant if the object_type key is \"launcher-object\"."
+msgstr ""
+"L'emplacement du fichier .desktop décrivant le lanceur. Cette clé n'est "
+"valable que si la clé object_type est « launcher-object »."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+msgid "Icon used for button"
+msgstr "Icône utilisée pour le bouton"
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+msgid "Menu content path"
+msgstr "Chemin du contenu du menu"
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+msgid ""
+"The location of the image file used as the icon for the object's button. If "
+"empty, the default icon for the menu will be used."
+msgstr ""
+"L'emplacement du fichier image utilisé comme icône pour le bouton de "
+"l'élément. Si vide, l'icône par défaut pour le menu est utilisée."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+msgid ""
+"The path from which the menu contents is contructed. If empty, the menu will "
+"be the default applications menu."
+msgstr ""
+"Le chemin depuis lequel le contenu du menu est construit. Si vide, le menu "
+"est le menu des applications par défaut."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+msgid "The text to display in a tooltip for this menu."
+msgstr "Le texte à afficher dans l'infobulle de ce menu."
+
+#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+msgid "Tooltip displayed for menu"
+msgstr "Infobulle affichée pour le menu"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+msgid ""
+"If set to 'end', the position of the object is interpreted relative to the "
+"right (or bottom if vertical) edge of the panel."
+msgstr ""
+"Si défini à « end », la position de l'élément est interprétée relativement au "
+"côté droit (ou bas si vertical) du tableau de bord."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+msgid "Interpret position relative to bottom/right edge"
+msgstr "Interprète la position relativement au côté bas/droit"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+msgid "Object IID"
+msgstr "IID de l'objet"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+msgid "Object's position on the panel"
+msgstr "Position de l'élément sur le tableau de bord"
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+msgid "The identifier of the toplevel panel which contains this object."
+msgstr ""
+"L'identifiant du tableau de bord de haut niveau qui contient cet élément."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+msgid ""
+"The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
+"\"."
+msgstr ""
+"L'ID de l'implémentation de l'objet - par ex. « ClockAppletFactory::"
+"ClockApplet »."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+msgid ""
+"The position of this panel object. The position is specified by the number "
+"of pixels from the left (or top if vertical) panel edge."
+msgstr ""
+"La position de cet élément de tableau de bord. La position est indiquée par "
+"le nombre de pixels depuis le côté gauche (ou haut si vertical) du tableau "
+"de bord."
+
+#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+msgid "Toplevel panel containing object"
+msgstr "Tableau de bord de haut niveau qui contient un élément"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+msgid "Animation speed"
+msgstr "Vitesse de l'animation"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+msgid "Automatically hide panel into corner"
+msgstr "Masquer automatiquement le tableau de bord dans le coin"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+msgid "Background color"
+msgstr "Couleur de l'arrière-plan"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+msgid "Background image"
+msgstr "Image d'arrière-plan"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+msgid "Background type"
+msgstr "Type d'arrière-plan"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+msgid "Center panel on x-axis"
+msgstr "Centrer le tableau de bord sur l'axe X"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+msgid "Center panel on y-axis"
+msgstr "Centre le tableau de bord sur l'axe Y"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+msgid ""
+"Determines how the image set by image-uri is rendered. Possible values are "
+"\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
+"to the panel dimensions and the aspect ratio of the image will not be "
+"maintained. With \"fit\", the image will be scaled (retaining the aspect "
+"ratio of the image) to the panel height (if horizontal)."
+msgstr ""
+"Détermine la façon dont l'image définie par image-uri est rendue. Les "
+"valeurs possibles sont « none », « stretch » (étiré), « fit » (ajusté). Avec "
+"l'option « stretch », l'image est mise à l'échelle aux dimensions du tableau "
+"de bord et les proportions de l'image ne sont pas conservées. Avec l'option "
+"« fit », l'image est mise à l'échelle (en conservant ses proportions) à la "
+"hauteur du tableau de bord (si horizontal)."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+msgid "Enable arrows on hide buttons"
+msgstr "Activer les flèches sur les boutons de masquage"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+msgid "Enable hide buttons"
+msgstr "Activer les boutons de masquage"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+msgid "Expand to occupy entire screen width"
+msgstr "Étendre pour occuper la largeur totale de l'écran"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+msgid ""
+"If true, arrows will be placed on the hide buttons. This key is only "
+"relevant if the enable_buttons key is true."
+msgstr ""
+"Si vrai, les flèches sont placées sur les boutons de masquage. Cette clé "
+"n'est valable que si la clé enable_buttons est active."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+msgid ""
+"If true, buttons will be placed on each side of the panel which may be used "
+"to move the panel to edge of the screen, leaving only a button showing."
+msgstr ""
+"Si vrai, des boutons sont placés de chaque côté du tableau de bord et "
+"peuvent être utilisés pour déplacer le tableau de bord sur les côtés de "
+"l'écran, laissant seulement un bouton d'affichage."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+msgid ""
+"If true, the background image will be rotated when the panel is oriented "
+"vertically."
+msgstr ""
+"Si vrai, l'image d'arrière-plan est pivotée lorsque le tableau de bord est "
+"orienté verticalement."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+msgid ""
+"If true, the panel is automatically hidden into a corner of the screen when "
+"the pointer leaves the panel area. Moving the pointer to that corner again "
+"will cause the panel to re-appear."
+msgstr ""
+"Si vrai, le tableau de bord est automatiquement caché dans un coin de "
+"l'écran lorsque le pointeur quitte l'aire du tableau de bord. Déplacer le "
+"pointeur vers ce coin fait réapparaître le tableau de bord."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+msgid ""
+"If true, the panel will occupy the entire screen width (height if this is a "
+"vertical panel). In this mode the panel can only be placed at a screen edge. "
+"If false, the panel will only be large enough to accommodate the applets, "
+"launchers and buttons on the panel."
+msgstr ""
+"Si vrai, le tableau de bord occupe toute la largeur de l'écran (hauteur si "
+"c'est un tableau de bord vertical). Dans ce mode, le tableau de bord est "
+"placé sur le côté de l'écran. Si faux, le tableau de bord est assez large "
+"pour recevoir les applets, lanceurs et boutons du tableau de bord."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+msgid ""
+"If true, the x and x_right keys are ignored and the panel is placed at the "
+"center of the x-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the x "
+"and x_right keys specify the location of the panel."
+msgstr ""
+"Si vrai, les clés x et x_right sont ignorées et le tableau de bord est placé "
+"au centre de l'axe X de l'écran. Si le tableau de bord est redimensionné, il "
+"reste à cette position, c'est-à-dire qu'il grandit des deux côtés. Si faux, "
+"les clés x et x_right déterminent l'emplacement du tableau de bord."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+msgid ""
+"If true, the y and y_bottom keys are ignored and the panel is placed at the "
+"center of the y-axis of the screen. If the panel is resized it will remain "
+"at that position - i.e. the panel will grow on both sides. If false, the y "
+"and y_bottom keys specify the location of the panel."
+msgstr ""
+"Si vrai, les clés y et y_bottom sont ignorées et le tableau de bord est "
+"placé au centre de l'axe Y de l'écran. Si le tableau de bord est "
+"redimensionné, il reste à cette position, c'est-à-dire qu'il grandit des "
+"deux côtés. Si faux, les clés y et y_bottom déterminent l'emplacement du "
+"tableau de bord."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+msgid "Image options"
+msgstr "Options de l'image"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+msgid ""
+"In a Xinerama setup, you may have panels on each individual monitor. This "
+"key identifies the current monitor the panel is displayed on."
+msgstr ""
+"Dans un mode Xinerama, vous pouvez avoir des tableaux de bord sur chacun des "
+"écrans. Cette clé identifie l'écran sur lequel le tableau de bord est "
+"affiché."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+msgid "Name to identify panel"
+msgstr "Nom d'identification du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+msgid "Panel autohide delay"
+msgstr "Délai de masquage automatique du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+msgid "Panel autounhide delay"
+msgstr "Délai d'affichage automatique du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+msgid "Panel orientation"
+msgstr "Orientation du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+msgid "Panel size"
+msgstr "Taille du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+msgid "Rotate image on vertical panels"
+msgstr "Pivoter l'image dans les tableaux de bord verticaux"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+msgid "Specifies the background color for the panel in #RGB format."
+msgstr ""
+"Indique la couleur de l'arrière-plan des tableaux de bord au format #RGB."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+msgid ""
+"Specifies the file to be used for the background image. If the image "
+"contains an alpha channel it will be composited onto the desktop background "
+"image."
+msgstr ""
+"Indique le fichier à utiliser comme image d'arrière-plan. Si l'image "
+"contient un canal alpha, elle est composée avec l'image d'arrière-plan du "
+"bureau."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+msgid ""
+"Specifies the number of milliseconds delay after the pointer enters the "
+"panel area before the panel is automatically re-shown. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Indique le nombre de millisecondes du délai entre le moment où le pointeur "
+"entre dans l'aire du tableau de bord et le moment où le tableau de bord est "
+"réaffiché. Cette clé n'est valable que si la clé auto_hide est à vrai."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+msgid ""
+"Specifies the number of milliseconds delay after the pointer leaves the "
+"panel area before the panel is automatically hidden. This key is only "
+"relevant if the auto_hide key is true."
+msgstr ""
+"Indique le nombre de millisecondes du délai entre le moment où le pointeur "
+"quitte le tableau de bord et le moment où le tableau de bord est "
+"automatiquement caché. Cette clé n'est valable que si la clé auto_hide est à "
+"vrai."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+msgid ""
+"Specifies the number of pixels visible when the panel is automatically "
+"hidden into a corner. This key is only relevant if the auto_hide key is true."
+msgstr ""
+"Indique le nombre de pixels visible lorsque le tableau de bord est "
+"automatiquement caché dans un coin. Cette clé n'est valable que si la clé "
+"auto_hide est à vrai."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+msgid ""
+"The height (width for a vertical panel) of the panel. The panel will "
+"determine at runtime a minimum size based on the font size and other "
+"indicators. The maximum size is fixed at one quarter of the screen height "
+"(or width)."
+msgstr ""
+"La hauteur (largeur pour un tableau de bord vertical) du tableau de bord. Le "
+"tableau de bord détermine à l'exécution une taille minimum basée sur la "
+"taille de la police et d'autres indicateurs. La taille maximum est fixée à "
+"un quart de la hauteur (ou largeur) de l'écran."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+msgid ""
+"The location of the panel along the x-axis, starting from the right of the "
+"screen. If set to -1, the value is ignored and the value of the x key is "
+"used. If the value is greater than 0, then the value of the x key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"L'emplacement du tableau de bord selon l'abscisse (x), à partir de la droite "
+"de l'écran. Si cette valeur vaut -1, elle est ignorée et c'est la valeur de "
+"la clé x qui est utilisée. Si cette valeur est plus grande que 0, la valeur "
+"de la clé x est ignorée. Cette clé n'est valable que dans le mode non "
+"étendu. En mode étendu, cette clé est ignorée et le tableau de bord est "
+"placé sur le côté de l'écran indiqué par la clé orientation."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+msgid ""
+"The location of the panel along the x-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"L'emplacement du tableau de bord selon l'abscisse. Cette clé n'est valable "
+"que dans le mode non étendu. En mode étendu cette clé est ignorée et le "
+"tableau de bord est placé sur le côté de l'écran indiqué par la clé "
+"orientation."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+msgid ""
+"The location of the panel along the y-axis, starting from the bottom of the "
+"screen. If set to -1, the value is ignored and the value of the y key is "
+"used. If the value is greater than 0, then the value of the y key is "
+"ignored. This key is only relevant in un-expanded mode. In expanded mode "
+"this key is ignored and the panel is placed at the screen edge specified by "
+"the orientation key."
+msgstr ""
+"L'emplacement du tableau de bord selon l'ordonnée (y), à partir du bas de "
+"l'écran. Si cette valeur vaut -1, elle est ignorée et c'est la valeur de la "
+"clé y qui est utilisée. Si cette valeur est plus grande que 0, la valeur de "
+"la clé y est ignorée. Cette clé n'est valable que dans le mode non étendu. "
+"En mode étendu, cette clé est ignorée et le tableau de bord est placé sur le "
+"côté de l'écran indiqué par la clé orientation."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+msgid ""
+"The location of the panel along the y-axis. This key is only relevant in un-"
+"expanded mode. In expanded mode this key is ignored and the panel is placed "
+"at the screen edge specified by the orientation key."
+msgstr ""
+"L'emplacement du tableau de bord selon l'ordonnée. Cette clé n'est valable "
+"que dans le mode non étendu. En mode étendu cette clé est ignorée et le "
+"tableau de bord est placé sur le côté de l'écran indiqué par la clé "
+"orientation."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+msgid ""
+"The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
+"\", \"right\". In expanded mode the key specifies which screen edge the "
+"panel is on. In un-expanded mode the difference between \"top\" and \"bottom"
+"\" is less important - both indicate that this is a horizontal panel - but "
+"still give a useful hint as to how some panel objects should behave. For "
+"example, on a \"top\" panel a menu button will pop up its menu below the "
+"panel, whereas on a \"bottom\" panel the menu will be popped up above the "
+"panel."
+msgstr ""
+"L'orientation du tableau de bord. Les quatre valeurs possibles sont : "
+"« top » (haut), « bottom » (bas), « left » (gauche) et « right » (droite). En "
+"mode étendu, la clé indique sur quel côté de l'écran placer le tableau de "
+"bord. En mode non étendu, la différence entre « top » et « bottom » est moins "
+"importante - les deux indiquent que c'est un tableau de bord horizontal - "
+"mais donne toutefois une indication utile sur la manière dont certains "
+"éléments de tableau de bord doivent se comporter. Par exemple, sur un "
+"tableau de bord « top », un bouton de menu affiche le menu sous le tableau de "
+"bord, alors qu'avec un tableau de bord « bottom » le menu est affiché au-"
+"dessus du tableau de bord."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+msgid ""
+"The speed in which panel animations should occur. Possible values are \"slow"
+"\", \"medium\" and \"fast\". This key is only relevant if the "
+"enable_animations key is true."
+msgstr ""
+"La vitesse à laquelle les animations doivent fonctionner. Il y a 3 valeurs "
+"possibles : « slow » (lent), « medium » (moyen) et « fast » (rapide). Cette clé "
+"n'est valable que si la clé enable_animations est à vrai."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+msgid ""
+"This is a human readable name which you can use to identify a panel. Its "
+"main purpose is to serve as the panel's window title which is useful when "
+"navigating between panels."
+msgstr ""
+"C'est un nom humainement lisible qui identifie le tableau de bord. Son rôle "
+"principal est de servir comme titre de fenêtre du tableau de bord, ce qui "
+"est utile pour naviguer entre les tableaux de bord."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+msgid "Visible pixels when hidden"
+msgstr "Nombre de pixels visibles lorsque caché"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+msgid ""
+"Which type of background should be used for this panel. Possible values are "
+"\"none\" - the default GTK+ widget background will be used, \"color\" - the "
+"color key will be used as background color or \"image\" - the image "
+"specified by the image key will be used as background."
+msgstr ""
+"Le type d'arrière-plan utilisé avec ce tableau de bord. Les valeurs "
+"possibles sont : « none », où l'arrière-plan GTK+ par défaut est utilisé, "
+"« color » où la clé color est utilisée comme couleur d'arrière-plan ou "
+"« image » où l'image indiquée par la clé image est utilisée comme arrière-"
+"plan."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+msgid ""
+"With a multi-screen setup, you may have panels on each individual screen. "
+"This key identifies the current screen the panel is displayed on."
+msgstr ""
+"Avec un réglage multi-écran, vous pouvez avoir des tableaux de bord sur "
+"chacun des écrans. Cette clé identifie l'écran sur lequel le tableau de bord "
+"est affiché."
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+msgid "X co-ordinate of panel"
+msgstr "Abscisse du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+msgid "X co-ordinate of panel, starting from the right of the screen"
+msgstr "Abscisse du tableau de bord, à partir de la droite de l'écran"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+msgid "X screen where the panel is displayed"
+msgstr "Le visuel X sur lequel le tableau de bord est affiché"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+msgid "Xinerama monitor where the panel is displayed"
+msgstr "Écran Xinerama sur lequel le tableau de bord est affiché"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+msgid "Y co-ordinate of panel"
+msgstr "Ordonnée du tableau de bord"
+
+#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+msgid "Y co-ordinate of panel, starting from the bottom of the screen"
+msgstr "Ordonnée du tableau de bord, à partir du bas de l'écran"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Le fichier n'est pas un fichier .desktop valide"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Version « %s » du fichier .desktop non reconnue"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:968
+#, c-format
+msgid "Starting %s"
+msgstr "Démarrage de %s"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1110
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "L'application n'accepte pas les documents en ligne de commande"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1178
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Option de lancement non reconnue : %d"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1383
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Impossible de passer les URI de documents vers une entrée .desktop de type "
+"« Type=Link »"
+
+#: ../consort-panel/libegg/eggdesktopfile.c:1404
+#, c-format
+msgid "Not a launchable item"
+msgstr "L'élément n'est pas exécutable"
+
+#: ../consort-panel/libegg/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "Désactive la connexion au gestionnaire de sessions"
+
+#: ../consort-panel/libegg/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "Indique un fichier contenant la configuration enregistrée"
+
+#: ../consort-panel/libegg/eggsmclient.c:229
+msgid "FILE"
+msgstr "FICHIER"
+
+#: ../consort-panel/libegg/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "Indique l'ID de la gestion de sessions"
+
+#: ../consort-panel/libegg/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../consort-panel/libegg/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "Options de gestion de sessions :"
+
+#: ../consort-panel/libegg/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "Afficher les options de gestion de sessions"
+
+#. FIXME: We need a title in this case, but we don't know what
+#. * the format should be. Let's put something simple until
+#. * the following bug gets fixed:
+#. * http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#. FIXME: http://bugzilla.gnome.org/show_bug.cgi?id=165132
+#: ../consort-panel/libpanel-util/panel-error.c:80
+#: ../consort-panel/panel-applet-frame.c:766
+#: ../consort-panel/panel-applet-frame.c:938
+msgid "Error"
+msgstr "Erreur"
+
+# Window title
+#: ../consort-panel/libpanel-util/panel-icon-chooser.c:385
+msgid "Choose an icon"
+msgstr "Choix d'une icône"
+
+#: ../consort-panel/libpanel-util/panel-launch.c:49
+#, c-format
+msgid "Could not launch '%s'"
+msgstr "Impossible de lancer « %s »"
+
+#: ../consort-panel/libpanel-util/panel-launch.c:52
+#: ../consort-panel/launcher.c:175
+msgid "Could not launch application"
+msgstr "Impossible de lancer l'application"
+
+#: ../consort-panel/libpanel-util/panel-show.c:48
+#, c-format
+msgid "Could not open location '%s'"
+msgstr "Impossible d'ouvrir l'emplacement « %s »"
+
+#: ../consort-panel/libpanel-util/panel-show.c:166
+msgid "No application to handle search folders is installed."
+msgstr ""
+"Aucune application n'est installée pour prendre en charge les dossiers de "
+"recherche."
+
+#: ../consort-panel/applet.c:359
+msgid "???"
+msgstr "???"
+
+#: ../consort-panel/applet.c:498 ../libpanel-applet/panel-applet.c:169
+msgid "_Move"
+msgstr "_Déplacer"
+
+#: ../consort-panel/applet.c:505 ../libpanel-applet/panel-applet.c:166
+msgid "_Remove From Panel"
+msgstr "_Enlever du tableau de bord"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:29
+msgid "Create new file in the given directory"
+msgstr "Créer un nouveau fichier dans le dossier indiqué"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:30
+msgid "[FILE...]"
+msgstr "[FICHIER...]"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:108
+msgid "- Edit .desktop files"
+msgstr "- Modifier les fichiers .desktop"
+
+# hum, j'ai un doute...
+#: ../consort-panel/gnome-desktop-item-edit.c:146
+#: ../consort-panel/gnome-desktop-item-edit.c:200 ../consort-panel/launcher.c:886
+msgid "Create Launcher"
+msgstr "Créer un lanceur"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:171
+#: ../consort-panel/gnome-desktop-item-edit.c:194
+msgid "Directory Properties"
+msgstr "Propriétés du répertoire"
+
+#: ../consort-panel/gnome-desktop-item-edit.c:177 ../consort-panel/launcher.c:726
+msgid "Launcher Properties"
+msgstr "Propriétés du lanceur"
+
+#: ../consort-panel/consort-panel.desktop.in.in.h:1
+msgid ""
+"Launch other applications and provide various utilities to manage windows, "
+"show the time, etc."
+msgstr ""
+"Lancer des applications supplémentaires et différents utilitaires pour gérer "
+"les fenêtres, indiquer l'heure, etc."
+
+#: ../consort-panel/consort-panel.desktop.in.in.h:2 ../consort-panel/main.c:87
+msgid "Panel"
+msgstr "Tableau de bord"
+
+#: ../consort-panel/launcher.c:136
+msgid "Could not show this URL"
+msgstr "Impossible d'afficher cet URL"
+
+#: ../consort-panel/launcher.c:137
+msgid "No URL was specified."
+msgstr "Aucun URL n'a été indiqué."
+
+#: ../consort-panel/launcher.c:219
+msgid "Could not use dropped item"
+msgstr "Impossible de déposer l'élément"
+
+#: ../consort-panel/launcher.c:415
+#, c-format
+msgid "No URI provided for panel launcher desktop file\n"
+msgstr ""
+"Aucun URI fourni pour le fichier de bureau du lanceur du tableau de bord\n"
+
+#: ../consort-panel/launcher.c:456
+#, c-format
+msgid "Unable to open desktop file %s for panel launcher%s%s\n"
+msgstr ""
+"Impossible d'ouvrir le fichier de bureau %s pour le lanceur du tableau de "
+"bord%s%s\n"
+
+#: ../consort-panel/launcher.c:790
+msgid "_Launch"
+msgstr "_Lancer"
+
+#: ../consort-panel/launcher.c:796 ../consort-panel/panel-action-button.c:139
+#: ../consort-panel/panel-context-menu.c:133
+msgid "_Properties"
+msgstr "_Propriétés"
+
+#: ../consort-panel/launcher.c:827
+#, c-format
+msgid "Launcher location is not set, cannot load launcher\n"
+msgstr ""
+"L'emplacement du lanceur n'est pas défini, impossible de charger le lanceur\n"
+
+#: ../consort-panel/launcher.c:957 ../consort-panel/panel-ditem-editor.c:1357
+#: ../consort-panel/panel-ditem-editor.c:1391
+#: ../consort-panel/panel-ditem-editor.c:1422
+msgid "Could not save launcher"
+msgstr "Impossible d'enregistrer le lanceur"
+
+#: ../consort-panel/main.c:41
+msgid "Replace a currently running panel"
+msgstr "Remplace un tableau de bord en cours d'exécution"
+
+#: ../consort-panel/panel-action-button.c:127
+msgid "_Lock Screen"
+msgstr "_Verrouiller l'écran"
+
+#: ../consort-panel/panel-action-button.c:133
+msgid "_Activate Screensaver"
+msgstr "_Activer l'économiseur d'écran"
+
+#: ../consort-panel/panel-action-button.c:239
+msgid "Connect to server"
+msgstr "Se connecter au serveur"
+
+#: ../consort-panel/panel-action-button.c:263
+msgid "Could not connect to server"
+msgstr "Impossible de se connecter au serveur"
+
+#: ../consort-panel/panel-action-button.c:293
+msgid "Lock Screen"
+msgstr "Verrouiller l'écran"
+
+#: ../consort-panel/panel-action-button.c:294
+msgid "Protect your computer from unauthorized use"
+msgstr "Interdit les utilisations non désirées de votre ordinateur"
+
+#. when changing one of those two strings, don't forget to
+#. * update the ones in panel-menu-items.c (look for
+#. * "1" (msgctxt: "panel:showusername"))
+#: ../consort-panel/panel-action-button.c:307
+msgid "Log Out..."
+msgstr "Fermer la session..."
+
+#: ../consort-panel/panel-action-button.c:308
+msgid "Log out of this session to log in as a different user"
+msgstr ""
+"Se déconnecte de cette session afin de se reconnecter sous un autre "
+"identifiant"
+
+#: ../consort-panel/panel-action-button.c:316
+msgid "Run Application..."
+msgstr "Lancer une application..."
+
+#: ../consort-panel/panel-action-button.c:317
+msgid "Run an application by typing a command or choosing from a list"
+msgstr ""
+"Lance une application en saisissant une commande ou en choisissant dans la "
+"liste"
+
+#: ../consort-panel/panel-action-button.c:325
+msgid "Search for Files..."
+msgstr "Rechercher des fichiers..."
+
+#: ../consort-panel/panel-action-button.c:326
+msgid "Locate documents and folders on this computer by name or content"
+msgstr ""
+"Retrouve des documents et des dossiers sur cet ordinateur selon leur nom ou "
+"leur contenu"
+
+#: ../consort-panel/panel-action-button.c:333
+#: ../consort-panel/panel-force-quit.c:239
+msgid "Force Quit"
+msgstr "Forcer à quitter"
+
+#: ../consort-panel/panel-action-button.c:334
+msgid "Force a misbehaving application to quit"
+msgstr "Force une application ayant un comportement anormal à quitter"
+
+#. FIXME icon
+#: ../consort-panel/panel-action-button.c:342
+msgid "Connect to Server..."
+msgstr "Se connecter à un serveur..."
+
+#: ../consort-panel/panel-action-button.c:343
+msgid "Connect to a remote computer or shared disk"
+msgstr "Se connecte à un serveur distant ou à un disque partagé"
+
+#: ../consort-panel/panel-action-button.c:350
+msgid "Shut Down..."
+msgstr "Éteindre..."
+
+#: ../consort-panel/panel-action-button.c:351
+msgid "Shut down the computer"
+msgstr "Éteint l'ordinateur"
+
+#: ../consort-panel/panel-addto.c:145 ../consort-panel/panel-menu-button.c:963
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: ../consort-panel/panel-addto.c:146
+msgid "The main GNOME menu"
+msgstr "Le menu principal GNOME"
+
+#: ../consort-panel/panel-addto.c:155
+msgid "Menu Bar"
+msgstr "Barre de menus"
+
+#: ../consort-panel/panel-addto.c:156
+msgid "A custom menu bar"
+msgstr "Une barre de menus personnalisée"
+
+#: ../consort-panel/panel-addto.c:165
+msgid "Separator"
+msgstr "Séparateur"
+
+#: ../consort-panel/panel-addto.c:166
+msgid "A separator to organize the panel items"
+msgstr "Un séparateur pour organiser les éléments du tableau de bord"
+
+#: ../consort-panel/panel-addto.c:175
+msgid "User menu"
+msgstr "Menu personnel"
+
+#: ../consort-panel/panel-addto.c:176
+msgid "Menu to change your settings and your online status"
+msgstr "Menu pour modifier vos réglages et votre disponibilité en ligne"
+
+#: ../consort-panel/panel-addto.c:222
+msgid "(empty)"
+msgstr "(vide)"
+
+#: ../consort-panel/panel-addto.c:422
+msgid "Custom Application Launcher"
+msgstr "Lanceur d'application personnalisé"
+
+#: ../consort-panel/panel-addto.c:423
+msgid "Create a new launcher"
+msgstr "Crée un nouveau lanceur"
+
+#: ../consort-panel/panel-addto.c:433
+msgid "Application Launcher..."
+msgstr "Lanceur d'application..."
+
+#: ../consort-panel/panel-addto.c:434
+msgid "Copy a launcher from the applications menu"
+msgstr "Copie un lanceur depuis le menu d'applications"
+
+#: ../consort-panel/panel-addto.c:1019
+#, c-format
+msgid "Find an _item to add to \"%s\":"
+msgstr "Chois_ir un élément à ajouter à « %s » :"
+
+#: ../consort-panel/panel-addto.c:1023
+msgid "Find an _item to add to the panel:"
+msgstr "Chois_ir un élément à ajouter au tableau de bord :"
+
+#: ../consort-panel/panel-addto.c:1026
+msgid "Add to Panel"
+msgstr "Ajouter au tableau de bord"
+
+#: ../consort-panel/panel-applet-frame.c:735
+#, c-format
+msgid "\"%s\" has quit unexpectedly"
+msgstr "« %s » a quitté inopinément"
+
+#: ../consort-panel/panel-applet-frame.c:737
+msgid "Panel object has quit unexpectedly"
+msgstr "L'élément du tableau de bord a quitté inopinément"
+
+#: ../consort-panel/panel-applet-frame.c:744
+msgid ""
+"If you reload a panel object, it will automatically be added back to the "
+"panel."
+msgstr ""
+"Si vous rechargez un élément d'un tableau de bord, il sera automatiquement "
+"ajouté au tableau."
+
+#: ../consort-panel/panel-applet-frame.c:750
+msgid "_Don't Reload"
+msgstr "_Ne pas recharger"
+
+#: ../consort-panel/panel-applet-frame.c:751
+msgid "_Reload"
+msgstr "_Recharger"
+
+#: ../consort-panel/panel-applet-frame.c:901
+#, c-format
+msgid "The panel encountered a problem while loading \"%s\"."
+msgstr ""
+"Le tableau de bord a rencontré un problème lors du chargement de « %s »."
+
+#: ../consort-panel/panel-applet-frame.c:917
+msgid "Do you want to delete the applet from your configuration?"
+msgstr "Voulez-vous supprimer l'applet de votre configuration ?"
+
+#: ../consort-panel/panel-context-menu.c:63
+msgid "Cannot delete this panel"
+msgstr "Impossible de supprimer ce tableau de bord"
+
+#: ../consort-panel/panel-context-menu.c:64
+msgid "You must always have at least one panel."
+msgstr "Vous devez toujours avoir au moins un tableau de bord."
+
+#: ../consort-panel/panel-context-menu.c:122
+msgid "_Add to Panel..."
+msgstr "A_jouter au tableau de bord..."
+
+#: ../consort-panel/panel-context-menu.c:143
+msgid "_Delete This Panel"
+msgstr "_Supprimer ce tableau de bord"
+
+#: ../consort-panel/panel-context-menu.c:158
+msgid "_New Panel"
+msgstr "_Nouveau tableau de bord"
+
+#: ../consort-panel/panel-ditem-editor.c:114
+msgid "Application"
+msgstr "Application"
+
+#: ../consort-panel/panel-ditem-editor.c:116
+msgid "Application in Terminal"
+msgstr "Application dans un terminal"
+
+#: ../consort-panel/panel-ditem-editor.c:118
+msgid "Location"
+msgstr "Emplacement"
+
+#. Type
+#: ../consort-panel/panel-ditem-editor.c:618
+msgid "_Type:"
+msgstr "_Type :"
+
+#. Name
+#: ../consort-panel/panel-ditem-editor.c:625
+msgid "_Name:"
+msgstr "_Nom :"
+
+#: ../consort-panel/panel-ditem-editor.c:652
+msgid "_Browse..."
+msgstr "_Parcourir..."
+
+#. Comment
+#: ../consort-panel/panel-ditem-editor.c:659
+msgid "Co_mment:"
+msgstr "Co_mmentaire :"
+
+#: ../consort-panel/panel-ditem-editor.c:1008
+msgid "Choose an application..."
+msgstr "Choisissez une application..."
+
+#: ../consort-panel/panel-ditem-editor.c:1012
+msgid "Choose a file..."
+msgstr "Choisissez un fichier..."
+
+#: ../consort-panel/panel-ditem-editor.c:1177
+#: ../consort-panel/panel-ditem-editor.c:1186
+msgid "Comm_and:"
+msgstr "_Commande :"
+
+#: ../consort-panel/panel-ditem-editor.c:1195
+msgid "_Location:"
+msgstr "_Emplacement :"
+
+#: ../consort-panel/panel-ditem-editor.c:1358
+msgid "The name of the launcher is not set."
+msgstr "Le nom du lanceur n'est pas défini."
+
+#: ../consort-panel/panel-ditem-editor.c:1362
+msgid "Could not save directory properties"
+msgstr "Impossible d'enregistrer les propriétés du répertoire"
+
+#: ../consort-panel/panel-ditem-editor.c:1363
+msgid "The name of the directory is not set."
+msgstr "Le nom du répertoire n'est pas défini."
+
+#: ../consort-panel/panel-ditem-editor.c:1379
+msgid "The command of the launcher is not set."
+msgstr "La commande du lanceur n'est pas définie."
+
+#: ../consort-panel/panel-ditem-editor.c:1382
+msgid "The location of the launcher is not set."
+msgstr "La position du lanceur n'est pas indiquée."
+
+#: ../consort-panel/panel-ditem-editor.c:1459
+msgid "Could not display help document"
+msgstr "Impossible d'afficher le document d'aide"
+
+#: ../consort-panel/panel-force-quit.c:77
+msgid ""
+"Click on a window to force the application to quit. To cancel press <ESC>."
+msgstr ""
+"Cliquez sur la fenêtre pour forcer l'application à quitter. Pour annuler, "
+"appuyez sur Échap."
+
+#: ../consort-panel/panel-force-quit.c:222
+msgid "Force this application to exit?"
+msgstr "Voulez-vous forcer cette application à quitter ?"
+
+#: ../consort-panel/panel-force-quit.c:225
+msgid ""
+"If you choose to force an application to exit, unsaved changes in any open "
+"documents in it might get lost."
+msgstr ""
+"Si vous choisissez de forcer une application à quitter, les modifications "
+"non enregistrées de tous les documents ouverts à l'intérieur de celle-ci "
+"seront perdues."
+
+#: ../consort-panel/panel-layout.c:1092 ../consort-panel/panel-layout.c:1106
+#, c-format
+msgid "Cannot create initial panel layout.\n"
+msgstr "Impossible de créer l'agencement initial du tableau de bord.\n"
+
+#: ../consort-panel/panel-menu-bar.c:103
+msgid "Browse and run installed applications"
+msgstr "Parcourir et lancer les applications installées"
+
+#: ../consort-panel/panel-menu-bar.c:105
+msgid "Access documents, folders and network places"
+msgstr "Accéder aux documents, dossiers et emplacements réseaux"
+
+#: ../consort-panel/panel-menu-bar.c:136
+msgid "Applications"
+msgstr "Applications"
+
+#: ../consort-panel/panel-menu-bar.c:243 ../consort-panel/panel-menu-button.c:562
+msgid "_Edit Menus"
+msgstr "É_diter les menus"
+
+#: ../consort-panel/panel-menu-bar.c:250
+msgid "_Help"
+msgstr "Aid_e"
+
+#: ../consort-panel/panel-menu-items.c:489
+msgid "Switch User"
+msgstr "Changer d'utilisateur"
+
+#: ../consort-panel/panel-menu-items.c:620
+msgid "Bookmarks"
+msgstr "Signets"
+
+#. Translators: %s is a URI
+#: ../consort-panel/panel-menu-items.c:644 ../consort-panel/panel.c:596
+#, c-format
+msgid "Open '%s'"
+msgstr "Ouvre « %s »"
+
+#: ../consort-panel/panel-menu-items.c:715
+#, c-format
+msgid "Unable to scan %s for media changes"
+msgstr "Impossible d'analyser %s pour des modifications de support"
+
+#: ../consort-panel/panel-menu-items.c:757
+#, c-format
+msgid "Rescan %s"
+msgstr "Analyser %s à nouveau"
+
+#: ../consort-panel/panel-menu-items.c:794
+#, c-format
+msgid "Unable to mount %s"
+msgstr "Impossible de monter %s"
+
+#: ../consort-panel/panel-menu-items.c:856
+#, c-format
+msgid "Mount %s"
+msgstr "Monter %s"
+
+#: ../consort-panel/panel-menu-items.c:1064
+msgid "Removable Media"
+msgstr "Supports amovibles"
+
+#: ../consort-panel/panel-menu-items.c:1155
+msgid "Network Places"
+msgstr "Emplacements réseau"
+
+#. is_exec?
+#. exec
+#. name
+#: ../consort-panel/panel-menu-items.c:1199 ../consort-panel/panel.c:644
+msgid "Open your personal folder"
+msgstr "Ouvre votre dossier personnel"
+
+#. Translators: Desktop is used here as in
+#. * "Desktop Folder" (this is not the Desktop
+#. * environment).
+#: ../consort-panel/panel-menu-items.c:1219
+msgctxt "Desktop Folder"
+msgid "Desktop"
+msgstr "Bureau"
+
+#: ../consort-panel/panel-menu-items.c:1220
+msgid "Open the contents of your desktop in a folder"
+msgstr "Ouvre le contenu de votre bureau dans un dossier"
+
+#. is_exec?
+#. exec
+#: ../consort-panel/panel-menu-items.c:1235 ../consort-panel/panel.c:653
+msgid "Computer"
+msgstr "Poste de travail"
+
+#. name
+#: ../consort-panel/panel-menu-items.c:1241 ../consort-panel/panel.c:654
+msgid ""
+"Browse all local and remote disks and folders accessible from this computer"
+msgstr ""
+"Parcourt tous les disques locaux et distants ainsi que les dossiers "
+"accessibles depuis cet ordinateur"
+
+#. is_exec?
+#. exec
+#: ../consort-panel/panel-menu-items.c:1251 ../consort-panel/panel.c:661
+msgid "Network"
+msgstr "Réseau"
+
+#. name
+#: ../consort-panel/panel-menu-items.c:1252 ../consort-panel/panel.c:662
+msgid "Browse bookmarked and local network locations"
+msgstr "Parcourt les emplacements réseau locaux et mis en signet"
+
+#: ../consort-panel/panel-menu-items.c:1357
+msgid "Available"
+msgstr "Disponible"
+
+#: ../consort-panel/panel-menu-items.c:1367
+msgid "Busy"
+msgstr "Occupé"
+
+#: ../consort-panel/panel-menu-items.c:1380
+msgid "My Account"
+msgstr "Mon compte"
+
+#: ../consort-panel/panel-menu-items.c:1633
+msgid "Places"
+msgstr "Raccourcis"
+
+#: ../consort-panel/panel-properties-dialog.c:81
+#: ../consort-panel/panel-test-applets.c:55
+msgctxt "Orientation"
+msgid "Top"
+msgstr "En haut"
+
+#: ../consort-panel/panel-properties-dialog.c:82
+#: ../consort-panel/panel-test-applets.c:56
+msgctxt "Orientation"
+msgid "Bottom"
+msgstr "En bas"
+
+#: ../consort-panel/panel-properties-dialog.c:83
+#: ../consort-panel/panel-test-applets.c:57
+msgctxt "Orientation"
+msgid "Left"
+msgstr "À gauche"
+
+#: ../consort-panel/panel-properties-dialog.c:84
+#: ../consort-panel/panel-test-applets.c:58
+msgctxt "Orientation"
+msgid "Right"
+msgstr "À droite"
+
+#: ../consort-panel/panel-properties-dialog.c:821
+#: ../consort-panel/panel-run-dialog.c:1896
+#, c-format
+msgid "Unable to load file '%s': %s."
+msgstr "Impossible de charger le fichier « %s » : %s."
+
+#: ../consort-panel/panel-properties-dialog.c:827
+msgid "Could not display properties dialog"
+msgstr "Impossible d'afficher la fenêtre des propriétés"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:2
+msgid "<small>Opaque</small>"
+msgstr "<small>Opaque</small>"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:3
+msgid "<small>Transparent</small>"
+msgstr "<small>Transparent</small>"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:4
+msgid "Arro_ws on hide buttons"
+msgstr "Afficher les _flèches sur les boutons de masquage"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:5
+msgid "Background"
+msgstr "Arrière-plan"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:6
+msgid "Background _image:"
+msgstr "_Image d'arrière-plan :"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:7
+msgid "Co_lor:"
+msgstr "C_ouleur :"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:8
+msgid "E_xpand"
+msgstr "Ét_endre"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:10
+msgid "Image Background Details"
+msgstr "Détails de l'image d'arrière-plan"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:11
+msgid "Panel Properties"
+msgstr "Propriétés du tableau de bord"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:12
+msgid "Pick a color"
+msgstr "Choisissez une couleur"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:13
+msgid "Rotate image when panel is _vertical"
+msgstr "Pivote l'image lorsque le tableau de bord est _vertical"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:14
+msgid "S_tyle:"
+msgstr "_Style :"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:15
+msgid "Select background"
+msgstr "Choisir l'arrière-plan"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:16
+msgid "Show hide _buttons"
+msgstr "Afficher les _boutons de masquage"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:17
+msgid "Solid c_olor"
+msgstr "_Couleur unie"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:18
+msgid "Some of these properties are locked down"
+msgstr "Quelques unes de ces propriétés sont verrouillées"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:19
+msgid "St_retch"
+msgstr "É_tiré"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:20
+msgid "_Autohide"
+msgstr "_Masquer automatiquement"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:21
+msgid "_None (use system theme)"
+msgstr "A_ucun (utiliser le thème système)"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:22
+#: ../consort-panel/panel-test-applets.ui.h:4
+msgid "_Orientation:"
+msgstr "_Orientation :"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:23
+msgid "_Scale"
+msgstr "_Redimensionné"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:24
+#: ../consort-panel/panel-test-applets.ui.h:6
+msgid "_Size:"
+msgstr "_Taille :"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:25
+msgid "_Tile"
+msgstr "_Mosaïque"
+
+#: ../consort-panel/panel-properties-dialog.ui.h:26
+msgid "pixels"
+msgstr "pixels"
+
+#: ../consort-panel/panel-recent.c:78 ../consort-panel/panel-recent.c:88
+#, c-format
+msgid "Could not open recently used document \"%s\""
+msgstr "Impossible d'ouvrir le document récemment utilisé « %s »"
+
+#: ../consort-panel/panel-recent.c:90
+#, c-format
+msgid "An unknown error occurred while trying to open \"%s\"."
+msgstr ""
+"Une erreur inconnue est survenue lors de la tentative d'ouverture de « %s »."
+
+#: ../consort-panel/panel-recent.c:147
+msgid "Clear the Recent Documents list?"
+msgstr "Voulez-vous effacer la liste des documents récents ?"
+
+#: ../consort-panel/panel-recent.c:149
+msgid ""
+"If you clear the Recent Documents list, you clear the following:\n"
+"• All items from the Places → Recent Documents menu item.\n"
+"• All items from the recent documents list in all applications."
+msgstr ""
+"Si vous videz la liste des documents récents, vous videz ce qui suit :\n"
+"• Tous les éléments du sous-menu Raccourcis → Documents récents.\n"
+"• Tous les éléments de la liste des documents récents de toutes les "
+"applications."
+
+#: ../consort-panel/panel-recent.c:161
+msgid "Clear Recent Documents"
+msgstr "Vider les documents récents"
+
+#: ../consort-panel/panel-recent.c:196
+msgid "Recent Documents"
+msgstr "Documents récents"
+
+# Version courte (infobulle pour les détails + dialogue qui
+# s'ouvre avec plus de détails)
+#: ../consort-panel/panel-recent.c:235
+msgid "Clear Recent Documents..."
+msgstr "Effacer la liste..."
+
+#: ../consort-panel/panel-recent.c:237
+msgid "Clear all items from the recent documents list"
+msgstr "Efface tous les éléments de la liste des documents récents"
+
+#: ../consort-panel/panel-run-dialog.c:361
+#, c-format
+msgid "Could not run command '%s'"
+msgstr "Impossible de lancer la commande « %s »"
+
+#: ../consort-panel/panel-run-dialog.c:409
+#, c-format
+msgid "Could not convert '%s' from UTF-8"
+msgstr "Impossible de convertir « %s » depuis UTF-8"
+
+#: ../consort-panel/panel-run-dialog.c:1160
+msgid "Choose a file to append to the command..."
+msgstr "Choisissez un fichier à ajouter à la commande..."
+
+#: ../consort-panel/panel-run-dialog.c:1543
+#: ../consort-panel/panel-run-dialog.ui.h:8
+msgid "Select an application to view its description."
+msgstr "Sélectionnez une application pour voir sa description."
+
+#: ../consort-panel/panel-run-dialog.c:1581
+#, c-format
+msgid "Will run command: '%s'"
+msgstr "Lancement de « %s »"
+
+#: ../consort-panel/panel-run-dialog.c:1614
+#, c-format
+msgid "URI list dropped on run dialog had wrong format (%d) or length (%d)\n"
+msgstr ""
+"La liste d'URI déposée sur la boîte de dialogue de lancement a un mauvais "
+"format (%d) ou une mauvaise taille (%d)\n"
+
+#: ../consort-panel/panel-run-dialog.c:1901
+msgid "Could not display run dialog"
+msgstr "Impossible d'afficher le dialogue de lancement"
+
+#: ../consort-panel/panel-run-dialog.ui.h:1
+msgid ""
+"Click this button to browse for a file whose name to append to the command "
+"string."
+msgstr ""
+"Cliquez sur ce bouton pour sélectionner un fichier à ajouter à la chaîne de "
+"commande."
+
+#: ../consort-panel/panel-run-dialog.ui.h:2
+msgid ""
+"Click this button to run the selected application or the command in the "
+"command entry field."
+msgstr ""
+"Cliquez sur ce bouton pour exécuter l'application sélectionnée ou la "
+"commande dans le champ de saisie de la commande."
+
+#: ../consort-panel/panel-run-dialog.ui.h:3
+msgid "Command icon"
+msgstr "Icône de la commande"
+
+#: ../consort-panel/panel-run-dialog.ui.h:4
+msgid "List of known applications"
+msgstr "Liste des applications connues"
+
+#: ../consort-panel/panel-run-dialog.ui.h:5
+msgid "Run Application"
+msgstr "Lancer une application"
+
+#: ../consort-panel/panel-run-dialog.ui.h:6
+msgid "Run in _terminal"
+msgstr "Lancer dans un _terminal"
+
+#: ../consort-panel/panel-run-dialog.ui.h:7
+msgid "Run with _file..."
+msgstr "Lancer avec un _fichier..."
+
+#: ../consort-panel/panel-run-dialog.ui.h:9
+msgid "Select this box to run the command in a terminal window."
+msgstr ""
+"Sélectionnez cette boîte pour exécuter la commande dans une fenêtre de "
+"terminal."
+
+#: ../consort-panel/panel-run-dialog.ui.h:10
+msgid "Show list of known _applications"
+msgstr "Afficher la liste des applications _connues"
+
+#: ../consort-panel/panel-run-dialog.ui.h:11
+msgid "The icon of the command to be run."
+msgstr "L'icône de la commande à exécuter."
+
+#: ../consort-panel/panel-run-dialog.ui.h:12
+#: ../consort-panel/panel-stock-icons.c:83
+msgid "_Run"
+msgstr "_Lancer"
+
+#: ../consort-panel/panel-stock-icons.c:84
+msgid "_Force quit"
+msgstr "_Forcer à quitter"
+
+#: ../consort-panel/panel-stock-icons.c:85
+msgid "C_lear"
+msgstr "_Vider"
+
+#: ../consort-panel/panel-stock-icons.c:86
+msgid "D_on't Delete"
+msgstr "_Ne pas supprimer"
+
+#: ../consort-panel/panel-test-applets.c:36
+msgid "Specify an applet IID to load"
+msgstr "Indique l'IID d'une applet à charger"
+
+#: ../consort-panel/panel-test-applets.c:37
+msgid ""
+"Specify a gconf location in which the applet preferences should be stored"
+msgstr ""
+"Indique un emplacement GConf dans lequel les préférences de l'applet doivent "
+"être stockées"
+
+#: ../consort-panel/panel-test-applets.c:38
+msgid "Specify the initial size of the applet (xx-small, medium, large etc.)"
+msgstr ""
+"Indique la taille initiale de l'applet (très très petit, moyen, grand, etc.)"
+
+#: ../consort-panel/panel-test-applets.c:39
+msgid ""
+"Specify the initial orientation of the applet (top, bottom, left or right)"
+msgstr ""
+"Indique l'orientation initiale de l'applet (haut, bas, gauche, ou droite)"
+
+#: ../consort-panel/panel-test-applets.c:63
+msgctxt "Size"
+msgid "XX Small"
+msgstr "Très très petit"
+
+#: ../consort-panel/panel-test-applets.c:64
+msgctxt "Size"
+msgid "X Small"
+msgstr "Très petit"
+
+#: ../consort-panel/panel-test-applets.c:65
+msgctxt "Size"
+msgid "Small"
+msgstr "Petit"
+
+#: ../consort-panel/panel-test-applets.c:66
+msgctxt "Size"
+msgid "Medium"
+msgstr "Moyen"
+
+#: ../consort-panel/panel-test-applets.c:67
+msgctxt "Size"
+msgid "Large"
+msgstr "Grand"
+
+#: ../consort-panel/panel-test-applets.c:68
+msgctxt "Size"
+msgid "X Large"
+msgstr "Très grand"
+
+#: ../consort-panel/panel-test-applets.c:69
+msgctxt "Size"
+msgid "XX Large"
+msgstr "Très très grand"
+
+#: ../consort-panel/panel-test-applets.c:127
+#, c-format
+msgid "Failed to load applet %s"
+msgstr "Le chargement de l'applet %s a échoué"
+
+#. This is an utility to easily test various applets
+#: ../consort-panel/panel-test-applets.ui.h:2
+msgid "Test applet utility"
+msgstr "Utilitaire de test d'applet"
+
+#: ../consort-panel/panel-test-applets.ui.h:3
+msgid "_Applet:"
+msgstr "_Applet :"
+
+#: ../consort-panel/panel-test-applets.ui.h:5
+msgid "_Prefs Dir:"
+msgstr "Répertoire des _préférences :"
+
+#: ../consort-panel/panel-toplevel.c:1272
+msgid "Hide Panel"
+msgstr "Masquer le tableau de bord"
+
+#. translators: these string will be shown in MetaCity's switch window
+#. * popup when you pass the focus to a panel
+#: ../consort-panel/panel-toplevel.c:1657
+msgid "Top Expanded Edge Panel"
+msgstr "Tableau de bord supérieur de côté étendu"
+
+#: ../consort-panel/panel-toplevel.c:1658
+msgid "Top Centered Panel"
+msgstr "Tableau de bord supérieur centré"
+
+#: ../consort-panel/panel-toplevel.c:1659
+msgid "Top Floating Panel"
+msgstr "Tableau de bord supérieur flottant"
+
+#: ../consort-panel/panel-toplevel.c:1660
+msgid "Top Edge Panel"
+msgstr "Tableau de bord supérieur de côté"
+
+#: ../consort-panel/panel-toplevel.c:1664
+msgid "Bottom Expanded Edge Panel"
+msgstr "Tableau de bord inférieur de côté étendu"
+
+#: ../consort-panel/panel-toplevel.c:1665
+msgid "Bottom Centered Panel"
+msgstr "Tableau de bord inférieur centré"
+
+#: ../consort-panel/panel-toplevel.c:1666
+msgid "Bottom Floating Panel"
+msgstr "Tableau de bord inférieur flottant"
+
+#: ../consort-panel/panel-toplevel.c:1667
+msgid "Bottom Edge Panel"
+msgstr "Tableau de bord inférieur de côté"
+
+#: ../consort-panel/panel-toplevel.c:1671
+msgid "Left Expanded Edge Panel"
+msgstr "Tableau de bord gauche de côté étendu"
+
+#: ../consort-panel/panel-toplevel.c:1672
+msgid "Left Centered Panel"
+msgstr "Tableau de bord gauche centré"
+
+#: ../consort-panel/panel-toplevel.c:1673
+msgid "Left Floating Panel"
+msgstr "Tableau de bord gauche flottant"
+
+#: ../consort-panel/panel-toplevel.c:1674
+msgid "Left Edge Panel"
+msgstr "Tableau de bord gauche de côté"
+
+#: ../consort-panel/panel-toplevel.c:1678
+msgid "Right Expanded Edge Panel"
+msgstr "Tableau de bord droit de côté étendu"
+
+#: ../consort-panel/panel-toplevel.c:1679
+msgid "Right Centered Panel"
+msgstr "Tableau de bord droit centré"
+
+#: ../consort-panel/panel-toplevel.c:1680
+msgid "Right Floating Panel"
+msgstr "Tableau de bord droit flottant"
+
+#: ../consort-panel/panel-toplevel.c:1681
+msgid "Right Edge Panel"
+msgstr "Tableau de bord droit de côté"
+
+#: ../consort-panel/panel-util.c:314
+#, c-format
+msgid "Icon '%s' not found"
+msgstr "Icône « %s » non trouvée"
+
+#: ../consort-panel/panel-util.c:551
+msgid "file"
+msgstr "fichier"
+
+#: ../consort-panel/panel-util.c:728
+msgid "Home Folder"
+msgstr "Dossier personnel"
+
+#. Translators: this is the same string as the one found in
+#. * nautilus
+#: ../consort-panel/panel-util.c:740
+msgid "File System"
+msgstr "Système de fichiers"
+
+#: ../consort-panel/panel-util.c:913
+msgid "Search"
+msgstr "Recherche"
+
+#. Translators: the first string is the name of a gvfs
+#. * method, and the second string is a path. For
+#. * example, "Trash: some-directory". It means that the
+#. * directory called "some-directory" is in the trash.
+#.
+#: ../consort-panel/panel-util.c:959
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s : %2$s"
+
+#: ../consort-panel/panel.c:527
+#, c-format
+msgid "Open URL: %s"
+msgstr "Ouvrir l'URL : %s"
+
+#: ../consort-panel/panel.c:1393
+msgid "Delete this panel?"
+msgstr "Voulez-vous supprimer ce tableau de bord ?"
+
+#: ../consort-panel/panel.c:1397
+msgid ""
+"When a panel is deleted, the panel and its\n"
+"settings are lost."
+msgstr ""
+"Lorsqu'un tableau de bord est supprimé, le tableau de bord\n"
+"et ses réglages sont perdus."
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+msgid "A simple applet for testing the GNOME panel"
+msgstr "Applet basique pour tester le tableau de bord de GNOME"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+msgid "Factory for Test DBus Applet"
+msgstr "Fabrique pour applet DBus de test"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+msgid "Test DBus Applet"
+msgstr "Applet DBus de test"
+
+#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+msgid "Test DBus Applet Factory"
+msgstr "Fabrique d'applet DBus de test"

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Panel Applet Library Reference Manual" link="index.html" author="" name="panel-applet" version="2" language="c">
+  <chapters>
+    <sub name="Panel Applet Library Overview" link="overview.html"/>
+    <sub name="Getting Started with the Panel Applet library" link="getting-started.html">
+      <sub name="Introduction" link="getting-started.intro.html"/>
+      <sub name="Concepts" link="getting-started.concepts.html"/>
+      <sub name="Hello World Example" link="getting-started.example.html"/>
+      <sub name="Using a Context Menu" link="getting-started.context-menu.html"/>
+      <sub name="Settings" link="getting-started.settings.html"/>
+      <sub name="Making the Applet Visible to the Panel" link="getting-started.install.html"/>
+      <sub name="Proper Integration with the Panel" link="getting-started.integration.html"/>
+      <sub name="Out-of-Process vs In-Process" link="getting-started.in-out-process.html"/>
+      <sub name="Writing an applet in languages other than C" link="getting-started.introspection.html"/>
+    </sub>
+    <sub name="Porting Applets from GNOME 2.x" link="port-gnome2.html"/>
+    <sub name="API Reference" link="reference.html">
+      <sub name="Panel Applet" link="panel-applet-Panel-Applet.html"/>
+      <sub name="Panel Applet Factory" link="panel-applet-Panel-Applet-Factory.html"/>
+      <sub name="GConf Utilities" link="panel-applet-GConf-Utilities.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="struct" name="struct PanelApplet" link="panel-applet-Panel-Applet.html#PanelApplet-struct"/>
+    <keyword type="enum" name="enum PanelAppletOrient" link="panel-applet-Panel-Applet.html#PanelAppletOrient"/>
+    <keyword type="enum" name="enum PanelAppletFlags" link="panel-applet-Panel-Applet.html#PanelAppletFlags"/>
+    <keyword type="function" name="panel_applet_get_orient ()" link="panel-applet-Panel-Applet.html#panel-applet-get-orient"/>
+    <keyword type="function" name="panel_applet_get_size ()" link="panel-applet-Panel-Applet.html#panel-applet-get-size" deprecated="3.0: Use the allocation of @applet instead."/>
+    <keyword type="function" name="panel_applet_set_size_hints ()" link="panel-applet-Panel-Applet.html#panel-applet-set-size-hints"/>
+    <keyword type="function" name="panel_applet_get_background ()" link="panel-applet-Panel-Applet.html#panel-applet-get-background"/>
+    <keyword type="function" name="panel_applet_set_background_widget ()" link="panel-applet-Panel-Applet.html#panel-applet-set-background-widget"/>
+    <keyword type="function" name="panel_applet_get_flags ()" link="panel-applet-Panel-Applet.html#panel-applet-get-flags"/>
+    <keyword type="function" name="panel_applet_set_flags ()" link="panel-applet-Panel-Applet.html#panel-applet-set-flags"/>
+    <keyword type="function" name="panel_applet_get_locked_down ()" link="panel-applet-Panel-Applet.html#panel-applet-get-locked-down"/>
+    <keyword type="function" name="panel_applet_settings_new ()" link="panel-applet-Panel-Applet.html#panel-applet-settings-new"/>
+    <keyword type="function" name="panel_applet_add_preferences ()" link="panel-applet-Panel-Applet.html#panel-applet-add-preferences" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_get_preferences_key ()" link="panel-applet-Panel-Applet.html#panel-applet-get-preferences-key" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_request_focus ()" link="panel-applet-Panel-Applet.html#panel-applet-request-focus"/>
+    <keyword type="function" name="panel_applet_setup_menu ()" link="panel-applet-Panel-Applet.html#panel-applet-setup-menu"/>
+    <keyword type="function" name="panel_applet_setup_menu_from_file ()" link="panel-applet-Panel-Applet.html#panel-applet-setup-menu-from-file"/>
+    <keyword type="property" name="The &quot;background&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--background"/>
+    <keyword type="property" name="The &quot;closure&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--closure"/>
+    <keyword type="property" name="The &quot;connection&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--connection"/>
+    <keyword type="property" name="The &quot;flags&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--flags"/>
+    <keyword type="property" name="The &quot;id&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--id"/>
+    <keyword type="property" name="The &quot;locked-down&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--locked-down"/>
+    <keyword type="property" name="The &quot;orient&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--orient"/>
+    <keyword type="property" name="The &quot;prefs-key&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--prefs-key"/>
+    <keyword type="property" name="The &quot;settings-path&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--settings-path"/>
+    <keyword type="property" name="The &quot;size&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--size"/>
+    <keyword type="property" name="The &quot;size-hints&quot; property" link="panel-applet-Panel-Applet.html#PanelApplet--size-hints"/>
+    <keyword type="signal" name="The &quot;change-background&quot; signal" link="panel-applet-Panel-Applet.html#PanelApplet-change-background"/>
+    <keyword type="signal" name="The &quot;change-orient&quot; signal" link="panel-applet-Panel-Applet.html#PanelApplet-change-orient"/>
+    <keyword type="signal" name="The &quot;change-size&quot; signal" link="panel-applet-Panel-Applet.html#PanelApplet-change-size"/>
+    <keyword type="signal" name="The &quot;move-focus-out-of-applet&quot; signal" link="panel-applet-Panel-Applet.html#PanelApplet-move-focus-out-of-applet"/>
+    <keyword type="function" name="PanelAppletFactoryCallback ()" link="panel-applet-Panel-Applet-Factory.html#PanelAppletFactoryCallback"/>
+    <keyword type="macro" name="PANEL_APPLET_OUT_PROCESS_FACTORY()" link="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS"/>
+    <keyword type="macro" name="PANEL_APPLET_IN_PROCESS_FACTORY()" link="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS"/>
+    <keyword type="function" name="panel_applet_factory_main ()" link="panel-applet-Panel-Applet-Factory.html#panel-applet-factory-main"/>
+    <keyword type="function" name="panel_applet_gconf_get_full_key ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-full-key" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_get_bool ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-bool" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_get_int ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-int" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_get_string ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-string" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_get_float ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-float" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_get_list ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-list" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_get_value ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-get-value" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_set_bool ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-bool" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_set_int ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-int" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_set_string ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-string" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_set_float ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-float" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_set_list ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-list" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="function" name="panel_applet_gconf_set_value ()" link="panel-applet-GConf-Utilities.html#panel-applet-gconf-set-value" deprecated="3.0: Use #GSettings to store per-instance settings."/>
+    <keyword type="constant" name="PANEL_APPLET_ORIENT_UP" link="panel-applet-Panel-Applet.html#PANEL-APPLET-ORIENT-UP:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_ORIENT_DOWN" link="panel-applet-Panel-Applet.html#PANEL-APPLET-ORIENT-DOWN:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_ORIENT_LEFT" link="panel-applet-Panel-Applet.html#PANEL-APPLET-ORIENT-LEFT:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_ORIENT_RIGHT" link="panel-applet-Panel-Applet.html#PANEL-APPLET-ORIENT-RIGHT:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_FLAGS_NONE" link="panel-applet-Panel-Applet.html#PANEL-APPLET-FLAGS-NONE:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_EXPAND_MAJOR" link="panel-applet-Panel-Applet.html#PANEL-APPLET-EXPAND-MAJOR:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_EXPAND_MINOR" link="panel-applet-Panel-Applet.html#PANEL-APPLET-EXPAND-MINOR:CAPS"/>
+    <keyword type="constant" name="PANEL_APPLET_HAS_HANDLE" link="panel-applet-Panel-Applet.html#PANEL-APPLET-HAS-HANDLE:CAPS"/>
+  </functions>
+</book>

@@ -1,0 +1,37 @@
+Description: Allow panel applets to be dragged by middle click
+ SolusOS 2 Gnome applets are to be moveable by dragging with the middle mouse button.
+ .
+ consort-panel (1:3.4.2.1-5solusos1) two; urgency=low
+ .
+   * Panel Applets can now be dragged with the middle mouse button
+Author: Ikey Doherty <ikey@solusos.com>
+
+---
+Reviewed-By: Ikey Doherty <ikey@solusos.com>
+Last-Update: <2012-06-14>
+
+--- consort-panel-3.4.2.1.orig/consort-panel/panel-widget.c
++++ consort-panel-3.4.2.1/consort-panel/panel-widget.c
+@@ -2124,7 +2124,6 @@ panel_widget_applet_button_press_event (
+ {
+ 	GtkWidget   *parent;
+ 	PanelWidget *panel;
+-	guint        modifiers;
+ 	guint32      event_time;
+ 
+ 	parent = gtk_widget_get_parent (widget);
+@@ -2142,14 +2141,11 @@ panel_widget_applet_button_press_event (
+ 		return TRUE;
+ 	}
+ 
+-	modifiers = event->state & gtk_accelerator_get_default_mod_mask ();
+-
+ 	/* Begin drag if the middle mouse button and modifier are pressed,
+ 	 * unless the panel is locked down or a grab is active (meaning a menu
+ 	 * is open) */
+ 	if (panel_lockdown_get_panels_locked_down_s () ||
+ 	    event->button != 2 ||
+-	    modifiers != panel_bindings_get_mouse_button_modifier_keymask () ||
+ 	    gtk_grab_get_current() != NULL)
+ 		return FALSE;
+ 

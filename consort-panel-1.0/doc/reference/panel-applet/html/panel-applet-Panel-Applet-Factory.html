@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Panel Applet Factory</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="reference.html" title="Part IV. API Reference">
+<link rel="prev" href="panel-applet-Panel-Applet.html" title="Panel Applet">
+<link rel="next" href="panel-applet-GConf-Utilities.html" title="GConf Utilities">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="panel-applet-Panel-Applet.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="reference.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td><a accesskey="n" href="panel-applet-GConf-Utilities.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#panel-applet-Panel-Applet-Factory.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#panel-applet-Panel-Applet-Factory.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="panel-applet-Panel-Applet-Factory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="panel-applet-Panel-Applet-Factory.top_of_page"></a>Panel Applet Factory</span></h2>
+<p>Panel Applet Factory — the factory that will create applets.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet-Factory.stability-level"></a><h2>Stability Level</h2>
+Unstable, unless otherwise indicated
+</div>
+<div class="refsynopsisdiv">
+<a name="panel-applet-Panel-Applet-Factory.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;panel-applet.h&gt;
+
+<span class="returnvalue">gboolean</span>            (<a class="link" href="panel-applet-Panel-Applet-Factory.html#PanelAppletFactoryCallback" title="PanelAppletFactoryCallback ()">*PanelAppletFactoryCallback</a>)       (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *iid</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
+#define             <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()">PANEL_APPLET_OUT_PROCESS_FACTORY</a>    (id,
+                                                         type,
+                                                         callback,
+                                                         data)
+#define             <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_IN_PROCESS_FACTORY()">PANEL_APPLET_IN_PROCESS_FACTORY</a>     (id,
+                                                         type,
+                                                         callback,
+                                                         data)
+<span class="returnvalue">int</span>                 <a class="link" href="panel-applet-Panel-Applet-Factory.html#panel-applet-factory-main" title="panel_applet_factory_main ()">panel_applet_factory_main</a>           (<em class="parameter"><code>const <span class="type">gchar</span> *factory_id</code></em>,
+                                                         <em class="parameter"><code><span class="type">GType</span> applet_type</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet-Factory.html#PanelAppletFactoryCallback" title="PanelAppletFactoryCallback ()"><span class="type">PanelAppletFactoryCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet-Factory.description"></a><h2>Description</h2>
+<p>
+This API is used to create an <a class="link" href="getting-started.concepts.html#getting-started.concepts.applet-factory" title="Applet Factory">applet factory</a>. You
+need to call one and only one of these functions to get applets working in
+your binary.
+</p>
+</div>
+<div class="refsect1">
+<a name="panel-applet-Panel-Applet-Factory.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="PanelAppletFactoryCallback"></a><h3>PanelAppletFactoryCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            (*PanelAppletFactoryCallback)       (<em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a> *applet</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *iid</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<p>
+The type used for callbacks after. The callback will usually check that <em class="parameter"><code>iid</code></em>
+is a valid applet type identifier for the applet factory, and will then fill
+<em class="parameter"><code>applet</code></em> with widgets, connect to signals, etc.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet</code></em> :</span></p></td>
+<td>a newly-created <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>iid</code></em> :</span></p></td>
+<td>identifier of the requested applet type.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> if <em class="parameter"><code>iid</code></em> is a valid applet type identifier for the applet
+factory and if the creation of <em class="parameter"><code>applet</code></em> was successfully completed, <code class="literal">FALSE</code>
+otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS"></a><h3>PANEL_APPLET_OUT_PROCESS_FACTORY()</h3>
+<pre class="programlisting">#define             PANEL_APPLET_OUT_PROCESS_FACTORY(id, type, callback, data)</pre>
+<p>
+Convenience macro providing a <code class="function">main()</code> function for an out-of-process applet.
+Internally, it will call <a class="link" href="panel-applet-Panel-Applet-Factory.html#panel-applet-factory-main" title="panel_applet_factory_main ()"><code class="function">panel_applet_factory_main()</code></a> to create the
+<em class="parameter"><code>factory_id</code></em> applet factory.
+</p>
+<p>
+Applet instances created by the applet factory will use <em class="parameter"><code>applet_type</code></em> as
+GType. Unless you subclass <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>, you should use <code class="literal">PANEL_TYPE_APPLET</code>
+as <em class="parameter"><code>applet_type</code></em>.
+</p>
+<p>
+On creation of the applet instances, <em class="parameter"><code>callback</code></em> is called to setup the
+applet. If <em class="parameter"><code>callback</code></em> returns <code class="literal">FALSE</code>, the creation of the applet instance is
+cancelled.
+</p>
+<p>
+It can only be used once, and is incompatible with the use of
+<a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_IN_PROCESS_FACTORY()"><code class="literal">PANEL_APPLET_IN_PROCESS_FACTORY</code></a> and <a class="link" href="panel-applet-Panel-Applet-Factory.html#panel-applet-factory-main" title="panel_applet_factory_main ()"><code class="function">panel_applet_factory_main()</code></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em> :</span></p></td>
+<td>identifier of an applet factory.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>GType of the applet this factory creates.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>callback to be called when a new applet is created. <span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>callback data. <span class="annotation">[<a href="http://foldoc.org/closure"><span class="acronym">closure</span></a>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PANEL-APPLET-IN-PROCESS-FACTORY:CAPS"></a><h3>PANEL_APPLET_IN_PROCESS_FACTORY()</h3>
+<pre class="programlisting">#define             PANEL_APPLET_IN_PROCESS_FACTORY(id, type, callback, data)</pre>
+<p>
+Convenience macro providing the symbol needed to automatically register the
+<em class="parameter"><code>factory_id</code></em> applet factory for an in-process applet.
+</p>
+<p>
+Applet instances created by the applet factory will use <em class="parameter"><code>applet_type</code></em> as
+GType. Unless you subclass <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>, you should use <code class="literal">PANEL_TYPE_APPLET</code>
+as <em class="parameter"><code>applet_type</code></em>.
+</p>
+<p>
+On creation of the applet instances, <em class="parameter"><code>callback</code></em> is called to setup the
+applet. If <em class="parameter"><code>callback</code></em> returns <code class="literal">FALSE</code>, the creation of the applet instance is
+cancelled.
+</p>
+<p>
+It can only be used once, and is incompatible with the use of
+<a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()"><code class="literal">PANEL_APPLET_OUT_PROCESS_FACTORY</code></a> and <a class="link" href="panel-applet-Panel-Applet-Factory.html#panel-applet-factory-main" title="panel_applet_factory_main ()"><code class="function">panel_applet_factory_main()</code></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>id</code></em> :</span></p></td>
+<td>identifier of an applet factory.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>GType of the applet this factory creates.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>callback to be called when a new applet is created. <span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>callback data. <span class="annotation">[<a href="http://foldoc.org/closure"><span class="acronym">closure</span></a>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-applet-factory-main"></a><h3>panel_applet_factory_main ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>                 panel_applet_factory_main           (<em class="parameter"><code>const <span class="type">gchar</span> *factory_id</code></em>,
+                                                         <em class="parameter"><code><span class="type">GType</span> applet_type</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="panel-applet-Panel-Applet-Factory.html#PanelAppletFactoryCallback" title="PanelAppletFactoryCallback ()"><span class="type">PanelAppletFactoryCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);</pre>
+<p>
+Creates the applet factory for <em class="parameter"><code>factory_id</code></em>, so that the factory can create
+instances of the applet types it is associated with.
+</p>
+<p>
+Applet instances created by the applet factory will use <em class="parameter"><code>applet_type</code></em> as
+GType. Unless you subclass <a class="link" href="panel-applet-Panel-Applet.html#PanelApplet"><span class="type">PanelApplet</span></a>, you should use <code class="literal">PANEL_TYPE_APPLET</code>
+as <em class="parameter"><code>applet_type</code></em>.
+</p>
+<p>
+On creation of the applet instances, <em class="parameter"><code>callback</code></em> is called to setup the
+applet. If <em class="parameter"><code>callback</code></em> returns <code class="literal">FALSE</code>, the creation of the applet instance is
+cancelled.
+</p>
+<p>
+If using C, it is recommended to use <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()"><span class="type">PANEL_APPLET_OUT_PROCESS_FACTORY</span></a>
+instead as it will create a <code class="function">main()</code> function for you.
+</p>
+<p>
+It can only be used once, and is incompatible with the use of
+<a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_IN_PROCESS_FACTORY()"><code class="literal">PANEL_APPLET_IN_PROCESS_FACTORY</code></a> and <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()"><code class="literal">PANEL_APPLET_OUT_PROCESS_FACTORY</code></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>factory_id</code></em> :</span></p></td>
+<td>identifier of an applet factory.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>applet_type</code></em> :</span></p></td>
+<td>GType of the applet this factory creates.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>callback to be called when a new applet is created. <span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>callback data. <span class="annotation">[<a href="http://foldoc.org/closure"><span class="acronym">closure</span></a>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>0 on success, 1 if there is an error.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

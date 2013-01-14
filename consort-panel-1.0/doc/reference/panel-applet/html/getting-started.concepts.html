@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Concepts</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Panel Applet Library Reference Manual">
+<link rel="up" href="getting-started.html" title="Part II. Getting Started with the Panel Applet library">
+<link rel="prev" href="getting-started.intro.html" title="Introduction">
+<link rel="next" href="getting-started.example.html" title="Hello World Example">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2"><tr valign="middle">
+<td><a accesskey="p" href="getting-started.intro.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="getting-started.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Panel Applet Library Reference Manual</th>
+<td><a accesskey="n" href="getting-started.example.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="getting-started.concepts"></a>Concepts</h2></div></div></div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.concepts.applet-types"></a>Applet Types</h3></div></div></div>
+<p>
+      The applet type is the identifier representing a type of applets to the panel. It is a simple string, like <code class="constant">HelloWorldApplet</code> and is unique per <a class="link" href="getting-started.concepts.html#getting-started.concepts.applet-factory" title="Applet Factory">applet factory</a>.
+     </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.concepts.applet-factory"></a>Applet Factory</h3></div></div></div>
+<p>
+      The applet factory is an implementation detail that is mostly hidden by the Panel Applet library, but it still appears in a few places (<a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()"><code class="function">PANEL_APPLET_OUT_PROCESS_FACTORY()</code></a>, <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_IN_PROCESS_FACTORY()"><code class="function">PANEL_APPLET_IN_PROCESS_FACTORY()</code></a> and <a class="link" href="getting-started.install.html#getting-started.install.panel-applet" title="Panel Applet File"><code class="filename">.panel-applet</code> files</a>) so it is important to understand what is an applet factory.
+     </p>
+<p>
+      The applet factory is the object that will create a new applet instance when the panel requests a new applet to be created. It is identified with a simple string id, for example <code class="constant">HelloWorldFactory</code>.
+     </p>
+<p>
+      The requests the applet factory will receive from the panel specify which type of applet should be created. This is what makes it possible to have more than one applet types in one applet binary. In most cases, however, the applet factory will be specific to only one applet type. The map between applet types and the applet factory is recorded in <a class="link" href="getting-started.install.html#getting-started.install.panel-applet" title="Panel Applet File"><code class="filename">.panel-applet</code> files</a>.
+     </p>
+<p>
+      There is only one applet factory per applet binary, and it is always running before any applet instance is created by the applet binary. The applet factory is created via <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-OUT-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_OUT_PROCESS_FACTORY()"><code class="function">PANEL_APPLET_OUT_PROCESS_FACTORY()</code></a> or <a class="link" href="panel-applet-Panel-Applet-Factory.html#PANEL-APPLET-IN-PROCESS-FACTORY:CAPS" title="PANEL_APPLET_IN_PROCESS_FACTORY()"><code class="function">PANEL_APPLET_IN_PROCESS_FACTORY()</code></a>.
+     </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="getting-started.concepts.applet-instances"></a>Applet Instances</h3></div></div></div>
+<p>
+      There is no restriction as to how many instances of one applet type can be created. The user might choose to add more than one <code class="constant">HelloWorldApplet</code> applets to his panels. This can have some implications on the design used to write applets. The most important implication is that it is generally wrong to have global variables to keep a state specific to an applet instance.
+     </p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

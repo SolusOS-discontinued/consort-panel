@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "3.4.7.4ac19">
+<!ENTITY manrevision "2.5">
+<!ENTITY date "June 2009">
+<!ENTITY applet "Fish">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+  
+-->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>Manual del Peix</title>
+	 <copyright> 
+		<year>2009</year> 
+		<holder>Paul Cutler</holder> 
+	 </copyright>	  
+	 <copyright> 
+		<year>2002</year> 
+		<year>2003</year> 
+		<holder>Sun Microsystems</holder> 
+	 </copyright> 
+	 <copyright> 
+		<year>2000</year> 
+		<holder>Telsa Gwynne</holder> 
+	 </copyright><copyright><year>2007</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer"> 
+		<publishername>Projecte de documentació del GNOME</publishername> 
+	 </publisher> 
+
+   <legalnotice id="legalnotice">
+         <para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+          <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+ 
+         <para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+ 
+         <para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+                 <listitem>
+                   <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+                 </listitem>
+                 <listitem>
+                   <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+
+
+	 <authorgroup> 
+		<author> 
+		  <firstname>Paul</firstname> 
+		  <surname>Cutler</surname> 
+		  <affiliation> 
+			 <orgname>Projecte de documentació del GNOME</orgname> 
+			 <address> <email>pcutler@gnome.org</email> </address> 
+		  </affiliation> 
+		</author>	 
+		<author> 
+		  <firstname>Sun</firstname> 
+		  <surname>Equip de documentació del GNOME</surname> 
+		  <affiliation> 
+			 <orgname>Sun Microsystems</orgname> 
+			 <address/> 
+		  </affiliation> 
+		</author> 
+		<author> 
+		  <firstname>Telsa</firstname> 
+		  <surname>Gwynne</surname> 
+		  <affiliation> 
+			 <orgname>Projecte de documentació del GNOME</orgname> 
+			 <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> 
+		  </affiliation> 
+		</author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname> 
+	     <surname>Translator 1</surname> 
+	     <affiliation> 
+	       <orgname>Latin Translation Team</orgname> 
+	       <address> <email>translator@gnome.org</email> </address> 
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+	 
+	<releaseinfo revision="2.28" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision> 
+		  <revnumber>Manual de la miniaplicació Peix v2.5</revnumber> 
+		  <date>Juny de 2009</date> 
+		  <revdescription> 
+			 <para role="author">Equip de documentació del GNOME Sun</para> 
+			 <para role="publisher">Projecte de documentació del GNOME</para> 
+		  </revdescription> 
+		</revision>	 
+		<revision> 
+		  <revnumber>Manual de la miniaplicació Peix v2.4</revnumber> 
+		  <date>Juny de 2009</date> 
+		  <revdescription> 
+			 <para role="author">Equip de documentació del GNOME Sun</para> 
+			 <para role="publisher">Projecte de documentació del GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicació Peix v2.2</revnumber> 
+		  <date>Gener del 2003</date> 
+		  <revdescription> 
+			 <para role="author">Equip de documentació del GNOME Sun</para> 
+			 <para role="publisher">Projecte de documentació del GNOME</para> 
+		  </revdescription> 
+		</revision>
+		<revision> 
+		  <revnumber>Manual de la miniaplicació Peix v2.1</revnumber> 
+		  <date>Agost del 2002</date> 
+		  <revdescription> 
+			 <para role="author">Equip de documentació del GNOME Sun</para> 
+			 <para role="publisher">Projecte de documentació del GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual de la miniaplicació Peix v2.0</revnumber> 
+		  <date>Maig del 2002</date> 
+		  <revdescription> 
+			 <para role="author">Equip de documentació del GNOME Sun</para> 
+			 <para role="publisher">Projecte de documentació del GNOME</para> 
+		  </revdescription> 
+		</revision> 
+		<revision> 
+		  <revnumber>Manual de la miniaplicació Peix</revnumber> 
+		  <date>2000</date> 
+		  <revdescription> 
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para> 
+			 <para role="publisher">Projecte de documentació del GNOME</para> 
+		  </revdescription> 
+		</revision> 
+	 </revhistory> 
+	 <releaseinfo>Aquest manual descriu la versió 3.4.7.4ac19 del Peix.</releaseinfo> 
+	 <legalnotice> 
+		<title>Comentaris</title> 
+		<para>Per a informar d'un error o fer algun suggeriment sobre la miniaplicació <application>Peix</application> o d'aquest manual, seguiu les indicacions a la <ulink url="ghelp:gnome-feedback" type="help">Pàgina de comentaris del GNOME</ulink>.</para>
+		
+	 </legalnotice> 
+	 <abstract role="description">
+		<para>El programa Peix visualitza una imatge animada al quadre i us mostra una dita quan hi feu clic.</para>
+	 </abstract>
+  </articleinfo> 
+  <indexterm> 
+	 <primary>Peix</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Introducció</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig"> 
+		<title>Miniaplicació Peix</title> 
+		<screenshot> 
+		  <mediaobject> 
+			 <imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> 
+			 </imageobject>
+			 <textobject> 
+				<phrase>Mostra la miniaplicació Peix.</phrase> 
+			 </textobject> 
+		  </mediaobject> 
+		</screenshot> 
+	 </figure> 
+    <!-- ==== End of Figure ======================================= -->
+<para>L'aplicació <application>Peix</application> mostra un peix animat al quadre. Podeu personalitzar el nom del peix i el programa que s'executi quan es fa clic al peix en el quadre. Per defecte s'executa el programa <application>Fortune</application> que mostra un missatge aleatori, normalment còmic, d'una base de dades de cites.</para>
+
+
+
+
+<para>Podeu personalitzar la imatge mostrada i l'ordre que s'executa quan s'hi clica.</para>
+<sect2 id="fish-introduction-add">
+<title>Per a afegir el Peix al quadre</title>
+  <para>Realitzeu els següents passos:</para>
+         <orderedlist>
+           <listitem>
+             <para>Cliqueu el botó dret en el quadre.</para>
+           </listitem>
+           <listitem>
+             <para>Seleccioneu <guimenuitem>Afegeix al quadre</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Desplaceu la llista d'elements cap avall en el diàleg <guilabel>Afegeix al quadre</guilabel> i seleccioneu el <guilabel>Peix</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Cliqueu <guibutton>Afegeix</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Utilització</title>
+<para>Cliqueu en la miniaplicació per a mostrar el diàleg <guilabel>Wanda el Peix</guilabel>. El diàleg mostra una dita. Podeu configurar la miniaplicació per a especificar l'ordre a executar en clicar-hi. Per a més informació consulteu <xref linkend="fish-settings"/>.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Preferències</title>
+<para>Per a configurar el <application>Peix</application>, cliqueu el botó dret en la miniaplicació <application>Peix</application> i seleccioneu <guimenuitem>Preferències</guimenuitem>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Nom del peix</guilabel> </term>
+<listitem>
+<para>Utilitzeu el quadre de text per a especificar el nom del peix.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Ordre a executar quan es fa clic</guilabel> </term>
+<listitem>
+<para>Per defecte el <application>Peix</application> executa l'ordre <literal>fortune</literal> quan es fa clic en la miniaplicació. Utilitzeu el quadre de text per a especificar una ordre alternativa a executar.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Fitxer</guilabel> </term>
+<listitem>
+<para>Utilitzeu aquest camp per a seleccionar la imatge a mostrar en la miniaplicació. Podeu seleccionar una imatge subministrada amb la miniaplicació o una imatge personal.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Fotogrames de l'animació</guilabel> </term>
+<listitem>
+<para>Utilitzeu aquest quadre de selecció per a especificar el nombre de fotogrames de l'animació.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Pausa per fotograma</guilabel> </term>
+<listitem>
+<para>Utilitzeu aquest quadre de selecció per a especificar la pausa en segons entre cada fotograma de l'animació.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Gira en els quadres verticals</guilabel> </term>
+<listitem>
+<para>Seleccioneu aquesta opció per a girar la imatge de la miniaplicació quan afegiu la miniaplicació en un quadre vertical.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>
