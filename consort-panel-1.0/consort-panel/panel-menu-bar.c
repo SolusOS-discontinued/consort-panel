@@ -55,6 +55,9 @@ struct _PanelMenuBarPrivate {
 	GtkWidget   *applications_menu;
 	GtkWidget   *applications_item;
 	GtkWidget   *places_item;
+
+	/** A system menu */
+	GtkWidget   *system_item;
 };
 
 static gboolean
@@ -64,6 +67,8 @@ panel_menu_bar_reinit_tooltip (GtkWidget    *widget,
 	g_object_set (menubar->priv->applications_item,
 		      "has-tooltip", TRUE, NULL);
 	g_object_set (menubar->priv->places_item,
+		      "has-tooltip", TRUE, NULL);
+	g_object_set (menubar->priv->system_item,
 		      "has-tooltip", TRUE, NULL);
 
 	return FALSE;
@@ -90,6 +95,9 @@ panel_menu_bar_setup_tooltip (PanelMenuBar *menubar)
 				     _("Browse and run installed applications"));
 	panel_util_set_tooltip_text (menubar->priv->places_item,
 				     _("Access documents, folders and network places"));
+	panel_util_set_tooltip_text (menubar->priv->system_item,
+				     _("Change desktop appearance and behavior, get help, or log out"));
+
 
 	//FIXME: this doesn't handle the right-click case. Sigh.
 	/* Hide tooltip if a menu is activated */
@@ -116,6 +124,7 @@ panel_menu_bar_init (PanelMenuBar *menubar)
 
 	menubar->priv->info = NULL;
 
+	/** Build the Applications menu */
 	menubar->priv->applications_menu = create_applications_menu ("applications.menu", NULL, TRUE);
 
 	menubar->priv->applications_item = panel_image_menu_item_new ();
@@ -130,11 +139,23 @@ panel_menu_bar_init (PanelMenuBar *menubar)
 			       menubar->priv->applications_item);
 	gtk_widget_show (menubar->priv->applications_item);
 
+	/** Build the Places menu */
 	menubar->priv->places_item = panel_place_menu_item_new (FALSE, TRUE);
 	gtk_menu_shell_append (GTK_MENU_SHELL (menubar),
 			       menubar->priv->places_item);
 	gtk_widget_show (menubar->priv->places_item);
 
+	/** Build the System menu */
+	menubar->priv->system_item = panel_image_menu_item_new (); // Only temporarily an image menuitem
+	gtk_menu_item_set_label (GTK_MENU_ITEM (menubar->priv->system_item),
+				 _("System"));
+	/*gtk_menu_item_set_submenu (GTK_MENU_ITEM (menubar->priv->system_item),
+				   menubar->priv->system_menu);*/
+	gtk_menu_shell_append (GTK_MENU_SHELL (menubar),
+			       menubar->priv->system_item);
+	gtk_widget_show (menubar->priv->system_item);
+
+	
 	panel_menu_bar_setup_tooltip (menubar);
 }
 
