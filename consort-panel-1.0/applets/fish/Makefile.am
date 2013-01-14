@@ -15,7 +15,7 @@ FISH_SOURCES = 		\
 	$(BUILT_SOURCES)
 
 FISH_LDADD =						\
-	../../libpanel-applet/libpanel-applet-4.la	\
+	../../libpanel-applet/libpanel-applet-1.la	\
 	$(FISH_LIBS)					\
 	$(LIBPANEL_APPLET_LIBS)
 

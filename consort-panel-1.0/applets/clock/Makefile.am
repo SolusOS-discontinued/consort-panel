@@ -56,7 +56,7 @@ CLOCK_CPPFLAGS =						\
 	-DGWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 CLOCK_LDADD =						\
-	../../libpanel-applet/libpanel-applet-4.la	\
+	../../libpanel-applet/libpanel-applet-1.la	\
 	$(CLOCK_LIBS)					\
 	$(LIBPANEL_APPLET_LIBS)				\
 	libsystem-timezone.la				\

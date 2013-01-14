@@ -78,7 +78,7 @@ am__installdirs = "$(DESTDIR)$(fish_applet_libdir)" \
 	"$(DESTDIR)$(fishbitmapsdir)" "$(DESTDIR)$(servicedir)"
 LTLIBRARIES = $(fish_applet_lib_LTLIBRARIES)
 am__DEPENDENCIES_1 =
-am__DEPENDENCIES_2 = ../../libpanel-applet/libpanel-applet-4.la \
+am__DEPENDENCIES_2 = ../../libpanel-applet/libpanel-applet-1.la \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 @FISH_INPROCESS_TRUE@libfish_applet_la_DEPENDENCIES =  \
 @FISH_INPROCESS_TRUE@	$(am__DEPENDENCIES_2)
@@ -369,7 +369,7 @@ FISH_SOURCES = \
 	$(BUILT_SOURCES)
 
 FISH_LDADD = \
-	../../libpanel-applet/libpanel-applet-4.la	\
+	../../libpanel-applet/libpanel-applet-1.la	\
 	$(FISH_LIBS)					\
 	$(LIBPANEL_APPLET_LIBS)
 

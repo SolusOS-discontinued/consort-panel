@@ -111,7 +111,7 @@ consort-panel (3.4.1-1) unstable; urgency=low
   * Refresh patches.
   * Suggest gnome-user-guide instead of gnome2-user-guide.
   * Drop explicit Build-Depends on gir packages.
-  * Add symbols file for libpanel-applet-4-0.
+  * Add symbols file for libpanel-applet-1-0.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 19 Apr 2012 20:05:30 +0200
 
@@ -131,7 +131,7 @@ consort-panel (3.2.1-1) unstable; urgency=low
   * debian/control.in:
     - Update Build-Depends on libgnome-menu-dev to libgnome-menu-3-dev
       (>= 3.1.4).
-  * debian/libpanel-applet-4-dev.install:
+  * debian/libpanel-applet-1-dev.install:
     - Stop installing static .a archives, no longer built by default.
   * debian/patches/09_default_icons.patch:
     - Removed, it no longer applies. The patch relied on a icon shipped by the

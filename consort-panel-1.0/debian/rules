@@ -18,5 +18,5 @@ ifneq ($(DEB_BUILD_GNU_SYSTEM),gnu)
 	DEB_CONFIGURE_EXTRA_FLAGS += --enable-eds
 endif
 
-DEB_DH_MAKESHLIBS_ARGS_libpanel-applet-4-0 += -V -- -c4
+DEB_DH_MAKESHLIBS_ARGS_libpanel-applet-1-0 += -V -- -c4
 DEB_DH_MAKESHLIBS_ARGS_consort-panel += --no-act

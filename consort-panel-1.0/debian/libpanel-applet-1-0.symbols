@@ -1,4 +1,4 @@
-libpanel-applet-4.so.0 libpanel-applet-4-0 #MINVER#
+libpanel-applet-1.so.0 libpanel-applet-1-0 #MINVER#
  panel_applet_add_preferences@Base 3.2.1
  panel_applet_bindings_clean@Base 3.2.1
  panel_applet_bindings_get_mouse_button_modifier_keymask@Base 3.2.1

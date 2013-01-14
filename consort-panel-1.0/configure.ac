@@ -14,7 +14,7 @@ AC_CONFIG_MACRO_DIR([m4])
 #   change to C+1:0:0
 # - If the interface is the same as the previous version, change to C:R+1:A
 
-LIBPANEL_APPLET_API_VERSION=4.0
+LIBPANEL_APPLET_API_VERSION=1.0
 AC_SUBST([LIBPANEL_APPLET_API_VERSION],[$LIBPANEL_APPLET_API_VERSION])
 
 LIB_PANEL_APPLET_LT_VERSION=1:1:1
@@ -309,8 +309,8 @@ consort-panel/libpanel-applet-private/Makefile
 consort-panel/libpanel-util/Makefile
 consort-panel/consort-panel.desktop.in
 libpanel-applet/Makefile
-libpanel-applet/libpanelapplet-4.0.pc
-libpanel-applet/libpanelapplet-4.0-uninstalled.pc
+libpanel-applet/libpanelapplet-1.0.pc
+libpanel-applet/libpanelapplet-1.0-uninstalled.pc
 po/Makefile.in
 applets/Makefile
 applets/clock/Makefile

@@ -3222,7 +3222,7 @@ AM_BACKSLASH='\'
 #   change to C+1:0:0
 # - If the interface is the same as the previous version, change to C:R+1:A
 
-LIBPANEL_APPLET_API_VERSION=4.0
+LIBPANEL_APPLET_API_VERSION=1.0
 LIBPANEL_APPLET_API_VERSION=$LIBPANEL_APPLET_API_VERSION
 
 
@@ -17023,7 +17023,7 @@ $as_echo "#define HAVE_SOLARIS 1" >>confdefs.h
 	;;
 esac
 
-ac_config_files="$ac_config_files Makefile data/Makefile data/16x16/Makefile data/22x22/Makefile data/24x24/Makefile data/32x32/Makefile data/48x48/Makefile data/scalable/Makefile consort-panel/Makefile consort-panel/libegg/Makefile consort-panel/libpanel-applet-private/Makefile consort-panel/libpanel-util/Makefile consort-panel/consort-panel.desktop.in libpanel-applet/Makefile libpanel-applet/libpanelapplet-4.0.pc libpanel-applet/libpanelapplet-4.0-uninstalled.pc po/Makefile.in applets/Makefile applets/clock/Makefile applets/clock/pixmaps/Makefile applets/fish/Makefile applets/notification_area/Makefile applets/wncklet/Makefile doc/Makefile doc/reference/Makefile doc/reference/panel-applet/Makefile help/Makefile help/clock/Makefile help/fish/Makefile man/Makefile"
+ac_config_files="$ac_config_files Makefile data/Makefile data/16x16/Makefile data/22x22/Makefile data/24x24/Makefile data/32x32/Makefile data/48x48/Makefile data/scalable/Makefile consort-panel/Makefile consort-panel/libegg/Makefile consort-panel/libpanel-applet-private/Makefile consort-panel/libpanel-util/Makefile consort-panel/consort-panel.desktop.in libpanel-applet/Makefile libpanel-applet/libpanelapplet-1.0.pc libpanel-applet/libpanelapplet-1.0-uninstalled.pc po/Makefile.in applets/Makefile applets/clock/Makefile applets/clock/pixmaps/Makefile applets/fish/Makefile applets/notification_area/Makefile applets/wncklet/Makefile doc/Makefile doc/reference/Makefile doc/reference/panel-applet/Makefile help/Makefile help/clock/Makefile help/fish/Makefile man/Makefile"
 
 
 cat >confcache <<\_ACEOF
@@ -18101,8 +18101,8 @@ do
     "consort-panel/libpanel-util/Makefile") CONFIG_FILES="$CONFIG_FILES consort-panel/libpanel-util/Makefile" ;;
     "consort-panel/consort-panel.desktop.in") CONFIG_FILES="$CONFIG_FILES consort-panel/consort-panel.desktop.in" ;;
     "libpanel-applet/Makefile") CONFIG_FILES="$CONFIG_FILES libpanel-applet/Makefile" ;;
-    "libpanel-applet/libpanelapplet-4.0.pc") CONFIG_FILES="$CONFIG_FILES libpanel-applet/libpanelapplet-4.0.pc" ;;
-    "libpanel-applet/libpanelapplet-4.0-uninstalled.pc") CONFIG_FILES="$CONFIG_FILES libpanel-applet/libpanelapplet-4.0-uninstalled.pc" ;;
+    "libpanel-applet/libpanelapplet-1.0.pc") CONFIG_FILES="$CONFIG_FILES libpanel-applet/libpanelapplet-1.0.pc" ;;
+    "libpanel-applet/libpanelapplet-1.0-uninstalled.pc") CONFIG_FILES="$CONFIG_FILES libpanel-applet/libpanelapplet-1.0-uninstalled.pc" ;;
     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
     "applets/Makefile") CONFIG_FILES="$CONFIG_FILES applets/Makefile" ;;
     "applets/clock/Makefile") CONFIG_FILES="$CONFIG_FILES applets/clock/Makefile" ;;

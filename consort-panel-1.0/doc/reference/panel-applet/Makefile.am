@@ -55,7 +55,7 @@ GTKDOC_CFLAGS =					\
 GTKDOC_LIBS =						\
 	$(LDFLAGS)					\
 	$(PANEL_LIBS)					\
-	../../../libpanel-applet/libpanel-applet-4.la
+	../../../libpanel-applet/libpanel-applet-1.la
 
 include $(top_srcdir)/gtk-doc.make
 

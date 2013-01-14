@@ -38,13 +38,13 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 noinst_PROGRAMS = test-dbus-applet$(EXEEXT)
-@HAVE_INTROSPECTION_TRUE@am__append_1 = PanelApplet-4.0.gir
+@HAVE_INTROSPECTION_TRUE@am__append_1 = PanelApplet-1.0.gir
 @HAVE_INTROSPECTION_TRUE@am__append_2 = $(gir_DATA) $(typelib_DATA)
 subdir = libpanel-applet
 DIST_COMMON = $(libpanel_appletinclude_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in \
-	$(srcdir)/libpanelapplet-4.0-uninstalled.pc.in \
-	$(srcdir)/libpanelapplet-4.0.pc.in TODO
+	$(srcdir)/libpanelapplet-1.0-uninstalled.pc.in \
+	$(srcdir)/libpanelapplet-1.0.pc.in TODO
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/d-type.m4 \
 	$(top_srcdir)/m4/gnome-doc-utils.m4 \
@@ -56,8 +56,8 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = libpanelapplet-4.0.pc \
-	libpanelapplet-4.0-uninstalled.pc
+CONFIG_CLEAN_FILES = libpanelapplet-1.0.pc \
+	libpanelapplet-1.0-uninstalled.pc
 CONFIG_CLEAN_VPATH_FILES =
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
@@ -85,25 +85,25 @@ am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(girdir)" \
 	"$(DESTDIR)$(libpanel_appletincludedir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
 am__DEPENDENCIES_1 =
-libpanel_applet_4_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+libpanel_applet_1_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
 am__objects_1 = panel-applet-enums.lo panel-applet-marshal.lo
-am_libpanel_applet_4_la_OBJECTS = $(am__objects_1) panel-applet.lo \
+am_libpanel_applet_1_la_OBJECTS = $(am__objects_1) panel-applet.lo \
 	panel-applet-factory.lo panel-applet-bindings.lo \
 	panel-applet-gconf.lo
-libpanel_applet_4_la_OBJECTS = $(am_libpanel_applet_4_la_OBJECTS)
+libpanel_applet_1_la_OBJECTS = $(am_libpanel_applet_1_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
-libpanel_applet_4_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+libpanel_applet_1_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
-	$(AM_CFLAGS) $(CFLAGS) $(libpanel_applet_4_la_LDFLAGS) \
+	$(AM_CFLAGS) $(CFLAGS) $(libpanel_applet_1_la_LDFLAGS) \
 	$(LDFLAGS) -o $@
 PROGRAMS = $(noinst_PROGRAMS)
 test_dbus_applet_SOURCES = test-dbus-applet.c
 test_dbus_applet_OBJECTS = test-dbus-applet.$(OBJEXT)
 test_dbus_applet_DEPENDENCIES = $(am__DEPENDENCIES_1) \
-	libpanel-applet-4.la
+	libpanel-applet-1.la
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -130,8 +130,8 @@ am__v_CCLD_0 = @echo "  CCLD  " $@;
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
 am__v_GEN_0 = @echo "  GEN   " $@;
-SOURCES = $(libpanel_applet_4_la_SOURCES) test-dbus-applet.c
-DIST_SOURCES = $(libpanel_applet_4_la_SOURCES) test-dbus-applet.c
+SOURCES = $(libpanel_applet_1_la_SOURCES) test-dbus-applet.c
+DIST_SOURCES = $(libpanel_applet_1_la_SOURCES) test-dbus-applet.c
 DATA = $(gir_DATA) $(noinst_DATA) $(pkgconfig_DATA) $(typelib_DATA)
 HEADERS = $(libpanel_appletinclude_HEADERS)
 ETAGS = etags
@@ -348,7 +348,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-lib_LTLIBRARIES = libpanel-applet-4.la
+lib_LTLIBRARIES = libpanel-applet-1.la
 AM_CPPFLAGS = \
 	$(LIBPANEL_APPLET_CFLAGS)				\
 	-I$(top_builddir)/libpanel-applet			\
@@ -356,13 +356,13 @@ AM_CPPFLAGS = \
 	$(DISABLE_DEPRECATED_CFLAGS)
 
 AM_CFLAGS = $(WARN_CFLAGS)
-libpanel_appletincludedir = $(includedir)/consort-panel-4.0/libpanel-applet
+libpanel_appletincludedir = $(includedir)/consort-panel-1.0/libpanel-applet
 libpanel_appletinclude_HEADERS = \
 	panel-applet.h			\
 	panel-applet-gconf.h		\
 	panel-applet-enums.h
 
-libpanel_applet_4_la_SOURCES = \
+libpanel_applet_1_la_SOURCES = \
 	$(BUILT_SOURCES)		\
 	panel-applet.h			\
 	panel-applet.c			\
@@ -373,17 +373,17 @@ libpanel_applet_4_la_SOURCES = \
 	panel-applet-gconf.c		\
 	panel-applet-gconf.h
 
-libpanel_applet_4_la_LIBADD = \
+libpanel_applet_1_la_LIBADD = \
 	$(LIBPANEL_APPLET_LIBS) \
 	$(X_LIBS)
 
-libpanel_applet_4_la_LDFLAGS = \
+libpanel_applet_1_la_LDFLAGS = \
 	-version-info $(LIB_PANEL_APPLET_LT_VERSION)	\
 	-no-undefined
 
 test_dbus_applet_LDADD = \
 	$(LIBPANEL_APPLET_LIBS)	\
-	libpanel-applet-4.la
+	libpanel-applet-1.la
 
 panel_applet_enum_headers = $(top_srcdir)/libpanel-applet/panel-applet.h
 BUILT_SOURCES = \
@@ -393,15 +393,15 @@ BUILT_SOURCES = \
 	panel-applet-marshal.h
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libpanelapplet-4.0.pc
+pkgconfig_DATA = libpanelapplet-1.0.pc
 appletdir = $(datadir)/consort-panel/applets
 applet_in_files = org.gnome.panel.TestApplet.panel-applet.in
 noinst_DATA = $(applet_in_files:.panel-applet.in=.panel-applet)
 EXTRA_DIST = \
 	org.gnome.panel.TestApplet.panel-applet.in	\
 	panel-applet-marshal.list			\
-	libpanelapplet-4.0.pc.in			\
-	libpanelapplet-4.0-uninstalled.pc.in
+	libpanelapplet-1.0.pc.in			\
+	libpanelapplet-1.0-uninstalled.pc.in
 
 CLEANFILES = $(BUILT_SOURCES) $(noinst_DATA) $(am__append_2)
 INTROSPECTION_GIRS = $(am__append_1)
@@ -417,11 +417,11 @@ INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir)
 @HAVE_INTROSPECTION_TRUE@	panel-applet-enums.c	\
 @HAVE_INTROSPECTION_TRUE@	panel-applet-enums.h
 
-@HAVE_INTROSPECTION_TRUE@PanelApplet_4_0_gir_INCLUDES = GObject-2.0 Gtk-3.0 GConf-2.0
-@HAVE_INTROSPECTION_TRUE@PanelApplet_4_0_gir_CFLAGS = $(AM_CPPFLAGS)
-@HAVE_INTROSPECTION_TRUE@PanelApplet_4_0_gir_LIBS = libpanel-applet-4.la
-@HAVE_INTROSPECTION_TRUE@PanelApplet_4_0_gir_FILES = $(addprefix $(srcdir)/,$(introspection_sources)) $(addprefix $(builddir)/,$(built_introspection_sources))
-@HAVE_INTROSPECTION_TRUE@PanelApplet_4_0_gir_SCANNERFLAGS = --identifier-prefix=Panel --symbol-prefix=panel --pkg-export=libpanelapplet-4.0
+@HAVE_INTROSPECTION_TRUE@PanelApplet_1_0_gir_INCLUDES = GObject-2.0 Gtk-3.0 GConf-2.0
+@HAVE_INTROSPECTION_TRUE@PanelApplet_1_0_gir_CFLAGS = $(AM_CPPFLAGS)
+@HAVE_INTROSPECTION_TRUE@PanelApplet_1_0_gir_LIBS = libpanel-applet-1.la
+@HAVE_INTROSPECTION_TRUE@PanelApplet_1_0_gir_FILES = $(addprefix $(srcdir)/,$(introspection_sources)) $(addprefix $(builddir)/,$(built_introspection_sources))
+@HAVE_INTROSPECTION_TRUE@PanelApplet_1_0_gir_SCANNERFLAGS = --identifier-prefix=Panel --symbol-prefix=panel --pkg-export=libpanelapplet-1.0
 @HAVE_INTROSPECTION_TRUE@girdir = $(INTROSPECTION_GIRDIR)
 @HAVE_INTROSPECTION_TRUE@gir_DATA = $(INTROSPECTION_GIRS)
 @HAVE_INTROSPECTION_TRUE@typelibdir = $(INTROSPECTION_TYPELIBDIR)
@@ -461,9 +461,9 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-libpanelapplet-4.0.pc: $(top_builddir)/config.status $(srcdir)/libpanelapplet-4.0.pc.in
+libpanelapplet-1.0.pc: $(top_builddir)/config.status $(srcdir)/libpanelapplet-1.0.pc.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-libpanelapplet-4.0-uninstalled.pc: $(top_builddir)/config.status $(srcdir)/libpanelapplet-4.0-uninstalled.pc.in
+libpanelapplet-1.0-uninstalled.pc: $(top_builddir)/config.status $(srcdir)/libpanelapplet-1.0-uninstalled.pc.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 install-libLTLIBRARIES: $(lib_LTLIBRARIES)
 	@$(NORMAL_INSTALL)
@@ -496,8 +496,8 @@ clean-libLTLIBRARIES:
 	  echo "rm -f \"$${dir}/so_locations\""; \
 	  rm -f "$${dir}/so_locations"; \
 	done
-libpanel-applet-4.la: $(libpanel_applet_4_la_OBJECTS) $(libpanel_applet_4_la_DEPENDENCIES) 
-	$(AM_V_CCLD)$(libpanel_applet_4_la_LINK) -rpath $(libdir) $(libpanel_applet_4_la_OBJECTS) $(libpanel_applet_4_la_LIBADD) $(LIBS)
+libpanel-applet-1.la: $(libpanel_applet_1_la_OBJECTS) $(libpanel_applet_1_la_DEPENDENCIES) 
+	$(AM_V_CCLD)$(libpanel_applet_1_la_LINK) -rpath $(libdir) $(libpanel_applet_1_la_OBJECTS) $(libpanel_applet_1_la_LIBADD) $(LIBS)
 
 clean-noinstPROGRAMS:
 	@list='$(noinst_PROGRAMS)'; test -n "$$list" || exit 0; \
@@ -851,7 +851,7 @@ uninstall-am: uninstall-girDATA uninstall-libLTLIBRARIES \
 	uninstall-pkgconfigDATA uninstall-typelibDATA
 
 
-$(libpanel_applet_4_la_OBJECTS) $(test_dbus_applet_OBJECTS): $(BUILT_SOURCES)
+$(libpanel_applet_1_la_OBJECTS) $(test_dbus_applet_OBJECTS): $(BUILT_SOURCES)
 
 panel-applet-marshal.h: panel-applet-marshal.list $(GLIB_GENMARSHAL)
 	$(AM_V_GEN)$(GLIB_GENMARSHAL) $< --header --prefix=panel_applet_marshal > $@
@@ -895,7 +895,7 @@ panel-applet-enums.h: $(panel_applet_enum_headers)
 
 -include $(INTROSPECTION_MAKEFILE)
 
-@HAVE_INTROSPECTION_TRUE@PanelApplet-4.0.gir: libpanel-applet-4.la
+@HAVE_INTROSPECTION_TRUE@PanelApplet-1.0.gir: libpanel-applet-1.la
 
 ################################
 

@@ -79,7 +79,7 @@ am__installdirs = "$(DESTDIR)$(clock_appletlibdir)" \
 	"$(DESTDIR)$(schemasdir)" "$(DESTDIR)$(servicedir)"
 LTLIBRARIES = $(clock_appletlib_LTLIBRARIES) $(noinst_LTLIBRARIES)
 am__DEPENDENCIES_1 =
-am__DEPENDENCIES_2 = ../../libpanel-applet/libpanel-applet-4.la \
+am__DEPENDENCIES_2 = ../../libpanel-applet/libpanel-applet-1.la \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	libsystem-timezone.la
 @CLOCK_INPROCESS_TRUE@libclock_applet_la_DEPENDENCIES =  \
@@ -496,7 +496,7 @@ CLOCK_CPPFLAGS = \
 	-DGWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 CLOCK_LDADD = \
-	../../libpanel-applet/libpanel-applet-4.la	\
+	../../libpanel-applet/libpanel-applet-1.la	\
 	$(CLOCK_LIBS)					\
 	$(LIBPANEL_APPLET_LIBS)				\
 	libsystem-timezone.la				\

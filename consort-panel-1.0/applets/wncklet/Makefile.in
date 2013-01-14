@@ -78,7 +78,7 @@ am__installdirs = "$(DESTDIR)$(wnck_appletlibdir)" \
 	"$(DESTDIR)$(servicedir)"
 LTLIBRARIES = $(wnck_appletlib_LTLIBRARIES)
 am__DEPENDENCIES_1 =
-am__DEPENDENCIES_2 = ../../libpanel-applet/libpanel-applet-4.la \
+am__DEPENDENCIES_2 = ../../libpanel-applet/libpanel-applet-1.la \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 @WNCKLET_INPROCESS_TRUE@libwnck_applet_la_DEPENDENCIES =  \
 @WNCKLET_INPROCESS_TRUE@	$(am__DEPENDENCIES_2)
@@ -392,7 +392,7 @@ WNCKLET_SOURCES = \
 	$(BUILT_SOURCES)
 
 WNCKLET_LDADD = \
-	../../libpanel-applet/libpanel-applet-4.la	\
+	../../libpanel-applet/libpanel-applet-1.la	\
 	$(WNCKLET_LIBS)					\
 	$(LIBPANEL_APPLET_LIBS)
 

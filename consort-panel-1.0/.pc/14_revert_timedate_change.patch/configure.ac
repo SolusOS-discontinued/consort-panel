@@ -309,8 +309,8 @@ consort-panel/libpanel-applet-private/Makefile
 consort-panel/libpanel-util/Makefile
 consort-panel/consort-panel.desktop.in
 libpanel-applet/Makefile
-libpanel-applet/libpanelapplet-4.0.pc
-libpanel-applet/libpanelapplet-4.0-uninstalled.pc
+libpanel-applet/libpanelapplet-1.0.pc
+libpanel-applet/libpanelapplet-1.0-uninstalled.pc
 po/Makefile.in
 applets/Makefile
 applets/clock/Makefile

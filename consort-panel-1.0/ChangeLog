@@ -6420,8 +6420,8 @@ Date:   Wed Feb 2 02:14:44 2011 +0100
     distcheck, apparently.
 
 M	configure.ac
-R100	libpanel-applet/libpanelapplet-uninstalled.pc.in	libpanel-applet/libpanelapplet-4.0-uninstalled.pc.in
-R100	libpanel-applet/libpanelapplet.pc.in	libpanel-applet/libpanelapplet-4.0.pc.in
+R100	libpanel-applet/libpanelapplet-uninstalled.pc.in	libpanel-applet/libpanelapplet-1.0-uninstalled.pc.in
+R100	libpanel-applet/libpanelapplet.pc.in	libpanel-applet/libpanelapplet-1.0.pc.in
 
 commit 1bded9e6b48f08df12a3ce5422d4e5ca7b2dbe78
 Author: Vincent Untz <vuntz@gnome.org>
