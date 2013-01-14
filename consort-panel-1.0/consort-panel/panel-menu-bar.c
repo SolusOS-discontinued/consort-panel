@@ -110,6 +110,10 @@ panel_menu_bar_setup_tooltip (PanelMenuBar *menubar)
 			  "activate",
 			  G_CALLBACK (panel_menu_bar_hide_tooltip_and_focus),
 			  menubar);
+	g_signal_connect (menubar->priv->system_item,
+			  "activate",
+			  G_CALLBACK (panel_menu_bar_hide_tooltip_and_focus),
+			  menubar);
 
 	/* Reset tooltip when the menu bar is not used */
 	g_signal_connect (GTK_MENU_SHELL (menubar),
@@ -178,6 +182,10 @@ panel_menu_bar_parent_set (GtkWidget *widget,
 					       menubar->priv->panel);
 	if (menubar->priv->places_item)
 		panel_place_menu_item_set_panel (menubar->priv->places_item,
+						 menubar->priv->panel);
+
+	if (menubar->priv->system_item)
+		panel_place_menu_item_set_panel (menubar->priv->system_item,
 						 menubar->priv->panel);
 }
 
