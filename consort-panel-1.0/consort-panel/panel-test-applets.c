@@ -350,7 +350,7 @@ main (int argc, char **argv)
 
 	builder = gtk_builder_new ();
 	gtk_builder_set_translation_domain (builder, GETTEXT_PACKAGE);
-	gtk_builder_add_from_resource (builder, "/org/gnome/panel/test/panel-test-applets.ui", NULL);
+	gtk_builder_add_from_resource (builder, "/org/consort/panel/test/panel-test-applets.ui", NULL);
 
 	gtk_builder_connect_signals (builder, NULL);
 

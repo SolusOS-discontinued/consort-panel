@@ -1,7 +1,7 @@
 #ifndef __PANEL_SCHEMAS_H__
 #define __PANEL_SCHEMAS_H__
 
-#define PANEL_RESOURCE_PATH "/org/gnome/panel/"
+#define PANEL_RESOURCE_PATH "/org/consort/panel/"
 
 #define PANEL_GENERAL_SCHEMA                    "org.gnome.consort-panel.general"
 #define PANEL_GENERAL_CONFIRM_PANEL_REMOVAL_KEY "confirm-panel-removal"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/panel/applet/clock">
+  <gresource prefix="/org/consort/panel/applet/clock">
     <file compressed="true">clock.ui</file>
     <file compressed="true">clock-menu.xml</file>
     <file alias="icons/clock-face-large.svg">pixmaps/clock-face-large.svg</file>

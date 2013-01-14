@@ -36,7 +36,7 @@ struct _PanelAppletFactoryClass {
 	GObjectClass base_class;
 };
 
-#define PANEL_APPLET_FACTORY_OBJECT_PATH  "/org/gnome/panel/applet/%s"
+#define PANEL_APPLET_FACTORY_OBJECT_PATH  "/org/consort/panel/applet/%s"
 #define PANEL_APPLET_FACTORY_SERVICE_NAME "org.consort.panel.applet.%s"
 
 G_DEFINE_TYPE (PanelAppletFactory, panel_applet_factory, G_TYPE_OBJECT)

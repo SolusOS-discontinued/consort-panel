@@ -174,7 +174,7 @@ static const GtkActionEntry menu_entries[] = {
 G_DEFINE_TYPE (PanelApplet, panel_applet, GTK_TYPE_EVENT_BOX)
 
 #define PANEL_APPLET_INTERFACE   "org.consort.panel.applet.Applet"
-#define PANEL_APPLET_OBJECT_PATH "/org/gnome/panel/applet/%s/%d"
+#define PANEL_APPLET_OBJECT_PATH "/org/consort/panel/applet/%s/%d"
 
 static void
 panel_applet_associate_schemas_in_dir (GConfClient  *client,

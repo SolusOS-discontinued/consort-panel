@@ -30,7 +30,7 @@
 #include <gtk/gtk.h>
 #include <panel-applet.h>
 
-#define WNCKLET_RESOURCE_PATH "/org/gnome/panel/applet/wncklet/"
+#define WNCKLET_RESOURCE_PATH "/org/consort/panel/applet/wncklet/"
 
 G_BEGIN_DECLS
 

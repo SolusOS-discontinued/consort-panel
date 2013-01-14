@@ -30,7 +30,7 @@
 G_BEGIN_DECLS
 
 #define CLOCK_ICON "consort-panel-clock"
-#define CLOCK_RESOURCE_PATH "/org/gnome/panel/applet/clock/"
+#define CLOCK_RESOURCE_PATH "/org/consort/panel/applet/clock/"
 #define CLOCK_SCHEMA_DIR "/schemas/apps/clock_applet/prefs"
 
 G_END_DECLS

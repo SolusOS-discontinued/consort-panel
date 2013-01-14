@@ -47,7 +47,7 @@
 			   FISH_TYPE_APPLET))
 
 #define FISH_ICON "consort-panel-fish"
-#define FISH_RESOURCE_PATH "/org/gnome/panel/applet/fish/"
+#define FISH_RESOURCE_PATH "/org/consort/panel/applet/fish/"
 
 #define FISH_SCHEMA      "org.gnome.consort-panel.applet.fish"
 #define FISH_NAME_KEY    "name"

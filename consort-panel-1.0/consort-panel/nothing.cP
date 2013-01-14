@@ -172,7 +172,7 @@ get_phsh_pixbuf (void)
         char *resource;
         GdkPixbuf *pixbuf;
 
-        resource = g_strdup_printf ("%s%cand%c.png", "/org/gnome/panel/anim/", 'w', 'a');
+        resource = g_strdup_printf ("%s%cand%c.png", "/org/consort/panel/anim/", 'w', 'a');
         pixbuf = gdk_pixbuf_new_from_resource (resource, NULL);
         g_free (resource);
 
