@@ -10274,17 +10274,17 @@ Date:   Wed May 26 09:43:30 2010 +0200
 M	applets/clock/Makefile.am
 R100	applets/clock/GNOME_ClockApplet.xml	applets/clock/clock-menu.xml
 M	applets/clock/clock.c
-R082	applets/clock/GNOME_ClockApplet.panel-applet.in.in	applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in
+R082	applets/clock/GNOME_ClockApplet.panel-applet.in.in	applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in
 M	applets/fish/Makefile.am
 R100	applets/fish/GNOME_FishApplet.xml	applets/fish/fish-menu.xml
 M	applets/fish/fish.c
-R092	applets/fish/GNOME_FishApplet.panel-applet.in.in	applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in
+R092	applets/fish/GNOME_FishApplet.panel-applet.in.in	applets/fish/org.consort.panel.FishApplet.panel-applet.in.in
 M	applets/notification_area/Makefile.am
 M	applets/notification_area/main.c
 R100	applets/notification_area/GNOME_NotificationAreaApplet.xml	applets/notification_area/notification-area-menu.xml
-R090	applets/notification_area/GNOME_NotificationAreaApplet.panel-applet.in.in	applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in
+R090	applets/notification_area/GNOME_NotificationAreaApplet.panel-applet.in.in	applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in
 M	applets/wncklet/Makefile.am
-R094	applets/wncklet/GNOME_Wncklet.panel-applet.in.in	applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in
+R094	applets/wncklet/GNOME_Wncklet.panel-applet.in.in	applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in
 R100	applets/wncklet/GNOME_ShowDesktopApplet.xml	applets/wncklet/showdesktop-menu.xml
 M	applets/wncklet/showdesktop.c
 R100	applets/wncklet/GNOME_WindowListApplet.xml	applets/wncklet/window-list-menu.xml
@@ -10307,7 +10307,7 @@ M	consort-panel/xstuff.c
 M	libpanel-applet/Makefile.am
 M	libpanel-applet/libpanelapplet-2.0-uninstalled.pc.in
 M	libpanel-applet/libpanelapplet-2.0.pc.in
-R052	libpanel-applet/GNOME_Panel_TestApplet.panel-applet.in	libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in
+R052	libpanel-applet/GNOME_Panel_TestApplet.panel-applet.in	libpanel-applet/org.consort.panel.TestApplet.panel-applet.in
 M	libpanel-applet/panel-applet-factory.c
 M	libpanel-applet/panel-applet-factory.h
 M	libpanel-applet/panel-applet.c
@@ -11277,19 +11277,19 @@ M	applets/clock/GNOME_ClockApplet.xml
 D	applets/clock/GNOME_ClockApplet_Factory.server.in.in
 M	applets/clock/Makefile.am
 M	applets/clock/clock.c
-A	applets/clock/org.gnome.panel.applet.ClockAppletFactory.service.in
+A	applets/clock/org.consort.panel.applet.ClockAppletFactory.service.in
 A	applets/fish/GNOME_FishApplet.panel-applet.in.in
 M	applets/fish/GNOME_FishApplet.xml
 D	applets/fish/GNOME_FishApplet_Factory.server.in.in
 M	applets/fish/Makefile.am
 M	applets/fish/fish.c
-A	applets/fish/org.gnome.panel.applet.FishAppletFactory.service.in
+A	applets/fish/org.consort.panel.applet.FishAppletFactory.service.in
 A	applets/notification_area/GNOME_NotificationAreaApplet.panel-applet.in.in
 D	applets/notification_area/GNOME_NotificationAreaApplet.server.in.in
 M	applets/notification_area/GNOME_NotificationAreaApplet.xml
 M	applets/notification_area/Makefile.am
 M	applets/notification_area/main.c
-A	applets/notification_area/org.gnome.panel.applet.NotificationAreaAppletFactory.service.in
+A	applets/notification_area/org.consort.panel.applet.NotificationAreaAppletFactory.service.in
 M	applets/wncklet/GNOME_ShowDesktopApplet.xml
 M	applets/wncklet/GNOME_WindowListApplet.xml
 M	applets/wncklet/GNOME_WindowMenuApplet.xml
@@ -11297,7 +11297,7 @@ A	applets/wncklet/GNOME_Wncklet.panel-applet.in.in
 D	applets/wncklet/GNOME_Wncklet_Factory.server.in.in
 M	applets/wncklet/GNOME_WorkspaceSwitcherApplet.xml
 M	applets/wncklet/Makefile.am
-A	applets/wncklet/org.gnome.panel.applet.WnckletFactory.service.in
+A	applets/wncklet/org.consort.panel.applet.WnckletFactory.service.in
 M	applets/wncklet/showdesktop.c
 M	applets/wncklet/window-list.c
 M	applets/wncklet/window-menu.c

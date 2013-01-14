@@ -626,19 +626,19 @@ msgstr "Tidak dapat membuka dokumen bantuan '%s'"
 msgid "Error displaying help document"
 msgstr "Galat sewaktu membuka dokumen bantuan"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock"
 msgstr "Jam"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 msgid "Clock Applet Factory"
 msgstr "Pabrik Aplet Jam"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Factory for clock applet"
 msgstr "Pabrik untuk aplet jam"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 #| msgid "The Clock displays the current time and date"
 msgid "Get the current time and date"
 msgstr "Ambil waktu dan tanggal sekarang"
@@ -765,19 +765,19 @@ msgstr "Puta_r pada panel vertikal"
 msgid "seconds"
 msgstr "detik"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Display a swimming fish or another animated creature"
 msgstr "Menampilkan seekor ikan sedang berenang atau mahluk teranimasi lainnya"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "Fish"
 msgstr "Fish"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "From Whence That Stupid Fish Came"
 msgstr "From Whence That Stupid Fish Came"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Wanda Factory"
 msgstr "Pabrik Wanda"
 
@@ -785,64 +785,64 @@ msgstr "Pabrik Wanda"
 msgid "Panel Notification Area"
 msgstr "Panel Area Notifikasi"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Area where notification icons appear"
 msgstr "Area dimana ikon pemberitahuan muncul"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 #| msgid "Panel Notification Area"
 msgid "Factory for notification area"
 msgstr "Pabrik untuk area pemberitahuan"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "Area Notifikasi"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 #| msgid "Notification Area"
 msgid "Notification Area Factory"
 msgstr "Pabrik Area Pemberitahuan"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Factory for the window navigation related applets"
 msgstr "Pabrik bagi aplet terkait navigasi jendela"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 #| msgid "Click here to hide all windows and show the desktop."
 msgid "Hide application windows and show the desktop"
 msgstr "Sembunyikan jendela aplikasi dan tampilkan desktop"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 #| msgid "Show Desktop Button"
 msgid "Show Desktop"
 msgstr "Tampilkan Desktop"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "Berpindah antar jendela yang terbuka memakai menu"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Switch between open windows using buttons"
 msgstr "Berpindah antar jendela yang terbuka memakai tombol"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "Bertukar antar area kerja"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "Daftar Jendela"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Window Navigation Applet Factory"
 msgstr "Pabrik Aplet Navigasi Jendela"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "Pemilih Jendela"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Workspace Switcher"
 msgstr "Pengalih Area Kerja"
 
@@ -2478,19 +2478,19 @@ msgid ""
 "settings are lost."
 msgstr "Menghapus panel juga akan menghapus pengaturannya."
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 msgid "A simple applet for testing the GNOME panel"
 msgstr "Aplet sederhana untuk menguji panel GNOME"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 msgid "Factory for Test DBus Applet"
 msgstr "Pabrik untuk Aplet DBus Uji"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 msgid "Test DBus Applet"
 msgstr "Aplet DBus Uji"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 #| msgid "Test applet utility"
 msgid "Test DBus Applet Factory"
 msgstr "Pabrik Aplet DBus Uji"

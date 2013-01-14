@@ -656,19 +656,19 @@ msgstr "לא ניתן להציג את מסמך העזרה '%s'"
 msgid "Error displaying help document"
 msgstr "שגיאה בהצגת מסמך העזרה"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock"
 msgstr "שעון"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 msgid "Clock Applet Factory"
 msgstr "Clock Applet Factory"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Factory for clock applet"
 msgstr "יצרן יישומוני שעון"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 msgid "Get the current time and date"
 msgstr "קבל את השעה והתאריך הנוכחיים"
 
@@ -791,19 +791,19 @@ msgstr "_סיבוב בלוחות אנכיים"
 msgid "seconds"
 msgstr "שניות"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Display a swimming fish or another animated creature"
 msgstr "מציג דג שוחה או חיה מונפשת אחרת"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "Fish"
 msgstr "דג"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "From Whence That Stupid Fish Came"
 msgstr "מאיפה הדג הדבילי הזה הגיע"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Wanda Factory"
 msgstr "יצרן וואנדה"
 
@@ -811,60 +811,60 @@ msgstr "יצרן וואנדה"
 msgid "Panel Notification Area"
 msgstr "איזור התרעת לוח"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Area where notification icons appear"
 msgstr "האיזור בו איקוני ההתראה מופיעים"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 msgid "Factory for notification area"
 msgstr "יצרן אזורי דיווח"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "אזור דיווחים"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 msgid "Notification Area Factory"
 msgstr "יצרן איזור התראה"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Factory for the window navigation related applets"
 msgstr "יצרן לישומונים הקשורים בניווט בין חלונות"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 msgid "Hide application windows and show the desktop"
 msgstr "הסתר את חלונות הישומים והצג את שולחן העבודה"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 msgid "Show Desktop"
 msgstr "הצג את שולחן העבודה"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "החלף בין חלונות פתוחים בעזרת התפריט"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Switch between open windows using buttons"
 msgstr "החלף בין חלונות פתוחים בעזרת המקשים"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "החלף בין סביבות עבודה"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "רשימת חלונות"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Window Navigation Applet Factory"
 msgstr "יצרן ישומון ניווט חלונות"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "בוחר חלונות"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Workspace Switcher"
 msgstr "מחליף סביבות עבודה"
 
@@ -2759,19 +2759,19 @@ msgid ""
 "settings are lost."
 msgstr "כאשר לוח נמחק, הלוח והגדרותיו נאבדים."
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 msgid "A simple applet for testing the GNOME panel"
 msgstr "יישומון פשוט לבדיקת לוח GNOME"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 msgid "Factory for Test DBus Applet"
 msgstr "יצרן ליישומוני בדיקת DBus"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 msgid "Test DBus Applet"
 msgstr "יישומון בדיקת DBus"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 msgid "Test DBus Applet Factory"
 msgstr "יצרן יישומונים לבדיקת DBus"
 

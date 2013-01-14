@@ -664,19 +664,19 @@ msgstr "Ezin izan da laguntzako '%s' dokumentua bistaratu"
 msgid "Error displaying help document"
 msgstr "Errorea laguntzako dokumentua bistaratzean"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock"
 msgstr "Erlojua"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 msgid "Clock Applet Factory"
 msgstr "Erlojuaren miniaplikazioaren fabrika"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Factory for clock applet"
 msgstr "Erlojuaren miniaplikazioaren fabrika"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 msgid "Get the current time and date"
 msgstr "Hartu uneko data eta ordua"
 
@@ -801,19 +801,19 @@ msgstr "_Biratu panel bertikaletan"
 msgid "seconds"
 msgstr "segundoz behin"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Display a swimming fish or another animated creature"
 msgstr "Arrain bat igerian edo beste animalia animaturen bat bistaratzen du"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "Fish"
 msgstr "Arraina"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "From Whence That Stupid Fish Came"
 msgstr "Hara nondik etorri den arrain lerdo hau"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Wanda Factory"
 msgstr "Wanda fabrika"
 
@@ -821,60 +821,60 @@ msgstr "Wanda fabrika"
 msgid "Panel Notification Area"
 msgstr "Paneleko jakinarazpen-area"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Area where notification icons appear"
 msgstr "Jakinarazpen-ikonoak azaltzen diren lekua"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 msgid "Factory for notification area"
 msgstr "jakinarazpen-arearen fabrika"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "Jakinarazpen-area"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 msgid "Notification Area Factory"
 msgstr "Jakinarazpen-arearen fabrika"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Factory for the window navigation related applets"
 msgstr "Leiho-nabigazioko miniaplikazioen fabrika"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 msgid "Hide application windows and show the desktop"
 msgstr "Ezkutatu aplikazio-leihoak eta erakutsi mahaigaina"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 msgid "Show Desktop"
 msgstr "Erakutsi mahaigaina"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "Aldatu irekitako leiho batetik bestera menua erabiliz"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Switch between open windows using buttons"
 msgstr "Aldatu irekitako leiho batetik bestera botoiak erabiliz"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "Aldatu laneko area batetik bestera"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "Leiho-zerrenda"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Window Navigation Applet Factory"
 msgstr "Leiho-nabigazioko miniaplikazioaren fabrika"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "Leiho hautatzailea"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Workspace Switcher"
 msgstr "Laneko arearen aldatzailea"
 
@@ -2790,19 +2790,19 @@ msgstr ""
 "Panel bat ezabatzen denean, panela eta bere\n"
 "ezarpenak galdu egiten dira."
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 msgid "A simple applet for testing the GNOME panel"
 msgstr "GNOME panela probatzeko miniaplikazio sinple bat"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 msgid "Factory for Test DBus Applet"
 msgstr "DBus miniaplikazioa probatzeko fabrika"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 msgid "Test DBus Applet"
 msgstr "Probatu DBus miniaplikazioa"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 msgid "Test DBus Applet Factory"
 msgstr "Probatu DBus miniaplikazioaren fabrika"
 

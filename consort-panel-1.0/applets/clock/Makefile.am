@@ -136,7 +136,7 @@ BUILT_SOURCES =					\
 	clock-typebuiltins.h
 
 appletdir       = $(appletsdir)
-applet_in_files = org.gnome.panel.ClockApplet.panel-applet.in
+applet_in_files = org.consort.panel.ClockApplet.panel-applet.in
 applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
@@ -150,10 +150,10 @@ $(applet_in_files): $(applet_in_files).in Makefile
 
 if !CLOCK_INPROCESS
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.gnome.panel.applet.ClockAppletFactory.service.in
+service_in_files = org.consort.panel.applet.ClockAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.gnome.panel.applet.ClockAppletFactory.service: $(service_in_files)
+org.consort.panel.applet.ClockAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
 		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 		$< > $@
@@ -189,7 +189,7 @@ uninstall-local:
 endif
 
 EXTRA_DIST =						\
-	org.gnome.panel.ClockApplet.panel-applet.in.in	\
+	org.consort.panel.ClockApplet.panel-applet.in.in	\
 	$(schemas_in_files)				\
 	$(ui_FILES)					\
 	clock.gresource.xml				\

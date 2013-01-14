@@ -656,19 +656,19 @@ msgstr "'%s' دېگەن ياردەم پۈتۈكىنى كۆرسەتكىلى بو�
 msgid "Error displaying help document"
 msgstr "ياردەم پۈتۈكنى كۆرسەتكەندە خاتالىق كۆرۈلدى"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock"
 msgstr "سائەت"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 msgid "Clock Applet Factory"
 msgstr "سائەت قوللانچاق زاۋۇتى"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Factory for clock applet"
 msgstr "سائەت قوللانچاق قۇرۇش زاۋۇتى"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 msgid "Get the current time and date"
 msgstr "ھازىرقى ۋاقىت ۋە چېسلاغا ئېرىش"
 
@@ -789,19 +789,19 @@ msgstr "بوي تاختىنى مۇناسىپ ئايلاندۇر(_R)"
 msgid "seconds"
 msgstr "سېكۇنت"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Display a swimming fish or another animated creature"
 msgstr "ئۈزۈۋاتقان بېلىق ياكى باشقا ھەرىكەتلىنىۋاتقان جانلىقنى كۆرسەت"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "Fish"
 msgstr "بېلىق"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "From Whence That Stupid Fish Came"
 msgstr "ئاشۇ كالۋا بېلىق كەلگەندىن بۇيان"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Wanda Factory"
 msgstr "Wanda زاۋۇتى"
 
@@ -809,60 +809,60 @@ msgstr "Wanda زاۋۇتى"
 msgid "Panel Notification Area"
 msgstr "تاختا ئۇقتۇرۇش رايونى"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Area where notification icons appear"
 msgstr "ئۇقتۇرۇش سىنبەلگە كۆرسىتىدىغان رايون"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 msgid "Factory for notification area"
 msgstr "ئۇقتۇرۇش رايونى زاۋۇتى"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "ئۇقتۇرۇش رايونى"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 msgid "Notification Area Factory"
 msgstr "ئۇقتۇرۇش رايون زاۋۇتى"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Factory for the window navigation related applets"
 msgstr "كۆزنەك يولباشچىسىنىڭ كىچىك پروگرامما زاۋۇتى"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 msgid "Hide application windows and show the desktop"
 msgstr "كۆزنەكنى يوشۇرۇپ، ئۈستەل ئۈستىنى كۆرسىتىدۇ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 msgid "Show Desktop"
 msgstr "ئۈستەل ئۈستىنى كۆرسەت"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "ئىشلەتكەن تىزىملىكنى ئاچقان كۆزنەك ئارىسىدا ئالماشتۇر"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Switch between open windows using buttons"
 msgstr "ئىشلەتكەن توپچىنى ئاچقان كۆزنەك ئارىسىدا ئالماشتۇر"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "خىزمەت رايونلىرى ئارىسىدا ئالماشتۇر"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "كۆزنەك تىزىمى"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Window Navigation Applet Factory"
 msgstr "كۆزنەك يولباشچى قوللانچاق زاۋۇتى"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "كۆزنەك تاللىغۇچ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Workspace Switcher"
 msgstr "خىزمەت بوشلۇقى ئالماشتۇرغۇچ"
 
@@ -2765,19 +2765,19 @@ msgid ""
 "settings are lost."
 msgstr "تاختىنى ئۆچۈرگەندە تاختا ۋە ئۇنىڭ تەڭشىكىنىڭ ھەممىسى يوقىلىدۇ"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 msgid "A simple applet for testing the GNOME panel"
 msgstr "GNOME تاختىنى سىنايدىغان ئاددىي قوللانچاق"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 msgid "Factory for Test DBus Applet"
 msgstr "DBus قوللانچاقنى سىنايدىغان زاۋۇت"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 msgid "Test DBus Applet"
 msgstr "DBus قوللانچاقنى سىنا"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 msgid "Test DBus Applet Factory"
 msgstr "DBus قوللانچاقنى سىناش زاۋۇتى"
 

@@ -87,13 +87,13 @@ pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libpanelapplet-1.0.pc
 
 appletdir       = $(datadir)/consort-panel/applets
-applet_in_files = org.gnome.panel.TestApplet.panel-applet.in
+applet_in_files = org.consort.panel.TestApplet.panel-applet.in
 noinst_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
 
 @PANEL_INTLTOOL_PANEL_APPLET_RULE@
 
 EXTRA_DIST =						\
-	org.gnome.panel.TestApplet.panel-applet.in	\
+	org.consort.panel.TestApplet.panel-applet.in	\
 	panel-applet-marshal.list			\
 	libpanelapplet-1.0.pc.in			\
 	libpanelapplet-1.0-uninstalled.pc.in

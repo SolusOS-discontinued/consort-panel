@@ -662,19 +662,19 @@ msgstr "មិន​អាច​បង្ហាញ​ឯកសារ​ជំន
 msgid "Error displaying help document"
 msgstr "កំហុស​ក្នុង​ការ​បង្ហាញ​ឯកសារ​ជំនួយ"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock"
 msgstr "នាឡិកា"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 msgid "Clock Applet Factory"
 msgstr "រោងចក្រ​អាប់ភ្លេត​នាឡិកា"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Factory for clock applet"
 msgstr "រោងចក្រ​សម្រាប់​អាប់ភ្លេត​នាឡិកា"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 msgid "Get the current time and date"
 msgstr "យក​​កាលបរិច្ឆេទ និង​ពេលវេលា​បច្ចុប្បន្ន"
 
@@ -791,19 +791,19 @@ msgstr "បង្វិល​នៅ​លើ​បន្ទះ​បញ្ឈរ
 msgid "seconds"
 msgstr "វិនាទី"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Display a swimming fish or another animated creature"
 msgstr "បង្ហាញ​ត្រី​ហែ​ទឹក ឬ​សត្វ​ដែល​​មាន​ចលនា​ផ្សេង​ទៀត"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "Fish"
 msgstr "ត្រី"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "From Whence That Stupid Fish Came"
 msgstr "ពី​កន្លែង​ដែល​ត្រី​ល្ងង់​បាន​មក"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Wanda Factory"
 msgstr "រោងចក្រ​របស់ Wanda"
 
@@ -811,60 +811,60 @@ msgstr "រោងចក្រ​របស់ Wanda"
 msgid "Panel Notification Area"
 msgstr "តំបន់​ការ​ជូនដំណឹង​បន្ទះ"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Area where notification icons appear"
 msgstr "តំបន់​ដែល​លេចឡើង​រូបតំណាង​ការ​ជូនដំណឹង"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 msgid "Factory for notification area"
 msgstr "រោងចក្រ​សម្រាប់​​តំបន់​ការ​ជូនដំណឹង"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "តំបន់​ជូនដំណឹង"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 msgid "Notification Area Factory"
 msgstr "រោងចក្រ​តំបន់​ការ​ជូនដំណឹង"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Factory for the window navigation related applets"
 msgstr "រោងចក្រ​សម្រាប់​ការរុករក​បង្អួច​ដែល​ទាក់ទង​អាប់ភ្លេត"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 msgid "Hide application windows and show the desktop"
 msgstr "លាក់​វីនដូ​កម្មវិធី និង​បង្ហាញ​ផ្ទៃតុ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 msgid "Show Desktop"
 msgstr "បង្ហាញ​ផ្ទៃតុ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "ប្ដូរ​ចន្លោះ​វីនដូ​បើក​ដោយ​បម្រើ​ម៉ឺនុយ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Switch between open windows using buttons"
 msgstr "ប្ដូរ​ចន្លោះ​វីនដូ​បើក​ដោយ​ប្រើ​ប៊ូតុង"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "ប្ដូរ​ចន្លោះ​តំបន់​ធ្វើការ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "បញ្ជី​បង្អួច"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Window Navigation Applet Factory"
 msgstr "រោងចក្រ​អាប់ភ្លេត​ការ​រុករក​បង្អួច"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "កម្មវិធី​ជ្រើស​បង្អួច"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Workspace Switcher"
 msgstr "កម្មវិធី​ប្ដូរ​តំបន់​ធ្វើការ"
 
@@ -2791,19 +2791,19 @@ msgid ""
 "settings are lost."
 msgstr "នៅ​ពេល​​លុប​បន្ទះ បន្ទះ និង​ការ​កំណត់​របស់​វា​​ត្រូវ​បាន​បាត់បង់\n ។"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 msgid "A simple applet for testing the GNOME panel"
 msgstr "អាប់ភ្លេត​សាមញ្ញ​សម្រាប់​បន្ទះ​ GNOME"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 msgid "Factory for Test DBus Applet"
 msgstr "រោងចក្រ​សម្រាប់​សាកល្បង​អាប់ភ្លេត DBus"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 msgid "Test DBus Applet"
 msgstr "សាកល្បង​អាប់ភ្លេត DBus"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 msgid "Test DBus Applet Factory"
 msgstr "សាកល្បង​រោងចក្រ​អាប់ភ្លេត DBus"
 

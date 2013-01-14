@@ -654,20 +654,20 @@ msgstr "সহায়ক নথি '%s' প্ৰদৰ্ছন কৰিবল�
 msgid "Error displaying help document"
 msgstr "সহায়ক নথি প্ৰদৰ্ছন কৰিবলৈ ব্যৰ্থ"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock Applet Factory"
 msgstr "ঘড়িৰ এপ্লেট কলঘৰ"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 #| msgid "Factory for creating clock applets."
 msgid "Factory for clock applet"
 msgstr "ঘড়িৰ এপ্লেটৰ বাবে কলঘৰ"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Clock"
 msgstr "ঘড়ি"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 msgid "Get the current time and date"
 msgstr "বৰ্তমান সময় আৰু তাৰিখ প্ৰাপ্ত কৰক"
 
@@ -790,19 +790,19 @@ msgstr "ছেকেণ্ড"
 msgid "_Rotate on vertical panels"
 msgstr "উলম্ব পেনেলত ঘূৰোৱা হ'ব (_R)"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Wanda Factory"
 msgstr "ৱেন্ডা কলঘৰ"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "From Whence That Stupid Fish Came"
 msgstr "এই বুৰ্বক মাছটো ক ৰ পৰা আহিছে"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "Fish"
 msgstr "মাছ"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Display a swimming fish or another animated creature"
 msgstr "সাঁতোৰা মাছ বা অন্য কোনো সজীব প্ৰাণী প্ৰদৰ্ছন কৰা হ'ব"
 
@@ -810,61 +810,61 @@ msgstr "সাঁতোৰা মাছ বা অন্য কোনো সজ�
 msgid "Panel Notification Area"
 msgstr "পেনেলত সূচনাপ্ৰদানৰ স্থান"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Notification Area Factory"
 msgstr "সূচনাপ্ৰদানৰ স্থান সংক্ৰান্ত কলঘৰ"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 #| msgid "Panel Notification Area"
 msgid "Factory for notification area"
 msgstr "অধিসূচনা স্থানৰ বাবে কলঘৰ"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "সূচনাপ্ৰদানৰ স্থান"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 msgid "Area where notification icons appear"
 msgstr "সূচনা প্ৰদানকাৰী আইকন প্ৰদৰ্ছনৰ স্থান"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Window Navigation Applet Factory"
 msgstr "সংযোগক্ষেত্ৰ নেভিগেছন এপ্লেট কলঘৰ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 msgid "Factory for the window navigation related applets"
 msgstr "সংযোগক্ষেত্ৰ নেভিগেছন সম্বন্ধীয় এপ্লেট কলঘৰ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "সংযোগক্ষেত্ৰ নিৰ্বাচক"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "মেনুৰ সহায়ে প্ৰদৰ্শিত সংযোগক্ষেত্ৰত অদল-বদল কৰক"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Workspace Switcher"
 msgstr "কৰ্মক্ষেত্ৰ অদলবদলকাৰী"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "কৰ্মক্ষেত্ৰত অদলবদল কৰক"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "সংযোগক্ষেত্ৰ তালিকা"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Switch between open windows using buttons"
 msgstr "বুটামৰ সহায়ত প্ৰদৰ্শিত সংযোগক্ষেত্ৰত অদল-বদল কৰক"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 msgid "Show Desktop"
 msgstr "ডেস্কট'প প্ৰদৰ্ছন কৰা হ'ব"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Hide application windows and show the desktop"
 msgstr "অনুপ্ৰয়োগ সংযোগক্ষেত্ৰ লুকাই ডেস্কট'প প্ৰদৰ্ছন কৰা হ'ব"
 
@@ -2750,22 +2750,22 @@ msgstr ""
 "পেনেল আঁতৰুৱা হ'লে পেনেলৰ সৈতে\n"
 "যুক্ত সমস্ত বৈশিষ্ট্য আঁতৰুৱা হ'ব  ।"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 #| msgid "Test Bonobo Applet Factory"
 msgid "Test DBus Applet Factory"
 msgstr "DBus এপ্লেট কলঘৰ পৰীক্ষা কৰক"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 #| msgid "Factory for creating clock applets."
 msgid "Factory for Test DBus Applet"
 msgstr "পৰিক্ষণ DBus এপ্লেটৰ বাবে কলঘৰ"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 #| msgid "Test Bonobo Applet"
 msgid "Test DBus Applet"
 msgstr "পৰিক্ষণ DBus এপ্লেট"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 #| msgid "A simple applet for testing the GNOME-2.0 panel"
 msgid "A simple applet for testing the GNOME panel"
 msgstr "GNOME পেনেল পৰিক্ষা কৰিবলে এটা সহজ এপ্লেট"

@@ -37,7 +37,7 @@ struct _PanelAppletFactoryClass {
 };
 
 #define PANEL_APPLET_FACTORY_OBJECT_PATH  "/org/gnome/panel/applet/%s"
-#define PANEL_APPLET_FACTORY_SERVICE_NAME "org.gnome.panel.applet.%s"
+#define PANEL_APPLET_FACTORY_SERVICE_NAME "org.consort.panel.applet.%s"
 
 G_DEFINE_TYPE (PanelAppletFactory, panel_applet_factory, G_TYPE_OBJECT)
 
@@ -190,7 +190,7 @@ method_call_cb (GDBusConnection       *connection,
 
 static const gchar introspection_xml[] =
 	"<node>"
-	    "<interface name='org.gnome.panel.applet.AppletFactory'>"
+	    "<interface name='org.consort.panel.applet.AppletFactory'>"
 	      "<method name='GetApplet'>"
 	        "<arg name='applet_id' type='s' direction='in'/>"
 	        "<arg name='screen' type='i' direction='in'/>"

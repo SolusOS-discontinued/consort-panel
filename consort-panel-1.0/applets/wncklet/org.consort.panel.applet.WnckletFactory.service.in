@@ -1,3 +1,3 @@
 [D-BUS Service]
-Name=org.gnome.panel.applet.WnckletFactory
+Name=org.consort.panel.applet.WnckletFactory
 Exec=@LOCATION@

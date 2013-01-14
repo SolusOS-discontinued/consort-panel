@@ -533,10 +533,10 @@ BUILT_SOURCES = \
 	clock-typebuiltins.h
 
 appletdir = $(appletsdir)
-applet_in_files = org.gnome.panel.ClockApplet.panel-applet.in
+applet_in_files = org.consort.panel.ClockApplet.panel-applet.in
 applet_DATA = $(applet_in_files:.panel-applet.in=.panel-applet)
 @CLOCK_INPROCESS_FALSE@servicedir = $(datadir)/dbus-1/services
-@CLOCK_INPROCESS_FALSE@service_in_files = org.gnome.panel.applet.ClockAppletFactory.service.in
+@CLOCK_INPROCESS_FALSE@service_in_files = org.consort.panel.applet.ClockAppletFactory.service.in
 @CLOCK_INPROCESS_FALSE@service_DATA = $(service_in_files:.service.in=.service)
 ui_FILES = \
 	clock.ui	\
@@ -546,7 +546,7 @@ schemasdir = $(GCONF_SCHEMA_FILE_DIR)
 schemas_in_files = clock.schemas.in
 schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
 EXTRA_DIST = \
-	org.gnome.panel.ClockApplet.panel-applet.in.in	\
+	org.consort.panel.ClockApplet.panel-applet.in.in	\
 	$(schemas_in_files)				\
 	$(ui_FILES)					\
 	clock.gresource.xml				\
@@ -1542,7 +1542,7 @@ $(applet_in_files): $(applet_in_files).in Makefile
 
 @PANEL_INTLTOOL_PANEL_APPLET_RULE@
 
-@CLOCK_INPROCESS_FALSE@org.gnome.panel.applet.ClockAppletFactory.service: $(service_in_files)
+@CLOCK_INPROCESS_FALSE@org.consort.panel.applet.ClockAppletFactory.service: $(service_in_files)
 @CLOCK_INPROCESS_FALSE@	$(AM_V_GEN)sed \
 @CLOCK_INPROCESS_FALSE@		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 @CLOCK_INPROCESS_FALSE@		$< > $@

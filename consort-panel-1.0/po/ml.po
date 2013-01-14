@@ -619,19 +619,19 @@ msgstr "'%s' സഹായത്തിനുള്ള രേഖ പ്രദര�
 msgid "Error displaying help document"
 msgstr "സഹായത്തിനുളള രേഖ പ്രദര്‍ശിപ്പിക്കുന്നതില്‍ പിശകു്"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:1
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:1
 msgid "Clock"
 msgstr "ഘടികാരം"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:2
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:2
 msgid "Clock Applet Factory"
 msgstr "ഘടികാര ലഘുപ്രയോഗ ശാല"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:3
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:3
 msgid "Factory for clock applet"
 msgstr "ഘടികാര ലഘുപ്രയോഗത്തിന്റെ ശാല"
 
-#: ../applets/clock/org.gnome.panel.ClockApplet.panel-applet.in.in.h:4
+#: ../applets/clock/org.consort.panel.ClockApplet.panel-applet.in.in.h:4
 msgid "Get the current time and date"
 msgstr "ഇപ്പോഴത്തെ സമയവും തിയ്യതിയും അറിയുക"
 
@@ -756,19 +756,19 @@ msgstr "_കുത്തനെയുള്ള പാളികളില്‍ ക
 msgid "seconds"
 msgstr "സെക്കന്റുകള്‍"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:1
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:1
 msgid "Display a swimming fish or another animated creature"
 msgstr "നീന്തുന്ന മത്സ്യമോ ചലിക്കുന്ന മറ്റൊരു ജീവിയോ പ്രദര്‍ശിപ്പിക്കുക"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:2
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:2
 msgid "Fish"
 msgstr "മീന്‍"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:3
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:3
 msgid "From Whence That Stupid Fish Came"
 msgstr "ആ പൊട്ട മീന്‍ എവിടെ നിന്നും വന്നു"
 
-#: ../applets/fish/org.gnome.panel.FishApplet.panel-applet.in.in.h:4
+#: ../applets/fish/org.consort.panel.FishApplet.panel-applet.in.in.h:4
 msgid "Wanda Factory"
 msgstr "വാണ്ട ശാല"
 
@@ -776,60 +776,60 @@ msgstr "വാണ്ട ശാല"
 msgid "Panel Notification Area"
 msgstr "പാളി അറിയിപ്പു് പരിധി"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:1
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:1
 msgid "Area where notification icons appear"
 msgstr "അറിയിപ്പു് ചിഹ്നങ്ങള്‍ വരുന്ന പ്രദേശം"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:2
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:2
 msgid "Factory for notification area"
 msgstr "അറിയിപ്പ് കാണുന്നിടത്തിനുള്ള ശാല"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:3
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:3
 msgid "Notification Area"
 msgstr "അറിയിപ്പു് പരിധി"
 
-#: ../applets/notification_area/org.gnome.panel.NotificationAreaApplet.panel-applet.in.in.h:4
+#: ../applets/notification_area/org.consort.panel.NotificationAreaApplet.panel-applet.in.in.h:4
 msgid "Notification Area Factory"
 msgstr "അറിയിപ്പു് പരിധിയുടെ ശാല"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:1
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:1
 msgid "Factory for the window navigation related applets"
 msgstr "ജാലക നീക്കവുമായി ബന്ധപ്പെട്ട ലഘുപ്രയോഗങ്ങളുടെ ശാഖ"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:2
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:2
 msgid "Hide application windows and show the desktop"
 msgstr "പ്രയോഗങ്ങളുടെ ജാലകം അദൃശ്യമാക്കി പണിയിടം കാണിയ്ക്കുക"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:3
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:3
 msgid "Show Desktop"
 msgstr "പണിയിടം കാണിയ്ക്കുക"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:4
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:4
 msgid "Switch between open windows using a menu"
 msgstr "തുറന്നിരിക്കുന്ന ജാലകങ്ങള്‍ മെനു ഉപയോഗിച്ച് മാറുക"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:5
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:5
 msgid "Switch between open windows using buttons"
 msgstr "തുറന്നിരിക്കുന്ന ജാലകങ്ങള്‍ ബട്ടണ്‍ ഉപയോഗിച്ച് മാറുക"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:6
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:6
 msgid "Switch between workspaces"
 msgstr "പണിയറകള്‍ മാറുക"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:7
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:7
 msgid "Window List"
 msgstr "ജാലക നാമാവലി"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:8
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:8
 msgid "Window Navigation Applet Factory"
 msgstr "Window നാവിഗേഷന്‍ ലഘുപ്രയോഗ ശാല"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:9
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:9
 #: ../applets/wncklet/window-menu.c:204
 msgid "Window Selector"
 msgstr "ജാലകം തെരഞ്ഞെടുക്കല്‍ സംവിധാനം"
 
-#: ../applets/wncklet/org.gnome.panel.Wncklet.panel-applet.in.in.h:10
+#: ../applets/wncklet/org.consort.panel.Wncklet.panel-applet.in.in.h:10
 msgid "Workspace Switcher"
 msgstr "പണിയറ തെരഞ്ഞെടുക്കുക"
 
@@ -2417,19 +2417,19 @@ msgstr ""
 "ഒരു പാളി നീക്കം ചെയ്യുമ്പോള്‍, അതിനോടൊപ്പം അതിലുളള ക്രമീകരണങ്ങളും\n"
 "നഷ്ടമാകുന്നു."
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:1
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:1
 msgid "A simple applet for testing the GNOME panel"
 msgstr "ഗ്നോം പാളി പരീക്ഷിക്കുന്നതിനുളള ലളിതമായ ലഘുപ്രയോഗം"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:2
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:2
 msgid "Factory for Test DBus Applet"
 msgstr "പരീക്ഷണ ഡിബസ് ലഘുപ്രയോഗത്തിനുള്ള ശാല"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:3
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:3
 msgid "Test DBus Applet"
 msgstr "പരീക്ഷണ ഡിബസ് ലഘുപ്രയോഗം"
 
-#: ../libpanel-applet/org.gnome.panel.TestApplet.panel-applet.in.h:4
+#: ../libpanel-applet/org.consort.panel.TestApplet.panel-applet.in.h:4
 msgid "Test DBus Applet Factory"
 msgstr "പരീക്ഷണ ഡിബസ് ലഘുപ്രയോഗ ശാല"
 

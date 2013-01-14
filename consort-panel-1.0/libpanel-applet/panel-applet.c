@@ -172,7 +172,7 @@ static const GtkActionEntry menu_entries[] = {
 
 G_DEFINE_TYPE (PanelApplet, panel_applet, GTK_TYPE_EVENT_BOX)
 
-#define PANEL_APPLET_INTERFACE   "org.gnome.panel.applet.Applet"
+#define PANEL_APPLET_INTERFACE   "org.consort.panel.applet.Applet"
 #define PANEL_APPLET_OBJECT_PATH "/org/gnome/panel/applet/%s/%d"
 
 static void
@@ -2438,7 +2438,7 @@ set_property_cb (GDBusConnection *connection,
 
 static const gchar introspection_xml[] =
 	"<node>"
-	  "<interface name='org.gnome.panel.applet.Applet'>"
+	  "<interface name='org.consort.panel.applet.Applet'>"
 	    "<method name='PopupMenu'>"
 	      "<arg name='button' type='u' direction='in'/>"
 	      "<arg name='time' type='u' direction='in'/>"

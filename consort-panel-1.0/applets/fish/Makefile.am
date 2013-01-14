@@ -40,7 +40,7 @@ fish_applet_CFLAGS = $(AM_CFLAGS)
 endif
 
 appletdir       = $(appletsdir)
-applet_in_files = org.gnome.panel.FishApplet.panel-applet.in
+applet_in_files = org.consort.panel.FishApplet.panel-applet.in
 applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
@@ -54,10 +54,10 @@ $(applet_in_files): $(applet_in_files).in Makefile
 
 if !FISH_INPROCESS
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.gnome.panel.applet.FishAppletFactory.service.in
+service_in_files = org.consort.panel.applet.FishAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.gnome.panel.applet.FishAppletFactory.service: $(service_in_files)
+org.consort.panel.applet.FishAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
 		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 		$< > $@
@@ -93,7 +93,7 @@ BUILT_SOURCES = 		\
 EXTRA_DIST =						\
 	wanda.svg					\
 	$(fishbitmaps_DATA)				\
-	org.gnome.panel.FishApplet.panel-applet.in.in	\
+	org.consort.panel.FishApplet.panel-applet.in.in	\
 	$(service_in_files)				\
 	$(ui_FILES)					\
 	fish.gresource.xml

@@ -71,7 +71,7 @@ na-marshal.c: na-marshal.list $(GLIB_GENMARSHAL)
 BUILT_SOURCES = na-marshal.c na-marshal.h
 
 appletdir       = $(appletsdir)
-applet_in_files = org.gnome.panel.NotificationAreaApplet.panel-applet.in
+applet_in_files = org.consort.panel.NotificationAreaApplet.panel-applet.in
 applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
@@ -85,17 +85,17 @@ $(applet_in_files): $(applet_in_files).in Makefile
 
 if !NOTIFICATION_AREA_INPROCESS
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.gnome.panel.applet.NotificationAreaAppletFactory.service.in
+service_in_files = org.consort.panel.applet.NotificationAreaAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.gnome.panel.applet.NotificationAreaAppletFactory.service: $(service_in_files)
+org.consort.panel.applet.NotificationAreaAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
 		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 		$< > $@
 endif
 
 EXTRA_DIST =								\
-	org.gnome.panel.NotificationAreaApplet.panel-applet.in.in	\
+	org.consort.panel.NotificationAreaApplet.panel-applet.in.in	\
 	$(ui_DATA)							\
 	$(service_in_files)						\
 	na-marshal.list

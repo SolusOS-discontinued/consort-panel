@@ -66,10 +66,10 @@ static const AppletPropertyInfo applet_properties [] = {
 #define PANEL_APPLET_CONTAINER_GET_PRIVATE(o) \
 	(G_TYPE_INSTANCE_GET_PRIVATE ((o), PANEL_TYPE_APPLET_CONTAINER, PanelAppletContainerPrivate))
 
-#define PANEL_APPLET_BUS_NAME            "org.gnome.panel.applet.%s"
-#define PANEL_APPLET_FACTORY_INTERFACE   "org.gnome.panel.applet.AppletFactory"
+#define PANEL_APPLET_BUS_NAME            "org.consort.panel.applet.%s"
+#define PANEL_APPLET_FACTORY_INTERFACE   "org.consort.panel.applet.AppletFactory"
 #define PANEL_APPLET_FACTORY_OBJECT_PATH "/org/gnome/panel/applet/%s"
-#define PANEL_APPLET_INTERFACE           "org.gnome.panel.applet.Applet"
+#define PANEL_APPLET_INTERFACE           "org.consort.panel.applet.Applet"
 
 static gboolean panel_applet_container_plug_removed (PanelAppletContainer *container);
 

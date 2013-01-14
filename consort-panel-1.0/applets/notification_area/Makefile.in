@@ -425,13 +425,13 @@ testtray_LDADD = \
 @NOTIFICATION_AREA_INPROCESS_FALSE@notification_area_applet_CFLAGS = $(AM_CFLAGS)
 BUILT_SOURCES = na-marshal.c na-marshal.h
 appletdir = $(appletsdir)
-applet_in_files = org.gnome.panel.NotificationAreaApplet.panel-applet.in
+applet_in_files = org.consort.panel.NotificationAreaApplet.panel-applet.in
 applet_DATA = $(applet_in_files:.panel-applet.in=.panel-applet)
 @NOTIFICATION_AREA_INPROCESS_FALSE@servicedir = $(datadir)/dbus-1/services
-@NOTIFICATION_AREA_INPROCESS_FALSE@service_in_files = org.gnome.panel.applet.NotificationAreaAppletFactory.service.in
+@NOTIFICATION_AREA_INPROCESS_FALSE@service_in_files = org.consort.panel.applet.NotificationAreaAppletFactory.service.in
 @NOTIFICATION_AREA_INPROCESS_FALSE@service_DATA = $(service_in_files:.service.in=.service)
 EXTRA_DIST = \
-	org.gnome.panel.NotificationAreaApplet.panel-applet.in.in	\
+	org.consort.panel.NotificationAreaApplet.panel-applet.in.in	\
 	$(ui_DATA)							\
 	$(service_in_files)						\
 	na-marshal.list
@@ -921,7 +921,7 @@ $(applet_in_files): $(applet_in_files).in Makefile
 
 @PANEL_INTLTOOL_PANEL_APPLET_RULE@
 
-@NOTIFICATION_AREA_INPROCESS_FALSE@org.gnome.panel.applet.NotificationAreaAppletFactory.service: $(service_in_files)
+@NOTIFICATION_AREA_INPROCESS_FALSE@org.consort.panel.applet.NotificationAreaAppletFactory.service: $(service_in_files)
 @NOTIFICATION_AREA_INPROCESS_FALSE@	$(AM_V_GEN)sed \
 @NOTIFICATION_AREA_INPROCESS_FALSE@		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 @NOTIFICATION_AREA_INPROCESS_FALSE@		$< > $@

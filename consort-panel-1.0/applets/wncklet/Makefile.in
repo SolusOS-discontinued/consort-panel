@@ -410,10 +410,10 @@ WNCKLET_LDADD = \
 @WNCKLET_INPROCESS_FALSE@wnck_applet_LDADD = $(WNCKLET_LDADD)
 @WNCKLET_INPROCESS_FALSE@wnck_applet_CFLAGS = $(AM_CFLAGS)
 appletdir = $(appletsdir)
-applet_in_files = org.gnome.panel.Wncklet.panel-applet.in
+applet_in_files = org.consort.panel.Wncklet.panel-applet.in
 applet_DATA = $(applet_in_files:.panel-applet.in=.panel-applet)
 @WNCKLET_INPROCESS_FALSE@servicedir = $(datadir)/dbus-1/services
-@WNCKLET_INPROCESS_FALSE@service_in_files = org.gnome.panel.applet.WnckletFactory.service.in
+@WNCKLET_INPROCESS_FALSE@service_in_files = org.consort.panel.applet.WnckletFactory.service.in
 @WNCKLET_INPROCESS_FALSE@service_DATA = $(service_in_files:.service.in=.service)
 ui_FILES = \
 	window-list-menu.xml		\
@@ -426,7 +426,7 @@ BUILT_SOURCES = \
 	wncklet-resources.h
 
 EXTRA_DIST = \
-	org.gnome.panel.Wncklet.panel-applet.in.in \
+	org.consort.panel.Wncklet.panel-applet.in.in \
 	$(service_in_files) \
 	$(ui_FILES) \
 	wncklet.gresource.xml
@@ -1001,7 +1001,7 @@ $(applet_in_files): $(applet_in_files).in Makefile
 
 @PANEL_INTLTOOL_PANEL_APPLET_RULE@
 
-@WNCKLET_INPROCESS_FALSE@org.gnome.panel.applet.WnckletFactory.service: $(service_in_files)
+@WNCKLET_INPROCESS_FALSE@org.consort.panel.applet.WnckletFactory.service: $(service_in_files)
 @WNCKLET_INPROCESS_FALSE@	$(AM_V_GEN)sed \
 @WNCKLET_INPROCESS_FALSE@		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 @WNCKLET_INPROCESS_FALSE@		$< > $@
