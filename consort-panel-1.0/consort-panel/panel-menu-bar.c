@@ -59,6 +59,10 @@ struct _PanelMenuBarPrivate {
 	/** A system menu */
 	GtkWidget   *system_item;
 	GtkWidget   *system_menu;
+
+	/** System Menu submenus */
+	GtkWidget   *prefs_menu;
+	GtkWidget   *admin_menu;
 };
 
 static gboolean
@@ -127,8 +131,43 @@ panel_menu_bar_setup_tooltip (PanelMenuBar *menubar)
  */
 static GtkWidget*
 panel_menu_bar_create_system_menu (PanelMenuBar *menubar) {
+	GtkWidget *menu;
+	GtkWidget *prefs_item;
+	GtkWidget *admin_item;
 
-	return NULL;
+	// Construct an empty menu
+	menu = create_empty_menu ();
+
+	// Setup Preferences menu
+	prefs_item = panel_image_menu_item_new ();
+	gtk_menu_item_set_label (GTK_MENU_ITEM (prefs_item),
+				 _("Preferences"));
+	menubar->priv->prefs_menu = create_applications_menu ("applications.menu", "/System/Preferences", TRUE);
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (prefs_item),
+				   menubar->priv->prefs_menu);
+
+	// Setup Administration menu
+	admin_item = panel_image_menu_item_new ();
+	gtk_menu_item_set_label (GTK_MENU_ITEM (admin_item),
+				 _("Administration"));
+	menubar->priv->admin_menu = create_applications_menu ("applications.menu", "/System/Administration", TRUE);
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (admin_item),
+				   menubar->priv->admin_menu);
+
+	// Add them to the menu
+	gtk_menu_shell_append (GTK_MENU_SHELL (menu), prefs_item);
+	gtk_menu_shell_append (GTK_MENU_SHELL (menu), admin_item);
+
+	gtk_widget_show (prefs_item);
+	gtk_widget_show (admin_item);
+
+	// Separate these items from help (TODO)
+	//add_menu_separator (menu);
+
+	// Append the lock + logout items. Do this manually in future
+	panel_menu_items_append_lock_logout (menu);
+
+	return menu;
 }
 
 static void
@@ -160,9 +199,14 @@ panel_menu_bar_init (PanelMenuBar *menubar)
 	gtk_widget_show (menubar->priv->places_item);
 
 	/** Build the System menu */
-	menubar->priv->system_item = panel_desktop_menu_item_new (FALSE, TRUE, TRUE);
-	gtk_menu_item_set_label (GTK_MENU_ITEM (menubar->priv->system_item),
-				 _("System")); // Otherwise we're set up identically to User Menu
+	menubar->priv->system_menu = panel_menu_bar_create_system_menu (menubar);
+	menubar->priv->system_item = gtk_menu_item_new ();
+	setup_menuitem (GTK_WIDGET (menubar->priv->system_item),
+			GTK_ICON_SIZE_INVALID, NULL,
+			_("System"));
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menubar->priv->system_item),
+				   menubar->priv->system_menu);
+
 	gtk_menu_shell_append (GTK_MENU_SHELL (menubar),
 			       menubar->priv->system_item);
 	gtk_widget_show (menubar->priv->system_item);
@@ -191,8 +235,9 @@ panel_menu_bar_parent_set (GtkWidget *widget,
 						 menubar->priv->panel);
 
 	if (menubar->priv->system_item)
-		panel_place_menu_item_set_panel (menubar->priv->system_item,
-						 menubar->priv->panel);
+		panel_applet_menu_set_recurse (GTK_MENU (menubar->priv->system_menu),
+					       "menu_panel",
+					       menubar->priv->panel);
 }
 
 static void
