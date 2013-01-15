@@ -154,13 +154,10 @@ panel_menu_bar_init (PanelMenuBar *menubar)
 	menubar->priv->system_item = panel_desktop_menu_item_new (FALSE, TRUE, TRUE);
 	gtk_menu_item_set_label (GTK_MENU_ITEM (menubar->priv->system_item),
 				 _("System")); // Otherwise we're set up identically to User Menu
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (menubar->priv->system_item),
-				   menubar->priv->system_menu);
 	gtk_menu_shell_append (GTK_MENU_SHELL (menubar),
 			       menubar->priv->system_item);
 	gtk_widget_show (menubar->priv->system_item);
 
-	
 	panel_menu_bar_setup_tooltip (menubar);
 }
 
