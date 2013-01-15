@@ -122,6 +122,15 @@ panel_menu_bar_setup_tooltip (PanelMenuBar *menubar)
 			  menubar);
 }
 
+/**
+ * Create the System menu
+ */
+static GtkWidget*
+panel_menu_bar_create_system_menu (PanelMenuBar *menubar) {
+
+	return NULL;
+}
+
 static void
 panel_menu_bar_init (PanelMenuBar *menubar)
 {

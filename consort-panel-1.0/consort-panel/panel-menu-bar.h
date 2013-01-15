@@ -69,6 +69,8 @@ void       panel_menu_bar_invoke_menu      (PanelMenuBar *menubar,
 void       panel_menu_bar_popup_menu       (PanelMenuBar *menubar,
 					    guint32       activate_time);
 
+GtkWidget* panel_menu_bar_create_system_menu (PanelMenuBar *menubar);
+
 G_END_DECLS
 
 #endif /* __PANEL_MENU_BAR_H__ */
