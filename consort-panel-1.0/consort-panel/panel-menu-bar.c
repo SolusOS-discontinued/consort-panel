@@ -63,6 +63,10 @@ struct _PanelMenuBarPrivate {
 	/** System Menu submenus */
 	GtkWidget   *prefs_menu;
 	GtkWidget   *admin_menu;
+
+	/** Submenu icons */
+	GtkWidget   *prefs_image;
+	GtkWidget   *admin_image;
 };
 
 static gboolean
@@ -140,6 +144,8 @@ panel_menu_bar_create_system_menu (PanelMenuBar *menubar) {
 
 	// Setup Preferences menu
 	prefs_item = panel_image_menu_item_new ();
+	menubar->priv->prefs_image = gtk_image_new_from_icon_name (PANEL_ICON_PREFERENCES,
+								   panel_menu_bar_object_icon_get_size  ());
 	gtk_menu_item_set_label (GTK_MENU_ITEM (prefs_item),
 				 _("Preferences"));
 	menubar->priv->prefs_menu = create_applications_menu ("applications.menu", "/System/Preferences", TRUE);
@@ -148,11 +154,19 @@ panel_menu_bar_create_system_menu (PanelMenuBar *menubar) {
 
 	// Setup Administration menu
 	admin_item = panel_image_menu_item_new ();
+	menubar->priv->admin_image = gtk_image_new_from_icon_name (PANEL_ICON_SYSTEM_PREFS,
+								   panel_menu_bar_object_icon_get_size  ());
 	gtk_menu_item_set_label (GTK_MENU_ITEM (admin_item),
 				 _("Administration"));
 	menubar->priv->admin_menu = create_applications_menu ("applications.menu", "/System/Administration", TRUE);
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (admin_item),
 				   menubar->priv->admin_menu);
+
+	// Set up icons
+	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (prefs_item),
+				       menubar->priv->prefs_image);
+	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (admin_item),
+				       menubar->priv->admin_image);
 
 	// Add them to the menu
 	gtk_menu_shell_append (GTK_MENU_SHELL (menu), prefs_item);
