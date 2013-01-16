@@ -62,13 +62,16 @@ Suggests: yelp,
           nautilus,
           evolution,
           epiphany-browser
+Conflicts: gnome-panel
 Breaks: gnome-session (<< 2.26),
         gnome-power-manager (<< 2.26),
         gnome-control-center (<< 1:2.91),
         gnome-settings-daemon (<< 2.91),
         gnome-applets (<< 2.91),
         netspeed (<< 0.16-2),
-        libpanel-applet2-0
+        libpanel-applet2-0,
+	gnome-panel
+Provides: gnome-panel
 Replaces: consort-panel-data (<< 2.91)
 Description: launcher and docking facility for GNOME
  The GNOME Panel is an essential part of the GNOME Desktop, providing
