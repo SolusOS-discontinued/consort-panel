@@ -817,7 +817,7 @@ panel_properties_dialog_present (PanelToplevel *toplevel)
 		gtk_builder_add_from_resource (gui,
 					       PANEL_RESOURCE_PATH "panel-properties-dialog-modern.ui",
 					       NULL);
-
+	}
 	dialog = panel_properties_dialog_new (toplevel, gui);
 
 	g_object_unref (gui);
