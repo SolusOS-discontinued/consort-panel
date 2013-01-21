@@ -4,8 +4,8 @@ orientation=bottom
 size=24
 y-bottom=0
 
-[Object cardapio-menu]
-object-iid=cardapiognome3Factory::cardapiognome3
+[Object menubar]
+object-iid=PanelInternalFactory::MenuBar
 toplevel-id=bottom-panel
 pack-type=start
 pack-index=0
