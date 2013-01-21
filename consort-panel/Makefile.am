@@ -239,6 +239,7 @@ BUILT_SOURCES = 				\
 
 ui_FILES =					\
 	panel-properties-dialog.ui		\
+	panel-properties-dialog-modern.ui	\
 	panel-run-dialog.ui
 
 panel-resources.c: panel.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/panel.gresource.xml)
