@@ -994,47 +994,47 @@ msgstr "И_мена радних површина:"
 msgid "Workspaces"
 msgstr "Радне површине"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:1
 msgid ""
 "A fish without a name is a pretty dull fish. Bring your fish to life by "
 "naming him."
 msgstr ""
 "Риба без имена је прилично глупа риба. Оживите вашу рибу дајући јој име."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:2
 msgid "Command to execute on click"
 msgstr "Наредба за извршење по клику"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:3
 msgid ""
 "If true, the fish's animation will be displayed rotated on vertical panels."
 msgstr ""
 "Уколико је постављено, анимација рибе ће бити ротирана када је панел усмерен "
 "усправно."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:4
 msgid "Pause per frame"
 msgstr "Пауза по кадру"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:5
 msgid "Rotate on vertical panels"
 msgstr "Ротирај на усправним панелима"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:6
 msgid "The fish's animation pixmap"
 msgstr "Сличица за анимацију рибе"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:7
 msgid "The fish's name"
 msgstr "Име рибе"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:8
 msgid ""
 "This key specifies the command that will be tried to execute when the fish "
 "is clicked."
 msgstr "Овај кључ наводи наредбу за извршење по клику на рибу."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:9
 msgid ""
 "This key specifies the filename of the pixmap which will be used for the "
 "animation displayed in the fish applet relative to the pixmap directory."
@@ -1042,11 +1042,11 @@ msgstr ""
 "Овај кључ наводи име датотеке са сликом која се користи за анимацију рибе, "
 "дату у односу на директоријум са сликама."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:10
 msgid "This key specifies the number of seconds each frame will be displayed."
 msgstr "Овај кључ наводи трајање сваког кадра у секундама."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:1
 msgid ""
 "Decides when to group windows from the same application on the window list. "
 "Possible values are \"never\", \"auto\" and \"always\"."
@@ -1055,7 +1055,7 @@ msgstr ""
 "Дозвољене вредности су „never“ (никад), „auto“ (аутоматски) и "
 "„always“ (увек)."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:2
 msgid ""
 "If true, the window list will show windows from all workspaces. Otherwise it "
 "will only display windows from the current workspace."
@@ -1063,7 +1063,7 @@ msgstr ""
 "Уколико је ово укључено, списак прозора приказује прозоре са свих радних "
 "површина, а иначе само са текуће."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:3
 msgid ""
 "If true, then when unminimizing a window, move it to the current workspace. "
 "Otherwise, switch to the workspace of the window."
@@ -1071,27 +1071,27 @@ msgstr ""
 "Уколико је ово укључено, када приказујете умањени прозор, пребаци га на "
 "текућу радну површину. Иначе, пребацује на његову матичну радну површину. "
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:4
 msgid "Move windows to current workspace when unminimized"
 msgstr "Пребаци умањене прозоре на тренутну радну површину при приказу"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:5
 msgid "Show windows from all workspaces"
 msgstr "Прикажи прозоре са свих радних површина"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:6
 msgid "When to group windows"
 msgstr "Када груписати прозоре"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
 msgid "Display all workspaces"
 msgstr "Прикажи све радне површине"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
 msgid "Display workspace names"
 msgstr "Прикажи имена радних површина"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
 msgid ""
 "If true, the workspace switcher will show all workspaces. Otherwise it will "
 "only show the current workspace."
@@ -1099,7 +1099,7 @@ msgstr ""
 "Уколико је ово укључено, измена радних површина приказује све радне "
 "површине, иначе приказује само тренутну."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
 msgid ""
 "If true, the workspaces in the workspace switcher will display the names of "
 "the workspaces. Otherwise they will display the windows on the workspace. "
@@ -1109,11 +1109,11 @@ msgstr ""
 "радних површина. Иначе ће приказивати садржај радне површине. Ово ради само "
 "ако се користи Метасити као управљач прозорима."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
 msgid "Rows in workspace switcher"
 msgstr "Број редова у измени радних површина"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
 msgid ""
 "This key specifies how many rows (for horizontal layout) or columns (for "
 "vertical layout) the workspace switcher shows the workspaces in. This key is "
@@ -1123,7 +1123,7 @@ msgstr ""
 "усправно пружање) ће приказивати измена радних површина. Овај кључ има "
 "значаја једино ако је кључ display_all_workspaces постављен."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:1
 msgid ""
 "A list of applet IIDs that the panel will ignore. This way you can disable "
 "certain applets from loading or showing up in the menu. For example to "
@@ -1136,7 +1136,7 @@ msgstr ""
 "GNOME_MiniCommanderApplet“ у овај списак. Панел је неопходно поново "
 "покренути да би ово узело маха."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:2
 msgid ""
 "A list of panel IDs. Each ID identifies an individual toplevel panel. The "
 "settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
@@ -1144,7 +1144,7 @@ msgstr ""
 "Списак ИБ-а панела. Сваки ИБ одређује један панел првог нивоа. Подешавања за "
 "сваки од ових панела се налазе у /apps/panel/toplevels/$(id)."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:3
 msgid ""
 "A list of panel object IDs. Each ID identifies an individual panel object (e."
 "g. an applet, launcher, action button or menu button/bar). The settings for "
@@ -1154,43 +1154,43 @@ msgstr ""
 "(нпр. програмче, покретач, дугме или траку/дугме са менијем). Подешавања за "
 "сваки објекат се налазе у /apps/panel/objects/$(id)."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:4
 msgid "Applet IIDs to disable from loading"
 msgstr "IID-и програмчета за искључивање учитавања"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:5
 msgid "Complete panel lockdown"
 msgstr "Потпуно закључавање панела"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:6
 msgid "Confirm panel removal"
 msgstr "Потврди уклањање панела"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:7
 msgid "Disable Force Quit"
 msgstr "Онемогући принуду затварања"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:8
 msgid "Enable autocompletion in \"Run Application\" dialog"
 msgstr "Омогући самодопуну у прозорчету за покретање наредби."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:9
 msgid "Enable program list in \"Run Application\" dialog"
 msgstr "Прикажи списак програма у прозорчету за покретање наредби."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:10
 msgid "Enable tooltips"
 msgstr "Укључи кратка упутства"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:11
 msgid "Expand program list in \"Run Application\" dialog"
 msgstr "Разгранај списак програма у прозорчету за покретање наредби"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:12
 msgid "History of \"Run Application\" dialog"
 msgstr "Прикажи историјат у прозорчету за покретање наредби"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:13
 msgid ""
 "If true, a dialog is shown asking for confirmation if the user wants to "
 "remove a panel."
@@ -1198,14 +1198,14 @@ msgstr ""
 "Уколико је постављено, приказује се прозорче у којем се тражи одобрење "
 "корисника за уклањање панела."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:14
 msgid ""
 "If true, autocompletion in the \"Run Application\" dialog is made available."
 msgstr ""
 "Уколико је постављено, самодопуна ће бити доступна у прозорчету за покретање "
 "наредби."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is expanded when the dialog is opened. This key is only relevant if "
@@ -1215,7 +1215,7 @@ msgstr ""
 "програма је разгранат. Ово подешавање је значајно једино ако је постављено "
 "enable_program_list."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is made available. Whether or not the listing is expanded when the "
@@ -1225,7 +1225,7 @@ msgstr ""
 "покретање програма. Да ли је списак разгранат при приказивању прозорчета се "
 "подешава помоћу show_program_list."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the panel will not allow a user to force an application to quit by "
 "removing access to the force quit button."
@@ -1233,7 +1233,7 @@ msgstr ""
 "Уколико је постављено, панел неће дозволити кориснику да принудно затвори "
 "програм уклањањем дугмета за принудно затварање."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the panel will not allow any changes to the configuration of the "
 "panel. Individual applets may need to be locked down separately however. The "
@@ -1243,7 +1243,7 @@ msgstr ""
 "панела. Појединачни програмчићи се могу засебно закључати. Панел је "
 "неопходно изнова покенути да би ово узело маха."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:19
 msgid ""
 "If true, tooltips are shown for objects in panels. Tooltips can be disabled "
 "for the whole desktop with the gtk-enable-tooltips property in GTK+."
@@ -1252,26 +1252,26 @@ msgstr ""
 "искључени за целу радну површ својствима гтк-укључи-савете (gtk-enable-"
 "tooltips) у ГТК+."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:20
 msgid "Panel ID list"
 msgstr "Списак ИБ-а панела"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:21
 msgid "Panel object ID list"
 msgstr "Списак ИБ-а објеката на панелу"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:22
 msgid ""
 "The list of commands used in the past in the \"Run Application\" dialog."
 msgstr ""
 "Приказује списак наредби које су раније коришћене у прозорчету на покретање "
 "наредби."
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:1
 msgid "Launcher location"
 msgstr "Позиција покретача"
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:2
 msgid ""
 "The location of the .desktop file describing the launcher. This key is only "
 "relevant if the object_type key is \"launcher-object\"."
@@ -1279,15 +1279,15 @@ msgstr ""
 "Место .desktop датотеке која описује овај покретач. Ово подешавање је "
 "значајно једино ако је врста објекта „launcher-object“."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:1
 msgid "Icon used for button"
 msgstr "Икона која се користи за дугме"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:2
 msgid "Menu content path"
 msgstr "Путања садржаја менија"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:3
 msgid ""
 "The location of the image file used as the icon for the object's button. If "
 "empty, the default icon for the menu will be used."
@@ -1295,7 +1295,7 @@ msgstr ""
 "Путања до датотеке са сликом која се користи као икона за дугме овог "
 "објекта. Уколико је празно, користи се подразумевана икона менија."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:4
 msgid ""
 "The path from which the menu contents is contructed. If empty, the menu will "
 "be the default applications menu."
@@ -1303,15 +1303,15 @@ msgstr ""
 "Путања на основу које се изграђује садржај менија. Уколико је празно, "
 "користи се подразумевани мени са програмима."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:5
 msgid "The text to display in a tooltip for this menu."
 msgstr "Текст за приказивање у облачићу за овај изборник."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:6
 msgid "Tooltip displayed for menu"
 msgstr "Облачић за мени"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:1
 msgid ""
 "If set to 'end', the position of the object is interpreted relative to the "
 "right (or bottom if vertical) edge of the panel."
@@ -1319,29 +1319,29 @@ msgstr ""
 "Уколико је постављено на „end“ (крај), позиција објекта се посматра у односу "
 "на десну (или доњу — уколико је усправан) ивицу панела."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:2
 msgid "Interpret position relative to bottom/right edge"
 msgstr "Позиција је дата у односу на доњу/десну ивицу"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:3
 msgid "Object IID"
 msgstr "ИБ објекта"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:4
 msgid "Object's position on the panel"
 msgstr "Позиција објекта на панелу"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:5
 msgid "The identifier of the toplevel panel which contains this object."
 msgstr "Идентификатор панела првог нивоа који садржи овај објекат."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:6
 msgid ""
 "The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
 "\"."
 msgstr "ИБ имплементације за објекат — нпр. „ClockAppletFactory::ClockApplet“."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:7
 msgid ""
 "The position of this panel object. The position is specified by the number "
 "of pixels from the left (or top if vertical) panel edge."
@@ -1349,39 +1349,39 @@ msgstr ""
 "Позиција овог објекта на панелу. Наводи се као број тачака у односу на леву "
 "(или горњу — ако је усправан) ивицу панела."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:8
 msgid "Toplevel panel containing object"
 msgstr "Панел првог нивоа који садржи овај објекат"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:1
 msgid "Animation speed"
 msgstr "Брзина анимације"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:2
 msgid "Automatically hide panel into corner"
 msgstr "Аутоматски сакриј панел у ћошак"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:3
 msgid "Background color"
 msgstr "Боја позадине"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:4
 msgid "Background image"
 msgstr "Слика за позадину"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:5
 msgid "Background type"
 msgstr "Врста позадине"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:6
 msgid "Center panel on x-axis"
 msgstr "Центрирај панел водоравно"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:7
 msgid "Center panel on y-axis"
 msgstr "Центрирај панел усправно"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:8
 msgid ""
 "Determines how the image set by image-uri is rendered. Possible values are "
 "\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
@@ -1395,19 +1395,19 @@ msgstr ""
 "смањена (задржавајући однос размера слике) на висину панела (ако је "
 "положена)."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:9
 msgid "Enable arrows on hide buttons"
 msgstr "Прикажи стрелице на дугмићима за скривање"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:10
 msgid "Enable hide buttons"
 msgstr "Омогући дугмиће за скривање"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:11
 msgid "Expand to occupy entire screen width"
 msgstr "Рашири да заузме целу ширину екрана"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:12
 msgid ""
 "If true, arrows will be placed on the hide buttons. This key is only "
 "relevant if the enable_buttons key is true."
@@ -1415,7 +1415,7 @@ msgstr ""
 "Уколико је постављено, стрелице ће се сместити на дугмиће за скривање. Ова "
 "поставка је значајна једино ако је постављено enable_buttons."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:13
 msgid ""
 "If true, buttons will be placed on each side of the panel which may be used "
 "to move the panel to edge of the screen, leaving only a button showing."
@@ -1423,7 +1423,7 @@ msgstr ""
 "Уколико је постављено, са сваке стране панела ће се приказати дугмићи којима "
 "се панел може померити на ивицу екрана, тако да само дугме остане приказано."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:14
 msgid ""
 "If true, the background image will be rotated when the panel is oriented "
 "vertically."
@@ -1431,7 +1431,7 @@ msgstr ""
 "Уколико је постављено, слика за позадину ће бити ротирана када је панел "
 "усмерен усправно."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the panel is automatically hidden into a corner of the screen when "
 "the pointer leaves the panel area. Moving the pointer to that corner again "
@@ -1441,7 +1441,7 @@ msgstr ""
 "самосакрива у ћошак екрана. Померањем показивача у тај ћошак ће се поново "
 "приказати панел."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the panel will occupy the entire screen width (height if this is a "
 "vertical panel). In this mode the panel can only be placed at a screen edge. "
@@ -1453,7 +1453,7 @@ msgstr ""
 "ивицу екрана. Уколико није постављено, панел ће бити таман толики да на њега "
 "може да стане свако програмче, покретач и дугме."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the x and x_right keys are ignored and the panel is placed at the "
 "center of the x-axis of the screen. If the panel is resized it will remain "
@@ -1465,7 +1465,7 @@ msgstr ""
 "панела, остаће на истој позицији — порашће са сваке стране. Уколико није "
 "постављено, кључеви „x“ и „x_right“ одређују положај панела."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the y and y_bottom keys are ignored and the panel is placed at the "
 "center of the y-axis of the screen. If the panel is resized it will remain "
@@ -1477,11 +1477,11 @@ msgstr ""
 "панела, остаће на истој позицији — порашће са сваке стране. Уколико није "
 "постављено, кључеви „y“ и „y_bottom“ одређују положај панела."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:19
 msgid "Image options"
 msgstr "Опције слике"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:20
 msgid ""
 "In a Xinerama setup, you may have panels on each individual monitor. This "
 "key identifies the current monitor the panel is displayed on."
@@ -1489,35 +1489,35 @@ msgstr ""
 "Када се користи Ксинерама, можете имати панеле на сваком екрану. Овај кључ "
 "одређује текући екран на којем се приказује панел."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:21
 msgid "Name to identify panel"
 msgstr "Име којим се распознаје овај панел"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:22
 msgid "Panel autohide delay"
 msgstr "Време сакривања панела"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:23
 msgid "Panel autounhide delay"
 msgstr "Време откривања панела"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:24
 msgid "Panel orientation"
 msgstr "Усмерење панела"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:25
 msgid "Panel size"
 msgstr "Величина панела"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:26
 msgid "Rotate image on vertical panels"
 msgstr "Ротирај слику на усправним панелима"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:27
 msgid "Specifies the background color for the panel in #RGB format."
 msgstr "Поставља боју позадине панела у облику #RGB."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:28
 msgid ""
 "Specifies the file to be used for the background image. If the image "
 "contains an alpha channel it will be composited onto the desktop background "
@@ -1526,7 +1526,7 @@ msgstr ""
 "Одређује датотеку која се користи као слика за позадину. Ако је слика "
 "полупровидна, онда ће се укомпоновати са позадинском сликом радне површине."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:29
 msgid ""
 "Specifies the number of milliseconds delay after the pointer enters the "
 "panel area before the panel is automatically re-shown. This key is only "
@@ -1536,7 +1536,7 @@ msgstr ""
 "пре откривања панела. Ова поставка је значајна једино ако је auto_hide "
 "постављено."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:30
 msgid ""
 "Specifies the number of milliseconds delay after the pointer leaves the "
 "panel area before the panel is automatically hidden. This key is only "
@@ -1546,7 +1546,7 @@ msgstr ""
 "пре скривања панела. Ова поставка је значајна једино ако је auto_hide "
 "постављено."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:31
 msgid ""
 "Specifies the number of pixels visible when the panel is automatically "
 "hidden into a corner. This key is only relevant if the auto_hide key is true."
@@ -1554,7 +1554,7 @@ msgstr ""
 "Одређује колико је тачака видљиво када је панел сакривен у ћошку. Ова "
 "поставка је значајна једино ако је auto_hide постављено."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:32
 msgid ""
 "The height (width for a vertical panel) of the panel. The panel will "
 "determine at runtime a minimum size based on the font size and other "
@@ -1565,7 +1565,7 @@ msgstr ""
 "најмању величину на основу величине словног лика и осталих показатеља. "
 "Највећа величина је утврђена на четвртину висине (ширине) екрана."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:33
 msgid ""
 "The location of the panel along the x-axis, starting from the right of the "
 "screen. If set to -1, the value is ignored and the value of the x key is "
@@ -1581,7 +1581,7 @@ msgstr ""
 "ова вредност занемарује и панел се поставља уз ивицу екрана како је "
 "назначено у усмерењу."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:34
 msgid ""
 "The location of the panel along the x-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1591,7 +1591,7 @@ msgstr ""
 "нераширеном приказивању. При раширеном приказивању се ова вредност "
 "занемарује и панел се поставља уз ивицу екрана како је назначено у усмерењу."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:35
 msgid ""
 "The location of the panel along the y-axis, starting from the bottom of the "
 "screen. If set to -1, the value is ignored and the value of the y key is "
@@ -1607,7 +1607,7 @@ msgstr ""
 "ова вредност занемарује и панел се поставља уз ивицу екрана како је "
 "назначено у усмерењу."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:36
 msgid ""
 "The location of the panel along the y-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1617,7 +1617,7 @@ msgstr ""
 "нераширеном приказивању. При раширеном приказивању се ова вредност "
 "занемарује и панел се поставља уз ивицу екрана како је назначено у усмерењу."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:37
 msgid ""
 "The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
 "\", \"right\". In expanded mode the key specifies which screen edge the "
@@ -1636,7 +1636,7 @@ msgstr ""
 "пример, на „top“ панелу ће се менији приказивати испод панела, док ће се на "
 "„bottom“ панелу менији приказивати изнад панела."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:38
 msgid ""
 "The speed in which panel animations should occur. Possible values are \"slow"
 "\", \"medium\" and \"fast\". This key is only relevant if the "
@@ -1646,7 +1646,7 @@ msgstr ""
 "„medium“ и „fast“. Ова поставка је значајна једино каде је enable_animations "
 "постављено."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:39
 msgid ""
 "This is a human readable name which you can use to identify a panel. Its "
 "main purpose is to serve as the panel's window title which is useful when "
@@ -1656,11 +1656,11 @@ msgstr ""
 "Његова једина сврха је да служи као наслов прозора панела што може помоћи "
 "при бирању панела."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:40
 msgid "Visible pixels when hidden"
 msgstr "Број видљивих тачака када је сакривен"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:41
 msgid ""
 "Which type of background should be used for this panel. Possible values are "
 "\"none\" - the default GTK+ widget background will be used, \"color\" - the "
@@ -1671,7 +1671,7 @@ msgstr ""
 "користи уобичајену позадина за Гтк+ елементе; „color“ — користи постављену "
 "боју за позадину; или „image“ — користи изабрану слику као позадину."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:42
 msgid ""
 "With a multi-screen setup, you may have panels on each individual screen. "
 "This key identifies the current screen the panel is displayed on."
@@ -1679,27 +1679,27 @@ msgstr ""
 "У систему са више екрана, можете имати панеле на сваком од екрана. Овај кључ "
 "одређује текући екран на ком се приказује панел."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:43
 msgid "X co-ordinate of panel"
 msgstr "Водоравна координата панела"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:44
 msgid "X co-ordinate of panel, starting from the right of the screen"
 msgstr "Водоравна координата панела, у односу на десну страну екрана"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:45
 msgid "X screen where the panel is displayed"
 msgstr "Икс екран на којем је приказан панел"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:46
 msgid "Xinerama monitor where the panel is displayed"
 msgstr "Ксинерама екран на којем је приказан панел"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:47
 msgid "Y co-ordinate of panel"
 msgstr "Усправна координата панела"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:48
 msgid "Y co-ordinate of panel, starting from the bottom of the screen"
 msgstr "Усправна координата панела, у односу на дно екрана"
 

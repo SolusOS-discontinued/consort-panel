@@ -997,7 +997,7 @@ msgstr "Munka_terület-nevek:"
 msgid "Workspaces"
 msgstr "Munkaterületek"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:1
 msgid ""
 "A fish without a name is a pretty dull fish. Bring your fish to life by "
 "naming him."
@@ -1005,39 +1005,39 @@ msgstr ""
 "Egy név nélküli hal nagyon unalmas hal. Adjon életet a halának, adjon neki "
 "nevet!"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:2
 msgid "Command to execute on click"
 msgstr "Kattintáskor végrehajtandó parancs"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:3
 msgid "If true, the fish's animation will be displayed rotated on vertical panels."
 msgstr ""
 "Ha be van állítva, a hal animációja forgatva fog megjelenni a függőleges "
 "paneleken."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:4
 msgid "Pause per frame"
 msgstr "Képkockánkénti várakozás"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:5
 msgid "Rotate on vertical panels"
 msgstr "Függőleges panelen forgatás"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:6
 msgid "The fish's animation pixmap"
 msgstr "A hal animációja"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:7
 msgid "The fish's name"
 msgstr "A hal neve"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:8
 msgid ""
 "This key specifies the command that will be tried to execute when the fish "
 "is clicked."
 msgstr "Ez a kulcs megadja a halra kattintáskor végrehajtandó parancsot."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:9
 msgid ""
 "This key specifies the filename of the pixmap which will be used for the "
 "animation displayed in the fish applet relative to the pixmap directory."
@@ -1045,11 +1045,11 @@ msgstr ""
 "Ez a kulcs megadja a hal kisalkalmazásban megjelenített animáció képének "
 "helyét a képkönyvtárhoz képest."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:10
 msgid "This key specifies the number of seconds each frame will be displayed."
 msgstr "Ez a kulcs megadja, hogy hány másodpercig látható egy képkocka."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:1
 msgid ""
 "Decides when to group windows from the same application on the window list. "
 "Possible values are \"never\", \"auto\" and \"always\"."
@@ -1057,7 +1057,7 @@ msgstr ""
 "Megadja, mikor csoportosítsa az Ablaklista kisalkalmazás egyazon alkalmazás "
 "ablakait. Lehetséges értékek „never” (soha), „auto”, és „always” (mindig)."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:2
 msgid ""
 "If true, the window list will show windows from all workspaces. Otherwise it "
 "will only display windows from the current workspace."
@@ -1065,7 +1065,7 @@ msgstr ""
 "Ha be van állítva, az ablaklista az összes munkaterület ablakait "
 "tartalmazza, különben csak a jelenlegiét."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:3
 msgid ""
 "If true, then when unminimizing a window, move it to the current workspace. "
 "Otherwise, switch to the workspace of the window."
@@ -1073,27 +1073,27 @@ msgstr ""
 "Ha be van állítva, az ablak visszaállításakor, az a jelenlegi munkaterületen "
 "jelenjen meg, különben kapcsoljon át az ablak eredeti munkaterületére."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:4
 msgid "Move windows to current workspace when unminimized"
 msgstr "A jelenlegi munkaterületen bukkanjanak fel az ablakok"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:5
 msgid "Show windows from all workspaces"
 msgstr "Az összes munkaterület ablakainak megjelenítése"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:6
 msgid "When to group windows"
 msgstr "Mikor legyenek az ablakok csoportosítva"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
 msgid "Display all workspaces"
 msgstr "Minden munkaterület megjelenítése"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
 msgid "Display workspace names"
 msgstr "Munkaterületnevek megjelenítése"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
 msgid ""
 "If true, the workspace switcher will show all workspaces. Otherwise it will "
 "only show the current workspace."
@@ -1101,7 +1101,7 @@ msgstr ""
 "Ha be van állítva, a munkaterület-váltó minden munkaterületet megjelenít, "
 "különben csak a jelenlegit."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
 msgid ""
 "If true, the workspaces in the workspace switcher will display the names of "
 "the workspaces. Otherwise they will display the windows on the workspace. "
@@ -1111,11 +1111,11 @@ msgstr ""
 "különben a tartalmukat jeleníti meg. Ez a beállítás csak a metacity "
 "ablakkezelővel működik."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
 msgid "Rows in workspace switcher"
 msgstr "Munkaterület-váltó sorai"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
 msgid ""
 "This key specifies how many rows (for horizontal layout) or columns (for "
 "vertical layout) the workspace switcher shows the workspaces in. This key is "
@@ -1125,7 +1125,7 @@ msgstr ""
 "hány sorban (vízszintes elrendezés) vagy oszlopban (függőleges elrendezés) "
 "jeleníti meg a munkaterületeket."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:1
 msgid ""
 "A list of applet IIDs that the panel will ignore. This way you can disable "
 "certain applets from loading or showing up in the menu. For example to "
@@ -1138,7 +1138,7 @@ msgstr ""
 "ezt: „OAFIID:GNOME_MiniCommanderApplet”. A panelt újra kell indítani ezen "
 "beállítás életbe lépéséhez."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:2
 msgid ""
 "A list of panel IDs. Each ID identifies an individual toplevel panel. The "
 "settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
@@ -1147,7 +1147,7 @@ msgstr ""
 "azonosít. Minden egyes ilyen panel beállításai az /apps/panel/toplevels/"
 "$(id) alatt tárolódnak."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:3
 msgid ""
 "A list of panel object IDs. Each ID identifies an individual panel object (e."
 "g. an applet, launcher, action button or menu button/bar). The settings for "
@@ -1158,45 +1158,45 @@ msgstr ""
 "menügombot/sávot) azonosít. Minden egyes ilyen objektum beállításai az /apps/"
 "panel/objects/$(id) alatt tárolódnak."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:4
 msgid "Applet IIDs to disable from loading"
 msgstr "A be nem tölthető kisalkalmazások azonosítói"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:5
 msgid "Complete panel lockdown"
 msgstr "Panel teljes zárolása"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:6
 msgid "Confirm panel removal"
 msgstr "Megerősítés a panel eltávolítása előtt"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:7
 msgid "Disable Force Quit"
 msgstr "Erőltetett kilépés tiltása"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:8
 msgid "Enable autocompletion in \"Run Application\" dialog"
 msgstr ""
 "Automatikus kiegészítés bekapcsolása az „Alkalmazás futtatása” "
 "párbeszédablakban"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:9
 msgid "Enable program list in \"Run Application\" dialog"
 msgstr "Programlista bekapcsolása az „Alkalmazás futtatása” párbeszédablakban"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:10
 msgid "Enable tooltips"
 msgstr "Buboréksúgók engedélyezése"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:11
 msgid "Expand program list in \"Run Application\" dialog"
 msgstr "Programlista kibontása az „Alkalmazás futtatása” párbeszédablakban"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:12
 msgid "History of \"Run Application\" dialog"
 msgstr "Az „Alkalmazás futtatása” párbeszédablak előzményei"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:13
 msgid ""
 "If true, a dialog is shown asking for confirmation if the user wants to "
 "remove a panel."
@@ -1204,13 +1204,13 @@ msgstr ""
 "Ha be van állítva, megjelenik egy megerősítési ablak ha a felhasználó el "
 "akarja távolítani a panelt."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:14
 msgid "If true, autocompletion in the \"Run Application\" dialog is made available."
 msgstr ""
 "Ha ez be van állítva, az automatikus kiegészítés elérhető lesz az "
 "„Alkalmazás futtatása” párbeszédablakban."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is expanded when the dialog is opened. This key is only relevant if "
@@ -1220,7 +1220,7 @@ msgstr ""
 "párbeszédablakban kinyílik a párbeszédablak megnyitásakor. Ez a kulcs csak "
 "akkor lényeges, ha az enable_program_list kulcs be van állítva."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is made available. Whether or not the listing is expanded when the "
@@ -1230,7 +1230,7 @@ msgstr ""
 "párbeszédablakban elérhető. Hogy a lista kinyíljon-e vagy sem a "
 "párbeszédablak megnyitásakor, a show_program_list kulccsal ellenőrizhető."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the panel will not allow a user to force an application to quit by "
 "removing access to the force quit button."
@@ -1239,7 +1239,7 @@ msgstr ""
 "kilépésre kényszerítését, az erőltetett kilépés gombhoz való hozzáférés "
 "megvonásával."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the panel will not allow any changes to the configuration of the "
 "panel. Individual applets may need to be locked down separately however. The "
@@ -1249,7 +1249,7 @@ msgstr ""
 "megváltoztatását. Egyes kisalkalmazásokat azonban szükséges lehet külön "
 "zárolni. A panelt újra kell indítani ezen beállítás érvényesítéséhez."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:19
 msgid ""
 "If true, tooltips are shown for objects in panels. Tooltips can be disabled "
 "for the whole desktop with the gtk-enable-tooltips property in GTK+."
@@ -1258,25 +1258,25 @@ msgstr ""
 "buboréksúgók letilthatók az egész asztali környezetben a GTK+ gtk-enable-"
 "tooltips tulajdonságával."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:20
 msgid "Panel ID list"
 msgstr "Panelazonosító-lista"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:21
 msgid "Panel object ID list"
 msgstr "Panelobjektum-azonosító lista"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:22
 msgid "The list of commands used in the past in the \"Run Application\" dialog."
 msgstr ""
 "Az „Alkalmazás futtatása” párbeszédablakban korábban használt parancsok "
 "listája."
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:1
 msgid "Launcher location"
 msgstr "Parancsikon helye"
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:2
 msgid ""
 "The location of the .desktop file describing the launcher. This key is only "
 "relevant if the object_type key is \"launcher-object\"."
@@ -1284,15 +1284,15 @@ msgstr ""
 "Az ezen parancsikont leíró .desktop fájl helye. Ez a kulcs csak akkor "
 "lényeges, ha az object_type kulcs értéke „launcher-object”."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:1
 msgid "Icon used for button"
 msgstr "A gombhoz használt ikon"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:2
 msgid "Menu content path"
 msgstr "Menü elemeinek útvonala"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:3
 msgid ""
 "The location of the image file used as the icon for the object's button. If "
 "empty, the default icon for the menu will be used."
@@ -1300,7 +1300,7 @@ msgstr ""
 "Az objektum gombjának ikonjaként használt képfájl helye. Ha üres, akkor a "
 "menü alapértelmezett ikonja kerül felhasználásra."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:4
 msgid ""
 "The path from which the menu contents is contructed. If empty, the menu will "
 "be the default applications menu."
@@ -1308,15 +1308,15 @@ msgstr ""
 "Az útvonal, amiből a menü elemei fel lesznek építve. Ha üres, akkor a menü "
 "az alap alkalmazások menü lesz."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:5
 msgid "The text to display in a tooltip for this menu."
 msgstr "A menü buboréksúgójában megjelenítendő szöveg."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:6
 msgid "Tooltip displayed for menu"
 msgstr "A menü buboréksúgójának szövege"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:1
 msgid ""
 "If set to 'end', the position of the object is interpreted relative to the "
 "right (or bottom if vertical) edge of the panel."
@@ -1324,23 +1324,23 @@ msgstr ""
 "Ha „end” értékre van állítva, az objektum pozíciója a panel jobb széléhez "
 "(vagy ha függőleges, az aljához) képest lesz értelmezve."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:2
 msgid "Interpret position relative to bottom/right edge"
 msgstr "Pozíció értelmezése az alsó/jobb szélhez képest"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:3
 msgid "Object IID"
 msgstr "Objektum IID-je"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:4
 msgid "Object's position on the panel"
 msgstr "Objektum helyzete a panelen"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:5
 msgid "The identifier of the toplevel panel which contains this object."
 msgstr "Azon felsőszintű panel azonosítója, amely tartalmazza ezt az objektumot."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:6
 msgid ""
 "The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
 "\"."
@@ -1348,7 +1348,7 @@ msgstr ""
 "Az objektum megvalósítási azonosítója, például: „ClockAppletFactory::"
 "ClockApplet”."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:7
 msgid ""
 "The position of this panel object. The position is specified by the number "
 "of pixels from the left (or top if vertical) panel edge."
@@ -1356,39 +1356,39 @@ msgstr ""
 "A panelobjektum pozíciója. A pozíciót a panel bal (v agy felső, ha "
 "függőleges) szélétől számított képpontok száma adja meg."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:8
 msgid "Toplevel panel containing object"
 msgstr "Az objektumot tartalmazó felsőszintű panel"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:1
 msgid "Animation speed"
 msgstr "Animáció sebessége"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:2
 msgid "Automatically hide panel into corner"
 msgstr "Panel automatikus rejtése a sarokba"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:3
 msgid "Background color"
 msgstr "Háttérszín"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:4
 msgid "Background image"
 msgstr "Háttérkép"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:5
 msgid "Background type"
 msgstr "Háttér típusa"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:6
 msgid "Center panel on x-axis"
 msgstr "Panel középre helyezése vízszintesen"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:7
 msgid "Center panel on y-axis"
 msgstr "Panel középre helyezése függőlegesen"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:8
 msgid ""
 "Determines how the image set by image-uri is rendered. Possible values are "
 "\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
@@ -1402,19 +1402,19 @@ msgstr ""
 "„fit” esetén a kép a panel magasságához (ha az vízszintes) lesz igazítva, a "
 "méretarány megtartása mellett."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:9
 msgid "Enable arrows on hide buttons"
 msgstr "Nyilak megjelenítése az elrejtőgombokon"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:10
 msgid "Enable hide buttons"
 msgstr "Elrejtőgombok engedélyezése"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:11
 msgid "Expand to occupy entire screen width"
 msgstr "Széthúzás a képernyő teljes szélességének kihasználásához"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:12
 msgid ""
 "If true, arrows will be placed on the hide buttons. This key is only "
 "relevant if the enable_buttons key is true."
@@ -1423,7 +1423,7 @@ msgstr ""
 "kulcs csak akkor lényeges, ha az enable_buttons kulcs be van állítva."
 
 # FIXME képernyő széle: ok?
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:13
 msgid ""
 "If true, buttons will be placed on each side of the panel which may be used "
 "to move the panel to edge of the screen, leaving only a button showing."
@@ -1432,13 +1432,13 @@ msgstr ""
 "melyekkel a panel kimozgatható a képernyő szélére és csak a gomb marad "
 "látható."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:14
 msgid ""
 "If true, the background image will be rotated when the panel is oriented "
 "vertically."
 msgstr "Ha be van állítva, a háttérkép el lesz forgatva a panelen, ha az függőleges."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the panel is automatically hidden into a corner of the screen when "
 "the pointer leaves the panel area. Moving the pointer to that corner again "
@@ -1448,7 +1448,7 @@ msgstr ""
 "ha a mutató elhagyja a panel területét. A mutatót a képernyő ezen sarkába "
 "mozgatva a panel újra megjelenik."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the panel will occupy the entire screen width (height if this is a "
 "vertical panel). In this mode the panel can only be placed at a screen edge. "
@@ -1460,7 +1460,7 @@ msgstr ""
 "lehet elhelyezni. Ha nincs beállítva, a panel csak akkora lesz, hogy el "
 "lehessen rajta helyezni a kisalkalmazásokat, parancsikonokat és gombokat."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the x and x_right keys are ignored and the panel is placed at the "
 "center of the x-axis of the screen. If the panel is resized it will remain "
@@ -1473,7 +1473,7 @@ msgstr ""
 "nőni fog. Ha nincs beállítva, az x és x_right kulcsok adják meg a panel "
 "helyét."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the y and y_bottom keys are ignored and the panel is placed at the "
 "center of the y-axis of the screen. If the panel is resized it will remain "
@@ -1486,11 +1486,11 @@ msgstr ""
 "nőni fog. Ha nincs beállítva, az y és y_bottom kulcsok adják meg a panel "
 "helyét."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:19
 msgid "Image options"
 msgstr "Kép beállításai"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:20
 msgid ""
 "In a Xinerama setup, you may have panels on each individual monitor. This "
 "key identifies the current monitor the panel is displayed on."
@@ -1499,35 +1499,35 @@ msgstr ""
 "paneleket. Ez a kulcs a jelenlegi monitort azonosítja, amelyen a panel "
 "megjelenik."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:21
 msgid "Name to identify panel"
 msgstr "Név a panel azonosításához"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:22
 msgid "Panel autohide delay"
 msgstr "Panel automatikus elrejtése ennyi idő után"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:23
 msgid "Panel autounhide delay"
 msgstr "Panel automatikus megjelenítése ennyi idő után"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:24
 msgid "Panel orientation"
 msgstr "Panel tájolása"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:25
 msgid "Panel size"
 msgstr "Panel mérete"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:26
 msgid "Rotate image on vertical panels"
 msgstr "Függőleges panelen a kép forgatása"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:27
 msgid "Specifies the background color for the panel in #RGB format."
 msgstr "Megadja a panel háttérszínét #RGB formátumban."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:28
 msgid ""
 "Specifies the file to be used for the background image. If the image "
 "contains an alpha channel it will be composited onto the desktop background "
@@ -1536,7 +1536,7 @@ msgstr ""
 "Megadja a háttérképként használt képfájlt. Ha a kép tartalmaz egy alfa "
 "sávot, az asztal háttérképe át fog látszani alatta."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:29
 msgid ""
 "Specifies the number of milliseconds delay after the pointer enters the "
 "panel area before the panel is automatically re-shown. This key is only "
@@ -1546,7 +1546,7 @@ msgstr ""
 "területére ér. Ez a kulcs csak akkor lényeges, ha az auto_hide kulcs be van "
 "állítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:30
 msgid ""
 "Specifies the number of milliseconds delay after the pointer leaves the "
 "panel area before the panel is automatically hidden. This key is only "
@@ -1556,7 +1556,7 @@ msgstr ""
 "panel területét. Ez a kulcs csak akkor lényeges, ha az auto_hide kulcs be "
 "van állítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:31
 msgid ""
 "Specifies the number of pixels visible when the panel is automatically "
 "hidden into a corner. This key is only relevant if the auto_hide key is true."
@@ -1564,7 +1564,7 @@ msgstr ""
 "Ennyi képpont lesz látható a panelből annak automatikus elrejtése után. Ez a "
 "kulcs csak akkor lényeges, ha az auto_hide kulcs be van állítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:32
 msgid ""
 "The height (width for a vertical panel) of the panel. The panel will "
 "determine at runtime a minimum size based on the font size and other "
@@ -1575,7 +1575,7 @@ msgstr ""
 "megállapít egy minimumot a betűkészlet mérete és más jellemzők alapján. A "
 "maximum méret a képernyő magasságának (vagy szélességének) egynegyede."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:33
 msgid ""
 "The location of the panel along the x-axis, starting from the right of the "
 "screen. If set to -1, the value is ignored and the value of the x key is "
@@ -1591,7 +1591,7 @@ msgstr ""
 "lényeges. Kiterjesztett módban nem lényeges, akkor a panel a képernyő "
 "orientation (elhelyezés) kulcs által megadott széléhez lesz igazítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:34
 msgid ""
 "The location of the panel along the x-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1601,7 +1601,7 @@ msgstr ""
 "nem lényeges, akkor a panel a képernyő orientation (elhelyezés) kulcs által "
 "megadott széléhez lesz igazítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:35
 msgid ""
 "The location of the panel along the y-axis, starting from the bottom of the "
 "screen. If set to -1, the value is ignored and the value of the y key is "
@@ -1617,7 +1617,7 @@ msgstr ""
 "Kiterjesztett módban nem lényeges, akkor a panel a képernyő orientation "
 "(elhelyezés) kulcs által megadott széléhez lesz igazítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:36
 msgid ""
 "The location of the panel along the y-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1627,7 +1627,7 @@ msgstr ""
 "nem lényeges, akkor a panel a képernyő orientation (elhelyezés) kulcs által "
 "megadott széléhez lesz igazítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:37
 msgid ""
 "The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
 "\", \"right\". In expanded mode the key specifies which screen edge the "
@@ -1646,7 +1646,7 @@ msgstr ""
 "Például, egy felső panel esetén a menü gomb menüje a panel alatt bukkan fel, "
 "míg egy alsó panel menüje a panel fölött bukkan fel."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:38
 msgid ""
 "The speed in which panel animations should occur. Possible values are \"slow"
 "\", \"medium\" and \"fast\". This key is only relevant if the "
@@ -1656,7 +1656,7 @@ msgstr ""
 "„medium” (közepes) és „fast” (gyors).  Ez a kulcs csak akkor lényeges, ha az "
 "enable_animations kulcs be van állítva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:39
 msgid ""
 "This is a human readable name which you can use to identify a panel. Its "
 "main purpose is to serve as the panel's window title which is useful when "
@@ -1666,11 +1666,11 @@ msgstr ""
 "használhat. Fő célja, hogy a panel ablakának neveként szolgáljon, ami "
 "panelek közötti navigáláskor hasznos."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:40
 msgid "Visible pixels when hidden"
 msgstr "Látható képpontok elrejtés esetén"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:41
 msgid ""
 "Which type of background should be used for this panel. Possible values are "
 "\"none\" - the default GTK+ widget background will be used, \"color\" - the "
@@ -1682,7 +1682,7 @@ msgstr ""
 "lesz használva háttérszínként vagy „image” – az image (kép) kulcs által "
 "megadott kép lesz használva."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:42
 msgid ""
 "With a multi-screen setup, you may have panels on each individual screen. "
 "This key identifies the current screen the panel is displayed on."
@@ -1690,27 +1690,27 @@ msgstr ""
 "Több képernyős beállítással minden önálló képernyőn lehetnek paneljai. Ez a "
 "kulcs azonosítja a jelenlegi képernyőt, amelyen a panel megjelenik."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:43
 msgid "X co-ordinate of panel"
 msgstr "A panel X koordinátája"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:44
 msgid "X co-ordinate of panel, starting from the right of the screen"
 msgstr "A panel x koordinátája a képernyő jobb szélétől számítva"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:45
 msgid "X screen where the panel is displayed"
 msgstr "Az X képernyő, amelyen a panel megjelenik"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:46
 msgid "Xinerama monitor where the panel is displayed"
 msgstr "A Xinerama monitor, amelyen a panel megjelenik"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:47
 msgid "Y co-ordinate of panel"
 msgstr "A panel Y koordinátája"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:48
 msgid "Y co-ordinate of panel, starting from the bottom of the screen"
 msgstr "A panel y koordinátája a képernyő aljától számítva"
 

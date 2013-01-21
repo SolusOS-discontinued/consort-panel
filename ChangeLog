@@ -2166,7 +2166,7 @@ commit 2a19550bf133e0d5c6a3b314f88fe804afe09a9b
 Author: Vincent Untz <vuntz@gnome.org>
 Date:   Tue Apr 19 16:43:24 2011 +0200
 
-    l10n: Ignore data/org.gnome.consort-panel.applet.clock.gschema.xml.in.in
+    l10n: Ignore data/org.consort.consort-panel.applet.clock.gschema.xml.in.in
     
     This is not needed yet.
 
@@ -2178,7 +2178,7 @@ Date:   Tue Apr 19 16:17:36 2011 +0200
 
     Revert "Updated POTFILES.in"
     
-    org.gnome.consort-panel.applet.clock.gschema.xml.in.in is not used yet.
+    org.consort.consort-panel.applet.clock.gschema.xml.in.in is not used yet.
     
     This reverts commit da9990f7bdd307fc758e17b3e17ca844cee48a62.
 
@@ -3199,7 +3199,7 @@ Date:   Wed Mar 30 21:43:52 2011 +0530
     
     Note that adding/moving objects is broken right now.
 
-M	data/org.gnome.consort-panel.object.gschema.xml.in.in
+M	data/org.consort.consort-panel.object.gschema.xml.in.in
 M	data/panel-default-layout.layout
 M	consort-panel/applet.c
 M	consort-panel/applet.h
@@ -3220,7 +3220,7 @@ Date:   Wed Mar 30 20:11:27 2011 +0530
     
     We'll have a pack-index key soon.
 
-M	data/org.gnome.consort-panel.object.gschema.xml.in.in
+M	data/org.consort.consort-panel.object.gschema.xml.in.in
 M	data/panel-default-layout.layout
 M	consort-panel/applet.c
 M	consort-panel/panel-enums-gsettings.h
@@ -3237,8 +3237,8 @@ Date:   Wed Mar 30 19:31:42 2011 +0530
 
     schemas: Add some ranges where it makes sense
 
-M	data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in
-M	data/org.gnome.consort-panel.toplevel.gschema.xml.in.in
+M	data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in
+M	data/org.consort.consort-panel.toplevel.gschema.xml.in.in
 
 commit e46fa147b1f19a1c255b475369b48b9d580ce0b8
 Author: Vincent Untz <vuntz@gnome.org>
@@ -3403,7 +3403,7 @@ Date:   Tue Mar 29 23:54:45 2011 +0200
     
     Also updated the affected translations.
 
-M	data/org.gnome.consort-panel.menu-button.gschema.xml.in.in
+M	data/org.consort.consort-panel.menu-button.gschema.xml.in.in
 M	po/ar.po
 M	po/cs.po
 M	po/de.po
@@ -3584,24 +3584,24 @@ Date:   Mon Mar 28 15:49:16 2011 +0530
     schemas: Make GSettings schemas translatable
 
 M	data/Makefile.am
-D	data/org.gnome.consort-panel.applet.clock.gschema.xml
-A	data/org.gnome.consort-panel.applet.clock.gschema.xml.in.in
-D	data/org.gnome.consort-panel.applet.fish.gschema.xml
-A	data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in
-D	data/org.gnome.consort-panel.applet.window-list.gschema.xml
-A	data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in
-D	data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml
-A	data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in
-D	data/org.gnome.consort-panel.gschema.xml
-A	data/org.gnome.consort-panel.gschema.xml.in.in
-D	data/org.gnome.consort-panel.launcher.gschema.xml
-A	data/org.gnome.consort-panel.launcher.gschema.xml.in.in
-D	data/org.gnome.consort-panel.menu-button.gschema.xml
-A	data/org.gnome.consort-panel.menu-button.gschema.xml.in.in
-D	data/org.gnome.consort-panel.object.gschema.xml
-A	data/org.gnome.consort-panel.object.gschema.xml.in.in
-D	data/org.gnome.consort-panel.toplevel.gschema.xml
-A	data/org.gnome.consort-panel.toplevel.gschema.xml.in.in
+D	data/org.consort.consort-panel.applet.clock.gschema.xml
+A	data/org.consort.consort-panel.applet.clock.gschema.xml.in.in
+D	data/org.consort.consort-panel.applet.fish.gschema.xml
+A	data/org.consort.consort-panel.applet.fish.gschema.xml.in.in
+D	data/org.consort.consort-panel.applet.window-list.gschema.xml
+A	data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in
+D	data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml
+A	data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in
+D	data/org.consort.consort-panel.gschema.xml
+A	data/org.consort.consort-panel.gschema.xml.in.in
+D	data/org.consort.consort-panel.launcher.gschema.xml
+A	data/org.consort.consort-panel.launcher.gschema.xml.in.in
+D	data/org.consort.consort-panel.menu-button.gschema.xml
+A	data/org.consort.consort-panel.menu-button.gschema.xml.in.in
+D	data/org.consort.consort-panel.object.gschema.xml
+A	data/org.consort.consort-panel.object.gschema.xml.in.in
+D	data/org.consort.consort-panel.toplevel.gschema.xml
+A	data/org.consort.consort-panel.toplevel.gschema.xml.in.in
 M	po/POTFILES.in
 M	po/POTFILES.skip
 
@@ -3640,7 +3640,7 @@ Date:   Mon Mar 28 13:55:25 2011 +0530
 M	applets/wncklet/Makefile.am
 M	applets/wncklet/workspace-switcher.c
 D	applets/wncklet/workspace-switcher.schemas.in
-M	data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml
+M	data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml
 
 commit 1da2291670fa485d4d748926babf155d4831fe77
 Author: Vincent Untz <vuntz@gnome.org>
@@ -3679,7 +3679,7 @@ A	applets/fish/footguy.fish
 A	applets/fish/monkey.fish
 A	applets/fish/oldwanda.fish
 A	applets/fish/wanda.fish
-M	data/org.gnome.consort-panel.applet.fish.gschema.xml
+M	data/org.consort.consort-panel.applet.fish.gschema.xml
 
 commit 00f91d71ae51db5014a1884b7fde618c3a417033
 Author: Ryan Lortie <desrt@desrt.ca>
@@ -3690,7 +3690,7 @@ Date:   Mon Mar 28 12:40:16 2011 +0530
     A fairly direct port, without use of g_settings_bind or anything fancy.
 
 M	applets/wncklet/window-list.c
-M	data/org.gnome.consort-panel.applet.window-list.gschema.xml
+M	data/org.consort.consort-panel.applet.window-list.gschema.xml
 
 commit dea38d7234cf078090aad61f8650466d259e1d6d
 Author: Vincent Untz <vuntz@gnome.org>
@@ -3699,10 +3699,10 @@ Date:   Mon Mar 28 11:04:25 2011 +0530
     applets: Add GSettings schemas for applets
 
 M	data/Makefile.am
-A	data/org.gnome.consort-panel.applet.clock.gschema.xml
-A	data/org.gnome.consort-panel.applet.fish.gschema.xml
-A	data/org.gnome.consort-panel.applet.window-list.gschema.xml
-A	data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml
+A	data/org.consort.consort-panel.applet.clock.gschema.xml
+A	data/org.consort.consort-panel.applet.fish.gschema.xml
+A	data/org.consort.consort-panel.applet.window-list.gschema.xml
+A	data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml
 
 commit 07341274fe3427227584d7552414de30186cf052
 Author: Vincent Untz <vuntz@gnome.org>
@@ -3781,7 +3781,7 @@ Date:   Fri Mar 25 23:24:39 2011 +0100
     
     This will make it easier to add a way to center objects later on.
 
-M	data/org.gnome.consort-panel.object.gschema.xml
+M	data/org.consort.consort-panel.object.gschema.xml
 M	data/panel-default-layout.layout
 M	consort-panel/applet.c
 M	consort-panel/panel-enums-gsettings.h
@@ -3867,7 +3867,7 @@ Date:   Fri Mar 25 22:28:38 2011 +0100
 
     panel: Port launchers to GSettings
 
-M	data/org.gnome.consort-panel.launcher.gschema.xml
+M	data/org.consort.consort-panel.launcher.gschema.xml
 M	consort-panel/launcher.c
 M	consort-panel/panel-schemas.h
 
@@ -4164,7 +4164,7 @@ Date:   Fri Mar 25 11:54:32 2011 +0100
     
     The two options were incompatibly, so it's really an enum.
 
-M	data/org.gnome.consort-panel.toplevel.gschema.xml
+M	data/org.consort.consort-panel.toplevel.gschema.xml
 M	consort-panel/panel-background.c
 M	consort-panel/panel-background.h
 M	consort-panel/panel-enums-gsettings.h
@@ -4179,7 +4179,7 @@ Date:   Fri Mar 25 11:38:43 2011 +0100
     We rename the key to make this clear, and we also rename the rotate key
     to image-rotate to clearly show it applies to the image only.
 
-M	data/org.gnome.consort-panel.toplevel.gschema.xml
+M	data/org.consort.consort-panel.toplevel.gschema.xml
 M	consort-panel/panel-background.c
 M	consort-panel/panel-properties-dialog.c
 M	consort-panel/panel-schemas.h
@@ -4228,7 +4228,7 @@ Date:   Fri Mar 25 04:12:06 2011 +0100
     store RGBA in the color key now.
 
 M	data/Makefile.am
-M	data/org.gnome.consort-panel.toplevel.gschema.xml
+M	data/org.consort.consort-panel.toplevel.gschema.xml
 M	consort-panel/Makefile.am
 M	consort-panel/applet.c
 M	consort-panel/launcher.c
@@ -4451,7 +4451,7 @@ Date:   Wed Mar 23 19:34:25 2011 +0100
     This also means we can get rid of panel-config-global.[ch] since it's
     now doing nothing.
 
-M	data/org.gnome.consort-panel.gschema.xml
+M	data/org.consort.consort-panel.gschema.xml
 M	consort-panel/Makefile.am
 M	consort-panel/applet.c
 M	consort-panel/button-widget.c
@@ -4482,7 +4482,7 @@ Date:   Wed Mar 23 19:15:52 2011 +0100
     ButtonWidget. By default, it's set to true, and ButtonWidgets are
     highlighted on hover.
 
-M	data/org.gnome.consort-panel.gschema.xml
+M	data/org.consort.consort-panel.gschema.xml
 M	consort-panel/button-widget.c
 M	consort-panel/panel-config-global.c
 M	consort-panel/panel-config-global.h
@@ -4521,7 +4521,7 @@ Date:   Wed Mar 23 18:27:01 2011 +0100
     Instead, we simply use the gtk-enable-animations property of
     GtkSettings.
 
-M	data/org.gnome.consort-panel.gschema.xml
+M	data/org.consort.consort-panel.gschema.xml
 M	consort-panel/launcher.c
 M	consort-panel/panel-config-global.c
 M	consort-panel/panel-config-global.h
@@ -4536,7 +4536,7 @@ Date:   Wed Mar 23 18:16:40 2011 +0100
     Instead, we simply use the gtk-enable-animations property of
     GtkSettings.
 
-M	data/org.gnome.consort-panel.toplevel.gschema.xml
+M	data/org.consort.consort-panel.toplevel.gschema.xml
 M	consort-panel/panel-profile.c
 M	consort-panel/panel-toplevel.c
 M	consort-panel/panel-toplevel.h
@@ -4548,7 +4548,7 @@ Date:   Wed Mar 23 17:57:01 2011 +0100
 
     panel: Port run dialog history to GSettings
 
-M	data/org.gnome.consort-panel.gschema.xml
+M	data/org.consort.consort-panel.gschema.xml
 M	consort-panel/panel-run-dialog.c
 
 commit 1f0b69fa91666157d77898a6416d1f75d3af5499
@@ -4581,11 +4581,11 @@ Date:   Wed Mar 23 16:47:15 2011 +0100
 
 M	configure.ac
 M	data/Makefile.am
-A	data/org.gnome.consort-panel.gschema.xml
-A	data/org.gnome.consort-panel.launcher.gschema.xml
-A	data/org.gnome.consort-panel.menu-button.gschema.xml
-A	data/org.gnome.consort-panel.object.gschema.xml
-A	data/org.gnome.consort-panel.toplevel.gschema.xml
+A	data/org.consort.consort-panel.gschema.xml
+A	data/org.consort.consort-panel.launcher.gschema.xml
+A	data/org.consort.consort-panel.menu-button.gschema.xml
+A	data/org.consort.consort-panel.object.gschema.xml
+A	data/org.consort.consort-panel.toplevel.gschema.xml
 A	data/panel-default-layout.layout
 
 commit 639b4261a4f996d33ea28546f738594dd7cc717f

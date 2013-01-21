@@ -273,7 +273,7 @@ setup_gconf (TasklistData *tasklist)
 {
         tasklist->settings =
           panel_applet_settings_new (PANEL_APPLET (tasklist->applet),
-                                     "org.gnome.consort-panel.applet.window-list");
+                                     "org.consort.consort-panel.applet.window-list");
 
         g_signal_connect (tasklist->settings, "changed::display-all-workspaces",
                           G_CALLBACK (display_all_workspaces_changed), tasklist);

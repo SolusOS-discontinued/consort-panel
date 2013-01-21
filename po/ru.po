@@ -1012,46 +1012,46 @@ msgstr "На_звания рабочих мест:"
 msgid "Workspaces"
 msgstr "Рабочие места"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:1
 msgid ""
 "A fish without a name is a pretty dull fish. Bring your fish to life by "
 "naming him."
 msgstr "Рыбка без имени — скучная рыбка. Оживите рыбку, дав ей имя."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:2
 msgid "Command to execute on click"
 msgstr "Команда, выполняемая при нажатии"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:3
 msgid ""
 "If true, the fish's animation will be displayed rotated on vertical panels."
 msgstr ""
 "Если этот ключ установлен, на вертикальных панелях анимация будет "
 "отображаться в повёрнутом виде."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:4
 msgid "Pause per frame"
 msgstr "Задержка кадра"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:5
 msgid "Rotate on vertical panels"
 msgstr "Поворачивать на вертикальных панелях"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:6
 msgid "The fish's animation pixmap"
 msgstr "Анимированное изображение рыбки"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:7
 msgid "The fish's name"
 msgstr "Имя рыбки"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:8
 msgid ""
 "This key specifies the command that will be tried to execute when the fish "
 "is clicked."
 msgstr "Этот ключ определяет команду, выполняемую при щелчке на рыбке."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:9
 msgid ""
 "This key specifies the filename of the pixmap which will be used for the "
 "animation displayed in the fish applet relative to the pixmap directory."
@@ -1060,13 +1060,13 @@ msgstr ""
 "отображения анимации апплета рыбки, относительно каталога изображений "
 "(pixmap)."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:10
 msgid "This key specifies the number of seconds each frame will be displayed."
 msgstr ""
 "Этот ключ определяет количество секунд, в течение которых отображается "
 "каждый кадр."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:1
 msgid ""
 "Decides when to group windows from the same application on the window list. "
 "Possible values are \"never\", \"auto\" and \"always\"."
@@ -1074,7 +1074,7 @@ msgstr ""
 "Определяет, когда группировать окна одинаковых приложений в списке окон. "
 "Допустимые значения: «never», «auto» и «always»."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:2
 msgid ""
 "If true, the window list will show windows from all workspaces. Otherwise it "
 "will only display windows from the current workspace."
@@ -1082,7 +1082,7 @@ msgstr ""
 "Если этот ключ установлен, список окон будет отображать окна со всех рабочих "
 "мест, а не только с текущего."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:3
 msgid ""
 "If true, then when unminimizing a window, move it to the current workspace. "
 "Otherwise, switch to the workspace of the window."
@@ -1090,27 +1090,27 @@ msgstr ""
 "Если этот ключ установлен, восстановление окна будет происходить на текущее "
 "рабочее место, а не на исходное."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:4
 msgid "Move windows to current workspace when unminimized"
 msgstr "Перемещать окна на текущее рабочее место при восстановлении"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:5
 msgid "Show windows from all workspaces"
 msgstr "Показывать окна со всех рабочих мест"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:6
 msgid "When to group windows"
 msgstr "Группировать ли окна"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
 msgid "Display all workspaces"
 msgstr "Показывать все рабочие места"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
 msgid "Display workspace names"
 msgstr "Показывать названия рабочих мест"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
 msgid ""
 "If true, the workspace switcher will show all workspaces. Otherwise it will "
 "only show the current workspace."
@@ -1118,7 +1118,7 @@ msgstr ""
 "Если этот ключ установлен, переключатель будет показывать все рабочие места. "
 "Иначе будет показано только текущее."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
 msgid ""
 "If true, the workspaces in the workspace switcher will display the names of "
 "the workspaces. Otherwise they will display the windows on the workspace. "
@@ -1128,11 +1128,11 @@ msgstr ""
 "мест. Если не установлен, на рабочих местах будут показываться окна. Этот "
 "ключ работает только тогда, когда используется менеджер окон Metacity."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
 msgid "Rows in workspace switcher"
 msgstr "Строк в переключателе"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
 msgid ""
 "This key specifies how many rows (for horizontal layout) or columns (for "
 "vertical layout) the workspace switcher shows the workspaces in. This key is "
@@ -1143,7 +1143,7 @@ msgstr ""
 "рабочие места. Имеет смысл только если установлен ключ "
 "display_all_workspaces."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:1
 msgid ""
 "A list of applet IIDs that the panel will ignore. This way you can disable "
 "certain applets from loading or showing up in the menu. For example to "
@@ -1156,7 +1156,7 @@ msgstr ""
 "списку строку «OAFIID:GNOME_MiniCommanderApplet». Чтобы изменения в списке "
 "вступили в силу, панель нужно перезапустить."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:2
 msgid ""
 "A list of panel IDs. Each ID identifies an individual toplevel panel. The "
 "settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
@@ -1165,7 +1165,7 @@ msgstr ""
 "отдельной панели верхнего уровня. Параметры каждой из этих панелей хранятся "
 "в /apps/panel/toplevels/$(id)."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:3
 msgid ""
 "A list of panel object IDs. Each ID identifies an individual panel object (e."
 "g. an applet, launcher, action button or menu button/bar). The settings for "
@@ -1176,43 +1176,43 @@ msgstr ""
 "или меню). Параметры каждого из этих объектов хранятся в /apps/panel/objects/"
 "$(id)."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:4
 msgid "Applet IIDs to disable from loading"
 msgstr "Идентификаторы (IID) запрещённых апплетов"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:5
 msgid "Complete panel lockdown"
 msgstr "Полная блокировка панели"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:6
 msgid "Confirm panel removal"
 msgstr "Подтверждать удаление панели"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:7
 msgid "Disable Force Quit"
 msgstr "Отключить принудительное завершение"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:8
 msgid "Enable autocompletion in \"Run Application\" dialog"
 msgstr "Включить автодополнение в диалоге «Выполнить программу»"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:9
 msgid "Enable program list in \"Run Application\" dialog"
 msgstr "Включить список программ в диалоге «Выполнить программу»"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:10
 msgid "Enable tooltips"
 msgstr "Включить всплывающие подсказки"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:11
 msgid "Expand program list in \"Run Application\" dialog"
 msgstr "Разворачивать список программ в диалоге «Выполнить программу»"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:12
 msgid "History of \"Run Application\" dialog"
 msgstr "Журнал диалога «Выполнить программу»"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:13
 msgid ""
 "If true, a dialog is shown asking for confirmation if the user wants to "
 "remove a panel."
@@ -1220,14 +1220,14 @@ msgstr ""
 "Если этот ключ установлен, при попытке удаления панели будет запрашиваться "
 "подтверждение."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:14
 msgid ""
 "If true, autocompletion in the \"Run Application\" dialog is made available."
 msgstr ""
 "Если этот ключ установлен, в диалоге «Выполнить программу» будет включено "
 "автоматическое дополнение."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is expanded when the dialog is opened. This key is only relevant if "
@@ -1237,7 +1237,7 @@ msgstr ""
 "программу» по умолчанию разворачивается. Этот ключ имеет смысл только в том "
 "случае, если установлен ключ enable_program_list."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is made available. Whether or not the listing is expanded when the "
@@ -1247,7 +1247,7 @@ msgstr ""
 "доступным список «Известные приложения». Будет ли он развёрнут по умолчанию, "
 "зависит от ключа show_program_list."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the panel will not allow a user to force an application to quit by "
 "removing access to the force quit button."
@@ -1255,7 +1255,7 @@ msgstr ""
 "Если этот ключ установлен, панель не будет позволять принудительно завершать "
 "приложение. Соответствующая кнопка будет недоступна."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the panel will not allow any changes to the configuration of the "
 "panel. Individual applets may need to be locked down separately however. The "
@@ -1265,7 +1265,7 @@ msgstr ""
 "своих настройках. Однако отдельные апплеты могут потребовать отдельной "
 "блокировки. Чтобы этот ключ вступил в силу, панель необходимо перезапустить."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:19
 msgid ""
 "If true, tooltips are shown for objects in panels. Tooltips can be disabled "
 "for the whole desktop with the gtk-enable-tooltips property in GTK+."
@@ -1274,26 +1274,26 @@ msgstr ""
 "Всплывающие подсказки можно отключить для всей среды с помощью свойства gtk-"
 "enable-tooltips в GTK+."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:20
 msgid "Panel ID list"
 msgstr "Список идентификаторов панели"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:21
 msgid "Panel object ID list"
 msgstr "Список идентификаторов объектов панели"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:22
 msgid ""
 "The list of commands used in the past in the \"Run Application\" dialog."
 msgstr ""
 "Список команд, используемых в прошлом в диалоговом окне Включить "
 "автодополнение в диалоге «Выполнить программу»"
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:1
 msgid "Launcher location"
 msgstr "Расположение кнопки запуска"
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:2
 msgid ""
 "The location of the .desktop file describing the launcher. This key is only "
 "relevant if the object_type key is \"launcher-object\"."
@@ -1302,15 +1302,15 @@ msgstr ""
 "имеет смысл только в том случае, если тип объекта (object_type) содержит "
 "«launcher-object»."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:1
 msgid "Icon used for button"
 msgstr "Значок, используемый для объекта"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:2
 msgid "Menu content path"
 msgstr "Путь содержимого меню"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:3
 msgid ""
 "The location of the image file used as the icon for the object's button. If "
 "empty, the default icon for the menu will be used."
@@ -1318,7 +1318,7 @@ msgstr ""
 "Местоположение файла изображения, используемого в качестве значка для кнопки "
 "объекта. Если ключ пуст, для меню будет использоваться значок по умолчанию."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:4
 msgid ""
 "The path from which the menu contents is contructed. If empty, the menu will "
 "be the default applications menu."
@@ -1326,15 +1326,15 @@ msgstr ""
 "Путь, из которого строится содержимое меню. Пустой ключ — меню приложений по "
 "умолчанию."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:5
 msgid "The text to display in a tooltip for this menu."
 msgstr "Текст всплывающей подсказки для этого меню."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:6
 msgid "Tooltip displayed for menu"
 msgstr "Всплывающая подсказка для меню"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:1
 msgid ""
 "If set to 'end', the position of the object is interpreted relative to the "
 "right (or bottom if vertical) edge of the panel."
@@ -1342,30 +1342,30 @@ msgstr ""
 "Если установлено значение «end», положение объекта определяется относительно "
 "правого (или нижнего при вертикальной ориентации) края панели."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:2
 msgid "Interpret position relative to bottom/right edge"
 msgstr "Интерпретировать позицию относительно нижнего/правого края"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:3
 msgid "Object IID"
 msgstr "IID объекта"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:4
 msgid "Object's position on the panel"
 msgstr "Положение объекта на панели"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:5
 msgid "The identifier of the toplevel panel which contains this object."
 msgstr "Идентификатор панели верхнего уровня, которая содержит данный объект."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:6
 msgid ""
 "The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
 "\"."
 msgstr ""
 "Идентификатор реализации объекта, например, «ClockAppletFactory::ClockApplet»."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:7
 msgid ""
 "The position of this panel object. The position is specified by the number "
 "of pixels from the left (or top if vertical) panel edge."
@@ -1373,39 +1373,39 @@ msgstr ""
 "Положение объекта на панели. Положение определяется количеством пикселей от "
 "левого (или верхнего для вертикальных панелей) края панели."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:8
 msgid "Toplevel panel containing object"
 msgstr "Панель верхнего уровня, содержащая объект"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:1
 msgid "Animation speed"
 msgstr "Скорость анимации"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:2
 msgid "Automatically hide panel into corner"
 msgstr "Автоматически прятать панель в угол"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:3
 msgid "Background color"
 msgstr "Фоновый цвет"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:4
 msgid "Background image"
 msgstr "Фоновое изображение"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:5
 msgid "Background type"
 msgstr "Тип фона"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:6
 msgid "Center panel on x-axis"
 msgstr "Центрировать панель по оси X"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:7
 msgid "Center panel on y-axis"
 msgstr "Центрировать панель по оси Y"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:8
 msgid ""
 "Determines how the image set by image-uri is rendered. Possible values are "
 "\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
@@ -1419,19 +1419,19 @@ msgstr ""
 "изображение по высоте панели (если панель горизонтальная) с сохранением "
 "соотношения сторон."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:9
 msgid "Enable arrows on hide buttons"
 msgstr "Включить стрелки на кнопках скрытия/раскрытия"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:10
 msgid "Enable hide buttons"
 msgstr "Включить кнопки скрытия/раскрытия"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:11
 msgid "Expand to occupy entire screen width"
 msgstr "Расширять панель до ширины экрана"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:12
 msgid ""
 "If true, arrows will be placed on the hide buttons. This key is only "
 "relevant if the enable_buttons key is true."
@@ -1440,7 +1440,7 @@ msgstr ""
 "стрелки. Этот параметр имеет смысл только в том случае, если установлен ключ "
 "enable_buttons."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:13
 msgid ""
 "If true, buttons will be placed on each side of the panel which may be used "
 "to move the panel to edge of the screen, leaving only a button showing."
@@ -1449,7 +1449,7 @@ msgstr ""
 "используются для «вывода» панели за пределы экрана, так что остаётся видимой "
 "только кнопка, позволяющая «развернуть» панель обратно."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:14
 msgid ""
 "If true, the background image will be rotated when the panel is oriented "
 "vertically."
@@ -1457,7 +1457,7 @@ msgstr ""
 "Если этот ключ установлен, то фоновое изображение будет повёрнуто, если "
 "панель ориентирована вертикально."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the panel is automatically hidden into a corner of the screen when "
 "the pointer leaves the panel area. Moving the pointer to that corner again "
@@ -1467,7 +1467,7 @@ msgstr ""
 "экрана при покидании указателем мыши пространства над панелью. Если "
 "поместить указатель в этот угол, панель снова появится."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the panel will occupy the entire screen width (height if this is a "
 "vertical panel). In this mode the panel can only be placed at a screen edge. "
@@ -1480,7 +1480,7 @@ msgstr ""
 "столько пространства, сколько необходимо для размещения находящихся на ней "
 "апплетов и кнопок."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the x and x_right keys are ignored and the panel is placed at the "
 "center of the x-axis of the screen. If the panel is resized it will remain "
@@ -1493,7 +1493,7 @@ msgstr ""
 "обе стороны). Если ключ не установлен, то ключи x и x_right определяют "
 "положение панели."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the y and y_bottom keys are ignored and the panel is placed at the "
 "center of the y-axis of the screen. If the panel is resized it will remain "
@@ -1506,11 +1506,11 @@ msgstr ""
 "обе стороны). Если ключ не установлен, то ключи y и y_bottom определяют "
 "положение панели."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:19
 msgid "Image options"
 msgstr "Параметры изображения"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:20
 msgid ""
 "In a Xinerama setup, you may have panels on each individual monitor. This "
 "key identifies the current monitor the panel is displayed on."
@@ -1518,35 +1518,35 @@ msgstr ""
 "При использовании системы Xinerama можно иметь разные панели на разных "
 "мониторах. Этот ключ определяет текущий монитор, на котором находится панель."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:21
 msgid "Name to identify panel"
 msgstr "Имя для обозначения панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:22
 msgid "Panel autohide delay"
 msgstr "Задержка автоскрытия панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:23
 msgid "Panel autounhide delay"
 msgstr "Задержка автораскрытия панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:24
 msgid "Panel orientation"
 msgstr "Ориентация панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:25
 msgid "Panel size"
 msgstr "Размер панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:26
 msgid "Rotate image on vertical panels"
 msgstr "Поворачивать изображение на вертикальных панелях"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:27
 msgid "Specifies the background color for the panel in #RGB format."
 msgstr "Указывает цвет фона для панели в формате #RGB."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:28
 msgid ""
 "Specifies the file to be used for the background image. If the image "
 "contains an alpha channel it will be composited onto the desktop background "
@@ -1556,7 +1556,7 @@ msgstr ""
 "изображение содержит альфа-канал, то оно будет совмещено на прозрачных "
 "участках с изображением фона рабочего стола."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:29
 msgid ""
 "Specifies the number of milliseconds delay after the pointer enters the "
 "panel area before the panel is automatically re-shown. This key is only "
@@ -1566,7 +1566,7 @@ msgstr ""
 "панели и автоматическим раскрытием этой панели. Имеет смысл только в том "
 "случае, если установлен ключ auto_hide."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:30
 msgid ""
 "Specifies the number of milliseconds delay after the pointer leaves the "
 "panel area before the panel is automatically hidden. This key is only "
@@ -1576,7 +1576,7 @@ msgstr ""
 "над панелью и автоматическим скрытием этой панели. Имеет смысл только в том "
 "случае, если установлен ключ auto_hide."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:31
 msgid ""
 "Specifies the number of pixels visible when the panel is automatically "
 "hidden into a corner. This key is only relevant if the auto_hide key is true."
@@ -1585,7 +1585,7 @@ msgstr ""
 "скрывается за границу экрана. Этот ключ имеет смысл только в том случае, "
 "если установлен ключ auto_hide."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:32
 msgid ""
 "The height (width for a vertical panel) of the panel. The panel will "
 "determine at runtime a minimum size based on the font size and other "
@@ -1597,7 +1597,7 @@ msgstr ""
 "соображений. Максимальный размер ограничен четвертью высоты экрана (или "
 "ширины, для вертикальных панелей)."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:33
 msgid ""
 "The location of the panel along the x-axis, starting from the right of the "
 "screen. If set to -1, the value is ignored and the value of the x key is "
@@ -1613,7 +1613,7 @@ msgstr ""
 "размеров экрана. В режиме расширения этот ключ игнорируется, и панель "
 "размещается у края экрана в соответствии со значением ключа ориентации."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:34
 msgid ""
 "The location of the panel along the x-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1624,7 +1624,7 @@ msgstr ""
 "расширения этот ключ игнорируется, и панель размещается у края экрана в "
 "соответствии со значением ключа ориентации."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:35
 msgid ""
 "The location of the panel along the y-axis, starting from the bottom of the "
 "screen. If set to -1, the value is ignored and the value of the y key is "
@@ -1640,7 +1640,7 @@ msgstr ""
 "расширения этот ключ игнорируется, и панель размещается у края экрана в "
 "соответствии со значением ключа ориентации."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:36
 msgid ""
 "The location of the panel along the y-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1651,7 +1651,7 @@ msgstr ""
 "расширения этот ключ игнорируется, и панель размещается у края экрана в "
 "соответствии со значением ключа ориентации."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:37
 msgid ""
 "The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
 "\", \"right\". In expanded mode the key specifies which screen edge the "
@@ -1670,7 +1670,7 @@ msgstr ""
 "Например, при значении «top» выпадающее меню у кнопки меню будет "
 "ориентировано вниз, тогда как при «bottom» — вверх."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:38
 msgid ""
 "The speed in which panel animations should occur. Possible values are \"slow"
 "\", \"medium\" and \"fast\". This key is only relevant if the "
@@ -1680,7 +1680,7 @@ msgstr ""
 "«slow» (медленно), «medium» (средне) и «fast» (быстро). Этот ключ действует "
 "только в том случае, если установлен ключ enable_animations."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:39
 msgid ""
 "This is a human readable name which you can use to identify a panel. Its "
 "main purpose is to serve as the panel's window title which is useful when "
@@ -1689,11 +1689,11 @@ msgstr ""
 "Удобное для чтения человеком имя панели. Основное назначение — служить "
 "заголовком окна панели, что полезно при переключении между панелями."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:40
 msgid "Visible pixels when hidden"
 msgstr "Количество отображаемых пикселей скрытой панели."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:41
 msgid ""
 "Which type of background should be used for this panel. Possible values are "
 "\"none\" - the default GTK+ widget background will be used, \"color\" - the "
@@ -1705,7 +1705,7 @@ msgstr ""
 "цветом, указанным в ключе; «image» — в качестве фона будет использовано "
 "изображение, указанное в ключе."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:42
 msgid ""
 "With a multi-screen setup, you may have panels on each individual screen. "
 "This key identifies the current screen the panel is displayed on."
@@ -1713,27 +1713,27 @@ msgstr ""
 "При наличии нескольких экранов можно иметь разные панели на разных экранах. "
 "Данный ключ определяет текущий экран, на котором находится панель."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:43
 msgid "X co-ordinate of panel"
 msgstr "X-координата панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:44
 msgid "X co-ordinate of panel, starting from the right of the screen"
 msgstr "X-координата панели от правого края экрана"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:45
 msgid "X screen where the panel is displayed"
 msgstr "Экран в системе X Window, на котором показывается панель"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:46
 msgid "Xinerama monitor where the panel is displayed"
 msgstr "Монитор в расширении Xinerama, на котором показывается панель"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:47
 msgid "Y co-ordinate of panel"
 msgstr "Y-координата панели"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:48
 msgid "Y co-ordinate of panel, starting from the bottom of the screen"
 msgstr "Y-координата панели от низа экрана"
 

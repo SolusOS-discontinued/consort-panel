@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.gnome.consort-panel.applet.workspace-switcher">
+  <schema id="org.consort.consort-panel.applet.workspace-switcher">
     <key name="display-workspace-names" type="b">
       <default>false</default>
       <_summary>Display workspace names</_summary>

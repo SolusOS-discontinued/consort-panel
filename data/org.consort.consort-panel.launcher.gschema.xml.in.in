@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.gnome.consort-panel.launcher">
+  <schema id="org.consort.consort-panel.launcher">
     <key name="location" type="s">
       <default>''</default>
       <_summary>Launcher location</_summary>

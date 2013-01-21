@@ -987,44 +987,44 @@ msgstr "కార్యక్షేత్రం పేర్లు (_m):"
 msgid "Workspaces"
 msgstr "కార్యక్షేత్రాలు"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:1
 msgid ""
 "A fish without a name is a pretty dull fish. Bring your fish to life by "
 "naming him."
 msgstr "పేరులేని లేని చేప బాగా దీనముగా ఉంది. పేరు పెట్టుట ద్వారా మీ చేపకు జీవితాన్ని ఇవ్వండి."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:2
 msgid "Command to execute on click"
 msgstr "నొక్కుట ద్వారా అమలుచేయవలసిన ఆదేశం"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:3
 msgid ""
 "If true, the fish's animation will be displayed rotated on vertical panels."
 msgstr "నిజమైతే, చేప యొక్క యానిమేషన్ నిటారుగా ఉన్న ప్యానళ్ళ పై తిరుగుతూ ప్రదర్శితమవుతుంది."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:4
 msgid "Pause per frame"
 msgstr "చట్రానికి నిలిపివేయుట"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:5
 msgid "Rotate on vertical panels"
 msgstr "నిలువుగా ఉన్న ప్యానళ్ళ పై తిరుగు"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:6
 msgid "The fish's animation pixmap"
 msgstr "చేప యొక్క యానిమేషన్ పిక్స్ మాప్"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:7
 msgid "The fish's name"
 msgstr "చేప యొక్క పేరు"
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:8
 msgid ""
 "This key specifies the command that will be tried to execute when the fish "
 "is clicked."
 msgstr "చేప నొక్కబడినప్పుడు అమలుపరుచుటకు ప్రయత్నించే ఆదేశాన్ని ఈ కీ తెలియజేస్తుంది."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:9
 msgid ""
 "This key specifies the filename of the pixmap which will be used for the "
 "animation displayed in the fish applet relative to the pixmap directory."
@@ -1032,11 +1032,11 @@ msgstr ""
 "పిక్సమాప్ సంచయానికి సంబంధించిన చేప ఆప్లెట్‌లోని యానిమేషన్ ప్రదర్శనకు ఉపయోగపడు పిక్స్ మాప్ యొక్క ఫైల్ పేరును ఈ "
 "కీ తెలియజేస్తుంది."
 
-#: ../data/org.gnome.consort-panel.applet.fish.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.applet.fish.gschema.xml.in.in.h:10
 msgid "This key specifies the number of seconds each frame will be displayed."
 msgstr "ఒక్కో చట్రము ఎన్ని సెకన్లు ప్రదర్శితమవ్వాలో ఈ కీ తెలియజేస్తుంది."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:1
 msgid ""
 "Decides when to group windows from the same application on the window list. "
 "Possible values are \"never\", \"auto\" and \"always\"."
@@ -1044,7 +1044,7 @@ msgstr ""
 "విండోజాబితాలో ఒకే రకమైన అనువర్తనం నుండి వచ్చిన విండోలను ఎప్పుడు సమూహకరించాలో నిర్ణయిస్తుంది. సాధ్యమైన "
 "విలువలు \"ఎప్పటికివద్దు\", \"స్వయం\" మరియు \"ఎల్లప్పుడు\"."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:2
 msgid ""
 "If true, the window list will show windows from all workspaces. Otherwise it "
 "will only display windows from the current workspace."
@@ -1052,7 +1052,7 @@ msgstr ""
 "నిజమైతే,విండో జాబితా అన్ని కార్యక్షేత్రాల నుండి విండోలను చూపిస్తుంది. లేదంటే అది ప్రస్తుతకార్యక్షేత్రం నుండి "
 "మాత్రమే విండోలను చూపిస్తుంది."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:3
 msgid ""
 "If true, then when unminimizing a window, move it to the current workspace. "
 "Otherwise, switch to the workspace of the window."
@@ -1060,27 +1060,27 @@ msgstr ""
 "నిజమైతే, ఎప్పుడైతే విండోను చిన్నది చేయవో అప్పుడు దానిని, ప్రస్తుత కార్యక్షేత్రానికి కదుపు. లేదంటే, ఆ విండో "
 "కార్యక్షేత్రానికి మారు."
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:4
 msgid "Move windows to current workspace when unminimized"
 msgstr "ఎప్పుడైతే విండోలు చిన్నవిగా ఉండవో వాటిని ప్రస్తుత కార్యక్షేత్రమునకు కదుపు"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:5
 msgid "Show windows from all workspaces"
 msgstr "అన్ని కార్యక్షేత్రములలోని విండోలను చూపించు"
 
-#: ../data/org.gnome.consort-panel.applet.window-list.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.window-list.gschema.xml.in.in.h:6
 msgid "When to group windows"
 msgstr "విండోలను ఎప్పుడు సమూహకరించాలి"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:1
 msgid "Display all workspaces"
 msgstr "అన్ని కార్యక్షేత్రాలను ప్రదర్శించు"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:2
 msgid "Display workspace names"
 msgstr "కార్యక్షేత్ర పేర్లను ప్రదర్శించు"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:3
 msgid ""
 "If true, the workspace switcher will show all workspaces. Otherwise it will "
 "only show the current workspace."
@@ -1088,7 +1088,7 @@ msgstr ""
 "నిజమైతే, ఆ కార్యక్షేత్రం మార్పరి కార్యక్షేత్రాలన్నిటినీ చూపిస్తుంది. లేదంటే అది ప్రస్తుత కార్యక్షేత్రం మాత్రమే "
 "చూపుతుంది."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:4
 msgid ""
 "If true, the workspaces in the workspace switcher will display the names of "
 "the workspaces. Otherwise they will display the windows on the workspace. "
@@ -1097,11 +1097,11 @@ msgstr ""
 "నిజమైతే, కార్యక్షేత్రం మార్పరిలో గల కార్యక్షేత్రాలు కార్యక్షేత్రల యొక్క పేర్లను ప్రదర్శిస్తాయి. లేదంటే అవి "
 "కార్యక్షేత్రంలోని విండోలను ప్రదర్శిస్తాయి.ఈ అమరిక విండో నిర్వాహిక మెటాసిటి అయితే మాత్రమే పనిచేస్తుంది."
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:5
 msgid "Rows in workspace switcher"
 msgstr "కార్యక్షేత్రం మార్పరిలో గల అడ్డువరుసలు"
 
-#: ../data/org.gnome.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.applet.workspace-switcher.gschema.xml.in.in.h:6
 msgid ""
 "This key specifies how many rows (for horizontal layout) or columns (for "
 "vertical layout) the workspace switcher shows the workspaces in. This key is "
@@ -1111,7 +1111,7 @@ msgstr ""
 "(నిలువు నమూనా కొరకు) చూపిస్తుందో ఈ కీ తెలియజేస్తుంది.ఈ కీ display_all_workspaces కీ నిజమైతే "
 "మాత్రమే సంభందితంగా ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:1
 msgid ""
 "A list of applet IIDs that the panel will ignore. This way you can disable "
 "certain applets from loading or showing up in the menu. For example to "
@@ -1123,7 +1123,7 @@ msgstr ""
 "GNOME_MinicommanderApplet' ను ఈ జాబితా కు కలుపండి.ఇది ప్రభావితం అగుటకు పానల్ తప్పనిసరిగా "
 "పునఃప్రారంభించాలి."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:2
 msgid ""
 "A list of panel IDs. Each ID identifies an individual toplevel panel. The "
 "settings for each of these panels are stored in /apps/panel/toplevels/$(id)."
@@ -1131,7 +1131,7 @@ msgstr ""
 "ప్యానల్ ID ల యొక్క జాబితా.ప్రతి ID ఒక స్వతంత్ర గరిష్ఠస్థాయి ప్యానల్ ను గుర్తిస్తుంది.ఈ పానల్ లోని ప్రతి "
 "దానికి గల అమరికలు /apps/panel/toplevels/$(id) నందు నిల్వఉంచబడతాయి."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:3
 msgid ""
 "A list of panel object IDs. Each ID identifies an individual panel object (e."
 "g. an applet, launcher, action button or menu button/bar). The settings for "
@@ -1141,54 +1141,54 @@ msgstr ""
 "మెనూబటన్/బార్)ను గుర్తిస్తుంది. ఈ ఆబ్జక్టుల యొక్క అమరికలు /apps/panel/objects/$(id) నందు "
 "నిల్వ ఉంచబడతాయి."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:4
 msgid "Applet IIDs to disable from loading"
 msgstr "లోడింగ్ నుండి అచేతనం చేయుటకు ఆప్లెట్ IIDs"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:5
 msgid "Complete panel lockdown"
 msgstr "పూర్తి ప్యానల్‌ను తాళంవేయి"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:6
 msgid "Confirm panel removal"
 msgstr "ప్యానల్ తొలగింపును నిర్ధారించు"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:7
 msgid "Disable Force Quit"
 msgstr "బలవంతపు నిష్క్రమణను అచేతనపరుచు"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:8
 msgid "Enable autocompletion in \"Run Application\" dialog"
 msgstr "స్వయంచాలకముగింపును \"అనువర్తనం నడుపు\" డైలాగులో చేతనపరుచు"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:9
 msgid "Enable program list in \"Run Application\" dialog"
 msgstr "ప్రోగ్రామ్ జాబితాను \"అనువర్తనము నడుపు\" డైలాగులో చేతనపరుచు"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:10
 msgid "Enable tooltips"
 msgstr "సాధనచిట్కాలను చేతనపరుచు"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:11
 msgid "Expand program list in \"Run Application\" dialog"
 msgstr "ప్రోగ్రామ్ జాబితాను \"అనువర్తనము నడుపు\" డైలాగులో విస్తరించు"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:12
 msgid "History of \"Run Application\" dialog"
 msgstr "\"అనువర్తనము నడుపు\" డైలాగు యొక్క చరిత్ర"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:13
 msgid ""
 "If true, a dialog is shown asking for confirmation if the user wants to "
 "remove a panel."
 msgstr "నిజమైతే, వాడుకరి ప్యానల్ తొలగించాలని కొరుకుంటున్నాడో లేదో నిర్ధారించుటకు ఒక డైలాగ్ చూపబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:14
 msgid ""
 "If true, autocompletion in the \"Run Application\" dialog is made available."
 msgstr "నిజమైతే, స్వయంచాలకముగింపును\"అనువర్తనం నడుపు\" డైలాగ్ నందు అందుబాటులో ఉంచు."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is expanded when the dialog is opened. This key is only relevant if "
@@ -1197,7 +1197,7 @@ msgstr ""
 "నిజమైతే, \"తెలిసిన అనువర్తనములు\" ఏవైతే\"అనువర్తనము నడుపు\" డైలాగ్ లో జాబితాచేయబడినవో అవి డైలాగ్ "
 "తెరవగానే విస్తరింపబడతాయి.ఈ కీ enable_program_list కీ నిజమైతే మాత్రమే సంభందితంగా ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the \"Known Applications\" listing in the \"Run Application\" "
 "dialog is made available. Whether or not the listing is expanded when the "
@@ -1207,7 +1207,7 @@ msgstr ""
 "ఉంచు. డైలాగ్ తెరిచినప్పుడు జాబితా విస్తరించబడినా లేదా విస్తరించబడకపోయినా show_program_list కీ చేత "
 "నియంత్రించ బడుతుంది. "
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the panel will not allow a user to force an application to quit by "
 "removing access to the force quit button."
@@ -1215,7 +1215,7 @@ msgstr ""
 "నిజమైతే, ప్యానల్ బలవంతపు నిష్క్రమణ బటన్ కు ప్రవేశం తీసివేయుట ద్వారా వాడుకరిని ఒక అనువర్తనమును "
 "బలవంతంగా నిష్క్రమింపచేయుటకు అనుమతినివ్వదు."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the panel will not allow any changes to the configuration of the "
 "panel. Individual applets may need to be locked down separately however. The "
@@ -1224,7 +1224,7 @@ msgstr ""
 "నిజమైతే, ప్యానల్ ఆకృతీకరణకు ఏ మార్పులను కూడా ప్యానల్ అనుమతించదు. ఏమైనప్పటికి ఒంటరి ఆప్లెట్లు "
 "ప్రత్యేకంగా లాక్ డౌన్ చేయవలసిరావచ్చు. ఇది ప్రభావితం కావటానికి ప్యానల్‌ను పునఃప్రారంభించ వలసిరావచ్చు."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:19
 msgid ""
 "If true, tooltips are shown for objects in panels. Tooltips can be disabled "
 "for the whole desktop with the gtk-enable-tooltips property in GTK+."
@@ -1232,24 +1232,24 @@ msgstr ""
 "ఒకవేళ నిజమైతే, సాధనచిట్కాలు ఆబ్జెక్టుల కోసం చూపించబడతాయి. జిటికెప్లస్‌లో చేతనపరిచివున్న జిటికె-సాధనచిట్కాలను "
 "మొత్తం డెస్క్‍టాపుకు అచేతనపరుచవచ్చు."
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:20
 msgid "Panel ID list"
 msgstr "ప్యానల్ ID జాబితా"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:21
 msgid "Panel object ID list"
 msgstr "ప్యానల్ ఆబ్జెక్టు ఐడీ జాబితా"
 
-#: ../data/org.gnome.consort-panel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.gschema.xml.in.in.h:22
 msgid ""
 "The list of commands used in the past in the \"Run Application\" dialog."
 msgstr "\" అనువర్తనము నడుపు\" డైలాగులో ఇదివరకు వాడిన ఆదేశాల యొక్క జాబితా."
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:1
 msgid "Launcher location"
 msgstr "ప్రారంభకం స్థానము"
 
-#: ../data/org.gnome.consort-panel.launcher.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.launcher.gschema.xml.in.in.h:2
 msgid ""
 "The location of the .desktop file describing the launcher. This key is only "
 "relevant if the object_type key is \"launcher-object\"."
@@ -1257,15 +1257,15 @@ msgstr ""
 "లాంచర్ ను వివరించు .desktop దస్త్రం యొక్క స్థానము. object_type కీ \"launcher-object\" "
 "అయితే మాత్రమే ఈ కీ సారుప్యంగా ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:1
 msgid "Icon used for button"
 msgstr "బటన్‌కు ఉపయోగించే ప్రతీక"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:2
 msgid "Menu content path"
 msgstr "మెనూ విషయసంగ్రహం పథం"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:3
 msgid ""
 "The location of the image file used as the icon for the object's button. If "
 "empty, the default icon for the menu will be used."
@@ -1273,22 +1273,22 @@ msgstr ""
 "ఆబ్జక్టు యొక్క బటన్‌కు ప్రతీకగా ఉపయోగించిన బొమ్మ ఫైలు యొక్క స్థానము. ఒకవేళ ఖాళీగావుంటే, అప్రమేయ ప్రతీకను "
 "మెను కొరకు వాడబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:4
 msgid ""
 "The path from which the menu contents is contructed. If empty, the menu will "
 "be the default applications menu."
 msgstr ""
 "మెనూ అంశాలను నిర్మించినటువంటి పథం. ఒకవేళ ఖాళీగావుంటే, ఆ మెనూ అప్రమేయ అనువర్తనాల మెను అవుతుంది."
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:5
 msgid "The text to display in a tooltip for this menu."
 msgstr "ఈ మెను కొరకు సాధనచిట్కా నందు ప్రదర్శించాల్సిన పాఠ్యం"
 
-#: ../data/org.gnome.consort-panel.menu-button.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.menu-button.gschema.xml.in.in.h:6
 msgid "Tooltip displayed for menu"
 msgstr "మెనూ కొరకు ప్రదర్శితమయ్యే సాధనచిట్కా"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:1
 msgid ""
 "If set to 'end', the position of the object is interpreted relative to the "
 "right (or bottom if vertical) edge of the panel."
@@ -1296,29 +1296,29 @@ msgstr ""
 "ఒకవేళ నిజమని అమర్చితే, ఆబ్జక్టు యోక్క స్థానము ప్యానల్ యొక్క కుడి(లేదా నిలువుగా అయితే క్రింది) అంచుకి "
 "సారూప్యంగా స్థానాంతరము చేయబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:2
 msgid "Interpret position relative to bottom/right edge"
 msgstr "స్థానంను క్రింది/కుడి అంచుకి సారూప్యంగా స్థానాంతరము చేయుము"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:3
 msgid "Object IID"
 msgstr "ఆబ్జెక్టు ఐఐడి"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:4
 msgid "Object's position on the panel"
 msgstr "ప్యానల్ పైన ఆబ్జక్టు యొక్క స్థానము"
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:5
 msgid "The identifier of the toplevel panel which contains this object."
 msgstr "ఈ ఆబ్జక్టును కలిగివున్న అత్యున్నత స్థాయి ప్యానల్‌ను గుర్తించునది."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:6
 msgid ""
 "The implementation ID of the object - e.g. \"ClockAppletFactory::ClockApplet"
 "\"."
 msgstr "ఆబ్జెక్టు యొక్క అమలుపరుచు ID - ఉదా. \"ClockAppletFactory::ClockApplet\"."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:7
 msgid ""
 "The position of this panel object. The position is specified by the number "
 "of pixels from the left (or top if vertical) panel edge."
@@ -1326,39 +1326,39 @@ msgstr ""
 "ఈ ప్యానల్ ఆబ్జక్టు యొక్క స్థానము.ఆ స్థానము ప్యానల్ ఎడమ (లేదా నిలువుగానైతే పైన) అంచు నుండి గల "
 "పిగ్జెల్సు సంఖ్య ద్వారా తెలుపబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.object.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.object.gschema.xml.in.in.h:8
 msgid "Toplevel panel containing object"
 msgstr "ఉన్నతస్థాయి ప్యానల్ కలిగివుండే ఆబ్జక్టు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:1
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:1
 msgid "Animation speed"
 msgstr "యానిమేషన్ వేగం"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:2
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:2
 msgid "Automatically hide panel into corner"
 msgstr "స్వయంచాలకంగా మూలలో దాగు ప్యానల్"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:3
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:3
 msgid "Background color"
 msgstr "నేపథ్య వర్ణము"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:4
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:4
 msgid "Background image"
 msgstr "నేపథ్యం బొమ్మ"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:5
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:5
 msgid "Background type"
 msgstr "నేపథ్యం రకం"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:6
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:6
 msgid "Center panel on x-axis"
 msgstr "x-యాక్సిస్ పై గల మధ్య ప్యానల్"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:7
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:7
 msgid "Center panel on y-axis"
 msgstr "y-యాక్సిస్ పై గల మధ్య ప్యానల్"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:8
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:8
 msgid ""
 "Determines how the image set by image-uri is rendered. Possible values are "
 "\"none\", \"stretch\", \"fit\". With \"stretch\", the image will be scaled "
@@ -1370,19 +1370,19 @@ msgstr ""
 "\"నొక్కు\", \"అమర్చు\", \"సాగదీయి\", బొమ్మ కొలతలకు అనుగుణంగా అమర్చబడుతుంది కానీ అసలు "
 "నాణ్యతను మాత్రం ఉండదు. \"అమర్చు\" తో, అన్నిటికీ సరిపోయేట్టు అమర్చుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:9
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:9
 msgid "Enable arrows on hide buttons"
 msgstr "మరుగునవున్న బటన్లపై బాణాలను చేతనపరుచు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:10
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:10
 msgid "Enable hide buttons"
 msgstr "దాగు బటన్లను చేతనపరుచు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:11
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:11
 msgid "Expand to occupy entire screen width"
 msgstr "మొత్తం తెర వెడల్పును ఆక్రమించుకొనుటకు విస్తరింపుము"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:12
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:12
 msgid ""
 "If true, arrows will be placed on the hide buttons. This key is only "
 "relevant if the enable_buttons key is true."
@@ -1390,7 +1390,7 @@ msgstr ""
 "నిజమైతే, మరుగునఉన్న బటన్ల పై బాణాలు ఉంచబడతాయి.ఈ కీ enable_buttons కీ నిజమైతే మాత్రమే సారూప్యతతో "
 "ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:13
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:13
 msgid ""
 "If true, buttons will be placed on each side of the panel which may be used "
 "to move the panel to edge of the screen, leaving only a button showing."
@@ -1398,13 +1398,13 @@ msgstr ""
 "నిజమైతే, పానల్ యొక్క రెండు పక్కల పానల్ ను తెరఅంచు చివరివరకు కదుపుటకు ఉపయోగపడగల బటన్లు, ఒక "
 "బటన్ మాత్రమే కనబడునట్లుగా ఉంచబడతాయి,"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:14
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:14
 msgid ""
 "If true, the background image will be rotated when the panel is oriented "
 "vertically."
 msgstr "నిజమైతే, పానల్ నిలువుగా సర్దుబాటు చేసినప్పడు మాత్రమే బ్యాక్‌గ్రౌండ్ చిత్రం భ్రమణం చేయబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:15
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:15
 msgid ""
 "If true, the panel is automatically hidden into a corner of the screen when "
 "the pointer leaves the panel area. Moving the pointer to that corner again "
@@ -1413,7 +1413,7 @@ msgstr ""
 "నిజమైతే, సూచిక పానల్ వదిలివేళ్ళగానే పానల్ స్వయంచాలకంగా స్క్రీన్ యొక్క మూలన దాగిఉంచబడుతుంది.సూచిక ను "
 "మూలకు తీసుకుపోవుట ద్వారా పానల్ ను తిరిగిఉంచుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:16
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:16
 msgid ""
 "If true, the panel will occupy the entire screen width (height if this is a "
 "vertical panel). In this mode the panel can only be placed at a screen edge. "
@@ -1424,7 +1424,7 @@ msgstr ""
 "అంచు వద్ద మాత్రమే ఉంచబడుతుంది. నిజంకానిచో, పానల్ దాని పై ఆప్లెట్లను, లాంచర్లను మరియు బటన్లను "
 "ఉంచగలిగే అంత పెద్దదిగా మాత్రమే ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:17
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:17
 msgid ""
 "If true, the x and x_right keys are ignored and the panel is placed at the "
 "center of the x-axis of the screen. If the panel is resized it will remain "
@@ -1435,7 +1435,7 @@ msgstr ""
 "పరిమాణం మార్చనా దాని స్థానం అలాగే ఉంటుంది -i.e పానల్ రెండువైపులా పెరుగుతుంది.నిజంకానిచో,x మరియు "
 "x_right కీలు పానల్ స్థానాన్ని తెలుపుతాయి."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:18
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:18
 msgid ""
 "If true, the y and y_bottom keys are ignored and the panel is placed at the "
 "center of the y-axis of the screen. If the panel is resized it will remain "
@@ -1446,11 +1446,11 @@ msgstr ""
 "పానల్ పరిమాణంమర్చినా దాని స్థానం అలాగే ఉంటుంది - i.e పానల్ రెడు వైపులా పెరుగుతుంది. నిజంకానిచో, y "
 "మరియు y_bottom కీలు పానల్ స్థానాన్ని తెలియజేస్తాయి."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:19
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:19
 msgid "Image options"
 msgstr "బొమ్మ ఐచ్ఛికాలు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:20
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:20
 msgid ""
 "In a Xinerama setup, you may have panels on each individual monitor. This "
 "key identifies the current monitor the panel is displayed on."
@@ -1458,35 +1458,35 @@ msgstr ""
 "xinerama అమర్పులో, మీరు ప్రతి విడి మానిటర్ నందు పానల్ కలిగిఉండొచ్చు.ఈ కీ పానల్ ప్రదర్శింపబడుతున్న "
 "ప్రస్తుత మానిటర్ ను గుర్తిస్తుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:21
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:21
 msgid "Name to identify panel"
 msgstr "ప్యానల్‌ను గుర్తించుటకు పేరు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:22
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:22
 msgid "Panel autohide delay"
 msgstr "ప్యానల్ స్వయంగా దాగుటకు ఆలస్యం"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:23
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:23
 msgid "Panel autounhide delay"
 msgstr "ప్యానల్ స్వయంగా దాగి ఉండుటకి ఆలస్యం"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:24
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:24
 msgid "Panel orientation"
 msgstr "ప్యానల్ సర్దుబాటు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:25
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:25
 msgid "Panel size"
 msgstr "ప్యానల్ పరిమాణం"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:26
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:26
 msgid "Rotate image on vertical panels"
 msgstr "బొమ్మను నిలువు ప్యానళ్ళ పైన తిప్పు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:27
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:27
 msgid "Specifies the background color for the panel in #RGB format."
 msgstr "పానల్ కొరకు బ్యాక్‌గ్రౌండ్ వర్ణమును #RGB విధానం లో తెలుపుతుంది"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:28
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:28
 msgid ""
 "Specifies the file to be used for the background image. If the image "
 "contains an alpha channel it will be composited onto the desktop background "
@@ -1495,7 +1495,7 @@ msgstr ""
 "బ్యాక్‌గ్రౌండ్ చిత్రం కొరకు ఉపయోగించబడు దస్త్రం ను తెలియజేస్తుంది.చిత్రం ఆల్ఫా చానల్ ను కలిగిఉంటే అది "
 "డెస్కటాప్ బ్యాక్‌గ్రౌండ్ చిత్రం పైకి వర్ణరంజితం చేయబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:29
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:29
 msgid ""
 "Specifies the number of milliseconds delay after the pointer enters the "
 "panel area before the panel is automatically re-shown. This key is only "
@@ -1504,7 +1504,7 @@ msgstr ""
 "పానల్ స్వయంచాలకంగా తిరిగి-చూపించబడక ముందు సూచిక పానల్ ప్రదేశంలో ప్రవేశించిన తర్వాత జరిగిన ఆలస్యాన్ని "
 "మిల్లీసెంకన్లలో తెలుపుతుంది.ఈ కీ auto_hide కీ నిజమైతేనే సారూప్యతతో ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:30
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:30
 msgid ""
 "Specifies the number of milliseconds delay after the pointer leaves the "
 "panel area before the panel is automatically hidden. This key is only "
@@ -1513,7 +1513,7 @@ msgstr ""
 "పానల్ స్వయంచాలకంగా మరుగుపరచక మునుపు సూచిక పానల్ ప్రదేశంలో ప్రవేశించిన తర్వాత జరిగిన ఆలస్యాన్ని "
 "మిల్లీసెకన్లలో తెలియజెస్తుంది.ఈ కీ auto_hide కీ నిజమైతేనే సారూప్యతతో ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:31
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:31
 msgid ""
 "Specifies the number of pixels visible when the panel is automatically "
 "hidden into a corner. This key is only relevant if the auto_hide key is true."
@@ -1521,7 +1521,7 @@ msgstr ""
 "పానల్ స్వయంచాలకంగా మూలన మరుగుపరిచినప్పుడు కనబడే పిగ్జెల్సు సంఖ్యను తెలియజేస్తుంది.ఈ కీ auto_hide "
 "కీ నిజమైతే మాత్రమే సారూప్యతతో ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:32
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:32
 msgid ""
 "The height (width for a vertical panel) of the panel. The panel will "
 "determine at runtime a minimum size based on the font size and other "
@@ -1532,7 +1532,7 @@ msgstr ""
 "రన్‌టైమ్ నందు పానల్ నిర్ధారించబడుతుంది.గరిష్ఠ పరిమాణం తెరయొక్క ఎత్తు(లేదా వెడల్పు) కు ఒక పావుభాగం వద్ద "
 "నిర్దేశించ బడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:33
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:33
 msgid ""
 "The location of the panel along the x-axis, starting from the right of the "
 "screen. If set to -1, the value is ignored and the value of the x key is "
@@ -1546,7 +1546,7 @@ msgstr ""
 "వదిలివేయబడుతుంది.ఈ కీ un-expanded రీతి నందు మాత్రమే సారూప్యతతో ఉంటుంది.విస్తరణ రీతి నందు ఈ కీ "
 "వదిలివేయబడుతుంది మరియు పానల్ సర్దుబాటు కీ ద్వారా తెలుపబడిన తెర అంచున ఉంచబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:34
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:34
 msgid ""
 "The location of the panel along the x-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1555,7 +1555,7 @@ msgstr ""
 "x-యాక్సిస్ తో కూడిన పానల్ స్థానము.ఈ కీ un-expanded రీతి నందు మాత్రమే సారూప్యతతో ఉంటుంది.విస్తరణ రీతి "
 "నందు ఈ కీ వదిలివేయబడుతుంది మరియు పానల్ సర్దుబాటు కీ ద్వారా తెలుపబడిన తెర అంచు వద్ద ఉంచబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:35
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:35
 msgid ""
 "The location of the panel along the y-axis, starting from the bottom of the "
 "screen. If set to -1, the value is ignored and the value of the y key is "
@@ -1569,7 +1569,7 @@ msgstr ""
 "y కీ విలువ వదిలివేయబడుతుంది.ఈ కీ un-expanded రీతి నందు మాత్రమే సారూప్యతతో ఉంటుంది.విస్తరణ రీతి "
 "నందు ఈ కీ వదిలివేయబడుతుంది మరియు సర్దుబాటు కీ ద్వారా తెలుపబడిన తెరు అంచువద్ద ఉంచబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:36
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:36
 msgid ""
 "The location of the panel along the y-axis. This key is only relevant in un-"
 "expanded mode. In expanded mode this key is ignored and the panel is placed "
@@ -1579,7 +1579,7 @@ msgstr ""
 "రీతి నందు ఈ కీ వదిలివేయబడుతుంది మరియు పానల్ సర్దుబాటు కీ ద్వారా తెలుపబడిన తెరఅంచు వద్ద "
 "ఉంచబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:37
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:37
 msgid ""
 "The orientation of the panel. Possible values are \"top\", \"bottom\", \"left"
 "\", \"right\". In expanded mode the key specifies which screen edge the "
@@ -1596,7 +1596,7 @@ msgstr ""
 "పానల్ ఆబ్జక్టులు ఎలా ప్రవర్తించాలో చెప్పే ఉపయోగకరమైన మెళుకువ ఇస్తుంది. ఉదాహరణకు, \"పైన\" పానల్ మెనూ "
 "బటన్ మెనూను పానల్ క్రిందికి ఉంచుతుంది, అదే \"క్రింది\" పానల్ అయితే ఆ మెనూ పానల్ పైకి ఉంచబడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:38
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:38
 msgid ""
 "The speed in which panel animations should occur. Possible values are \"slow"
 "\", \"medium\" and \"fast\". This key is only relevant if the "
@@ -1605,7 +1605,7 @@ msgstr ""
 "పానల్ యానిమేషన్లు అవసరమయ్యే దానిలో వేగం.సాధ్యమగు విలువలు \"నిదానం\", \"మధ్యమం\" మరియు \"త్వరితం\"."
 "ఈ కీ enable_animations కీ నిజమైనప్పుడు మాత్రమే సారూప్యతతో ఉంటుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:39
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:39
 msgid ""
 "This is a human readable name which you can use to identify a panel. Its "
 "main purpose is to serve as the panel's window title which is useful when "
@@ -1614,11 +1614,11 @@ msgstr ""
 "మానవుడు చదవగల ఈ నామాన్ని మీరు పానల్ ను గుర్తించుటకు ఉపయోగించగలరు.దీని ప్రధాన ఉపయోగార్ధం పానల్ "
 "విండోకి శీర్షికగా ఉండుట ద్వారా పానల్సు మద్య మారుతూ ఉన్నప్పడు ఉపయోగపడుట."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:40
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:40
 msgid "Visible pixels when hidden"
 msgstr "దాగిఉన్నప్పుడు కనిపించు పిగ్జెల్సు"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:41
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:41
 msgid ""
 "Which type of background should be used for this panel. Possible values are "
 "\"none\" - the default GTK+ widget background will be used, \"color\" - the "
@@ -1629,7 +1629,7 @@ msgstr ""
 "నేపథ్యం ఉపయోగపడుతుంది, \"వర్ణము\" - వర్ణపు కీ నేపథ్య వర్ణముగా ఉపయోగపడుతుంది లేదా \"బొమ్మ\" - "
 "బొమ్మ కీ ద్వారా తెలుపబడిన బొమ్మ నేపథ్యముగా ఉపయోగపడుతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:42
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:42
 msgid ""
 "With a multi-screen setup, you may have panels on each individual screen. "
 "This key identifies the current screen the panel is displayed on."
@@ -1637,27 +1637,27 @@ msgstr ""
 "బహుళ-తెర అమరిక ద్వారా, మీరు ప్రతి విడి తెరపైన పానల్సు ను కలిగిఉండవచ్చు. ఈ కీ పానల్ "
 "ప్రదర్శితమువుతున్న ప్రస్తుత తెరను గుర్తిస్తుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:43
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:43
 msgid "X co-ordinate of panel"
 msgstr "పానల్ యొక్క X కో-ఆర్డినేట్"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:44
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:44
 msgid "X co-ordinate of panel, starting from the right of the screen"
 msgstr "పానల్ యొక్క X కొ-ఆర్డినేట్, తెర యొక్క కుడివైపు నుండి ప్రారంభమౌతుంది."
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:45
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:45
 msgid "X screen where the panel is displayed"
 msgstr "ఎక్కడైతే పానల్ ప్రదర్శింతమౌతుందో ఆ X తెర"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:46
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:46
 msgid "Xinerama monitor where the panel is displayed"
 msgstr "ఎక్కడైతే పానల్ ప్రదర్శింతమౌతుందో ఆ Xinerama మానిటర్"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:47
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:47
 msgid "Y co-ordinate of panel"
 msgstr "పానల్ యొక్క Y కో-ఆర్డినేట్"
 
-#: ../data/org.gnome.consort-panel.toplevel.gschema.xml.in.in.h:48
+#: ../data/org.consort.consort-panel.toplevel.gschema.xml.in.in.h:48
 msgid "Y co-ordinate of panel, starting from the bottom of the screen"
 msgstr "పానల్ యోక్క Y కో-ఆర్డినేట్, తెర యొక్క క్రిందిభాగం నుండి ప్రారంభించబడుతుంది"
 

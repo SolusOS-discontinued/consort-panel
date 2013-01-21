@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.gnome.consort-panel.object">
+  <schema id="org.consort.consort-panel.object">
     <key name="object-iid" type="s">
       <default>''</default>
       <_summary>Object IID</_summary>
@@ -10,7 +10,7 @@
       <_summary>Toplevel panel containing object</_summary>
       <_description>The identifier of the toplevel panel which contains this object.</_description>
     </key>
-    <key name="pack-type" enum="org.gnome.consort-panel.PanelObjectPackType">
+    <key name="pack-type" enum="org.consort.consort-panel.PanelObjectPackType">
       <default>'start'</default>
       <_summary>Interpret position relative to bottom/right edge</_summary>
       <_description>If set to 'end', the position of the object is interpreted relative to the right (or bottom if vertical) edge of the panel.</_description>

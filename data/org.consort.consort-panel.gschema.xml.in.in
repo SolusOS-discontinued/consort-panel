@@ -1,13 +1,13 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
 
-  <schema id="org.gnome.consort-panel" path="/org/gnome/consort-panel/">
-    <child name="general" schema="org.gnome.consort-panel.general"/>
-    <child name="layout" schema="org.gnome.consort-panel.layout"/>
-    <child name="lockdown" schema="org.gnome.consort-panel.lockdown"/>
-    <child name="run-dialog" schema="org.gnome.consort-panel.run-dialog"/>
+  <schema id="org.consort.consort-panel" path="/org/consort/consort-panel/">
+    <child name="general" schema="org.consort.consort-panel.general"/>
+    <child name="layout" schema="org.consort.consort-panel.layout"/>
+    <child name="lockdown" schema="org.consort.consort-panel.lockdown"/>
+    <child name="run-dialog" schema="org.consort.consort-panel.run-dialog"/>
   </schema>
 
-  <schema id="org.gnome.consort-panel.general" path="/org/gnome/consort-panel/general/">
+  <schema id="org.consort.consort-panel.general" path="/org/consort/consort-panel/general/">
     <key name="enable-tooltips" type="b">
       <default>true</default>
       <_summary>Enable tooltips</_summary>
@@ -20,7 +20,7 @@
     </key>
   </schema>
 
-  <schema id="org.gnome.consort-panel.layout" path="/org/gnome/consort-panel/layout/">
+  <schema id="org.consort.consort-panel.layout" path="/org/consort/consort-panel/layout/">
     <key name="toplevel-id-list" type="as">
       <default>[]</default>
       <_summary>Panel ID list</_summary>
@@ -33,7 +33,7 @@
     </key>
   </schema>
 
-  <schema id="org.gnome.consort-panel.lockdown" path="/org/gnome/consort-panel/lockdown/">
+  <schema id="org.consort.consort-panel.lockdown" path="/org/consort/consort-panel/lockdown/">
     <key name="locked-down" type="b">
       <default>false</default>
       <_summary>Complete panel lockdown</_summary>
@@ -51,7 +51,7 @@
     </key>
   </schema>
 
-  <schema id="org.gnome.consort-panel.run-dialog" path="/org/gnome/consort-panel/run-dialog/">
+  <schema id="org.consort.consort-panel.run-dialog" path="/org/consort/consort-panel/run-dialog/">
     <key type="as" name="history">
       <default>[]</default>
       <_summary>History of "Run Application" dialog</_summary>

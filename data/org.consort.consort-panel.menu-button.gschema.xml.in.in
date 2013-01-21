@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.gnome.consort-panel.menu-button">
+  <schema id="org.consort.consort-panel.menu-button">
     <key name="tooltip" type="s">
       <default>''</default>
       <_summary>Tooltip displayed for menu</_summary>

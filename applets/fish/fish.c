@@ -49,7 +49,7 @@
 #define FISH_ICON "consort-panel-fish"
 #define FISH_RESOURCE_PATH "/org/consort/panel/applet/fish/"
 
-#define FISH_SCHEMA      "org.gnome.consort-panel.applet.fish"
+#define FISH_SCHEMA      "org.consort.consort-panel.applet.fish"
 #define FISH_NAME_KEY    "name"
 #define FISH_IMAGE_KEY   "image"
 #define FISH_COMMAND_KEY "command"

@@ -291,7 +291,7 @@ setup_gconf (PagerData *pager)
 {
 	pager->settings =
 	  panel_applet_settings_new (PANEL_APPLET (pager->applet),
-				     "org.gnome.consort-panel.applet.workspace-switcher");
+				     "org.consort.consort-panel.applet.workspace-switcher");
 
 	g_signal_connect (pager->settings, "changed::num-rows",
 			  G_CALLBACK (num_rows_changed), pager);
