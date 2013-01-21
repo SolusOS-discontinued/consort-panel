@@ -745,6 +745,7 @@ panel_properties_dialog_new (PanelToplevel *toplevel,
 
 	g_free (toplevel_settings_path);
 
+							
 	dialog->properties_dialog = PANEL_GTK_BUILDER_GET (gui, "panel_properties_dialog");
 	g_signal_connect_swapped (dialog->properties_dialog, "response",
 				  G_CALLBACK (panel_properties_dialog_response), dialog);
@@ -787,6 +788,8 @@ panel_properties_dialog_present (PanelToplevel *toplevel)
 {
 	PanelPropertiesDialog *dialog;
 	GtkBuilder            *gui;
+	GSettings	      *consort_settings;
+	gboolean	      use_classic;
 
 	if (!panel_properties_dialog_quark)
 		panel_properties_dialog_quark =
@@ -800,13 +803,24 @@ panel_properties_dialog_present (PanelToplevel *toplevel)
 		return;
 	}
 
+	consort_settings = g_settings_new (PANEL_CONSORT_DESKTOP_SCHEMA);
+	use_classic = g_settings_get_boolean (consort_settings, PANEL_CONSORT_DESKTOP_CLASSIC_MODE);
+
 	gui = gtk_builder_new ();
 	gtk_builder_set_translation_domain (gui, GETTEXT_PACKAGE);
-	gtk_builder_add_from_resource (gui,
-				       PANEL_RESOURCE_PATH "panel-properties-dialog.ui",
-				       NULL);
+
+	if (use_classic) {
+		gtk_builder_add_from_resource (gui,
+					       PANEL_RESOURCE_PATH "panel-properties-dialog.ui",
+					       NULL);
+	} else {
+		gtk_builder_add_from_resource (gui,
+					       PANEL_RESOURCE_PATH "panel-properties-dialog-modern.ui",
+					       NULL);
 
 	dialog = panel_properties_dialog_new (toplevel, gui);
 
 	g_object_unref (gui);
+	g_object_unref (consort_settings);
+	consort_settings = NULL;
 }
