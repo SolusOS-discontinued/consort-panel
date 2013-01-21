@@ -1,3 +1,9 @@
+consort-panel (1.0.1) two; urgency=low
+
+  * Working System applet, stable early build.
+
+ -- Ikey Doherty <ikey@solusos.com>  Mon, 21 Jan 2013 16:17:54 +0000
+
 consort-panel (1.0) two; urgency=low
 
   * Now we're at version 1.0 :) 
