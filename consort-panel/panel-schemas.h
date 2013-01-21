@@ -18,6 +18,9 @@
 #define PANEL_DESKTOP_DISABLE_LOG_OUT_KEY      "disable-log-out"
 #define PANEL_DESKTOP_DISABLE_SWITCH_USER_KEY  "disable-user-switching"
 
+#define PANEL_CONSORT_SCHEMA		 "org.consort.desktop"
+#define PANEL_CONSORT_CLASSIC_MODE       "classic-mode"
+
 #define PANEL_RUN_SCHEMA                 "org.consort.consort-panel.run-dialog"
 #define PANEL_RUN_HISTORY_KEY            "history"
 #define PANEL_RUN_ENABLE_COMPLETION_KEY  "enable-autocompletion"
