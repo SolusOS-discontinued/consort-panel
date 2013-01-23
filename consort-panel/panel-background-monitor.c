@@ -42,6 +42,7 @@ enum {
 	LAST_SIGNAL
 };
 
+static void panel_background_composited_changed (PanelBackgroundMonitor *monitor);
 static void panel_background_monitor_changed (PanelBackgroundMonitor *monitor);
 
 static GdkFilterReturn panel_background_monitor_xevent_filter (GdkXEvent *xevent,
@@ -71,6 +72,9 @@ struct _PanelBackgroundMonitor {
 	int        height;
 
 	gboolean   display_grabbed;
+
+	/* So PanelBackground knows whether compositing is available in the desktop */
+	gboolean   is_rgba;
 };
 
 G_DEFINE_TYPE (PanelBackgroundMonitor, panel_background_monitor, G_TYPE_OBJECT)
@@ -90,6 +94,9 @@ panel_background_monitor_finalize (GObject *object)
 		monitor->gdkwindow, panel_background_monitor_xevent_filter, monitor);
 	g_signal_handlers_disconnect_by_func (monitor->screen, 
 		panel_background_monitor_changed, monitor);
+
+	g_signal_handlers_disconnect_by_func (monitor->screen, 
+		panel_background_composited_changed, monitor);
 
 	if (monitor->surface)
                 cairo_surface_destroy (monitor->surface);
@@ -150,8 +157,15 @@ panel_background_monitor_connect_to_screen (PanelBackgroundMonitor *monitor,
 	g_signal_connect_swapped (screen, "size-changed", 
 	    G_CALLBACK (panel_background_monitor_changed), monitor);
 
+	/* Be aware of compositing status */
+	g_signal_connect_swapped (screen, "composited-changed",
+	    G_CALLBACK (panel_background_composited_changed), monitor);
+
 	monitor->gdkwindow = gdk_screen_get_root_window (screen);
 	monitor->xwindow   = GDK_WINDOW_XID (monitor->gdkwindow);
+
+	/* Quickly check if we already have compositing */
+	monitor->is_rgba = gdk_screen_is_composited (screen);
 
 	gdk_window_add_filter (
 		monitor->gdkwindow, panel_background_monitor_xevent_filter, monitor);
@@ -214,6 +228,12 @@ panel_background_monitor_changed (PanelBackgroundMonitor *monitor)
 	monitor->gdkpixbuf = NULL;
 
 	g_signal_emit (monitor, signals [CHANGED], 0);
+}
+
+static void
+panel_background_composited_changed (PanelBackgroundMonitor *monitor)
+{
+	monitor->is_rgba = gdk_screen_is_composited (monitor->screen);
 }
 
 static GdkFilterReturn
