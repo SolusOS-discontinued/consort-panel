@@ -2618,6 +2618,8 @@ panel_toplevel_realize (GtkWidget *widget)
 {
 	PanelToplevel *toplevel = (PanelToplevel *) widget;
 	GdkWindow     *window;
+	GdkScreen       *screen;
+	GdkVisual       *visual;
 
 	gtk_window_set_decorated (GTK_WINDOW (widget), FALSE);
 	gtk_window_stick (GTK_WINDOW (widget));
@@ -2626,6 +2628,18 @@ panel_toplevel_realize (GtkWidget *widget)
 		GTK_WIDGET_CLASS (panel_toplevel_parent_class)->realize (widget);
 
 	window = gtk_widget_get_window (widget);
+
+	gtk_widget_set_app_paintable ( GTK_WIDGET (toplevel), TRUE);
+	screen = gtk_widget_get_screen ( GTK_WIDGET (toplevel) );
+	visual = gdk_screen_get_rgba_visual (screen);
+	if (visual != NULL) {
+		/* We got RGBA, set it up */
+		gtk_widget_set_visual (widget, visual);
+		printf ("PanelToplevel has RGBA\n");
+	} else {
+		gtk_widget_set_visual ( widget, gdk_screen_get_system_visual (screen) );
+		printf ("PanelToplevel has no RGBA\n");
+	}
 
 	panel_struts_set_window_hint (toplevel);
 	panel_xutils_set_window_type (window, PANEL_XUTILS_TYPE_DOCK);
@@ -2853,6 +2867,8 @@ panel_toplevel_draw (GtkWidget *widget,
 
 	if (GTK_WIDGET_CLASS (panel_toplevel_parent_class)->draw)
 		retval = GTK_WIDGET_CLASS (panel_toplevel_parent_class)->draw (widget, cr);
+
+
 
 	edges = toplevel->priv->edges;
 	/* FIXMEchpe: WTF!? */

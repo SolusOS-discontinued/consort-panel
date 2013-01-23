@@ -64,12 +64,22 @@ panel_background_draw (GtkWidget *widget,
 			/** If we have compositing, use real transparency */
 			if (background->has_alpha) {
 				if (background->monitor->is_rgba) {
-					cairo_set_source_rgba (cr, 0, 0, 0, 0);
+					GdkScreen *screen;
+					GdkVisual *visual;
+					screen = gtk_widget_get_screen (widget);
+					visual = gtk_widget_get_visual (widget);
+
+					if (visual != gdk_screen_get_rgba_visual (screen)) {
+						printf ("No real transparency available\n");
+					} else {
+						printf ("Using real transparency\n");
+					}
 					cairo_set_operator (cr, CAIRO_OPERATOR_CLEAR);
+					cairo_set_source_rgba (cr, 0, 0, 0, 0.5f);
 					cairo_rectangle (cr, 0, 0, width, height);
 					cairo_fill (cr);
 
-					cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
+					cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 				} else {
 					cairo_set_source_rgb (cr, 1, 1, 1);
 					cairo_paint (cr);

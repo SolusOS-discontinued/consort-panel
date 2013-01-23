@@ -263,7 +263,7 @@ panel_background_monitor_tile_background (PanelBackgroundMonitor *monitor,
 			return NULL;
 
 		surface = cairo_image_surface_create_for_data (data,
-							       CAIRO_FORMAT_RGB24,
+							       CAIRO_FORMAT_ARGB32,
 							       width, height,
 							       width * 4);
 		cr = cairo_create (surface);
