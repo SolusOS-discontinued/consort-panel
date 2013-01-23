@@ -75,9 +75,8 @@ panel_background_draw (GtkWidget *widget,
 						printf ("Using real transparency\n");
 					}
 					cairo_set_operator (cr, CAIRO_OPERATOR_CLEAR);
-					cairo_set_source_rgba (cr, 0, 0, 0, 0.5f);
-					cairo_rectangle (cr, 0, 0, width, height);
-					cairo_fill (cr);
+					cairo_set_source_rgba (cr, 0, 0, 0, 0);
+					cairo_paint (cr);
 
 					cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 				} else {
