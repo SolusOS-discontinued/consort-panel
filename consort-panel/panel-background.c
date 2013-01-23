@@ -1079,8 +1079,12 @@ panel_background_get_pattern_for_widget (PanelBackground *background,
                 return NULL;
 
 	gtk_widget_get_allocation (widget, &allocation);
-        surface = cairo_image_surface_create (CAIRO_FORMAT_RGB24,
-                                              allocation.width, allocation.height);
+	if (background->monitor->is_rgba) {
+		surface = cairo_image_surface_create (CAIRO_FORMAT_ARGB32,
+		                                      allocation.width, allocation.height);
+	} else {
+		surface = cairo_image_surface_create (CAIRO_FORMAT_RGB24,
+	}	                                      allocation.width, allocation.height);
 
 	cr = cairo_create (surface);
         cairo_set_source_surface (cr, bg_surface, -allocation.x, -allocation.y);
