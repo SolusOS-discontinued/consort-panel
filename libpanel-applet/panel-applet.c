@@ -148,6 +148,10 @@ static void       panel_applet_menu_cmd_move       (GtkAction         *action,
 						    PanelApplet       *applet);
 static void       panel_applet_register_object     (PanelApplet       *applet);
 
+static gboolean panel_applet_draw (GtkWidget *widget,
+				    cairo_t   *cr,
+				    gpointer  user_data);
+
 static const gchar panel_menu_ui[] =
 	"<ui>\n"
 	"  <popup name=\"PanelAppletPopup\" action=\"PopupAction\">\n"
