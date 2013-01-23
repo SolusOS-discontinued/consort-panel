@@ -4372,6 +4372,21 @@ panel_toplevel_init (PanelToplevel *toplevel)
         /* We don't want a resize grip on the panel */
         gtk_window_set_has_resize_grip (GTK_WINDOW (toplevel), FALSE);
 
+	GdkScreen *screen;
+	GdkVisual *visual;
+
+	gtk_widget_set_app_paintable ( GTK_WIDGET (toplevel), TRUE);
+	screen = gtk_widget_get_screen ( GTK_WIDGET (toplevel) );
+	visual = gdk_screen_get_rgba_visual (screen);
+	if (visual != NULL) {
+		/* We got RGBA, set it up */
+		gtk_widget_set_visual ( toplevel, visual);
+		printf ("PanelToplevel has RGBA (INIT)\n");
+	} else {
+		gtk_widget_set_visual ( toplevel, gdk_screen_get_system_visual (screen) );
+		printf ("PanelToplevel has no RGBA (INIT)\n");
+	}
+
 	context = gtk_widget_get_style_context (GTK_WIDGET (toplevel));
 	gtk_style_context_add_class (context, GTK_STYLE_CLASS_HORIZONTAL);
 }
