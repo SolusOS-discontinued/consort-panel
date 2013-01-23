@@ -1468,14 +1468,27 @@ panel_applet_draw (GtkWidget *widget,
 	int border_width;
 	int focus_width = 0;
 	gdouble x, y, width, height;
+	cairo_pattern_t *background;
 
+
+
+        width = gtk_widget_get_allocated_width (widget);
+        height = gtk_widget_get_allocated_height (widget);
+
+	background = panel_applet_get_background (PANEL_APPLET (widget));
+
+	if (background != NULL) {
+		cairo_set_source (cr, background);
+		cairo_rectangle (cr, 0, 0, width, height);
+		cairo_paint_with_alpha (cr, 0.6);
+	}
+	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
 	GTK_WIDGET_CLASS (panel_applet_parent_class)->draw (widget, cr);
 
         if (!gtk_widget_has_focus (widget))
 		return FALSE;
 
-        width = gtk_widget_get_allocated_width (widget);
-        height = gtk_widget_get_allocated_height (widget);
+
 
 	/*
 	 * We are deliberately ignoring focus-padding here to
@@ -1499,6 +1512,7 @@ panel_applet_draw (GtkWidget *widget,
         gtk_render_focus (context, cr, x, y, width, height);
         cairo_restore (cr);
 
+	cairo_pattern_destroy (background);
         gtk_style_context_restore (context);
 
 	return FALSE;
@@ -1773,11 +1787,9 @@ panel_applet_update_background_for_widget (GtkWidget       *widget,
         }
                 break;
         case CAIRO_PATTERN_TYPE_SURFACE:
-                gtk_style_properties_set (properties, GTK_STATE_FLAG_NORMAL,
-					  /* background-color can't be NULL,
-					   * but is ignored anyway */
+               /* gtk_style_properties_set (properties, GTK_STATE_FLAG_NORMAL,
                                           "background-image", pattern,
-                                          NULL);
+                                          NULL); */
                 break;
         default:
                 break;
