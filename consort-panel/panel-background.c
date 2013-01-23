@@ -52,7 +52,7 @@ panel_background_draw (GtkWidget *widget,
 	PanelBackground *background;
 	PanelBackgroundType effective_type;
 
-	background = PANEL_BACKGROUND (user_data);
+	background = (PanelBackground*) user_data;
 	effective_type = panel_background_effective_type (background);
 
 	return TRUE;
