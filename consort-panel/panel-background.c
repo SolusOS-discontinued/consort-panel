@@ -49,11 +49,35 @@ panel_background_draw (GtkWidget *widget,
                        cairo_t   *cr,
 		       gpointer user_data)
 {
+	int width, height;
 	PanelBackground *background;
 	PanelBackgroundType effective_type;
 
 	background = (PanelBackground*) user_data;
 	effective_type = panel_background_effective_type (background);
+
+	width  = gdk_pixbuf_get_width  (background->desktop);
+	height = gdk_pixbuf_get_height (background->desktop);
+
+	switch (effective_type) {
+		case PANEL_BACK_IMAGE:
+			/** For now we'll just copy the old image draw method */
+			if (background->has_alpha) {
+				cairo_set_source_rgb (cr, 1, 1, 1);
+				cairo_paint (cr);
+
+				gdk_cairo_set_source_pixbuf (cr, background->desktop, 0, 0);
+				cairo_rectangle (cr, 0, 0, width, height);
+				cairo_fill (cr);
+			}
+			gdk_cairo_set_source_pixbuf (cr, background->transformed_image, 0, 0);
+			cairo_pattern_set_extend (cairo_get_source (cr), CAIRO_EXTEND_REPEAT);
+			cairo_rectangle (cr, 0, 0, width, height);
+			cairo_fill (cr);
+			break;
+		default:
+			return TRUE;
+	}
 
 	return TRUE;
 }
@@ -102,8 +126,8 @@ panel_background_prepare (PanelBackground *background)
 		break;
 	case PANEL_BACK_IMAGE:
 		g_assert (background->composited_pattern != NULL);
-		gdk_window_set_background_pattern (background->window,
-						   background->composited_pattern);
+		/*gdk_window_set_background_pattern (background->window,
+						   background->composited_pattern);*/
 		break;
 	default:
 		g_assert_not_reached ();
@@ -800,6 +824,7 @@ panel_background_realized (PanelBackground *background,
 	gdk_window_get_user_data (GDK_WINDOW (background->window),
 				  (gpointer) &widget);
 
+	gtk_widget_set_app_paintable (widget, TRUE);
 	g_signal_connect (widget, "draw",
 			  G_CALLBACK (panel_background_draw),
 			  background);
@@ -812,6 +837,8 @@ panel_background_unrealized (PanelBackground *background)
 	GtkWidget *widget = NULL;
 	gdk_window_get_user_data (GDK_WINDOW (background->window),
 				  (gpointer) &widget);
+
+	gtk_widget_set_app_paintable (widget, FALSE);
 
 	g_signal_handlers_disconnect_by_func (widget, 
 		panel_background_draw, background);
