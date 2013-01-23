@@ -158,13 +158,13 @@ panel_background_prepare (PanelBackground *background)
 				background->window, &background->default_color);
 		break;
 	case PANEL_BACK_COLOR:
-		if (background->has_alpha &&
+		/*if (background->has_alpha &&
 		    background->composited_pattern)
 			gdk_window_set_background_pattern (background->window,
 							   background->composited_pattern);
 		else
 			gdk_window_set_background_rgba (background->window,
-                                                        &background->color);
+                                                        &background->color);*/
 		break;
 	case PANEL_BACK_IMAGE:
 		g_assert (background->composited_pattern != NULL);
