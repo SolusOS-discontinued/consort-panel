@@ -11,4 +11,7 @@ actually work. This means we first need to switch to a _dedicated drawing method
  * Install RGBA visuals and cleanup when needed (on composite switches)
  * Finally we'll use the is_rgba and alpha booleans to determine whether to blank the background
 
+**DONE**
+--------
+ * PanelBackgroundMonitor aware of compositing state
 
