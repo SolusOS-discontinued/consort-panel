@@ -24,13 +24,6 @@
  *      Mark McLoughlin <mark@skynet.ie>
  */
 
-#include <glib.h>
-#include <glib-object.h>
-#include <gdk/gdk.h>
-#include <gdk/gdkx.h>
-#include <X11/Xlib.h>
-#include <X11/Xatom.h>
-#include <cairo-xlib.h>
 
 #include <libgnome-desktop/gnome-bg.h>
 
@@ -49,33 +42,6 @@ static GdkFilterReturn panel_background_monitor_xevent_filter (GdkXEvent *xevent
 							       GdkEvent  *event,
 							       gpointer   data);
 
-struct _PanelBackgroundMonitorClass {
-	GObjectClass   parent_class;
-	void         (*changed) (PanelBackgroundMonitor *monitor);
-};
-
-struct _PanelBackgroundMonitor {
-	GObject    parent_instance;
-
-	GdkScreen *screen;
-
-	Window     xwindow;
-	GdkWindow *gdkwindow;
-
-	Atom       xatom;
-	GdkAtom    gdkatom;
-
-        cairo_surface_t *surface;
-        GdkPixbuf *gdkpixbuf;
-
-	int        width;
-	int        height;
-
-	gboolean   display_grabbed;
-
-	/* So PanelBackground knows whether compositing is available in the desktop */
-	gboolean   is_rgba;
-};
 
 G_DEFINE_TYPE (PanelBackgroundMonitor, panel_background_monitor, G_TYPE_OBJECT)
 

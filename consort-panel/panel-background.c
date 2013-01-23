@@ -61,14 +61,23 @@ panel_background_draw (GtkWidget *widget,
 
 	switch (effective_type) {
 		case PANEL_BACK_IMAGE:
-			/** For now we'll just copy the old image draw method */
+			/** If we have compositing, use real transparency */
 			if (background->has_alpha) {
-				cairo_set_source_rgb (cr, 1, 1, 1);
-				cairo_paint (cr);
+				if (background->monitor->is_rgba) {
+					cairo_set_source_rgba (cr, 0, 0, 0, 0);
+					cairo_set_operator (cr, CAIRO_OPERATOR_CLEAR);
+					cairo_rectangle (cr, 0, 0, width, height);
+					cairo_fill (cr);
 
-				gdk_cairo_set_source_pixbuf (cr, background->desktop, 0, 0);
-				cairo_rectangle (cr, 0, 0, width, height);
-				cairo_fill (cr);
+					cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
+				} else {
+					cairo_set_source_rgb (cr, 1, 1, 1);
+					cairo_paint (cr);
+
+					gdk_cairo_set_source_pixbuf (cr, background->desktop, 0, 0);
+					cairo_rectangle (cr, 0, 0, width, height);
+					cairo_fill (cr);
+				}
 			}
 			gdk_cairo_set_source_pixbuf (cr, background->transformed_image, 0, 0);
 			cairo_pattern_set_extend (cairo_get_source (cr), CAIRO_EXTEND_REPEAT);

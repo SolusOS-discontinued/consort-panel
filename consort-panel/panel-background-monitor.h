@@ -30,6 +30,11 @@
 #include <glib.h>
 #include <glib-object.h>
 #include <gtk/gtk.h>
+#include <gdk/gdk.h>
+#include <gdk/gdkx.h>
+#include <X11/Xlib.h>
+#include <X11/Xatom.h>
+#include <cairo-xlib.h>
 
 #define PANEL_TYPE_BACKGROUND_MONITOR         (panel_background_monitor_get_type ())
 #define PANEL_BACKGROUND_MONITOR(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o),      \
@@ -48,6 +53,34 @@
 
 typedef struct _PanelBackgroundMonitorClass PanelBackgroundMonitorClass;
 typedef struct _PanelBackgroundMonitor      PanelBackgroundMonitor;
+
+struct _PanelBackgroundMonitorClass {
+	GObjectClass   parent_class;
+	void         (*changed) (PanelBackgroundMonitor *monitor);
+};
+
+struct _PanelBackgroundMonitor {
+	GObject    parent_instance;
+
+	GdkScreen *screen;
+
+	Window     xwindow;
+	GdkWindow *gdkwindow;
+
+	Atom       xatom;
+	GdkAtom    gdkatom;
+
+        cairo_surface_t *surface;
+        GdkPixbuf *gdkpixbuf;
+
+	int        width;
+	int        height;
+
+	gboolean   display_grabbed;
+
+	/* So PanelBackground knows whether compositing is available in the desktop */
+	gboolean   is_rgba;
+};
 
 GType                   panel_background_monitor_get_type       (void);
 PanelBackgroundMonitor *panel_background_monitor_get_for_screen (GdkScreen *screen);
