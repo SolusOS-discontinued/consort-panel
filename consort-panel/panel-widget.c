@@ -91,6 +91,10 @@ static gboolean panel_widget_real_focus     (GtkWidget        *widget,
 
 static void panel_widget_update_positions   (PanelWidget      *panel);
 
+static void panel_widget_composited_changed (GdkScreen *screen,
+					      PanelWidget *widget);
+
+
 /************************
  convenience functions
  ************************/
@@ -1593,11 +1597,29 @@ toplevel_configure_event (GtkWidget         *widget,
 	return FALSE;
 }
 
+static void panel_widget_composited_changed (GdkScreen *screen,
+					      PanelWidget *widget)
+{
+	GdkVisual *visual;
+
+	visual = gdk_screen_get_rgba_visual (screen);
+	if (visual != NULL) {
+		/* We got RGBA, set it up */
+		gtk_widget_set_visual (widget, visual);
+		printf ("PanelWidget has RGBA\n");
+	} else {
+		gtk_widget_set_visual ( widget, gdk_screen_get_system_visual (screen) );
+		printf ("PanelWidget has no RGBA\n");
+	}
+}
+
 static void
 panel_widget_realize (GtkWidget *widget)
 {
 	PanelWidget     *panel = (PanelWidget *) widget;
 	GdkWindow       *window;
+	GdkScreen       *screen;
+	GdkVisual       *visual;
 
 	g_signal_connect (panel->toplevel, "configure-event",
 			  G_CALLBACK (toplevel_configure_event), panel);
@@ -1609,6 +1631,22 @@ panel_widget_realize (GtkWidget *widget)
 	 * windows to avoid some uglyness on unhide */
 	gdk_window_ensure_native (window);
 
+	/** Try to install an rgba colormap */
+	screen = gtk_widget_get_screen (widget);
+	/* Be aware of compositing status */
+	g_signal_connect_swapped (screen, "composited-changed",
+	    G_CALLBACK (panel_widget_composited_changed), panel);
+
+	visual = gdk_screen_get_rgba_visual (screen);
+	if (visual != NULL) {
+		/* We got RGBA, set it up */
+		gtk_widget_set_visual (widget, visual);
+		printf ("PanelWidget has RGBA\n");
+	} else {
+		gtk_widget_set_visual ( widget, gdk_screen_get_system_visual (screen) );
+		printf ("PanelWidget has no RGBA\n");
+	}
+
         panel_widget_set_background_default_style (widget);
 	panel_background_realized (&panel->background, window);
 }
@@ -1617,6 +1655,11 @@ static void
 panel_widget_unrealize (GtkWidget *widget)
 {
 	PanelWidget *panel = (PanelWidget *) widget;
+	GdkScreen       *screen;
+
+	screen = gtk_widget_get_screen (widget);
+	g_signal_handlers_disconnect_by_func (screen, 
+		panel_widget_composited_changed, panel);
 
 	panel_background_unrealized (&panel->background);
 
