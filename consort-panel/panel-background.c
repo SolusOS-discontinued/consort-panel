@@ -43,6 +43,21 @@ static gboolean panel_background_composite (PanelBackground *background);
 static void load_background_file (PanelBackground *background);
 
 
+/** And so begins our hack, which'll end up being responsible for all drawing of the panel */
+static gboolean
+panel_background_draw (GtkWidget *widget,
+                       cairo_t   *cr,
+		       gpointer user_data)
+{
+	PanelBackground *background;
+	PanelBackgroundType effective_type;
+
+	background = PANEL_BACKGROUND (user_data);
+	effective_type = panel_background_effective_type (background);
+
+	return TRUE;
+}
+
 static gboolean
 panel_background_prepare (PanelBackground *background)
 {
