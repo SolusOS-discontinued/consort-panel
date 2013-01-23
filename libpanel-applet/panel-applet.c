@@ -148,10 +148,6 @@ static void       panel_applet_menu_cmd_move       (GtkAction         *action,
 						    PanelApplet       *applet);
 static void       panel_applet_register_object     (PanelApplet       *applet);
 
-static gboolean panel_applet_draw (GtkWidget *widget,
-				    cairo_t   *cr,
-				    gpointer  user_data);
-
 static const gchar panel_menu_ui[] =
 	"<ui>\n"
 	"  <popup name=\"PanelAppletPopup\" action=\"PopupAction\">\n"
@@ -2038,6 +2034,21 @@ panel_applet_init (PanelApplet *applet)
 
 	panel_applet_bindings_init (applet->priv->client);
 
+
+	GdkScreen *screen;
+	GdkVisual *visual;
+
+	gtk_widget_set_app_paintable ( GTK_WIDGET (applet), TRUE);
+	screen = gtk_widget_get_screen ( GTK_WIDGET (applet) );
+	visual = gdk_screen_get_rgba_visual (screen);
+	if (visual != NULL) {
+		/* We got RGBA, set it up */
+		gtk_widget_set_visual ( applet, visual);
+		printf ("PanelApplet Container has RGBA\n");
+	} else {
+		gtk_widget_set_visual ( applet, gdk_screen_get_system_visual (screen) );
+		printf ("PanelApplet Container has no RGBA\n");
+	}
 
 	applet->priv->plug = gtk_plug_new (0);
 	g_signal_connect_swapped (G_OBJECT (applet->priv->plug), "embedded",
