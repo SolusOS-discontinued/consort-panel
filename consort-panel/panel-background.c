@@ -785,17 +785,37 @@ panel_background_realized (PanelBackground *background,
 {
 	g_return_if_fail (window != NULL);
 
+	GtkWidget *widget = NULL;
+
 	if (background->window)
 		return;
 
         background->window = g_object_ref (window);
 
 	panel_background_prepare (background);
+
+
+	/** Hook up our own drawing method */
+
+	gdk_window_get_user_data (GDK_WINDOW (background->window),
+				  (gpointer) &widget);
+
+	g_signal_connect (widget, "draw",
+			  G_CALLBACK (panel_background_draw),
+			  background);
 }
 
 void
 panel_background_unrealized (PanelBackground *background)
 {
+	/** No longer draw for this widget */
+	GtkWidget *widget = NULL;
+	gdk_window_get_user_data (GDK_WINDOW (background->window),
+				  (gpointer) &widget);
+
+	g_signal_handlers_disconnect_by_func (widget, 
+		panel_background_draw, background);
+
 	if (background->window)
 		g_object_unref (background->window);
 	background->window = NULL;
