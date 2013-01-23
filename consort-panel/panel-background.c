@@ -93,6 +93,30 @@ panel_background_draw (GtkWidget *widget,
 			cairo_rectangle (cr, 0, 0, width, height);
 			cairo_fill (cr);
 			break;
+		case PANEL_BACK_COLOR:
+			if (background->has_alpha) {
+				if (background->monitor->is_rgba) {
+					/* Clear background */
+					cairo_set_operator (cr, CAIRO_OPERATOR_CLEAR);
+					cairo_set_source_rgba (cr, 0, 0, 0, 0);
+					cairo_paint (cr);
+
+					cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
+					cairo_set_source_rgba (cr, background->color.red, background->color.green, background->color.blue, background->color.alpha);
+					cairo_rectangle (cr, 0, 0, width, height);
+					cairo_fill (cr);
+				} else {
+					cairo_set_source (cr, background->composited_pattern);
+					cairo_pattern_set_extend (cairo_get_source (cr), CAIRO_EXTEND_REPEAT);
+					cairo_rectangle (cr, 0, 0, width, height);
+					cairo_fill (cr);
+				}
+			} else {
+					cairo_set_source_rgba (cr, background->color.red, background->color.green, background->color.blue, background->color.alpha);
+					cairo_rectangle (cr, 0, 0, width, height);
+					cairo_fill (cr);
+			}				
+			break;
 		default:
 			return TRUE;
 	}
