@@ -1634,7 +1634,7 @@ panel_widget_realize (GtkWidget *widget)
 	/** Try to install an rgba colormap */
 	screen = gtk_widget_get_screen (widget);
 	/* Be aware of compositing status */
-	g_signal_connect_swapped (screen, "composited-changed",
+	g_signal_connect (screen, "composited-changed",
 	    G_CALLBACK (panel_widget_composited_changed), panel);
 
 	visual = gdk_screen_get_rgba_visual (screen);
